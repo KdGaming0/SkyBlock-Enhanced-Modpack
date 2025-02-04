@@ -1,0 +1,25 @@
+{
+  "modpack": {
+    "name": "SkyBlock Enhanced",
+    "version": "2.1.0",
+    "minecraft_version": "1.8.9",
+    "author": "KdGaming0",
+    "created_at": "2025-01-28 17:42:37",
+    "last_updated": "2025-01-28 17:42:37",
+    "description": "A enhanced SkyBlock experience for Minecraft 1.8.9"
+  },
+  "update": {
+    "modrinth_project_id": "9JTbeXjU",
+    "check_for_updates": true,
+    "update_channel": "release"
+  },
+  "social": {
+    "website": "https://modrinth.com/modpack/skyblock-enhanced",
+    "discord": "",
+    "issue_tracker": "https://github.com/KdGaming0/SkyBlock-Enhanced-Modpack/issues",
+    "wiki": ""
+  },
+  "optifine": {
+    "Guide": "1.8.9_HD_U_L5"
+  }
+}

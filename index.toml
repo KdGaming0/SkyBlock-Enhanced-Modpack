@@ -6,7 +6,23 @@ hash = "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
 
 [[files]]
 file = "README.md"
-hash = "fb5d533fae808368c325e3dea3afc2c5de177fe7ca8c7fe1d6a15bc64c692301"
+hash = "8a40826c52327594f49c9ee03237326549e15c7b8a173d83194763b4d9cfeaf8"
+
+[[files]]
+file = "SkyBlock Enhanced/OfficialConfigs/Normal 1080p Configs.zip"
+hash = "0cc0de8c8e2f69c240e8e3ebd3f0cecd6270471c7ebc632e85f3e5dc29f3d4d0"
+
+[[files]]
+file = "SkyBlock Enhanced/OfficialConfigs/Normal 1440p Configs.zip"
+hash = "d0cc29fd2c46100f0ffc04228ab1328b165f7273733b3bd13ccd5ca0587c1a33"
+
+[[files]]
+file = "SkyBlock Enhanced/modpack_info.json"
+hash = "26f88510d47ccee8385c5fd6a06e63a5950d51de0cbb1d5f2b999f12fc7ef837"
+
+[[files]]
+file = "mods/Scrollable Tooltips-1.4 (1.8.9).jar"
+hash = "0f1fdcc3cafbd4c2d44e5b015ed62b015a04e2a93f7a61c866f1248ac104fd25"
 
 [[files]]
 file = "mods/chatting.pw.toml"
