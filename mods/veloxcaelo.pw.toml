@@ -1,0 +1,13 @@
+name = "Velox Caelo"
+filename = "veloxcaelo-1.1.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/r4AQF5mj/versions/UezAlzL0/veloxcaelo-1.1.0.jar"
+hash-format = "sha512"
+hash = "3580186e83bcfbc0f08879260ca71da43e47f1ff2dda44065e100d87679cfe4eb9c62fba01fbfe385f2d4c8902132698176d19b5e05e0040b0abb0c8f13c6858"
+
+[update]
+[update.modrinth]
+mod-id = "r4AQF5mj"
+version = "UezAlzL0"

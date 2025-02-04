@@ -1,0 +1,13 @@
+name = "SkyGuide"
+filename = "SkyGuide (1.8.9-forge)-1.3.0+oneconfig.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/2BXykn9u/versions/Sc5feDQE/SkyGuide%20%281.8.9-forge%29-1.3.0%2Boneconfig.jar"
+hash-format = "sha512"
+hash = "fad298ebb14a12e692eb6dce6f68c0d67b9a2e40e85369683721e7d5c0d925b7b481c4a6592e4278e92e6dcf9b938061caaeb4f415fba69b7e2f66031c8f3d4e"
+
+[update]
+[update.modrinth]
+mod-id = "2BXykn9u"
+version = "Sc5feDQE"

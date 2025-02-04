@@ -1,5 +1,9 @@
-# SkyBlock-Enhanced
-The GitHub repository for SkyBlock Enhanced. You can report issues and read the soon-to-be wiki here.
+# SkyBlock Enhanced
 
-You won't find the modpack itself here go to the [Modrinth Page](https://modrinth.com/modpack/skyblock-enhanced) for that.
-Tanks for checking SE out!
+Welcome to the official GitHub repository for SkyBlock Enhanced. You can report any issues or ask questions in the Discussions section.
+
+Please note that the modpack itself is not available here. To download and install the modpack, visit the [Modrinth Page.](https://modrinth.com/modpack/skyblock-enhanced)
+
+In this repository, you will find the source code for the modpack, allowing you to view which mods are included and where they come from, giving you full transparency and peace of mind.
+
+### Thank you for checking out SkyBlock Enhanced!

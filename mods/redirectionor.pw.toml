@@ -1,0 +1,7 @@
+name = "redirectionor"
+filename = "redirectionor-1.8.for.1.12.2-1.8.8.jar"
+
+[download]
+url = "https://github.com/MCTeamPotato/Redirector/releases/download/1.12.2-1.8.8-1.8/redirectionor-1.8.for.1.12.2-1.8.8.jar"
+hash-format = "sha256"
+hash = "bf57925f7b6f45446c887c9b4413ecd0422347fd33731e1d21899d6e42d72b0c"

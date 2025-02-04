@@ -1,0 +1,13 @@
+name = "Phosphor Legacy Forge"
+filename = "phosphor-universal.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/oCBQFmrZ/versions/EoRB0IqD/phosphor-universal.jar"
+hash-format = "sha512"
+hash = "7390b4a6eefc6060bc86386261f77f4b7a7eebb579ca676baf9867ba4812ba3e0e82cc395ef05a6825d311f9be847a1539eb7102bcf93eabd510f25a56af9690"
+
+[update]
+[update.modrinth]
+mod-id = "oCBQFmrZ"
+version = "EoRB0IqD"

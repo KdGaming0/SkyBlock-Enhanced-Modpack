@@ -1,0 +1,13 @@
+name = "OverflowParticles"
+filename = "OverflowParticles-1.8.9-forge-1.0.2.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/61g97TVF/versions/4JC1SCCw/OverflowParticles-1.8.9-forge-1.0.2.jar"
+hash-format = "sha512"
+hash = "9f25e5bf15c71307b95b1645dd89b8ba82322a71a28873b7cfdd9c52c847577db7a08931d51e2ca67cb70e61f946e10c68e4396f210bad05f8588c3965ba7710"
+
+[update]
+[update.modrinth]
+mod-id = "61g97TVF"
+version = "4JC1SCCw"

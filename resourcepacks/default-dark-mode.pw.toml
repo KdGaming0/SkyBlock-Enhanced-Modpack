@@ -1,0 +1,13 @@
+name = "Default Dark Mode"
+filename = "Default-Dark-Mode-1.8-2023.6.0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/6SLU7tS5/versions/mDQKTvbT/Default-Dark-Mode-1.8-2023.6.0.zip"
+hash-format = "sha512"
+hash = "b451fc09a316038611afbe520649ea741067b3c20d4e626672f178ded31f3dc2e9e8b0cf9e0cd2f1c8581bfa9d38f5fad4d15e7325d501217619bb814c6e784e"
+
+[update]
+[update.modrinth]
+mod-id = "6SLU7tS5"
+version = "mDQKTvbT"

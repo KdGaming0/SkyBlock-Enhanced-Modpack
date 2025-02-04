@@ -1,0 +1,129 @@
+hash-format = "sha256"
+
+[[files]]
+file = "LICENSE"
+hash = "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+
+[[files]]
+file = "README.md"
+hash = "fb5d533fae808368c325e3dea3afc2c5de177fe7ca8c7fe1d6a15bc64c692301"
+
+[[files]]
+file = "mods/chatting.pw.toml"
+hash = "acd9848cd9221f74ff71570aca0f44251003de470e6a416fc5a25fd34dbe3749"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-guide.pw.toml"
+hash = "3b7cc5d22af22320f8f3d5b0242c654e5bf520f06b03c561cefcbf321989fb2a"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "9e39622e4a1d59cfc3c1eaf765631d5ea3be8320326f5de21380a320db938e9c"
+metafile = true
+
+[[files]]
+file = "mods/essential.pw.toml"
+hash = "04fe23230c03980e9b48678882ec99a62105d1fbcc643266eee970ab6bf5e77c"
+metafile = true
+
+[[files]]
+file = "mods/fancy-warp-menu.pw.toml"
+hash = "49cacb49d7c4a3db90064495e57bf711c088053f694174f5d55e55f64c70e17b"
+metafile = true
+
+[[files]]
+file = "mods/foamfix.pw.toml"
+hash = "da1a972b0a76c896a1b33cbb720ad5324e1238cc21e2beb3cd952088fee825e5"
+metafile = true
+
+[[files]]
+file = "mods/notenoughupdates.pw.toml"
+hash = "3af4a03ca3ee42ee14b113d5cad064434b387f60901b12127c95c5aad1f98666"
+metafile = true
+
+[[files]]
+file = "mods/optibye.pw.toml"
+hash = "28679b2d26a515f09fe9bf1d33f9671ca12e99680932246867e64701a5557fd8"
+metafile = true
+
+[[files]]
+file = "mods/overflowparticles.pw.toml"
+hash = "f2b0cdec84586309e24cc2e90de64189a2a2189c4563b7ad0d3f58e816766f5e"
+metafile = true
+
+[[files]]
+file = "mods/packcore.pw.toml"
+hash = "120de2610f36fc7acc0f1b6e0f94ec862579a6cbc1cd729a4feafe4355b95dc6"
+metafile = true
+
+[[files]]
+file = "mods/patcher.pw.toml"
+hash = "5568ddf927d4b998bb9eabca3ead7db607ed390de841a8f126ff4d345a1c514f"
+metafile = true
+
+[[files]]
+file = "mods/phosphorlegacyforge.pw.toml"
+hash = "33cbbf1fde609de8acde6dacb3c77374fa6463b96e10312247da8a19c99ef64e"
+metafile = true
+
+[[files]]
+file = "mods/polished-gui.pw.toml"
+hash = "b829772cfe753f6c7c03f19271daf61dfb91d499bac791ba872de27383cb49b3"
+metafile = true
+
+[[files]]
+file = "mods/polysprint.pw.toml"
+hash = "8801c32386ce295df8dc1fd2a99acebbf53f3b4cee239bb7d3c11ea1b5cea57f"
+metafile = true
+
+[[files]]
+file = "mods/redirectionor-retro.pw.toml"
+hash = "3ab2ea9bf7387657201248052354ca3bb25887cd94d2f233e2078d3b91715de1"
+metafile = true
+
+[[files]]
+file = "mods/redirectionor.pw.toml"
+hash = "1083b8a42e15b36b39ef545f778d88d31b01666a8440292a204773805f834d86"
+metafile = true
+
+[[files]]
+file = "mods/skyblockaddons-unofficial.pw.toml"
+hash = "a06242192bbfa7d00f00f079f6b88f43a8b35c080889a106c4d6426136736b7c"
+metafile = true
+
+[[files]]
+file = "mods/skyguide.pw.toml"
+hash = "82730ca8179367e99f3dd2bd7b127e88d72ec1df37ca36fdda379b39763c2545"
+metafile = true
+
+[[files]]
+file = "mods/skyhanni.pw.toml"
+hash = "de3caa8b9a8d10e6e7ba539f12d22eabb0098cd6aec27728944412a8e64f94cf"
+metafile = true
+
+[[files]]
+file = "mods/skytils.pw.toml"
+hash = "2572648d0f09bf2b3d24a6b4c3f73ecbc585a7baf9004c608a8ac57cd9943df7"
+metafile = true
+
+[[files]]
+file = "mods/veloxcaelo.pw.toml"
+hash = "54c0246dc7d56478af21dc28e147274481f76e551f0e1058280f51704f72ad57"
+metafile = true
+
+[[files]]
+file = "resourcepacks/default-dark-mode.pw.toml"
+hash = "89801dfa3dcf00e007fbe5790d7940c568a00889658248db44b02ccf50517fd3"
+metafile = true
+
+[[files]]
+file = "resourcepacks/faithful-32x.pw.toml"
+hash = "376c19cf7332b768f129922d737b9e8679c62bf7d56334c869c9f1418c3d52c6"
+metafile = true
+
+[[files]]
+file = "resourcepacks/hypixel-plus.pw.toml"
+hash = "1d3b35ce7bffaa043b981ca4f2addff0d8dcda4d6f62fdd997ba146aab0bfcd5"
+metafile = true

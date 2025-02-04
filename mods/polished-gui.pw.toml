@@ -1,0 +1,13 @@
+name = "Polished GUI"
+filename = "Polished-GUI-1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/mR1LCArJ/versions/j8wnkeFX/Polished-GUI-1.0.0.jar"
+hash-format = "sha512"
+hash = "501c062e1f83d1e6873bbcfa86b0199c190671fe68e32c6bbb87d2367885199651d951e6b792c20285bfc77c1b2e76469317d6eb8f34e2dd97d641882993ac42"
+
+[update]
+[update.modrinth]
+mod-id = "mR1LCArJ"
+version = "j8wnkeFX"

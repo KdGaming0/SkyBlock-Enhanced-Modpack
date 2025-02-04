@@ -1,0 +1,13 @@
+name = "Fancy Warp Menu"
+filename = "FancyWarpMenu-2.0-beta.1+121.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/XAqp0XTf/versions/sdJblxLE/FancyWarpMenu-2.0-beta.1%2B121.jar"
+hash-format = "sha512"
+hash = "fcafaf05f552b7391957939ebe1bdfb4d159e9f297f65b39c983382bec1ffc5973fdcfc76337979aeb8924b1fb1b7a075f42e8d66f915133ad880195d70ffa77"
+
+[update]
+[update.modrinth]
+mod-id = "XAqp0XTf"
+version = "sdJblxLE"

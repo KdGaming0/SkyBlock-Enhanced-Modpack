@@ -1,0 +1,7 @@
+name = "skytils"
+filename = "Skytils-1.10.9-pre1.jar"
+
+[download]
+url = "https://github.com/Skytils/SkytilsMod/releases/download/v1.10.9-pre1/Skytils-1.10.9-pre1.jar"
+hash-format = "sha256"
+hash = "6b6a7f6d9af6015fc0e12366896411f8bd516727ae4ab1748cf172f42242e929"
