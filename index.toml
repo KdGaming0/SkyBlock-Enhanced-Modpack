@@ -18,7 +18,11 @@ hash = "d0cc29fd2c46100f0ffc04228ab1328b165f7273733b3bd13ccd5ca0587c1a33"
 
 [[files]]
 file = "SkyBlock Enhanced/modpack_info.json"
-hash = "26f88510d47ccee8385c5fd6a06e63a5950d51de0cbb1d5f2b999f12fc7ef837"
+hash = "d6c2e9c0bee10a899856db419fa8f70d2f4470b8e5f45aa54073ade2ac60bb84"
+
+[[files]]
+file = "icon.png"
+hash = "1dbbfa3bb6363eff3b0cb22662d1d12000235424aaea379d6ee3e14eff80eb68"
 
 [[files]]
 file = "mods/Scrollable Tooltips-1.4 (1.8.9).jar"
@@ -71,7 +75,7 @@ metafile = true
 
 [[files]]
 file = "mods/packcore.pw.toml"
-hash = "120de2610f36fc7acc0f1b6e0f94ec862579a6cbc1cd729a4feafe4355b95dc6"
+hash = "ddb7f17d610553e81b8f72dc5d2b8efd872673979caa1b27017e3eca7d5364c5"
 metafile = true
 
 [[files]]
@@ -95,18 +99,13 @@ hash = "8801c32386ce295df8dc1fd2a99acebbf53f3b4cee239bb7d3c11ea1b5cea57f"
 metafile = true
 
 [[files]]
-file = "mods/redirectionor-retro.pw.toml"
-hash = "3ab2ea9bf7387657201248052354ca3bb25887cd94d2f233e2078d3b91715de1"
-metafile = true
-
-[[files]]
 file = "mods/redirectionor.pw.toml"
 hash = "1083b8a42e15b36b39ef545f778d88d31b01666a8440292a204773805f834d86"
 metafile = true
 
 [[files]]
 file = "mods/skyblockaddons-unofficial.pw.toml"
-hash = "a06242192bbfa7d00f00f079f6b88f43a8b35c080889a106c4d6426136736b7c"
+hash = "fab7b76599402ef7de3e83cdd2a2247174e9d82c2a6b3e166124e4289c4dd140"
 metafile = true
 
 [[files]]

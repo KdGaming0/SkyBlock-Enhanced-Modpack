@@ -1,13 +1,13 @@
 name = "PackCore"
-filename = "packcore-1.0.0-beta7.jar"
+filename = "packcore-1.0.0.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/V3FnL7QV/versions/PGU2eaR4/packcore-1.0.0-beta7.jar"
+url = "https://cdn.modrinth.com/data/V3FnL7QV/versions/HAXs7a5h/packcore-1.0.0.jar"
 hash-format = "sha512"
-hash = "3a7f9e6e12cd9d6dd4f9ab061c750b953c3dcc9cdae3d77b2264b60022d8a07d403b2cc734c10081e25f268bd942b9b2c97a77a2c46ed9d50bbf83074f3c9ac4"
+hash = "23e7e07212c46c7512b1110d657fa35b507bdfbc2b82785d5821999ab6a9f71a978ae12fd7470271a1692f32720bd1011e31334ef0d9cf2a79e1e4e0abe4c568"
 
 [update]
 [update.modrinth]
 mod-id = "V3FnL7QV"
-version = "PGU2eaR4"
+version = "HAXs7a5h"
