@@ -1,7 +1,7 @@
 name = "skyhanni"
-filename = "SkyHanni-1.10.0-mc1.8.9.jar"
+filename = "SkyHanni-1.11.0-mc1.8.9.jar"
 
 [download]
-url = "https://github.com/hannibal002/SkyHanni/releases/download/1.10.0/SkyHanni-1.10.0-mc1.8.9.jar"
+url = "https://github.com/hannibal002/SkyHanni/releases/download/1.11.0/SkyHanni-1.11.0-mc1.8.9.jar"
 hash-format = "sha256"
-hash = "eb5a5f282fb3637a7b770e4c58650ea108e3419ff5837037cebbf8d61b719592"
+hash = "e1c7ae6ad2d486a03a91eca0c660845e14760f183fcdd5e4d8fb618f7f796194"
