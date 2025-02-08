@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/ISSUE_TEMPLATE/bug_report.md"
+hash = "a70c24de835c16014880b3ed75cbee561fb4936f4389ab9eed80d6bac2d99f49"
+
+[[files]]
 file = "LICENSE"
 hash = "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
 
@@ -18,7 +22,7 @@ hash = "d0cc29fd2c46100f0ffc04228ab1328b165f7273733b3bd13ccd5ca0587c1a33"
 
 [[files]]
 file = "Skyblock Enhanced/modpack_info.json"
-hash = "3bf7b21a18f048147efc8b338cfe6337342a11770ab39da233344a110a4b9644"
+hash = "2065df60e92493b7596edb2b722eace940e24fc3111f9da27f7f76c90b83bdd2"
 
 [[files]]
 file = "icon.png"
