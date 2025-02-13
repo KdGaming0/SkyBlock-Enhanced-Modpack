@@ -14,7 +14,7 @@ hash = "8a40826c52327594f49c9ee03237326549e15c7b8a173d83194763b4d9cfeaf8"
 
 [[files]]
 file = "Skyblock Enhanced/OfficialConfigs/Normal 1080p Configs.zip"
-hash = "0cc0de8c8e2f69c240e8e3ebd3f0cecd6270471c7ebc632e85f3e5dc29f3d4d0"
+hash = "16c44988edc2bf0eb10604b40361abd914d32639ed554dbcc2f7ff3d41a43532"
 
 [[files]]
 file = "Skyblock Enhanced/OfficialConfigs/Normal 1440p Configs.zip"
@@ -22,7 +22,11 @@ hash = "d0cc29fd2c46100f0ffc04228ab1328b165f7273733b3bd13ccd5ca0587c1a33"
 
 [[files]]
 file = "Skyblock Enhanced/modpack_info.json"
-hash = "a7f1ee928a59f45e56ba1085f63f0761e43080ace4e6dd226f38c2a4db8ecee1"
+hash = "3ea5d27e744efdbdd9be06f215ad15e323e341024c3200b7fd5ad142731a3b52"
+
+[[files]]
+file = "Updated notes.txt"
+hash = "8eec533b18510a91178056d4a30dbb660f086f37a36e67493d568b253f8af10a"
 
 [[files]]
 file = "icon.png"
@@ -104,7 +108,7 @@ metafile = true
 
 [[files]]
 file = "mods/redirectionor.pw.toml"
-hash = "1083b8a42e15b36b39ef545f778d88d31b01666a8440292a204773805f834d86"
+hash = "f5a10da5ee42dce842e0ffa30407e4b7b48002238df301a10e1335afbaa000a4"
 metafile = true
 
 [[files]]
@@ -119,7 +123,7 @@ metafile = true
 
 [[files]]
 file = "mods/skyhanni.pw.toml"
-hash = "1037727bd7dc24b80b7283d7fcad4412d8ae4e5c615399dbccbc6c3ce4e16886"
+hash = "07a81b16649bde6cffa13d53f981dd5b8d31d2db49020bb26f687ab63b9db194"
 metafile = true
 
 [[files]]
