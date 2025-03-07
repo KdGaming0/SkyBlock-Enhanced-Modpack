@@ -22,7 +22,7 @@ hash = "d0cc29fd2c46100f0ffc04228ab1328b165f7273733b3bd13ccd5ca0587c1a33"
 
 [[files]]
 file = "Skyblock Enhanced/modpack_info.json"
-hash = "3ea5d27e744efdbdd9be06f215ad15e323e341024c3200b7fd5ad142731a3b52"
+hash = "8048d4cf55880a56e2ed21cb618f7d64d8bbafcfc96e152b5a88527d765b15bb"
 
 [[files]]
 file = "Updated notes.txt"
@@ -53,7 +53,7 @@ metafile = true
 
 [[files]]
 file = "mods/essential.pw.toml"
-hash = "01c2848cdae3d9179a80bb5205146df4da676f4928d11ee79cfca8b0941c3522"
+hash = "0adf6a002eee8448f008626ef4c530563d000bb5b14a3b54fde05d598575f7de"
 metafile = true
 
 [[files]]
@@ -123,12 +123,12 @@ metafile = true
 
 [[files]]
 file = "mods/skyhanni.pw.toml"
-hash = "07a81b16649bde6cffa13d53f981dd5b8d31d2db49020bb26f687ab63b9db194"
+hash = "6b50ec3834798de90cdecef427ae3266c9a96dd687d402ff4892674ca54dbbd0"
 metafile = true
 
 [[files]]
 file = "mods/skytils.pw.toml"
-hash = "7da11b2b9d86529d3239e62e83050559cef5478aadd836a4c389bf3e1ef3aeed"
+hash = "4c909a4a28ccfed76ea66e6f25db3cc63b283788602c610d26f7091d345d7b56"
 metafile = true
 
 [[files]]
