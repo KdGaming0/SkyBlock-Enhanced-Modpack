@@ -1,13 +1,13 @@
 name = "Essential Mod"
-filename = "essential_1-3-5-9_forge_1-8-9.jar"
+filename = "essential_1-3-5-11_forge_1-8-9.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/k2ZPuTBm/versions/NJUzBB5J/essential_1-3-5-9_forge_1-8-9.jar"
+url = "https://cdn.modrinth.com/data/k2ZPuTBm/versions/w1brRYXK/essential_1-3-5-11_forge_1-8-9.jar"
 hash-format = "sha512"
-hash = "3d80cde745de981e5caa30004ebaac7c4f316d0d7e5a4df001ec22f10bc503895cb5f93e718466bf283efacd2c45df09bbef7b9064987bee54b3c73185255c12"
+hash = "2fee73cae9312c07f28db1c3fdc7aa50988d8fd46841c49bfd42389d852ffcaa18cf880333e86dfccd9632e233ed555a11507c287387b8bfb16314bf876ce143"
 
 [update]
 [update.modrinth]
 mod-id = "k2ZPuTBm"
-version = "NJUzBB5J"
+version = "w1brRYXK"
