@@ -14,7 +14,7 @@ hash = "8a40826c52327594f49c9ee03237326549e15c7b8a173d83194763b4d9cfeaf8"
 
 [[files]]
 file = "Skyblock Enhanced/OfficialConfigs/Normal 1080p Configs.zip"
-hash = "16c44988edc2bf0eb10604b40361abd914d32639ed554dbcc2f7ff3d41a43532"
+hash = "0616063faf41854a5d2c9ee9b2b594afe95100c4ecc8a9e6dfc3b7bff6361a38"
 
 [[files]]
 file = "Skyblock Enhanced/OfficialConfigs/Normal 1440p Configs.zip"
@@ -22,11 +22,7 @@ hash = "d0cc29fd2c46100f0ffc04228ab1328b165f7273733b3bd13ccd5ca0587c1a33"
 
 [[files]]
 file = "Skyblock Enhanced/modpack_info.json"
-hash = "858887cc6b1abccce4822a8e49d4828985d3295132b3b1b63c8811589113432c"
-
-[[files]]
-file = "Updated notes.txt"
-hash = "8eec533b18510a91178056d4a30dbb660f086f37a36e67493d568b253f8af10a"
+hash = "f64b3e43075dc409d2c7d67d808fdb92aa9e92966667a0de176ac12547416970"
 
 [[files]]
 file = "icon.png"
@@ -53,7 +49,7 @@ metafile = true
 
 [[files]]
 file = "mods/essential.pw.toml"
-hash = "e0d5fb16449a8e0ee7383da2cea56a6edc4e6d09fd2e1d583b714f671bcf46bc"
+hash = "53ffe9e41054a1ea37c9127539617fd128d08f86ee6ebb2b9b21d0bb89ce1b11"
 metafile = true
 
 [[files]]
@@ -88,7 +84,7 @@ metafile = true
 
 [[files]]
 file = "mods/patcher.pw.toml"
-hash = "5568ddf927d4b998bb9eabca3ead7db607ed390de841a8f126ff4d345a1c514f"
+hash = "8a5f2cf7f332936a6ef838a08bd1841ecb5af85122f11c3725b4b68a07a15b41"
 metafile = true
 
 [[files]]
@@ -113,7 +109,7 @@ metafile = true
 
 [[files]]
 file = "mods/skyblockaddons-unofficial.pw.toml"
-hash = "8a458d52486f14a5fe2a9b109729e290e171628933fae4f2bf15e8f7ce40710b"
+hash = "a17c4bab4b0aaf03ba8dd0ec06fce692c6c70772e24fc32d1b13d5998c094ad6"
 metafile = true
 
 [[files]]
@@ -123,12 +119,12 @@ metafile = true
 
 [[files]]
 file = "mods/skyhanni.pw.toml"
-hash = "806f3ff40217832a465188d6a51618aefcf16958493e86f539759a7e5913a4db"
+hash = "c1f5e7b117cecacca361402645fcf1b690e0153255ab1f3b61d6e9f8cf0c2c08"
 metafile = true
 
 [[files]]
 file = "mods/skytils.pw.toml"
-hash = "24d86710a6dd329b188bb2e877258727f4b3e52aeff78e3e83d11b7f99f82569"
+hash = "2b31c977d05faa2df6215b20ddac5155e405d175278f165498345b17d15c9140"
 metafile = true
 
 [[files]]
@@ -143,14 +139,10 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/faithful-32x.pw.toml"
-hash = "376c19cf7332b768f129922d737b9e8679c62bf7d56334c869c9f1418c3d52c6"
+hash = "48b31ea0d1dd8fc36110694d65572710773ffa093ffbbfec613b5ef150f4029d"
 metafile = true
 
 [[files]]
 file = "resourcepacks/hypixel-plus.pw.toml"
 hash = "1d3b35ce7bffaa043b981ca4f2addff0d8dcda4d6f62fdd997ba146aab0bfcd5"
 metafile = true
-
-[[files]]
-file = "ui bugs.txt"
-hash = "07ef7f221f71786418aff6cf78702a258a9cf675f00ee40f83abbbb6b9c9022d"
