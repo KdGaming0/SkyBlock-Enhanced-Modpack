@@ -1,12 +1,12 @@
 name = "SkyBlock Enhanced"
 author = "Kd_Gaming1"
-version = "2.3.1"
+version = "2.3.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "468aad5ef77802d3dbfd753a7ccf476af68246da2190e7b02a1067d267a7aebb"
+hash = "db844a76fb3fe9431bd2927e73cb0a516bfd5aafd0c3def2eeac3b7987a8547a"
 
 [versions]
 forge = "11.15.1.2318"
