@@ -1,0 +1,8 @@
+   {
+     "updateId": "1.0.0_sbo_and_krypt",
+     "version": "1.0.0",
+     "description": "Added sbo and krypt configuration",
+     "configFileName": "sbo+krypt_config.zip",
+     "createBackup": true,
+     "affectedMods": ["sbo, krypt"]
+   }

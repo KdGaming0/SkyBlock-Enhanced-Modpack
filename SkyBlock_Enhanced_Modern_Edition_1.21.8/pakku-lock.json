@@ -4,7 +4,7 @@
         "1.21.8"
     ],
     "loaders": {
-        "fabric": "0.17.3"
+        "fabric": "0.18.1"
     },
     "projects": [
         {
@@ -160,32 +160,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "BadOptimizations-2.3.1-1.21.6-21.8.jar",
-                    "mc_versions": [
-                        "1.21.8",
-                        "1.21.7",
-                        "1.21.6"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7055/846/BadOptimizations-2.3.1-1.21.6-21.8.jar",
-                    "id": "7055846",
-                    "parent_id": "949555",
-                    "hashes": {
-                        "sha1": "91f16f6e12c857227f40a847fd54ee7f3c51d2e8",
-                        "md5": "80b4a6ae755f0af2234fbe999569f555"
-                    },
-                    "required_dependencies": [],
-                    "size": 275230,
-                    "date_published": "2025-10-01T23:54:59.920Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "BadOptimizations-2.3.1-1.21.6-21.8.jar",
+                    "file_name": "BadOptimizations-2.4.0-1.21.6-21.8.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
@@ -196,26 +172,48 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/2uHHfSae/BadOptimizations-2.3.1-1.21.6-21.8.jar",
-                    "id": "2uHHfSae",
+                    "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/swjXZyGP/BadOptimizations-2.4.0-1.21.6-21.8.jar",
+                    "id": "swjXZyGP",
                     "parent_id": "g96Z4WVZ",
                     "hashes": {
-                        "sha512": "3a77ea91ad157cc25e915e0f63b1c99214cc615d6ad97595b33ce990c913cb0237f0d6d692ee52f8dc081919e71e201ac8fdce2fa1c592cad214b1fa0218a20c",
-                        "sha1": "91f16f6e12c857227f40a847fd54ee7f3c51d2e8"
+                        "sha512": "b079eae30a46d53eec16b9d4dc30c7b876090a29e4e5ac4b291d2bc1b8b7e4673b3378b7cb74c049d750f91cc8762cff5905133d4e45b73484fc1949905bed8a",
+                        "sha1": "5fc4345a5ce9f8e335858f77559641569a8a1ddb"
                     },
                     "required_dependencies": [],
-                    "size": 275230,
-                    "date_published": "2025-10-01T23:55:00.042198Z"
+                    "size": 286108,
+                    "date_published": "2025-11-27T22:09:27.856583Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "BadOptimizations-2.4.0-1.21.6-21.8.jar",
+                    "mc_versions": [
+                        "1.21.8",
+                        "1.21.6",
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7269/263/BadOptimizations-2.4.0-1.21.6-21.8.jar",
+                    "id": "7269263",
+                    "parent_id": "949555",
+                    "hashes": {
+                        "sha1": "5fc4345a5ce9f8e335858f77559641569a8a1ddb",
+                        "md5": "79eca8fa5636d854c223d43801206962"
+                    },
+                    "required_dependencies": [],
+                    "size": 286108,
+                    "date_published": "2025-11-27T22:09:27.683Z"
                 }
             ]
         },
         {
-            "pakku_id": "wopyjZOU1TQfxLD5",
+            "pakku_id": "qHqzldjGkxfkg0LT",
             "pakku_links": [
-                "vm6urn4ypB0OGUnF",
-                "4dtTsvalV6dWeKbX",
-                "R1cZt9dgVAOXAtE8",
-                "LwqrzSsyxBuQ5jrL"
+                "LwqrzSsyxBuQ5jrL",
+                "R1cZt9dgVAOXAtE8"
             ],
             "type": "MOD",
             "side": "CLIENT",
@@ -231,7 +229,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "bazaarutils-v0.6.0-beta+mc1.21.6.jar",
+                    "file_name": "bazaarutils-v0.6.0-beta.1+mc1.21.6.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
@@ -241,19 +239,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/qxqfV1ja/bazaarutils-v0.6.0-beta+mc1.21.6.jar",
-                    "id": "qxqfV1ja",
+                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/S5YMVNMD/bazaarutils-v0.6.0-beta.1+mc1.21.6.jar",
+                    "id": "S5YMVNMD",
                     "parent_id": "c4u7nzUZ",
                     "hashes": {
-                        "sha512": "ef679e918089e38649d2c26ebea690904cc0742517f82571eddd08607f268a2c050762860bd37798df85443262750bae924618fcdd82ed26f3c77cd31dad471b",
-                        "sha1": "3b9a3b90038f6deb5c1ab9e2dc27ee4f87145e7c"
+                        "sha512": "4c8a30d8de1d106566045cef1b8d813c8b11f38a4683842d850c502fcf69e9942275209af982a519b7d989d2576dc1a4d181f667879652e6b7e93e274306c422",
+                        "sha1": "093b02227cb2934df4dddceae80d83e368999faf"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "1eAoo2KR"
                     ],
-                    "size": 1611192,
-                    "date_published": "2025-09-21T20:42:15.018523Z"
+                    "size": 1610633,
+                    "date_published": "2025-11-13T22:23:10.206296Z"
                 }
             ]
         },
@@ -483,33 +481,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "chatpatches-8.0-alpha.5+1.21.8-fabric.jar",
-                    "mc_versions": [
-                        "1.21.8",
-                        "1.21.7"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7100/227/chatpatches-8.0-alpha.5+1.21.8-fabric.jar",
-                    "id": "7100227",
-                    "parent_id": "560042",
-                    "hashes": {
-                        "sha1": "18ddbc1739ad40c1e57f4b1a5b6b2992c7b2f805",
-                        "md5": "44288ab93bc2752aacb91a1dddd6d0f7"
-                    },
-                    "required_dependencies": [
-                        "667299",
-                        "306612"
-                    ],
-                    "size": 1535377,
-                    "date_published": "2025-10-12T18:56:27.720Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "chatpatches-8.0-alpha.5+1.21.8-fabric.jar",
+                    "file_name": "chatpatches-8.0-alpha.6+1.21.8-fabric.jar",
                     "mc_versions": [
                         "1.21.7",
                         "1.21.8"
@@ -518,19 +491,44 @@
                         "fabric"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/MOqt4Z5n/versions/mNmuDtjy/chatpatches-8.0-alpha.5+1.21.8-fabric.jar",
-                    "id": "mNmuDtjy",
+                    "url": "https://cdn.modrinth.com/data/MOqt4Z5n/versions/VuX1THAF/chatpatches-8.0-alpha.6+1.21.8-fabric.jar",
+                    "id": "VuX1THAF",
                     "parent_id": "MOqt4Z5n",
                     "hashes": {
-                        "sha512": "46039c227e609b451b39d90a1d9cc1502b666bb471659553b2196c08c3c62c9f312b16b1d0d090b39c94b65a4921cc746ff8bcfdbc58e442b8d1add3d65bed5f",
-                        "sha1": "18ddbc1739ad40c1e57f4b1a5b6b2992c7b2f805"
+                        "sha512": "1de50c537bf354d7d80244b8d80d1c308670486bb04ce9973d1a7fd86a8c2d39a464e526f4828b9788deef55e677aab9bbf2807e3290e8ad1c68f58db8fa2bd4",
+                        "sha1": "d850d9f7caecc656943a85729d5f7ce4f343f0c3"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "1eAoo2KR"
+                        "1eAoo2KR",
+                        "P7dR8mSH"
                     ],
-                    "size": 1535377,
-                    "date_published": "2025-10-12T18:56:29.930259Z"
+                    "size": 1470341,
+                    "date_published": "2025-11-23T08:21:29.791629Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "chatpatches-8.0-alpha.6+1.21.8-fabric.jar",
+                    "mc_versions": [
+                        "1.21.8",
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/7252/533/chatpatches-8.0-alpha.6+1.21.8-fabric.jar",
+                    "id": "7252533",
+                    "parent_id": "560042",
+                    "hashes": {
+                        "sha1": "d850d9f7caecc656943a85729d5f7ce4f343f0c3",
+                        "md5": "3729a0bca228bca88f53a28d1328ff64"
+                    },
+                    "required_dependencies": [
+                        "667299",
+                        "306612"
+                    ],
+                    "size": 1470341,
+                    "date_published": "2025-11-23T08:21:27.460Z"
                 }
             ]
         },
@@ -809,6 +807,32 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "continuity-3.0.1-beta.1+1.21.6.jar",
+                    "mc_versions": [
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/1IjD5062/versions/m0cvWhzT/continuity-3.0.1-beta.1+1.21.6.jar",
+                    "id": "m0cvWhzT",
+                    "parent_id": "1IjD5062",
+                    "hashes": {
+                        "sha512": "95b1a4529d8e4a7154dc82294e4733d629aef1025a2ecaa48f04f4976e02e8e15ac0b2a35b56762e07f51dbebe59dce12e4b40d0291924e70490f91e1a67daed",
+                        "sha1": "4bc922092c48b211e1981ef3403148f24313590a"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 994756,
+                    "date_published": "2025-07-07T17:04:19.260430Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "continuity-3.0.1-beta.1+1.21.6.jar",
                     "mc_versions": [
@@ -833,32 +857,6 @@
                     ],
                     "size": 994756,
                     "date_published": "2025-07-07T17:05:25.167Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "continuity-3.0.1-beta.1+1.21.6.jar",
-                    "mc_versions": [
-                        "1.21.6",
-                        "1.21.7",
-                        "1.21.8"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/1IjD5062/versions/m0cvWhzT/continuity-3.0.1-beta.1+1.21.6.jar",
-                    "id": "m0cvWhzT",
-                    "parent_id": "1IjD5062",
-                    "hashes": {
-                        "sha512": "95b1a4529d8e4a7154dc82294e4733d629aef1025a2ecaa48f04f4976e02e8e15ac0b2a35b56762e07f51dbebe59dce12e4b40d0291924e70490f91e1a67daed",
-                        "sha1": "4bc922092c48b211e1981ef3403148f24313590a"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 994756,
-                    "date_published": "2025-07-07T17:04:19.260430Z"
                 }
             ]
         },
@@ -1235,7 +1233,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fabric-api-0.136.0+1.21.8.jar",
+                    "file_name": "fabric-api-0.136.1+1.21.8.jar",
                     "mc_versions": [
                         "1.21.8"
                     ],
@@ -1243,20 +1241,20 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/RMahJx2I/fabric-api-0.136.0+1.21.8.jar",
-                    "id": "RMahJx2I",
+                    "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/g58ofrov/fabric-api-0.136.1+1.21.8.jar",
+                    "id": "g58ofrov",
                     "parent_id": "P7dR8mSH",
                     "hashes": {
-                        "sha512": "a86801cac8e2a14c52a13705a6475525c9ade3f3bef053914dcce5f5ccde3854123c544aeca6cf56b75a191f6e359a1b9bd33b314f0762f783a3aa1b94ba57e8",
-                        "sha1": "ee07ecc1493280ccf1f3df59c554ae83a5e97df6"
+                        "sha512": "eb1a6b5fc9912c68409493f10f43c3b61adda1d789ede9c83b16d0a95a2eb96bd630472866e163960479eb1b4d1196d09ade5aadc9da62624e800640c706c4a9",
+                        "sha1": "56a377bdbf4d83a90d6863ca91b4776f7f09a46b"
                     },
                     "required_dependencies": [],
-                    "size": 2264741,
-                    "date_published": "2025-10-18T10:32:47.680219Z"
+                    "size": 2269700,
+                    "date_published": "2025-11-16T13:44:01.288900Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "fabric-api-0.136.0+1.21.8.jar",
+                    "file_name": "fabric-api-0.136.1+1.21.8.jar",
                     "mc_versions": [
                         "1.21.8"
                     ],
@@ -1264,16 +1262,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7120/268/fabric-api-0.136.0+1.21.8.jar",
-                    "id": "7120268",
+                    "url": "https://edge.forgecdn.net/files/7228/829/fabric-api-0.136.1+1.21.8.jar",
+                    "id": "7228829",
                     "parent_id": "306612",
                     "hashes": {
-                        "sha1": "ee07ecc1493280ccf1f3df59c554ae83a5e97df6",
-                        "md5": "69df9a1ce900a8e1fd155e435069ee2c"
+                        "sha1": "56a377bdbf4d83a90d6863ca91b4776f7f09a46b",
+                        "md5": "85d76d57a7b5bb7043ea815133d2f6ba"
                     },
                     "required_dependencies": [],
-                    "size": 2264741,
-                    "date_published": "2025-10-18T10:28:02.870Z"
+                    "size": 2269700,
+                    "date_published": "2025-11-16T13:43:57.610Z"
                 }
             ]
         },
@@ -1888,6 +1886,50 @@
             ]
         },
         {
+            "pakku_id": "FrPVb7GCD5qOQQeY",
+            "pakku_links": [
+                "LwqrzSsyxBuQ5jrL",
+                "u21GioexhaOLM8HV"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "krypt"
+            },
+            "name": {
+                "modrinth": "Krypt"
+            },
+            "id": {
+                "modrinth": "Orh2YGoo"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Krypt-1.0.1+1.21.8-fabric.jar",
+                    "mc_versions": [
+                        "1.21.8"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Orh2YGoo/versions/wIYVwHKn/Krypt-1.0.1+1.21.8-fabric.jar",
+                    "id": "wIYVwHKn",
+                    "parent_id": "Orh2YGoo",
+                    "hashes": {
+                        "sha512": "fa5eaa532f1e604edbb364539dffd1313ab7dd8446358ec03b0481f6cb4277697a5ce10470408e7fa39c219e07e9454625eb170764eec0aae4faec6bf382fccd",
+                        "sha1": "fb2fedbbcf5e449044fbe1d98075112d0443e230"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "Ha28R6CL"
+                    ],
+                    "size": 13153506,
+                    "date_published": "2025-11-28T06:49:58.852760Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "X4tVfP6qc78SozCo",
             "type": "MOD",
             "side": "BOTH",
@@ -1948,34 +1990,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "language-reload-1.7.4+1.21.6.jar",
-                    "mc_versions": [
-                        "1.21.8",
-                        "1.21.7",
-                        "1.21.6"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6662/307/language-reload-1.7.4+1.21.6.jar",
-                    "id": "6662307",
-                    "parent_id": "527334",
-                    "hashes": {
-                        "sha1": "91eb0a3e6cbdf5bb733890a727d67c8ff2ed8f59",
-                        "md5": "4a2f3ff0e9083072f7ed74b780faf174"
-                    },
-                    "required_dependencies": [
-                        "306612"
-                    ],
-                    "size": 75005,
-                    "date_published": "2025-06-17T18:12:44.767Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "language-reload-1.7.4+1.21.6.jar",
+                    "file_name": "language-reload-1.7.5+1.21.8.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
@@ -1986,18 +2002,44 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/uLbm7CG6/versions/W8KDnevt/language-reload-1.7.4+1.21.6.jar",
-                    "id": "W8KDnevt",
+                    "url": "https://cdn.modrinth.com/data/uLbm7CG6/versions/aLXF2Nb4/language-reload-1.7.5+1.21.8.jar",
+                    "id": "aLXF2Nb4",
                     "parent_id": "uLbm7CG6",
                     "hashes": {
-                        "sha512": "7580c2f7293c6ceb8b5994ec954c54f684c92ab4385ebb52af17ca0c170b7118960d90b0e2a90a172a3530d2f96f3660d26cc62e32a02cafecc7bbe92b80a2e4",
-                        "sha1": "91eb0a3e6cbdf5bb733890a727d67c8ff2ed8f59"
+                        "sha512": "a5214ec8a16a6b4df60da191830e487c5748f0a66ac882f6b0b37cc5bf2fb9414efe9f448b5c5b9dde7bf0d1c2d9fae20bb4a335b05374c5c5d12af3dd2c2458",
+                        "sha1": "7ef9cef63a57e60bc04d64f9cdaf5b1e67ec9fe7"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 75005,
-                    "date_published": "2025-06-17T18:12:48.129863Z"
+                    "size": 74623,
+                    "date_published": "2025-11-12T06:30:14.787090Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "language-reload-1.7.5+1.21.8.jar",
+                    "mc_versions": [
+                        "1.21.8",
+                        "1.21.6",
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7213/336/language-reload-1.7.5+1.21.8.jar",
+                    "id": "7213336",
+                    "parent_id": "527334",
+                    "hashes": {
+                        "sha1": "7ef9cef63a57e60bc04d64f9cdaf5b1e67ec9fe7",
+                        "md5": "2fd43b08d9d4c81a02eab52a929042bd"
+                    },
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 74623,
+                    "date_published": "2025-11-12T06:30:11.753Z"
                 }
             ]
         },
@@ -2086,33 +2128,6 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "modmenu-15.0.0.jar",
-                    "mc_versions": [
-                        "1.21.8",
-                        "1.21.7",
-                        "1.21.6"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6946/98/modmenu-15.0.0.jar",
-                    "id": "6946098",
-                    "parent_id": "308702",
-                    "hashes": {
-                        "sha1": "b22a1a02a13642ec707d01bb8b14a21188d6d6fa",
-                        "md5": "f8a86f5d8faf85c41150481d816b4adf"
-                    },
-                    "required_dependencies": [
-                        "1037459",
-                        "306612"
-                    ],
-                    "size": 1083202,
-                    "date_published": "2025-08-30T20:06:41.493Z"
-                },
-                {
                     "type": "modrinth",
                     "file_name": "modmenu-15.0.0.jar",
                     "mc_versions": [
@@ -2138,6 +2153,33 @@
                     ],
                     "size": 1083202,
                     "date_published": "2025-08-30T20:06:39.007885Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "modmenu-15.0.0.jar",
+                    "mc_versions": [
+                        "1.21.8",
+                        "1.21.6",
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6946/98/modmenu-15.0.0.jar",
+                    "id": "6946098",
+                    "parent_id": "308702",
+                    "hashes": {
+                        "sha1": "b22a1a02a13642ec707d01bb8b14a21188d6d6fa",
+                        "md5": "f8a86f5d8faf85c41150481d816b4adf"
+                    },
+                    "required_dependencies": [
+                        "306612",
+                        "1037459"
+                    ],
+                    "size": 1083202,
+                    "date_published": "2025-08-30T20:06:41.493Z"
                 }
             ]
         },
@@ -2546,29 +2588,27 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "PackCore-3.1.0+1.21.8-fabric.jar",
+                    "file_name": "packcore-3.2.3+1.21.8.jar",
                     "mc_versions": [
-                        "1.21.6",
-                        "1.21.7",
                         "1.21.8"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/P07E0VbS/PackCore-3.1.0+1.21.8-fabric.jar",
-                    "id": "P07E0VbS",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/meQcDDRw/packcore-3.2.3+1.21.8.jar",
+                    "id": "meQcDDRw",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "05384a22fc8173d8c69a100a9074d607f9c0536b004f4748efb04a855c07456e7d0b4babdc25538c69cd2484c3ddac302510b17d14ba696fe53759dfd90565c4",
-                        "sha1": "d1ebfc70ab3a5e149910681499dc2565424ea643"
+                        "sha512": "b2db060db5385d3f8ab1947f81ffa16265dce2a8677910452d08709d1002e449e7c46e3a32d19ddb44b9c5ac28c5ba8c979b26accc791520d4b8013acd28aa47",
+                        "sha1": "6142fb050cb4c49cb726cdc9a6e18b24bce210d9"
                     },
                     "required_dependencies": [
-                        "ccKDOlHs",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "ccKDOlHs"
                     ],
-                    "size": 13087817,
-                    "date_published": "2025-11-03T14:50:56.077269Z"
+                    "size": 13102663,
+                    "date_published": "2025-11-28T11:30:19.319611Z"
                 }
             ]
         },
@@ -2843,7 +2883,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scaleme-2.2.0+1.21.8.jar",
+                    "file_name": "scaleme-2.2.3+1.21.8.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
@@ -2853,19 +2893,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pEGu9f0K/versions/W4lKOkdT/scaleme-2.2.0+1.21.8.jar",
-                    "id": "W4lKOkdT",
+                    "url": "https://cdn.modrinth.com/data/pEGu9f0K/versions/Vt3r4n3x/scaleme-2.2.3+1.21.8.jar",
+                    "id": "Vt3r4n3x",
                     "parent_id": "pEGu9f0K",
                     "hashes": {
-                        "sha512": "384fe9eb9ef23088216bb726fe4e1fa983b83a775785ba5279959efc6bda4766e11eede10f0183542a0ba25bf26f900fd07bc736344aa36ef5554fb5a17c54c3",
-                        "sha1": "c29ad3dcf644478ebd8d35927f03c014ee5907a8"
+                        "sha512": "3b599c270ba76e93be762e55060e4ee02efb69cb5a6924aa87cfdaca72ddc013c3cf545a65e769ada7b49bd9fa454418a267f2f9c0252ea84e6b1892456a01a8",
+                        "sha1": "1836d59d82c0e8d7d0dd71922aae3affd80ed33b"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "ccKDOlHs"
+                        "ccKDOlHs",
+                        "P7dR8mSH"
                     ],
-                    "size": 1788683,
-                    "date_published": "2025-11-04T14:55:48.741113Z"
+                    "size": 1789714,
+                    "date_published": "2025-11-25T17:27:29.826404Z"
                 }
             ]
         },
@@ -3031,7 +3071,9 @@
                         "1.21.5",
                         "1.21.6",
                         "1.21.7",
-                        "1.21.8"
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10"
                     ],
                     "loaders": [
                         "minecraft"
@@ -3122,27 +3164,27 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-5.0.0-mc1.21.8.jar",
+                    "file_name": "SkyHanni-5.4.0-mc1.21.8.jar",
                     "mc_versions": [
                         "1.21.8"
                     ],
                     "loaders": [
                         "fabric"
                     ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/mbBWSszV/SkyHanni-5.0.0-mc1.21.8.jar",
-                    "id": "mbBWSszV",
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/AhIA0FYG/SkyHanni-5.4.0-mc1.21.8.jar",
+                    "id": "AhIA0FYG",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "4cd4336bddcf7efa9e4474d5f73e5ecf197eeb815d02830c2564ec1a5796f0a2f6505e432a0790494734beb22c02a5b4af20d2bd7e7b8dc58ba25de694c5416d",
-                        "sha1": "923fd94653fdde1a2db521f42ae022460e020b4a"
+                        "sha512": "38988d7f800b9bcfb518743fcdbe0890fb730dcda985542f8e4412f310302d66c5a72e421bacbbd321ec32ac992d0a69b0b132d3d0d599d38ca864288b43af6d",
+                        "sha1": "b42f0c1ccb758078da2e758da078c54a1125a20e"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 31083393,
-                    "date_published": "2025-11-02T08:45:11.961853Z"
+                    "size": 31427129,
+                    "date_published": "2025-11-29T10:13:59.232342Z"
                 }
             ]
         },
@@ -3168,7 +3210,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyOcean-1.10.1-1.21.8.jar",
+                    "file_name": "SkyOcean-1.11.1-1.21.8.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
@@ -3178,19 +3220,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/wl1sBF3I/SkyOcean-1.10.1-1.21.8.jar",
-                    "id": "wl1sBF3I",
+                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/8Kvo9JHt/SkyOcean-1.11.1-1.21.8.jar",
+                    "id": "8Kvo9JHt",
                     "parent_id": "dIczrQAR",
                     "hashes": {
-                        "sha512": "cc25bffb8c08f262eb79873b1a0fb50351aa7b1ac63376549c9d0a035511c31e4654a2baf7dd37e2ca7e9ba5bde5c0ff2505810e7288dd2ee52eca822e83b8b6",
-                        "sha1": "dfba92cf6d1cf0dcd499af1c6c597ce73de942c8"
+                        "sha512": "652f48c5e564e62675ec8f526d644d821a901d32d141684afcc22e74c3979f403d12462ef7b91a0b6de5b66d7dde02415f64d777aa1ae44e2d58b59cc27e1410",
+                        "sha1": "af94d91ada6d689c6b4500668d0c650f37ae2d64"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 9729875,
-                    "date_published": "2025-10-25T22:55:33.533545Z"
+                    "size": 9956396,
+                    "date_published": "2025-11-24T09:56:32.424616Z"
                 }
             ]
         },
@@ -3210,7 +3252,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Skyblock Dark UI 1.6.1 for 1.21.5+.zip",
+                    "file_name": "Skyblock Dark UI 1.7 for 1.21.5+.zip",
                     "mc_versions": [
                         "1.21.5",
                         "1.21.6",
@@ -3221,16 +3263,61 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ed25eRJG/versions/6KkbGpqu/Skyblock Dark UI 1.6.1 for 1.21.5+.zip",
-                    "id": "6KkbGpqu",
+                    "url": "https://cdn.modrinth.com/data/Ed25eRJG/versions/ou8ZTtCW/Skyblock Dark UI 1.7 for 1.21.5+.zip",
+                    "id": "ou8ZTtCW",
                     "parent_id": "Ed25eRJG",
                     "hashes": {
-                        "sha512": "1f413fd8c1a0a0912c2b78e1c4ab4bef7f4a6a2c8aede2c6e1ecae860df8a837b3231679931f56406dc15f9617cd00aa3a6c1079784528b76ef70d41a1c01aae",
-                        "sha1": "83e83e86edfb640ad9161298dfa43531c0337ce6"
+                        "sha512": "468647b40bba1143a0133e0cc1aae224c3c642264cb9d247248c652318072a3c38b07ced5c2ed5066be6faf333958d3f56ff81c02fcd23a57139c917d485d44c",
+                        "sha1": "f75724f263a91d3a31af7210406472961f22116c"
                     },
                     "required_dependencies": [],
-                    "size": 190047,
-                    "date_published": "2025-10-30T17:18:43.574785Z"
+                    "size": 192777,
+                    "date_published": "2025-11-30T08:36:37.811921Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "uJW2HsuUxbmH0Anb",
+            "pakku_links": [
+                "LwqrzSsyxBuQ5jrL",
+                "u21GioexhaOLM8HV"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "skyblock-overhaul"
+            },
+            "name": {
+                "modrinth": "Skyblock Overhaul (SBO)"
+            },
+            "id": {
+                "modrinth": "9lBqVbQF"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "SBO-beta0.1.3+1.21.7-fabric.jar",
+                    "mc_versions": [
+                        "1.21.7",
+                        "1.21.8"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/CfQMbeBS/SBO-beta0.1.3+1.21.7-fabric.jar",
+                    "id": "CfQMbeBS",
+                    "parent_id": "9lBqVbQF",
+                    "hashes": {
+                        "sha512": "89a2295d79163f303ff234ac29b41232c5f6e290fd4a64500237aaa8341b135fee8bd7fd8d687afe0fce0ae5fb596ce38f3a4a837bf061465bc491e971e1a5cb",
+                        "sha1": "353d03fc061a5f6fc1084378e29c295c3a6405dd"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "Ha28R6CL"
+                    ],
+                    "size": 4271150,
+                    "date_published": "2025-11-11T10:51:02.943785Z"
                 }
             ]
         },
@@ -3306,7 +3393,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblocker-5.8.0+1.21.8.jar",
+                    "file_name": "skyblocker-5.9.0+1.21.8.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
@@ -3316,43 +3403,45 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/ojOvcUWe/skyblocker-5.8.0+1.21.8.jar",
-                    "id": "ojOvcUWe",
+                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/3Pg48g99/skyblocker-5.9.0+1.21.8.jar",
+                    "id": "3Pg48g99",
                     "parent_id": "y6DuFGwJ",
                     "hashes": {
-                        "sha512": "f5f2d7fe8c19cc724f0fd35a6c930ae1b7ac3a8ff4917fa6727859259b731da1bca86adab3e64e4c41de6f16cdaf47adeefa66bb8b079418c92e2a09bc469c4f",
-                        "sha1": "72e1fe8e1505089dbc95fb7fc294f22dfd24ddc6"
+                        "sha512": "f51f1ebd3097f2c818635b33bdece1c052b8914c8755d2a1a18b9ae893f40ef27520867f9d1afb085cb07bd0bb32971f57a12357a231cddbae57efce08afe0a2",
+                        "sha1": "459d0ca88e1757aa3b9816142004a2ab97f3bc8f"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
                         "P7dR8mSH"
                     ],
-                    "size": 17827271,
-                    "date_published": "2025-10-18T00:50:54.344596Z"
+                    "size": 18125634,
+                    "date_published": "2025-11-20T20:42:23.843955Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblocker-5.8.0+1.21.8.jar",
+                    "file_name": "skyblocker-5.9.0+1.21.8.jar",
                     "mc_versions": [
-                        "1.21.8"
+                        "1.21.8",
+                        "1.21.6",
+                        "1.21.7"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7119/14/skyblocker-5.8.0+1.21.8.jar",
-                    "id": "7119014",
+                    "url": "https://edge.forgecdn.net/files/7243/653/skyblocker-5.9.0+1.21.8.jar",
+                    "id": "7243653",
                     "parent_id": "936169",
                     "hashes": {
-                        "sha1": "72e1fe8e1505089dbc95fb7fc294f22dfd24ddc6",
-                        "md5": "a0ab1a8e80011815359121f19261b74f"
+                        "sha1": "459d0ca88e1757aa3b9816142004a2ab97f3bc8f",
+                        "md5": "00cc2e20a5512484ec859a4521ded457"
                     },
                     "required_dependencies": [
                         "306612",
                         "308769"
                     ],
-                    "size": 17827271,
-                    "date_published": "2025-10-18T00:50:53.053Z"
+                    "size": 18125634,
+                    "date_published": "2025-11-20T20:48:55.770Z"
                 }
             ]
         },
@@ -3374,32 +3463,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "sodium-fabric-0.7.2+mc1.21.8.jar",
-                    "mc_versions": [
-                        "1.21.8",
-                        "1.21.7",
-                        "1.21.6"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7088/172/sodium-fabric-0.7.2+mc1.21.8.jar",
-                    "id": "7088172",
-                    "parent_id": "394468",
-                    "hashes": {
-                        "sha1": "ee58562bc918993d62ca457e46b2782fbdde3aaf",
-                        "md5": "5f81ed6bffbbd3c59707916941fccae8"
-                    },
-                    "required_dependencies": [],
-                    "size": 1620053,
-                    "date_published": "2025-10-09T20:41:29.983Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "sodium-fabric-0.7.2+mc1.21.8.jar",
+                    "file_name": "sodium-fabric-0.7.3+mc1.21.8.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
@@ -3410,16 +3475,40 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/AANobbMI/versions/pJRT8Zxt/sodium-fabric-0.7.2+mc1.21.8.jar",
-                    "id": "pJRT8Zxt",
+                    "url": "https://cdn.modrinth.com/data/AANobbMI/versions/7pwil2dy/sodium-fabric-0.7.3+mc1.21.8.jar",
+                    "id": "7pwil2dy",
                     "parent_id": "AANobbMI",
                     "hashes": {
-                        "sha512": "bd52c2054801191f870fbca6ff3d97aca7bda7c15f0023142102b983ddd4b7454fe10f36cfbe5f7d05cd80c95b34e2a16bddf003508d0761dbb8a565c020865e",
-                        "sha1": "ee58562bc918993d62ca457e46b2782fbdde3aaf"
+                        "sha512": "2c7fe998cd7d20c6decdc944df733db870ab364a64cfdbd4c504c1f4f11d3e41dc1b29555e73fbafc051b4c4fbfbd7b5262d13b9d874f4b1b8860de8aefeac53",
+                        "sha1": "c9ed2b00385ea191e81ea4da51c008755fe90a26"
                     },
                     "required_dependencies": [],
-                    "size": 1620053,
-                    "date_published": "2025-10-09T20:37:15.691991Z"
+                    "size": 1621285,
+                    "date_published": "2025-11-10T18:49:39.796580Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "sodium-fabric-0.7.3+mc1.21.8.jar",
+                    "mc_versions": [
+                        "1.21.8",
+                        "1.21.7",
+                        "1.21.6"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7207/587/sodium-fabric-0.7.3+mc1.21.8.jar",
+                    "id": "7207587",
+                    "parent_id": "394468",
+                    "hashes": {
+                        "sha1": "c9ed2b00385ea191e81ea4da51c008755fe90a26",
+                        "md5": "2e38db8afdf3a8d319658780b7f45501"
+                    },
+                    "required_dependencies": [],
+                    "size": 1621285,
+                    "date_published": "2025-11-10T18:53:46.453Z"
                 }
             ]
         },
@@ -3713,34 +3802,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "tooltip-scroll-1.4.1+1.21.6.jar",
-                    "mc_versions": [
-                        "1.21.8",
-                        "1.21.7",
-                        "1.21.6"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6794/176/tooltip-scroll-1.4.1+1.21.6.jar",
-                    "id": "6794176",
-                    "parent_id": "495546",
-                    "hashes": {
-                        "sha1": "6d0c39452aa0b02ffe9e9bcd8e1d63aca68a6274",
-                        "md5": "ab3a156d9d621f06ad522ca17f2b46fe"
-                    },
-                    "required_dependencies": [
-                        "306612"
-                    ],
-                    "size": 80714,
-                    "date_published": "2025-07-21T07:58:01.600Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "tooltip-scroll-1.4.1+1.21.6.jar",
+                    "file_name": "tooltip-scroll-1.5.0+1.21.6.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
@@ -3751,18 +3814,44 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/wySVd6d8/versions/c5oNZQPv/tooltip-scroll-1.4.1+1.21.6.jar",
-                    "id": "c5oNZQPv",
+                    "url": "https://cdn.modrinth.com/data/wySVd6d8/versions/3JQ3ZpO1/tooltip-scroll-1.5.0+1.21.6.jar",
+                    "id": "3JQ3ZpO1",
                     "parent_id": "wySVd6d8",
                     "hashes": {
-                        "sha512": "bacab9746bbdc7940d4f997135094315ed0650a459e64f71d2e5722186d0f0ddbf9a6bab47fbb0c63ac90b608f6a8f5f7fd9117b21189455ccc214dbae39c7cb",
-                        "sha1": "6d0c39452aa0b02ffe9e9bcd8e1d63aca68a6274"
+                        "sha512": "834b8377591a388ee8f82a644e551cddb0e6f90a2b10c5d99751784f8d8af144571aa53300e6a98aa4228adb05b6f1ce71c4e8f3d2f0bad56bb1675cfb4af156",
+                        "sha1": "650979826779c859820d63633184310e3e5d2d0b"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 80714,
-                    "date_published": "2025-07-21T07:58:01.595590Z"
+                    "size": 81205,
+                    "date_published": "2025-11-13T23:03:25.155402Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "tooltip-scroll-1.5.0+1.21.6.jar",
+                    "mc_versions": [
+                        "1.21.8",
+                        "1.21.6",
+                        "1.21.7"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7219/384/tooltip-scroll-1.5.0+1.21.6.jar",
+                    "id": "7219384",
+                    "parent_id": "495546",
+                    "hashes": {
+                        "sha1": "650979826779c859820d63633184310e3e5d2d0b",
+                        "md5": "10a5d64bdee41a8837fbb202ed97d1fb"
+                    },
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 81205,
+                    "date_published": "2025-11-13T23:03:24.020Z"
                 }
             ]
         },
@@ -3850,7 +3939,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "waveycapes-fabric-1.7.0-mc1.21.8.jar",
+                    "file_name": "waveycapes-fabric-1.8.0-mc1.21.8.jar",
                     "mc_versions": [
                         "1.21.8"
                     ],
@@ -3858,22 +3947,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/kYuIpRLv/versions/AlxiQAQb/waveycapes-fabric-1.7.0-mc1.21.8.jar",
-                    "id": "AlxiQAQb",
+                    "url": "https://cdn.modrinth.com/data/kYuIpRLv/versions/k0zMjAA1/waveycapes-fabric-1.8.0-mc1.21.8.jar",
+                    "id": "k0zMjAA1",
                     "parent_id": "kYuIpRLv",
                     "hashes": {
-                        "sha512": "a691c5fc2f620d0f135efbfc0bb30193cef301693b60976e96eecac106c1f0482b712fb7b46a916e44076648b3197406c82aaebf98a57d538d31e1c0eb7f5f39",
-                        "sha1": "43d0807bcd4bb66bcde177244f65c884eb577fd2"
+                        "sha512": "f510c1e95c65af6aa1d5a79557cfb7e76c4e33b9f6350698e2480d978140cff0b410eacc109570c08bd594f2d9d3834cffbc3f9c0932169b50b0c543dfa05a03",
+                        "sha1": "cedf97981cec76be746fd225e1bb192f1d9a82b7"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 743263,
-                    "date_published": "2025-10-30T20:38:56.756302Z"
+                    "size": 1826190,
+                    "date_published": "2025-11-12T19:02:11.398772Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "waveycapes-fabric-1.7.0-mc1.21.8.jar",
+                    "file_name": "waveycapes-fabric-1.8.0-mc1.21.8.jar",
                     "mc_versions": [
                         "1.21.8"
                     ],
@@ -3881,18 +3970,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7168/160/waveycapes-fabric-1.7.0-mc1.21.8.jar",
-                    "id": "7168160",
+                    "url": "https://edge.forgecdn.net/files/7215/251/waveycapes-fabric-1.8.0-mc1.21.8.jar",
+                    "id": "7215251",
                     "parent_id": "521594",
                     "hashes": {
-                        "sha1": "43d0807bcd4bb66bcde177244f65c884eb577fd2",
-                        "md5": "4d1ef4d21c7bdef2e4208b750aaba576"
+                        "sha1": "cedf97981cec76be746fd225e1bb192f1d9a82b7",
+                        "md5": "c848400f1b85f30b045cb69252b1acdd"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 743263,
-                    "date_published": "2025-10-30T20:38:55.213Z"
+                    "size": 1826190,
+                    "date_published": "2025-11-12T19:02:09.113Z"
                 }
             ]
         },
@@ -3989,27 +4078,28 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "zen-1.21.8-fabric-1.2.0.jar",
+                    "file_name": "zen-1.21.8-fabric-1.2.1.jar",
                     "mc_versions": [
+                        "1.21.7",
                         "1.21.8"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/stWFyj4m/versions/H8VXRx5G/zen-1.21.8-fabric-1.2.0.jar",
-                    "id": "H8VXRx5G",
+                    "url": "https://cdn.modrinth.com/data/stWFyj4m/versions/8mOWInE1/zen-1.21.8-fabric-1.2.1.jar",
+                    "id": "8mOWInE1",
                     "parent_id": "stWFyj4m",
                     "hashes": {
-                        "sha512": "9fd9d3e913dca9f68f9759bbb27f43bedf0e923217f48917923b9729834f3eb2148d5d43344dd9c04fa52b88e5bb8c94c2193af6ad54f72da965dcb4e8659913",
-                        "sha1": "1f10b34092bbb47686bf1b9f9796298cf9853730"
+                        "sha512": "500543db40db2a393a0cf196d2a505bb59aee15d88e61e4f3ced8f42820a0979dfe105159760698c29f9bd3108076e1d29aba815083e057bd83cfbd23ff75680",
+                        "sha1": "3eb3520ceaa7abefeece280705fef53bce1aeb13"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 12109895,
-                    "date_published": "2025-11-06T11:38:55.530574Z"
+                    "size": 9632089,
+                    "date_published": "2025-11-26T13:39:57.171246Z"
                 }
             ]
         },
@@ -4195,6 +4285,37 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "§dlooshy §7[§f1.21.x§7] [v0.9.6].zip",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1",
+                        "1.21.2",
+                        "1.21.3",
+                        "1.21.4",
+                        "1.21.5",
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/pbipt9Sm/versions/8DTLGGlm/§dlooshy §7[§f1.21.x§7] [v0.9.6].zip",
+                    "id": "8DTLGGlm",
+                    "parent_id": "pbipt9Sm",
+                    "hashes": {
+                        "sha512": "27b01454c21bada7ad90ac732697ef4cdc288da43c4008148ca5b8fbf5fa9b6c262f1124ff9575a46b725d38b8e0bd20e8cb3bb0d194c2c415dd6ec3db62957a",
+                        "sha1": "b514e67c9d03fb503d0c6f062e53b8d2275feb4c"
+                    },
+                    "required_dependencies": [],
+                    "size": 4789212,
+                    "date_published": "2025-11-29T03:41:51.926159Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "§dlooshy §7[§f1.21.x§7] [v0.9.1].zip",
                     "mc_versions": [
@@ -4221,37 +4342,6 @@
                     "required_dependencies": [],
                     "size": 4546098,
                     "date_published": "2025-10-16T01:36:03.580Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "§dlooshy §7[§f1.21.x§7] [v0.9.1].zip",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.1",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5",
-                        "1.21.6",
-                        "1.21.7",
-                        "1.21.8",
-                        "1.21.9",
-                        "1.21.10"
-                    ],
-                    "loaders": [
-                        "minecraft"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pbipt9Sm/versions/8IOueHT3/§dlooshy §7[§f1.21.x§7] [v0.9.1].zip",
-                    "id": "8IOueHT3",
-                    "parent_id": "pbipt9Sm",
-                    "hashes": {
-                        "sha512": "32bf909a47d142ad4a2f598cd9cef5593098bf57e465f62c9401c299fa646c80b75c91962dc41e727ab3a96f8805d2e774e72d7bff5d8e06a009f4cc413b7e1b",
-                        "sha1": "3927aad2cc4fac52bcd4b95e2b27d14ba7d0f53d"
-                    },
-                    "required_dependencies": [],
-                    "size": 4546098,
-                    "date_published": "2025-10-16T00:24:22.743080Z"
                 }
             ]
         },
