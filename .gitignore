@@ -12,10 +12,12 @@ SkyBlock_Enhanced_Legacy_Edition/*.txt
 # Ignore docs folder
 SkyBlock_Enhanced_Modern_Edition_1.21.5/.pakku/docs/
 SkyBlock_Enhanced_Modern_Edition_1.21.8/.pakku/docs/
+SkyBlock_Enhanced_Modern_Edition_1.21.10/.pakku/docs/
 
 # Ignore build folders
 SkyBlock_Enhanced_Modern_Edition_1.21.5/build/
 SkyBlock_Enhanced_Modern_Edition_1.21.8/build/
+SkyBlock_Enhanced_Modern_Edition_1.21.10/build/
 
 # Ignore mods, resourcepacks, and shaderpacks
 SkyBlock_Enhanced_Modern_Edition_1.21.5/mods/
@@ -25,3 +27,7 @@ SkyBlock_Enhanced_Modern_Edition_1.21.5/shaderpacks/
 SkyBlock_Enhanced_Modern_Edition_1.21.8/mods/
 SkyBlock_Enhanced_Modern_Edition_1.21.8/resourcepacks/
 SkyBlock_Enhanced_Modern_Edition_1.21.8/shaderpacks/
+
+SkyBlock_Enhanced_Modern_Edition_1.21.10/mods/
+SkyBlock_Enhanced_Modern_Edition_1.21.10/resourcepacks/
+SkyBlock_Enhanced_Modern_Edition_1.21.10/shaderpacks/
