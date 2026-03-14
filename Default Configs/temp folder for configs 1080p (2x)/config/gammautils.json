@@ -1,0 +1,87 @@
+{
+  "gamma": {
+    "value": 15.0,
+    "defaultGamma": 1500,
+    "toggledGamma": 1500,
+    "updateToggle": false,
+    "gammaStep": 10,
+    "showStatusEffect": false,
+    "resetOnClose": false,
+    "transition": {
+      "smoothTransition": false,
+      "transitionSpeed": 3000
+    },
+    "dynamic": {
+      "enabled": false,
+      "paused": false,
+      "minGamma": 100,
+      "maxGamma": 1000,
+      "transitionSpeed": 200,
+      "averagingLightRange": 8,
+      "skyBrightnessOverride": 0
+    },
+    "dimensionPreference": {
+      "enabled": false,
+      "overworldPreference": 1500,
+      "netherPreference": 1500,
+      "endPreference": 1500
+    },
+    "limiter": {
+      "limitCheck": true,
+      "minGamma": -750,
+      "maxGamma": 1500
+    },
+    "hudMessage": {
+      "showMessage": true,
+      "defaultColor": 43520,
+      "positiveColor": 16755200,
+      "negativeColor": 11141120
+    }
+  },
+  "nightVision": {
+    "enabled": true,
+    "value": 100.0,
+    "toggledNightVision": 1500,
+    "updateToggle": false,
+    "nightVisionStep": 2,
+    "brightenFogColor": true,
+    "showStatusEffect": false,
+    "resetOnClose": false,
+    "transition": {
+      "smoothTransition": false,
+      "transitionSpeed": 200
+    },
+    "dynamic": {
+      "enabled": false,
+      "paused": false,
+      "minNightVision": 0,
+      "maxNightVision": 100,
+      "transitionSpeed": 15,
+      "averagingLightRange": 8,
+      "skyBrightnessOverride": 0
+    },
+    "dimensionPreference": {
+      "enabled": false,
+      "overworldPreference": 100,
+      "netherPreference": 100,
+      "endPreference": 100
+    },
+    "limiter": {
+      "limitCheck": true,
+      "minNightVision": 0,
+      "maxNightVision": 100,
+      "gammaCompatibility": true
+    },
+    "hudMessage": {
+      "showMessage": true,
+      "defaultColor": 43520,
+      "positiveColor": 16755200,
+      "negativeColor": 11141120,
+      "enabledColor": 43520,
+      "disabledColor": 11141120
+    }
+  },
+  "other": {
+    "namespacedCommands": false
+  }
+}

@@ -1,0 +1,457 @@
+{
+    // The version of the config file. Do not change this unless you know what you are doing.
+    "rconfig:version": 9,
+    "disableMessageTextShadow": true,
+    // Valid Values: DEFAULT, RAINBOW, BISEXUAL, GAY, LESBIAN, PANSEXUAL, ASEXUAL, NON_BINARY, TRANS, DISABLED
+    "prefixGradient": "DEFAULT",
+    "clickablePrefix": true,
+    // Valid Values: PREFIX, SUFFIX, LORE, NOTHING
+    "modifyIndicator": "PREFIX",
+    "chat": {
+        "enableProfileInChat": true,
+        "whiteNonMessage": false,
+        "piggyRepairHelper": true,
+        "enableSackNotification": true,
+        "sackNotificationItems": [
+            "Glossy Gemstone"
+        ]
+    },
+    "slayer": {},
+    "fishing": {
+        "enableTrophyNumbers": false,
+        // Range: 0.25 - 5
+        "hookTextScale": 1.0,
+        "lavaReplacement": false,
+        "fixBobber": true,
+        "bobberTime": false,
+        "hideOtherBobbers": false,
+        "hotspot": {
+            "warning": false,
+            "circleSurface": true,
+            "circleOutline": true,
+            // Range: 0 - 100
+            "surfaceTransparency": 50,
+            // Range: 0 - 100
+            "outlineTransparency": 100
+        }
+    },
+    "foraging": {
+        "hotfStackSize": false,
+        "hotfTotalProgress": true,
+        "hotfDisplayShiftCost": true,
+        "hotfDisplayTotalLeft": true,
+        "hotfReminder": true,
+        "reminderTitle": true,
+        "galatea": {
+            "muteThePhantoms": true,
+            "moongladeBeaconColor": true,
+            // Valid Values: WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+            "shulkerOverwrite": "GREEN"
+        }
+    },
+    "garden": {
+        "pestBaitType": true,
+        "deskPestHighlight": true,
+        "pestWarning": false,
+        // Range: 1 - 60
+        "pestWarningDelay": 30
+    },
+    "inventory": {
+        "sackValue": {
+            "enabled": false,
+            // Valid Values: BAZAAR, NPC
+            "priceSource": "BAZAAR"
+        },
+        "inventoryButtons": false
+    },
+    "lore_modifiers": {
+        "enableDrillCleanup": false,
+        "dungeonQuality": false,
+        "compactLevelBars": false,
+        "prehistoryEggBlocksWalked": false,
+        "enableStoragePreview": false,
+        "museumDonation": false
+    },
+    "mining": {
+        "modifyCommissions": true,
+        "chAreaWalls": false,
+        "puzzlerSolver": true,
+        "forgeReminder": true,
+        // Range: 1 - 30
+        "forgeReminderDelay": 1,
+        // Valid Values: WARP, CALL_FRED, BOTH
+        "forgeReminderAction": "WARP",
+        "hotmStackSize": false,
+        "hotmTotalProgress": true,
+        "hotmDisplayShiftCost": true,
+        "hotmDisplayTotalLeft": true,
+        "hotmReminder": true,
+        "reminderTitle": true,
+        "metalDetectorSolver": false,
+        "playDingOnFind": true,
+        "showTitleOnFind": true,
+        "retexture": {
+            "recolorCarpets": false,
+            "customGlaciteTextures": false,
+            "customMist": false,
+            "customGemstoneTextures": false,
+            "customHollowTextures": false
+        },
+        "mineshaft": {
+            "mineshaftFoundPity": true,
+            "shaftAnnouncement": true,
+            // Valid Values: CHAT, PARTY
+            "shaftAnnounceType": "PARTY",
+            "showTitle": false,
+            "corpseWaypoint": true,
+            "keyAnnouncement": true
+        }
+    },
+    "dungeons": {
+        "gamblingScreenEnabled": false,
+        "gamblingInCroesus": true
+    },
+    "misc": {
+        "ministerInCalendar": true,
+        "previousServer": false,
+        // Type: Integer
+        "previousServerTime": 360,
+        "anvilHelper": false,
+        "hideLightning": false,
+        "fullTextShadow": false,
+        "showHiddenPetCandy": true,
+        "hideEntityFire": false,
+        // Valid Values: PRIVATE_ISLAND, HUB, DUNGEON_HUB, THE_BARN, THE_PARK, GOLD_MINES, DEEP_CAVERNS, DWARVEN_MINES, CRYSTAL_HOLLOWS, MINESHAFT, SPIDERS_DEN, THE_END, CRIMSON_ISLE, GARDEN, BACKWATER_BAYOU, GALATEA, THE_RIFT, DARK_AUCTION, THE_CATACOMBS, KUUDRA, JERRYS_WORKSHOP
+        "islandCloudHider": [
+            "DWARVEN_MINES",
+            "CRYSTAL_HOLLOWS",
+            "MINESHAFT",
+            "THE_CATACOMBS",
+            "DUNGEON_HUB",
+            "KUUDRA"
+        ],
+        "museumArmourPieces": true,
+        "customizationVanillaIntegration": false,
+        // Valid Values: WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+        "itemSearchItemHighlight": "RED",
+        // Valid Values: FILL, GLASS_PANE
+        "itemSearchHighlightMode": "GLASS_PANE",
+        // Range: 10 - 60
+        "highlightTime": 10,
+        "preserveLastSearch": false,
+        "itemSearchWarpToIsland": false,
+        "itemSearchMuseumIntegration": false,
+        // Range: 0 - 100
+        "transparentArmorSelf": 100,
+        // Range: 0 - 100
+        "transparentArmorOthers": 100,
+        "mob_icons": {
+            "enabled": false,
+            // Valid Values: NORMAL, SHORT
+            "style": "NORMAL",
+            // [Color Format: RGB]
+            "undead": 16777215,
+            // [Color Format: RGB]
+            "skeletal": 16777215,
+            // [Color Format: RGB]
+            "ender": 16777215,
+            // [Color Format: RGB]
+            "athropod": 16777215,
+            // [Color Format: RGB]
+            "humanoid": 16777215,
+            // [Color Format: RGB]
+            "infernal": 16777215,
+            // [Color Format: RGB]
+            "cubic": 16777215,
+            // [Color Format: RGB]
+            "frozen": 16777215,
+            // [Color Format: RGB]
+            "spooky": 16777215,
+            // [Color Format: RGB]
+            "mythological": 16777215,
+            // [Color Format: RGB]
+            "wither": 16777215,
+            // [Color Format: RGB]
+            "subterranean": 16777215,
+            // [Color Format: RGB]
+            "aquatic": 16777215,
+            // [Color Format: RGB]
+            "pest": 16777215,
+            // [Color Format: RGB]
+            "animal": 16777215,
+            // [Color Format: RGB]
+            "magmatic": 16777215,
+            // [Color Format: RGB]
+            "elusive": 16777215,
+            // [Color Format: RGB]
+            "construct": 16777215,
+            // [Color Format: RGB]
+            "arcane": 16777215,
+            // [Color Format: RGB]
+            "shielded": 16777215,
+            // [Color Format: RGB]
+            "airborne": 16777215,
+            // [Color Format: RGB]
+            "glacial": 16777215,
+            // [Color Format: RGB]
+            "woodland": 16777215
+        },
+        "crafthelper": {
+            "enabled": true,
+            "quickSet": true,
+            "hideCompleted": true,
+            "parentAmount": true,
+            "noRootItems": false,
+            // Valid Values: BUNDLE, CHEST, STORAGE, WARDROBE, SACKS, ACCESSORY_BAG, FORGE, INVENTORY, VAULT, MUSEUM, RIFT, DRILL_UPGRADE, ROD_UPGRADE, HUNT_AXE, TOOLKIT, SACK_OF_SACKS, HUNTING_BOX
+            "disallowedSources": [],
+            // Valid Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, LEFT_OF_INVENTORY, RIGHT_OF_INVENTORY
+            "position": "LEFT_OF_INVENTORY",
+            // Type: Integer
+            "margin": 10,
+            "doneMessage": false,
+            // Valid Values: TREE, RAW
+            "formatter": "TREE",
+            "rawFormatterHideCompleted": false,
+            "enableOverlay": false,
+            "overlayBackground": false
+        },
+        "fun": {
+            // Valid Values: NONE, SELF, PLAYERS, EVERYONE
+            "playerAnimals": "NONE",
+            "entityType": "minecraft:cat",
+            "outsideSkyblock": false,
+            "player_animals_config": {
+                // Valid Values: DEFAULT, NONE, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+                "collar_color_own": "DEFAULT",
+                // Valid Values: DEFAULT, NONE, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+                "collar_color_other": "DEFAULT",
+                "baby_own": false,
+                "baby_other": false,
+                // Valid Values: RANDOM, PALE, SPOTTED, SNOWY, BLACK, ASHEN, RUSTY, WOODS, CHESTNUT, STRIPED
+                "wolf_variant_own": "RANDOM",
+                // Valid Values: RANDOM, PALE, SPOTTED, SNOWY, BLACK, ASHEN, RUSTY, WOODS, CHESTNUT, STRIPED
+                "wolf_variant_other": "RANDOM",
+                // Valid Values: RANDOM, TAME, WILD, ANGRY
+                "wolf_state_own": "RANDOM",
+                // Valid Values: RANDOM, TAME, WILD, ANGRY
+                "wolf_state_other": "RANDOM",
+                // Valid Values: RANDOM, DESERT, JUNGLE, PLAINS, SAVANNA, SNOW, SWAMP, TAIGA
+                "villager_type_own": "RANDOM",
+                // Valid Values: RANDOM, DESERT, JUNGLE, PLAINS, SAVANNA, SNOW, SWAMP, TAIGA
+                "villager_type_other": "RANDOM",
+                // Valid Values: RANDOM, NONE, ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, SHEPHERD, TOOLSMITH, WEAPONSMITH
+                "villager_profession_own": "RANDOM",
+                // Valid Values: RANDOM, NONE, ARMORER, BUTCHER, CARTOGRAPHER, CLERIC, FARMER, FISHERMAN, FLETCHER, LEATHERWORKER, LIBRARIAN, MASON, NITWIT, SHEPHERD, TOOLSMITH, WEAPONSMITH
+                "villager_profession_other": "RANDOM",
+                // Valid Values: RANDOM, CREAMY, WHITE, BROWN, GRAY
+                "llama_variant_own": "RANDOM",
+                // Valid Values: RANDOM, CREAMY, WHITE, BROWN, GRAY
+                "llama_variant_other": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "llama_trader_own": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "llama_trader_other": "RANDOM",
+                // Valid Values: RANDOM, NONE, LOW, MEDIUM, HIGH
+                "iron_golem_state_own": "RANDOM",
+                // Valid Values: RANDOM, NONE, LOW, MEDIUM, HIGH
+                "iron_golem_state_other": "RANDOM",
+                // Valid Values: DEFAULT, NONE, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+                "happy_ghast_harness_own": "DEFAULT",
+                // Valid Values: DEFAULT, NONE, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+                "happy_ghast_harness_other": "DEFAULT",
+                // Valid Values: RANDOM, SMALL, MEDIUM, LARGE
+                "salmon_variant_own": "RANDOM",
+                // Valid Values: RANDOM, SMALL, MEDIUM, LARGE
+                "salmon_variant_other": "RANDOM",
+                // Valid Values: RANDOM, TEMPERATE, WARM, COLD
+                "frog_variant_own": "RANDOM",
+                // Valid Values: RANDOM, TEMPERATE, WARM, COLD
+                "frog_variant_other": "RANDOM",
+                // Valid Values: RANDOM, RED, BROWN
+                "mooshroom_variant_own": "RANDOM",
+                // Valid Values: RANDOM, RED, BROWN
+                "mooshroom_variant_other": "RANDOM",
+                // Valid Values: RANDOM, RED, SNOW
+                "fox_variant_own": "RANDOM",
+                // Valid Values: RANDOM, RED, SNOW
+                "fox_variant_other": "RANDOM",
+                // Valid Values: RANDOM, TEMPERATE, WARM, COLD
+                "cow_variant_own": "RANDOM",
+                // Valid Values: RANDOM, TEMPERATE, WARM, COLD
+                "cow_variant_other": "RANDOM",
+                // Valid Values: RANDOM, BROWN, WHITE, BLACK, WHITE_SPLOTCHED, GOLD, SALT, EVIL
+                "rabbit_variant_own": "RANDOM",
+                // Valid Values: RANDOM, BROWN, WHITE, BLACK, WHITE_SPLOTCHED, GOLD, SALT, EVIL
+                "rabbit_variant_other": "RANDOM",
+                // Valid Values: RANDOM, UNAFFECTED, EXPOSED, WEATHERED, OXIDIZED
+                "copper_state_own": "RANDOM",
+                // Valid Values: RANDOM, UNAFFECTED, EXPOSED, WEATHERED, OXIDIZED
+                "copper_state_other": "RANDOM",
+                "copper_block_own": "minecraft:air",
+                "copper_block_other": "minecraft:air",
+                // Valid Values: RANDOM, RED_BLUE, BLUE, GREEN, YELLOW_BLUE, GRAY
+                "parrot_variant_own": "RANDOM",
+                // Valid Values: RANDOM, RED_BLUE, BLUE, GREEN, YELLOW_BLUE, GRAY
+                "parrot_variant_other": "RANDOM",
+                // Valid Values: RANDOM, TEMPERATE, WARM, COLD
+                "pig_variant_own": "RANDOM",
+                // Valid Values: RANDOM, TEMPERATE, WARM, COLD
+                "pig_variant_other": "RANDOM",
+                // Valid Values: RANDOM, LUCY, WILD, GOLD, CYAN, BLUE
+                "axolotl_variant_own": "RANDOM",
+                // Valid Values: RANDOM, LUCY, WILD, GOLD, CYAN, BLUE
+                "axolotl_variant_other": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "snow_golem_pumpkin_own": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "snow_golem_pumpkin_other": "RANDOM",
+                // Valid Values: RANDOM, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+                "shulker_color_own": "RANDOM",
+                // Valid Values: RANDOM, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+                "shulker_color_other": "RANDOM",
+                // Valid Values: RANDOM, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+                "sheep_color_own": "RANDOM",
+                // Valid Values: RANDOM, WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK
+                "sheep_color_other": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "sheep_jeb_own": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "sheep_jeb_other": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "sheep_sheared_own": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "sheep_sheared_other": "RANDOM",
+                // Valid Values: RANDOM, NORMAL, LAZY, WORRIED, PLAYFUL, BROWN, WEAK, AGGRESSIVE
+                "panda_gene_own": "RANDOM",
+                // Valid Values: RANDOM, NORMAL, LAZY, WORRIED, PLAYFUL, BROWN, WEAK, AGGRESSIVE
+                "panda_gene_other": "RANDOM",
+                // Valid Values: RANDOM, KOB, SUNSTREAK, SNOOPER, DASHER, BRINELY, SPOTTY, FLOPPER, STRIPEY, GLITTER, BLOCKFISH, BETTY, CLAYFISH
+                "tropical_pattern_own": "RANDOM",
+                // Valid Values: RANDOM, KOB, SUNSTREAK, SNOOPER, DASHER, BRINELY, SPOTTY, FLOPPER, STRIPEY, GLITTER, BLOCKFISH, BETTY, CLAYFISH
+                "tropical_pattern_other": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "bogged_sheared_own": "RANDOM",
+                // Valid Values: RANDOM, ALWAYS, NEVER
+                "bogged_sheared_other": "RANDOM",
+                // Valid Values: DEFAULT, TABBY, BLACK, RED, SIAMESE, BRITISH_SHORTHAIR, CALICO, PERSIAN, RAGDOLL, WHITE, JELLIE, ALL_BLACK
+                "cat_variant_own": "DEFAULT",
+                // Valid Values: DEFAULT, TABBY, BLACK, RED, SIAMESE, BRITISH_SHORTHAIR, CALICO, PERSIAN, RAGDOLL, WHITE, JELLIE, ALL_BLACK
+                "cat_variant_other": "DEFAULT",
+                // Valid Values: RANDOM, TEMPERATE, WARM, COLD
+                "chicken_variant_own": "RANDOM",
+                // Valid Values: RANDOM, TEMPERATE, WARM, COLD
+                "chicken_variant_other": "RANDOM"
+            }
+        }
+    },
+    "buttons": {
+        "button0": {
+            "item": "minecraft:diamond_sword",
+            "command": "Skills",
+            "title": "Your Skills",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button1": {
+            "item": "minecraft:painting",
+            "command": "Collections",
+            "title": "Collections",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button2": {
+            "item": "minecraft:bone",
+            "command": "Pets",
+            "title": "Pets(?: \\(\\d+/\\d+\\))?",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button3": {
+            "item": "ARMOR_OF_YOG_CHESTPLATE",
+            "command": "Wardrobe",
+            "title": "Wardrobe(?: \\(\\d+/\\d+\\))?",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button4": {
+            "item": "minecraft:bundle",
+            "command": "Sacks",
+            "title": "Sack of Sacks",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button5": {
+            "item": "RUNEBOOK",
+            "command": "Accessories",
+            "title": "Accessory Bag(?: \\(\\d+/\\d+\\))?",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button6": {
+            "item": "minecraft:ender_chest",
+            "command": "Storage",
+            "title": "Storage",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button7": {
+            "item": "minecraft:grass_block",
+            "command": "warp island",
+            "title": "a^",
+            "tooltip": "Island",
+            "disabled": false
+        },
+        "button8": {
+            "item": "HUB_PORTAL",
+            "command": "Hub",
+            "title": "a^",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button9": {
+            "item": "minecraft:skeleton_skull",
+            "command": "warp dh",
+            "title": "a^",
+            "tooltip": "Dungeon Hub",
+            "disabled": false
+        },
+        "button10": {
+            "item": "SMOOTH_CHOCOLATE_BAR",
+            "command": "ChocolateFactory",
+            "title": "Chocolate Factory",
+            "tooltip": "Chocolate Factory",
+            "disabled": false
+        },
+        "button11": {
+            "item": "ESSENCE_GOLD",
+            "command": "Bazaar",
+            "title": "(?:Special )?Bazaar",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button12": {
+            "item": "ESSENCE_DIAMOND",
+            "command": "Auction",
+            "title": "(?:Co-op )?Auction House",
+            "tooltip": "",
+            "disabled": false
+        },
+        "button13": {
+            "item": "minecraft:crafting_table",
+            "command": "CraftingTable",
+            "title": "Craft Item",
+            "tooltip": "Crafting Table",
+            "disabled": false
+        }
+    },
+    "overlays": {
+        "craftHelper": {
+            // Type: Integer
+            "x": 5,
+            // Type: Integer
+            "y": 200,
+            // Type: Float
+            "scale": 1.0
+        }
+    }
+}

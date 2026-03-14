@@ -1,0 +1,13 @@
+{
+  "canScroll": true,
+  "useWASD": false,
+  "startOnTop": true,
+  "resetOnUnlock": true,
+  "useLShift": false,
+  "invertXScroll": false,
+  "invertYScroll": false,
+  "scrollSpeed": 10,
+  "keyboardScrollSpeed": 5,
+  "scrollSmoothness": 0.25,
+  "matrixCompatibilityMode": false
+}

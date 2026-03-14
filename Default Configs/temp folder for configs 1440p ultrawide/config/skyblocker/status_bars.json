@@ -1,0 +1,94 @@
+{
+  "health": {
+    "colors": [
+      "ff0000",
+      "ffdc00"
+    ],
+    "text_color": "ff5555",
+    "anchor": "HOTBAR_TOP",
+    "x": 0,
+    "y": 0,
+    "size": 6,
+    "icon_position": "LEFT",
+    "text_position": "BAR_CENTER",
+    "show_max": false,
+    "show_overflow": false,
+    "enabled": true
+  },
+  "intelligence": {
+    "colors": [
+      "00ffff",
+      "b400ff"
+    ],
+    "text_color": "55ffff",
+    "anchor": "HOTBAR_TOP",
+    "x": 1,
+    "y": 0,
+    "size": 6,
+    "icon_position": "LEFT",
+    "text_position": "BAR_CENTER",
+    "show_max": false,
+    "show_overflow": false,
+    "enabled": true
+  },
+  "defense": {
+    "colors": [
+      "ffffff"
+    ],
+    "text_color": "b9b9b9",
+    "anchor": "HOTBAR_RIGHT",
+    "x": 0,
+    "y": 0,
+    "size": 2,
+    "icon_position": "LEFT",
+    "text_position": "BAR_CENTER",
+    "show_max": false,
+    "show_overflow": false,
+    "enabled": true
+  },
+  "experience": {
+    "colors": [
+      "64e646"
+    ],
+    "text_color": "80ff20",
+    "anchor": "HOTBAR_TOP",
+    "x": 0,
+    "y": 2,
+    "size": 12,
+    "icon_position": "LEFT",
+    "text_position": "BAR_CENTER",
+    "show_max": false,
+    "show_overflow": false,
+    "enabled": true
+  },
+  "speed": {
+    "colors": [
+      "ffffff"
+    ],
+    "text_color": "b9b9b9",
+    "anchor": "HOTBAR_LEFT",
+    "x": 0,
+    "y": 0,
+    "size": 2,
+    "icon_position": "LEFT",
+    "text_position": "BAR_CENTER",
+    "show_max": false,
+    "show_overflow": false,
+    "enabled": true
+  },
+  "air": {
+    "colors": [
+      "87cefa"
+    ],
+    "text_color": "96e6ff",
+    "anchor": "HOTBAR_TOP",
+    "x": 0,
+    "y": 1,
+    "size": 12,
+    "icon_position": "LEFT",
+    "text_position": "BAR_CENTER",
+    "show_max": false,
+    "show_overflow": false,
+    "enabled": true
+  }
+}

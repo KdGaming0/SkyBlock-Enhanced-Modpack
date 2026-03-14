@@ -1,0 +1,24 @@
+{
+    // The version of the config file. Do not change this unless you know what you are doing.
+    "rconfig:version": 2,
+    "profileSpying": true,
+    "profileChatClick": true,
+    "profileChatClickOther": false,
+    // Valid Values: USD, EUR, JPY, GBP, AUD, CAD, CHF, CNH, HKD, NZD, CZK, ZWL, INR, BTC, ETH, DOGE
+    "currency": "USD",
+    "alignCategoryButtonsLeft": true,
+    "showPronouns": true,
+    // Valid Values: OFF, OPEN_PV, BREAKDOWN
+    "partyFinderMessage": "OPEN_PV",
+    "disableOutsideHypixel": false,
+    "skillOverflow": false,
+    "displayScaling": false,
+    "theme": "skyblock-pv:neu",
+    "socials": true,
+    "Dev": {
+        "devMode": false,
+        "hoppityParser": false,
+        "sacksParser": false,
+        "offlineMode": false
+    }
+}

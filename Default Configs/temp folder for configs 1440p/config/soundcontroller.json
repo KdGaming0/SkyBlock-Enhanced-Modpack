@@ -1,0 +1,78 @@
+{
+  "version": 4,
+  "subtitlesEnabled": false,
+  "sounds": [
+    {
+      "soundId": "minecraft:block.end_portal.spawn",
+      "volume": 0.7
+    },
+    {
+      "soundId": "minecraft:block.end_portal_frame.fill",
+      "volume": 0.8
+    },
+    {
+      "soundId": "minecraft:block.portal.ambient",
+      "volume": 0.3
+    },
+    {
+      "soundId": "minecraft:block.portal.travel",
+      "volume": 0.8
+    },
+    {
+      "soundId": "minecraft:block.portal.trigger",
+      "volume": 0.8
+    },
+    {
+      "soundId": "minecraft:entity.enderman.ambient",
+      "volume": 0.6
+    },
+    {
+      "soundId": "minecraft:entity.enderman.death",
+      "volume": 0.35
+    },
+    {
+      "soundId": "minecraft:entity.enderman.hurt",
+      "volume": 0.35
+    },
+    {
+      "soundId": "minecraft:entity.enderman.scream",
+      "volume": 0.35
+    },
+    {
+      "soundId": "minecraft:entity.enderman.stare",
+      "volume": 0.0
+    },
+    {
+      "soundId": "minecraft:entity.lightning_bolt.impact",
+      "volume": 0.5
+    },
+    {
+      "soundId": "minecraft:entity.lightning_bolt.thunder",
+      "volume": 0.5
+    },
+    {
+      "soundId": "minecraft:entity.phantom.ambient",
+      "volume": 0.1
+    },
+    {
+      "soundId": "minecraft:entity.phantom.bite",
+      "volume": 0.2
+    },
+    {
+      "soundId": "minecraft:entity.phantom.death",
+      "volume": 0.25
+    },
+    {
+      "soundId": "minecraft:entity.phantom.flap",
+      "volume": 0.2
+    },
+    {
+      "soundId": "minecraft:entity.phantom.hurt",
+      "volume": 0.3
+    },
+    {
+      "soundId": "minecraft:entity.phantom.swoop",
+      "volume": 0.1
+    }
+  ]
+}

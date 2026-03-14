@@ -1,0 +1,9 @@
+{
+  "version": "3.0.0",
+  "targetWidth": 3440,
+  "targetHeight": 1440,
+  "guiScale": 3,
+  "name": "SkyBlock Enhanced 1440p Ultrawide Defaults",
+  "description": "Default configuration optimized for 3440x1440 monitors.",
+  "author": "Kd_Gaming1"
+}

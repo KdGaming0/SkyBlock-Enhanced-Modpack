@@ -1,0 +1,5 @@
+{
+    numericalBooks: false,
+    bookStyle: true,
+    animatedTextures: true
+}
