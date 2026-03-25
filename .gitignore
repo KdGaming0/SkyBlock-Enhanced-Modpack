@@ -13,6 +13,7 @@ event.json
 
 # Allow packcore config zips (these are source files, not build output)
 !**/packcore/configs/*.zip
+!**/client-overrides/resourcepacks/*.zip
 
 # ── Pakku temporary diff file ─────────────────────────────────────────────────
 **/.pakku/lock.old.json
