@@ -1,0 +1,9 @@
+{
+  "version": "3.0.0",
+  "targetWidth": 5120,
+  "targetHeight": 2160,
+  "guiScale": 4,
+  "name": "SkyBlock Enhanced 4K Ultrawide Defaults",
+  "description": "Default configuration optimized for 5120x2160 monitors.",
+  "author": "Kd_Gaming1"
+}

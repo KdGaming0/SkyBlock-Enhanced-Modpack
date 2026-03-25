@@ -1,8 +1,7 @@
 {
-    "name": "SkyBlock Enhanced Modern Edition",
-    "version": "2.5.7",
-    "overrides": [
-        "packcore"
-    ],
-    "export_server_side_projects_to_client": false
+  "name": "SkyBlock Enhanced Modern Edition",
+  "version": "2.5.16",
+  "overrides": [
+    "packcore"
+  ]
 }

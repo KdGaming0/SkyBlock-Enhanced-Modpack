@@ -1,0 +1,359 @@
+# Release workflow
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_1.21.11
+  JAVA_VERSION: '21'
+  MC_VERSION:   '1.21.11'
+  # Set to 'true' when running locally with `act` to skip artifact
+  # upload/download steps and use a pre-built mrpack instead.
+  # `act` also automatically sets ACT=true, which skips Tier 2.
+  SKIP_LOCAL_ARTIFACTS: 'false'
+
+jobs:
+
+  # ── VALIDATE ────────────────────────────────────────────────────────────────
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write          # needed to delete mismatched tags
+    outputs:
+      modpack_version:   ${{ steps.info.outputs.modpack_version }}
+      modpack_name:      ${{ steps.info.outputs.modpack_name }}
+      minecraft_version: ${{ steps.info.outputs.minecraft_version }}
+      modpack_loader:    ${{ steps.info.outputs.modpack_loader }}
+      release_type:      ${{ steps.info.outputs.release_type }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Extract modpack info
+        id: info
+        run: |
+          chmod +x .github/scripts/get_modpack_info.sh
+          .github/scripts/get_modpack_info.sh
+
+      - name: Validate tag matches pakku.json version
+        run: |
+          TAG_VER="${GITHUB_REF#refs/tags/v}"
+          PKG_VER="${{ steps.info.outputs.modpack_version }}"
+          if [[ "$TAG_VER" != "$PKG_VER" ]]; then
+            echo "::error::Tag v${TAG_VER} does not match pakku.json version ${PKG_VER}"
+            git push origin ":refs/tags/v${TAG_VER}" || true
+            exit 1
+          fi
+          echo "✅ Tag matches pakku.json: ${PKG_VER}"
+
+      - name: Validate version was bumped since previous tag
+        run: |
+          CUR_VER="${{ steps.info.outputs.modpack_version }}"
+          PREV_VER="${{ steps.info.outputs.previous_modpack_version }}"
+          if [[ "$PREV_VER" != "none" && "$CUR_VER" == "$PREV_VER" ]]; then
+            TAG_NAME="${GITHUB_REF#refs/tags/}"
+            echo "::error::Version in pakku.json NOT bumped!"
+            echo "::error::Current $CUR_VER is the same as previous tag ${{ steps.info.outputs.previous_tag }}."
+            echo "::error::Deleting tag '$TAG_NAME' and failing build..."
+            git push origin ":refs/tags/$TAG_NAME" || true
+            exit 1
+          fi
+          echo "✅ Version bumped: ${PREV_VER} → ${CUR_VER}"
+
+      - name: Upload changelog artifact
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: changelog
+          path: CHANGELOG-v${{ steps.info.outputs.modpack_version }}.md
+          if-no-files-found: warn
+
+  # ── BUILD ───────────────────────────────────────────────────────────────────
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v5
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: temurin
+
+      - name: Cache pakku downloads
+        if: ${{ !env.ACT }}
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.PACK_DIR }}/build/.cache
+          key: pakku-${{ runner.os }}-${{ hashFiles(format('{0}/pakku-lock.json', env.PACK_DIR)) }}
+          restore-keys: pakku-${{ runner.os }}-
+
+      - name: Download pakku
+        run: |
+          curl -sSL -o pakku.jar \
+            https://github.com/juraj-hrivnak/Pakku/releases/latest/download/pakku.jar
+
+      - name: Export modpack
+        working-directory: ${{ env.PACK_DIR }}
+        run: java -jar ../pakku.jar export
+
+      - name: Upload build artifacts
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: build
+          path: |
+            ${{ env.PACK_DIR }}/build/
+            !${{ env.PACK_DIR }}/build/.*
+
+  # ── TEST-CLIENT ─────────────────────────────────────────────────────────────
+  test-client:
+    name: Test Client Launch
+    runs-on: ubuntu-latest
+    needs: [validate, build]
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: .github/scripts
+
+      # ── Obtain the built mrpack ───────────────────────────────────────────
+
+      - name: Download build artifacts
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        uses: actions/download-artifact@v6
+        with:
+          name: build
+          path: build
+
+      # When running locally with `act`, copy a pre-built mrpack into place.
+      # Build the mrpack first with: cd <PACK_DIR> && java -jar ../pakku.jar export
+      - name: Use local build artifacts (act)
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS == 'true' }}
+        run: |
+          TARGET="${{ env.PACK_DIR }}/build/modrinth/SkyBlock Enhanced-${{ needs.validate.outputs.modpack_version }}.mrpack"
+          if [[ -f "$TARGET" ]]; then
+            mkdir -p build/modrinth
+            cp -v "$TARGET" build/modrinth/
+          else
+            echo "::warning::Expected mrpack not found at $TARGET"
+            echo "Searching for any .mrpack in the repo:"
+            find . -name '*.mrpack' || true
+          fi
+
+      # ── Tier 1: fast mrpack validation (always runs) ─────────────────────
+
+      - name: Tier 1 – Validate mrpack
+        run: |
+          chmod +x .github/scripts/setup_mc_client.sh
+          .github/scripts/setup_mc_client.sh
+
+      # ── Decide whether to run the full client launch ──────────────────────
+      # Skip Tier 2 when:
+      #  • running under `act` (no Xvfb / full network support locally)
+      #  • commit message contains [skip-client-test]
+
+      - name: Check for Tier 2 skip conditions
+        id: skip_check
+        run: |
+          # act sets ACT=true automatically
+          if [[ -n "${ACT:-}" ]]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "  [INFO]  Running under act — skipping Tier 2 (client launch)"
+            exit 0
+          fi
+
+          MSG=$(git log -1 --pretty=%B 2>/dev/null || echo "")
+          if echo "$MSG" | grep -q "\[skip-client-test\]"; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "  [INFO]  [skip-client-test] in commit message — skipping Tier 2"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # ── Extract modpack mods + overrides into run/ ────────────────────────
+      # The mc-runtime-test action uses run/ as the Minecraft game directory.
+      # We download every file listed in modrinth.index.json into its declared
+      # path under run/, and copy mrpack overrides into run/ as well.
+
+      - name: Extract mods and overrides from mrpack
+        if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        run: |
+          chmod +x .github/scripts/extract_mrpack.py
+          python3 .github/scripts/extract_mrpack.py
+
+      # ── Stage mc-runtime-test mod ─────────────────────────────────────────
+      # mc-runtime-test 4.1.0 covers up to 1.21.10; 1.21.11 is a security
+      # patch with no mod-API changes, so the 1.21.10 jar is fully compatible.
+      # We download it manually and pass mc-runtime-test: none to the action
+      # so it doesn't attempt (and fail) to find a 1.21.11 release jar.
+
+      - name: Stage mc-runtime-test mod (1.21.10 → compatible with 1.21.11)
+        if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        run: |
+          mkdir -p run/mods
+          # Fetch the asset URL for the 1.21.10 Fabric release jar from the
+          # 4.1.0 release of mc-runtime-test via the GitHub API.
+          ASSET_URL=$(curl -sSL \
+            "https://api.github.com/repos/headlesshq/mc-runtime-test/releases/tags/4.1.0" \
+            | python3 -c "
+          import sys, json
+          assets = json.load(sys.stdin)['assets']
+          match = next(
+              (a['browser_download_url'] for a in assets
+               if '1.21.10' in a['name'] and 'fabric-release' in a['name']),
+              None
+          )
+          if not match:
+              print('ERROR: could not find 1.21.10 fabric release jar in 4.1.0 assets', file=sys.stderr)
+              sys.exit(1)
+          print(match)
+          ")
+          echo "  [INFO]  Downloading: $ASSET_URL"
+          curl -sSL -o run/mods/mc-runtime-test.jar "$ASSET_URL"
+          echo "  [OK]    mc-runtime-test mod staged"
+
+      # ── Tier 2: headless client launch via mc-runtime-test action ─────────
+      # The action:
+      #   1. Creates HeadlessMC/config.properties (gamedir=run/, offline=true, etc.)
+      #   2. Downloads HMC 2.7.0 launcher jar
+      #   3. Installs Fabric for MC_VERSION (cached between runs)
+      #   4. Launches: xvfb-run java -jar headlessmc-launcher.jar --command launch .*fabric.* -regex
+      #
+      # mc-runtime-test: none  → we already staged the jar above; skip the
+      #                          action's built-in download step.
+      # dummy-assets: true     → replaces textures/sounds with tiny stubs to
+      #                          reduce download time and memory footprint.
+      # xvfb: true             → uses a virtual framebuffer; more stable than
+      #                          -lwjgl patching for 1.21.x on ubuntu-latest.
+
+      - name: Tier 2 – Headless client launch
+        if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        uses: headlesshq/mc-runtime-test@4.1.0
+        with:
+          mc:               ${{ needs.validate.outputs.minecraft_version }}
+          modloader:        fabric
+          regex:            '.*fabric.*'
+          mc-runtime-test:  none
+          java:             ${{ env.JAVA_VERSION }}
+          dummy-assets:     true
+          xvfb:             true
+          cache-mc:         github
+
+      # ── Capture logs if anything went wrong ──────────────────────────────
+
+      - name: Upload game logs on failure
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' && failure() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: game-logs-${{ github.run_number }}
+          path: |
+            run/logs/
+            run/crash-reports/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  # ── PUBLISH ─────────────────────────────────────────────────────────────────
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    needs: [validate, build, test-client]
+    permissions:
+      contents: write            # needed for GitHub Release + tag deletion
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Download changelog artifact
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        uses: actions/download-artifact@v6
+        with:
+          name: changelog
+          path: .
+
+      - name: Download build artifacts
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        uses: actions/download-artifact@v6
+        with:
+          name: build
+          path: build
+
+      - name: Resolve changelog path
+        id: cl
+        run: |
+          VER="${{ needs.validate.outputs.modpack_version }}"
+          FILE="CHANGELOG-v${VER}.md"
+          if [[ -f "$FILE" ]]; then
+            echo "path=$FILE" >> "$GITHUB_OUTPUT"
+            echo "✅ Found: $FILE"
+          else
+            echo "⚠️  $FILE not found — generating minimal changelog"
+            printf '## 🛠 Update %s\n\nMod and dependency updates.\n' "$VER" > minimal-changelog.md
+            echo "path=minimal-changelog.md" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: ${{ steps.cl.outputs.path }}
+          files: build/modrinth/*.mrpack
+          tag_name: ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to Modrinth
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id:    ${{ vars.MR_PROJECT_ID }}
+          modrinth-token: ${{ secrets.MR_TOKEN }}
+          modrinth-files: build/modrinth/*.mrpack
+
+          name:           "${{ needs.validate.outputs.modpack_name }} ${{ needs.validate.outputs.modpack_version }}"
+          version:        ${{ needs.validate.outputs.modpack_version }}
+          version-type:   ${{ needs.validate.outputs.release_type }}
+          game-versions:  ${{ needs.validate.outputs.minecraft_version }}
+          loaders:        ${{ needs.validate.outputs.modpack_loader }}
+          changelog-file: ${{ steps.cl.outputs.path }}
+
+      - name: Publish to CurseForge
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' && vars.CF_PROJECT_ID != '' }}
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          curseforge-id:    ${{ vars.CF_PROJECT_ID }}
+          curseforge-token: ${{ secrets.CF_TOKEN }}
+          curseforge-files: build/curseforge/*.zip
+
+          name:           "${{ needs.validate.outputs.modpack_name }} ${{ needs.validate.outputs.modpack_version }}"
+          version:        ${{ needs.validate.outputs.modpack_version }}
+          version-type:   ${{ needs.validate.outputs.release_type }}
+          game-versions:  ${{ needs.validate.outputs.minecraft_version }}
+          loaders:        ${{ needs.validate.outputs.modpack_loader }}
+          changelog-file: ${{ steps.cl.outputs.path }}
+
+      - name: Send Discord release notification
+        if: ${{ vars.DISCORD_WEBHOOK_RELEASES != '' }}
+        uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
+        with:
+          key: ${{ vars.DISCORD_WEBHOOK_RELEASES }}
+          username: "SkyBlock Enhanced"
+          content: |
+            ## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! :tada:
+            [Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)
+
+      - name: Delete tag on publish failure
+        if: failure()
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          echo "Publish failed — removing tag ${TAG}"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name  "github-actions[bot]"
+          git push origin ":refs/tags/${TAG}" || echo "Tag may already be gone — continuing"

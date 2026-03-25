@@ -1,0 +1,145 @@
+{
+  "basics": {
+    "favorites": [],
+    "hiddenFavorites": [],
+    "displayHistory": [],
+    "cheating": false,
+    "favoritesEnabled": true,
+    "reduceMotion": false,
+    "keyBindings": {
+      "useNativeKeybinds": false,
+      "recipeKeybind": {
+        "keyCode": "key.keyboard.r",
+        "modifier": 0
+      },
+      "usageKeybind": {
+        "keyCode": "key.keyboard.u",
+        "modifier": 0
+      },
+      "hideKeybind": {
+        "keyCode": "key.keyboard.o",
+        "modifier": 2
+      },
+      "previousPageKeybind": {
+        "keyCode": "key.keyboard.unknown",
+        "modifier": 0
+      },
+      "nextPageKeybind": {
+        "keyCode": "key.keyboard.unknown",
+        "modifier": 0
+      },
+      "focusSearchFieldKeybind": {
+        "keyCode": "key.keyboard.unknown",
+        "modifier": 0
+      },
+      "copyRecipeIdentifierKeybind": {
+        "keyCode": "key.mouse.middle",
+        "modifier": 0
+      },
+      "favoriteKeybind": {
+        "keyCode": "key.keyboard.a",
+        "modifier": 0
+      },
+      "exportImageKeybind": {
+        "keyCode": "key.keyboard.f8",
+        "modifier": 0
+      },
+      "previousScreenKeybind": {
+        "keyCode": "key.keyboard.backspace",
+        "modifier": 0
+      }
+    },
+    "overlayVisible": true,
+    "cheatingStyle": "GRAB"
+  },
+  "appearance": {
+    "recipeScreenType": "ORIGINAL",
+    "theme": "LIGHT",
+    "layout": {
+      "searchFieldLocation": "CENTER",
+      "configButtonLocation": "LOWER",
+      "showCraftableOnlyButton": true
+    },
+    "recipeBorder": "DEFAULT",
+    "scrollingEntryListWidget": false,
+    "hideEntryPanelIfIdle": true,
+    "rainbow": false,
+    "horizontalEntriesBoundaries": 1.0,
+    "verticalEntriesBoundaries": 1.0,
+    "horizontalEntriesBoundariesColumns": 16,
+    "verticalEntriesBoundariesRows": 1000,
+    "horizontalEntriesBoundariesAlignment": 1.0,
+    "verticalEntriesBoundariesAlignment": 0.5,
+    "favoritesHorizontalEntriesBoundaries": 1.0,
+    "favoritesHorizontalEntriesBoundariesColumns": 50,
+    "syntaxHighlightingMode": "COLORFUL",
+    "isFocusModeZoomed": false
+  },
+  "functionality": {
+    "disableRecipeBook": false,
+    "leftSideMobEffects": true,
+    "isSubsetsEnabled": false,
+    "allowInventoryHighlighting": true,
+    "inventoryHighlightingDarkenOpacity": 0.85,
+    "inventoryHighlightingOpacity": 1.0,
+    "itemCheatingMode": "REI_LIKE"
+  },
+  "advanced": {
+    "tooltips": {
+      "appendModNames": true,
+      "displayFavoritesTooltip": false,
+      "displayIMEHints": true
+    },
+    "layout": {
+      "entryPanelOrdering": "REGISTRY_ASCENDING",
+      "maxRecipesPerPage": 8,
+      "maxRecipesPageHeight": 300,
+      "debugRenderTimeRequired": false,
+      "mergeDisplayUnderOne": true,
+      "favoriteAddWidgetMode": "ALWAYS_VISIBLE"
+    },
+    "accessibility": {
+      "entrySize": 1.0,
+      "displayPanelLocation": "RIGHT",
+      "compositeScrollBarPermanent": false,
+      "toastDisplayedOnCopyIdentifier": true,
+      "useCompactTabs": true,
+      "useCompactTabButtons": false
+    },
+    "search": {
+      "debugSearchTimeRequired": false,
+      "asyncSearch": true,
+      "asyncSearchPartitionSize": 100,
+      "patchAsyncThreadCrash": true,
+      "tooltipSearch": "ALWAYS",
+      "tagSearch": "PREFIX",
+      "identifierSearch": "ALWAYS",
+      "modSearch": "PREFIX"
+    },
+    "commands": {
+      "gamemodeCommand": "/gamemode {gamemode}",
+      "giveCommand": "/give {player_name} {item_identifier}{nbt} {count}",
+      "weatherCommand": "/weather {weather}",
+      "timeCommand": "/time set {time}"
+    },
+    "miscellaneous": {
+      "clickableRecipeArrows": true,
+      "registerRecipesInAnotherThread": true,
+      "cachingFastEntryRendering": false,
+      "cachingDisplayLookup": true,
+      "categorySettings": {
+        "filteringQuickCraftCategories": {},
+        "categoryOrdering": [],
+        "hiddenCategories": []
+      }
+    },
+    "filtering": {
+      "filteredStacks": [],
+      "shouldFilterDisplays": true,
+      "filteringRules": [
+        "{id:\"roughlyenoughitems:manual\",rule:{}}",
+        "{id:\"roughlyenoughitems:basic\",rule:{}}"
+      ]
+    }
+  }
+}

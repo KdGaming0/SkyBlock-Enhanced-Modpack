@@ -744,7 +744,8 @@
                         "1.21.8",
                         "1.21.9",
                         "1.21.10",
-                        "1.21.11"
+                        "1.21.11",
+                        "26.1"
                     ],
                     "loaders": [
                         "iris",
@@ -1398,7 +1399,8 @@
                         "1.21.8",
                         "1.21.9",
                         "1.21.10",
-                        "1.21.11"
+                        "1.21.11",
+                        "26.1"
                     ],
                     "loaders": [
                         "fabric"
@@ -2000,7 +2002,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "language-reload-1.7.5+1.21.10.jar",
+                    "file_name": "language-reload-1.7.6+1.21.10.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10"
@@ -2010,18 +2012,18 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/uLbm7CG6/versions/A4AkBYE3/language-reload-1.7.5+1.21.10.jar",
-                    "id": "A4AkBYE3",
+                    "url": "https://cdn.modrinth.com/data/uLbm7CG6/versions/KeQdftoX/language-reload-1.7.6+1.21.10.jar",
+                    "id": "KeQdftoX",
                     "parent_id": "uLbm7CG6",
                     "hashes": {
-                        "sha512": "51cbb4fb4c23604259cd7c2f7ad78db1514dfdd8a74a0a49a33889b151a4bdf34c75f17315418899840c5a2c88f63721c05dcf07cc6028c4736a1ccf6374f74a",
-                        "sha1": "f1ba2472975863dc130acbd3cc425c9f31fb23e1"
+                        "sha512": "2dc8911a393b48856a5cd12828986a744c5d4d236688e791b86ac33cb9fac356d61f535cea69ac0b86ecf303ca3b8608a62509c0ef4b9ac9ccdfddf923d04ef4",
+                        "sha1": "56bb8175b6a9ef01180c694ac94b9213841217e5"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 75644,
-                    "date_published": "2025-11-12T06:32:33.883307Z"
+                    "size": 75760,
+                    "date_published": "2026-03-24T18:17:48.767296Z"
                 },
                 {
                     "type": "curseforge",
@@ -2963,7 +2965,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scamscreener-2.0.2+1.21.10.jar",
+                    "file_name": "scamscreener-2.1.2+1.21.10.jar",
                     "mc_versions": [
                         "1.21.10"
                     ],
@@ -2971,18 +2973,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/KhM1GLQN/scamscreener-2.0.2+1.21.10.jar",
-                    "id": "KhM1GLQN",
+                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/IgoDqrz5/scamscreener-2.1.2+1.21.10.jar",
+                    "id": "IgoDqrz5",
                     "parent_id": "XTB0bgAW",
                     "hashes": {
-                        "sha512": "87eb81b87ca11f8826bc7635467e6d24c42708d03633c531bc434d9d6cfa73b15e5316e56350107a362e68f2982df83eadfadf9cd81ed4d506cc0634d45af76b",
-                        "sha1": "f1a9c39a3a8d4d7f76dd18a9c1c16494a9c924e7"
+                        "sha512": "18c1f3ed7b28dcb4f8d0e7347f9020c12455c6ef96f6d00f2af6a56b02b7e1486273fd64136ea2cbd80383de9e70bf974cda343860afc4d1d03ab893e951bce4",
+                        "sha1": "c6cef22939c4b0659e52d0cf0982095ec3f77176"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 421218,
-                    "date_published": "2026-03-10T14:52:40.009784Z"
+                    "size": 525679,
+                    "date_published": "2026-03-15T13:57:34.442645Z"
                 }
             ]
         },
@@ -3166,28 +3168,22 @@
             ]
         },
         {
-            "pakku_id": "06RTBZ6wOhFDUNQn",
-            "pakku_links": [
-                "LwqrzSsyxBuQ5jrL"
-            ],
+            "pakku_id": "SfLpGINARRIXbqvQ",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "CLIENT",
             "slug": {
-                "curseforge": "skyblock-enhancements",
                 "modrinth": "skyblock-enhancements"
             },
             "name": {
-                "curseforge": "SkyBlock Enhancements",
                 "modrinth": "SkyBlock Enhancements"
             },
             "id": {
-                "curseforge": "1454701",
                 "modrinth": "LpXuY1YR"
             },
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-0.6.4+1.21.10.jar",
+                    "file_name": "skyblock_enhancements-0.8.5+1.21.10.jar",
                     "mc_versions": [
                         "1.21.10"
                     ],
@@ -3195,41 +3191,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/47i7ent9/skyblock_enhancements-0.6.4+1.21.10.jar",
-                    "id": "47i7ent9",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/RivPunGA/skyblock_enhancements-0.8.5+1.21.10.jar",
+                    "id": "RivPunGA",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "41aa3f34151dd1f68e7f85bb98b86f769fd38e4f1c4dc9dba675b98d5f80dc40da03e3123f37fc24ad9a79cbc7b9477fd3a6ddb134cb0001cfbf9f2bb3561cf7",
-                        "sha1": "64f2b07d4d5495e0372a66f379ecb7b02f71c6e6"
+                        "sha512": "6c026d75d30df0c2c7daefed775b3e1886e36dc60abb31521bc9be437e0b15946c72cec779be1709938ad55b47b12ca9cc272b3d3df2b0adf105fc53b920e022",
+                        "sha1": "78fec2244349cc07854458c88eeb50b11b95889d"
                     },
                     "required_dependencies": [
+                        "2C0marwF",
                         "P7dR8mSH"
                     ],
-                    "size": 770873,
-                    "date_published": "2026-03-07T07:12:35.324303Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "skyblock_enhancements-0.3.1+1.21.10.jar",
-                    "mc_versions": [
-                        "1.21.10"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7594/883/skyblock_enhancements-0.3.1+1.21.10.jar",
-                    "id": "7594883",
-                    "parent_id": "1454701",
-                    "hashes": {
-                        "sha1": "c991b9a168939471aca44ced6ebb803dcc335785",
-                        "md5": "db70605e3687fbf4e496858f2d3afa54"
-                    },
-                    "required_dependencies": [
-                        "306612"
-                    ],
-                    "size": 736415,
-                    "date_published": "2026-02-08T15:48:46.243Z"
+                    "size": 1465335,
+                    "date_published": "2026-03-23T19:36:06.171473Z"
                 }
             ]
         },
@@ -3302,7 +3276,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.6.0-mc1.21.10.jar",
+                    "file_name": "SkyHanni-7.11.0-mc1.21.10.jar",
                     "mc_versions": [
                         "1.21.10"
                     ],
@@ -3310,19 +3284,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/vMAk8HBy/SkyHanni-7.6.0-mc1.21.10.jar",
-                    "id": "vMAk8HBy",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/UszbB1o9/SkyHanni-7.11.0-mc1.21.10.jar",
+                    "id": "UszbB1o9",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "4e2eeb068be2ed241e72a7b74a51b8480b40f7ea155720a6ea54f02edb99ce8c0a996704b84cab6912ad90d9f7450cc25e4f3348b5062cd417cf5d7ffa8b2ac0",
-                        "sha1": "42cfb59d6d3e2bc1140f867f90c1e46cfdc1c1bc"
+                        "sha512": "53928c89600c91cfddb002af3340f3fbffae91a250c5a97690e011289baaf1c2004093610f9e3b02bb1581ffa9c5fa2577d91c04a9b685d2a27a4f39ce9762d6",
+                        "sha1": "599096d780c492961ebbf174dc3c8a4be60d3be0"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 34438700,
-                    "date_published": "2026-03-09T12:16:47.183081Z"
+                    "size": 35789188,
+                    "date_published": "2026-03-23T10:37:11.888216Z"
                 }
             ]
         },
@@ -3431,7 +3405,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SBO-0.2.0-beta+1.21.10-fabric.jar",
+                    "file_name": "SBO-0.2.1-beta+1.21.10-fabric.jar",
                     "mc_versions": [
                         "1.21.10"
                     ],
@@ -3439,16 +3413,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/mKdPXhvf/SBO-0.2.0-beta+1.21.10-fabric.jar",
-                    "id": "mKdPXhvf",
+                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/yvVohaQN/SBO-0.2.1-beta+1.21.10-fabric.jar",
+                    "id": "yvVohaQN",
                     "parent_id": "9lBqVbQF",
                     "hashes": {
-                        "sha512": "bfdb02c3f665e0591fb6104126aacbf95323865ad135c2135a2698fcf2d41095b11bbef48bae83ead4871953b24dcf8d0b4af94f7816957f6e985ad2f04aa73a",
-                        "sha1": "985f97ab7e8a73a804ebe9b7185821e336a2b780"
+                        "sha512": "63d0a938f1ebee72fa648b40def44a941c7ff3f78ea73cdabae0dfb217dba372a57a6e031b564ce2ae2d5445539c5cb48716e4ab594130cf939439dc6b62db45",
+                        "sha1": "ce9e74519a648daf0444edcd37f6f0ed590a0397"
                     },
-                    "required_dependencies": [],
-                    "size": 4427307,
-                    "date_published": "2026-01-13T15:59:57.372793Z"
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "Ha28R6CL"
+                    ],
+                    "size": 4432977,
+                    "date_published": "2026-03-22T20:04:39.541880Z"
                 }
             ]
         },
@@ -3475,7 +3452,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblocker-6.1.1+1.21.10.jar",
+                    "file_name": "skyblocker-6.2.0+1.21.10.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10"
@@ -3484,19 +3461,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/NSu0Cv9W/skyblocker-6.1.1+1.21.10.jar",
-                    "id": "NSu0Cv9W",
+                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/SFUNlSpi/skyblocker-6.2.0+1.21.10.jar",
+                    "id": "SFUNlSpi",
                     "parent_id": "y6DuFGwJ",
                     "hashes": {
-                        "sha512": "861c0ae7d238e8749a6524adbdc6cf286c73f78faf4336737751f4a4e522aed683171ecb8fabf3dee94847b65471bc74cd5d17829f6c58ceb0d914c30f716916",
-                        "sha1": "1927877428aab9c629e1afa7b877052cb34f8cb0"
+                        "sha512": "03f364062587f32fa3f6061d739f598566b23ff226692ad8315680a556a7612fd1351c382fc75fcb809f890b89773dc33c68852b2857ccad98552283ccf28568",
+                        "sha1": "2f538bfa8519e6fdac0232348c9ab4f1c9f41735"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 18656637,
-                    "date_published": "2026-02-28T19:07:11.920406Z"
+                    "size": 18691688,
+                    "date_published": "2026-03-24T13:15:52.877411Z"
                 },
                 {
                     "type": "curseforge",
@@ -3549,8 +3526,7 @@
                         "1.21.10"
                     ],
                     "loaders": [
-                        "fabric",
-                        "quilt"
+                        "fabric"
                     ],
                     "release_type": "release",
                     "url": "https://cdn.modrinth.com/data/AANobbMI/versions/sFfidWgd/sodium-fabric-0.7.3+mc1.21.10.jar",
@@ -3759,30 +3735,30 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Sophie's Enchant Books V1.5.zip",
+                    "file_name": "Sophie's Enchant Books V1.6.zip",
                     "mc_versions": [
                         "1.21.5",
+                        "1.21.6",
                         "1.21.7",
                         "1.21.8",
                         "1.21.9",
-                        "1.21.10"
+                        "1.21.10",
+                        "1.21.11"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XBG9JHVh/versions/WhuQvJm0/Sophie's Enchant Books V1.5.zip",
-                    "id": "WhuQvJm0",
+                    "url": "https://cdn.modrinth.com/data/XBG9JHVh/versions/38nDu49d/Sophie's Enchant Books V1.6.zip",
+                    "id": "38nDu49d",
                     "parent_id": "XBG9JHVh",
                     "hashes": {
-                        "sha512": "a480acc64ce9856050bd5c53c0e43ddff7463009e32fb30d657b4c40bf4b5edf505162b7c401b1cd2343635829d1b65cb397d1e2eecf8253e0d07cf31435e514",
-                        "sha1": "937eba67b988957a2a9f07f4b76bef45848aa8ba"
+                        "sha512": "1c80c4ee2b63fbc0642ec34b7bbd92eab542c15e2c9b79f09756bf45c16a4ee458d4f8ad1c9401a8cc75236bea6edd1f6c1a7f6d33aa794a853fd8cc867fcd8f",
+                        "sha1": "fe778a229bd1542faa1f8fb3d1c5595f7878c57e"
                     },
-                    "required_dependencies": [
-                        "IJNUBZ2a"
-                    ],
-                    "size": 381810,
-                    "date_published": "2025-12-09T21:45:13.429607Z"
+                    "required_dependencies": [],
+                    "size": 408086,
+                    "date_published": "2026-03-24T16:34:42.284158Z"
                 }
             ]
         },

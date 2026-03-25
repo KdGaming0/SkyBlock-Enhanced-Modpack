@@ -1,0 +1,141 @@
+# SkyBlock Enhanced
+
+![Skyblock Enhanced Modern Edition banner featuring floating island worlds with a portal structure on the left and a village settlement on the right against a cloudy sky background, with decorative golden corner frames](https://cdn.modrinth.com/data/cached_images/2737834de5f9d2dfe6d9f42d27b25b1b6ffbc90e.webp)
+
+## Welcome!
+
+Thank you for downloading **SkyBlock Enhanced**! This modpack is designed to give you the best Hypixel SkyBlock experience on modern Minecraft (1.21.11+) with over 60 pre-configured mods for performance, quality of life, and visual improvements.
+
+---
+
+## Quick Start Guide
+
+### First Launch
+
+1. **Launch the modpack** through your launcher (Modrinth App recommended)
+2. **Complete the Welcome Wizard** to customize your experience:
+   - Choose your performance profile (Performance, Balanced, Shaders Balanced, Quality, or Shaders Quality)
+   - Select your preferred main menu style, tab list, item backgrounds, and storage design
+   - Enable your favorite resource packs
+3. **Join Hypixel** and start playing!
+
+### Recommended Settings
+
+**RAM Allocation:**
+| System RAM | Recommended | With Shaders |
+|---|---|---|
+| 8GB | 3–4GB | 4GB |
+| 16GB | 4–6GB | 6–8GB |
+| 32GB+ | 6–8GB | 8–10GB |
+
+**If you experience issues with resource packs**, add this JVM argument: `-Xss4M`
+
+---
+
+## What's Included?
+
+### Performance Mods
+- **Sodium** – Massive FPS improvements
+- **ImmediatelyFast** – Faster UI and entity rendering
+- **FerriteCore** – Reduced memory usage
+- **Entity Culling** – Skips rendering entities behind walls
+- **Lithium** – General game logic optimization
+- **Bobby** – Extended render distance via chunk caching
+- **Debugify** – Fixes vanilla performance bugs
+- And more!
+
+### SkyBlock Enhancement Mods
+- **SkyHanni** – Comprehensive SkyBlock features for farming, combat, mining, and more
+- **Skyblocker** – Dungeon solvers, price displays, HUDs, and more
+- **Firmament** – NEU-inspired inventory tools and storage overlay
+- **Odin** – Endgame dungeon and Kuudra utilities
+- **ScamScreener** – Real-time chat scam detection
+- **Modern Warp Menu** – Clean island navigation
+- **SkyOcean** – Item pricing and storage search
+- And more!
+
+### Quality of Life
+- UI improvements, visual enhancements, chat features, and more
+
+**All mods are Hypixel-safe and follow server guidelines.**
+
+---
+
+## Key Features
+
+✅ **Pre-configured for immediate use** – No manual setup required\
+✅ **6 resolution-specific presets** – 1080p 2×, 1080p 3×, 1440p, 1440p ultrawide, 4K and 4K ultrawide\
+✅ **Performance profiles** – Choose settings that match your hardware\
+✅ **Welcome Wizard** – Guided setup for performance, UI style, and resource packs on first launch\
+✅ **In-game Config Manager** – Export, import, back up, and restore your settings without touching a file\
+✅ **One-click updates** – Keep everything up to date effortlessly
+
+---
+
+## Troubleshooting
+
+### Game Won't Start
+- Make sure you have allocated enough RAM (see table above)
+- Ensure you're using **Java 21** or newer
+- Add `-Xss4M` to JVM arguments if you see "Resource Reload Failed"
+
+### Low FPS
+- Switch to the **Performance** profile in the Welcome Wizard
+- Lower render distance in Video Settings
+- Disable shaders if enabled
+- Close background programs
+
+### UI Elements Overlapping
+- Use the Config Manager to apply the preset that matches your screen resolution and GUI scale
+- Re-run the Welcome Wizard with `/packcore modpack_config`
+
+---
+
+## Need Help?
+
+📖 **Full Documentation & Guides**\
+Visit the Modrinth page for detailed installation instructions, FAQ, and feature guides:\
+[https://modrinth.com/project/e0oMrxjp](https://modrinth.com/project/e0oMrxjp)
+
+💬 **Join the Community**\
+Get support, share configs, and stay updated on new releases.\
+We've moved to Fluxer for better privacy — everyone is encouraged to make the switch:\
+[https://fluxer.gg/3jJy9cp6](https://fluxer.gg/3jJy9cp6)
+
+Still on Discord? You can also find us here (Fluxer recommended):\
+[https://discord.gg/pdwxyjTta7](https://discord.gg/pdwxyjTta7)
+
+---
+
+## Support the Project
+
+If you enjoy SkyBlock Enhanced, consider supporting development:
+
+☕ **Ko-fi**: [ko-fi.com/kdgaming1](https://ko-fi.com/kdgaming1)
+
+🎮 **Need a Minecraft server?** Use code **SBE** at [Bisect Hosting](https://www.bisecthosting.com/SBE) for **25% off**!
+
+---
+
+## Important Notes
+
+- ⚠️ **All mods are allowed on Hypixel** – They follow server guidelines and are client-side only
+- 🔄 **Updates available** – Check Modrinth regularly for new versions
+- 📝 **Shaders warning** – Some SkyBlock overlays may not display correctly with shaders enabled
+- 🎨 **Resource packs included** – Furfsky Reborn, Hypixel Plus, Skyblock Dark UI, Defrosted, Looshy, and Sophie's Enchantment Books
+
+---
+
+## Credits
+
+**Modpack created by Kd_Gaming1**
+
+Special thanks to all mod developers who made this pack possible, to @ic22487for the logo, and to the Hypixel SkyBlock community for their continued support.
+
+---
+
+**Version**: Check Modrinth page for current version\
+**Minecraft**: 1.21.11+\
+**Mod Loader**: Fabric
+
+Happy grinding, and see you in SkyBlock! 🎮

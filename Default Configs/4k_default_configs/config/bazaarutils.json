@@ -1,0 +1,122 @@
+{
+	"MOD_VERSION": "0.6.1-beta.2",
+	"firstLoad": false,
+	"resourcesSha": "ab4b234c3f2c8ac84ba107adcd250724727717db",
+	"flipHelper": {
+		"enabled": true,
+		"order": null,
+		"slot_number": 17
+	},
+	"userOrders": [],
+	"bzTax": 0.01125,
+	"customOrders": [],
+	"developerMode": false,
+	"outbidOrderHandler": {
+		"auto_open_enabled": false,
+		"notify_outbid": true,
+		"notification_sound": true
+	},
+	"restrictSell": {
+		"enabled": true,
+		"safety_clicks_required": 3,
+		"controls": [
+			{
+				"enabled": true,
+				"rule": "PRICE",
+				"amount": 1000000.0,
+				"name": null
+			}
+		],
+		"locked": true,
+		"safety_clicks": 0
+	},
+	"developer": {
+		"all_messages": false,
+		"error_messages": false,
+		"gui_messages": false,
+		"feature_messages": false,
+		"bazaar_data_messages": false,
+		"command_messages": false,
+		"item_data_messages": false
+	},
+	"stashMessages": {
+		"remove_messages": false,
+		"stash_previously_claimed": true
+	},
+	"bookmarks": [
+		{
+			"name": "Diamond",
+			"bookmarked_item_stack": null,
+			"order_info": {
+				"name": "Diamond",
+				"volume": null,
+				"product_i_d": "DIAMOND",
+				"outbid_status": null,
+				"tolerance": 0.9,
+				"item_info": null,
+				"price_per_item": null,
+				"price_type": "INSTABUY",
+				"insta_sell_price": 0.0,
+				"insta_buy_price": 0.0
+			},
+			"slot_number": 0
+		}
+	],
+	"priceCharts": {
+		"show_outside_bazaar": false
+	},
+	"orderStatusHighlight": {
+		"enabled": true
+	},
+	"disableErrorNotifications": false,
+	"orderFilledSound": true,
+	"orderLimit": {
+		"enabled": true,
+		"coin_limit": 1.5E10,
+		"order_limit_entries": [
+			{
+				"price": 73549.0,
+				"time": "2025-09-30T15:21:18.5974254+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 51381.6,
+				"time": "2025-09-30T15:21:18.5995352+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 578150.4,
+				"time": "2025-09-30T15:21:18.601073+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 3031503.0,
+				"time": "2025-09-30T15:21:18.6021124+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 128173.20000000001,
+				"time": "2025-09-30T15:21:18.6036744+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 1.05962814E7,
+				"time": "2025-09-30T15:21:18.6052239+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 26.400000000000002,
+				"time": "2025-09-30T15:21:18.6067645+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 870.4,
+				"time": "2025-09-30T15:21:18.6088545+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 140.8,
+				"time": "2025-09-30T15:21:18.6099004+02:00[Europe/Oslo]"
+			},
+			{
+				"price": 35776.0,
+				"time": "2025-09-30T15:21:18.6109286+02:00[Europe/Oslo]"
+			}
+		]
+	},
+	"bazaarOpenOrdersButton": {
+		"enabled": true
+	}
+}

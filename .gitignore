@@ -1,33 +1,34 @@
-# =========================
-# Legacy Edition
-# =========================
-SkyBlock_Enhanced_Legacy_Edition/*.zip
-SkyBlock_Enhanced_Legacy_Edition/*.mrpack
-SkyBlock_Enhanced_Legacy_Edition/*.txt
+# ── Local act / workflow testing ──────────────────────────────────────────────
+event.json
+.actrc
 
-# =========================
-# Modern Editions 1.21.5 & 1.21.8
-# =========================
+# ── Secrets & environment vars ────────────────────────────────────────────────
+.secrets
+.vars
 
-# Ignore docs folder
-SkyBlock_Enhanced_Modern_Edition_1.21.5/.pakku/docs/
-SkyBlock_Enhanced_Modern_Edition_1.21.8/.pakku/docs/
-SkyBlock_Enhanced_Modern_Edition_1.21.10/.pakku/docs/
+# ── Modpack build output ──────────────────────────────────────────────────────
+**/build/
+*.mrpack
+*.zip
 
-# Ignore build folders
-SkyBlock_Enhanced_Modern_Edition_1.21.5/build/
-SkyBlock_Enhanced_Modern_Edition_1.21.8/build/
-SkyBlock_Enhanced_Modern_Edition_1.21.10/build/
+# ── Pakku temporary diff file ─────────────────────────────────────────────────
+**/.pakku/lock.old.json
 
-# Ignore mods, resourcepacks, and shaderpacks
-SkyBlock_Enhanced_Modern_Edition_1.21.5/mods/
-SkyBlock_Enhanced_Modern_Edition_1.21.5/resourcepacks/
-SkyBlock_Enhanced_Modern_Edition_1.21.5/shaderpacks/
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
 
-SkyBlock_Enhanced_Modern_Edition_1.21.8/mods/
-SkyBlock_Enhanced_Modern_Edition_1.21.8/resourcepacks/
-SkyBlock_Enhanced_Modern_Edition_1.21.8/shaderpacks/
+# ── Docker (local build artefacts only — source stays in .github/scripts/docker)
+**/.docker-build/
 
-SkyBlock_Enhanced_Modern_Edition_1.21.10/mods/
-SkyBlock_Enhanced_Modern_Edition_1.21.10/resourcepacks/
-SkyBlock_Enhanced_Modern_Edition_1.21.10/shaderpacks/
+# ── OS junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
