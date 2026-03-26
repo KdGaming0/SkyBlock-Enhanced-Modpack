@@ -24,6 +24,75 @@ pause() {
     read -p "Press Enter to continue..."
 }
 
+# -------- VERSION BUMP --------
+
+bump_version() {
+    local pack_files=()
+
+    # Find all pack.json files in the config folders
+    while IFS= read -r -d '' f; do
+        pack_files+=("$f")
+    done < <(find "$SOURCE" -maxdepth 3 -name "pack.json" -not -path "*/archive/*" -print0)
+
+    if [ ${#pack_files[@]} -eq 0 ]; then
+        echo "⚠ No pack.json files found. Skipping version bump."
+        return
+    fi
+
+    # Read version from the first found pack.json
+    local sample_file="${pack_files[0]}"
+    local current_version
+    current_version=$(grep -oP '"version"\s*:\s*"\K[^"]+' "$sample_file")
+
+    if [ -z "$current_version" ]; then
+        echo "⚠ Could not read version from pack.json. Skipping version bump."
+        return
+    fi
+
+    # Parse major.minor.patch
+    IFS='.' read -r MAJOR MINOR PATCH <<< "$current_version"
+
+    echo ""
+    echo "=================================="
+    echo "   Version Bump"
+    echo "=================================="
+    echo "  Current version: $current_version"
+    echo ""
+    echo "  1) Patch  →  $MAJOR.$MINOR.$((PATCH + 1))"
+    echo "  2) Minor  →  $MAJOR.$((MINOR + 1)).0"
+    echo "  3) Major  →  $((MAJOR + 1)).0.0"
+    echo "  4) Skip   →  Keep $current_version"
+    echo "----------------------------------"
+    read -p "Choose an option: " vchoice
+
+    local new_version=""
+    case "$vchoice" in
+        1) new_version="$MAJOR.$MINOR.$((PATCH + 1))" ;;
+        2) new_version="$MAJOR.$((MINOR + 1)).0" ;;
+        3) new_version="$((MAJOR + 1)).0.0" ;;
+        4)
+            echo "  Skipping version bump."
+            return
+            ;;
+        *)
+            echo "  Invalid option. Skipping version bump."
+            return
+            ;;
+    esac
+
+    echo ""
+    echo "  Bumping version: $current_version → $new_version"
+    echo ""
+
+    # Apply new version to all found pack.json files
+    for pf in "${pack_files[@]}"; do
+        sed -i "s/\"version\"\s*:\s*\"$current_version\"/\"version\": \"$new_version\"/" "$pf"
+        echo "  Updated: $pf"
+    done
+
+    echo "  ✔ Version bumped to $new_version"
+}
+
 create_zips() {
     echo "=== Creating ZIPs ==="
 
@@ -84,6 +153,7 @@ overwrite_dest() {
 }
 
 build_and_deploy() {
+    bump_version
     archive_old_zips
     create_zips
     deploy_zips

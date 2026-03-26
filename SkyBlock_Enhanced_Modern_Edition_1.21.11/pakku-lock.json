@@ -1108,7 +1108,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "entityculling-fabric-1.9.5-mc1.21.11.jar",
+                    "file_name": "entityculling-fabric-1.10.0-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1116,18 +1116,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7396/702/entityculling-fabric-1.9.5-mc1.21.11.jar",
-                    "id": "7396702",
+                    "url": "https://edge.forgecdn.net/files/7813/021/entityculling-fabric-1.10.0-mc1.21.11.jar",
+                    "id": "7813021",
                     "parent_id": "448233",
                     "hashes": {
-                        "sha1": "e2e88c0b2286148e9547eb23d95d2e30e60ad753",
-                        "md5": "116a6dd3e9318eba93ecf58a51caf248"
+                        "sha1": "1d0370bf2f6fc68d7d5c448ae391ae8248a5e817",
+                        "md5": "b04e373862082552a51e569fd059b70d"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1571825,
-                    "date_published": "2025-12-30T15:26:19.250Z"
+                    "size": 1580001,
+                    "date_published": "2026-03-25T19:23:12.623Z"
                 }
             ]
         },
@@ -1211,7 +1211,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar",
+                    "file_name": "fabric-language-kotlin-1.13.10+kotlin.2.3.20.jar",
                     "mc_versions": [
                         "1.14",
                         "1.14.1",
@@ -1262,16 +1262,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/ViT4gucI/fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar",
-                    "id": "ViT4gucI",
+                    "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/21TRTKmh/fabric-language-kotlin-1.13.10+kotlin.2.3.20.jar",
+                    "id": "21TRTKmh",
                     "parent_id": "Ha28R6CL",
                     "hashes": {
-                        "sha512": "498672ee88cf703685026e74f82a85e30d980c62a1c8cc14744cb73add09a857db8d585b405e19f558ec490613642750eb00e09d8ef5a3c9578bc52b53568d51",
-                        "sha1": "20b2200961e11994595ebb2d5f6624f232d13751"
+                        "sha512": "e4eaf7594de08eb4f3ea8af2e939f3ee61d07597afb4d5f420c3fbadcb381c7bbad4b1afd5919b3087b73ed9636fb018b1c978858a112bd4f6acdcb42e9eedaa",
+                        "sha1": "9873294abf498f509453d37b0a5ba019f4570ffb"
                     },
                     "required_dependencies": [],
-                    "size": 7642216,
-                    "date_published": "2026-02-06T09:24:24.664865Z"
+                    "size": 7796348,
+                    "date_published": "2026-03-26T08:54:12.652592Z"
                 },
                 {
                     "type": "curseforge",
@@ -2541,7 +2541,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-4.1.4+1.21.11.jar",
+                    "file_name": "packcore-4.1.5+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2549,19 +2549,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/37tpb8cp/packcore-4.1.4+1.21.11.jar",
-                    "id": "37tpb8cp",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/N5ETdocs/packcore-4.1.5+1.21.11.jar",
+                    "id": "N5ETdocs",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "33d43c8f14ec5de333d13707104610488749e3d74f76bec039ee86946940939cefd3b1a8140f7f13737259d6cfcdcf411979aab461a2c7929dbc1c243e41eab2",
-                        "sha1": "7ba33673c6a329c25f8efa473be071579c85f2f2"
+                        "sha512": "daa5a2bf4901a01763cbe0467c111d25e3f9375d0a080d9d52a95f9f5490b0b1efa40f3a08be366b426f66c6e901ed3a53c37a028c8fdcfc77f702542e1d63c2",
+                        "sha1": "aee71573026aa78e1984adb06c1245116d2c573f"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 45117265,
-                    "date_published": "2026-03-25T14:27:09.432913Z"
+                    "size": 45125969,
+                    "date_published": "2026-03-26T13:25:46.931959Z"
                 },
                 {
                     "type": "curseforge",
@@ -2944,7 +2944,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scamscreener-2.1.2+1.21.11.jar",
+                    "file_name": "scamscreener-2.1.3+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2952,18 +2952,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/KoP0KdOW/scamscreener-2.1.2+1.21.11.jar",
-                    "id": "KoP0KdOW",
+                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/zigxJSHS/scamscreener-2.1.3+1.21.11.jar",
+                    "id": "zigxJSHS",
                     "parent_id": "XTB0bgAW",
                     "hashes": {
-                        "sha512": "c1fa13600c4081a8c96f526ec1d407e0f92b153988cd1c9a058b8627b936130abf447e2b7e69a16de5d03ddcb84d93d8292469d2abefe76d2692d860b13d6bda",
-                        "sha1": "13cb277829ea6d5aa101e843f09d214ca76e56d0"
+                        "sha512": "768965f8a35228f179d4ce263b6ab04a4549469c04918c49a8e580de7157b884dbe5626b1f0862e0e936238b6bfef7758f9a51dd258d3d8e737076ef0ebe511d",
+                        "sha1": "d7663766053044abb376db74a7ed3154f562df55"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 525734,
-                    "date_published": "2026-03-15T13:57:36.782883Z"
+                    "size": 516903,
+                    "date_published": "2026-03-26T12:31:42.266365Z"
                 }
             ]
         },

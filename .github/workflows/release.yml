@@ -71,7 +71,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: changelog
-          path: CHANGELOG-v${{ steps.info.outputs.modpack_version }}.md
+          path: ${{ env.PACK_DIR }}/.pakku/overrides/packcore/markdown/CHANGELOG-v${{ steps.info.outputs.modpack_version }}.md
           if-no-files-found: warn
 
   # ── BUILD ───────────────────────────────────────────────────────────────────

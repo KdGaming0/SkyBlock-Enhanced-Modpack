@@ -567,9 +567,6 @@ step_changelog() {
     fi
 
     # ── Write files ──────────────────────────────────────────────────────────
-    local release_cl="$REPO_ROOT/CHANGELOG-v${NEW_VERSION}.md"
-    echo "$CHANGELOG_BODY" > "$release_cl"
-    print_ok "Wrote $release_cl  (picked up by CI)"
 
     # Prepend to main CHANGELOG.md
     if [[ -f "$ROOT_CHANGELOG" ]]; then
@@ -668,7 +665,7 @@ main() {
     print_header "🎉 Release Complete"
     echo -e "  Version   : ${BOLD}${NEW_VERSION}${NC}"
     echo -e "  Tag       : ${BOLD}v${NEW_VERSION}${NC}"
-    echo -e "  Changelog : ${BOLD}CHANGELOG-v${NEW_VERSION}.md${NC}"
+    echo -e "  Changelog : ${BOLD}CHANGELOG.md${NC} + packcore/markdown/"
     echo ""
 }
 
