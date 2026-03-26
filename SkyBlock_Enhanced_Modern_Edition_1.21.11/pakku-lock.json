@@ -2565,7 +2565,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-4.1.4+1.21.11.jar",
+                    "file_name": "packcore-4.1.5+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2573,19 +2573,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7811/415/packcore-4.1.4+1.21.11.jar",
-                    "id": "7811415",
+                    "url": "https://edge.forgecdn.net/files/7816/814/packcore-4.1.5+1.21.11.jar",
+                    "id": "7816814",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "7ba33673c6a329c25f8efa473be071579c85f2f2",
-                        "md5": "74f3830834de047d4efdbf23c40fcd4e"
+                        "sha1": "aee71573026aa78e1984adb06c1245116d2c573f",
+                        "md5": "1fc395c56b0e2f89a298cfbe0e3312f9"
                     },
                     "required_dependencies": [
-                        "306612",
-                        "933200"
+                        "933200",
+                        "306612"
                     ],
-                    "size": 45117265,
-                    "date_published": "2026-03-25T14:27:01.360Z"
+                    "size": 45125969,
+                    "date_published": "2026-03-26T13:25:40.523Z"
                 }
             ]
         },
