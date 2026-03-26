@@ -1275,7 +1275,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar",
+                    "file_name": "fabric-language-kotlin-1.13.10+kotlin.2.3.20.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.8",
@@ -1294,16 +1294,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7583/523/fabric-language-kotlin-1.13.9+kotlin.2.3.10.jar",
-                    "id": "7583523",
+                    "url": "https://edge.forgecdn.net/files/7815/918/fabric-language-kotlin-1.13.10+kotlin.2.3.20.jar",
+                    "id": "7815918",
                     "parent_id": "308769",
                     "hashes": {
-                        "sha1": "20b2200961e11994595ebb2d5f6624f232d13751",
-                        "md5": "5a82c29fbbfdd3acbb9da9229ae0e32d"
+                        "sha1": "9873294abf498f509453d37b0a5ba019f4570ffb",
+                        "md5": "ab31a7c6fdfeb7f5dca011dcfa88ff08"
                     },
                     "required_dependencies": [],
-                    "size": 7642216,
-                    "date_published": "2026-02-06T09:24:21.213Z"
+                    "size": 7796348,
+                    "date_published": "2026-03-26T08:54:11.307Z"
                 }
             ]
         },
@@ -2541,7 +2541,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-4.1.5+1.21.11.jar",
+                    "file_name": "packcore-4.1.6+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2549,23 +2549,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/N5ETdocs/packcore-4.1.5+1.21.11.jar",
-                    "id": "N5ETdocs",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/52CglRL0/packcore-4.1.6+1.21.11.jar",
+                    "id": "52CglRL0",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "daa5a2bf4901a01763cbe0467c111d25e3f9375d0a080d9d52a95f9f5490b0b1efa40f3a08be366b426f66c6e901ed3a53c37a028c8fdcfc77f702542e1d63c2",
-                        "sha1": "aee71573026aa78e1984adb06c1245116d2c573f"
+                        "sha512": "817fa96e9c95e0c1014dc17b43289198e58708ab15b9405231e7013931f3e74f68b9f17f96ba6f9616aaf8dde76575b7ce51de415f10c26962fab192ce9bf0c0",
+                        "sha1": "af143e9d99f2d834687219fd0198a517cdf9c131"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "AOEDs9Al"
                     ],
-                    "size": 45125969,
-                    "date_published": "2026-03-26T13:25:46.931959Z"
+                    "size": 45125971,
+                    "date_published": "2026-03-26T14:30:10.714521Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-4.1.5+1.21.11.jar",
+                    "file_name": "packcore-4.1.6+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2573,19 +2573,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7816/814/packcore-4.1.5+1.21.11.jar",
-                    "id": "7816814",
+                    "url": "https://edge.forgecdn.net/files/7817/110/packcore-4.1.6+1.21.11.jar",
+                    "id": "7817110",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "aee71573026aa78e1984adb06c1245116d2c573f",
-                        "md5": "1fc395c56b0e2f89a298cfbe0e3312f9"
+                        "sha1": "af143e9d99f2d834687219fd0198a517cdf9c131",
+                        "md5": "94f6a1a93bbbe13720d59ff5a2b495e2"
                     },
                     "required_dependencies": [
                         "933200",
                         "306612"
                     ],
-                    "size": 45125969,
-                    "date_published": "2026-03-26T13:25:40.523Z"
+                    "size": 45125971,
+                    "date_published": "2026-03-26T14:30:01.953Z"
                 }
             ]
         },

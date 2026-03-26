@@ -339,15 +339,15 @@ jobs:
           loaders:        ${{ needs.validate.outputs.modpack_loader }}
           changelog-file: ${{ steps.cl.outputs.path }}
 
-      - name: Send Discord release notification
-        if: ${{ vars.DISCORD_WEBHOOK_RELEASES != '' }}
-        uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
-        with:
-          key: ${{ vars.DISCORD_WEBHOOK_RELEASES }}
-          username: "SkyBlock Enhanced"
-          content: |
-            ## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! :tada:
-            [Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)
+      - name: Send Fluxer release notification
+        if: ${{ vars.FLUXER_WEBHOOK_URL != '' }}
+        run: |
+          curl -sSf -X POST "${{ vars.FLUXER_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "username": "SkyBlock Enhanced",
+              "content": "## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! 🎉\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)"
+            }'
 
       - name: Delete tag on publish failure
         if: failure()
