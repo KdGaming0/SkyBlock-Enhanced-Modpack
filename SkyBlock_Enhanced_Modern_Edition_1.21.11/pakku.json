@@ -1,6 +1,6 @@
 {
   "name": "SkyBlock Enhanced",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "The only Hypixel SkyBlock modpack you need. Built for modern Minecraft — 60+ optimized mods, a guided setup wizard, and a config system no other pack comes close to match.",
   "overrides": [
     "packcore"
