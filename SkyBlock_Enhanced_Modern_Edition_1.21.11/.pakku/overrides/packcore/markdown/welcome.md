@@ -4,6 +4,8 @@ You've just installed **SkyBlock Enhanced**!
 
 Let's walk through a quick setup to make your Hypixel SkyBlock experience smooth and personal.
 
+> To reopen this menu later do `/packcore wizard` in chat
+
 ---
 
 ## What to expect

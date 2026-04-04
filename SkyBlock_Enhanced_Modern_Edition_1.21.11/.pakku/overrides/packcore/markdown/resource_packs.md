@@ -16,19 +16,15 @@ A clean, mostly-vanilla UI and item pack built for Hypixel. Clear icons, polishe
 
 > **Requires a JVM flag:** `-Xss4M`. Finish setup, add the flag, then restart Minecraft before enabling this pack. Need help? [Join the Discord](https://discord.gg/pdwxyjTta7)
 
-### FurfSky Reborn (Full)
+### FurfSky Reborn
 
-[FurfSky Reborn Full Preview](https://modrinth.com/resourcepack/furfsky-reborn/gallery)
+[FurfSky Reborn Preview](https://modrinth.com/resourcepack/furfsky-reborn/gallery)
 
-A very popular SkyBlock pack. Replaces almost everything including GUI textures.
+One of the most popular SkyBlock packs, now merged into a single pack with built-in options.
 
-> Do not use alongside SkyBlock Dark UI — the two can break some menus together.
+Includes custom items, GUIs, and full visual overhauls, but you can toggle features depending on your setup (like using only item textures or keeping the full experience).
 
-### FurfSky Reborn (Overlay)
-
-[FurfSky Reborn Overlay Preview](https://modrinth.com/resourcepack/furfsky-reborn/gallery)
-
-The item-textures-only version of FurfSky. Only changes SkyBlock item textures, leaving the GUI untouched. Pairs well with dark UI packs.
+> Avoid combining full GUI features with other UI packs like SkyBlock Dark UI, as they may conflict.
 
 ### SkyBlock Dark UI
 
@@ -60,15 +56,25 @@ Darkens SkyBlock world zones like The End, The Mist, the Rift, and Glacite Tunne
 
 Gives every enchanted book a unique texture so you can identify enchants at a glance in your inventory or chests.
 
+### PacksHQ
+
+[PacksHQ Preview](https://modrinth.com/resourcepack/packshq/gallery)
+
+One of the oldest Hypixel SkyBlock texture packs, focused on keeping a strong vanilla feel while improving clarity and recognition.
+
+Adds custom items, armor, ores, pets, GUIs, and more while staying true to the original Minecraft style.
+
 ---
 
 ## Popular Combinations
 
 - Hypixel Plus (solo)
-- FurfSky Full (solo)
-- FurfSky Overlay + SkyBlock Dark UI
+- FurfSky Reborn (customizable)
+- FurfSky (items only) + SkyBlock Dark UI
 - Hypixel Plus + SkyBlock Dark UI
 - SkyBlock Dark UI + Defrosted + Looshy
 - Defrosted + Looshy
 - Dark Mode SkyBlock + any main pack
 - Sophie's Enchants + any pack (overlays cleanly on top)
+- PacksHQ (Catharsis) + Dark Mode SkyBlock
+- HyWare + Sophie's Enchants
