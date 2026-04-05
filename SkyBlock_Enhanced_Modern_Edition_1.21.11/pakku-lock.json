@@ -2099,6 +2099,48 @@
             ]
         },
         {
+            "pakku_id": "hWAY3280Rwwd0skz",
+            "pakku_links": [
+                "LwqrzSsyxBuQ5jrL"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "marketguard"
+            },
+            "name": {
+                "modrinth": "MarketGuard for Hypixel SkyBlock"
+            },
+            "id": {
+                "modrinth": "ji4JdpCu"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "marketguard-1.0.0-beta1+1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/y18l5ntV/marketguard-1.0.0-beta1+1.21.11.jar",
+                    "id": "y18l5ntV",
+                    "parent_id": "ji4JdpCu",
+                    "hashes": {
+                        "sha512": "828279c133e873897cd47bddac824d7839e900f892827b2d6181dd519a32be0a3e000650392f1ace33022511b53da78e115e05022f42a4c5e95a96ec60745223",
+                        "sha1": "ef425445c2587f57f28b105a32983aa0a4a1f4f9"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 39579,
+                    "date_published": "2026-04-01T14:49:47.912357Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "tDyL1RmoY8iR9npt",
             "pakku_links": [
                 "WeNkINPeV6YuIWGs",
@@ -2958,7 +3000,8 @@
         {
             "pakku_id": "fSCV1ExJ4HVO6xu3",
             "pakku_links": [
-                "LwqrzSsyxBuQ5jrL"
+                "LwqrzSsyxBuQ5jrL",
+                "hWAY3280Rwwd0skz"
             ],
             "type": "MOD",
             "side": "CLIENT",
