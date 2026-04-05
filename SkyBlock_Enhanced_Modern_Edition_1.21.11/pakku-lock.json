@@ -2977,7 +2977,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scamscreener-2.2.1+1.21.11.jar",
+                    "file_name": "scamscreener-2.3.0+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2985,18 +2985,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/4PmDGzVb/scamscreener-2.2.1+1.21.11.jar",
-                    "id": "4PmDGzVb",
+                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/OlSgx9CB/scamscreener-2.3.0+1.21.11.jar",
+                    "id": "OlSgx9CB",
                     "parent_id": "XTB0bgAW",
                     "hashes": {
-                        "sha512": "3118e7ac02162b85a15464e9756fb45a6d4b766c423e60a784d9dd2a18c5a0914ceba68e442708fc395f62521ecb51e96d07f9dfd621ab2161f3ce9f36996198",
-                        "sha1": "c1f6db51a549d1f266274d180a4d6e1595f293ca"
+                        "sha512": "fe93d15787516985fd59128c57f2cc5f99c25939d604f340db6728be773402d87cc98004d0ae016fcaaf80ab5d6b7599c7fed36c61609ad345ef239d7dc937b7",
+                        "sha1": "7cf06c4feda31a5696517e44190caf442949d25c"
                     },
                     "required_dependencies": [
+                        "ji4JdpCu",
                         "P7dR8mSH"
                     ],
-                    "size": 790002,
-                    "date_published": "2026-04-01T12:12:12.209376Z"
+                    "size": 790009,
+                    "date_published": "2026-04-05T13:06:38.933759Z"
                 },
                 {
                     "type": "curseforge",
@@ -3225,7 +3226,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-0.10.0+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.10.2+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3233,23 +3234,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/lbNiUaiZ/skyblock_enhancements-0.10.0+1.21.11.jar",
-                    "id": "lbNiUaiZ",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/nESdjXrP/skyblock_enhancements-0.10.2+1.21.11.jar",
+                    "id": "nESdjXrP",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "c45d2fa47140b9da3e7fcefe4293b947e734e3c75b260a7818d7f08e1ec3fe1a0085f47ea81443194bb950626c7d1680a28a7cdb4573122e89fdeb717cf3e793",
-                        "sha1": "861088b052624fa661c7c39f3656460dbe23f5e4"
+                        "sha512": "15155c8a1436505bc92fd8fcaa5da761e90c552fbb7690f92aac94d7d28dd7ce377a4f04d167686dbb785c64d180776db62b68ccc8838bc299bc562dd253d5d7",
+                        "sha1": "c53ddd121f535bba3e052f8a7c9b53ea322c0672"
                     },
                     "required_dependencies": [
                         "AOEDs9Al",
                         "P7dR8mSH"
                     ],
-                    "size": 1084606,
-                    "date_published": "2026-04-04T20:22:06.894996Z"
+                    "size": 1126502,
+                    "date_published": "2026-04-05T14:07:32.454012Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-0.10.0+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.10.2+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3257,18 +3258,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7875/859/skyblock_enhancements-0.10.0+1.21.11.jar",
-                    "id": "7875859",
+                    "url": "https://edge.forgecdn.net/files/7879/581/skyblock_enhancements-0.10.2+1.21.11.jar",
+                    "id": "7879581",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "861088b052624fa661c7c39f3656460dbe23f5e4",
-                        "md5": "34bd1db1893af743bddf104f9f69e30b"
+                        "sha1": "c53ddd121f535bba3e052f8a7c9b53ea322c0672",
+                        "md5": "f0e2b541f2d003498dca92b8d2c52cb3"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1084606,
-                    "date_published": "2026-04-04T20:22:06.333Z"
+                    "size": 1126502,
+                    "date_published": "2026-04-05T14:07:27.377Z"
                 }
             ]
         },
@@ -3514,7 +3515,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblocker-6.2.0+1.21.11.jar",
+                    "file_name": "skyblocker-6.3.0+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3522,19 +3523,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/E6eA8eXs/skyblocker-6.2.0+1.21.11.jar",
-                    "id": "E6eA8eXs",
+                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/bXdpmba0/skyblocker-6.3.0+1.21.11.jar",
+                    "id": "bXdpmba0",
                     "parent_id": "y6DuFGwJ",
                     "hashes": {
-                        "sha512": "a1b1fb086a90586bc24cc41f07fee8fc049442f445cda953347f84e1337dfff449ba421da75bf9393ea7c41ba6bf9f574a9a6a67169e489e3a14445768863c9e",
-                        "sha1": "1facfbed4d9dfc54df180253be398ff0b3b30c5f"
+                        "sha512": "aff2022bedf8560b9c8d414d6f9860e6763137be74d21ba3116b9a201cd655709e54855746d59fb73deb6e655ba603e4625a329fe4cd4cbe4af45435a06652ff",
+                        "sha1": "b47f37b7a2d4ebdf4f9ab7f6eab3844f10470f09"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 18844878,
-                    "date_published": "2026-03-24T13:17:40.591714Z"
+                    "size": 18898055,
+                    "date_published": "2026-04-05T01:55:20.677736Z"
                 },
                 {
                     "type": "curseforge",
