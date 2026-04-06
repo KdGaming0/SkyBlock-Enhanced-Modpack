@@ -1388,74 +1388,6 @@
             ]
         },
         {
-            "pakku_id": "Z6ZWEU7KsXzbXP1R",
-            "pakku_links": [
-                "LwqrzSsyxBuQ5jrL"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "forge-config-api-port",
-                "modrinth": "forge-config-api-port"
-            },
-            "name": {
-                "curseforge": "Forge Config API Port",
-                "modrinth": "Forge Config API Port"
-            },
-            "id": {
-                "curseforge": "547434",
-                "modrinth": "ohNO6lps"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7337/130/ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar",
-                    "id": "7337130",
-                    "parent_id": "547434",
-                    "hashes": {
-                        "sha1": "61aa1b5fafd75afc44552d0213cac39bc938bc2d",
-                        "md5": "625e3619f1bd646b203b17717db2200a"
-                    },
-                    "required_dependencies": [
-                        "306612"
-                    ],
-                    "size": 598009,
-                    "date_published": "2025-12-15T17:40:34.190Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ohNO6lps/versions/uXrWPsCu/ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar",
-                    "id": "uXrWPsCu",
-                    "parent_id": "ohNO6lps",
-                    "hashes": {
-                        "sha512": "28791c992d613da14b8685505d3ef632ed53b5f1e1d517f0b41677d10f8419f192dfbde991308df6cda5d0f113c0aa8fc18ecf4a0834029403b16d2f68dc52d6",
-                        "sha1": "61aa1b5fafd75afc44552d0213cac39bc938bc2d"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 598009,
-                    "date_published": "2025-12-15T17:40:34.370228Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "lbn6qrfKP5txe8rR",
             "pakku_links": [
                 "buBitBSyYlKDzuBb"
@@ -2210,50 +2142,6 @@
                     ],
                     "size": 1115809,
                     "date_published": "2026-03-25T02:08:53.107Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "G5MMiFMvwFyGhBeu",
-            "pakku_links": [
-                "LwqrzSsyxBuQ5jrL",
-                "Z6ZWEU7KsXzbXP1R"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "modrinth": "modernui-mc-mvus"
-            },
-            "name": {
-                "modrinth": "Modern UI mVUS"
-            },
-            "id": {
-                "modrinth": "2C0marwF"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ModernUI-MC-3.12.0.5-build.4+mc1.21.11-fabric.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/2C0marwF/versions/WmK13lJr/ModernUI-MC-3.12.0.5-build.4+mc1.21.11-fabric.jar",
-                    "id": "WmK13lJr",
-                    "parent_id": "2C0marwF",
-                    "hashes": {
-                        "sha512": "bba99d7655cda3bc46fd346a957743473b9ab2048cc20e0ffc636d33e7e5a9d5b4f54089c95f99ae34e9d4ad6e8e9c36cff18802c5e8e6ee37148a3e07c59268",
-                        "sha1": "dbf401e79354cf7b2022aeab6cc46f83974baaae"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH",
-                        "ohNO6lps"
-                    ],
-                    "size": 24353397,
-                    "date_published": "2026-01-29T05:32:25.421413Z"
                 }
             ]
         },
@@ -3224,7 +3112,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Dark Skyblock v1.1.zip",
+                    "file_name": "Dark Skyblock v1.2.zip",
                     "mc_versions": [
                         "1.21.10",
                         "1.21.11"
@@ -3233,24 +3121,25 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/UldQM8wd/versions/WkeY2IJX/Dark Skyblock v1.1.zip",
-                    "id": "WkeY2IJX",
+                    "url": "https://cdn.modrinth.com/data/UldQM8wd/versions/AOWZ6iyk/Dark Skyblock v1.2.zip",
+                    "id": "AOWZ6iyk",
                     "parent_id": "UldQM8wd",
                     "hashes": {
-                        "sha512": "7d22c789b7a92f5604077ea8ba40532dc34c8f328db2fd90988973dd8572288e8514284319ba465281706a1bd93c3e667a465c462cb78642a4008f407d02b431",
-                        "sha1": "d6dd8203479b2b27746616592b9f791046738df8"
+                        "sha512": "df0409e3b5ca6763c526b48e91ba84543c56a3b370e81d8b2c3b00a1279214bbc8b6cfce576389a9084d4b8624661c3a8ea472222fbd6b1eeef6622860148910",
+                        "sha1": "2082599a177725e6dd692213fa83e0a1e0d6d973"
                     },
-                    "required_dependencies": [],
-                    "size": 171066,
-                    "date_published": "2026-03-03T18:02:30.671069Z"
+                    "required_dependencies": [
+                        "IJNUBZ2a"
+                    ],
+                    "size": 193489,
+                    "date_published": "2026-04-05T21:42:42.474785Z"
                 }
             ]
         },
         {
             "pakku_id": "mzImdHbotwNWNOr0",
             "pakku_links": [
-                "LwqrzSsyxBuQ5jrL",
-                "G5MMiFMvwFyGhBeu"
+                "LwqrzSsyxBuQ5jrL"
             ],
             "type": "MOD",
             "side": "CLIENT",
@@ -3269,7 +3158,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-0.10.2+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.1+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3277,23 +3166,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/nESdjXrP/skyblock_enhancements-0.10.2+1.21.11.jar",
-                    "id": "nESdjXrP",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/UVG5A29a/skyblock_enhancements-0.11.1+1.21.11.jar",
+                    "id": "UVG5A29a",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "15155c8a1436505bc92fd8fcaa5da761e90c552fbb7690f92aac94d7d28dd7ce377a4f04d167686dbb785c64d180776db62b68ccc8838bc299bc562dd253d5d7",
-                        "sha1": "c53ddd121f535bba3e052f8a7c9b53ea322c0672"
+                        "sha512": "02883aa740ecb610c551380ac16ea212e7806fb601b2e318b03d481e1807d3dfa1e629c310599e1add34ac3c1299860764829c596db6a41dfa268c5dd156b9c8",
+                        "sha1": "78c081e899e4ff9dc6d0ed4ffb90dd3d4c426f8f"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 1126502,
-                    "date_published": "2026-04-05T14:07:32.454012Z"
+                    "size": 1152728,
+                    "date_published": "2026-04-06T20:53:05.209924Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-0.10.2+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.0+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3301,18 +3190,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7879/581/skyblock_enhancements-0.10.2+1.21.11.jar",
-                    "id": "7879581",
+                    "url": "https://edge.forgecdn.net/files/7886/473/skyblock_enhancements-0.11.0+1.21.11.jar",
+                    "id": "7886473",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "c53ddd121f535bba3e052f8a7c9b53ea322c0672",
-                        "md5": "f0e2b541f2d003498dca92b8d2c52cb3"
+                        "sha1": "3e7b56646faa2b8841b9976c0930255249582473",
+                        "md5": "dae6cc5b0fcd6a3db0f36f5f8fd863ab"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1126502,
-                    "date_published": "2026-04-05T14:07:27.377Z"
+                    "size": 1144885,
+                    "date_published": "2026-04-06T19:19:12.233Z"
                 }
             ]
         },
