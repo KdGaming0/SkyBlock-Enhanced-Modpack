@@ -32,6 +32,7 @@ PACKCORE_MD_DIR="$PACK_DIR/.pakku/overrides/packcore/markdown"
 # ─── Globals (populated in steps) ───────────────────────────────────────────
 NEW_VERSION=""
 BUMP_TYPE=""
+RELEASE_TYPE="release"      # "release" or "beta"
 TMP_OLD_LOCK=""
 CHANGELOG_BODY=""
 ROLLBACK_NEEDED=false
@@ -113,9 +114,14 @@ step_version() {
 
     print_step "Current version: ${BOLD}${cur}${NC}"
 
-    # Parse semver
-    if ! [[ "$cur" =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
-        print_warn "Version '$cur' is not strict semver (X.Y.Z). Custom bump only."
+    # Strip any beta suffix to get the stable base version for bump arithmetic
+    # e.g.  3.1.2-beta.1  →  base=3.1.2  (so next patch suggests 3.1.3)
+    local cur_base
+    cur_base="${cur%%-beta.*}"
+
+    # Parse semver of the stable base
+    if ! [[ "$cur_base" =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+        print_warn "Version '$cur_base' is not strict semver (X.Y.Z). Custom bump only."
         local MAJOR=0 MINOR=0 PATCH=0
     else
         local MAJOR="${BASH_REMATCH[1]}"
@@ -138,14 +144,25 @@ step_version() {
     read -rp "  Bump type [1]: " choice
     choice="${choice:-1}"
 
+    local base_version=""
     case "$choice" in
-        1) NEW_VERSION="$V_PATCH" ; BUMP_TYPE="patch" ;;
-        2) NEW_VERSION="$V_MINOR" ; BUMP_TYPE="minor" ;;
-        3) NEW_VERSION="$V_MAJOR" ; BUMP_TYPE="major" ;;
+        1) base_version="$V_PATCH" ; BUMP_TYPE="patch" ;;
+        2) base_version="$V_MINOR" ; BUMP_TYPE="minor" ;;
+        3) base_version="$V_MAJOR" ; BUMP_TYPE="major" ;;
         4)
-            read -rp "  Enter version (X.Y.Z): " NEW_VERSION
-            if ! [[ "$NEW_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-                print_err "Invalid semver: $NEW_VERSION"
+            read -rp "  Enter version (X.Y.Z or X.Y.Z-beta.N): " base_version
+            # Accept either a stable or already-qualified beta version
+            if [[ "$base_version" =~ ^[0-9]+\.[0-9]+\.[0-9]+-beta\.[0-9]+$ ]]; then
+                NEW_VERSION="$base_version"
+                BUMP_TYPE="custom"
+                RELEASE_TYPE="beta"
+                # Skip the beta sub-menu — the user already typed the full version
+                print_step "Bumping: ${BOLD}${cur}${NC} → ${BOLD}${YELLOW}${NEW_VERSION}${NC} (beta)"
+                save_json_state
+                _apply_version_files
+                return
+            elif ! [[ "$base_version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+                print_err "Invalid version: '$base_version' (expected X.Y.Z or X.Y.Z-beta.N)"
                 exit 1
             fi
             BUMP_TYPE="custom"
@@ -153,8 +170,63 @@ step_version() {
         *) print_err "Invalid choice: $choice"; exit 1 ;;
     esac
 
-    print_step "Bumping: ${BOLD}${cur}${NC} → ${BOLD}${GREEN}${NEW_VERSION}${NC}"
+    # ── Beta sub-menu ────────────────────────────────────────────────────────
+    echo ""
+    echo -e "  Is ${BOLD}${GREEN}${base_version}${NC} a stable release or a beta?"
+    echo ""
+    echo -e "    ${BOLD}[1]${NC}  stable  →  ${GREEN}${base_version}${NC}"
+
+    # Work out the next beta number.
+    # If the current version is already a beta of the *same* base (e.g. 3.1.2-beta.1
+    # and we're about to release 3.1.2-beta.2), suggest the next beta index.
+    local next_beta_n=1
+    if [[ "$cur" =~ ^${base_version}-beta\.([0-9]+)$ ]]; then
+        next_beta_n=$(( BASH_REMATCH[1] + 1 ))
+    fi
+    local V_BETA="${base_version}-beta.${next_beta_n}"
+
+    echo -e "    ${BOLD}[2]${NC}  beta    →  ${YELLOW}${V_BETA}${NC}"
+    echo -e "    ${BOLD}[3]${NC}  custom beta number"
+    echo ""
+
+    local beta_choice
+    read -rp "  Choice [1]: " beta_choice
+    beta_choice="${beta_choice:-1}"
+
+    case "$beta_choice" in
+        1)
+            NEW_VERSION="$base_version"
+            RELEASE_TYPE="release"
+            ;;
+        2)
+            NEW_VERSION="$V_BETA"
+            RELEASE_TYPE="beta"
+            ;;
+        3)
+            local beta_n
+            read -rp "  Enter beta number (e.g. 3 for ${base_version}-beta.3): " beta_n
+            if ! [[ "$beta_n" =~ ^[0-9]+$ ]] || [[ "$beta_n" -lt 1 ]]; then
+                print_err "Beta number must be a positive integer"
+                exit 1
+            fi
+            NEW_VERSION="${base_version}-beta.${beta_n}"
+            RELEASE_TYPE="beta"
+            ;;
+        *) print_err "Invalid choice: $beta_choice"; exit 1 ;;
+    esac
+
+    if [[ "$RELEASE_TYPE" == "beta" ]]; then
+        print_step "Bumping: ${BOLD}${cur}${NC} → ${BOLD}${YELLOW}${NEW_VERSION}${NC} (beta pre-release)"
+    else
+        print_step "Bumping: ${BOLD}${cur}${NC} → ${BOLD}${GREEN}${NEW_VERSION}${NC}"
+    fi
+
     save_json_state
+    _apply_version_files
+}
+
+# ── Internal: write NEW_VERSION into pakku.json + modpack.json ───────────────
+_apply_version_files() {
 
     local update_failed=false
 
@@ -265,30 +337,72 @@ _dynamic_summary() {
 }
 
 # Heuristic: classify a name/filename as rp / shader / mod.
-# NOTE: This is a best-effort keyword match. Mods with words like "texture",
-# "enchant", or "connected" in their name may be misclassified as resource
-# packs. Review the changelog preview and edit if needed.
+# Two-tier approach:
+#   1. Explicit slug allowlist — catches known packs whose names contain no
+#      generic keywords (e.g. "furfsky-reborn", "defrosted_pack", "looshy").
+#   2. Keyword fallback — catches anything that looks like a shader/RP by name.
 _classify_entry() {
     local name="$1"
-    if echo "$name" | grep -qiE 'shader|bsl|seus|complementary|rethink|sildur|makeup|ultra.?fast'; then
+    local lower
+    lower=$(echo "$name" | tr '[:upper:]' '[:lower:]')
+
+    # ── Explicit resource-pack slugs (from pakku ls) ──────────────────────────
+    # Add new RP slugs here if the modpack gains more packs whose names wouldn't
+    # be caught by the keyword regex below.
+    local rp_slugs=(
+        furfsky-reborn furfsky_reborn
+        packshq packs-hq
+        dark-mode-skyblock dark_mode_skyblock
+        skyblock-dark-ui skyblock_dark_ui
+        sophies-enchants sophie sophies
+        defrosted defrosted_pack defrosted-pack
+        looshy
+    )
+    for slug in "${rp_slugs[@]}"; do
+        if [[ "$lower" == *"$slug"* ]]; then
+            echo "rp"
+            return
+        fi
+    done
+
+    # ── Explicit shader slugs ─────────────────────────────────────────────────
+    local shader_slugs=(
+        complementary-unbound complementary_unbound
+        makeup-ultra-fast makeup_ultra_fast
+        bsl seus rethink sildur
+    )
+    for slug in "${shader_slugs[@]}"; do
+        if [[ "$lower" == *"$slug"* ]]; then
+            echo "shader"
+            return
+        fi
+    done
+
+    # ── Keyword fallback ──────────────────────────────────────────────────────
+    if echo "$lower" | grep -qE 'shader|complementary|rethink|sildur|makeup|ultra.?fast'; then
         echo "shader"
-    elif echo "$name" | grep -qiE '\.mrpack$|resource.?pack|texture|continuity|fabriulous|connected|stay.?true|clarity|faithful|sphax|compliance|looshy|sophie|enchant'; then
+    elif echo "$lower" | grep -qE 'resource.?pack|texture|continuity|fabriulous|connected|stay.?true|clarity|faithful|sphax|compliance|enchant.?book|enchantment.?book'; then
         echo "rp"
     else
         echo "mod"
     fi
 }
 
-# Strip version suffix from a jar/mrpack filename for a cleaner display name
-# e.g. "iris-fabric-1.10.7+mc1.21.11.jar" → "iris-fabric"
-#      "looshy-v3.4.mrpack"               → "looshy"
+# Strip version suffix from a filename, then convert the slug to a human-readable
+# display name: hyphens/underscores → spaces, each word title-cased.
+# e.g. "iris-fabric-1.10.7+mc1.21.11.jar"  → "Iris Fabric"
+#      "furfsky-reborn-v3.4.mrpack"         → "Furfsky Reborn"
+#      "defrosted_pack"                      → "Defrosted Pack"
+#      "looshy-v3.4.mrpack"                 → "Looshy"
 _clean_name() {
     local raw="$1"
     raw="${raw%.jar}"
     raw="${raw%.mrpack}"
+    raw="${raw%.zip}"
     # Strip trailing version-like segments: -1.2.3, +mc1.21, _1.21, -v3.4, etc.
     raw=$(echo "$raw" | sed -E 's/[-_+]v?[0-9].*$//')
-    echo "$raw"
+    # Replace hyphens and underscores with spaces, then title-case each word
+    echo "$raw" | tr '-' ' ' | tr '_' ' ' | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2); print}'
 }
 
 # Returns 0 (true) if string looks like a bare MC version number, e.g. "1.21.11"
@@ -603,7 +717,13 @@ step_git() {
     git add -A
 
     print_step "Committing..."
-    git commit -m "release: ${tag}"
+    local commit_msg
+    if [[ "$RELEASE_TYPE" == "beta" ]]; then
+        commit_msg="release: ${tag} (beta pre-release)"
+    else
+        commit_msg="release: ${tag}"
+    fi
+    git commit -m "$commit_msg"
 
     print_step "Creating tag ${tag}..."
     git tag "$tag"
@@ -662,8 +782,13 @@ main() {
     step_changelog
     step_git
 
-    print_header "🎉 Release Complete"
+    if [[ "$RELEASE_TYPE" == "beta" ]]; then
+        print_header "🧪 Beta Release Complete"
+    else
+        print_header "🎉 Release Complete"
+    fi
     echo -e "  Version   : ${BOLD}${NEW_VERSION}${NC}"
+    echo -e "  Type      : ${BOLD}${RELEASE_TYPE}${NC}"
     echo -e "  Tag       : ${BOLD}v${NEW_VERSION}${NC}"
     echo -e "  Changelog : ${BOLD}CHANGELOG.md${NC} + packcore/markdown/"
     echo ""

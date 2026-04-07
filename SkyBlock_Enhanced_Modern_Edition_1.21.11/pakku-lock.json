@@ -493,6 +493,74 @@
             ]
         },
         {
+            "pakku_id": "jHWlUY86Nz13ww7A",
+            "pakku_links": [
+                "LwqrzSsyxBuQ5jrL"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "caxton",
+                "modrinth": "caxton"
+            },
+            "name": {
+                "curseforge": "Caxton",
+                "modrinth": "Caxton"
+            },
+            "id": {
+                "curseforge": "1320863",
+                "modrinth": "k8iIgzXE"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7749/972/caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
+                    "id": "7749972",
+                    "parent_id": "1320863",
+                    "hashes": {
+                        "sha1": "22fdcd8c24a84ab9191c89a00b03c3727bf5e62c",
+                        "md5": "514b3492382bb2c88f3f03c858a7d6cd"
+                    },
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 6117500,
+                    "date_published": "2026-03-13T04:57:41.577Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/k8iIgzXE/versions/NuRbJqSb/caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
+                    "id": "NuRbJqSb",
+                    "parent_id": "k8iIgzXE",
+                    "hashes": {
+                        "sha512": "4e5a197df334f999f2484d34b69c9bf45e3e99c134135432bbf14c2b761acd375e4471f7545c718716e381db7242f78729ba7f6ad7036a7d0facb33992b4bb84",
+                        "sha1": "22fdcd8c24a84ab9191c89a00b03c3727bf5e62c"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 6117500,
+                    "date_published": "2026-03-13T04:57:44.592220Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YFauQoae1g3bfswj",
             "type": "MOD",
             "side": "BOTH",
@@ -2168,7 +2236,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "modernwarpmenu-0.1.9+1.21.11.jar",
+                    "file_name": "modernwarpmenu-0.2.0+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2176,19 +2244,19 @@
                         "fabric"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/3GNyRk4I/versions/9VbNawGb/modernwarpmenu-0.1.9+1.21.11.jar",
-                    "id": "9VbNawGb",
+                    "url": "https://cdn.modrinth.com/data/3GNyRk4I/versions/al46awjs/modernwarpmenu-0.2.0+1.21.11.jar",
+                    "id": "al46awjs",
                     "parent_id": "3GNyRk4I",
                     "hashes": {
-                        "sha512": "d777b32fe73b21e21efe359f010909c02799032312641b070d4d5ade0822bd1009215761e3118ac1991dd530a1eeb35180fad1c9d73c7e282bac4b5289ed6c0e",
-                        "sha1": "66cc5ffe50c7241a281419809e03aece8130df38"
+                        "sha512": "8ef2a5c9f6d491476fba2f1511935954f003316049b3acfbf1384cf630ecca7c35e3209320b5fd1613eea20393cb4d93525dfb987ce18879b012df60e3ab1e61",
+                        "sha1": "51f43d8e59eb5529064ac394f9554380f81960f9"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "1eAoo2KR"
+                        "1eAoo2KR",
+                        "P7dR8mSH"
                     ],
-                    "size": 17922487,
-                    "date_published": "2026-02-21T07:12:05.724269Z"
+                    "size": 17941962,
+                    "date_published": "2026-04-07T09:09:32.924292Z"
                 }
             ]
         },
@@ -2454,7 +2522,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-4.2.2+1.21.11.jar",
+                    "file_name": "packcore-4.2.4+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2462,23 +2530,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/37KDqXsB/packcore-4.2.2+1.21.11.jar",
-                    "id": "37KDqXsB",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/BaUTfJf0/packcore-4.2.4+1.21.11.jar",
+                    "id": "BaUTfJf0",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "aaeb9239ddbeef0172efa88ba4759f88a9a7f48885fc8861e540d488ec7981b95f7ced8a34f43b01fe4adaa92c89b0dcfdcb314a765a2efc1c7a1b68b91af758",
-                        "sha1": "53850dc53f00b13ea62176497d2d75fe7f635a83"
+                        "sha512": "d3a0271dce5137ef3803f20ebc8808218b925524a8c07740b004b67f4f837507c53e5a17c37fa901946b9b20e8bf595e98369a427476fb7ad772eec8e8204731",
+                        "sha1": "0a3554fa10a16823468789031e323c997314191d"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
+                        "AOEDs9Al",
+                        "P7dR8mSH"
                     ],
-                    "size": 45132091,
-                    "date_published": "2026-04-04T06:09:24.441017Z"
+                    "size": 45122581,
+                    "date_published": "2026-04-07T13:01:20.590316Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-4.2.2+1.21.11.jar",
+                    "file_name": "packcore-4.2.4+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2486,19 +2554,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7871/556/packcore-4.2.2+1.21.11.jar",
-                    "id": "7871556",
+                    "url": "https://edge.forgecdn.net/files/7889/818/packcore-4.2.4+1.21.11.jar",
+                    "id": "7889818",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "53850dc53f00b13ea62176497d2d75fe7f635a83",
-                        "md5": "12b160ecbca8b3922065ed8863e9a696"
+                        "sha1": "0a3554fa10a16823468789031e323c997314191d",
+                        "md5": "00cb72471ea303550014763d5e9d5c4f"
                     },
                     "required_dependencies": [
-                        "933200",
-                        "306612"
+                        "306612",
+                        "933200"
                     ],
-                    "size": 45132091,
-                    "date_published": "2026-04-04T06:09:19.810Z"
+                    "size": 45122581,
+                    "date_published": "2026-04-07T13:01:14.063Z"
                 }
             ]
         },
@@ -3182,7 +3250,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-0.11.0+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.1+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3190,18 +3258,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7886/473/skyblock_enhancements-0.11.0+1.21.11.jar",
-                    "id": "7886473",
+                    "url": "https://edge.forgecdn.net/files/7886/878/skyblock_enhancements-0.11.1+1.21.11.jar",
+                    "id": "7886878",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "3e7b56646faa2b8841b9976c0930255249582473",
-                        "md5": "dae6cc5b0fcd6a3db0f36f5f8fd863ab"
+                        "sha1": "78c081e899e4ff9dc6d0ed4ffb90dd3d4c426f8f",
+                        "md5": "afc3b9063a5356f3cab29d73703df9b0"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1144885,
-                    "date_published": "2026-04-06T19:19:12.233Z"
+                    "size": 1152728,
+                    "date_published": "2026-04-06T20:53:04.433Z"
                 }
             ]
         },

@@ -4,7 +4,8 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - 'v*'           # stable:  v3.1.2
+                       # beta:    v3.1.2-beta.1
 
 env:
   PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_1.21.11
@@ -24,11 +25,14 @@ jobs:
     permissions:
       contents: write          # needed to delete mismatched tags
     outputs:
-      modpack_version:   ${{ steps.info.outputs.modpack_version }}
-      modpack_name:      ${{ steps.info.outputs.modpack_name }}
-      minecraft_version: ${{ steps.info.outputs.minecraft_version }}
-      modpack_loader:    ${{ steps.info.outputs.modpack_loader }}
-      release_type:      ${{ steps.info.outputs.release_type }}
+      modpack_version:         ${{ steps.info.outputs.modpack_version }}
+      modpack_name:            ${{ steps.info.outputs.modpack_name }}
+      minecraft_version:       ${{ steps.info.outputs.minecraft_version }}
+      modpack_loader:          ${{ steps.info.outputs.modpack_loader }}
+      release_type:            ${{ steps.info.outputs.release_type }}
+      is_beta:                 ${{ steps.info.outputs.release_type == 'beta' }}
+      config_version:          ${{ steps.info.outputs.config_version }}
+      previous_config_version: ${{ steps.info.outputs.previous_config_version }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -56,6 +60,10 @@ jobs:
         run: |
           CUR_VER="${{ steps.info.outputs.modpack_version }}"
           PREV_VER="${{ steps.info.outputs.previous_modpack_version }}"
+
+          # Strip any beta suffix for pure numeric comparison.
+          # This lets 3.1.2-beta.1 be accepted after 3.1.2-beta.0 (different string),
+          # and also lets 3.1.2-beta.1 be accepted after stable 3.1.1 (base changed).
           if [[ "$PREV_VER" != "none" && "$CUR_VER" == "$PREV_VER" ]]; then
             TAG_NAME="${GITHUB_REF#refs/tags/}"
             echo "::error::Version in pakku.json NOT bumped!"
@@ -73,6 +81,14 @@ jobs:
           name: changelog
           path: ${{ env.PACK_DIR }}/.pakku/overrides/packcore/markdown/CHANGELOG-v${{ steps.info.outputs.modpack_version }}.md
           if-no-files-found: warn
+
+      - name: Upload config changelog artifact (if version changed)
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' && steps.info.outputs.config_version != steps.info.outputs.previous_config_version && steps.info.outputs.previous_config_version != 'none' }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: config-changelog
+          path: ${{ env.PACK_DIR }}/.pakku/overrides/packcore/configs/CONFIG_CHANGELOG.md
+          if-no-files-found: ignore
 
   # ── BUILD ───────────────────────────────────────────────────────────────────
   build:
@@ -191,7 +207,7 @@ jobs:
           chmod +x .github/scripts/extract_mrpack.py
           python3 .github/scripts/extract_mrpack.py
 
-      # ── Stage mc-runtime-test mod ─────────────────────────────────────────
+      # ── Stage mc-runtime-test mod ────���────────────────────────────────────
       # mc-runtime-test 4.1.0 covers up to 1.21.10; 1.21.11 is a security
       # patch with no mod-API changes, so the 1.21.10 jar is fully compatible.
       # We download it manually and pass mc-runtime-test: none to the action
@@ -279,6 +295,14 @@ jobs:
           name: changelog
           path: .
 
+      - name: Download config changelog artifact (if exists)
+        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        uses: actions/download-artifact@v6
+        with:
+          name: config-changelog
+          path: .
+        continue-on-error: true
+
       - name: Download build artifacts
         if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
         uses: actions/download-artifact@v6
@@ -286,26 +310,37 @@ jobs:
           name: build
           path: build
 
-      - name: Resolve changelog path
-        id: cl
+      - name: Build release body with config changelog
+        id: body
         run: |
           VER="${{ needs.validate.outputs.modpack_version }}"
           FILE="CHANGELOG-v${VER}.md"
+
+          MODPACK_BODY=""
           if [[ -f "$FILE" ]]; then
-            echo "path=$FILE" >> "$GITHUB_OUTPUT"
-            echo "✅ Found: $FILE"
+            MODPACK_BODY=$(cat "$FILE")
           else
-            echo "⚠️  $FILE not found — generating minimal changelog"
-            printf '## 🛠 Update %s\n\nMod and dependency updates.\n' "$VER" > minimal-changelog.md
-            echo "path=minimal-changelog.md" >> "$GITHUB_OUTPUT"
+            MODPACK_BODY="## 🛠 Update ${VER}\n\nMod and dependency updates."
           fi
+
+          # Append config changelog if present and version changed
+          if [[ -f "CONFIG_CHANGELOG.md" ]] && [[ "${{ needs.validate.outputs.config_version }}" != "${{ needs.validate.outputs.previous_config_version }}" ]] && [[ "${{ needs.validate.outputs.previous_config_version }}" != "none" ]]; then
+            echo "ℹ Appending config changelog..."
+            CONFIG_BODY=$(cat CONFIG_CHANGELOG.md)
+            MODPACK_BODY="${MODPACK_BODY}\n\n## ⚙ Config Changes\n\n${CONFIG_BODY}"
+          fi
+
+          # Write to file for use in release creation
+          printf '%b' "$MODPACK_BODY" > release-body.md
+          echo "✅ Release body prepared"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          body_path: ${{ steps.cl.outputs.path }}
+          body_path: release-body.md
           files: build/modrinth/*.mrpack
           tag_name: ${{ github.ref_name }}
+          prerelease: ${{ needs.validate.outputs.release_type == 'beta' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -322,7 +357,7 @@ jobs:
           version-type:   ${{ needs.validate.outputs.release_type }}
           game-versions:  ${{ needs.validate.outputs.minecraft_version }}
           loaders:        ${{ needs.validate.outputs.modpack_loader }}
-          changelog-file: ${{ steps.cl.outputs.path }}
+          changelog-file: release-body.md
 
       - name: Publish to CurseForge
         if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' && vars.CF_PROJECT_ID != '' }}
@@ -337,17 +372,19 @@ jobs:
           version-type:   ${{ needs.validate.outputs.release_type }}
           game-versions:  ${{ needs.validate.outputs.minecraft_version }}
           loaders:        ${{ needs.validate.outputs.modpack_loader }}
-          changelog-file: ${{ steps.cl.outputs.path }}
+          changelog-file: release-body.md
 
       - name: Send Fluxer release notification
         if: ${{ vars.FLUXER_WEBHOOK_URL != '' }}
         run: |
+          if [[ "${{ needs.validate.outputs.release_type }}" == "beta" ]]; then
+            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** ${{ needs.validate.outputs.modpack_version }} beta is available for testing! 🧪\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)\n> ⚠️ This is a **beta** release and may not be fully stable."
+          else
+            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! 🎉\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)"
+          fi
           curl -sSf -X POST "${{ vars.FLUXER_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \
-            -d '{
-              "username": "SkyBlock Enhanced",
-              "content": "## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! 🎉\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)"
-            }'
+            -d "{\"username\": \"SkyBlock Enhanced\", \"content\": \"$CONTENT\"}"
 
       - name: Delete tag on publish failure
         if: failure()

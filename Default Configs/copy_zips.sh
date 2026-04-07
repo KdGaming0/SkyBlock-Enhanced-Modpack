@@ -217,6 +217,74 @@ restore_zip() {
     echo "✔ Restored: $ZIP_SELECTED"
 }
 
+# -------- CONFIG CHANGELOG --------
+
+ensure_config_changelog_file() {
+    local changelog_file="$SOURCE/CONFIG_CHANGELOG.md"
+
+    if [[ ! -f "$changelog_file" ]]; then
+        cat > "$changelog_file" << 'EOF'
+# ⚙ Config Changes
+
+<!--
+This file is included in the modpack release notes when the config version increases.
+Edit this before running the script, then it will be automatically included.
+Replace this text with your config changes for this release.
+-->
+
+- Example config change 1
+- Example config change 2
+EOF
+        echo "  ✓ Created: $changelog_file"
+    fi
+}
+
+create_config_changelog_prompt() {
+    local current_config_ver="$1"
+    local previous_config_ver="$2"
+
+    echo ""
+    echo "=================================="
+    echo "   Config Changelog"
+    echo "=================================="
+
+    if [[ "$current_config_ver" != "$previous_config_ver" ]] && [[ "$previous_config_ver" != "none" ]]; then
+        echo "  ℹ Config version changed: $previous_config_ver → $current_config_ver"
+        echo ""
+        echo "  A CONFIG_CHANGELOG.md file will be included in the modpack release."
+        echo "  Edit it now in your text editor, then come back here."
+        echo ""
+        read -p "Press Enter when you're done editing CONFIG_CHANGELOG.md..."
+    elif [[ "$previous_config_ver" == "none" ]]; then
+        echo "  ⚠ First release or no previous config version found"
+        echo "  CONFIG_CHANGELOG.md will NOT be included in this release."
+    else
+        echo "  ℹ Config version unchanged ($current_config_ver)"
+        echo "  CONFIG_CHANGELOG.md will NOT be included in the modpack release."
+    fi
+}
+
+update_build_and_deploy() {
+    bump_version
+
+    # Get current config version from first found pack.json
+    local sample_file
+    sample_file=$(find "$SOURCE" -maxdepth 3 -name "pack.json" -not -path "*/archive/*" 2>/dev/null | head -1)
+
+    local current_cfg_ver="none"
+    if [[ -n "$sample_file" ]]; then
+        current_cfg_ver=$(jq -r '.version // empty' "$sample_file" 2>/dev/null || echo "none")
+    fi
+
+    create_config_changelog_prompt "$current_cfg_ver" "none"
+
+    archive_old_zips
+    create_zips
+    deploy_zips
+    overwrite_dest
+    echo -e "\n✔ Done!"
+}
+
 # ---------------- MENU ----------------
 
 menu() {
@@ -233,7 +301,8 @@ menu() {
 
     case "$choice" in
         1)
-            build_and_deploy
+            ensure_config_changelog_file
+            update_build_and_deploy
             pause
             ;;
         2)

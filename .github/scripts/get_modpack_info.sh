@@ -58,13 +58,33 @@ else
     PREVIOUS_MODPACK_VERSION="none"
 fi
 
+# ── Read config version from pack.json ────────────────────────────────────────
+CONFIG_PACK_JSON="$PACK_DIR/.pakku/overrides/packcore/configs/pack.json"
+
+if [[ -f "$CONFIG_PACK_JSON" ]]; then
+    CONFIG_VERSION=$(jq -r '.version // empty' "$CONFIG_PACK_JSON")
+else
+    CONFIG_VERSION="none"
+fi
+
+# Previous config version (from previous tag's pack.json)
+if [[ "$PREVIOUS_TAG" != "none" ]]; then
+    PREVIOUS_CONFIG_VERSION=$(
+        git show "${PREVIOUS_TAG}:${CONFIG_PACK_JSON}" 2>/dev/null \
+            | jq -r '.version // empty' 2>/dev/null \
+        || echo "none"
+    )
+else
+    PREVIOUS_CONFIG_VERSION="none"
+fi
+
 # Markdown anchor for changelog links  e.g. "1.4.3" → "update-143"
 VERSION_ANCHOR="update-$(echo "$MODPACK_VERSION" | tr -d '.')"
 
 # ── Release type (always 'release' per project preference) ───────────────────
 RELEASE_TYPE="release"
 
-# ── Emit outputs ─────────────────────────────────────────────────────────────
+# ── Emit outputs ─���────────────────────────────────────────────────────────────
 emit() { echo "$1=$2"; }
 
 output_vars() {
@@ -77,6 +97,8 @@ output_vars() {
     emit "previous_modpack_version" "$PREVIOUS_MODPACK_VERSION"
     emit "version_anchor"           "$VERSION_ANCHOR"
     emit "release_type"             "$RELEASE_TYPE"
+    emit "config_version"           "$CONFIG_VERSION"
+    emit "previous_config_version"  "$PREVIOUS_CONFIG_VERSION"
 }
 
 # Write to GITHUB_OUTPUT if running in Actions, else print to stdout
