@@ -2479,7 +2479,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Odin-0.1.8.jar",
+                    "file_name": "Odin-0.1.9.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2487,19 +2487,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/jJJLywXp/versions/Rpxp00NX/Odin-0.1.8.jar",
-                    "id": "Rpxp00NX",
+                    "url": "https://cdn.modrinth.com/data/jJJLywXp/versions/CwOwZGVZ/Odin-0.1.9.jar",
+                    "id": "CwOwZGVZ",
                     "parent_id": "jJJLywXp",
                     "hashes": {
-                        "sha512": "752d1b1b3b1540500279e2ead290ea61cd768e9b6cac5937f38f1f0429f59e279113e1a1f06b31c6b5d3a514ed60736ae941f6ccfc1cd0904a28c3d940884c27",
-                        "sha1": "f262616ae7052176c7824f2079ddb61450a45f19"
+                        "sha512": "be5b9a0967eb9d0976ebe7a50cb98ce908e3121d4717915329867bcf03a0fbf5e03e98852718846926e34a81b64fd92d96b33d63f1ec6c4cd510d27d1451d3b9",
+                        "sha1": "9250519043684611b8cb2caeab483b96cd0835a2"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 4562799,
-                    "date_published": "2026-03-27T22:19:21.253103Z"
+                    "size": 5005959,
+                    "date_published": "2026-04-08T09:33:21.570714Z"
                 }
             ]
         },
@@ -2711,32 +2711,29 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "rei-search-bar-calculations-1.1.0+1.21.6-10.jar",
+                    "file_name": "rei-search-bar-calculations-1.1.1+1.21.6-11.jar",
                     "mc_versions": [
                         "1.21.6",
                         "1.21.7",
                         "1.21.8",
                         "1.21.9",
-                        "1.21.10"
+                        "1.21.10",
+                        "1.21.11"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/42tSijuX/versions/aWCIqrZA/rei-search-bar-calculations-1.1.0+1.21.6-10.jar",
-                    "id": "aWCIqrZA",
+                    "url": "https://cdn.modrinth.com/data/42tSijuX/versions/7FZ0ztVf/rei-search-bar-calculations-1.1.1+1.21.6-11.jar",
+                    "id": "7FZ0ztVf",
                     "parent_id": "42tSijuX",
                     "hashes": {
-                        "sha512": "ef083520621fd63333ee00aede861e57686627614d37e7c2be0a0abaf450fc0c58ac8f9b1c4e3c8ac3a79fc76a96573bad2f366a5245f01ccffb13edc2eaba8c",
-                        "sha1": "2c32fe65433ed11dd83cade28689b4ff3a6c8f71"
+                        "sha512": "a7d2b67cb122814de22d36daa192c5512b802981b72df262f435a8bea4d9cbc65650cb48d4db998bd48f9768584bbc4326d699f1d3e7dbb45f5b79e0b00b2829",
+                        "sha1": "6d0cbdcc8ef4757c163e11b85d4a3860cd4a6ef1"
                     },
-                    "required_dependencies": [
-                        "mOgUt4GM",
-                        "nfn13YXA",
-                        "1eAoo2KR"
-                    ],
-                    "size": 271122,
-                    "date_published": "2026-01-23T10:00:11.700312Z"
+                    "required_dependencies": [],
+                    "size": 271471,
+                    "date_published": "2026-04-07T13:55:00.858597Z"
                 }
             ]
         },
@@ -3226,7 +3223,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-0.11.1+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.3+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3234,23 +3231,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/UVG5A29a/skyblock_enhancements-0.11.1+1.21.11.jar",
-                    "id": "UVG5A29a",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/O60LODvI/skyblock_enhancements-0.11.3+1.21.11.jar",
+                    "id": "O60LODvI",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "02883aa740ecb610c551380ac16ea212e7806fb601b2e318b03d481e1807d3dfa1e629c310599e1add34ac3c1299860764829c596db6a41dfa268c5dd156b9c8",
-                        "sha1": "78c081e899e4ff9dc6d0ed4ffb90dd3d4c426f8f"
+                        "sha512": "5890d60a80833f756bc5d400254440c09be641e99981bb925af11393aae67862d83a381d48f2f317b1b814d7227185bb7d0c3533d287129a23c5813733a7ccbb",
+                        "sha1": "c3d812a32f791974e18249ebdb6359be0f332caa"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
+                        "AOEDs9Al",
+                        "P7dR8mSH"
                     ],
-                    "size": 1152728,
-                    "date_published": "2026-04-06T20:53:05.209924Z"
+                    "size": 1158485,
+                    "date_published": "2026-04-08T18:37:49.998799Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-0.11.1+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.3+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3258,18 +3255,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7886/878/skyblock_enhancements-0.11.1+1.21.11.jar",
-                    "id": "7886878",
+                    "url": "https://edge.forgecdn.net/files/7896/224/skyblock_enhancements-0.11.3+1.21.11.jar",
+                    "id": "7896224",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "78c081e899e4ff9dc6d0ed4ffb90dd3d4c426f8f",
-                        "md5": "afc3b9063a5356f3cab29d73703df9b0"
+                        "sha1": "c3d812a32f791974e18249ebdb6359be0f332caa",
+                        "md5": "4b9bf6ce940bd03e85208a7540a3a4b0"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1152728,
-                    "date_published": "2026-04-06T20:53:04.433Z"
+                    "size": 1158485,
+                    "date_published": "2026-04-08T18:37:48.880Z"
                 }
             ]
         },
@@ -3295,7 +3292,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyBlockPv-1.7.3-1.21.11.jar",
+                    "file_name": "SkyBlockPv-1.8.1-1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3303,19 +3300,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/1iw7YEDj/SkyBlockPv-1.7.3-1.21.11.jar",
-                    "id": "1iw7YEDj",
+                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/4o1SoptR/SkyBlockPv-1.8.1-1.21.11.jar",
+                    "id": "4o1SoptR",
                     "parent_id": "8yqXwFLl",
                     "hashes": {
-                        "sha512": "fb86d5ab0e2141fe9cbd381893b9d8da0052f5d09ad6eddf45df7e549ef769b4d8e06c9fac980fca5ebdfbed78ad7faa2a8dc50eabcf45968aaba7b805d3c7ad",
-                        "sha1": "d85d82bddfaffbbdee1034065105cb07d2ce791a"
+                        "sha512": "55b2b4a48a30a906d5403866965cabf2a5d84acb2955f9b1e802a8efa87818959d1338b2e523212d6c7c6562ce65b020d92fbe4d76e3a1863af3493fe61c0fce",
+                        "sha1": "beda1d6ab4f5a34e5320ddd81275533e64bf2454"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 12310381,
-                    "date_published": "2026-02-26T06:20:12.733813Z"
+                    "size": 11292238,
+                    "date_published": "2026-04-07T18:17:33.158992Z"
                 }
             ]
         },
@@ -3384,7 +3381,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyOcean-1.13.2-1.21.11.jar",
+                    "file_name": "SkyOcean-1.14.1-1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3392,19 +3389,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/hNyod8sY/SkyOcean-1.13.2-1.21.11.jar",
-                    "id": "hNyod8sY",
+                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/yqVwo1Ok/SkyOcean-1.14.1-1.21.11.jar",
+                    "id": "yqVwo1Ok",
                     "parent_id": "dIczrQAR",
                     "hashes": {
-                        "sha512": "dd37a3a51d5372c63dfd4e83fb1588eb48fd235d4f4118107dea465af13642d5013888d829091c981a69d70c82ddb6162421a849617ea541b9f5a3026814aae2",
-                        "sha1": "cb750d83e58dbedafb167509c0dd1d6833feda1f"
+                        "sha512": "20900981696b0eead607390a3293a554ce5f8001aaca33ed738e132e279d79a0ee6cca4b9f65885d3e00be3953af36d0d8037b06fbb5fa9cdaed61a50890ff27",
+                        "sha1": "6d8d1ba00ffa25ab4410dae434bed046de18ae43"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 11329827,
-                    "date_published": "2026-03-10T13:04:34.184266Z"
+                    "size": 10363454,
+                    "date_published": "2026-04-07T18:11:27.581501Z"
                 }
             ]
         },
