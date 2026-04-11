@@ -493,6 +493,74 @@
             ]
         },
         {
+            "pakku_id": "10Orh4oxfojFBJoL",
+            "pakku_links": [
+                "LwqrzSsyxBuQ5jrL"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "caxton",
+                "modrinth": "caxton"
+            },
+            "name": {
+                "curseforge": "Caxton",
+                "modrinth": "Caxton"
+            },
+            "id": {
+                "curseforge": "1320863",
+                "modrinth": "k8iIgzXE"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7749/972/caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
+                    "id": "7749972",
+                    "parent_id": "1320863",
+                    "hashes": {
+                        "sha1": "22fdcd8c24a84ab9191c89a00b03c3727bf5e62c",
+                        "md5": "514b3492382bb2c88f3f03c858a7d6cd"
+                    },
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 6117500,
+                    "date_published": "2026-03-13T04:57:41.577Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/k8iIgzXE/versions/NuRbJqSb/caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
+                    "id": "NuRbJqSb",
+                    "parent_id": "k8iIgzXE",
+                    "hashes": {
+                        "sha512": "4e5a197df334f999f2484d34b69c9bf45e3e99c134135432bbf14c2b761acd375e4471f7545c718716e381db7242f78729ba7f6ad7036a7d0facb33992b4bb84",
+                        "sha1": "22fdcd8c24a84ab9191c89a00b03c3727bf5e62c"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 6117500,
+                    "date_published": "2026-03-13T04:57:44.592220Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YFauQoae1g3bfswj",
             "type": "MOD",
             "side": "BOTH",
@@ -646,7 +714,8 @@
                         "1.21.10",
                         "1.21.11",
                         "26.1",
-                        "26.1.1"
+                        "26.1.1",
+                        "26.1.2"
                     ],
                     "loaders": [
                         "iris",
@@ -922,7 +991,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "debugify-1.21.11+1.0.jar",
+                    "file_name": "debugify-1.21.11+1.1.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -930,23 +999,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QwxR6Gcd/versions/8Q49lnaU/debugify-1.21.11+1.0.jar",
-                    "id": "8Q49lnaU",
+                    "url": "https://cdn.modrinth.com/data/QwxR6Gcd/versions/xVevtAGn/debugify-1.21.11+1.1.jar",
+                    "id": "xVevtAGn",
                     "parent_id": "QwxR6Gcd",
                     "hashes": {
-                        "sha512": "04d82dd33f44ced37045f1f9a54ad4eacd70861ff74a8800f2d2df358579e6cb0ea86a34b0086b3e87026b1a0691dd6594b4fdc49f89106466eea840518beb03",
-                        "sha1": "6dae08b650d3b2369c39bc815eff8e0427a41bb1"
+                        "sha512": "156732558bf7c6280c8cb59160fa3842a22da196c8dd3f6fba3ef8b07367c1c793a42e928ac9d53917e1d00e7cff7f72ae13f6e5f233bd32d0db31acd8b43cbd",
+                        "sha1": "a8852a320c6d1a448cfc0f7cb0369e0a3c858146"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "1eAoo2KR"
+                        "1eAoo2KR",
+                        "P7dR8mSH"
                     ],
-                    "size": 376651,
-                    "date_published": "2026-01-12T19:47:05.195452Z"
+                    "size": 376878,
+                    "date_published": "2026-04-10T20:43:37.699241Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "debugify-1.21.11+1.0.jar",
+                    "file_name": "debugify-1.21.11+1.1.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -954,19 +1023,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7451/658/debugify-1.21.11+1.0.jar",
-                    "id": "7451658",
+                    "url": "https://edge.forgecdn.net/files/7906/752/debugify-1.21.11+1.1.jar",
+                    "id": "7906752",
                     "parent_id": "596224",
                     "hashes": {
-                        "sha1": "6dae08b650d3b2369c39bc815eff8e0427a41bb1",
-                        "md5": "1a51de7cae7a55e4be565044813618c3"
+                        "sha1": "a8852a320c6d1a448cfc0f7cb0369e0a3c858146",
+                        "md5": "25c386ef8e42cfbd02a909d2b38a5af9"
                     },
                     "required_dependencies": [
                         "306612",
                         "667299"
                     ],
-                    "size": 376651,
-                    "date_published": "2026-01-12T19:47:02.987Z"
+                    "size": 376878,
+                    "date_published": "2026-04-10T20:43:35.607Z"
                 }
             ]
         },
@@ -1059,7 +1128,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "entityculling-fabric-1.10.0-mc1.21.11.jar",
+                    "file_name": "entityculling-fabric-1.10.1-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1067,22 +1136,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/SK12FGQf/entityculling-fabric-1.10.0-mc1.21.11.jar",
-                    "id": "SK12FGQf",
+                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/WORDhU8n/entityculling-fabric-1.10.1-mc1.21.11.jar",
+                    "id": "WORDhU8n",
                     "parent_id": "NNAgCjsB",
                     "hashes": {
-                        "sha512": "25e3ba4d30518c65541872d61f12b7408d0c0231b12cfce7468b71097abd81f8e7c6bf46851dcb670b239ede0b96b78e8f303a21c6cb659b9be05181c4b17dc7",
-                        "sha1": "1d0370bf2f6fc68d7d5c448ae391ae8248a5e817"
+                        "sha512": "93fac75432afb97f286827190b3e0363775e013946e22bc62cd86b1d0e0c10c1e7dbd520ca22a9445acb1f50afca38c12d41a4f9a4d3685218287bb7cad237b8",
+                        "sha1": "4e595b6162d24c3d8d65bc6417cf79daac5bde0d"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 1580001,
-                    "date_published": "2026-03-25T19:23:13.901671Z"
+                    "size": 1585638,
+                    "date_published": "2026-04-09T16:06:31.818441Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "entityculling-fabric-1.10.0-mc1.21.11.jar",
+                    "file_name": "entityculling-fabric-1.10.1-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1090,18 +1159,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7813/021/entityculling-fabric-1.10.0-mc1.21.11.jar",
-                    "id": "7813021",
+                    "url": "https://edge.forgecdn.net/files/7900/089/entityculling-fabric-1.10.1-mc1.21.11.jar",
+                    "id": "7900089",
                     "parent_id": "448233",
                     "hashes": {
-                        "sha1": "1d0370bf2f6fc68d7d5c448ae391ae8248a5e817",
-                        "md5": "b04e373862082552a51e569fd059b70d"
+                        "sha1": "4e595b6162d24c3d8d65bc6417cf79daac5bde0d",
+                        "md5": "f3006c2f641fbe1686547ad997dcf897"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1580001,
-                    "date_published": "2026-03-25T19:23:12.623Z"
+                    "size": 1585638,
+                    "date_published": "2026-04-09T16:06:29.817Z"
                 }
             ]
         },
@@ -1231,7 +1300,8 @@
                         "1.21.10",
                         "1.21.11",
                         "26.1",
-                        "26.1.1"
+                        "26.1.1",
+                        "26.1.2"
                     ],
                     "loaders": [
                         "fabric"
@@ -1932,35 +2002,6 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "MakeUp-UltraFast-9.4c.zip",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.8",
-                        "1.21.5",
-                        "1.21.4",
-                        "1.21.1",
-                        "1.21.6",
-                        "1.21.3",
-                        "1.21.7",
-                        "1.21.2",
-                        "1.21.9",
-                        "1.21.10",
-                        "1.21.11"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7684/712/MakeUp-UltraFast-9.4c.zip",
-                    "id": "7684712",
-                    "parent_id": "431203",
-                    "hashes": {
-                        "sha1": "0e856109783bf72e82d9a1e65713afa908ab6edd",
-                        "md5": "230150ebf7005afb032934f6779ae46b"
-                    },
-                    "required_dependencies": [],
-                    "size": 402680,
-                    "date_published": "2026-02-27T05:41:48.310Z"
-                },
-                {
                     "type": "modrinth",
                     "file_name": "MakeUp-UltraFast-9.4c.zip",
                     "mc_versions": [
@@ -2010,7 +2051,9 @@
                         "1.21.8",
                         "1.21.9",
                         "1.21.10",
-                        "1.21.11"
+                        "1.21.11",
+                        "26.1",
+                        "26.1.1"
                     ],
                     "loaders": [
                         "iris",
@@ -2027,28 +2070,60 @@
                     "required_dependencies": [],
                     "size": 402680,
                     "date_published": "2026-02-27T05:46:47.031514Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "MakeUp-UltraFast-9.4c.zip",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.8",
+                        "1.21.5",
+                        "1.21.4",
+                        "1.21.1",
+                        "1.21.6",
+                        "1.21.3",
+                        "1.21.7",
+                        "1.21.2",
+                        "1.21.9",
+                        "1.21.10",
+                        "1.21.11"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7684/712/MakeUp-UltraFast-9.4c.zip",
+                    "id": "7684712",
+                    "parent_id": "431203",
+                    "hashes": {
+                        "sha1": "0e856109783bf72e82d9a1e65713afa908ab6edd",
+                        "md5": "230150ebf7005afb032934f6779ae46b"
+                    },
+                    "required_dependencies": [],
+                    "size": 402680,
+                    "date_published": "2026-02-27T05:41:48.310Z"
                 }
             ]
         },
         {
-            "pakku_id": "hWAY3280Rwwd0skz",
+            "pakku_id": "XZpTZDMo1TagS9FF",
             "pakku_links": [
                 "LwqrzSsyxBuQ5jrL"
             ],
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
+                "curseforge": "marketguard-for-hypixelskyblock",
                 "modrinth": "marketguard"
             },
             "name": {
+                "curseforge": "MarketGuard for HypixelSkyblock",
                 "modrinth": "MarketGuard for Hypixel SkyBlock"
             },
             "id": {
+                "curseforge": "1505265",
                 "modrinth": "ji4JdpCu"
             },
             "files": [
                 {
-                    "type": "modrinth",
+                    "type": "curseforge",
                     "file_name": "marketguard-1.0.0-beta1+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
@@ -2057,18 +2132,39 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/y18l5ntV/marketguard-1.0.0-beta1+1.21.11.jar",
-                    "id": "y18l5ntV",
+                    "url": "https://edge.forgecdn.net/files/7879/167/marketguard-1.0.0-beta1+1.21.11.jar",
+                    "id": "7879167",
+                    "parent_id": "1505265",
+                    "hashes": {
+                        "sha1": "ef425445c2587f57f28b105a32983aa0a4a1f4f9",
+                        "md5": "da21e59d6dff7e8d761ff5520ebb6954"
+                    },
+                    "required_dependencies": [],
+                    "size": 39579,
+                    "date_published": "2026-04-05T12:47:20.697Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "marketguard-1.1.1+1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/5wadUsXm/marketguard-1.1.1+1.21.11.jar",
+                    "id": "5wadUsXm",
                     "parent_id": "ji4JdpCu",
                     "hashes": {
-                        "sha512": "828279c133e873897cd47bddac824d7839e900f892827b2d6181dd519a32be0a3e000650392f1ace33022511b53da78e115e05022f42a4c5e95a96ec60745223",
-                        "sha1": "ef425445c2587f57f28b105a32983aa0a4a1f4f9"
+                        "sha512": "387d34c3a37b2a1335f7248adbd1d927da7e123c5ca0aab0adeecdd1ecf08e04b13e11eec7778357179e7514d709999c10a694c86e500146ec7372d3713a5257",
+                        "sha1": "416b48dea589e69d5bdd9a66d94fd45bce5ccc2d"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 39579,
-                    "date_published": "2026-04-01T14:49:47.912357Z"
+                    "size": 63921,
+                    "date_published": "2026-04-09T17:47:16.847225Z"
                 }
             ]
         },
@@ -2886,7 +2982,8 @@
             "pakku_id": "fSCV1ExJ4HVO6xu3",
             "pakku_links": [
                 "LwqrzSsyxBuQ5jrL",
-                "hWAY3280Rwwd0skz"
+                "hWAY3280Rwwd0skz",
+                "XZpTZDMo1TagS9FF"
             ],
             "type": "MOD",
             "side": "CLIENT",
@@ -2905,7 +3002,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scamscreener-2.3.0+1.21.11.jar",
+                    "file_name": "scamscreener-2.3.1+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2913,23 +3010,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/OlSgx9CB/scamscreener-2.3.0+1.21.11.jar",
-                    "id": "OlSgx9CB",
+                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/OqBkowVe/scamscreener-2.3.1+1.21.11.jar",
+                    "id": "OqBkowVe",
                     "parent_id": "XTB0bgAW",
                     "hashes": {
-                        "sha512": "fe93d15787516985fd59128c57f2cc5f99c25939d604f340db6728be773402d87cc98004d0ae016fcaaf80ab5d6b7599c7fed36c61609ad345ef239d7dc937b7",
-                        "sha1": "7cf06c4feda31a5696517e44190caf442949d25c"
+                        "sha512": "7f9c52601ed5550dc78b6acd84ba5557dec54b047b3b477d5548b8886f3953bba0e749361c94f145781c94b1bb36d4ba09a58046dd4096bccd80057b0855dc6d",
+                        "sha1": "326a1cf490886b8cce2385dbd85f41e414269777"
                     },
                     "required_dependencies": [
-                        "ji4JdpCu",
                         "P7dR8mSH"
                     ],
-                    "size": 790009,
-                    "date_published": "2026-04-05T13:06:38.933759Z"
+                    "size": 790002,
+                    "date_published": "2026-04-09T15:47:31.204345Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "scamscreener-2.2.1+1.21.11.jar",
+                    "file_name": "scamscreener-2.3.1+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2937,18 +3033,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7855/833/scamscreener-2.2.1+1.21.11.jar",
-                    "id": "7855833",
+                    "url": "https://edge.forgecdn.net/files/7900/6/scamscreener-2.3.1+1.21.11.jar",
+                    "id": "7900006",
                     "parent_id": "1465941",
                     "hashes": {
-                        "sha1": "c1f6db51a549d1f266274d180a4d6e1595f293ca",
-                        "md5": "8e9772e69c7fa5fe5fa6413a1091c9f6"
+                        "sha1": "326a1cf490886b8cce2385dbd85f41e414269777",
+                        "md5": "7e6abbcde8bafee8331ad5c042016b56"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
                     "size": 790002,
-                    "date_published": "2026-04-01T12:12:11.947Z"
+                    "date_published": "2026-04-09T15:50:56.673Z"
                 }
             ]
         },
@@ -3155,7 +3251,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-0.11.5+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.6+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3163,23 +3259,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/L7s95WUB/skyblock_enhancements-0.11.5+1.21.11.jar",
-                    "id": "L7s95WUB",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/I4ysQmfo/skyblock_enhancements-0.11.6+1.21.11.jar",
+                    "id": "I4ysQmfo",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "329ad1452e9d2aa27965036decf833c1c7c0dd136eb7be5906b878292d391a40a34eebb10604e4f85a954e1698de1af46f4955f89f3c0ec5481b375d22bb42e4",
-                        "sha1": "3eeeb90b763c8255a765a40b6cfb54020f83e157"
+                        "sha512": "ab45c67c508ab0eb2fe3ea7ec9c1eeb29ef7c6096ae1965de3dbbfde36541be623af962b886460ec5f9c70f122d0623731b34663787ffc90efe5901b5196dd96",
+                        "sha1": "9e9e6b09a682afc9f505df3ac80d9dc2b1400ca3"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 1160976,
-                    "date_published": "2026-04-09T06:51:25.008025Z"
+                    "size": 1207580,
+                    "date_published": "2026-04-11T17:44:51.819218Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-0.11.5+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.6+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3187,18 +3283,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7898/332/skyblock_enhancements-0.11.5+1.21.11.jar",
-                    "id": "7898332",
+                    "url": "https://edge.forgecdn.net/files/7911/413/skyblock_enhancements-0.11.6+1.21.11.jar",
+                    "id": "7911413",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "3eeeb90b763c8255a765a40b6cfb54020f83e157",
-                        "md5": "f833bac78713da65492c0c3c378d4f57"
+                        "sha1": "9e9e6b09a682afc9f505df3ac80d9dc2b1400ca3",
+                        "md5": "1c4b92e406479d79bcb1af1847201602"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1160976,
-                    "date_published": "2026-04-09T06:51:23.513Z"
+                    "size": 1207580,
+                    "date_published": "2026-04-11T17:44:51.130Z"
                 }
             ]
         },
@@ -3285,7 +3381,10 @@
                         "sha512": "725d7f267df317dca3526d3f6a8b7ace40b013a84a8789ce4ee2dc11c6e94f7f1a7a5aa7a763e01a40e94722b23b3eef9e857dbc48b5c2bff8885b0ded0b38f6",
                         "sha1": "aff826871de698d5e5bdc1d960afa6a4ff08ea6e"
                     },
-                    "required_dependencies": [],
+                    "required_dependencies": [
+                        "Ha28R6CL",
+                        "P7dR8mSH"
+                    ],
                     "size": 39729313,
                     "date_published": "2026-04-09T07:24:08.908491Z"
                 }
@@ -3928,7 +4027,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "waveycapes-fabric-1.9.0-mc1.21.11.jar",
+                    "file_name": "waveycapes-fabric-1.9.1-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3936,22 +4035,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/kYuIpRLv/versions/OC4gXfEl/waveycapes-fabric-1.9.0-mc1.21.11.jar",
-                    "id": "OC4gXfEl",
+                    "url": "https://cdn.modrinth.com/data/kYuIpRLv/versions/pvBUYElQ/waveycapes-fabric-1.9.1-mc1.21.11.jar",
+                    "id": "pvBUYElQ",
                     "parent_id": "kYuIpRLv",
                     "hashes": {
-                        "sha512": "3f444bc09ce0dd58945f16f48705e97a18c602e71f7f85531bc113563425eb41e6ee9c42bc7a4fa80d05053b9801f4432ddf158053e02a0aff78dddd9caec987",
-                        "sha1": "53c114cc7f2d245347e2e436052b96397c7a6fe4"
+                        "sha512": "8fe7dd6c665baca2d72975e5641609eb59dbf0132bdad5ff08922cc7d712aacbacf2f797989f6330dd018179108ef317eb2dd93a4c7619ea5540ebce94935087",
+                        "sha1": "735bf063ce7f0b9b2d2de737a6298c924110bea7"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 1846602,
-                    "date_published": "2026-03-28T14:56:21.901458Z"
+                    "size": 1846653,
+                    "date_published": "2026-04-09T17:30:20.800496Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "waveycapes-fabric-1.9.0-mc1.21.11.jar",
+                    "file_name": "waveycapes-fabric-1.9.1-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3959,18 +4058,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7829/478/waveycapes-fabric-1.9.0-mc1.21.11.jar",
-                    "id": "7829478",
+                    "url": "https://edge.forgecdn.net/files/7900/541/waveycapes-fabric-1.9.1-mc1.21.11.jar",
+                    "id": "7900541",
                     "parent_id": "521594",
                     "hashes": {
-                        "sha1": "53c114cc7f2d245347e2e436052b96397c7a6fe4",
-                        "md5": "c9a013c22cf5281ca005463d96cb1c0e"
+                        "sha1": "735bf063ce7f0b9b2d2de737a6298c924110bea7",
+                        "md5": "5b2223ecae5078c1529d332ab7169f5e"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1846602,
-                    "date_published": "2026-03-28T14:56:20.773Z"
+                    "size": 1846653,
+                    "date_published": "2026-04-09T17:30:18.843Z"
                 }
             ]
         },
