@@ -493,74 +493,6 @@
             ]
         },
         {
-            "pakku_id": "10Orh4oxfojFBJoL",
-            "pakku_links": [
-                "LwqrzSsyxBuQ5jrL"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "caxton",
-                "modrinth": "caxton"
-            },
-            "name": {
-                "curseforge": "Caxton",
-                "modrinth": "Caxton"
-            },
-            "id": {
-                "curseforge": "1320863",
-                "modrinth": "k8iIgzXE"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7749/972/caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
-                    "id": "7749972",
-                    "parent_id": "1320863",
-                    "hashes": {
-                        "sha1": "22fdcd8c24a84ab9191c89a00b03c3727bf5e62c",
-                        "md5": "514b3492382bb2c88f3f03c858a7d6cd"
-                    },
-                    "required_dependencies": [
-                        "306612"
-                    ],
-                    "size": 6117500,
-                    "date_published": "2026-03-13T04:57:41.577Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/k8iIgzXE/versions/NuRbJqSb/caxton-0.9.0-alpha.5+1.21.11-FABRIC.jar",
-                    "id": "NuRbJqSb",
-                    "parent_id": "k8iIgzXE",
-                    "hashes": {
-                        "sha512": "4e5a197df334f999f2484d34b69c9bf45e3e99c134135432bbf14c2b761acd375e4471f7545c718716e381db7242f78729ba7f6ad7036a7d0facb33992b4bb84",
-                        "sha1": "22fdcd8c24a84ab9191c89a00b03c3727bf5e62c"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 6117500,
-                    "date_published": "2026-03-13T04:57:44.592220Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "YFauQoae1g3bfswj",
             "type": "MOD",
             "side": "BOTH",
@@ -4312,7 +4244,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "§dlooshy §7[§f1.21.x§7] [v0.10].zip",
+                    "file_name": "§dlooshy §7[§f1.21.x§7] [v0.11].zip",
                     "mc_versions": [
                         "1.21",
                         "1.21.1",
@@ -4331,16 +4263,16 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pbipt9Sm/versions/d2U88etG/§dlooshy §7[§f1.21.x§7] [v0.10].zip",
-                    "id": "d2U88etG",
+                    "url": "https://cdn.modrinth.com/data/pbipt9Sm/versions/foL63b93/§dlooshy §7[§f1.21.x§7] [v0.11].zip",
+                    "id": "foL63b93",
                     "parent_id": "pbipt9Sm",
                     "hashes": {
-                        "sha512": "21c4245b9da5fbe8615cb61fabb5ec615445ebe324fda1956b9de7fb195d22962ef773f0902ddd45d366038d4fbd9c833d3080d241b49e3b66846dd0e17f41ab",
-                        "sha1": "8d5a5f5ed540f17ed706900e5fd6ed2b42cc7f35"
+                        "sha512": "7fdc44238fb5e2110e7d5043d86f1499bbc6042d20407c02151df3e4c0691e619ad29dde99c079fdf2dbd0a11236c28b6d1144cf6ae4694c10fd9fc7662fa3ae",
+                        "sha1": "328f25d122d164ec6007b1520e83e225cb330af9"
                     },
                     "required_dependencies": [],
-                    "size": 5082531,
-                    "date_published": "2026-04-04T06:05:49.411794Z"
+                    "size": 5155331,
+                    "date_published": "2026-04-13T05:20:19.872530Z"
                 },
                 {
                     "type": "curseforge",
