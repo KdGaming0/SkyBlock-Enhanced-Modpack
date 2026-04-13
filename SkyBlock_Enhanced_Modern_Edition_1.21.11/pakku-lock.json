@@ -2055,6 +2055,29 @@
             },
             "files": [
                 {
+                    "type": "modrinth",
+                    "file_name": "marketguard-1.1.2+1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/FjmDJu5C/marketguard-1.1.2+1.21.11.jar",
+                    "id": "FjmDJu5C",
+                    "parent_id": "ji4JdpCu",
+                    "hashes": {
+                        "sha512": "da9f4e2dd4f1e64588c2c9bb8ff79b1ad8d1e4f55fc989659946f9100dcd95870014580ec3107c3f2bef7ad50777978addd9e80fafcaa9ed5df9d33b3b9aa07b",
+                        "sha1": "1d06d3bff9dda3b5d800e22190842ac96f9ee05f"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 64089,
+                    "date_published": "2026-04-13T17:15:31.415709Z"
+                },
+                {
                     "type": "curseforge",
                     "file_name": "marketguard-1.0.0-beta1+1.21.11.jar",
                     "mc_versions": [
@@ -2074,29 +2097,6 @@
                     "required_dependencies": [],
                     "size": 39579,
                     "date_published": "2026-04-05T12:47:20.697Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "marketguard-1.1.1+1.21.11.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/5wadUsXm/marketguard-1.1.1+1.21.11.jar",
-                    "id": "5wadUsXm",
-                    "parent_id": "ji4JdpCu",
-                    "hashes": {
-                        "sha512": "387d34c3a37b2a1335f7248adbd1d927da7e123c5ca0aab0adeecdd1ecf08e04b13e11eec7778357179e7514d709999c10a694c86e500146ec7372d3713a5257",
-                        "sha1": "416b48dea589e69d5bdd9a66d94fd45bce5ccc2d"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 63921,
-                    "date_published": "2026-04-09T17:47:16.847225Z"
                 }
             ]
         },
@@ -2981,6 +2981,79 @@
             ]
         },
         {
+            "pakku_id": "GVXuVroNNOXtWjaA",
+            "pakku_links": [
+                "LwqrzSsyxBuQ5jrL",
+                "R1cZt9dgVAOXAtE8",
+                "tDyL1RmoY8iR9npt"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "sciophobia",
+                "modrinth": "sciophobia"
+            },
+            "name": {
+                "curseforge": "Sciophobia",
+                "modrinth": "Sciophobia"
+            },
+            "id": {
+                "curseforge": "1092053",
+                "modrinth": "UlfKEvQE"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sciophobia-1.2.5+1.21.11-fabric.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7521/704/sciophobia-1.2.5+1.21.11-fabric.jar",
+                    "id": "7521704",
+                    "parent_id": "1092053",
+                    "hashes": {
+                        "sha1": "3cd7a96b3ba721e6d088f333d79cb8a2a39186cc",
+                        "md5": "bf81d4c4c1c48fe5565e9b8885b364a5"
+                    },
+                    "required_dependencies": [
+                        "306612",
+                        "667299"
+                    ],
+                    "size": 148325,
+                    "date_published": "2026-01-25T01:47:49.623Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "sciophobia-1.2.5+1.21.11-fabric.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/UlfKEvQE/versions/kYotWaB4/sciophobia-1.2.5+1.21.11-fabric.jar",
+                    "id": "kYotWaB4",
+                    "parent_id": "UlfKEvQE",
+                    "hashes": {
+                        "sha512": "e6da8fa5c4ba29c88ff9c5cd1fdeda8201eb628574ad438853170b665ac3ad5b18dfb9ad2479955007189bf486e23b7da0b969f2220156d8a398d85054dc4943",
+                        "sha1": "3cd7a96b3ba721e6d088f333d79cb8a2a39186cc"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "mOgUt4GM",
+                        "1eAoo2KR"
+                    ],
+                    "size": 148325,
+                    "date_published": "2026-01-25T01:47:49.599991Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "aa9tAqRpVjU7YlAL",
             "pakku_links": [
                 "LwqrzSsyxBuQ5jrL"
@@ -3183,7 +3256,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-0.11.7+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.8+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3191,23 +3264,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/sQLgzdHI/skyblock_enhancements-0.11.7+1.21.11.jar",
-                    "id": "sQLgzdHI",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/qu8kvzTa/skyblock_enhancements-0.11.8+1.21.11.jar",
+                    "id": "qu8kvzTa",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "84e1b984376120439faa3999a0c1b0c7747c79b70452a81427da2d6ffdac43279180562e3cab065728d600d00ec36c0acd5d479021bf0b4d361ea4f676ddb8c1",
-                        "sha1": "9a456adf00c15827bae904d413957039449a672f"
+                        "sha512": "3b7f6239abacff1d561eddc966853099dad483464ffe8a6a6bc8e37f1d5944d1c7d079ad8efd346ba59a22402fd6964c7f24b0cc12a25c7fc5035595ba54837f",
+                        "sha1": "0e31f70eb1314e715470fb2cdd0db379e62c4f0c"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "AOEDs9Al"
                     ],
-                    "size": 1217829,
-                    "date_published": "2026-04-12T18:00:07.630468Z"
+                    "size": 1219175,
+                    "date_published": "2026-04-13T08:15:05.529576Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-0.11.7+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.8+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3215,18 +3288,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7916/968/skyblock_enhancements-0.11.7+1.21.11.jar",
-                    "id": "7916968",
+                    "url": "https://edge.forgecdn.net/files/7919/926/skyblock_enhancements-0.11.8+1.21.11.jar",
+                    "id": "7919926",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "9a456adf00c15827bae904d413957039449a672f",
-                        "md5": "7bf8d04972080d0734ee272475f94bff"
+                        "sha1": "0e31f70eb1314e715470fb2cdd0db379e62c4f0c",
+                        "md5": "a647898abd6e1f962a0f2a5fb88ec9a6"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1217829,
-                    "date_published": "2026-04-12T18:00:07.153Z"
+                    "size": 1219175,
+                    "date_published": "2026-04-13T08:15:04.680Z"
                 }
             ]
         },
