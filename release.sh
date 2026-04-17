@@ -39,7 +39,14 @@ ROLLBACK_NEEDED=false
 OLD_PAKKU_JSON_CONTENT=""
 OLD_MODPACK_JSON_CONTENT=""
 
-PAKKU_CMD="pakku"
+if command -v pakku-mc &>/dev/null; then
+    PAKKU_CMD="pakku-mc"
+elif command -v pakku &>/dev/null; then
+    PAKKU_CMD="pakku"
+else
+    echo "pakku not found"
+    exit 1
+fi
 
 # Set VERBOSE=1 to see pakku diff debug output in step_changelog
 # e.g.: VERBOSE=1 ./release.sh

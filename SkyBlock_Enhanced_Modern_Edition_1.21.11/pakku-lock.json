@@ -222,27 +222,27 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "bazaarutils-0.6.2-beta.1+mc1.21.11.jar",
+                    "file_name": "bazaarutils-0.6.2-beta.1+mc1.21.10.jar",
                     "mc_versions": [
-                        "1.21.11"
+                        "1.21.10"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/JmDCPma6/bazaarutils-0.6.2-beta.1+mc1.21.11.jar",
-                    "id": "JmDCPma6",
+                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/6YPGzLLK/bazaarutils-0.6.2-beta.1+mc1.21.10.jar",
+                    "id": "6YPGzLLK",
                     "parent_id": "c4u7nzUZ",
                     "hashes": {
-                        "sha512": "96e124d48296ce8072b0b1b7da1e1b11b3792efa42eea95a455bb3bfb2d1f1f8ea27d03d32995315de782b729290b96a5d94984754e0061daca6f52457b11230",
-                        "sha1": "81b79cea4b5704b289f2ca8adcc369446116e942"
+                        "sha512": "cbc6d276dceaa1eae6f6087a607bf1ba82d719ed647f78e3a4c02d800189cadd126fd530d6660f9d5d7e03b2ba9221ca88b1976f64dcecc59c048efea2de394c",
+                        "sha1": "7490b7f13328787c9096678135271b134117901b"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "1eAoo2KR"
+                        "1eAoo2KR",
+                        "P7dR8mSH"
                     ],
-                    "size": 2983849,
-                    "date_published": "2026-03-08T17:30:01.151758Z"
+                    "size": 2983819,
+                    "date_published": "2026-03-08T17:30:04.285791Z"
                 }
             ]
         },
@@ -3256,7 +3256,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-0.11.8+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.9+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3264,19 +3264,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/qu8kvzTa/skyblock_enhancements-0.11.8+1.21.11.jar",
-                    "id": "qu8kvzTa",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/AtVRYjOO/skyblock_enhancements-0.11.9+1.21.11.jar",
+                    "id": "AtVRYjOO",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "3b7f6239abacff1d561eddc966853099dad483464ffe8a6a6bc8e37f1d5944d1c7d079ad8efd346ba59a22402fd6964c7f24b0cc12a25c7fc5035595ba54837f",
-                        "sha1": "0e31f70eb1314e715470fb2cdd0db379e62c4f0c"
+                        "sha512": "436a01578ba15b0e05317602a05eca7a0843b13f0eb342ad142ef2900292470ae7d1d58392f59d38c40a1db077acc98624fd1066565a13724ea998da6b1038a8",
+                        "sha1": "31a870a43d27dab642aef491aa66b07a86f47714"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "AOEDs9Al"
                     ],
-                    "size": 1219175,
-                    "date_published": "2026-04-13T08:15:05.529576Z"
+                    "size": 1254991,
+                    "date_published": "2026-04-17T07:29:09.065828Z"
                 },
                 {
                     "type": "curseforge",
@@ -3371,7 +3371,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.15.0-mc1.21.11.jar",
+                    "file_name": "SkyHanni-7.16.1-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3379,19 +3379,16 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/cosLs9jw/SkyHanni-7.15.0-mc1.21.11.jar",
-                    "id": "cosLs9jw",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/wbt5gHYE/SkyHanni-7.16.1-mc1.21.11.jar",
+                    "id": "wbt5gHYE",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "725d7f267df317dca3526d3f6a8b7ace40b013a84a8789ce4ee2dc11c6e94f7f1a7a5aa7a763e01a40e94722b23b3eef9e857dbc48b5c2bff8885b0ded0b38f6",
-                        "sha1": "aff826871de698d5e5bdc1d960afa6a4ff08ea6e"
+                        "sha512": "3083130512ca7053221116ebbfc8e07da52206cf6f2099647466bca55c4f7722a4e067a30a71c4fee64d27e2061887ac6b3f4c64d9cd4670d5a84d70ac1aec3b",
+                        "sha1": "bca2a960d7192d1ffeafc57bc57c933caf5a4a79"
                     },
-                    "required_dependencies": [
-                        "Ha28R6CL",
-                        "P7dR8mSH"
-                    ],
-                    "size": 39729313,
-                    "date_published": "2026-04-09T07:24:08.908491Z"
+                    "required_dependencies": [],
+                    "size": 39752075,
+                    "date_published": "2026-04-16T21:39:40.250133Z"
                 }
             ]
         },
@@ -3457,27 +3454,28 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Skyblock Dark UI 1.12 for 1.21.10+.zip",
+                    "file_name": "Skyblock Dark UI 1.13 for 1.21.10+.zip",
                     "mc_versions": [
                         "1.21.10",
                         "1.21.11",
                         "26.1",
-                        "26.1.1"
+                        "26.1.1",
+                        "26.1.2"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ed25eRJG/versions/OnMVIJed/Skyblock Dark UI 1.12 for 1.21.10+.zip",
-                    "id": "OnMVIJed",
+                    "url": "https://cdn.modrinth.com/data/Ed25eRJG/versions/yin0POqx/Skyblock Dark UI 1.13 for 1.21.10+.zip",
+                    "id": "yin0POqx",
                     "parent_id": "Ed25eRJG",
                     "hashes": {
-                        "sha512": "8e8f8f2d673c41239a039ffd7b03b06dcd51f6f1e472a724d193d88de248be4d68b21dc4ced427a66a7c9cb87ec1a627f0b6112f7e59c1735ecce5441c870556",
-                        "sha1": "e5e37c59f5fa141c970f03f20dc7bf5fe47a49ac"
+                        "sha512": "d5bd138efe281067aa2e0615d83d0dbfe8f480e2559f561f5627032c003dc66b0c2a787c83123c4080bffe73d010aef88bfac30e063c2a6896b2e85fe9cd979f",
+                        "sha1": "19f257861fc5fc53e0ff2a478b5f130fd715239b"
                     },
                     "required_dependencies": [],
-                    "size": 330313,
-                    "date_published": "2026-04-02T03:05:59.386740Z"
+                    "size": 348936,
+                    "date_published": "2026-04-16T05:04:15.023309Z"
                 }
             ]
         },
@@ -4032,7 +4030,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "waveycapes-fabric-1.9.1-mc1.21.11.jar",
+                    "file_name": "waveycapes-fabric-1.9.2-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -4040,18 +4038,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/kYuIpRLv/versions/pvBUYElQ/waveycapes-fabric-1.9.1-mc1.21.11.jar",
-                    "id": "pvBUYElQ",
+                    "url": "https://cdn.modrinth.com/data/kYuIpRLv/versions/lGSZdVwH/waveycapes-fabric-1.9.2-mc1.21.11.jar",
+                    "id": "lGSZdVwH",
                     "parent_id": "kYuIpRLv",
                     "hashes": {
-                        "sha512": "8fe7dd6c665baca2d72975e5641609eb59dbf0132bdad5ff08922cc7d712aacbacf2f797989f6330dd018179108ef317eb2dd93a4c7619ea5540ebce94935087",
-                        "sha1": "735bf063ce7f0b9b2d2de737a6298c924110bea7"
+                        "sha512": "ea99cf2486d179347208ae7f8b43fab91bfd97207d35414b26ca34c1a07531f296d1d9aa1981cd434faf41e7f0ca05a17b85b1870c321f30f52400e5ec0e1bd0",
+                        "sha1": "bc0a0d842e385b75902d9efa5a870db2d89aaa6b"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 1846653,
-                    "date_published": "2026-04-09T17:30:20.800496Z"
+                    "size": 1847289,
+                    "date_published": "2026-04-14T18:34:10.891400Z"
                 },
                 {
                     "type": "curseforge",
@@ -4172,28 +4170,29 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "zoomify-2.15.2+1.21.11.jar",
+                    "file_name": "zoomify-2.15.2+1.21.9.jar",
                     "mc_versions": [
-                        "1.21.11"
+                        "1.21.9",
+                        "1.21.10"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/gI5KZI8V/zoomify-2.15.2+1.21.11.jar",
-                    "id": "gI5KZI8V",
+                    "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/Vdx09fu6/zoomify-2.15.2+1.21.9.jar",
+                    "id": "Vdx09fu6",
                     "parent_id": "w7ThoJFB",
                     "hashes": {
-                        "sha512": "de9d6097445175f6ef3e93475136fd67d29fc14fd26a6f19e63714efa6cf0961af5d270a95b65c4099a38517c3f91815fe4a1aa21b0acd84230398be2a6e3e24",
-                        "sha1": "e1f738a9026e9f087d96861935f994b010b8131a"
+                        "sha512": "cfd7c0e4b203df445c72462bf653ee0980ea61e043e94434943e6aace329099d20dab76bcdbcfd6f27671aa65b7f427e952b3af0573f6eb5538e1ed51721e605",
+                        "sha1": "874bae4867d0a2782857e3ee20b5045f36a3eda2"
                     },
                     "required_dependencies": [
                         "1eAoo2KR",
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 873443,
-                    "date_published": "2026-02-08T02:09:17.531783Z"
+                    "size": 873244,
+                    "date_published": "2026-02-08T02:09:20.239845Z"
                 },
                 {
                     "type": "curseforge",
