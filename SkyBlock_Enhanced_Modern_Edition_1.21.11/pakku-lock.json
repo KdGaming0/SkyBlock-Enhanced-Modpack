@@ -1,11 +1,10 @@
 {
     "target": "multiplatform",
     "mc_versions": [
-        "1.21.11",
-        "1.21.10"
+        "1.21.11"
     ],
     "loaders": {
-        "fabric": "0.19.1"
+        "fabric": "0.19.2"
     },
     "projects": [
         {
@@ -3280,7 +3279,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-0.11.8+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-0.11.9+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3288,18 +3287,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7919/926/skyblock_enhancements-0.11.8+1.21.11.jar",
-                    "id": "7919926",
+                    "url": "https://edge.forgecdn.net/files/7938/820/skyblock_enhancements-0.11.9+1.21.11.jar",
+                    "id": "7938820",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "0e31f70eb1314e715470fb2cdd0db379e62c4f0c",
-                        "md5": "a647898abd6e1f962a0f2a5fb88ec9a6"
+                        "sha1": "31a870a43d27dab642aef491aa66b07a86f47714",
+                        "md5": "918a56dfa4d3028b1a20603874ed434c"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1219175,
-                    "date_published": "2026-04-13T08:15:04.680Z"
+                    "size": 1254991,
+                    "date_published": "2026-04-17T07:29:07.640Z"
                 }
             ]
         },
@@ -4053,7 +4052,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "waveycapes-fabric-1.9.1-mc1.21.11.jar",
+                    "file_name": "waveycapes-fabric-1.9.2-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -4061,18 +4060,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7900/541/waveycapes-fabric-1.9.1-mc1.21.11.jar",
-                    "id": "7900541",
+                    "url": "https://edge.forgecdn.net/files/7926/945/waveycapes-fabric-1.9.2-mc1.21.11.jar",
+                    "id": "7926945",
                     "parent_id": "521594",
                     "hashes": {
-                        "sha1": "735bf063ce7f0b9b2d2de737a6298c924110bea7",
-                        "md5": "5b2223ecae5078c1529d332ab7169f5e"
+                        "sha1": "bc0a0d842e385b75902d9efa5a870db2d89aaa6b",
+                        "md5": "31270d9c870484aab210327d2b0c1088"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1846653,
-                    "date_published": "2026-04-09T17:30:18.843Z"
+                    "size": 1847289,
+                    "date_published": "2026-04-14T18:34:10.310Z"
                 }
             ]
         },
@@ -4122,26 +4121,27 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
+                    "file_name": "yet_another_config_lib_v3-3.8.2+1.21.10-fabric.jar",
                     "mc_versions": [
-                        "1.21.11"
+                        "1.21.9",
+                        "1.21.10"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7437/843/yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
-                    "id": "7437843",
+                    "url": "https://edge.forgecdn.net/files/7437/852/yet_another_config_lib_v3-3.8.2+1.21.10-fabric.jar",
+                    "id": "7437852",
                     "parent_id": "667299",
                     "hashes": {
-                        "sha1": "f99cda70903f16dd6927a276150b2762b4d5ab66",
-                        "md5": "0de1337147953ff71854bfd4ce874629"
+                        "sha1": "7c629ee66648c8b28f51b29ddff22fea79fc6cfb",
+                        "md5": "ace7c4811f10788361f482bf2b24e22c"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1126948,
-                    "date_published": "2026-01-09T16:34:33.330Z"
+                    "size": 1127484,
+                    "date_published": "2026-01-09T16:34:34.007Z"
                 }
             ]
         },
@@ -4196,28 +4196,29 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "zoomify-2.15.2+1.21.11.jar",
+                    "file_name": "zoomify-2.15.2+1.21.9.jar",
                     "mc_versions": [
-                        "1.21.11"
+                        "1.21.9",
+                        "1.21.10"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7591/963/zoomify-2.15.2+1.21.11.jar",
-                    "id": "7591963",
+                    "url": "https://edge.forgecdn.net/files/7591/964/zoomify-2.15.2+1.21.9.jar",
+                    "id": "7591964",
                     "parent_id": "574741",
                     "hashes": {
-                        "sha1": "e1f738a9026e9f087d96861935f994b010b8131a",
-                        "md5": "60bb5705290ef18a774e75fcf2fadbfc"
+                        "sha1": "874bae4867d0a2782857e3ee20b5045f36a3eda2",
+                        "md5": "4a0558c6256d80ca4585871b0e1b4279"
                     },
                     "required_dependencies": [
                         "308769",
-                        "667299",
-                        "306612"
+                        "306612",
+                        "667299"
                     ],
-                    "size": 873443,
-                    "date_published": "2026-02-08T02:09:16.050Z"
+                    "size": 873244,
+                    "date_published": "2026-02-08T02:09:18.467Z"
                 }
             ]
         },
