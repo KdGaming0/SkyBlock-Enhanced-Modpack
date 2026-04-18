@@ -390,7 +390,7 @@ jobs:
     name: Publish · Modrinth
     runs-on: ubuntu-latest
     needs: [validate, build, test-client]
-    if: ${{ !env.ACT && vars.MR_PROJECT_ID != '' }}
+    if: ${{ vars.MR_PROJECT_ID != '' }}
     steps:
       - name: Download release-body artifact
         uses: actions/download-artifact@v6
@@ -427,7 +427,7 @@ jobs:
     name: Publish · CurseForge
     runs-on: ubuntu-latest
     needs: [validate, build, test-client]
-    if: ${{ !env.ACT && vars.CF_PROJECT_ID != '' }}
+    if: ${{ vars.CF_PROJECT_ID != '' }}
     steps:
       - name: Download release-body artifact
         uses: actions/download-artifact@v6
