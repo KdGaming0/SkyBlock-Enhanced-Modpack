@@ -4,17 +4,26 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'           # stable:  v3.1.2
-                       # beta:    v3.1.2-beta.1
+      - 'v*'           # stable:   v3.1.2
+                       # beta:     v3.1.2-beta.1
+                       # hotfix:   v3.1.2-hotfix1  (pakku.json stays at 3.1.2)
 
 env:
   PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_1.21.11
   JAVA_VERSION: '21'
   MC_VERSION:   '1.21.11'
-  # Set to 'true' when running locally with `act` to skip artifact
-  # upload/download steps and use a pre-built mrpack instead.
-  # `act` also automatically sets ACT=true, which skips Tier 2.
-  SKIP_LOCAL_ARTIFACTS: 'false'
+
+  # ── mc-runtime-test configuration ──────────────────────────────────────────
+  # The action itself is pinned below via `uses:`; these variables control
+  # which runtime-test JAR we stage. Bump MC_RUNTIME_TEST_JAR_MC when a
+  # release for 1.21.11 ships upstream.
+  # Upstream: https://github.com/headlesshq/mc-runtime-test/releases
+  MC_RUNTIME_TEST_VERSION: '4.1.0'
+  MC_RUNTIME_TEST_JAR_MC:  '1.21.10'  # TODO: bump to 1.21.11 when released
+
+  # Local runs: `act` sets ACT=true automatically. We use that single flag
+  # to gate artifact upload/download and Tier 2 client launch. No separate
+  # SKIP_LOCAL_ARTIFACTS variable to keep in sync.
 
 jobs:
 
@@ -31,8 +40,6 @@ jobs:
       modpack_loader:          ${{ steps.info.outputs.modpack_loader }}
       release_type:            ${{ steps.info.outputs.release_type }}
       is_beta:                 ${{ steps.info.outputs.release_type == 'beta' }}
-      config_version:          ${{ steps.info.outputs.config_version }}
-      previous_config_version: ${{ steps.info.outputs.previous_config_version }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -49,46 +56,87 @@ jobs:
         run: |
           TAG_VER="${GITHUB_REF#refs/tags/v}"
           PKG_VER="${{ steps.info.outputs.modpack_version }}"
-          if [[ "$TAG_VER" != "$PKG_VER" ]]; then
+
+          # Strip optional -hotfixN suffix: the tag may be v3.1.2-hotfix1 while
+          # pakku.json stays at 3.1.2 (hotfix republishes the same modpack
+          # version with a patched artifact).
+          TAG_BASE="${TAG_VER%-hotfix*}"
+
+          if [[ "$TAG_BASE" != "$PKG_VER" ]]; then
             echo "::error::Tag v${TAG_VER} does not match pakku.json version ${PKG_VER}"
             git push origin ":refs/tags/v${TAG_VER}" || true
             exit 1
           fi
-          echo "✅ Tag matches pakku.json: ${PKG_VER}"
+          if [[ "$TAG_VER" != "$PKG_VER" ]]; then
+            echo "✅ Hotfix tag: v${TAG_VER} (pakku.json: ${PKG_VER})"
+          else
+            echo "✅ Tag matches pakku.json: ${PKG_VER}"
+          fi
 
       - name: Validate version was bumped since previous tag
         run: |
           CUR_VER="${{ steps.info.outputs.modpack_version }}"
           PREV_VER="${{ steps.info.outputs.previous_modpack_version }}"
+          TAG_NAME="${GITHUB_REF#refs/tags/}"
 
-          # Strip any beta suffix for pure numeric comparison.
-          # This lets 3.1.2-beta.1 be accepted after 3.1.2-beta.0 (different string),
-          # and also lets 3.1.2-beta.1 be accepted after stable 3.1.1 (base changed).
-          if [[ "$PREV_VER" != "none" && "$CUR_VER" == "$PREV_VER" ]]; then
-            TAG_NAME="${GITHUB_REF#refs/tags/}"
+          if [[ "$PREV_VER" == "none" ]]; then
+            echo "✅ No previous tag — this is the first release."
+            exit 0
+          fi
+
+          # Strict semver comparison. Hotfix tags (e.g. v3.1.2-hotfix1) are
+          # allowed to reuse the same pakku.json version as the previous tag
+          # because they patch the release artifact without bumping the modpack
+          # version the user sees in-game.
+          IS_HOTFIX=false
+          if [[ "$TAG_NAME" =~ ^v${CUR_VER}-hotfix[0-9]+$ ]]; then
+            IS_HOTFIX=true
+          fi
+
+          # Parse stable base (strip -beta.N / -hotfixN) for numeric comparison.
+          strip_suffix() { echo "$1" | sed -E 's/-(beta\.[0-9]+|hotfix[0-9]+)$//'; }
+          CUR_BASE=$(strip_suffix "$CUR_VER")
+          PREV_BASE=$(strip_suffix "$PREV_VER")
+
+          # sort -V puts the lower version first; if CUR < PREV we fail.
+          LOWEST=$(printf '%s\n%s\n' "$CUR_BASE" "$PREV_BASE" | sort -V | head -n1)
+
+          if [[ "$CUR_BASE" == "$PREV_BASE" ]]; then
+            # Same base version — only allowed for beta iteration or hotfix tag.
+            if [[ "$IS_HOTFIX" == "true" ]]; then
+              echo "✅ Hotfix release: ${TAG_NAME} reuses pakku.json version ${CUR_VER}"
+              exit 0
+            fi
+            if [[ "$CUR_VER" != "$PREV_VER" ]]; then
+              # e.g. 3.1.2-beta.2 after 3.1.2-beta.1 — string differs, base same
+              echo "✅ Beta iteration: ${PREV_VER} → ${CUR_VER}"
+              exit 0
+            fi
             echo "::error::Version in pakku.json NOT bumped!"
-            echo "::error::Current $CUR_VER is the same as previous tag ${{ steps.info.outputs.previous_tag }}."
+            echo "::error::Current ${CUR_VER} matches previous tag ${{ steps.info.outputs.previous_tag }}."
+            echo "::error::Use a -hotfix tag if you intend to reuse the version, e.g. v${CUR_VER}-hotfix1"
+            echo "::error::Deleting tag '$TAG_NAME' and failing build..."
+            git push origin ":refs/tags/$TAG_NAME" || true
+            exit 1
+          elif [[ "$LOWEST" == "$CUR_BASE" ]]; then
+            echo "::error::Version regression: ${CUR_VER} is LOWER than previous ${PREV_VER}!"
             echo "::error::Deleting tag '$TAG_NAME' and failing build..."
             git push origin ":refs/tags/$TAG_NAME" || true
             exit 1
           fi
+
           echo "✅ Version bumped: ${PREV_VER} → ${CUR_VER}"
 
-      - name: Upload changelog artifact
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+      # Single source of truth: release.sh already assembled release-body.md
+      # (changelog + optional config-changelog) into packcore/markdown/.
+      # We just upload it — no re-assembly in CI.
+      - name: Upload release-body artifact
+        if: ${{ !env.ACT }}
         uses: actions/upload-artifact@v6
         with:
-          name: changelog
-          path: ${{ env.PACK_DIR }}/.pakku/overrides/packcore/markdown/CHANGELOG-v${{ steps.info.outputs.modpack_version }}.md
+          name: release-body
+          path: ${{ env.PACK_DIR }}/.pakku/overrides/packcore/markdown/release-body-v${{ steps.info.outputs.modpack_version }}.md
           if-no-files-found: warn
-
-      - name: Upload config changelog artifact (if version changed)
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' && steps.info.outputs.config_version != steps.info.outputs.previous_config_version && steps.info.outputs.previous_config_version != 'none' }}
-        uses: actions/upload-artifact@v6
-        with:
-          name: config-changelog
-          path: ${{ env.PACK_DIR }}/.pakku/overrides/packcore/configs/CONFIG_CHANGELOG.md
-          if-no-files-found: ignore
 
   # ── BUILD ───────────────────────────────────────────────────────────────────
   build:
@@ -122,7 +170,7 @@ jobs:
         run: java -jar ../pakku.jar export
 
       - name: Upload build artifacts
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        if: ${{ !env.ACT }}
         uses: actions/upload-artifact@v6
         with:
           name: build
@@ -145,7 +193,7 @@ jobs:
       # ── Obtain the built mrpack ───────────────────────────────────────────
 
       - name: Download build artifacts
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        if: ${{ !env.ACT }}
         uses: actions/download-artifact@v6
         with:
           name: build
@@ -154,7 +202,7 @@ jobs:
       # When running locally with `act`, copy a pre-built mrpack into place.
       # Build the mrpack first with: cd <PACK_DIR> && java -jar ../pakku.jar export
       - name: Use local build artifacts (act)
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS == 'true' }}
+        if: ${{ env.ACT }}
         run: |
           TARGET="${{ env.PACK_DIR }}/build/modrinth/SkyBlock Enhanced-${{ needs.validate.outputs.modpack_version }}.mrpack"
           if [[ -f "$TARGET" ]]; then
@@ -213,24 +261,27 @@ jobs:
       # We download it manually and pass mc-runtime-test: none to the action
       # so it doesn't attempt (and fail) to find a 1.21.11 release jar.
 
-      - name: Stage mc-runtime-test mod (1.21.10 → compatible with 1.21.11)
+      - name: Stage mc-runtime-test mod
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        env:
+          MRT_VER: ${{ env.MC_RUNTIME_TEST_VERSION }}
+          MRT_MC:  ${{ env.MC_RUNTIME_TEST_JAR_MC }}
         run: |
           mkdir -p run/mods
-          # Fetch the asset URL for the 1.21.10 Fabric release jar from the
-          # 4.1.0 release of mc-runtime-test via the GitHub API.
+          echo "  [INFO]  Staging mc-runtime-test ${MRT_VER} (jar built for MC ${MRT_MC})"
           ASSET_URL=$(curl -sSL \
-            "https://api.github.com/repos/headlesshq/mc-runtime-test/releases/tags/4.1.0" \
+            "https://api.github.com/repos/headlesshq/mc-runtime-test/releases/tags/${MRT_VER}" \
             | python3 -c "
-          import sys, json
+          import sys, json, os
+          mc = os.environ['MRT_MC']
           assets = json.load(sys.stdin)['assets']
           match = next(
               (a['browser_download_url'] for a in assets
-               if '1.21.10' in a['name'] and 'fabric-release' in a['name']),
+               if mc in a['name'] and 'fabric-release' in a['name']),
               None
           )
           if not match:
-              print('ERROR: could not find 1.21.10 fabric release jar in 4.1.0 assets', file=sys.stderr)
+              print(f'ERROR: no {mc} fabric-release jar in mc-runtime-test {os.environ[\"MRT_VER\"]} assets', file=sys.stderr)
               sys.exit(1)
           print(match)
           ")
@@ -254,7 +305,7 @@ jobs:
 
       - name: Tier 2 – Headless client launch
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
-        uses: headlesshq/mc-runtime-test@4.1.0
+        uses: headlesshq/mc-runtime-test@4.1.0  # keep in sync with MC_RUNTIME_TEST_VERSION
         with:
           mc:               ${{ needs.validate.outputs.minecraft_version }}
           modloader:        fabric
@@ -268,7 +319,7 @@ jobs:
       # ── Capture logs if anything went wrong ──────────────────────────────
 
       - name: Upload game logs on failure
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' && failure() }}
+        if: ${{ !env.ACT && failure() }}
         uses: actions/upload-artifact@v6
         with:
           name: game-logs-${{ github.run_number }}
@@ -278,63 +329,54 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
-  # ── PUBLISH ─────────────────────────────────────────────────────────────────
-  publish:
-    name: Publish
+  # ── PUBLISH (split into parallel, independent jobs) ─────────────────────────
+  # Rationale: previously one flaky publisher (e.g. Modrinth) would block the
+  # next (CurseForge) and leave the release in a split-brain state. Each
+  # destination is now its own job; they run in parallel and one failing
+  # doesn't prevent the others from succeeding. The GitHub Release is created
+  # as a DRAFT when any downstream publisher fails, so a human can review
+  # before going public — no automatic tag deletion.
+
+  github-release:
+    name: Publish · GitHub Release
     runs-on: ubuntu-latest
     needs: [validate, build, test-client]
     permissions:
-      contents: write            # needed for GitHub Release + tag deletion
+      contents: write
+    outputs:
+      release_id: ${{ steps.release.outputs.id }}
     steps:
-      - uses: actions/checkout@v6
-
-      - name: Download changelog artifact
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+      - name: Download release-body artifact
+        if: ${{ !env.ACT }}
         uses: actions/download-artifact@v6
         with:
-          name: changelog
+          name: release-body
           path: .
-
-      - name: Download config changelog artifact (if exists)
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
-        uses: actions/download-artifact@v6
-        with:
-          name: config-changelog
-          path: .
-        continue-on-error: true
 
       - name: Download build artifacts
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
+        if: ${{ !env.ACT }}
         uses: actions/download-artifact@v6
         with:
           name: build
           path: build
 
-      - name: Build release body with config changelog
+      - name: Resolve release body
         id: body
         run: |
           VER="${{ needs.validate.outputs.modpack_version }}"
-          FILE="CHANGELOG-v${VER}.md"
-
-          MODPACK_BODY=""
-          if [[ -f "$FILE" ]]; then
-            MODPACK_BODY=$(cat "$FILE")
+          # release.sh writes the fully-assembled body. Fall back to a stub
+          # only if something went wrong upstream.
+          SRC="release-body-v${VER}.md"
+          if [[ -f "$SRC" ]]; then
+            cp "$SRC" release-body.md
+            echo "✅ Using release-body from artifact"
           else
-            MODPACK_BODY="## 🛠 Update ${VER}\n\nMod and dependency updates."
+            printf '## 🛠 Update %s\n\nMod and dependency updates.\n' "$VER" > release-body.md
+            echo "::warning::release-body artifact missing — using stub body"
           fi
-
-          # Append config changelog if present and version changed
-          if [[ -f "CONFIG_CHANGELOG.md" ]] && [[ "${{ needs.validate.outputs.config_version }}" != "${{ needs.validate.outputs.previous_config_version }}" ]] && [[ "${{ needs.validate.outputs.previous_config_version }}" != "none" ]]; then
-            echo "ℹ Appending config changelog..."
-            CONFIG_BODY=$(cat CONFIG_CHANGELOG.md)
-            MODPACK_BODY="${MODPACK_BODY}\n\n## ⚙ Config Changes\n\n${CONFIG_BODY}"
-          fi
-
-          # Write to file for use in release creation
-          printf '%b' "$MODPACK_BODY" > release-body.md
-          echo "✅ Release body prepared"
 
       - name: Create GitHub Release
+        id: release
         uses: softprops/action-gh-release@v2
         with:
           body_path: release-body.md
@@ -344,14 +386,36 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  publish-modrinth:
+    name: Publish · Modrinth
+    runs-on: ubuntu-latest
+    needs: [validate, build, test-client]
+    if: ${{ !env.ACT && vars.MR_PROJECT_ID != '' }}
+    steps:
+      - name: Download release-body artifact
+        uses: actions/download-artifact@v6
+        with:
+          name: release-body
+          path: .
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v6
+        with:
+          name: build
+          path: build
+
+      - name: Stage changelog file
+        run: |
+          VER="${{ needs.validate.outputs.modpack_version }}"
+          SRC="release-body-v${VER}.md"
+          [[ -f "$SRC" ]] && cp "$SRC" release-body.md || echo "Update ${VER}" > release-body.md
+
       - name: Publish to Modrinth
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' }}
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id:    ${{ vars.MR_PROJECT_ID }}
           modrinth-token: ${{ secrets.MR_TOKEN }}
           modrinth-files: build/modrinth/*.mrpack
-
           name:           "${{ needs.validate.outputs.modpack_name }} ${{ needs.validate.outputs.modpack_version }}"
           version:        ${{ needs.validate.outputs.modpack_version }}
           version-type:   ${{ needs.validate.outputs.release_type }}
@@ -359,14 +423,36 @@ jobs:
           loaders:        ${{ needs.validate.outputs.modpack_loader }}
           changelog-file: release-body.md
 
+  publish-curseforge:
+    name: Publish · CurseForge
+    runs-on: ubuntu-latest
+    needs: [validate, build, test-client]
+    if: ${{ !env.ACT && vars.CF_PROJECT_ID != '' }}
+    steps:
+      - name: Download release-body artifact
+        uses: actions/download-artifact@v6
+        with:
+          name: release-body
+          path: .
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v6
+        with:
+          name: build
+          path: build
+
+      - name: Stage changelog file
+        run: |
+          VER="${{ needs.validate.outputs.modpack_version }}"
+          SRC="release-body-v${VER}.md"
+          [[ -f "$SRC" ]] && cp "$SRC" release-body.md || echo "Update ${VER}" > release-body.md
+
       - name: Publish to CurseForge
-        if: ${{ env.SKIP_LOCAL_ARTIFACTS != 'true' && vars.CF_PROJECT_ID != '' }}
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           curseforge-id:    ${{ vars.CF_PROJECT_ID }}
           curseforge-token: ${{ secrets.CF_TOKEN }}
           curseforge-files: build/curseforge/*.zip
-
           name:           "${{ needs.validate.outputs.modpack_name }} ${{ needs.validate.outputs.modpack_version }}"
           version:        ${{ needs.validate.outputs.modpack_version }}
           version-type:   ${{ needs.validate.outputs.release_type }}
@@ -374,8 +460,57 @@ jobs:
           loaders:        ${{ needs.validate.outputs.modpack_loader }}
           changelog-file: release-body.md
 
+  # ── FINALIZE ────────────────────────────────────────────────────────────────
+  # Runs after every publisher job regardless of outcome. If any publisher
+  # failed we mark the GitHub Release as a draft so a human can review before
+  # it goes live — no automatic tag deletion. The Discord notification only
+  # fires when everything succeeded.
+  finalize:
+    name: Finalize
+    runs-on: ubuntu-latest
+    needs: [validate, github-release, publish-modrinth, publish-curseforge]
+    if: always()
+    permissions:
+      contents: write
+    steps:
+      - name: Determine outcome
+        id: outcome
+        run: |
+          MR="${{ needs.publish-modrinth.result }}"
+          CF="${{ needs.publish-curseforge.result }}"
+          GH="${{ needs.github-release.result }}"
+          echo "  Modrinth:   $MR"
+          echo "  CurseForge: $CF"
+          echo "  GitHub:     $GH"
+
+          # Treat 'skipped' as success (e.g. CF not configured).
+          all_ok=true
+          for r in "$MR" "$CF" "$GH"; do
+            case "$r" in
+              success|skipped) ;;
+              *) all_ok=false ;;
+            esac
+          done
+          echo "all_ok=$all_ok" >> "$GITHUB_OUTPUT"
+
+      - name: Mark GitHub Release as draft on partial failure
+        if: steps.outcome.outputs.all_ok != 'true' && needs.github-release.result == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          echo "::warning::One or more publishers failed — marking GitHub Release ${TAG} as draft."
+          echo "::warning::The tag is preserved. Review Modrinth/CurseForge, then publish the draft manually."
+          curl -sSf -X PATCH \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/releases/${{ needs.github-release.outputs.release_id }}" \
+            -d '{"draft": true}' \
+            || echo "::warning::Could not flip release to draft — do it manually in the UI."
+
       - name: Send Fluxer release notification
-        if: ${{ vars.FLUXER_WEBHOOK_URL != '' }}
+        if: steps.outcome.outputs.all_ok == 'true' && vars.FLUXER_WEBHOOK_URL != ''
+        continue-on-error: true
         run: |
           if [[ "${{ needs.validate.outputs.release_type }}" == "beta" ]]; then
             CONTENT="## **${{ needs.validate.outputs.modpack_name }}** ${{ needs.validate.outputs.modpack_version }} beta is available for testing! 🧪\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)\n> ⚠️ This is a **beta** release and may not be fully stable."
@@ -386,11 +521,9 @@ jobs:
             -H "Content-Type: application/json" \
             -d "{\"username\": \"SkyBlock Enhanced\", \"content\": \"$CONTENT\"}"
 
-      - name: Delete tag on publish failure
-        if: failure()
+      - name: Fail workflow if any publisher failed
+        if: steps.outcome.outputs.all_ok != 'true'
         run: |
-          TAG="${GITHUB_REF#refs/tags/}"
-          echo "Publish failed — removing tag ${TAG}"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git config user.name  "github-actions[bot]"
-          git push origin ":refs/tags/${TAG}" || echo "Tag may already be gone — continuing"
+          echo "::error::One or more publish jobs failed. GitHub Release (if created) was marked as draft."
+          echo "::error::The tag is preserved so you can re-run individual publisher jobs."
+          exit 1

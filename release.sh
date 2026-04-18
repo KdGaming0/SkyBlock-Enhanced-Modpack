@@ -33,11 +33,14 @@ PACKCORE_MD_DIR="$PACK_DIR/.pakku/overrides/packcore/markdown"
 NEW_VERSION=""
 BUMP_TYPE=""
 RELEASE_TYPE="release"      # "release" or "beta"
+HOTFIX_N=""                 # e.g. "1" for v3.1.2-hotfix1; empty otherwise
+TAG_OVERRIDE=""             # if set, use this as the git tag (for hotfix)
 TMP_OLD_LOCK=""
 CHANGELOG_BODY=""
 ROLLBACK_NEEDED=false
 OLD_PAKKU_JSON_CONTENT=""
 OLD_MODPACK_JSON_CONTENT=""
+DRY_RUN=false               # --dry-run skips git commit/tag/push
 
 if command -v pakku-mc &>/dev/null; then
     PAKKU_CMD="pakku-mc"
@@ -140,16 +143,53 @@ step_version() {
     local V_MINOR="$MAJOR.$((MINOR + 1)).0"
     local V_MAJOR="$((MAJOR + 1)).0.0"
 
+    # Suggest next hotfix number for the *current* version.
+    # We scan local tags for v<cur>-hotfix<N> and pick max+1.
+    local next_hotfix=1
+    local existing_hotfixes
+    existing_hotfixes=$(git tag -l "v${cur}-hotfix*" 2>/dev/null | sed -E "s/^v${cur}-hotfix//" | sort -n | tail -n1 || true)
+    if [[ -n "$existing_hotfixes" && "$existing_hotfixes" =~ ^[0-9]+$ ]]; then
+        next_hotfix=$(( existing_hotfixes + 1 ))
+    fi
+    local V_HOTFIX="${cur}-hotfix${next_hotfix}"
+
     echo ""
-    echo -e "    ${BOLD}[1]${NC}  patch  →  ${GREEN}$V_PATCH${NC}"
-    echo -e "    ${BOLD}[2]${NC}  minor  →  ${YELLOW}$V_MINOR${NC}"
-    echo -e "    ${BOLD}[3]${NC}  major  →  ${RED}$V_MAJOR${NC}"
+    echo -e "    ${BOLD}[1]${NC}  patch   →  ${GREEN}$V_PATCH${NC}"
+    echo -e "    ${BOLD}[2]${NC}  minor   →  ${YELLOW}$V_MINOR${NC}"
+    echo -e "    ${BOLD}[3]${NC}  major   →  ${RED}$V_MAJOR${NC}"
     echo -e "    ${BOLD}[4]${NC}  custom"
+    echo -e "    ${BOLD}[5]${NC}  hotfix  →  tag ${CYAN}v${V_HOTFIX}${NC} (pakku.json stays at ${cur})"
     echo ""
 
     local choice
     read -rp "  Bump type [1]: " choice
     choice="${choice:-1}"
+
+    # ── Hotfix path: reuse the current pakku.json version, but tag is suffixed.
+    if [[ "$choice" == "5" ]]; then
+        NEW_VERSION="$cur"
+        BUMP_TYPE="hotfix"
+        RELEASE_TYPE="release"
+        HOTFIX_N="$next_hotfix"
+        TAG_OVERRIDE="v${V_HOTFIX}"
+
+        echo ""
+        echo -e "  ${YELLOW}Hotfix${NC}: pakku.json version stays at ${BOLD}${cur}${NC}"
+        echo -e "  ${YELLOW}Hotfix${NC}: tag will be ${BOLD}${TAG_OVERRIDE}${NC}"
+        echo ""
+        read -rp "  Confirm? [Y/n]: " confirm
+        confirm="${confirm:-Y}"
+        if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+            print_err "Aborted by user."
+            exit 1
+        fi
+
+        # No JSON changes — just mark state so rollback is a no-op and
+        # downstream steps work. Still save state for consistency.
+        save_json_state
+        print_ok "Hotfix mode armed — no version file changes"
+        return
+    fi
 
     local base_version=""
     case "$choice" in
@@ -689,6 +729,8 @@ step_changelog() {
 
     # ── Write files ──────────────────────────────────────────────────────────
 
+    # ── Write files ──────────────────────────────────────────────────────────
+
     # Prepend to main CHANGELOG.md
     if [[ -f "$ROOT_CHANGELOG" ]]; then
         local existing
@@ -699,10 +741,43 @@ step_changelog() {
     fi
     print_ok "Updated CHANGELOG.md"
 
-    # Optionally write to packcore markdown dir
+    # Write versioned changelog to packcore markdown dir
     if [[ -d "$PACKCORE_MD_DIR" ]]; then
         echo "$CHANGELOG_BODY" > "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md"
         print_ok "Wrote changelog to packcore/markdown/"
+    fi
+
+    # ── Assemble the final release-body.md ──────────────────────────────────
+    # This is what gets published to GitHub/Modrinth/CurseForge. Building it
+    # here (rather than in CI) means there's a single source of truth and
+    # the author can preview the exact body that will ship.
+    local release_body="$CHANGELOG_BODY"
+
+    # Append config changelog if the config version changed since last tag.
+    local cfg_json="$PACK_DIR/.pakku/overrides/packcore/configs/pack.json"
+    local cfg_changelog="$PACK_DIR/.pakku/overrides/packcore/configs/CONFIG_CHANGELOG.md"
+    local cur_cfg="none" prev_cfg="none"
+    [[ -f "$cfg_json" ]] && cur_cfg=$(jq -r '.version // "none"' "$cfg_json" 2>/dev/null || echo "none")
+
+    local prev_tag
+    prev_tag=$(git describe --tags --abbrev=0 HEAD 2>/dev/null || echo "none")
+    if [[ "$prev_tag" != "none" ]]; then
+        prev_cfg=$(git show "${prev_tag}:${cfg_json#$REPO_ROOT/}" 2>/dev/null \
+            | jq -r '.version // "none"' 2>/dev/null || echo "none")
+    fi
+
+    if [[ -f "$cfg_changelog" && "$cur_cfg" != "$prev_cfg" && "$prev_cfg" != "none" ]]; then
+        local cfg_body
+        cfg_body=$(cat "$cfg_changelog")
+        release_body+=$'\n\n## ⚙ Config Changes\n\n'"$cfg_body"
+        print_ok "Appended CONFIG_CHANGELOG.md (config: ${prev_cfg} → ${cur_cfg})"
+    fi
+
+    # Write release-body.md to packcore/markdown so CI can pick it up as a
+    # single artifact without having to reassemble anything.
+    if [[ -d "$PACKCORE_MD_DIR" ]]; then
+        echo "$release_body" > "$PACKCORE_MD_DIR/release-body-v${NEW_VERSION}.md"
+        print_ok "Wrote release-body.md to packcore/markdown/"
     fi
 }
 
@@ -712,7 +787,8 @@ step_changelog() {
 step_git() {
     print_header "Step 4 · Commit, Tag & Push"
 
-    local tag="v${NEW_VERSION}"
+    # For hotfixes, the tag is v<ver>-hotfixN while pakku.json stays at <ver>.
+    local tag="${TAG_OVERRIDE:-v${NEW_VERSION}}"
 
     # Sanity: check for existing tag
     if git rev-parse "$tag" &>/dev/null; then
@@ -725,28 +801,36 @@ step_git() {
 
     print_step "Committing..."
     local commit_msg
-    if [[ "$RELEASE_TYPE" == "beta" ]]; then
+    if [[ -n "$HOTFIX_N" ]]; then
+        commit_msg="release: ${tag} (hotfix)"
+    elif [[ "$RELEASE_TYPE" == "beta" ]]; then
         commit_msg="release: ${tag} (beta pre-release)"
     else
         commit_msg="release: ${tag}"
     fi
-    git commit -m "$commit_msg"
+
+    # Hotfixes may have no staged changes (just the artifact/workflow change
+    # that pakku re-export produces). Allow an empty commit so the tag has
+    # a commit to anchor on, distinct from the previous release.
+    if ! git diff --cached --quiet; then
+        git commit -m "$commit_msg"
+    elif [[ -n "$HOTFIX_N" ]]; then
+        git commit --allow-empty -m "$commit_msg"
+    else
+        git commit -m "$commit_msg"  # will error if truly nothing to commit
+    fi
 
     print_step "Creating tag ${tag}..."
     git tag "$tag"
 
     local current_branch
     current_branch=$(git rev-parse --abbrev-ref HEAD)
-    print_step "Pushing branch ${current_branch} to origin..."
-    if ! git push origin "$current_branch"; then
-        print_err "git push ${current_branch} failed — removing local tag"
-        git tag -d "$tag"
-        exit 1
-    fi
-
-    print_step "Pushing tag ${tag} to origin..."
-    if ! git push origin "$tag"; then
-        print_err "git push tag failed — removing local tag"
+    print_step "Pushing branch ${current_branch} + tag ${tag} atomically..."
+    # --atomic ensures both refs succeed or neither does. This prevents the
+    # race where another push lands between `git push branch` and `git push tag`,
+    # leaving the tag pointing at a commit that isn't on the branch.
+    if ! git push --atomic origin "$current_branch" "$tag"; then
+        print_err "Atomic push failed — removing local tag"
         git tag -d "$tag"
         exit 1
     fi
@@ -775,7 +859,42 @@ step_git() {
 # ═══════════════════════════════════════════════════════════════════════════
 #  MAIN
 # ═══════════════════════════════════════════════════════════════════════════
+parse_args() {
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            --dry-run)
+                DRY_RUN=true
+                shift
+                ;;
+            -h|--help)
+                cat <<EOF
+Usage: ./release.sh [--dry-run]
+
+Interactive release wizard for SkyBlock Enhanced.
+
+Options:
+  --dry-run   Run steps 1–3 (version bump, pakku update, changelog) but
+              skip the git commit/tag/push in step 4. Useful for testing
+              changelog generation. JSON changes are rolled back at exit.
+  -h, --help  Show this help.
+
+Environment:
+  VERBOSE=1   Show pakku diff debug output in step 3.
+EOF
+                exit 0
+                ;;
+            *)
+                print_err "Unknown argument: $1"
+                echo "  Run './release.sh --help' for usage."
+                exit 1
+                ;;
+        esac
+    done
+}
+
 main() {
+    parse_args "$@"
+
     clear
     echo -e "${BOLD}${GREEN}"
     echo "  ╔══════════════════════════════════════════════╗"
@@ -783,20 +902,44 @@ main() {
     echo "  ╚══════════════════════════════════════════════╝"
     echo -e "${NC}"
 
+    if [[ "$DRY_RUN" == true ]]; then
+        print_warn "DRY-RUN mode — no git commit/tag/push will happen."
+        echo ""
+    fi
+
     check_deps
     step_version
     step_pakku
     step_changelog
+
+    if [[ "$DRY_RUN" == true ]]; then
+        print_header "🧪 Dry-Run Complete"
+        echo -e "  Version   : ${BOLD}${NEW_VERSION}${NC}"
+        echo -e "  Type      : ${BOLD}${RELEASE_TYPE}${NC}"
+        echo -e "  Tag would be : ${BOLD}${TAG_OVERRIDE:-v${NEW_VERSION}}${NC}"
+        echo ""
+        print_warn "Rolling back JSON changes (dry-run)..."
+        rollback_json
+        [[ -n "${TMP_OLD_LOCK:-}" && -f "$TMP_OLD_LOCK" ]] && rm -f "$TMP_OLD_LOCK"
+        # Suppress the EXIT trap's rollback (already done, and exit will be 0)
+        ROLLBACK_NEEDED=false
+        exit 0
+    fi
+
     step_git
 
-    if [[ "$RELEASE_TYPE" == "beta" ]]; then
+    local final_tag="${TAG_OVERRIDE:-v${NEW_VERSION}}"
+
+    if [[ -n "$HOTFIX_N" ]]; then
+        print_header "🚑 Hotfix Release Complete"
+    elif [[ "$RELEASE_TYPE" == "beta" ]]; then
         print_header "🧪 Beta Release Complete"
     else
         print_header "🎉 Release Complete"
     fi
     echo -e "  Version   : ${BOLD}${NEW_VERSION}${NC}"
     echo -e "  Type      : ${BOLD}${RELEASE_TYPE}${NC}"
-    echo -e "  Tag       : ${BOLD}v${NEW_VERSION}${NC}"
+    echo -e "  Tag       : ${BOLD}${final_tag}${NC}"
     echo -e "  Changelog : ${BOLD}CHANGELOG.md${NC} + packcore/markdown/"
     echo ""
 }

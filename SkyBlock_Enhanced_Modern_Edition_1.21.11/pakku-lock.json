@@ -4187,9 +4187,9 @@
                         "sha1": "874bae4867d0a2782857e3ee20b5045f36a3eda2"
                     },
                     "required_dependencies": [
-                        "1eAoo2KR",
+                        "Ha28R6CL",
                         "P7dR8mSH",
-                        "Ha28R6CL"
+                        "1eAoo2KR"
                     ],
                     "size": 873244,
                     "date_published": "2026-02-08T02:09:20.239845Z"
@@ -4317,7 +4317,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "§dlooshy §7[§f1.21.x§7] [v0.11].zip",
+                    "file_name": "§dlooshy §7[§f26.1§7] [v0.12].zip",
                     "mc_versions": [
                         "1.21",
                         "1.21.1",
@@ -4330,22 +4330,25 @@
                         "1.21.8",
                         "1.21.9",
                         "1.21.10",
-                        "1.21.11"
+                        "1.21.11",
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/pbipt9Sm/versions/foL63b93/§dlooshy §7[§f1.21.x§7] [v0.11].zip",
-                    "id": "foL63b93",
+                    "url": "https://cdn.modrinth.com/data/pbipt9Sm/versions/krI58ahy/§dlooshy §7[§f26.1§7] [v0.12].zip",
+                    "id": "krI58ahy",
                     "parent_id": "pbipt9Sm",
                     "hashes": {
-                        "sha512": "7fdc44238fb5e2110e7d5043d86f1499bbc6042d20407c02151df3e4c0691e619ad29dde99c079fdf2dbd0a11236c28b6d1144cf6ae4694c10fd9fc7662fa3ae",
-                        "sha1": "328f25d122d164ec6007b1520e83e225cb330af9"
+                        "sha512": "96842e3b52c69f7d9f94977895b4bc3e94ee5e324588e3ae45d2e224aed09aab2a9f0353f101fb41b10f5007608239ae7aa0802494798038f78a966a00b1b377",
+                        "sha1": "00f92b1841e7c84a1e352b7a6582da06a7b0caa3"
                     },
                     "required_dependencies": [],
-                    "size": 5155331,
-                    "date_published": "2026-04-13T05:20:19.872530Z"
+                    "size": 5320158,
+                    "date_published": "2026-04-18T05:53:04.212776Z"
                 },
                 {
                     "type": "curseforge",
