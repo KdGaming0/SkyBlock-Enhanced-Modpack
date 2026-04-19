@@ -46,6 +46,8 @@ if command -v pakku-mc &>/dev/null; then
     PAKKU_CMD="pakku-mc"
 elif command -v pakku &>/dev/null; then
     PAKKU_CMD="pakku"
+elif command -v Pakku &>/dev/null; then
+    PAKKU_CMD="Pakku"
 else
     echo "pakku not found"
     exit 1
@@ -153,7 +155,21 @@ step_version() {
     fi
     local V_HOTFIX="${cur}-hotfix${next_hotfix}"
 
+    # If we're already on a beta, offer a [0] next-beta shortcut.
+    # e.g. currently 3.1.2-beta.1 → offer 3.1.2-beta.2 as option [0].
+    local IS_CURRENT_BETA=false
+    local V_NEXT_BETA=""
+    if [[ "$cur" =~ ^([0-9]+\.[0-9]+\.[0-9]+)-beta\.([0-9]+)$ ]]; then
+        IS_CURRENT_BETA=true
+        local cur_beta_base="${BASH_REMATCH[1]}"
+        local cur_beta_n="${BASH_REMATCH[2]}"
+        V_NEXT_BETA="${cur_beta_base}-beta.$(( cur_beta_n + 1 ))"
+    fi
+
     echo ""
+    if [[ "$IS_CURRENT_BETA" == true ]]; then
+        echo -e "    ${BOLD}[0]${NC}  next beta →  ${YELLOW}${V_NEXT_BETA}${NC}  (iterate current beta)"
+    fi
     echo -e "    ${BOLD}[1]${NC}  patch   →  ${GREEN}$V_PATCH${NC}"
     echo -e "    ${BOLD}[2]${NC}  minor   →  ${YELLOW}$V_MINOR${NC}"
     echo -e "    ${BOLD}[3]${NC}  major   →  ${RED}$V_MAJOR${NC}"
@@ -164,6 +180,21 @@ step_version() {
     local choice
     read -rp "  Bump type [1]: " choice
     choice="${choice:-1}"
+
+    # ── Next-beta shortcut: iterate the current beta without a version bump.
+    if [[ "$choice" == "0" ]]; then
+        if [[ "$IS_CURRENT_BETA" != true ]]; then
+            print_err "Option [0] is only available when the current version is a beta."
+            exit 1
+        fi
+        NEW_VERSION="$V_NEXT_BETA"
+        BUMP_TYPE="beta-iterate"
+        RELEASE_TYPE="beta"
+        print_step "Bumping: ${BOLD}${cur}${NC} → ${BOLD}${YELLOW}${NEW_VERSION}${NC} (beta pre-release)"
+        save_json_state
+        _apply_version_files
+        return
+    fi
 
     # ── Hotfix path: reuse the current pakku.json version, but tag is suffixed.
     if [[ "$choice" == "5" ]]; then

@@ -221,27 +221,27 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "bazaarutils-0.6.2-beta.1+mc1.21.10.jar",
+                    "file_name": "bazaarutils-0.6.2-beta.1+mc1.21.11.jar",
                     "mc_versions": [
-                        "1.21.10"
+                        "1.21.11"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/6YPGzLLK/bazaarutils-0.6.2-beta.1+mc1.21.10.jar",
-                    "id": "6YPGzLLK",
+                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/JmDCPma6/bazaarutils-0.6.2-beta.1+mc1.21.11.jar",
+                    "id": "JmDCPma6",
                     "parent_id": "c4u7nzUZ",
                     "hashes": {
-                        "sha512": "cbc6d276dceaa1eae6f6087a607bf1ba82d719ed647f78e3a4c02d800189cadd126fd530d6660f9d5d7e03b2ba9221ca88b1976f64dcecc59c048efea2de394c",
-                        "sha1": "7490b7f13328787c9096678135271b134117901b"
+                        "sha512": "96e124d48296ce8072b0b1b7da1e1b11b3792efa42eea95a455bb3bfb2d1f1f8ea27d03d32995315de782b729290b96a5d94984754e0061daca6f52457b11230",
+                        "sha1": "81b79cea4b5704b289f2ca8adcc369446116e942"
                     },
                     "required_dependencies": [
-                        "1eAoo2KR",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "1eAoo2KR"
                     ],
-                    "size": 2983819,
-                    "date_published": "2026-03-08T17:30:04.285791Z"
+                    "size": 2983849,
+                    "date_published": "2026-03-08T17:30:01.151758Z"
                 }
             ]
         },
@@ -1399,7 +1399,7 @@
                 "modrinth": "furfsky-reborn"
             },
             "name": {
-                "modrinth": "Furfsky Reborn"
+                "modrinth": "FurSky Reborn"
             },
             "id": {
                 "modrinth": "khMbd0K1"
@@ -2055,7 +2055,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "marketguard-1.1.2+1.21.11.jar",
+                    "file_name": "marketguard-1.2.0+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2063,39 +2063,41 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/FjmDJu5C/marketguard-1.1.2+1.21.11.jar",
-                    "id": "FjmDJu5C",
+                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/lH4iHj0D/marketguard-1.2.0+1.21.11.jar",
+                    "id": "lH4iHj0D",
                     "parent_id": "ji4JdpCu",
                     "hashes": {
-                        "sha512": "da9f4e2dd4f1e64588c2c9bb8ff79b1ad8d1e4f55fc989659946f9100dcd95870014580ec3107c3f2bef7ad50777978addd9e80fafcaa9ed5df9d33b3b9aa07b",
-                        "sha1": "1d06d3bff9dda3b5d800e22190842ac96f9ee05f"
+                        "sha512": "0a31ac34a2c575e2ac5ef8743ff07a2d81fdd202d73061c5eab4b2c3c8bb985bc71697f0acd2a1f2c458885f320fdbf90b2509549c0b526740114bd863663e31",
+                        "sha1": "c452d907a3eb6c2ea532f05a47ac50502a385c99"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 64089,
-                    "date_published": "2026-04-13T17:15:31.415709Z"
+                    "size": 71093,
+                    "date_published": "2026-04-19T01:09:36.099137Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "marketguard-1.0.0-beta1+1.21.11.jar",
+                    "file_name": "marketguard-1.2.0+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
                     "loaders": [
                         "fabric"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7879/167/marketguard-1.0.0-beta1+1.21.11.jar",
-                    "id": "7879167",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7947/948/marketguard-1.2.0+1.21.11.jar",
+                    "id": "7947948",
                     "parent_id": "1505265",
                     "hashes": {
-                        "sha1": "ef425445c2587f57f28b105a32983aa0a4a1f4f9",
-                        "md5": "da21e59d6dff7e8d761ff5520ebb6954"
+                        "sha1": "c452d907a3eb6c2ea532f05a47ac50502a385c99",
+                        "md5": "57ced1bb0074c6b5503a2943456a12f0"
                     },
-                    "required_dependencies": [],
-                    "size": 39579,
-                    "date_published": "2026-04-05T12:47:20.697Z"
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 71093,
+                    "date_published": "2026-04-19T01:09:37.360Z"
                 }
             ]
         },
@@ -2933,7 +2935,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scamscreener-2.3.1+1.21.11.jar",
+                    "file_name": "scamscreener-2.3.2+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2941,22 +2943,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/OqBkowVe/scamscreener-2.3.1+1.21.11.jar",
-                    "id": "OqBkowVe",
+                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/HNXjjGW5/scamscreener-2.3.2+1.21.11.jar",
+                    "id": "HNXjjGW5",
                     "parent_id": "XTB0bgAW",
                     "hashes": {
-                        "sha512": "7f9c52601ed5550dc78b6acd84ba5557dec54b047b3b477d5548b8886f3953bba0e749361c94f145781c94b1bb36d4ba09a58046dd4096bccd80057b0855dc6d",
-                        "sha1": "326a1cf490886b8cce2385dbd85f41e414269777"
+                        "sha512": "1481c80c3aa435bb495bb2fbd4a89f7051b552c5323b3d45e44063116e8b16a6efd9c2580e7e9715521a424b21aff72ff0236900bb21ba88289a44fdb958fb70",
+                        "sha1": "9297e85f5dea470b4a3a3090ced32124cba15b30"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 790002,
-                    "date_published": "2026-04-09T15:47:31.204345Z"
+                    "size": 795392,
+                    "date_published": "2026-04-19T01:28:54.765741Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "scamscreener-2.3.1+1.21.11.jar",
+                    "file_name": "scamscreener-2.3.2+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2964,18 +2966,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7900/6/scamscreener-2.3.1+1.21.11.jar",
-                    "id": "7900006",
+                    "url": "https://edge.forgecdn.net/files/7948/10/scamscreener-2.3.2+1.21.11.jar",
+                    "id": "7948010",
                     "parent_id": "1465941",
                     "hashes": {
-                        "sha1": "326a1cf490886b8cce2385dbd85f41e414269777",
-                        "md5": "7e6abbcde8bafee8331ad5c042016b56"
+                        "sha1": "9297e85f5dea470b4a3a3090ced32124cba15b30",
+                        "md5": "739a56d0e2f36ff8fa5b4477c6415eb4"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 790002,
-                    "date_published": "2026-04-09T15:50:56.673Z"
+                    "size": 795392,
+                    "date_published": "2026-04-19T01:28:55.030Z"
                 }
             ]
         },
@@ -4121,27 +4123,26 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "yet_another_config_lib_v3-3.8.2+1.21.10-fabric.jar",
+                    "file_name": "yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
                     "mc_versions": [
-                        "1.21.9",
-                        "1.21.10"
+                        "1.21.11"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7437/852/yet_another_config_lib_v3-3.8.2+1.21.10-fabric.jar",
-                    "id": "7437852",
+                    "url": "https://edge.forgecdn.net/files/7437/843/yet_another_config_lib_v3-3.8.2+1.21.11-fabric.jar",
+                    "id": "7437843",
                     "parent_id": "667299",
                     "hashes": {
-                        "sha1": "7c629ee66648c8b28f51b29ddff22fea79fc6cfb",
-                        "md5": "ace7c4811f10788361f482bf2b24e22c"
+                        "sha1": "f99cda70903f16dd6927a276150b2762b4d5ab66",
+                        "md5": "0de1337147953ff71854bfd4ce874629"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1127484,
-                    "date_published": "2026-01-09T16:34:34.007Z"
+                    "size": 1126948,
+                    "date_published": "2026-01-09T16:34:33.330Z"
                 }
             ]
         },
@@ -4170,55 +4171,53 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "zoomify-2.15.2+1.21.9.jar",
+                    "file_name": "zoomify-2.15.2+1.21.11.jar",
                     "mc_versions": [
-                        "1.21.9",
-                        "1.21.10"
+                        "1.21.11"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/Vdx09fu6/zoomify-2.15.2+1.21.9.jar",
-                    "id": "Vdx09fu6",
+                    "url": "https://cdn.modrinth.com/data/w7ThoJFB/versions/gI5KZI8V/zoomify-2.15.2+1.21.11.jar",
+                    "id": "gI5KZI8V",
                     "parent_id": "w7ThoJFB",
                     "hashes": {
-                        "sha512": "cfd7c0e4b203df445c72462bf653ee0980ea61e043e94434943e6aace329099d20dab76bcdbcfd6f27671aa65b7f427e952b3af0573f6eb5538e1ed51721e605",
-                        "sha1": "874bae4867d0a2782857e3ee20b5045f36a3eda2"
+                        "sha512": "de9d6097445175f6ef3e93475136fd67d29fc14fd26a6f19e63714efa6cf0961af5d270a95b65c4099a38517c3f91815fe4a1aa21b0acd84230398be2a6e3e24",
+                        "sha1": "e1f738a9026e9f087d96861935f994b010b8131a"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
-                        "P7dR8mSH",
-                        "1eAoo2KR"
+                        "1eAoo2KR",
+                        "P7dR8mSH"
                     ],
-                    "size": 873244,
-                    "date_published": "2026-02-08T02:09:20.239845Z"
+                    "size": 873443,
+                    "date_published": "2026-02-08T02:09:17.531783Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "zoomify-2.15.2+1.21.9.jar",
+                    "file_name": "zoomify-2.15.2+1.21.11.jar",
                     "mc_versions": [
-                        "1.21.9",
-                        "1.21.10"
+                        "1.21.11"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7591/964/zoomify-2.15.2+1.21.9.jar",
-                    "id": "7591964",
+                    "url": "https://edge.forgecdn.net/files/7591/963/zoomify-2.15.2+1.21.11.jar",
+                    "id": "7591963",
                     "parent_id": "574741",
                     "hashes": {
-                        "sha1": "874bae4867d0a2782857e3ee20b5045f36a3eda2",
-                        "md5": "4a0558c6256d80ca4585871b0e1b4279"
+                        "sha1": "e1f738a9026e9f087d96861935f994b010b8131a",
+                        "md5": "60bb5705290ef18a774e75fcf2fadbfc"
                     },
                     "required_dependencies": [
                         "308769",
-                        "306612",
-                        "667299"
+                        "667299",
+                        "306612"
                     ],
-                    "size": 873244,
-                    "date_published": "2026-02-08T02:09:18.467Z"
+                    "size": 873443,
+                    "date_published": "2026-02-08T02:09:16.050Z"
                 }
             ]
         },
@@ -4349,34 +4348,6 @@
                     "required_dependencies": [],
                     "size": 5320158,
                     "date_published": "2026-04-18T05:53:04.212776Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "§dlooshy §7[§f1.21.x§7] [v0.9.1].zip",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.5",
-                        "1.21.8",
-                        "1.21.9",
-                        "1.21.10",
-                        "1.21.4",
-                        "1.21.3",
-                        "1.21.7",
-                        "1.21.1",
-                        "1.21.6",
-                        "1.21.2"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7111/895/§dlooshy §7[§f1.21.x§7] [v0.9.1].zip",
-                    "id": "7111895",
-                    "parent_id": "1366108",
-                    "hashes": {
-                        "sha1": "3927aad2cc4fac52bcd4b95e2b27d14ba7d0f53d",
-                        "md5": "ae9e8571afb86519f993c73883311766"
-                    },
-                    "required_dependencies": [],
-                    "size": 4546098,
-                    "date_published": "2025-10-16T01:36:03.580Z"
                 }
             ]
         }

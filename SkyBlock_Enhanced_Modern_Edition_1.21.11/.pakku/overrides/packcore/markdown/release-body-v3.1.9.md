@@ -1,6 +1,6 @@
 # 🛠 Update 3.1.9
 
-More improvements to Skyblock Enhancements RRV integrations. If no more issues or bugs are found by the end of next week, will I make it the default over REI.
+More improvements to Skyblock Enhancements RRV integrations. If no more issues or bugs are found by the end of the week, do I plan to make it the default over REI.
 
 ## 🔄 Updated
 ### Mods
@@ -8,6 +8,8 @@ More improvements to Skyblock Enhancements RRV integrations. If no more issues o
 - **SkyHanni**: 7.15.0-mc1.21.11 -> **7.16.1-mc1.21.11**
 - **Skyblock Dark UI 1.12 For 1.21.10+**: 1.12 -> **1.13**
 - **Waveycapes Fabric**: 1.9.1-mc1.21.11 -> **1.9.2-mc1.21.11**
+- **Marketguard**: 1.1.2+1.21.11 -> **1.2.0+1.21.11**
+- **Scamscreener**: 2.3.1+1.21.11 -> **2.3.2+1.21.11**
 
 ---
 
