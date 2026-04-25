@@ -202,11 +202,7 @@
             ]
         },
         {
-            "pakku_id": "qHqzldjGkxfkg0LT",
-            "pakku_links": [
-                "LwqrzSsyxBuQ5jrL",
-                "R1cZt9dgVAOXAtE8"
-            ],
+            "pakku_id": "t3puJGGtdZJ9PrQr",
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -218,10 +214,11 @@
             "id": {
                 "modrinth": "c4u7nzUZ"
             },
+            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "bazaarutils-0.6.2-beta.2+mc1.21.11.jar",
+                    "file_name": "bazaarutils-0.6.2-beta.1+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -229,19 +226,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/igQt0SdT/bazaarutils-0.6.2-beta.2+mc1.21.11.jar",
-                    "id": "igQt0SdT",
+                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/JmDCPma6/bazaarutils-0.6.2-beta.1+mc1.21.11.jar",
+                    "id": "JmDCPma6",
                     "parent_id": "c4u7nzUZ",
                     "hashes": {
-                        "sha512": "838207b9fa448b4b84fe819b2e8fd684834c1c8f1d2765d960536965ed95b9a4a093fdf5e0b080ab073ba3e05dbdab1a1eb7d365e4f451c3e76e95d03903ca6f",
-                        "sha1": "16c6d2859d8b8a208967b7805378b4a73d3d66f0"
+                        "sha512": "96e124d48296ce8072b0b1b7da1e1b11b3792efa42eea95a455bb3bfb2d1f1f8ea27d03d32995315de782b729290b96a5d94984754e0061daca6f52457b11230",
+                        "sha1": "81b79cea4b5704b289f2ca8adcc369446116e942"
                     },
                     "required_dependencies": [
-                        "M1953qlQ",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "1eAoo2KR"
                     ],
-                    "size": 7384090,
-                    "date_published": "2026-04-24T22:15:56.897316Z"
+                    "size": 2983849,
+                    "date_published": "2026-03-08T17:30:01.151758Z"
                 }
             ]
         },
@@ -1932,7 +1929,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "MakeUp-UltraFast-9.4c.zip",
+                    "file_name": "MakeUp-UltraFast-9.4e.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.13",
@@ -1982,27 +1979,28 @@
                         "1.21.10",
                         "1.21.11",
                         "26.1",
-                        "26.1.1"
+                        "26.1.1",
+                        "26.1.2"
                     ],
                     "loaders": [
                         "iris",
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/izsIPI7a/versions/20OMmWR5/MakeUp-UltraFast-9.4c.zip",
-                    "id": "20OMmWR5",
+                    "url": "https://cdn.modrinth.com/data/izsIPI7a/versions/kS8DIZzl/MakeUp-UltraFast-9.4e.zip",
+                    "id": "kS8DIZzl",
                     "parent_id": "izsIPI7a",
                     "hashes": {
-                        "sha512": "c586c9e73512467140506f369668ef5c6b84122ed176d90e41016d11673e73c899bf8de3b7301d9e294f2aac36428fa87025047384420ca9673e5e5371881b21",
-                        "sha1": "0e856109783bf72e82d9a1e65713afa908ab6edd"
+                        "sha512": "30c726826e47d7274b55ae2d972098cb156e6ca267fe41002c793dd3b922d4afa267c8eadc82b13675c6fabcd514299ffa33fe4dc227e6c115cd138dc32bdd34",
+                        "sha1": "37946af829940e921d710fcf89bd444a42ce33d0"
                     },
                     "required_dependencies": [],
-                    "size": 402680,
-                    "date_published": "2026-02-27T05:46:47.031514Z"
+                    "size": 402763,
+                    "date_published": "2026-04-25T05:32:34.373808Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "MakeUp-UltraFast-9.4c.zip",
+                    "file_name": "MakeUp-UltraFast-9.4e.zip",
                     "mc_versions": [
                         "1.21",
                         "1.21.8",
@@ -2018,16 +2016,16 @@
                         "1.21.11"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7684/712/MakeUp-UltraFast-9.4c.zip",
-                    "id": "7684712",
+                    "url": "https://edge.forgecdn.net/files/7980/983/MakeUp-UltraFast-9.4e.zip",
+                    "id": "7980983",
                     "parent_id": "431203",
                     "hashes": {
-                        "sha1": "0e856109783bf72e82d9a1e65713afa908ab6edd",
-                        "md5": "230150ebf7005afb032934f6779ae46b"
+                        "sha1": "37946af829940e921d710fcf89bd444a42ce33d0",
+                        "md5": "49bfaa432435bd49c70d443b64b7c6da"
                     },
                     "required_dependencies": [],
-                    "size": 402680,
-                    "date_published": "2026-02-27T05:41:48.310Z"
+                    "size": 402763,
+                    "date_published": "2026-04-25T06:04:36.980Z"
                 }
             ]
         },
