@@ -1,1 +1,1 @@
-- Cleaned up config files (removed modern UI default configs)
+- Firmament bz/ah price in tooltip off by default.

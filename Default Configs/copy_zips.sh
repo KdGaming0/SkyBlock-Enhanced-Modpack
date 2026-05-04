@@ -3,20 +3,20 @@
 set -e
 
 # ---------------- CONFIG ----------------
-SOURCE="/home/karld/Nextcloud/SkyBlock Enhanced/SkyBlock_Enhanced_Modpack/Default Configs"
+SOURCE="/home/karldh/SkyBlock_Enhanced_Modpack/Default Configs"
 ARCHIVE="$SOURCE/archive"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 
 DEST=(
-    "/home/karld/.local/share/ModrinthApp/profiles/SkyBlock Enhanced ME 1440p (6)/packcore/configs"
-    "/home/karld/.local/share/ModrinthApp/profiles/SkyBlock Enhanced ME 1440p (4)/packcore/configs"
-    "/home/karld/.local/share/ModrinthApp/profiles/SkyBlock Enhanced ME 1440p (3)/packcore/configs"
-    "/home/karld/.local/share/ModrinthApp/profiles/SkyBlock Enhanced ME 1440p (8)/packcore/configs"
-    "/home/karld/.local/share/ModrinthApp/profiles/SkyBlock Enhanced ME 1440p (5)/packcore/configs"
-    "/home/karld/.local/share/ModrinthApp/profiles/SkyBlock Enhanced ME 4k/packcore/configs"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (1)/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (2)/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (3)/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (4)/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (5)/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (6)/packcore/configs/"
 )
 
-OVERWRITE_DEST="/home/karld/Nextcloud/SkyBlock Enhanced/SkyBlock_Enhanced_Modpack/SkyBlock_Enhanced_Modern_Edition_1.21.11/.pakku/overrides/packcore/configs"
+OVERWRITE_DEST="/home/karldh/SkyBlock_Enhanced_Modpack/SkyBlock_Enhanced_Modern_Edition_1.21.11/.pakku/overrides/packcore/configs/"
 
 # ---------------- FUNCTIONS ----------------
 
