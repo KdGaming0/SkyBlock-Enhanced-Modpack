@@ -2549,7 +2549,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-4.2.7+1.21.11.jar",
+                    "file_name": "packcore-4.2.8+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2557,23 +2557,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/9eq9NUvD/packcore-4.2.7+1.21.11.jar",
-                    "id": "9eq9NUvD",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/RD6k4LuA/packcore-4.2.8+1.21.11.jar",
+                    "id": "RD6k4LuA",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "f61e975800af89d20d8b48e8216ba62e0d4b226f1a4106d9bb0c890243ff2419838a09113d1aa897b04ea5378ef7f73380297e98efdfea689ab5d837ce74973d",
-                        "sha1": "d547750d10d49cf80339056375b11bb7e1e6072a"
+                        "sha512": "75fcef26c5ffbff40858caa38ddabadfedb2991702f22d59d6bbd14c80bb0c59187dbc5a70c214002151c3dd968f071f39c74e045f08d755d612f5e9c805d060",
+                        "sha1": "daa5ff159eecf35a1c95088fe1adb022fe6c8a7a"
                     },
                     "required_dependencies": [
                         "AOEDs9Al",
                         "P7dR8mSH"
                     ],
-                    "size": 45138767,
-                    "date_published": "2026-05-04T09:43:38.102166Z"
+                    "size": 45138818,
+                    "date_published": "2026-05-04T12:28:29.786158Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-4.2.7+1.21.11.jar",
+                    "file_name": "packcore-4.2.8+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2581,19 +2581,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8037/69/packcore-4.2.7+1.21.11.jar",
-                    "id": "8037069",
+                    "url": "https://edge.forgecdn.net/files/8037/605/packcore-4.2.8+1.21.11.jar",
+                    "id": "8037605",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "d547750d10d49cf80339056375b11bb7e1e6072a",
-                        "md5": "9172a11206d61709701a36d215e2e524"
+                        "sha1": "daa5ff159eecf35a1c95088fe1adb022fe6c8a7a",
+                        "md5": "13e4378fa364d9ded8de899fe34af5ee"
                     },
                     "required_dependencies": [
                         "933200",
                         "306612"
                     ],
-                    "size": 45138767,
-                    "date_published": "2026-05-04T09:43:32.853Z"
+                    "size": 45138818,
+                    "date_published": "2026-05-04T12:28:20.510Z"
                 }
             ]
         },
