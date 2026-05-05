@@ -464,7 +464,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Catharsis-1.0.0-beta.14-1.21.11.jar",
+                    "file_name": "Catharsis-1.0.0-beta.15-1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -472,19 +472,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/fc4wBpRx/versions/R1sGaLsr/Catharsis-1.0.0-beta.14-1.21.11.jar",
-                    "id": "R1sGaLsr",
+                    "url": "https://cdn.modrinth.com/data/fc4wBpRx/versions/IBFIJ4kv/Catharsis-1.0.0-beta.15-1.21.11.jar",
+                    "id": "IBFIJ4kv",
                     "parent_id": "fc4wBpRx",
                     "hashes": {
-                        "sha512": "aab3ecf93ab55dfc7ae361fc4dc228270737fab71cd589c0d016bdebcfe741d64c5154eaae919e8179a5a264d0506f965a16e9e8431ec3ff2d4ac43cef774288",
-                        "sha1": "f4874bf77ba88bbba796a16327317c60d88a91c0"
+                        "sha512": "48abd227bc047eb44ae2898de74b57c49f502dbe6507ce99fd04658668ba8c5cec0188d067daaa27041e10fae84b6ca4353fd7e699e06462ce5791a1b305ea47",
+                        "sha1": "ef0b2427af2d2a8bddf6c0ad89253cfc24e84552"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 6000503,
-                    "date_published": "2026-03-31T16:26:57.550354Z"
+                    "size": 6360293,
+                    "date_published": "2026-05-04T15:19:35.302848Z"
                 }
             ]
         },
@@ -1429,7 +1429,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Firmament-44.0.1+mc1.21.11.jar",
+                    "file_name": "Firmament-44.2.0+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1437,19 +1437,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/IJNUBZ2a/versions/bXane87F/Firmament-44.0.1+mc1.21.11.jar",
-                    "id": "bXane87F",
+                    "url": "https://cdn.modrinth.com/data/IJNUBZ2a/versions/UStVdgbF/Firmament-44.2.0+mc1.21.11.jar",
+                    "id": "UStVdgbF",
                     "parent_id": "IJNUBZ2a",
                     "hashes": {
-                        "sha512": "c1cdc9466fe7ac33050657cef88001afffb11b991d0c1f5a28f41bde66fb0063f9d49049d771e8ca80403f319c99979a8a85679a35a25090a0bdba20c379f6a3",
-                        "sha1": "21b111a577a36344f746782d3c4e43e218ecb23d"
+                        "sha512": "9ea55c7b80095ebf4ca0472b616f5bf368cf7a206f454fab3e21268761de9e3a6df6b2c4403b34bce2f7255d53d04680e82c0406c2199a857eaa80bbd8d05428",
+                        "sha1": "55647624c4225670849bb69b4bc062d6315b6da9"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 5626478,
-                    "date_published": "2026-03-16T18:04:52.513019Z"
+                    "size": 5680123,
+                    "date_published": "2026-05-04T20:52:36.529955Z"
                 }
             ]
         },
@@ -1999,7 +1999,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "MakeUp-UltraFast-9.4e.zip",
+                    "file_name": "MakeUp-UltraFast-9.5.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.13",
@@ -2057,20 +2057,20 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/izsIPI7a/versions/kS8DIZzl/MakeUp-UltraFast-9.4e.zip",
-                    "id": "kS8DIZzl",
+                    "url": "https://cdn.modrinth.com/data/izsIPI7a/versions/iF5yS074/MakeUp-UltraFast-9.5.zip",
+                    "id": "iF5yS074",
                     "parent_id": "izsIPI7a",
                     "hashes": {
-                        "sha512": "30c726826e47d7274b55ae2d972098cb156e6ca267fe41002c793dd3b922d4afa267c8eadc82b13675c6fabcd514299ffa33fe4dc227e6c115cd138dc32bdd34",
-                        "sha1": "37946af829940e921d710fcf89bd444a42ce33d0"
+                        "sha512": "337c86ccd4317ea5b5e8e046b12f37f2057615e74ade76fd275f73ed29a915cb1fb6f4d0aba976d97b70ca285292217726d7a389cebbaddb1f7ae8d8d0b2b2c5",
+                        "sha1": "fb2400acf7260393193e7f95d6a33d55351bd949"
                     },
                     "required_dependencies": [],
-                    "size": 402763,
-                    "date_published": "2026-04-25T05:32:34.373808Z"
+                    "size": 397921,
+                    "date_published": "2026-05-05T06:05:11.515731Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "MakeUp-UltraFast-9.4e.zip",
+                    "file_name": "MakeUp-UltraFast-9.5.zip",
                     "mc_versions": [
                         "1.21",
                         "1.21.8",
@@ -2086,16 +2086,16 @@
                         "1.21.11"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7980/983/MakeUp-UltraFast-9.4e.zip",
-                    "id": "7980983",
+                    "url": "https://edge.forgecdn.net/files/8041/788/MakeUp-UltraFast-9.5.zip",
+                    "id": "8041788",
                     "parent_id": "431203",
                     "hashes": {
-                        "sha1": "37946af829940e921d710fcf89bd444a42ce33d0",
-                        "md5": "49bfaa432435bd49c70d443b64b7c6da"
+                        "sha1": "fb2400acf7260393193e7f95d6a33d55351bd949",
+                        "md5": "b953a17db4bad70e6526ecab31d1ebf0"
                     },
                     "required_dependencies": [],
-                    "size": 402763,
-                    "date_published": "2026-04-25T06:04:36.980Z"
+                    "size": 397921,
+                    "date_published": "2026-05-05T06:17:40.013Z"
                 }
             ]
         },
@@ -3324,31 +3324,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.0-beta.5+1.21.11.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/YzCa8pHe/skyblock_enhancements-1.0.0-beta.5+1.21.11.jar",
-                    "id": "YzCa8pHe",
-                    "parent_id": "LpXuY1YR",
-                    "hashes": {
-                        "sha512": "9b73a880e2b3084159a2e29988a7bf644b5e455b48bf6fd17243ba8c1063209951df64d2803dd06602a4eaf3c7e0d160272681496e4d0124ba649d9990bd46d8",
-                        "sha1": "7efc6e432876bbfc3ffe9e4d342169dc3665c2b5"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
-                    ],
-                    "size": 1391237,
-                    "date_published": "2026-05-04T08:04:12.395761Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.0.0-beta.5+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.0-beta.6+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3356,18 +3332,42 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8036/641/skyblock_enhancements-1.0.0-beta.5+1.21.11.jar",
-                    "id": "8036641",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/fErtHAy3/skyblock_enhancements-1.0.0-beta.6+1.21.11.jar",
+                    "id": "fErtHAy3",
+                    "parent_id": "LpXuY1YR",
+                    "hashes": {
+                        "sha512": "6029138b838bfca075329e44e9ac80c32f00e64ebcb4a09f4672de8b6f707f53b32d34d55ce6ae091b21fcba62a0cbb977ff10e96744b43a5d816568fb19c97e",
+                        "sha1": "44b5f005dd64d1ae0c6d0543a2e19ab7747bb46b"
+                    },
+                    "required_dependencies": [
+                        "AOEDs9Al",
+                        "P7dR8mSH"
+                    ],
+                    "size": 1439550,
+                    "date_published": "2026-05-05T19:44:19.633759Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "skyblock_enhancements-1.0.0-beta.6+1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8044/860/skyblock_enhancements-1.0.0-beta.6+1.21.11.jar",
+                    "id": "8044860",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "7efc6e432876bbfc3ffe9e4d342169dc3665c2b5",
-                        "md5": "f07bc06ff91cf77d902a0f81d95d8d21"
+                        "sha1": "44b5f005dd64d1ae0c6d0543a2e19ab7747bb46b",
+                        "md5": "4806616e2d07b94c65f85836a13932cb"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1391237,
-                    "date_published": "2026-05-04T08:04:12.170Z"
+                    "size": 1439550,
+                    "date_published": "2026-05-05T19:44:19.033Z"
                 }
             ]
         },
@@ -3684,7 +3684,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "sodium-fabric-0.8.7+mc1.21.11.jar",
+                    "file_name": "sodium-fabric-0.8.11+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3692,20 +3692,20 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/AANobbMI/versions/UddlN6L4/sodium-fabric-0.8.7+mc1.21.11.jar",
-                    "id": "UddlN6L4",
+                    "url": "https://cdn.modrinth.com/data/AANobbMI/versions/CL53p97Z/sodium-fabric-0.8.11+mc1.21.11.jar",
+                    "id": "CL53p97Z",
                     "parent_id": "AANobbMI",
                     "hashes": {
-                        "sha512": "d7f035d6112eaac92cf0f11e4426db631fca5a7115dd355c2126efee4255b648a0102552bbf7b22a7eae9203d08f8740435842bfddcd94e2434f51b57ee9c641",
-                        "sha1": "e8865210ba9a926fc206ab9e73f9d4988a81ff69"
+                        "sha512": "a4f5535c3f6762c5f545b5d97069d8a07a1f7479d6e3cffe0eb65922878bf4a579c7e081e2536c6009a80fca8717f46451893f253045e4c247cf14de9dda6644",
+                        "sha1": "3735e0249b11b4df88aa79e08311c475025c0c13"
                     },
                     "required_dependencies": [],
-                    "size": 1870358,
-                    "date_published": "2026-03-24T16:30:41.342552Z"
+                    "size": 1893184,
+                    "date_published": "2026-05-04T16:50:33.741057Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "sodium-fabric-0.8.7+mc1.21.11.jar",
+                    "file_name": "sodium-fabric-0.8.11+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3713,16 +3713,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7805/158/sodium-fabric-0.8.7+mc1.21.11.jar",
-                    "id": "7805158",
+                    "url": "https://edge.forgecdn.net/files/8039/12/sodium-fabric-0.8.11+mc1.21.11.jar",
+                    "id": "8039012",
                     "parent_id": "394468",
                     "hashes": {
-                        "sha1": "e8865210ba9a926fc206ab9e73f9d4988a81ff69",
-                        "md5": "be9eef883db31e21e422aed7262df919"
+                        "sha1": "3735e0249b11b4df88aa79e08311c475025c0c13",
+                        "md5": "44ea0951e8a21a607911af0a3c80105e"
                     },
                     "required_dependencies": [],
-                    "size": 1870358,
-                    "date_published": "2026-03-24T16:31:50.607Z"
+                    "size": 1893184,
+                    "date_published": "2026-05-04T16:50:27.687Z"
                 }
             ]
         },
