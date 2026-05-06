@@ -3324,7 +3324,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.0-beta.6+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.0-beta.8+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3332,23 +3332,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/fErtHAy3/skyblock_enhancements-1.0.0-beta.6+1.21.11.jar",
-                    "id": "fErtHAy3",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/Q3J1boAI/skyblock_enhancements-1.0.0-beta.8+1.21.11.jar",
+                    "id": "Q3J1boAI",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "6029138b838bfca075329e44e9ac80c32f00e64ebcb4a09f4672de8b6f707f53b32d34d55ce6ae091b21fcba62a0cbb977ff10e96744b43a5d816568fb19c97e",
-                        "sha1": "44b5f005dd64d1ae0c6d0543a2e19ab7747bb46b"
+                        "sha512": "ef20b5a30df21d85237f3a1e81c992dbf215c40498ddc6a6caeb88d73c7b9e6108cf9dd7634209b3b186eae66f0580d2b08fad0d7c7d0e49c78778a6094bd1fe",
+                        "sha1": "bc516bede47a6837b958e8b6bcdfc19c2080f84b"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 1439550,
-                    "date_published": "2026-05-05T19:44:19.633759Z"
+                    "size": 1445388,
+                    "date_published": "2026-05-06T17:30:14.382266Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.0.0-beta.6+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.0-beta.8+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3356,18 +3356,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8044/860/skyblock_enhancements-1.0.0-beta.6+1.21.11.jar",
-                    "id": "8044860",
+                    "url": "https://edge.forgecdn.net/files/8049/35/skyblock_enhancements-1.0.0-beta.8+1.21.11.jar",
+                    "id": "8049035",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "44b5f005dd64d1ae0c6d0543a2e19ab7747bb46b",
-                        "md5": "4806616e2d07b94c65f85836a13932cb"
+                        "sha1": "bc516bede47a6837b958e8b6bcdfc19c2080f84b",
+                        "md5": "f2176ae2fe48324018690718bca86d31"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1439550,
-                    "date_published": "2026-05-05T19:44:19.033Z"
+                    "size": 1445388,
+                    "date_published": "2026-05-06T17:30:12.213Z"
                 }
             ]
         },
