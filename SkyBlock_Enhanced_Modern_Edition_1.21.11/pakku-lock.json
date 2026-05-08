@@ -1124,7 +1124,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "entityculling-fabric-1.10.1-mc1.21.11.jar",
+                    "file_name": "entityculling-fabric-1.10.2-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1132,22 +1132,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/WORDhU8n/entityculling-fabric-1.10.1-mc1.21.11.jar",
-                    "id": "WORDhU8n",
+                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/j9D8p9DR/entityculling-fabric-1.10.2-mc1.21.11.jar",
+                    "id": "j9D8p9DR",
                     "parent_id": "NNAgCjsB",
                     "hashes": {
-                        "sha512": "93fac75432afb97f286827190b3e0363775e013946e22bc62cd86b1d0e0c10c1e7dbd520ca22a9445acb1f50afca38c12d41a4f9a4d3685218287bb7cad237b8",
-                        "sha1": "4e595b6162d24c3d8d65bc6417cf79daac5bde0d"
+                        "sha512": "853eccc596bc0c4ee18afa8dd02f07744b71aa7709e8486c1a9d193fe951c61218581239e72e3731b95f1837d9b94b72ac03cbbe731454984a28330850480830",
+                        "sha1": "07425f2321600143113f02a3cc19900d6560244f"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 1585638,
-                    "date_published": "2026-04-09T16:06:31.818441Z"
+                    "size": 1604207,
+                    "date_published": "2026-05-07T17:02:10.175631Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "entityculling-fabric-1.10.1-mc1.21.11.jar",
+                    "file_name": "entityculling-fabric-1.10.2-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1155,18 +1155,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7900/089/entityculling-fabric-1.10.1-mc1.21.11.jar",
-                    "id": "7900089",
+                    "url": "https://edge.forgecdn.net/files/8053/775/entityculling-fabric-1.10.2-mc1.21.11.jar",
+                    "id": "8053775",
                     "parent_id": "448233",
                     "hashes": {
-                        "sha1": "4e595b6162d24c3d8d65bc6417cf79daac5bde0d",
-                        "md5": "f3006c2f641fbe1686547ad997dcf897"
+                        "sha1": "07425f2321600143113f02a3cc19900d6560244f",
+                        "md5": "6e7fa05378673eb837c52a5f1bdf5d16"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1585638,
-                    "date_published": "2026-04-09T16:06:29.817Z"
+                    "size": 1604207,
+                    "date_published": "2026-05-07T17:02:08.647Z"
                 }
             ]
         },
@@ -3324,7 +3324,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.0-beta.8+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.0-beta.9+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3332,19 +3332,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/Q3J1boAI/skyblock_enhancements-1.0.0-beta.8+1.21.11.jar",
-                    "id": "Q3J1boAI",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/x5N3ItW8/skyblock_enhancements-1.0.0-beta.9+1.21.11.jar",
+                    "id": "x5N3ItW8",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "ef20b5a30df21d85237f3a1e81c992dbf215c40498ddc6a6caeb88d73c7b9e6108cf9dd7634209b3b186eae66f0580d2b08fad0d7c7d0e49c78778a6094bd1fe",
-                        "sha1": "bc516bede47a6837b958e8b6bcdfc19c2080f84b"
+                        "sha512": "287b0f6f2514df4d911671d5078e9586379627f31b92ba2aa9cb794f8808dce7f2b207d1a77078c98821adff71980e5190b26fb7417342dc55b57c9a435e64b6",
+                        "sha1": "f4e0eb288acba9f67c89dedeb88894c07f5c4143"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
+                        "AOEDs9Al",
+                        "P7dR8mSH"
                     ],
-                    "size": 1445388,
-                    "date_published": "2026-05-06T17:30:14.382266Z"
+                    "size": 1450539,
+                    "date_published": "2026-05-08T13:42:29.309598Z"
                 },
                 {
                     "type": "curseforge",
@@ -3485,7 +3485,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyOcean-1.14.1-1.21.11.jar",
+                    "file_name": "SkyOcean-1.15.1-1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3493,19 +3493,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/yqVwo1Ok/SkyOcean-1.14.1-1.21.11.jar",
-                    "id": "yqVwo1Ok",
+                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/rcC3USlJ/SkyOcean-1.15.1-1.21.11.jar",
+                    "id": "rcC3USlJ",
                     "parent_id": "dIczrQAR",
                     "hashes": {
-                        "sha512": "20900981696b0eead607390a3293a554ce5f8001aaca33ed738e132e279d79a0ee6cca4b9f65885d3e00be3953af36d0d8037b06fbb5fa9cdaed61a50890ff27",
-                        "sha1": "6d8d1ba00ffa25ab4410dae434bed046de18ae43"
+                        "sha512": "336b7ec85f793711d03380cf93907699d02977637d491ae93b7e740decacd905cc3e0175303f828f94abdd0b4abb890ef5cbb2d6717a05ef05dd44bd66448b71",
+                        "sha1": "cc493c99b8ec1485ca3594ffbb29f0e1fa8ba7ea"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 10363454,
-                    "date_published": "2026-04-07T18:11:27.581501Z"
+                    "size": 10611730,
+                    "date_published": "2026-05-08T13:10:16.826703Z"
                 }
             ]
         },
