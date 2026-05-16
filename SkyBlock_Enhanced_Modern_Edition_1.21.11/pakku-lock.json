@@ -636,7 +636,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ComplementaryUnbound_r5.7.1.zip",
+                    "file_name": "ComplementaryUnbound_r5.8.zip",
                     "mc_versions": [
                         "1.7.10",
                         "1.8",
@@ -718,16 +718,16 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/d8rcvDTp/ComplementaryUnbound_r5.7.1.zip",
-                    "id": "d8rcvDTp",
+                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/BTHXcCkt/ComplementaryUnbound_r5.8.zip",
+                    "id": "BTHXcCkt",
                     "parent_id": "R6NEzAwj",
                     "hashes": {
-                        "sha512": "207ad92ab354e1be002e1ccce978da3860af69532ddcdecbc2a943ffe1ff7ac5eec6b021073ae68b93d78499c63d505de3abf63d9058cdf6cb80bed6528b7532",
-                        "sha1": "95883b516298ff4cf1a67ff512086eb67aeedd98"
+                        "sha512": "597d36e03473c38f52bbdbbf602961abcf740a53b4d7004178b7aa54abc0d171c83ee31d6e94b93befefb2de39245a85e40f7def6e4e3e5010eb759a152625c0",
+                        "sha1": "a441261a6af5f8e50327cd9bfa4cb17ea0e4f1b8"
                     },
                     "required_dependencies": [],
-                    "size": 522973,
-                    "date_published": "2026-01-30T12:45:23.381970Z"
+                    "size": 544616,
+                    "date_published": "2026-05-14T09:47:18.262226Z"
                 },
                 {
                     "type": "curseforge",
@@ -2786,8 +2786,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "respackopts-4.14.2.jar",
+                    "type": "modrinth",
+                    "file_name": "respackopts-4.14.3.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2795,43 +2795,43 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7710/179/respackopts-4.14.2.jar",
-                    "id": "7710179",
+                    "url": "https://cdn.modrinth.com/data/TiF5QWZY/versions/r1EgjrxB/respackopts-4.14.3.jar",
+                    "id": "r1EgjrxB",
+                    "parent_id": "TiF5QWZY",
+                    "hashes": {
+                        "sha512": "21e1895420c6f30a027f5d6773b837403ff269fa5a4cb33363835a2207326ecfd75aeebd767e7f592378854166fff91e8493659439ef4a11237dad8cae4d9181",
+                        "sha1": "c41365e8fb7011c8ac5190171bdaa11cf07ab794"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "WKwQAwke"
+                    ],
+                    "size": 588679,
+                    "date_published": "2026-05-16T12:50:05.939124Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "respackopts-4.14.3.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8098/419/respackopts-4.14.3.jar",
+                    "id": "8098419",
                     "parent_id": "430090",
                     "hashes": {
-                        "sha1": "95b5fb745e1aa762d25451e3738a3c6aeb24b98e",
-                        "md5": "737f55e5e4e7aa0be28a389f92f4c742"
+                        "sha1": "c41365e8fb7011c8ac5190171bdaa11cf07ab794",
+                        "md5": "eb07f32f2d83cb8c69c9bc70445d1f67"
                     },
                     "required_dependencies": [
                         "306612",
                         "482600"
                     ],
-                    "size": 587556,
-                    "date_published": "2026-03-04T13:56:17.207Z"
-                },
-                {
-                    "type": "modrinth",
-                    "file_name": "respackopts-4.14.2.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/TiF5QWZY/versions/EqcLJylQ/respackopts-4.14.2.jar",
-                    "id": "EqcLJylQ",
-                    "parent_id": "TiF5QWZY",
-                    "hashes": {
-                        "sha512": "e36d0bbc69b4c1d96bdd9ab3662f31c8bb85a2f872815df96e5d444b8166b4f913ea57686afe0d361f7dabee7fbf8b29d985273e7f6bf4c2cc81d0177c530483",
-                        "sha1": "95b5fb745e1aa762d25451e3738a3c6aeb24b98e"
-                    },
-                    "required_dependencies": [
-                        "WKwQAwke",
-                        "P7dR8mSH"
-                    ],
-                    "size": 587556,
-                    "date_published": "2026-03-04T13:56:26.554825Z"
+                    "size": 588679,
+                    "date_published": "2026-05-16T12:50:00.900Z"
                 }
             ]
         },
@@ -3001,7 +3001,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scamscreener-2.3.4+1.21.11.jar",
+                    "file_name": "scamscreener-2.4.0+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3009,18 +3009,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/Eq7ckLZz/scamscreener-2.3.4+1.21.11.jar",
-                    "id": "Eq7ckLZz",
+                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/367JibM8/scamscreener-2.4.0+1.21.11.jar",
+                    "id": "367JibM8",
                     "parent_id": "XTB0bgAW",
                     "hashes": {
-                        "sha512": "f7f8fc9bea435f4a921b90e52015031ca823acb1daea40803eb9b80d8d445fa48561fb24987aabd45cfd1ac915260a7b99a6dfdea544f053a899228b1fae33ce",
-                        "sha1": "d7f8c7d8d17646c9cbd57d4fa6dd4be4c0e361c5"
+                        "sha512": "cb541b7c775caea7afd07c95368fd1212d0131e35b61fc84cb785a980bd78dac88ff27b44f3f6dc4c1d0fbf95f1d1127cd71594ca735f1022a61dcecf75dd9e0",
+                        "sha1": "036ad1e11bf6013d85d423e61fb6764cb9e5d7de"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 796294,
-                    "date_published": "2026-04-29T08:36:42.103343Z"
+                    "size": 792733,
+                    "date_published": "2026-05-13T11:34:40.801831Z"
                 },
                 {
                     "type": "curseforge",
@@ -3324,7 +3324,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.0-beta.9+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.0-beta.11+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3332,23 +3332,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/x5N3ItW8/skyblock_enhancements-1.0.0-beta.9+1.21.11.jar",
-                    "id": "x5N3ItW8",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/nrxDM59m/skyblock_enhancements-1.0.0-beta.11+1.21.11.jar",
+                    "id": "nrxDM59m",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "287b0f6f2514df4d911671d5078e9586379627f31b92ba2aa9cb794f8808dce7f2b207d1a77078c98821adff71980e5190b26fb7417342dc55b57c9a435e64b6",
-                        "sha1": "f4e0eb288acba9f67c89dedeb88894c07f5c4143"
+                        "sha512": "3fd068bfe90c964d9eb4723edd0106b82701212a6e2d812c853cec567b6b568aa02900fe9af13cd5b48fe75420b3e6be8910ff0c3d9e1a400c4d7e15e0da341c",
+                        "sha1": "c2c45fa14197349b81e38cb4fddaaaeaf277415b"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 1450539,
-                    "date_published": "2026-05-08T13:42:29.309598Z"
+                    "size": 1465491,
+                    "date_published": "2026-05-16T14:43:19.701129Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.0.0-beta.9+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.0-beta.11+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3356,18 +3356,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8057/892/skyblock_enhancements-1.0.0-beta.9+1.21.11.jar",
-                    "id": "8057892",
+                    "url": "https://edge.forgecdn.net/files/8098/943/skyblock_enhancements-1.0.0-beta.11+1.21.11.jar",
+                    "id": "8098943",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "f4e0eb288acba9f67c89dedeb88894c07f5c4143",
-                        "md5": "f4a7e0e3d457d217982172575fd0cb4c"
+                        "sha1": "c2c45fa14197349b81e38cb4fddaaaeaf277415b",
+                        "md5": "49d11a96674f15417fc586aa74465cdd"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1450539,
-                    "date_published": "2026-05-08T13:42:29.137Z"
+                    "size": 1465491,
+                    "date_published": "2026-05-16T14:43:19.463Z"
                 }
             ]
         },
@@ -3684,7 +3684,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "sodium-fabric-0.8.12-beta.2+mc1.21.11.jar",
+                    "file_name": "sodium-fabric-0.8.12-beta.3+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3692,20 +3692,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/AANobbMI/versions/hjgWF0Ll/sodium-fabric-0.8.12-beta.2+mc1.21.11.jar",
-                    "id": "hjgWF0Ll",
+                    "url": "https://cdn.modrinth.com/data/AANobbMI/versions/x0XUezGL/sodium-fabric-0.8.12-beta.3+mc1.21.11.jar",
+                    "id": "x0XUezGL",
                     "parent_id": "AANobbMI",
                     "hashes": {
-                        "sha512": "b28a41d13f0ee6936d15007368d9eb7dfac600066dc4229f000165ea3ad1fd78a922f1594e241db6f1b8d89066faf199b09f7f974a51b968839d8930b66a24bd",
-                        "sha1": "98fbd6657835d47d0100d091c837caf72e406371"
+                        "sha512": "e48966f2209ed750fd70b8fec3d2e19fd47b4cc60f435e21719d92f9918371e68f602a49a5fdcaa5e421e61c9db52848847b393ae58175fa9f97be3632ca3199",
+                        "sha1": "97b252509ee8dd06eb176403d965ec2a34c62468"
                     },
                     "required_dependencies": [],
-                    "size": 1906669,
-                    "date_published": "2026-05-11T00:24:24.714777Z"
+                    "size": 1905525,
+                    "date_published": "2026-05-14T00:07:47.169126Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "sodium-fabric-0.8.12-beta.2+mc1.21.11.jar",
+                    "file_name": "sodium-fabric-0.8.12-beta.3+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3713,16 +3713,16 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8071/333/sodium-fabric-0.8.12-beta.2+mc1.21.11.jar",
-                    "id": "8071333",
+                    "url": "https://edge.forgecdn.net/files/8085/97/sodium-fabric-0.8.12-beta.3+mc1.21.11.jar",
+                    "id": "8085097",
                     "parent_id": "394468",
                     "hashes": {
-                        "sha1": "98fbd6657835d47d0100d091c837caf72e406371",
-                        "md5": "497f4af5bb953f3a48cebdbd6409cdbc"
+                        "sha1": "97b252509ee8dd06eb176403d965ec2a34c62468",
+                        "md5": "ac0f65fb5196b7a24c4a04902525dd2d"
                     },
                     "required_dependencies": [],
-                    "size": 1906669,
-                    "date_published": "2026-05-11T00:24:21.053Z"
+                    "size": 1905525,
+                    "date_published": "2026-05-14T00:07:42.260Z"
                 }
             ]
         },
