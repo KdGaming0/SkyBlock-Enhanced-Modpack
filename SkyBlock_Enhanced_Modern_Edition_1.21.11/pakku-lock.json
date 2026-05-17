@@ -134,23 +134,30 @@
             ]
         },
         {
-            "pakku_id": "t3puJGGtdZJ9PrQr",
+            "pakku_id": "0v5kOuV9775nKlWs",
+            "pakku_links": [
+                "R1cZt9dgVAOXAtE8",
+                "LwqrzSsyxBuQ5jrL"
+            ],
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
-                "modrinth": "bazaar-utils"
+                "modrinth": "bazaar-utils",
+                "curseforge": "bazaar-utils"
             },
             "name": {
-                "modrinth": "Bazaar Utils ✦ Hypixel Skyblock"
+                "modrinth": "Bazaar Utils ✦ Hypixel Skyblock",
+                "curseforge": "Bazaar Utils"
             },
             "id": {
-                "modrinth": "c4u7nzUZ"
+                "modrinth": "c4u7nzUZ",
+                "curseforge": "1342860"
             },
-            "update_strategy": "NONE",
+            "redistributable": false,
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "bazaarutils-0.6.2-beta.1+mc1.21.11.jar",
+                    "file_name": "bazaarutils-0.6.2-beta.3+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -158,19 +165,40 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/JmDCPma6/bazaarutils-0.6.2-beta.1+mc1.21.11.jar",
-                    "id": "JmDCPma6",
+                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/Z1Lg9x3l/bazaarutils-0.6.2-beta.3+mc1.21.11.jar",
+                    "id": "Z1Lg9x3l",
                     "parent_id": "c4u7nzUZ",
                     "hashes": {
-                        "sha512": "96e124d48296ce8072b0b1b7da1e1b11b3792efa42eea95a455bb3bfb2d1f1f8ea27d03d32995315de782b729290b96a5d94984754e0061daca6f52457b11230",
-                        "sha1": "81b79cea4b5704b289f2ca8adcc369446116e942"
+                        "sha512": "d784afb070d2ae3bec0e84b17732859818e6d39c8dbe75187bc3e8164f0d4c487972b204c715d949a586b659e0e1a41d05c46b46cf953ceaa3ba9d242aa50a66",
+                        "sha1": "8c41613f35f5f226590a3e523f5b64bf109be43d"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "1eAoo2KR"
+                        "1eAoo2KR",
+                        "P7dR8mSH"
                     ],
-                    "size": 2983849,
-                    "date_published": "2026-03-08T17:30:01.151758Z"
+                    "size": 2983948,
+                    "date_published": "2026-04-25T16:56:26.492604Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "bazaarutils-0.6.2-beta.2+mc1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7979/621/bazaarutils-0.6.2-beta.2+mc1.21.11.jar",
+                    "id": "7979621",
+                    "parent_id": "1342860",
+                    "hashes": {
+                        "sha1": "16c6d2859d8b8a208967b7805378b4a73d3d66f0",
+                        "md5": "e96698bdcbb15c074536d61199192bde"
+                    },
+                    "required_dependencies": [],
+                    "size": 7384090,
+                    "date_published": "2026-04-24T22:14:32.107Z"
                 }
             ]
         },
@@ -441,31 +469,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "caxton-0.9.0-alpha.6+1.21.11-FABRIC.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7937/784/caxton-0.9.0-alpha.6+1.21.11-FABRIC.jar",
-                    "id": "7937784",
-                    "parent_id": "1320863",
-                    "hashes": {
-                        "sha1": "c5c44fa2036fd212d909afb7348e0fbd9151efb5",
-                        "md5": "d42636a44b9a3c85819d37a0da515da1"
-                    },
-                    "required_dependencies": [
-                        "306612"
-                    ],
-                    "size": 6117510,
-                    "date_published": "2026-04-17T00:41:39.730Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "caxton-0.9.0-alpha.6+1.21.11-FABRIC.jar",
+                    "file_name": "caxton-0.9.0-beta.1+1.21.11-FABRIC.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -473,18 +478,41 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/k8iIgzXE/versions/ryd9OlTR/caxton-0.9.0-alpha.6+1.21.11-FABRIC.jar",
-                    "id": "ryd9OlTR",
+                    "url": "https://cdn.modrinth.com/data/k8iIgzXE/versions/gyOLkt0t/caxton-0.9.0-beta.1+1.21.11-FABRIC.jar",
+                    "id": "gyOLkt0t",
                     "parent_id": "k8iIgzXE",
                     "hashes": {
-                        "sha512": "e1326e9c506f59dc1d040e0e6ed3285a4cfbb7e99b5d3b6c9996a091cbbeb3dadb9f05323afbacd55deab7a46e9f3a785319cfe89f0cac9c323c836a45db2104",
-                        "sha1": "c5c44fa2036fd212d909afb7348e0fbd9151efb5"
+                        "sha512": "f60f7becd5484fe0bde89ec0834f981d73797e593511d8d3df21bdaff729e9e6afafffd7c2555188bd562c48b3ee2156f2e393ae10438445ebbc582e486ed861",
+                        "sha1": "fd4a8b790557ed03d2095737e58ce2249cd8a8eb"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 6117510,
-                    "date_published": "2026-04-17T00:41:39.074262Z"
+                    "size": 6085113,
+                    "date_published": "2026-05-17T17:40:14.114899Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "caxton-0.9.0-beta.1+1.21.11-FABRIC.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8104/906/caxton-0.9.0-beta.1+1.21.11-FABRIC.jar",
+                    "id": "8104906",
+                    "parent_id": "1320863",
+                    "hashes": {
+                        "sha1": "fd4a8b790557ed03d2095737e58ce2249cd8a8eb",
+                        "md5": "226dcde0fcb9a9e6c3e4a5a48ec30e68"
+                    },
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 6085113,
+                    "date_published": "2026-05-17T17:40:09.297Z"
                 }
             ]
         },
@@ -3608,7 +3636,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.0+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.1+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3616,19 +3644,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/QCN3ORdw/skyblock_enhancements-1.0.0+1.21.11.jar",
-                    "id": "QCN3ORdw",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/TGoMudvx/skyblock_enhancements-1.0.1+1.21.11.jar",
+                    "id": "TGoMudvx",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "6a81e32e3d175ceed5eeb8ca3561f71d5d49212158044f9f1a78abff154abff99a171b1f89907702dc5db966163ad6eb69bc661364509f6e5177efbb85caf7be",
-                        "sha1": "cdc790d079f5a4de8c29b522eff5548d1e3a78c2"
+                        "sha512": "0f30d415cdd87b7de8a33c61871a51238463fbfe1ea60790ef414d89ee5985d50036436549adba19e35613d9216dceafa1ba354e0500ac519ba098f37b076081",
+                        "sha1": "ce44773b4a6016d67dbe4046d02e745196a8f74b"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 1469050,
-                    "date_published": "2026-05-17T12:57:06.916767Z"
+                    "size": 1469708,
+                    "date_published": "2026-05-17T19:07:21.315711Z"
                 },
                 {
                     "type": "curseforge",

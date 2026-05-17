@@ -1,0 +1,11 @@
+{
+  "enabled": "when_searching",
+  "background": true,
+  "itemWrapMode": true,
+  "appendModNamespace": true,
+  "rightIndex": true,
+  "centerSearch": false,
+  "showButtons": true,
+  "wrapScrolling": "on_buttons",
+  "sidePanel": "disabled"
+}
