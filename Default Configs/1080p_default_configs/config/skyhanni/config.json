@@ -1,8 +1,6 @@
 {
   "about": {
-    "autoUpdates": false,
-    "fullAutoUpdates": false,
-    "updateStream": "NONE",
+    "updateStream": "BETA",
     "licenses": {}
   },
   "gui": {
@@ -182,8 +180,8 @@
       },
       "unknownLinesWarning": true,
       "position": {
-        "x": 544,
-        "y": 64,
+        "x": 542,
+        "y": 68,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -217,11 +215,11 @@
       ],
       "auto": "NOTHING",
       "showSkyCryptButton": true,
-      "showEliteBotButton": true
+      "showEliteSkyBlockButton": true
     },
     "hotbar": {
-      "editable": false,
-      "hotbar": {
+      "enabled": false,
+      "position": {
         "x": 20,
         "y": 20,
         "scale": 1.0,
@@ -232,6 +230,30 @@
       "showOutsideSkyblock": false
     },
     "xpBar": {
+      "enabled": false,
+      "position": {
+        "x": 20,
+        "y": 20,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      },
+      "showOutsideSkyblock": false
+    },
+    "actionBar": {
+      "enabled": false,
+      "position": {
+        "x": 20,
+        "y": 20,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      },
+      "showOutsideSkyblock": false
+    },
+    "heldItemTooltip": {
       "enabled": false,
       "position": {
         "x": 20,
@@ -294,7 +316,7 @@
         "ignoreCustomScale": false
       }
     },
- "tabWidget": {
+    "tabWidget": {
       "enabled": true,
       "display": [
         "PET"
@@ -340,7 +362,7 @@
           "centerY": true,
           "ignoreCustomScale": false
         },
- {
+        {
           "x": -238,
           "y": 22,
           "scale": 1.0,
@@ -713,7 +735,8 @@
           "CULTIVATING",
           "REPLENISH",
           "COPPER_DYE",
-          "FARMING_EXP_BOOST_EPIC"
+          "FARMING_EXP_BOOST_EPIC",
+          "DYE_WILD_STRAWBERRY"
         ],
         "coinsPerCopperPrice": 6000,
         "preventRefusingCopper": false,
@@ -722,7 +745,7 @@
         "preventRefusingLowLoss": false,
         "preventAcceptingHighLoss": false,
         "preventRefusingNew": true,
-        "opacity": 180,
+        "transparency": 180,
         "optionOutline": true
       },
       "dropsStatistics": {
@@ -790,7 +813,7 @@
         },
         {
           "x": 312,
-          "y": 52,
+          "y": 54,
           "scale": 1.0,
           "centerX": false,
           "centerY": true,
@@ -994,7 +1017,7 @@
           "TIME"
         ],
         "pos": {
-          "x": 92,
+          "x": 106,
           "y": 14,
           "scale": 1.0,
           "centerX": false,
@@ -1005,6 +1028,8 @@
     },
     "keyBind": {
       "enabled": false,
+      "mousemat": false,
+      "fishingRod": false,
       "excludeBarn": false,
       "attack": 0,
       "useItem": 1,
@@ -1015,6 +1040,7 @@
       "jump": 32,
       "sneak": 340
     },
+    "noRodBreak": true,
     "optimalSpeeds": {
       "showOnHUD": true,
       "warning": true,
@@ -1044,8 +1070,8 @@
         "mushroom": 233.0
       },
       "pos": {
-        "x": 92,
-        "y": 59,
+        "x": 108,
+        "y": 58,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -1231,9 +1257,10 @@
       },
       "zorroCapeProtection": false
     },
-    "armorDropTracker": {
+    "rareCropTracker": {
       "enabled": true,
       "hideChat": false,
+      "maxDisplayLines": 5,
       "perTrackerConfig": {
         "trackerConfig": {
           "defaultDisplayMode": "REMEMBER_LAST",
@@ -1248,6 +1275,42 @@
       "position": {
         "x": 6,
         "y": 116,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      }
+    },
+    "gardenBpsTracker": {
+      "showDisplay": false,
+      "uptimeDisplayText": [
+        "TITLE",
+        "BPS",
+        "BLOCKS_BROKEN"
+      ],
+      "perTrackerConfig": {
+        "timedTracker": {
+          "resetSession": true,
+          "session": 5,
+          "days": 8,
+          "weeks": 5,
+          "months": 13,
+          "years": 0,
+          "others": 10
+        },
+        "trackerConfig": {
+          "defaultDisplayMode": "REMEMBER_LAST",
+          "showUptime": true,
+          "onlyShowSession": true,
+          "afkTimeout": 60,
+          "trackerSearchEnabled": false,
+          "priceSource": "BAZAAR_INSTANT_BUY"
+        },
+        "useUniversalConfig": false
+      },
+      "pos": {
+        "x": 5,
+        "y": -180,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -1337,7 +1400,7 @@
         "showBorderForSeconds": 1,
         "position": {
           "x": 6,
-          "y": 98,
+          "y": 104,
           "scale": 0.9999999,
           "centerX": false,
           "centerY": true,
@@ -1380,8 +1443,8 @@
           "repeatDuration": 20
         },
         "position": {
-          "x": 175,
-          "y": 28,
+          "x": 192,
+          "y": 14,
           "scale": 1.0,
           "centerX": false,
           "centerY": true,
@@ -1481,8 +1544,8 @@
         "hideWhenNone": false,
         "replaceMenuIcons": true,
         "position": {
-          "x": 181,
-          "y": 14,
+          "x": 178,
+          "y": 34,
           "scale": 1.0,
           "centerX": false,
           "centerY": true,
@@ -1518,8 +1581,8 @@
       "muteVacuum": false,
       "pestChanceDisplay": "COMPACT",
       "pestChanceDisplayPosition": {
-        "x": 260,
-        "y": 14,
+        "x": -210,
+        "y": 48,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -1655,6 +1718,14 @@
         "ignoreCustomScale": false
       }
     },
+    "trackerUptimeSettings": {
+      "types": [
+        "CROP",
+        "PEST",
+        "VISITOR"
+      ],
+      "afkTimeout": 300
+    },
     "hoeLevelDisplay": {
       "enabled": true,
       "overflow": true,
@@ -1727,6 +1798,10 @@
         "ignoreCustomScale": false
       }
     },
+    "seeThroughWindow": {
+      "seeThroughFarming": 100.0,
+      "keybind": -1
+    },
     "plotPrice": true,
     "burrowingSporesNotificationType": "TITLE",
     "cropSpeedMeterPos": {
@@ -1737,7 +1812,7 @@
       "centerY": true,
       "ignoreCustomScale": false
     },
-    "plotBorders": true,
+    "plotBorderKey": -1,
     "copyMilestoneData": true,
     "showLogBookStats": true,
     "logBookStatsPos": {
@@ -1837,6 +1912,7 @@
     },
     "pabloHelper": true,
     "sirihHelper": true,
+    "avoriusHelper": true,
     "volcanoExplosivity": false,
     "positionVolcano": {
       "x": 20,
@@ -1855,7 +1931,13 @@
       "centerY": true,
       "ignoreCustomScale": false
     },
-    "magmaBossDisplay": true
+    "magmaBossDisplay": true,
+    "vanquisherShare": {
+      "enabled": true,
+      "instantShare": true,
+      "keybindSharing": 89,
+      "readGlobalChat": false
+    }
   },
   "rift": {
     "timer": {
@@ -1958,7 +2040,8 @@
           "enabled": true,
           "onlyOnFarmland": false,
           "hideParticles": false,
-          "muteOthersSounds": true
+          "muteOthersSounds": true,
+          "respawnSequence": true
         }
       },
       "mirrorverse": {
@@ -2136,6 +2219,7 @@
         "ubikReminder": false,
         "ubikGui": false,
         "ubikOnlyWhenReady": false,
+        "ubikQuickClose": true,
         "timerPosition": {
           "x": 100,
           "y": 10,
@@ -2275,13 +2359,12 @@
       "showAnywhere": false,
       "crystalHollows": true,
       "crimsonIsle": true,
+      "warnPersonalCap": true,
+      "warnGlobalCap": true,
+      "timeAlert": true,
+      "alertTime": 330,
       "winterIsland": true,
       "forStranded": true,
-      "wormLimitAlert": true,
-      "manualResetTimer": 82,
-      "alertTime": 330,
-      "fishingCapAlert": true,
-      "fishingCapAmount": 30,
       "pos": {
         "x": 234,
         "y": 14,
@@ -2370,6 +2453,7 @@
     },
     "totemOfCorruption": {
       "showOverlay": true,
+      "ownTotemOnly": true,
       "distanceThreshold": 16,
       "hideParticles": true,
       "outlineType": "FILLED",
@@ -2414,6 +2498,22 @@
       "everywhere": true,
       "islands": []
     },
+    "healthDisplay": {
+      "enabled": false,
+      "limit": 5,
+      "pos": {
+        "x": 200,
+        "y": 200,
+        "scale": 1.0,
+        "centerX": true,
+        "centerY": true,
+        "ignoreCustomScale": false
+      }
+    },
+    "cocoonSettings": {
+      "shareInPartyChat": false,
+      "warnWhenCocooned": false
+    },
     "sharkFishCounter": false,
     "sharkFishCounterPos": {
       "x": 10,
@@ -2429,7 +2529,10 @@
     "guessHotspotRadarPathFind": true,
     "lineToHotspot": false,
     "muteBanshee": false,
-    "flayHideDistance": 2.0
+    "flayHideDistance": 2.0,
+    "seaCreatureKillTimer": false,
+    "seaCreatureKillTimerOwnMobsOnly": true,
+    "lootshareRange": false
   },
   "mining": {
     "miningEvent": {
@@ -2455,7 +2558,7 @@
     },
     "hotm": {
       "highlightEnabledPerks": true,
-      "skyMallDisplay": false,
+      "skyMallDisplay": "OFF",
       "skyMallPosition": {
         "x": 100,
         "y": 100,
@@ -2542,6 +2645,60 @@
         "ignoreCustomScale": false
       }
     },
+    "darkMonolith": {
+      "tracker": false,
+      "trackerPosition": {
+        "x": 100,
+        "y": 100,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      },
+      "beacon": {
+        "enabled": false,
+        "color": "0:255:155:29:194"
+      },
+      "highlight": {
+        "enabled": false,
+        "color": "0:75:155:29:194"
+      },
+      "title": {
+        "enabled": false,
+        "text": "§5§lDark Monolith"
+      },
+      "perTrackerConfig": {
+        "trackerConfig": {
+          "itemTracker": {
+            "showRecentDrops": true,
+            "excludeHiddenItemsInPrice": false,
+            "showTable": true,
+            "itemsShown": 10,
+            "profitPerHour": true,
+            "hideInEstimatedItemValue": true,
+            "hideOutsideInventory": false,
+            "warnings": {
+              "chat": true,
+              "minimumChat": 5000000,
+              "title": true,
+              "minimumTitle": 5000000
+            },
+            "textOrder": [
+              "AMOUNT",
+              "NAME",
+              "TOTAL_PRICE"
+            ]
+          },
+          "defaultDisplayMode": "REMEMBER_LAST",
+          "showUptime": true,
+          "onlyShowSession": true,
+          "afkTimeout": 60,
+          "trackerSearchEnabled": false,
+          "priceSource": "BAZAAR_INSTANT_BUY"
+        },
+        "useUniversalConfig": false
+      }
+    },
     "deepCavernsGuide": {
       "enabled": true,
       "lookAhead": 3,
@@ -2626,7 +2783,11 @@
       "setupModeLineThickness": 1.0,
       "sneakingDuringRoute": true,
       "showAll": false,
-      "showAllWaypointColor": "0:102:0:255:0"
+      "showAllWaypointColor": "0:102:0:255:0",
+      "autoUnload": false,
+      "autoLoadMatchingShaftRoute": false,
+      "autoUnloadWhenLeavingMineshaft": false,
+      "autoSkipForward": false
     },
     "coldOverlay": {
       "enabled": false,
@@ -2773,6 +2934,21 @@
           "FAIR_1",
           "JASP_1"
         ]
+      },
+      "mineshaftTimerConfig": {
+        "enabled": true,
+        "cautionThreshold": 30,
+        "warningThreshold": 10,
+        "showTimeInMineshaft": true,
+        "showEstimatedTimeLeft": true,
+        "position": {
+          "x": 10,
+          "y": 10,
+          "scale": 1.0,
+          "centerX": false,
+          "centerY": true,
+          "ignoreCustomScale": false
+        }
       }
     },
     "notifications": {
@@ -2896,7 +3072,7 @@
   "foraging": {
     "hotf": {
       "highlightEnabledPerks": true,
-      "lotteryDisplay": false,
+      "lotteryDisplay": "OFF",
       "lotteryPosition": {
         "x": 100,
         "y": 100,
@@ -3017,7 +3193,8 @@
         "useUniversalConfig": false
       }
     },
-    "mutePhantoms": false
+    "mutePhantoms": false,
+    "muteFusionMachine": true
   },
   "hunting": {
     "shardTracker": {
@@ -3461,6 +3638,23 @@
       "showManaBuff": false,
       "hideParticles": false
     },
+    "deployable": {
+      "enabled": true,
+      "highestTierOnly": true,
+      "displayTypes": [
+        "FLUX",
+        "LANTERN",
+        "UMBERELLA"
+      ],
+      "position": {
+        "x": -238,
+        "y": 60,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      }
+    },
     "broodmother": {
       "countdown": false,
       "alertOnSpawn": false,
@@ -3507,6 +3701,7 @@
       }
     },
     "cocoonOverlay": {
+      "requireCocoonPossible": false,
       "showCocoonTimerTillHatch": true,
       "showCocoonContainedMobName": true
     },
@@ -3519,7 +3714,9 @@
     "spider": {
       "highlightInvincible": true,
       "highlightInvincibleColor": "0:60:255:255:0",
-      "phaseDisplay": false
+      "phaseDisplay": false,
+      "lineToBoss": false,
+      "slayerLineWidth": 3
     },
     "endermen": {
       "beacon": {
@@ -3681,6 +3878,23 @@
       "percent": 80,
       "repeat": false
     },
+    "slayerTimeMessages": {
+      "timeToKill": true,
+      "timeToKillPersonalBests": false,
+      "questComplete": true,
+      "compact": false
+    },
+    "remainingKills": false,
+    "remainingKillsLevel": false,
+    "remainingKillsHealth": false,
+    "remainingKillsPosition": {
+      "x": 410,
+      "y": 110,
+      "scale": 1.0,
+      "centerX": false,
+      "centerY": true,
+      "ignoreCustomScale": false
+    },
     "activeBossTransparency": {
       "enabled": false,
       "transparencyLevel": 35,
@@ -3694,10 +3908,7 @@
     "questWarning": true,
     "questWarningTitle": true,
     "hideIrrelevantMobs": false,
-    "hideIrrelevantMobsOpacity": 40,
-    "timeToKillMessage": true,
-    "questCompleteMessage": true,
-    "compactTimeMessage": false,
+    "hideIrrelevantMobsTransparency": 40,
     "cocoonTitle": false,
     "cocoonDing": false,
     "spawnParticleHider": [],
@@ -3885,7 +4096,8 @@
       }
     },
     "springBootsNotification": false,
-    "dungeonSecretCompass": true
+    "dungeonSecretCompass": true,
+    "bloodCampTimer": false
   },
   "inventory": {
     "skyblockGuide": {
@@ -4153,6 +4365,13 @@
           "ignoreCustomScale": false
         }
       },
+      "fireFreeze": {
+        "mobTimer": false,
+        "freezeTimer": false,
+        "mobHighlight": false,
+        "customCircle": false,
+        "displayColor": "0:245:0:0:0"
+      },
       "depletedBonzosMasks": false
     },
     "customWardrobe": {
@@ -4418,7 +4637,7 @@
       "enabled": false,
       "protectRarelySoldItems": false,
       "itemsBlockClicks": true,
-      "opacity": 180,
+      "transparency": 180,
       "itemsBypass": true,
       "itemsGreenLine": true
     },
@@ -4441,6 +4660,27 @@
       "selectedDrop": false
     },
     "superCrafting": {
+      "presets": {
+        "enabled": false,
+        "presets": [
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512
+        ],
+        "signPosition": {
+          "x": 100,
+          "y": 100,
+          "scale": 1.0,
+          "centerX": false,
+          "centerY": true,
+          "ignoreCustomScale": false
+        }
+      },
       "waste": {
         "enabled": true,
         "threshold": 10.0,
@@ -4643,7 +4883,6 @@
       "tierAsStackSize": true,
       "highlightDisabledAttributes": true,
       "huntingBoxValue": true,
-      "exportToSkyShards": true,
       "displayPosition": {
         "x": 55,
         "y": 40,
@@ -4709,7 +4948,8 @@
     "snakeGameKeybinds": true,
     "highlightActiveBeaconEffect": true,
     "savePrivateIslandChests": false,
-    "middleClickFix": true
+    "middleClickFix": true,
+    "museumCategoryHighlight": true
   },
   "event": {
     "bingo": {
@@ -4745,8 +4985,7 @@
         "centerX": false,
         "centerY": true,
         "ignoreCustomScale": false
-      },
-      "boopParty": false
+      }
     },
     "diana": {
       "highlightRareMobs": true,
@@ -4787,7 +5026,19 @@
           "pitch": 1.0
         },
         "showDespawnTime": true,
-        "globalChat": false
+        "globalChat": false,
+        "shareMobToggles": {
+          "sphinx": true,
+          "minosInquisitor": true,
+          "manticore": true,
+          "kingMinos": true
+        },
+        "receiveMobToggles": {
+          "sphinx": true,
+          "minosInquisitor": true,
+          "manticore": true,
+          "kingMinos": true
+        }
       },
       "dianaProfitTracker": {
         "enabled": false,
@@ -4855,10 +5106,6 @@
           },
           "useUniversalConfig": false
         }
-      },
-      "allBurrowsList": {
-        "save": false,
-        "showAll": false
       }
     },
     "winter": {
@@ -5110,7 +5357,7 @@
         "warpClickEnabled": false,
         "warpClickDestination": "nucleus"
       },
-      "playerOpacity": 40,
+      "playerTransparency": 40,
       "highlightHoppityShop": true,
       "hoppityShopReminder": true,
       "petWarning": false,
@@ -5284,6 +5531,18 @@
         "TO_PIG",
         "TO_ORB"
       ]
+    },
+    "yearOfTheWitch": {
+      "stewHelper": true,
+      "stewHelperPosition": {
+        "x": 174,
+        "y": 139,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      },
+      "stewHighlighter": true
     },
     "lobbyWaypoints": {
       "easterEgg": {
@@ -5483,6 +5742,7 @@
       "hideAlphaAchievements": true,
       "parkour": false,
       "teleportPads": false,
+      "masterChef": false,
       "others": false
     },
     "playerMessage": {
@@ -5623,7 +5883,7 @@
       "betterWiki": {
         "enabled": false,
         "sbGuide": false,
-        "useFandom": false,
+        "useUnofficial": false,
         "autoOpenWiki": false,
         "menuOpenWiki": false,
         "wikiKeybind": -1
@@ -5677,7 +5937,50 @@
         "ignoreCustomScale": false
       },
       "hideMobsNametagNearby": false,
-      "infernoFuelBlocker": false
+      "infernoFuelBlocker": false,
+      "infernoProfitTracker": {
+        "enabled": true,
+        "position": {
+          "x": 250,
+          "y": 250,
+          "scale": 1.0,
+          "centerX": false,
+          "centerY": true,
+          "ignoreCustomScale": false
+        },
+        "showAfterCollection": true,
+        "perTrackerConfig": {
+          "trackerConfig": {
+            "itemTracker": {
+              "showRecentDrops": true,
+              "excludeHiddenItemsInPrice": false,
+              "showTable": true,
+              "itemsShown": 10,
+              "profitPerHour": true,
+              "hideInEstimatedItemValue": true,
+              "hideOutsideInventory": false,
+              "warnings": {
+                "chat": true,
+                "minimumChat": 5000000,
+                "title": true,
+                "minimumTitle": 5000000
+              },
+              "textOrder": [
+                "AMOUNT",
+                "NAME",
+                "TOTAL_PRICE"
+              ]
+            },
+            "defaultDisplayMode": "REMEMBER_LAST",
+            "showUptime": true,
+            "onlyShowSession": true,
+            "afkTimeout": 60,
+            "trackerSearchEnabled": false,
+            "priceSource": "BAZAAR_INSTANT_BUY"
+          },
+          "useUniversalConfig": false
+        }
+      }
     },
     "stranded": {
       "highlightPlaceableNpcs": false,
@@ -5780,6 +6083,7 @@
         "ignoreCustomScale": false
       },
       "solver": true,
+      "talbotCircles": true,
       "mobDiedMessage": true,
       "warpToTrapper": true,
       "acceptQuest": true,
@@ -5830,6 +6134,15 @@
       }
     },
     "tracker": {
+      "timedTracker": {
+        "resetSession": true,
+        "session": 5,
+        "days": 8,
+        "weeks": 5,
+        "months": 13,
+        "years": 0,
+        "others": 10
+      },
       "itemTracker": {
         "showRecentDrops": true,
         "excludeHiddenItemsInPrice": false,
@@ -5940,10 +6253,13 @@
       "mushroomColor": "0:127:85:255:255"
     },
     "colorfulItemTooltips": {
-      "enabled": false,
-      "statIcons": true,
+      "statIcons": false,
       "replacePercentages": false,
       "replaceRiftSeconds": true
+    },
+    "boopParty": {
+      "boopParty": false,
+      "boopPartyBingo": false
     },
     "resetSearchGuiOnClose": true,
     "showOutsideSB": [],
@@ -5968,6 +6284,7 @@
     },
     "brewingStandOverlay": true,
     "crashOnDeath": false,
+    "crashOnTttFail": false,
     "skyblockXPBar": false,
     "xpInInventory": true,
     "hidePiggyScoreboard": true,
@@ -5987,7 +6304,6 @@
     "serverRestartTitle": true,
     "restorePieceOfWizardPortalLore": true,
     "accountUpgradeReminder": true,
-    "fixPatcherLines": false,
     "showTimeInLimbo": true,
     "showTimeInLimboPosition": {
       "x": 400,
@@ -6035,6 +6351,7 @@
     },
     "maintainGameVolume": false,
     "fastFairySouls": false,
+    "spiderRelicPathfinder": false,
     "gfsPiggyBank": true,
     "userLuck": true,
     "warnAboutPcTimeOffset": true,
@@ -6052,9 +6369,15 @@
     "abiphoneAcceptKey": -1,
     "fixDoubleClicks": true,
     "fixColorParticles": false,
-    "rainbowActionBar": false
+    "rainbowActionBar": false,
+    "achievementMessages": true
   },
   "dev": {
+    "mainToggles": {
+      "damageIndicator": true,
+      "mobDetection": true,
+      "pingApi": true
+    },
     "repo": {
       "repoAutoUpdate": true,
       "location": {
@@ -6084,6 +6407,7 @@
       "showItemCategory": false,
       "showItemName": false,
       "copyInternalName": -1,
+      "copyCosmeticsSkullData": -1,
       "showNpcPrice": false,
       "showBaseValues": false,
       "showCraftPrice": false,
@@ -6097,11 +6421,10 @@
       "highlightMissingRepo": false,
       "logRepoErrors": false,
       "printMissingBazaarItems": false,
+      "updateSource": "MODRINTH",
       "alwaysOutdated": false,
       "eventCounter": false,
       "bypassAdvancedPlayerTabList": -1,
-      "currentAreaDebug": true,
-      "rayTracedOreBlock": true,
       "oreEventMessages": false,
       "powderMessages": false,
       "assumeMayor": "DISABLED",
@@ -6172,38 +6495,11 @@
       "centerY": true,
       "ignoreCustomScale": false
     },
-    "debugLocationPos": {
-      "x": 275,
-      "y": -95,
-      "scale": 1.0,
-      "centerX": false,
-      "centerY": true,
-      "ignoreCustomScale": false
-    },
-    "debugItemPos": {
-      "x": 90,
-      "y": 70,
-      "scale": 1.0,
-      "centerX": false,
-      "centerY": true,
-      "ignoreCustomScale": false
-    },
-    "debugOrePos": {
-      "x": 1,
-      "y": 200,
-      "scale": 1.0,
-      "centerX": false,
-      "centerY": true,
-      "ignoreCustomScale": false
-    },
     "fancyContributors": true,
     "contributorNametags": true,
     "flipContributors": true,
     "rotateContributors": false,
-    "fancySbaContributors": false,
     "numberFormatOverride": false,
-    "pingApi": true,
-    "damageIndicatorBackend": true,
     "ntpServer": "time.google.com",
     "minecraftConsoles": {
       "printUnfilteredDebugs": false,
@@ -6219,7 +6515,13 @@
         "filterOptiFine": true,
         "filterAmsHelperTransformer": true,
         "filterAsmHelperApplying": true,
-        "filterBiomeIdBounds": true
+        "filterBiomeIdBounds": true,
+        "filterInvalidSkinSignature": true,
+        "filterDynamicTransformsUbo": true,
+        "filterCommandAmbiguity": true,
+        "filterNarratorError": true,
+        "filterMixinMessages": true,
+        "filterUnknownTeam": true
       }
     },
     "devTool": {
@@ -6268,10 +6570,38 @@
         "centerX": false,
         "centerY": true,
         "ignoreCustomScale": false
+      },
+      "canSeeFace": {
+        "enabled": false,
+        "stepCount": 1,
+        "stepDensity": 3,
+        "rays": {
+          "enabled": true,
+          "length": 0.5,
+          "thickness": 0.02,
+          "seenColor": "0:220:85:255:85",
+          "unseenColor": "0:220:255:85:85"
+        },
+        "faceHighlight": {
+          "enabled": true,
+          "seenColor": "0:120:85:255:85",
+          "unseenColor": "0:120:255:85:85"
+        },
+        "refreshInterval": 5,
+        "refreshOnMove": true,
+        "debugInfo": false,
+        "vectorsPerFace": 4,
+        "debugPosition": {
+          "x": 100,
+          "y": 100,
+          "scale": 1.0,
+          "centerX": false,
+          "centerY": true,
+          "ignoreCustomScale": false
+        }
       }
     },
     "mobDebug": {
-      "enable": true,
       "mobDetection": {
         "logEvents": false,
         "showRayHit": false,
@@ -6294,6 +6624,6 @@
     "reminders": {},
     "testRenderablePositions": {}
   },
-  "lastVersion": 121,
-  "lastMinecraftVersion": "1.21.10"
+  "lastVersion": 133,
+  "lastMinecraftVersion": "1.21.11"
 }

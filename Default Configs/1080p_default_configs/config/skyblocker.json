@@ -429,7 +429,7 @@
       "showGate": true
     },
     "secretWaypoints": {
-      "enableSecretWaypoints": true,
+      "enableSecretWaypoints": false,
       "waypointType": "WAYPOINT",
       "showSecretText": true,
       "enableEntranceWaypoints": true,

@@ -424,7 +424,7 @@
       "showGate": true
     },
     "secretWaypoints": {
-      "enableSecretWaypoints": true,
+      "enableSecretWaypoints": false,
       "waypointType": "WAYPOINT",
       "adaptiveBoxSize": false,
       "showSecretText": true,
