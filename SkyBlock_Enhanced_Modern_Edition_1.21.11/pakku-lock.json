@@ -3636,7 +3636,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.1+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.3+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3644,23 +3644,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/TGoMudvx/skyblock_enhancements-1.0.1+1.21.11.jar",
-                    "id": "TGoMudvx",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/F7t5VMNn/skyblock_enhancements-1.0.3+1.21.11.jar",
+                    "id": "F7t5VMNn",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "0f30d415cdd87b7de8a33c61871a51238463fbfe1ea60790ef414d89ee5985d50036436549adba19e35613d9216dceafa1ba354e0500ac519ba098f37b076081",
-                        "sha1": "ce44773b4a6016d67dbe4046d02e745196a8f74b"
+                        "sha512": "217985833827921f1e1142516f866eb0ff8802c40e64f94eaee8a6663d910bc1f635238612feb550dbdfaef33e86fa6ea4c4073f5aae15fd728bd907cd9ad7f6",
+                        "sha1": "8ff78f95df882832173369ef49ddb2d80aa797ef"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
+                        "AOEDs9Al",
+                        "P7dR8mSH"
                     ],
-                    "size": 1469708,
-                    "date_published": "2026-05-17T19:07:21.315711Z"
+                    "size": 1524281,
+                    "date_published": "2026-05-18T16:47:52.203100Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.0.0+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.2+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3668,18 +3668,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8103/581/skyblock_enhancements-1.0.0+1.21.11.jar",
-                    "id": "8103581",
+                    "url": "https://edge.forgecdn.net/files/8109/432/skyblock_enhancements-1.0.2+1.21.11.jar",
+                    "id": "8109432",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "cdc790d079f5a4de8c29b522eff5548d1e3a78c2",
-                        "md5": "60d65533fa5cb7a22cf73268debda11e"
+                        "sha1": "7d7d5251d0386ef367a228877590cccbf6193dd1",
+                        "md5": "fc33fe58d569d197517748ed4f338ee7"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1469050,
-                    "date_published": "2026-05-17T12:57:06.257Z"
+                    "size": 1519836,
+                    "date_published": "2026-05-18T15:57:42.187Z"
                 }
             ]
         },
