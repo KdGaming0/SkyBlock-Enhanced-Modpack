@@ -424,7 +424,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Catharsis-1.0.0-beta.15-1.21.11.jar",
+                    "file_name": "Catharsis-1.0.0-beta.16-1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -432,19 +432,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/fc4wBpRx/versions/IBFIJ4kv/Catharsis-1.0.0-beta.15-1.21.11.jar",
-                    "id": "IBFIJ4kv",
+                    "url": "https://cdn.modrinth.com/data/fc4wBpRx/versions/6cE5ViUD/Catharsis-1.0.0-beta.16-1.21.11.jar",
+                    "id": "6cE5ViUD",
                     "parent_id": "fc4wBpRx",
                     "hashes": {
-                        "sha512": "48abd227bc047eb44ae2898de74b57c49f502dbe6507ce99fd04658668ba8c5cec0188d067daaa27041e10fae84b6ca4353fd7e699e06462ce5791a1b305ea47",
-                        "sha1": "ef0b2427af2d2a8bddf6c0ad89253cfc24e84552"
+                        "sha512": "fe16ecf08e4da1fc50ee5c94d1476a7e3e79d7d7675d9a2d6b3ded69bb628ef15d8af8ad201e22131a99a8c52a058fd2f142933d85b3f30a7b4209b50211ca9c",
+                        "sha1": "f3d85e685c5dfdce4d7f896a02df558af89e28fd"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 6360293,
-                    "date_published": "2026-05-04T15:19:35.302848Z"
+                    "size": 6433896,
+                    "date_published": "2026-05-19T10:32:43.407376Z"
                 }
             ]
         },
@@ -3636,7 +3636,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.3+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.4+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3644,23 +3644,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/F7t5VMNn/skyblock_enhancements-1.0.3+1.21.11.jar",
-                    "id": "F7t5VMNn",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/WBejR0Bl/skyblock_enhancements-1.0.4+1.21.11.jar",
+                    "id": "WBejR0Bl",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "217985833827921f1e1142516f866eb0ff8802c40e64f94eaee8a6663d910bc1f635238612feb550dbdfaef33e86fa6ea4c4073f5aae15fd728bd907cd9ad7f6",
-                        "sha1": "8ff78f95df882832173369ef49ddb2d80aa797ef"
+                        "sha512": "92f64a92a80a5ec36000615b8d6a64c3ba528640df3a485b2742e3e7a4810327c544f9aecfbb40d93fd112038eddffb6c831f991976e39d02ae9c953cf88fd28",
+                        "sha1": "31a2ed29d14e1d6e9c7253bd09c9d339154a57e8"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 1524281,
-                    "date_published": "2026-05-18T16:47:52.203100Z"
+                    "size": 1538322,
+                    "date_published": "2026-05-19T09:49:53.530357Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.0.2+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.4+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3668,18 +3668,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8109/432/skyblock_enhancements-1.0.2+1.21.11.jar",
-                    "id": "8109432",
+                    "url": "https://edge.forgecdn.net/files/8112/953/skyblock_enhancements-1.0.4+1.21.11.jar",
+                    "id": "8112953",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "7d7d5251d0386ef367a228877590cccbf6193dd1",
-                        "md5": "fc33fe58d569d197517748ed4f338ee7"
+                        "sha1": "31a2ed29d14e1d6e9c7253bd09c9d339154a57e8",
+                        "md5": "24997b4a8a1901ea4657655fc51b4ffd"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1519836,
-                    "date_published": "2026-05-18T15:57:42.187Z"
+                    "size": 1538322,
+                    "date_published": "2026-05-19T09:49:53.337Z"
                 }
             ]
         },
@@ -3863,6 +3863,43 @@
             ]
         },
         {
+            "pakku_id": "9Xd1qDB3INywtAfx",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "skyblock-overhaul"
+            },
+            "name": {
+                "modrinth": "Skyblock Overhaul (SBO)"
+            },
+            "id": {
+                "modrinth": "9lBqVbQF"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "SBO-0.3.0-beta+1.21.11-fabric.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/InwNdzOw/SBO-0.3.0-beta+1.21.11-fabric.jar",
+                    "id": "InwNdzOw",
+                    "parent_id": "9lBqVbQF",
+                    "hashes": {
+                        "sha512": "f114a4ba35af94e15b4fa662697c1ffd46261b6a320c6158a5136664bb3a88a60112ec50631d3e9f83810ae21823ea029574f7dc8a7d703b889171fac680b369",
+                        "sha1": "f90848b4d583172c1908b62ff73232f638040746"
+                    },
+                    "required_dependencies": [],
+                    "size": 4440053,
+                    "date_published": "2026-05-18T12:59:34.305489Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "iTOsy0wrGDcT30s2",
             "pakku_links": [
                 "u21GioexhaOLM8HV",
@@ -3952,45 +3989,45 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "sodium-fabric-0.8.12-beta.3+mc1.21.11.jar",
+                    "file_name": "sodium-fabric-0.8.12+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
                     "loaders": [
                         "fabric"
                     ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/AANobbMI/versions/x0XUezGL/sodium-fabric-0.8.12-beta.3+mc1.21.11.jar",
-                    "id": "x0XUezGL",
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/AANobbMI/versions/NFkjnzWE/sodium-fabric-0.8.12+mc1.21.11.jar",
+                    "id": "NFkjnzWE",
                     "parent_id": "AANobbMI",
                     "hashes": {
-                        "sha512": "e48966f2209ed750fd70b8fec3d2e19fd47b4cc60f435e21719d92f9918371e68f602a49a5fdcaa5e421e61c9db52848847b393ae58175fa9f97be3632ca3199",
-                        "sha1": "97b252509ee8dd06eb176403d965ec2a34c62468"
+                        "sha512": "17fdb8240670d069e9bb4d00cd3d17afe28ea3f7ea7daf27fd32844f302516e7a889686429db81f2c7b73ad4afce703cac8963a8c3943cfebf45d2c570bd8256",
+                        "sha1": "4d80592bef36674e7469ae2737a7704b826289ae"
                     },
                     "required_dependencies": [],
-                    "size": 1905525,
-                    "date_published": "2026-05-14T00:07:47.169126Z"
+                    "size": 1905890,
+                    "date_published": "2026-05-18T22:12:48.468154Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "sodium-fabric-0.8.12-beta.3+mc1.21.11.jar",
+                    "file_name": "sodium-fabric-0.8.12+mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
                     "loaders": [
                         "fabric"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8085/97/sodium-fabric-0.8.12-beta.3+mc1.21.11.jar",
-                    "id": "8085097",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8111/43/sodium-fabric-0.8.12+mc1.21.11.jar",
+                    "id": "8111043",
                     "parent_id": "394468",
                     "hashes": {
-                        "sha1": "97b252509ee8dd06eb176403d965ec2a34c62468",
-                        "md5": "ac0f65fb5196b7a24c4a04902525dd2d"
+                        "sha1": "4d80592bef36674e7469ae2737a7704b826289ae",
+                        "md5": "bc4ab71a5462424e1b23294522e9b170"
                     },
                     "required_dependencies": [],
-                    "size": 1905525,
-                    "date_published": "2026-05-14T00:07:42.260Z"
+                    "size": 1905890,
+                    "date_published": "2026-05-18T22:12:46.433Z"
                 }
             ]
         },
