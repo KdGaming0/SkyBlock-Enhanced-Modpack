@@ -2402,6 +2402,79 @@
             ]
         },
         {
+            "pakku_id": "sJtyoJPClbylPXN9",
+            "pakku_links": [
+                "gmSPOS5W9wwagUTf",
+                "LwqrzSsyxBuQ5jrL"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "modmenu",
+                "curseforge": "modmenu"
+            },
+            "name": {
+                "modrinth": "Mod Menu",
+                "curseforge": "Mod Menu"
+            },
+            "id": {
+                "modrinth": "mOgUt4GM",
+                "curseforge": "308702"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "modmenu-17.0.0.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/Tyk71iSw/modmenu-17.0.0.jar",
+                    "id": "Tyk71iSw",
+                    "parent_id": "mOgUt4GM",
+                    "hashes": {
+                        "sha512": "146f8c356f86c32e5aab76598e021ac123779c89fc7a51a486fccd2871d2751b02046b4eea3194e52f2e7f38abbb5f78301c8f49bde6e60e1839677db9c84e33",
+                        "sha1": "544a8b340ac3918d85bcc7d02eaff5372814354b"
+                    },
+                    "required_dependencies": [
+                        "eXts2L7r",
+                        "P7dR8mSH"
+                    ],
+                    "size": 1115809,
+                    "date_published": "2026-03-25T02:08:52.301183Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "modmenu-17.0.0.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7808/841/modmenu-17.0.0.jar",
+                    "id": "7808841",
+                    "parent_id": "308702",
+                    "hashes": {
+                        "sha1": "544a8b340ac3918d85bcc7d02eaff5372814354b",
+                        "md5": "c46182d61ea8f99e68f5d86af1b3fdd8"
+                    },
+                    "required_dependencies": [
+                        "306612",
+                        "1037459"
+                    ],
+                    "size": 1115809,
+                    "date_published": "2026-03-25T02:08:53.107Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "24X4VW4bSsSOT8T1",
             "pakku_links": [
                 "vm6urn4ypB0OGUnF",
