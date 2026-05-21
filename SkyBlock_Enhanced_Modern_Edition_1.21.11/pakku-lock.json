@@ -527,7 +527,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ComplementaryUnbound_r5.8.zip",
+                    "file_name": "ComplementaryUnbound_r5.8.1.zip",
                     "mc_versions": [
                         "1.7.10",
                         "1.8",
@@ -609,20 +609,20 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/BTHXcCkt/ComplementaryUnbound_r5.8.zip",
-                    "id": "BTHXcCkt",
+                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/VMHXIk50/ComplementaryUnbound_r5.8.1.zip",
+                    "id": "VMHXIk50",
                     "parent_id": "R6NEzAwj",
                     "hashes": {
-                        "sha512": "597d36e03473c38f52bbdbbf602961abcf740a53b4d7004178b7aa54abc0d171c83ee31d6e94b93befefb2de39245a85e40f7def6e4e3e5010eb759a152625c0",
-                        "sha1": "a441261a6af5f8e50327cd9bfa4cb17ea0e4f1b8"
+                        "sha512": "9098dd9e0c18b80f7aba2839cea33ce9a614d97665bbfcac87ccce6e4771667c41602d99088852cb1642ccab20b2ceff9b98af8f2e795bd0d3b90b7c9cbab914",
+                        "sha1": "af656a33be2cbd217ea08986ad2cdd76f6bbfe1c"
                     },
                     "required_dependencies": [],
-                    "size": 544616,
-                    "date_published": "2026-05-14T09:47:18.262226Z"
+                    "size": 546928,
+                    "date_published": "2026-05-21T14:50:33.267877Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ComplementaryUnbound_r5.7.1.zip",
+                    "file_name": "ComplementaryUnbound_r5.8.1.zip",
                     "mc_versions": [
                         "1.21",
                         "1.21.8",
@@ -638,16 +638,16 @@
                         "1.21.11"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7574/260/ComplementaryUnbound_r5.7.1.zip",
-                    "id": "7574260",
+                    "url": "https://edge.forgecdn.net/files/8123/288/ComplementaryUnbound_r5.8.1.zip",
+                    "id": "8123288",
                     "parent_id": "385587",
                     "hashes": {
-                        "sha1": "95883b516298ff4cf1a67ff512086eb67aeedd98",
-                        "md5": "b535d194c7115b360860e226c65ae3f2"
+                        "sha1": "af656a33be2cbd217ea08986ad2cdd76f6bbfe1c",
+                        "md5": "0a3553109dbe689a9f76d1aedc8f50c6"
                     },
                     "required_dependencies": [],
-                    "size": 522973,
-                    "date_published": "2026-02-04T08:12:10.420Z"
+                    "size": 546928,
+                    "date_published": "2026-05-21T14:53:22.100Z"
                 }
             ]
         },
@@ -3536,7 +3536,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.6+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.7+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3544,23 +3544,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/gaOejmTS/skyblock_enhancements-1.0.6+1.21.11.jar",
-                    "id": "gaOejmTS",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/ihXCsi7n/skyblock_enhancements-1.0.7+1.21.11.jar",
+                    "id": "ihXCsi7n",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "937bb485d54169528cfea91a0fdc9e31180ddc856228ad5d1f1645600dffdd6ee12111dc15ff487291b04c41ac8d0b70e23d01bbac9cceeb8289a05c5bc3ce0c",
-                        "sha1": "cbc9cfc8ab616fa7863810b634ec6893e303e720"
+                        "sha512": "5ccc40268fbd152be4c4702480defd59265b3e04c7fc222be74d6c634a5b7eb6dc5d1c2310bb397485e11495bd0f84398bb4ae8ae963006f0b3b5fa05887d605",
+                        "sha1": "8173ffc5f8b051555864f6f43cbdc4ac50697ba4"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
+                        "AOEDs9Al",
+                        "P7dR8mSH"
                     ],
-                    "size": 1542716,
-                    "date_published": "2026-05-20T12:29:38.254857Z"
+                    "size": 1593178,
+                    "date_published": "2026-05-21T20:53:52.185563Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.0.5+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.7+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3568,18 +3568,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8114/97/skyblock_enhancements-1.0.5+1.21.11.jar",
-                    "id": "8114097",
+                    "url": "https://edge.forgecdn.net/files/8124/791/skyblock_enhancements-1.0.7+1.21.11.jar",
+                    "id": "8124791",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "21efcd2d569f52d3a9099f461198ffec54456950",
-                        "md5": "a8f65376caa8e5d4b8400baa9305fb9a"
+                        "sha1": "8173ffc5f8b051555864f6f43cbdc4ac50697ba4",
+                        "md5": "0d98d8d228648203cb1635fe9d1f4421"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1539048,
-                    "date_published": "2026-05-19T14:44:44.233Z"
+                    "size": 1593178,
+                    "date_published": "2026-05-21T20:53:51.163Z"
                 }
             ]
         },
@@ -3651,7 +3651,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.21.0-mc1.21.11.jar",
+                    "file_name": "SkyHanni-7.22.0-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3659,16 +3659,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/VDhg1XmH/SkyHanni-7.21.0-mc1.21.11.jar",
-                    "id": "VDhg1XmH",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/t8wHSaR9/SkyHanni-7.22.0-mc1.21.11.jar",
+                    "id": "t8wHSaR9",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "ba32a80a6b3c691c1d17cd00da4463eacd2972b879d7066c2295ad8d9ed407abf2353b836eed6fc97307416d9c86302780effa2677e4f14e7f8b603c7c93d774",
-                        "sha1": "c27dfe5dfad05452b506492e52e7d9241d75d42c"
+                        "sha512": "eb9dee31abfdba481b430a9e5debf97881d4fd8ccdc5b66923cf942d28d11ee1643fbe45a2b18c6269eb4d2d93710b83cddcc620703d1297ae59e565edd7c95b",
+                        "sha1": "29161882d6758fade617b20d5337d01fa8315932"
                     },
-                    "required_dependencies": [],
-                    "size": 40312492,
-                    "date_published": "2026-05-19T23:24:03.159145Z"
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "Ha28R6CL"
+                    ],
+                    "size": 40312476,
+                    "date_published": "2026-05-20T23:19:11.902667Z"
                 }
             ]
         },
@@ -3694,7 +3697,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyOcean-1.15.1-1.21.11.jar",
+                    "file_name": "SkyOcean-1.15.2-1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3702,19 +3705,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/rcC3USlJ/SkyOcean-1.15.1-1.21.11.jar",
-                    "id": "rcC3USlJ",
+                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/4yZP4wOI/SkyOcean-1.15.2-1.21.11.jar",
+                    "id": "4yZP4wOI",
                     "parent_id": "dIczrQAR",
                     "hashes": {
-                        "sha512": "336b7ec85f793711d03380cf93907699d02977637d491ae93b7e740decacd905cc3e0175303f828f94abdd0b4abb890ef5cbb2d6717a05ef05dd44bd66448b71",
-                        "sha1": "cc493c99b8ec1485ca3594ffbb29f0e1fa8ba7ea"
+                        "sha512": "ccaa05d7845a990bad1e42d176bf04535b81a5ffdf7f2d4c1a82c9b02fbf70bdb0b22c8f9d5b6c3dde53b2bc6235b1cb47ee9ced61db4a5f552678bb5c8605ad",
+                        "sha1": "aa8d01db6e1dfeac7f5eb0ad411e1e394cc8235b"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 10611730,
-                    "date_published": "2026-05-08T13:10:16.826703Z"
+                    "size": 10618444,
+                    "date_published": "2026-05-21T15:52:44.480069Z"
                 }
             ]
         },
