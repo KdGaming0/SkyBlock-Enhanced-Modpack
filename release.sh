@@ -41,6 +41,7 @@ ROLLBACK_NEEDED=false
 OLD_PAKKU_JSON_CONTENT=""
 OLD_MODPACK_JSON_CONTENT=""
 DRY_RUN=false               # --dry-run skips git commit/tag/push
+SKIP_VALIDATION=false       # if true, CI strict checks are bypassed
 
 if command -v pakku-mc &>/dev/null; then
     PAKKU_CMD="pakku-mc"
@@ -146,7 +147,7 @@ step_version() {
     local V_MAJOR="$((MAJOR + 1)).0.0"
 
     # Suggest next hotfix number for the *current* version.
-    # We scan local tags for v<cur>-hotfix<N> and pick max+1.
+    # We scan local tags for v<<cur>-hotfix<N> and pick max+1.
     local next_hotfix=1
     local existing_hotfixes
     existing_hotfixes=$(git tag -l "v${cur}-hotfix*" 2>/dev/null | sed -E "s/^v${cur}-hotfix//" | sort -n | tail -n1 || true)
@@ -408,7 +409,7 @@ _dynamic_summary() {
     elif (( total > 15 ));                     then echo "A large maintenance update with widespread mod and resource pack refreshes."
     elif (( n_rp > 0 && n_shader > 0 ));       then echo "A visual polish update covering mods, resource packs, and shaders."
     elif (( n_rp > 0 ));                       then echo "A visual polish update with mod and resource pack improvements."
-    elif (( n_shader > 0 ));                   then echo "A stability update with mod and shader refreshes."
+    elif (( n_shader > 0 ));                    then echo "A stability update with mod and shader refreshes."
     elif (( total > 5 ));                      then echo "A mid-cycle maintenance update with several mod updates."
     else                                            echo "A small patch with a few mod updates and stability improvements."
     fi
@@ -760,8 +761,6 @@ step_changelog() {
 
     # ── Write files ──────────────────────────────────────────────────────────
 
-    # ── Write files ──────────────────────────────────────────────────────────
-
     # Prepend to main CHANGELOG.md
     if [[ -f "$ROOT_CHANGELOG" ]]; then
         local existing
@@ -818,7 +817,7 @@ step_changelog() {
 step_git() {
     print_header "Step 4 · Commit, Tag & Push"
 
-    # For hotfixes, the tag is v<ver>-hotfixN while pakku.json stays at <ver>.
+    # For hotfixes, the tag is v<<ver>-hotfixN while pakku.json stays at <ver>.
     local tag="${TAG_OVERRIDE:-v${NEW_VERSION}}"
 
     # Sanity: check for existing tag
@@ -832,12 +831,22 @@ step_git() {
 
     print_step "Committing..."
     local commit_msg
-    if [[ -n "$HOTFIX_N" ]]; then
-        commit_msg="release: ${tag} (hotfix)"
-    elif [[ "$RELEASE_TYPE" == "beta" ]]; then
-        commit_msg="release: ${tag} (beta pre-release)"
+    if [[ "$SKIP_VALIDATION" == true ]]; then
+        if [[ -n "$HOTFIX_N" ]]; then
+            commit_msg="release: ${tag} (hotfix) [skip-validation]"
+        elif [[ "$RELEASE_TYPE" == "beta" ]]; then
+            commit_msg="release: ${tag} (beta pre-release) [skip-validation]"
+        else
+            commit_msg="release: ${tag} [skip-validation]"
+        fi
     else
-        commit_msg="release: ${tag}"
+        if [[ -n "$HOTFIX_N" ]]; then
+            commit_msg="release: ${tag} (hotfix)"
+        elif [[ "$RELEASE_TYPE" == "beta" ]]; then
+            commit_msg="release: ${tag} (beta pre-release)"
+        else
+            commit_msg="release: ${tag}"
+        fi
     fi
 
     # Hotfixes may have no staged changes (just the artifact/workflow change
@@ -942,6 +951,23 @@ main() {
     step_version
     step_pakku
     step_changelog
+
+    # ── Prompt for CI validation enforcement ─────────────────────────────────
+    if [[ "$DRY_RUN" != true ]]; then
+        echo ""
+        echo -e "  ${BOLD}CI Validation${NC}"
+        echo -e "  The CI workflow normally enforces two checks:"
+        echo -e "    1. Git tag must match pakku.json version"
+        echo -e "    2. Version must be bumped since the previous tag"
+        echo ""
+        read -rp "  Enforce these checks? [Y/n]: " val_choice
+        val_choice="${val_choice:-Y}"
+        if [[ ! "$val_choice" =~ ^[Yy]$ ]]; then
+            SKIP_VALIDATION=true
+            print_warn "Validation checks will be skipped in CI."
+            echo ""
+        fi
+    fi
 
     if [[ "$DRY_RUN" == true ]]; then
         print_header "🧪 Dry-Run Complete"

@@ -32,7 +32,7 @@ jobs:
     name: Validate
     runs-on: ubuntu-latest
     permissions:
-      contents: write          # needed to delete mismatched tags
+      contents: write          # needed to delete mismatched tags when checks run
     outputs:
       modpack_version:         ${{ steps.info.outputs.modpack_version }}
       modpack_name:            ${{ steps.info.outputs.modpack_name }}
@@ -52,7 +52,19 @@ jobs:
           chmod +x .github/scripts/get_modpack_info.sh
           .github/scripts/get_modpack_info.sh
 
+      - name: Check for skip-validation flag
+        id: skip_check
+        run: |
+          MSG=$(git log -1 --pretty=%B)
+          if echo "$MSG" | grep -q "\[skip-validation\]"; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "  [INFO]  [skip-validation] found in commit message — strict checks disabled"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Validate tag matches pakku.json version
+        if: steps.skip_check.outputs.skip != 'true'
         run: |
           TAG_VER="${GITHUB_REF#refs/tags/v}"
           PKG_VER="${{ steps.info.outputs.modpack_version }}"
@@ -63,17 +75,18 @@ jobs:
           TAG_BASE="${TAG_VER%-hotfix*}"
 
           if [[ "$TAG_BASE" != "$PKG_VER" ]]; then
-            echo "::warning::Tag v${TAG_VER} does not match pakku.json version ${PKG_VER}"
-            echo "  [WARN]  Proceeding despite version mismatch — ensure this is intentional."
+            echo "::error::Tag v${TAG_VER} does not match pakku.json version ${PKG_VER}"
+            git push origin ":refs/tags/v${TAG_VER}" || true
+            exit 1
+          fi
+          if [[ "$TAG_VER" != "$PKG_VER" ]]; then
+            echo "✅ Hotfix tag: v${TAG_VER} (pakku.json: ${PKG_VER})"
           else
-            if [[ "$TAG_VER" != "$PKG_VER" ]]; then
-              echo "✅ Hotfix tag: v${TAG_VER} (pakku.json: ${PKG_VER})"
-            else
-              echo "✅ Tag matches pakku.json: ${PKG_VER}"
-            fi
+            echo "✅ Tag matches pakku.json: ${PKG_VER}"
           fi
 
       - name: Validate version was bumped since previous tag
+        if: steps.skip_check.outputs.skip != 'true'
         run: |
           CUR_VER="${{ steps.info.outputs.modpack_version }}"
           PREV_VER="${{ steps.info.outputs.previous_modpack_version }}"
@@ -335,7 +348,7 @@ jobs:
   # destination is now its own job; they run in parallel and one failing
   # doesn't prevent the others from succeeding. The GitHub Release is created
   # as a DRAFT when any downstream publisher fails, so a human can review
-  # before it goes public — no automatic tag deletion.
+  # before it goes live — no automatic tag deletion.
 
   github-release:
     name: Publish · GitHub Release
