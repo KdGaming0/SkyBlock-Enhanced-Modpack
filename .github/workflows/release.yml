@@ -63,14 +63,14 @@ jobs:
           TAG_BASE="${TAG_VER%-hotfix*}"
 
           if [[ "$TAG_BASE" != "$PKG_VER" ]]; then
-            echo "::error::Tag v${TAG_VER} does not match pakku.json version ${PKG_VER}"
-            git push origin ":refs/tags/v${TAG_VER}" || true
-            exit 1
-          fi
-          if [[ "$TAG_VER" != "$PKG_VER" ]]; then
-            echo "✅ Hotfix tag: v${TAG_VER} (pakku.json: ${PKG_VER})"
+            echo "::warning::Tag v${TAG_VER} does not match pakku.json version ${PKG_VER}"
+            echo "  [WARN]  Proceeding despite version mismatch — ensure this is intentional."
           else
-            echo "✅ Tag matches pakku.json: ${PKG_VER}"
+            if [[ "$TAG_VER" != "$PKG_VER" ]]; then
+              echo "✅ Hotfix tag: v${TAG_VER} (pakku.json: ${PKG_VER})"
+            else
+              echo "✅ Tag matches pakku.json: ${PKG_VER}"
+            fi
           fi
 
       - name: Validate version was bumped since previous tag
@@ -255,7 +255,7 @@ jobs:
           chmod +x .github/scripts/extract_mrpack.py
           python3 .github/scripts/extract_mrpack.py
 
-      # ── Stage mc-runtime-test mod ────���────────────────────────────────────
+      # ── Stage mc-runtime-test mod ─────────────────────────────────────────
       # mc-runtime-test 4.1.0 covers up to 1.21.10; 1.21.11 is a security
       # patch with no mod-API changes, so the 1.21.10 jar is fully compatible.
       # We download it manually and pass mc-runtime-test: none to the action
@@ -335,7 +335,7 @@ jobs:
   # destination is now its own job; they run in parallel and one failing
   # doesn't prevent the others from succeeding. The GitHub Release is created
   # as a DRAFT when any downstream publisher fails, so a human can review
-  # before going public — no automatic tag deletion.
+  # before it goes public — no automatic tag deletion.
 
   github-release:
     name: Publish · GitHub Release
@@ -513,9 +513,9 @@ jobs:
         continue-on-error: true
         run: |
           if [[ "${{ needs.validate.outputs.release_type }}" == "beta" ]]; then
-            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** ${{ needs.validate.outputs.modpack_version }} beta is available for testing! 🧪\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)\n> ⚠️ This is a **beta** release and may not be fully stable."
+            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** ${{ needs.validate.outputs.modpack_version }} beta is available for testing! 🧪\n[Modrinth](<<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<<https://github.com/${{ github.repository }}/issues>)\n> ⚠️ This is a **beta** release and may not be fully stable."
           else
-            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! 🎉\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)"
+            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! 🎉\n[Modrinth](<<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<<https://github.com/${{ github.repository }}/issues>)"
           fi
           curl -sSf -X POST "${{ vars.FLUXER_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \

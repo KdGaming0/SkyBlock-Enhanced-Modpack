@@ -2,8 +2,6 @@
 
 This release is based on version 3.2 of the modpack and does not include any of the changes introduced in the 4.0 release. It only updates mods that were already included in the 3.2 version.
 
-This is for users that don't want to change to the 4.0 beta yet as it is in beta and still have few small issues to iron out.
-
 ## 🔄 Updated
 ### Mods
 - **Catharsis**: 1.0.0-beta.15-1.21.11 -> **1.0.0-beta.16-1.21.11**
