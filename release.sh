@@ -22,7 +22,7 @@ print_sep()   { echo -e "${BOLD}  ───────────────�
 
 # ─── Paths ──────────────────────────────────────────────────────────────────
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PACK_DIR="$REPO_ROOT/SkyBlock_Enhanced_Modern_Edition_1.21.11_3.3.x"
+PACK_DIR="$REPO_ROOT/SkyBlock_Enhanced_Modern_Edition_1.21.11"
 PAKKU_JSON="$PACK_DIR/pakku.json"
 MODPACK_JSON="$PACK_DIR/.pakku/overrides/packcore/modpack.json"
 LOCK_FILE="$PACK_DIR/pakku-lock.json"
