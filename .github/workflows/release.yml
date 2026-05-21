@@ -9,7 +9,7 @@ on:
                        # hotfix:   v3.1.2-hotfix1  (pakku.json stays at 3.1.2)
 
 env:
-  PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_1.21.11
+  PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_1.21.11_3.3.x
   JAVA_VERSION: '21'
   MC_VERSION:   '1.21.11'
 
