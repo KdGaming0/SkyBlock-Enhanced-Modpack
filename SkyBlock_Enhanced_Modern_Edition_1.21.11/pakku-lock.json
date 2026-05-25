@@ -134,6 +134,75 @@
             ]
         },
         {
+            "pakku_id": "8O9FbfBih7lDJGJr",
+            "pakku_links": [
+                "R1cZt9dgVAOXAtE8",
+                "LwqrzSsyxBuQ5jrL"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "bazaar-utils",
+                "modrinth": "bazaar-utils"
+            },
+            "name": {
+                "curseforge": "Bazaar Utils",
+                "modrinth": "Bazaar Utils ✦ Hypixel Skyblock"
+            },
+            "id": {
+                "curseforge": "1342860",
+                "modrinth": "c4u7nzUZ"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "bazaarutils-0.6.2-beta.2+mc1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7979/621/bazaarutils-0.6.2-beta.2+mc1.21.11.jar",
+                    "id": "7979621",
+                    "parent_id": "1342860",
+                    "hashes": {
+                        "sha1": "16c6d2859d8b8a208967b7805378b4a73d3d66f0",
+                        "md5": "e96698bdcbb15c074536d61199192bde"
+                    },
+                    "required_dependencies": [],
+                    "size": 7384090,
+                    "date_published": "2026-04-24T22:14:32.107Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "bazaarutils-0.6.2-beta.4+mc1.21.11.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/c4u7nzUZ/versions/SFCB6Okz/bazaarutils-0.6.2-beta.4+mc1.21.11.jar",
+                    "id": "SFCB6Okz",
+                    "parent_id": "c4u7nzUZ",
+                    "hashes": {
+                        "sha512": "b0e87268d6f49164420fbb4cd8ee0f1696fffa55541a1c5a79ae81229cffaf8cc15cf8226cc0bffa5081648cb10eb8528ea8e16b03d281cb0d3205e3bc16b643",
+                        "sha1": "9cd843948cb15538c241ecfd80c9232d18700517"
+                    },
+                    "required_dependencies": [
+                        "1eAoo2KR",
+                        "P7dR8mSH"
+                    ],
+                    "size": 2984452,
+                    "date_published": "2026-05-24T02:21:49.387308Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "WMF1lYiE1H5fAihf",
             "pakku_links": [
                 "LwqrzSsyxBuQ5jrL",
@@ -3249,7 +3318,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scamscreener-2.4.1+1.21.11.jar",
+                    "file_name": "scamscreener-2.4.2+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3257,22 +3326,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/wRL2TnCm/scamscreener-2.4.1+1.21.11.jar",
-                    "id": "wRL2TnCm",
+                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/6lK8XMeE/scamscreener-2.4.2+1.21.11.jar",
+                    "id": "6lK8XMeE",
                     "parent_id": "XTB0bgAW",
                     "hashes": {
-                        "sha512": "82fa82da5aa181a9a87a038463c77b3ee5450746dd55e95672fe67d0419209b5e2a8ac551d6485d2203825c36f77703e8a430da436802a554caf412d8c5886dc",
-                        "sha1": "2c273a274c508b34c182526d3f31ad68a84072d5"
+                        "sha512": "b418e5761ed3789069ac940b8c4d1d96f184603ac6e79ff6564f4d5df6c3cb039a888b3838a4ea52b9cfb0ebfca31859029df15309151a91e5b0d63f1838929b",
+                        "sha1": "5c13d74e65bc07f20a1b75a067c5f6ca980c7d84"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 797126,
-                    "date_published": "2026-05-19T20:45:12.099412Z"
+                    "size": 797200,
+                    "date_published": "2026-05-24T11:08:05.927576Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "scamscreener-2.4.1+1.21.11.jar",
+                    "file_name": "scamscreener-2.4.2+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3280,18 +3349,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8115/574/scamscreener-2.4.1+1.21.11.jar",
-                    "id": "8115574",
+                    "url": "https://edge.forgecdn.net/files/8137/281/scamscreener-2.4.2+1.21.11.jar",
+                    "id": "8137281",
                     "parent_id": "1465941",
                     "hashes": {
-                        "sha1": "2c273a274c508b34c182526d3f31ad68a84072d5",
-                        "md5": "b7e727af4c2830f0540d3a5ed3648933"
+                        "sha1": "5c13d74e65bc07f20a1b75a067c5f6ca980c7d84",
+                        "md5": "0c721d6fce2c1544d795519aa43afbe0"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 797126,
-                    "date_published": "2026-05-19T20:45:10.470Z"
+                    "size": 797200,
+                    "date_published": "2026-05-24T11:08:04.820Z"
                 }
             ]
         },
@@ -3536,7 +3605,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.0.10+1.21.11.jar",
+                    "file_name": "skyblock_enhancements-1.0.11+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3544,19 +3613,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/GjY4Folj/skyblock_enhancements-1.0.10+1.21.11.jar",
-                    "id": "GjY4Folj",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/jR0wHhSq/skyblock_enhancements-1.0.11+1.21.11.jar",
+                    "id": "jR0wHhSq",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "848133c0837f2c87bfbe7c37913be532cfc134b9e53b91296c556078deed1f2868bbc645486f386d85df17f4c38b5133d0fbc9534a58f86ad6a46be341498ecf",
-                        "sha1": "3240d3acc5e5bca9bbff3dfc44a2f5aa905563e2"
+                        "sha512": "9dbc345861ad4e5ceb418903bf4b825d4bc9290f5025a2960795d5619c2f01c85996c9bafb76158bad9794266293fed44d13fd07ace034d84f6991d1fbe5e337",
+                        "sha1": "5540f55c07a7b4e00bba3ccde360da2678c34331"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
+                        "AOEDs9Al",
+                        "P7dR8mSH"
                     ],
-                    "size": 1605614,
-                    "date_published": "2026-05-23T15:14:14.415787Z"
+                    "size": 1703633,
+                    "date_published": "2026-05-25T11:26:41.213167Z"
                 },
                 {
                     "type": "curseforge",
