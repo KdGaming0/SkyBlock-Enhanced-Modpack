@@ -2566,7 +2566,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "modernwarpmenu-0.2.0+1.21.11.jar",
+                    "file_name": "modernwarpmenu-0.2.1+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -2574,19 +2574,16 @@
                         "fabric"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/3GNyRk4I/versions/al46awjs/modernwarpmenu-0.2.0+1.21.11.jar",
-                    "id": "al46awjs",
+                    "url": "https://cdn.modrinth.com/data/3GNyRk4I/versions/pM1wejbu/modernwarpmenu-0.2.1+1.21.11.jar",
+                    "id": "pM1wejbu",
                     "parent_id": "3GNyRk4I",
                     "hashes": {
-                        "sha512": "8ef2a5c9f6d491476fba2f1511935954f003316049b3acfbf1384cf630ecca7c35e3209320b5fd1613eea20393cb4d93525dfb987ce18879b012df60e3ab1e61",
-                        "sha1": "51f43d8e59eb5529064ac394f9554380f81960f9"
+                        "sha512": "06b803332748bc97b808dfcec33b859e771f124ee3a78f60a16a8902cbc7c6a3d95b78908852d03e9eefbb8fc386c7a4f4e03dadf02804d8735f5ba833d85d79",
+                        "sha1": "4fe0f3b83e116f5d9d9f08b1da21b12d4fe25194"
                     },
-                    "required_dependencies": [
-                        "1eAoo2KR",
-                        "P7dR8mSH"
-                    ],
-                    "size": 17941962,
-                    "date_published": "2026-04-07T09:09:32.924292Z"
+                    "required_dependencies": [],
+                    "size": 19211648,
+                    "date_published": "2026-05-30T10:32:42.502510Z"
                 }
             ]
         },
@@ -3891,7 +3888,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblocker-6.4.1+1.21.11.jar",
+                    "file_name": "skyblocker-6.5.0+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3899,19 +3896,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/ifkfQ5sx/skyblocker-6.4.1+1.21.11.jar",
-                    "id": "ifkfQ5sx",
+                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/HQckI1XL/skyblocker-6.5.0+1.21.11.jar",
+                    "id": "HQckI1XL",
                     "parent_id": "y6DuFGwJ",
                     "hashes": {
-                        "sha512": "1bd503a52aa94f09c77413a46f03caae94f45b71ced383d829c34c0a6bf398136cf34f2bf08bf521122b186c1ff0f8124f407c67c8e36ccb729a4878aa58461e",
-                        "sha1": "b3e627eacfa4fb481e9d14f3943fab9fa30536b2"
+                        "sha512": "1f1c9680f67a46075bbe07b60da48d183094405b52f83fe68d78a1956b6c429ed4092bc20d90bda6359e9bd0fc4d3d27314301178bf71922e3db641b9b0f0d2f",
+                        "sha1": "fb646a1f926a02e8bcb8c7704b3e379d4a35193f"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 18935620,
-                    "date_published": "2026-05-02T02:52:43.684859Z"
+                    "size": 19024659,
+                    "date_published": "2026-05-30T02:52:18.141734Z"
                 },
                 {
                     "type": "curseforge",
@@ -4082,8 +4079,8 @@
                 "modrinth": "sodium-shadowy-path-blocks"
             },
             "name": {
-                "curseforge": "Sodium Shadowy Path Blocks",
-                "modrinth": "Sodium Shadowy Path Blocks"
+                "curseforge": "Sodium Shadowy Path Blocks (SSPB)",
+                "modrinth": "Sodium Shadowy Path Blocks (SSPB)"
             },
             "id": {
                 "curseforge": "556408",
