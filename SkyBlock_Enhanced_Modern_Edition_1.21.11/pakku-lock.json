@@ -134,7 +134,7 @@
             ]
         },
         {
-            "pakku_id": "reV0Z0NkFO7xKuID",
+            "pakku_id": "eMGrvImB4WIxCz1F",
             "pakku_links": [
                 "R1cZt9dgVAOXAtE8",
                 "LwqrzSsyxBuQ5jrL"
@@ -153,8 +153,27 @@
                 "curseforge": "1342860",
                 "modrinth": "c4u7nzUZ"
             },
+            "update_strategy": "NONE",
             "redistributable": false,
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "bazaarutils-0.6.2-beta.4+mc1.21.11.jar",
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8135/642/bazaarutils-0.6.2-beta.4+mc1.21.11.jar",
+                    "id": "8135642",
+                    "parent_id": "1342860",
+                    "hashes": {
+                        "sha1": "5490b1967f7c931d8936dc4d3a22d9acb461469f",
+                        "md5": "0e82fb153627b31bbb9e8c32311d1838"
+                    },
+                    "required_dependencies": [],
+                    "size": 2984452,
+                    "date_published": "2026-05-24T02:22:01.950Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "bazaarutils-0.6.2-beta.4+mc1.21.11.jar",
@@ -178,27 +197,6 @@
                     ],
                     "size": 2984452,
                     "date_published": "2026-05-24T02:21:49.387308Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "bazaarutils-0.6.2-beta.2+mc1.21.11.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7979/621/bazaarutils-0.6.2-beta.2+mc1.21.11.jar",
-                    "id": "7979621",
-                    "parent_id": "1342860",
-                    "hashes": {
-                        "sha1": "16c6d2859d8b8a208967b7805378b4a73d3d66f0",
-                        "md5": "e96698bdcbb15c074536d61199192bde"
-                    },
-                    "required_dependencies": [],
-                    "size": 7384090,
-                    "date_published": "2026-04-24T22:14:32.107Z"
                 }
             ]
         },
@@ -3445,7 +3443,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SecretRoutes-1.0.0-beta2+1.21.11-fabric.jar",
+                    "file_name": "SecretRoutes-1.0.0-beta3+1.21.11-fabric.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3453,16 +3451,16 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/l1qibtk8/versions/X5e1w7o8/SecretRoutes-1.0.0-beta2+1.21.11-fabric.jar",
-                    "id": "X5e1w7o8",
+                    "url": "https://cdn.modrinth.com/data/l1qibtk8/versions/hCjidLfs/SecretRoutes-1.0.0-beta3+1.21.11-fabric.jar",
+                    "id": "hCjidLfs",
                     "parent_id": "l1qibtk8",
                     "hashes": {
-                        "sha512": "b6bb1b395455416a23e32cc721879d34736dd4c210787bfbb6c03284f6dcb77ce9aa47e8825e323013a06d9648acdd5acb88cf9bb5e97a8e3f9f24071290d6c9",
-                        "sha1": "bb72feee26c93e301b063433bbe6c004001f6953"
+                        "sha512": "6e2288c3938b4d74f7c7adf66baf7256806927a6d2cd3ebe7c2c17eea39f8b7ca48f0202bab0c32be4ea66fa3d8f4d5d32ec72587dd2aed8925b42611799ddd9",
+                        "sha1": "f47bad47690c230dbb1d211fabcb57ebe84dd55e"
                     },
                     "required_dependencies": [],
-                    "size": 750644,
-                    "date_published": "2026-02-26T19:37:30.159454Z"
+                    "size": 753919,
+                    "date_published": "2026-06-01T22:02:59.777641Z"
                 }
             ]
         },
