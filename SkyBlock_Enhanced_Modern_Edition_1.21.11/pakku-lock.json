@@ -1283,7 +1283,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fabric-language-kotlin-1.13.11+kotlin.2.3.21.jar",
+                    "file_name": "fabric-language-kotlin-1.13.12+kotlin.2.4.0.jar",
                     "mc_versions": [
                         "1.14",
                         "1.14.1",
@@ -1336,20 +1336,20 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/2i87JpYj/fabric-language-kotlin-1.13.11+kotlin.2.3.21.jar",
-                    "id": "2i87JpYj",
+                    "url": "https://cdn.modrinth.com/data/Ha28R6CL/versions/Pd0xrHCw/fabric-language-kotlin-1.13.12+kotlin.2.4.0.jar",
+                    "id": "Pd0xrHCw",
                     "parent_id": "Ha28R6CL",
                     "hashes": {
-                        "sha512": "fa5ed2613f7216999cc0c5ddc71906f082a32b52507d7160acbdcf0eb8de12993ba302e5afde6681d025008ecc66c7533fc0c21deb672ef681b2194fb9be4245",
-                        "sha1": "b6190b247c557c493dc4204121744f289a1d1837"
+                        "sha512": "ca238ee480dfb237062200fd300be493d022e0837b6998c15807e01488b2a30d5ba4731e5c6d05a5333719c8923a1cb84c06fd6fa45aa88ced492ddb5b40906f",
+                        "sha1": "2bc17bb4275cc70a12e4ac35d139a71a30845720"
                     },
                     "required_dependencies": [],
-                    "size": 7813444,
-                    "date_published": "2026-04-24T07:48:19.118369Z"
+                    "size": 8076848,
+                    "date_published": "2026-06-03T10:40:44.954667Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "fabric-language-kotlin-1.13.11+kotlin.2.3.21.jar",
+                    "file_name": "fabric-language-kotlin-1.13.12+kotlin.2.4.0.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.8",
@@ -1368,16 +1368,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7976/268/fabric-language-kotlin-1.13.11+kotlin.2.3.21.jar",
-                    "id": "7976268",
+                    "url": "https://edge.forgecdn.net/files/8190/687/fabric-language-kotlin-1.13.12+kotlin.2.4.0.jar",
+                    "id": "8190687",
                     "parent_id": "308769",
                     "hashes": {
-                        "sha1": "b6190b247c557c493dc4204121744f289a1d1837",
-                        "md5": "06f4497b65f800a0b110025d8e9a4005"
+                        "sha1": "2bc17bb4275cc70a12e4ac35d139a71a30845720",
+                        "md5": "dff437aac8aae6eb76ae9db6b6ea9cb0"
                     },
                     "required_dependencies": [],
-                    "size": 7813444,
-                    "date_published": "2026-04-24T07:48:16.993Z"
+                    "size": 8076848,
+                    "date_published": "2026-06-03T10:40:42.483Z"
                 }
             ]
         },
@@ -1974,7 +1974,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Ixeris-4.4.0+1.21.11-fabric.jar",
+                    "file_name": "Ixeris-4.4.1+1.21.11-fabric.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10",
@@ -1985,20 +1985,20 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/p8RJPJIC/versions/KaJpVkVe/Ixeris-4.4.0+1.21.11-fabric.jar",
-                    "id": "KaJpVkVe",
+                    "url": "https://cdn.modrinth.com/data/p8RJPJIC/versions/1loOWlT8/Ixeris-4.4.1+1.21.11-fabric.jar",
+                    "id": "1loOWlT8",
                     "parent_id": "p8RJPJIC",
                     "hashes": {
-                        "sha512": "7f4e4040ed4ff3c130801ea8aeff2c06430bcd7147e5a6dc4cbb844d80860606d74812bf7adf65877ed9cb76f828cd795233cc7454bca39bff3eb5706d7f7765",
-                        "sha1": "e82feb8f9b951de367613117666d94e2f420e28e"
+                        "sha512": "1209b7b7011c01d3d6a6778aafb3b96a62c92260695b3813178d67898c1d7cb8e1d7c743fe736daa23b8968b4314e80b642a73177c075b7cc06c04c16e3adbd5",
+                        "sha1": "fa4256dbb20c1e062fce6810a607602bc29a668b"
                     },
                     "required_dependencies": [],
-                    "size": 722956,
-                    "date_published": "2026-05-29T01:27:07.235956Z"
+                    "size": 723020,
+                    "date_published": "2026-06-03T06:37:49.861935Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Ixeris-4.4.0+1.21.11-fabric.jar",
+                    "file_name": "Ixeris-4.4.1+1.21.11-fabric.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10",
@@ -2009,16 +2009,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8162/463/Ixeris-4.4.0+1.21.11-fabric.jar",
-                    "id": "8162463",
+                    "url": "https://edge.forgecdn.net/files/8189/943/Ixeris-4.4.1+1.21.11-fabric.jar",
+                    "id": "8189943",
                     "parent_id": "1285307",
                     "hashes": {
-                        "sha1": "e82feb8f9b951de367613117666d94e2f420e28e",
-                        "md5": "4b42075ac774ea43f7dd886f7e93a123"
+                        "sha1": "fa4256dbb20c1e062fce6810a607602bc29a668b",
+                        "md5": "8e1218de3932432adb1963872352be09"
                     },
                     "required_dependencies": [],
-                    "size": 722956,
-                    "date_published": "2026-05-29T01:26:06.397Z"
+                    "size": 723020,
+                    "date_published": "2026-06-03T06:37:44.193Z"
                 }
             ]
         },
@@ -3715,7 +3715,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.23.0-mc1.21.11.jar",
+                    "file_name": "SkyHanni-7.24.0-mc1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3723,19 +3723,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/t65guMBy/SkyHanni-7.23.0-mc1.21.11.jar",
-                    "id": "t65guMBy",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/m1XVIzWu/SkyHanni-7.24.0-mc1.21.11.jar",
+                    "id": "m1XVIzWu",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "4fc448087ae348d596071883762e3238d0af1d5d85908bb80309db0a3f7767e88f1fc6af4388f891a5a0d4014b665ef61f67354f6b424c690da1f4fc85cb8f74",
-                        "sha1": "ea3123bd3f0a82880494fd3990dc5d672c4af0dd"
+                        "sha512": "e91fa7eb4815e6df9af9c7e93cf793bf8b739000935e8fbac31e62fb4e3cb4054c5c65f0b7172c7cad5e58b2624a3f61a98d5842ae1ff151524f4a35b60debde",
+                        "sha1": "299c67d4d4f6aee66440b04ea1a022b8c5f9be73"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "1A2mKfBx"
                     ],
-                    "size": 40352582,
-                    "date_published": "2026-05-26T09:52:39.042534Z"
+                    "size": 40836333,
+                    "date_published": "2026-06-03T01:50:53.781495Z"
                 }
             ]
         },
@@ -3761,7 +3762,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyOcean-1.15.2-1.21.11.jar",
+                    "file_name": "SkyOcean-1.16.1-1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3769,19 +3770,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/4yZP4wOI/SkyOcean-1.15.2-1.21.11.jar",
-                    "id": "4yZP4wOI",
+                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/lwE5tLcN/SkyOcean-1.16.1-1.21.11.jar",
+                    "id": "lwE5tLcN",
                     "parent_id": "dIczrQAR",
                     "hashes": {
-                        "sha512": "ccaa05d7845a990bad1e42d176bf04535b81a5ffdf7f2d4c1a82c9b02fbf70bdb0b22c8f9d5b6c3dde53b2bc6235b1cb47ee9ced61db4a5f552678bb5c8605ad",
-                        "sha1": "aa8d01db6e1dfeac7f5eb0ad411e1e394cc8235b"
+                        "sha512": "5aa3147566a8ef389b6bf8af94f18247d0f4f02ab6a93a28a3a962039a7afa83afa98ac99bb01df8ef9de8c44312560906a341341617101615857426ce604165",
+                        "sha1": "896833270ab94b0a63a71df1275cbf5163411f8a"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 10618444,
-                    "date_published": "2026-05-21T15:52:44.480069Z"
+                    "size": 10771875,
+                    "date_published": "2026-06-02T20:24:22.136571Z"
                 }
             ]
         },
