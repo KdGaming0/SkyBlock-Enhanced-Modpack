@@ -1739,29 +1739,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "Gnetum-4.3.2+1.21.11-fabric.jar",
-                    "mc_versions": [
-                        "1.21.11"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8023/601/Gnetum-4.3.2+1.21.11-fabric.jar",
-                    "id": "8023601",
-                    "parent_id": "1220460",
-                    "hashes": {
-                        "sha1": "00f0c42acd0668eb9a9f7d2526a73755ffa21db2",
-                        "md5": "e70fe5ccfc1a7ed82d7fd254a1c8a0ec"
-                    },
-                    "required_dependencies": [],
-                    "size": 84541,
-                    "date_published": "2026-05-01T22:53:10.350Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "Gnetum-4.3.2+1.21.11-fabric.jar",
+                    "file_name": "Gnetum-4.4.0+1.21.11-fabric.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -1769,16 +1748,37 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/7MoE34WK/versions/zsYVe3u7/Gnetum-4.3.2+1.21.11-fabric.jar",
-                    "id": "zsYVe3u7",
+                    "url": "https://cdn.modrinth.com/data/7MoE34WK/versions/hNuomV92/Gnetum-4.4.0+1.21.11-fabric.jar",
+                    "id": "hNuomV92",
                     "parent_id": "7MoE34WK",
                     "hashes": {
-                        "sha512": "09bc96fd59bd70630b6a55c7e613540ceece144c90d1998302e2d4d1d5fb005d6e52b4e497644c73448825202e1a84059d88169ccec32d3d268f9385236cec2a",
-                        "sha1": "00f0c42acd0668eb9a9f7d2526a73755ffa21db2"
+                        "sha512": "c4a175c5511a8aa95814b030a8c9f76d9ed8bd0cb88e453c0c78300b379f6b1d4fea1412a86b1104545187d43fbff7c6cc18268104f8c6cdfc0dae722788c5fb",
+                        "sha1": "3d6bba8e407b3d1fb8ab0d47c4975e325ca31403"
                     },
                     "required_dependencies": [],
-                    "size": 84541,
-                    "date_published": "2026-05-01T22:53:10.672722Z"
+                    "size": 89199,
+                    "date_published": "2026-06-12T07:21:55.814150Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Gnetum-4.4.0+1.21.11-fabric.jar",
+                    "mc_versions": [
+                        "1.21.11"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8235/493/Gnetum-4.4.0+1.21.11-fabric.jar",
+                    "id": "8235493",
+                    "parent_id": "1220460",
+                    "hashes": {
+                        "sha1": "3d6bba8e407b3d1fb8ab0d47c4975e325ca31403",
+                        "md5": "719d73a02ed0fce07a73dd7b2c03b97c"
+                    },
+                    "required_dependencies": [],
+                    "size": 89199,
+                    "date_published": "2026-06-12T07:21:56.353Z"
                 }
             ]
         },
@@ -1974,7 +1974,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Ixeris-4.4.1+1.21.11-fabric.jar",
+                    "file_name": "Ixeris-4.4.2+1.21.11-fabric.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10",
@@ -1985,20 +1985,20 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/p8RJPJIC/versions/1loOWlT8/Ixeris-4.4.1+1.21.11-fabric.jar",
-                    "id": "1loOWlT8",
+                    "url": "https://cdn.modrinth.com/data/p8RJPJIC/versions/Ihf3JRaY/Ixeris-4.4.2+1.21.11-fabric.jar",
+                    "id": "Ihf3JRaY",
                     "parent_id": "p8RJPJIC",
                     "hashes": {
-                        "sha512": "1209b7b7011c01d3d6a6778aafb3b96a62c92260695b3813178d67898c1d7cb8e1d7c743fe736daa23b8968b4314e80b642a73177c075b7cc06c04c16e3adbd5",
-                        "sha1": "fa4256dbb20c1e062fce6810a607602bc29a668b"
+                        "sha512": "a2d1aa9f2576884161ca12a321c5d8ee838aed06393b1e32fe34a4514da3e57c6e6c336ef5523a5fe371a3dab8da83a3e890489dd360bd48087b280871cf81a6",
+                        "sha1": "d4018da91f9094d4ec9f96fcd35075f525f901ec"
                     },
                     "required_dependencies": [],
-                    "size": 723020,
-                    "date_published": "2026-06-03T06:37:49.861935Z"
+                    "size": 722788,
+                    "date_published": "2026-06-11T21:56:45.607076Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Ixeris-4.4.1+1.21.11-fabric.jar",
+                    "file_name": "Ixeris-4.4.2+1.21.11-fabric.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10",
@@ -2009,16 +2009,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8189/943/Ixeris-4.4.1+1.21.11-fabric.jar",
-                    "id": "8189943",
+                    "url": "https://edge.forgecdn.net/files/8233/891/Ixeris-4.4.2+1.21.11-fabric.jar",
+                    "id": "8233891",
                     "parent_id": "1285307",
                     "hashes": {
-                        "sha1": "fa4256dbb20c1e062fce6810a607602bc29a668b",
-                        "md5": "8e1218de3932432adb1963872352be09"
+                        "sha1": "d4018da91f9094d4ec9f96fcd35075f525f901ec",
+                        "md5": "b5e9eaf09034917b30eafdb8a6f0af2d"
                     },
                     "required_dependencies": [],
-                    "size": 723020,
-                    "date_published": "2026-06-03T06:37:44.193Z"
+                    "size": 722788,
+                    "date_published": "2026-06-11T21:56:41.093Z"
                 }
             ]
         },
@@ -3672,7 +3672,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyBlockPv-1.8.2-1.21.11.jar",
+                    "file_name": "SkyBlockPv-1.8.4-1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3680,19 +3680,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/4optxyu0/SkyBlockPv-1.8.2-1.21.11.jar",
-                    "id": "4optxyu0",
+                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/ImO7bYDb/SkyBlockPv-1.8.4-1.21.11.jar",
+                    "id": "ImO7bYDb",
                     "parent_id": "8yqXwFLl",
                     "hashes": {
-                        "sha512": "410516079015040a14f1a846cdf8785bbb2ec083dd236bf281b132e9ead328d8a40a8358e5bd64b76bb3b1e76923e7b51917dc66c39dbe602b64ea074fb73664",
-                        "sha1": "1efaaff69df769ed19838fa038095b67fc43dab6"
+                        "sha512": "4d3cd7b5e0cbde72541e8c54e0d9fb902a766cd92b93fbd7dda194a7f258ac8f68b36bbb5aec72e91ef1230b75fb3125f9367fe41c36920ba628f8c00b12963d",
+                        "sha1": "7c16a31e67c22592799f2b30db5cf798741e1e2d"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 11478115,
-                    "date_published": "2026-05-09T13:49:10.710685Z"
+                    "size": 11619701,
+                    "date_published": "2026-06-12T19:34:15.570966Z"
                 }
             ]
         },
