@@ -468,7 +468,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "caxton-0.9.0-beta.2+1.21.11-FABRIC.jar",
+                    "file_name": "caxton-0.9.0-beta.3+1.21.11-FABRIC.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -476,22 +476,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/k8iIgzXE/versions/gc26n1VF/caxton-0.9.0-beta.2+1.21.11-FABRIC.jar",
-                    "id": "gc26n1VF",
+                    "url": "https://cdn.modrinth.com/data/k8iIgzXE/versions/G3suf2iA/caxton-0.9.0-beta.3+1.21.11-FABRIC.jar",
+                    "id": "G3suf2iA",
                     "parent_id": "k8iIgzXE",
                     "hashes": {
-                        "sha512": "2eba79bc6d57ecd9577caeb4c5f2af293fdfaf24f6eae37a5e426bc0f5b25e7d1d566374d3feeefc9cb7915fcf83b5d6043847923e76e9307400c37b1557d5b8",
-                        "sha1": "71c19672991fc6138520dead4075ab31fe00a096"
+                        "sha512": "31c00f0dd8c9713e4ade77719672b9deffaf02f4d4363ad5701206785c39798ccad31ebeb733e387bbb1c69a140986ddd92ba8caefc79ae01ea5ca90a3346728",
+                        "sha1": "09248a0929a9b92866c881ee14a853c6ec10a8ee"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 6097501,
-                    "date_published": "2026-06-05T04:14:07.121955Z"
+                    "size": 6098822,
+                    "date_published": "2026-06-15T10:39:06.909307Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "caxton-0.9.0-beta.2+1.21.11-FABRIC.jar",
+                    "file_name": "caxton-0.9.0-beta.3+1.21.11-FABRIC.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -499,18 +499,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8199/160/caxton-0.9.0-beta.2+1.21.11-FABRIC.jar",
-                    "id": "8199160",
+                    "url": "https://edge.forgecdn.net/files/8251/959/caxton-0.9.0-beta.3+1.21.11-FABRIC.jar",
+                    "id": "8251959",
                     "parent_id": "1320863",
                     "hashes": {
-                        "sha1": "71c19672991fc6138520dead4075ab31fe00a096",
-                        "md5": "6a1b80f09f33541538ace774d5f6bfa9"
+                        "sha1": "09248a0929a9b92866c881ee14a853c6ec10a8ee",
+                        "md5": "57c4d07a3294fa7d48453a0c49d31a5d"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 6097501,
-                    "date_published": "2026-06-05T04:14:03.210Z"
+                    "size": 6098822,
+                    "date_published": "2026-06-15T10:38:39.180Z"
                 }
             ]
         },
@@ -1974,7 +1974,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Ixeris-4.4.2+1.21.11-fabric.jar",
+                    "file_name": "Ixeris-4.4.4+1.21.11-fabric.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10",
@@ -1985,20 +1985,20 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/p8RJPJIC/versions/Ihf3JRaY/Ixeris-4.4.2+1.21.11-fabric.jar",
-                    "id": "Ihf3JRaY",
+                    "url": "https://cdn.modrinth.com/data/p8RJPJIC/versions/1dSNY4rQ/Ixeris-4.4.4+1.21.11-fabric.jar",
+                    "id": "1dSNY4rQ",
                     "parent_id": "p8RJPJIC",
                     "hashes": {
-                        "sha512": "a2d1aa9f2576884161ca12a321c5d8ee838aed06393b1e32fe34a4514da3e57c6e6c336ef5523a5fe371a3dab8da83a3e890489dd360bd48087b280871cf81a6",
-                        "sha1": "d4018da91f9094d4ec9f96fcd35075f525f901ec"
+                        "sha512": "bebe65870e0eb7ecf1c6432829de78e6c4048c7920437cb3d1f8e3eee9368677789da5025f11858c19e71f5b001844d9fcc7e283c4fd17ac016adf589a8af724",
+                        "sha1": "f936d7a445877db9c279a032c6cf91fdf51eedcb"
                     },
                     "required_dependencies": [],
-                    "size": 722788,
-                    "date_published": "2026-06-11T21:56:45.607076Z"
+                    "size": 725773,
+                    "date_published": "2026-06-13T23:11:20.499556Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Ixeris-4.4.2+1.21.11-fabric.jar",
+                    "file_name": "Ixeris-4.4.4+1.21.11-fabric.jar",
                     "mc_versions": [
                         "1.21.9",
                         "1.21.10",
@@ -2009,16 +2009,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8233/891/Ixeris-4.4.2+1.21.11-fabric.jar",
-                    "id": "8233891",
+                    "url": "https://edge.forgecdn.net/files/8244/623/Ixeris-4.4.4+1.21.11-fabric.jar",
+                    "id": "8244623",
                     "parent_id": "1285307",
                     "hashes": {
-                        "sha1": "d4018da91f9094d4ec9f96fcd35075f525f901ec",
-                        "md5": "b5e9eaf09034917b30eafdb8a6f0af2d"
+                        "sha1": "f936d7a445877db9c279a032c6cf91fdf51eedcb",
+                        "md5": "7d06e23dfa7d1dbe9ce8392e2113732c"
                     },
                     "required_dependencies": [],
-                    "size": 722788,
-                    "date_published": "2026-06-11T21:56:41.093Z"
+                    "size": 725773,
+                    "date_published": "2026-06-13T23:11:16.597Z"
                 }
             ]
         },
@@ -3556,27 +3556,31 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Dark Skyblock v1.2.zip",
+                    "file_name": "Dark Skyblock v2.0c.cats.zip",
                     "mc_versions": [
+                        "1.21.9",
                         "1.21.10",
-                        "1.21.11"
+                        "1.21.11",
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/UldQM8wd/versions/AOWZ6iyk/Dark Skyblock v1.2.zip",
-                    "id": "AOWZ6iyk",
+                    "url": "https://cdn.modrinth.com/data/UldQM8wd/versions/QyZfTN7h/Dark Skyblock v2.0c.cats.zip",
+                    "id": "QyZfTN7h",
                     "parent_id": "UldQM8wd",
                     "hashes": {
-                        "sha512": "df0409e3b5ca6763c526b48e91ba84543c56a3b370e81d8b2c3b00a1279214bbc8b6cfce576389a9084d4b8624661c3a8ea472222fbd6b1eeef6622860148910",
-                        "sha1": "2082599a177725e6dd692213fa83e0a1e0d6d973"
+                        "sha512": "1dded566f5e344ee766f8786d73016a38ee6316409038a327f08e0bc5be497fbf41b3e293ca5e29be267e0e08c33f02417a03b52aabfd6495114a5fd720009cb",
+                        "sha1": "5a302775f63e632729e85347e5a3ce2df1212c64"
                     },
                     "required_dependencies": [
-                        "IJNUBZ2a"
+                        "fc4wBpRx"
                     ],
-                    "size": 193489,
-                    "date_published": "2026-04-05T21:42:42.474785Z"
+                    "size": 122655,
+                    "date_published": "2026-06-13T21:43:29.230667Z"
                 }
             ]
         },
@@ -3890,7 +3894,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblocker-6.5.1+1.21.11.jar",
+                    "file_name": "skyblocker-6.5.2+1.21.11.jar",
                     "mc_versions": [
                         "1.21.11"
                     ],
@@ -3898,19 +3902,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/4cy8mojf/skyblocker-6.5.1+1.21.11.jar",
-                    "id": "4cy8mojf",
+                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/7MTtY24j/skyblocker-6.5.2+1.21.11.jar",
+                    "id": "7MTtY24j",
                     "parent_id": "y6DuFGwJ",
                     "hashes": {
-                        "sha512": "4d1545995add03c9de249dc1b0fa1516810090866c0a35dad16d8a3ab1bfdf360c2f33f58430d9f63b0b7c8a5e135c40456071b592679f99a24edb1fb6f06a9c",
-                        "sha1": "91c559e272488a11c6043fca8f1d8b2b4a6280a7"
+                        "sha512": "61c8a384f5fbb725a868631386dadd6823ad7a9055b7b847e04da094bb962bdd9805575d7facc98f60364ddba04c556dcc34a63297e0959647abb094504228fd",
+                        "sha1": "0c9e1b555272305e83d707ec268713ee2762e468"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 19028186,
-                    "date_published": "2026-06-07T20:11:48.256776Z"
+                    "size": 19029977,
+                    "date_published": "2026-06-14T19:36:53.824986Z"
                 },
                 {
                     "type": "curseforge",
