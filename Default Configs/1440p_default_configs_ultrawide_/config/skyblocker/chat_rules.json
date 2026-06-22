@@ -1,0 +1,51 @@
+{
+  "rules": [
+    {
+      "name": "Jerry spawned",
+      "enabled": true,
+      "partialMatch": true,
+      "regex": true,
+      "ignoreCase": true,
+      "filter": "(Green|Blue|Purple|Golden) Jerry",
+      "locations": [],
+      "hideOriginalMessage": false,
+      "announcementMessage": {
+        "message": "A Hidden Jerry spawned!",
+        "displayDuration": 3000
+      }
+    },
+    {
+      "name": "Clean Hub Chat",
+      "enabled": false,
+      "partialMatch": true,
+      "regex": true,
+      "ignoreCase": true,
+      "filter": "(selling)|(buying)|(lowb)|(visit)|(/p)|(/ah)|(my ah)",
+      "locations": [
+        "hub"
+      ],
+      "hideOriginalMessage": true
+    },
+    {
+      "name": "Mining Ability Alert",
+      "enabled": false,
+      "partialMatch": true,
+      "regex": false,
+      "ignoreCase": true,
+      "filter": "is now available!",
+      "locations": [
+        "mining_3",
+        "crystal_hollows"
+      ],
+      "hideOriginalMessage": false,
+      "chatMessage": "\u00261Ability",
+      "announcementMessage": {
+        "message": "\u00261Ability",
+        "displayDuration": 3000
+      },
+      "customSound": {
+        "sound_id": "minecraft:entity.arrow.hit_player"
+      }
+    }
+  ]
+}

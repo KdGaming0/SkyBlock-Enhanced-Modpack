@@ -1,0 +1,15 @@
+{
+  "c9d203b9ced7435cb2a20f085b2e7dec": {
+    "": {
+      "enabled": false,
+      "channel": "alpha",
+      "newestVersionUsed": "6.5.2+26.1.2"
+    }
+  },
+  "b3ac1fe2a4494c48bceb8d2006f2cdaf": {
+    "": {
+      "enabled": false,
+      "channel": "release"
+    }
+  }
+}

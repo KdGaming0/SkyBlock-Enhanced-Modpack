@@ -1,6 +1,6 @@
 {
   "about": {
-    "updateStream": "BETA",
+    "updateStream": "RELEASES",
     "licenses": {}
   },
   "gui": {
@@ -33,31 +33,31 @@
         "DATE",
         "TIME",
         "ISLAND",
-        "LOCATION",
         "PLAYER_AMOUNT",
-        "VISITING",
+        "LOCATION",
         "PROFILE",
+        "VISITING",
         "EMPTY_LINE2",
         "PURSE",
         "MOTES",
         "BANK",
+        "GEMS",
         "BITS",
         "COPPER",
         "SOWDUST",
-        "GEMS",
-        "HEAT",
         "COLD",
-        "NORTH_STARS",
+        "HEAT",
         "SOULFLOW",
-        "EMPTY_LINE3",
-        "EVENTS",
-        "COOKIE",
+        "NORTH_STARS",
         "QUIVER",
+        "EMPTY_LINE3",
+        "COOKIE",
+        "EVENTS",
+        "SLAYER",
         "TUNING",
         "POWER",
         "OBJECTIVE",
         "EMPTY_LINE4",
-        "SLAYER",
         "POWDER",
         "MAYOR",
         "PARTY"
@@ -180,8 +180,8 @@
       },
       "unknownLinesWarning": true,
       "position": {
-        "x": 542,
-        "y": 68,
+        "x": 548,
+        "y": 60,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -684,7 +684,7 @@
       "timer": {
         "enabled": true,
         "sixthVisitorEnabled": true,
-        "sixthVisitorWarning": true,
+        "sixthVisitorWarning": false,
         "newVisitorPing": false,
         "position": {
           "x": -110,
@@ -699,7 +699,7 @@
         "enabled": true,
         "position": {
           "x": 6,
-          "y": -170,
+          "y": -140,
           "scale": 1.0,
           "centerX": false,
           "centerY": true,
@@ -736,7 +736,12 @@
           "REPLENISH",
           "COPPER_DYE",
           "FARMING_EXP_BOOST_EPIC",
-          "DYE_WILD_STRAWBERRY"
+          "DYE_WILD_STRAWBERRY",
+          "VISITORS_GRATITUDE",
+          "FARMING_CONTEST_DISPLAY",
+          "ASTRONAUT_PERSONALITY",
+          "FAST_FOOD_BARN_SKIN",
+          "JELLY_GREENHOUSE_SKIN"
         ],
         "coinsPerCopperPrice": 6000,
         "preventRefusingCopper": false,
@@ -753,32 +758,32 @@
         "textFormat": [
           "TITLE",
           "TOTAL_VISITORS",
-          "VISITORS_BY_RARITY",
           "ACCEPTED",
-          "DENIED",
-          "SPACER_1",
-          "COPPER",
+          "VISITORS_BY_RARITY",
           "FARMING_EXP",
+          "DENIED",
           "COINS_SPENT",
-          "OVERGROWN_GRASS",
-          "GREEN_BANDANA",
-          "DEDICATION_IV",
+          "COPPER",
           "COPPER_DYE",
-          "HYPERCHARGE_CHIP",
+          "SPACER_1",
+          "GREEN_BANDANA",
+          "OVERGROWN_GRASS",
           "QUICKDRAW_CHIP",
-          "FARMING_EXP_BOOST_EPIC",
-          "UNFULFILLED_JERRYSEED",
-          "VOTER_BADGE",
-          "VOTER_BADGE_VIP",
+          "VOTER_BADGE_SUPREME",
           "VOTER_BADGE_ELITE",
-          "VOTER_BADGE_SUPREME"
+          "VOTER_BADGE_VIP",
+          "VOTER_BADGE",
+          "HYPERCHARGE_CHIP",
+          "HARVEST_HARBINGER",
+          "DEDICATION_IV",
+          "UNFULFILLED_JERRYSEED"
         ],
         "displayNumbersFirst": true,
         "displayIcons": false,
         "onlyOnBarn": true,
         "pos": {
-          "x": 5,
-          "y": 20,
+          "x": 6,
+          "y": 14,
           "scale": 1.0,
           "centerX": false,
           "centerY": true,
@@ -1029,7 +1034,9 @@
     "keyBind": {
       "enabled": false,
       "mousemat": false,
+      "vacuum": false,
       "fishingRod": false,
+      "sunsGrasp": true,
       "excludeBarn": false,
       "attack": 0,
       "useItem": 1,
@@ -1140,12 +1147,12 @@
       "ignoredCrops": []
     },
     "gardenLevels": {
-      "display": false,
+      "display": true,
       "overflow": true,
       "overflowChat": true,
       "pos": {
-        "x": 390,
-        "y": 40,
+        "x": -110,
+        "y": 43,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -1153,12 +1160,12 @@
       }
     },
     "moneyPerHours": {
-      "display": false,
+      "display": true,
       "showOnlyBest": 5,
       "showCurrent": true,
       "alwaysOn": false,
       "compact": false,
-      "compactPrice": false,
+      "compactPrice": true,
       "useCustomFormat": false,
       "customFormat": [
         "SELL_OFFER",
@@ -1171,8 +1178,8 @@
       "armor": true,
       "hideTitle": false,
       "pos": {
-        "x": -330,
-        "y": 170,
+        "x": -260,
+        "y": 140,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -1443,8 +1450,8 @@
           "repeatDuration": 20
         },
         "position": {
-          "x": 192,
-          "y": 14,
+          "x": 180,
+          "y": 13,
           "scale": 1.0,
           "centerX": false,
           "centerY": true,
@@ -1541,7 +1548,7 @@
         "alwaysShow": false,
         "showHead": true,
         "showCrop": true,
-        "hideWhenNone": false,
+        "hideWhenNone": true,
         "replaceMenuIcons": true,
         "position": {
           "x": 178,
@@ -1609,6 +1616,7 @@
       "hideMissingFortuneWarnings": true,
       "showPestBonusFortune": true,
       "bonusFortuneChat": true,
+      "callPhillip": false,
       "bonusFortuneTitle": false,
       "sound": {
         "name": "fireworks.blast",
@@ -1633,7 +1641,7 @@
       "enabled": true,
       "yawPrecision": 4,
       "pitchPrecision": 4,
-      "timeout": 5,
+      "timeout": 8,
       "showWithoutTool": false,
       "showOutsideGarden": false,
       "showAlways": false,
@@ -1649,6 +1657,18 @@
         "x": 445,
         "y": 225,
         "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      }
+    },
+    "mouseLock": {
+      "chatMessage": true,
+      "unlockOnTeleport": "ALWAYS",
+      "display": {
+        "x": 400,
+        "y": 200,
+        "scale": 0.8,
         "centerX": false,
         "centerY": true,
         "ignoreCustomScale": false
@@ -1681,9 +1701,8 @@
       "enabled": true,
       "deskPlotStatusTypes": [
         "CURRENT",
-        "PESTS",
-        "SPRAYS",
-        "LOCKED"
+        "LOCKED",
+        "SPRAYS"
       ]
     },
     "plotIcon": {
@@ -1801,6 +1820,9 @@
     "seeThroughWindow": {
       "seeThroughFarming": 100.0,
       "keybind": -1
+    },
+    "farmingToolkit": {
+      "replaceMenuIcons": false
     },
     "plotPrice": true,
     "burrowingSporesNotificationType": "TITLE",
@@ -1936,7 +1958,7 @@
       "enabled": true,
       "instantShare": true,
       "keybindSharing": 89,
-      "readGlobalChat": false
+      "readGlobalChat": true
     }
   },
   "rift": {
@@ -2217,7 +2239,7 @@
         },
         "enigmaRoseFlowerpot": true,
         "ubikReminder": false,
-        "ubikGui": false,
+        "ubikGui": true,
         "ubikOnlyWhenReady": false,
         "ubikQuickClose": true,
         "timerPosition": {
@@ -2275,8 +2297,8 @@
   "fishing": {
     "trophyFishing": {
       "chatMessages": {
-        "enabled": false,
-        "design": "STYLE_1",
+        "enabled": true,
+        "design": "STYLE_3",
         "totalAmount": false,
         "tooltip": true,
         "duplicateHider": false,
@@ -2287,10 +2309,10 @@
         "playSound": true
       },
       "display": {
-        "enabled": false,
-        "whenToShow": "ALWAYS",
+        "enabled": true,
+        "whenToShow": "ONLY_WITH_ROD_IN_HAND",
         "keybind": -1,
-        "requireArmor": false,
+        "requireArmor": true,
         "highlightNew": true,
         "extraSpace": 1,
         "sortingType": "ITEM_RARITY",
@@ -2350,6 +2372,10 @@
       "odgerLocation": false,
       "loadFromNeuPV": true
     },
+    "wormholeFinder": {
+      "enabled": true,
+      "departureAlert": false
+    },
     "thunderSpark": {
       "highlight": true,
       "color": "0:255:255:255:255"
@@ -2359,15 +2385,27 @@
       "showAnywhere": false,
       "crystalHollows": true,
       "crimsonIsle": true,
-      "warnPersonalCap": true,
-      "warnGlobalCap": true,
-      "timeAlert": true,
+      "warnPersonalCap": false,
+      "warnGlobalCap": false,
+      "timeAlert": false,
       "alertTime": 330,
       "winterIsland": true,
       "forStranded": true,
       "pos": {
-        "x": 234,
+        "x": 264,
         "y": 14,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      }
+    },
+    "bobberTimer": {
+      "enabled": false,
+      "startOnLiquidTouch": true,
+      "pos": {
+        "x": 10,
+        "y": 10,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -2397,11 +2435,11 @@
       }
     },
     "fishingBaitWarnings": {
-      "baitChangeWarning": true,
+      "baitChangeWarning": false,
       "noBaitWarning": false
     },
     "rareCatches": {
-      "alertOwnCatches": true,
+      "alertOwnCatches": false,
       "alertOtherCatches": false,
       "announceRareInParty": false,
       "creatureName": true,
@@ -2471,7 +2509,7 @@
     "seaCreatureTracker": {
       "enabled": true,
       "position": {
-        "x": 124,
+        "x": 144,
         "y": 14,
         "scale": 1.0,
         "centerX": false,
@@ -2539,9 +2577,9 @@
       "enabled": true,
       "outsideMining": false,
       "showType": "ALL",
-      "compressedFormat": "DEFAULT",
+      "compressedFormat": "COMPACT_TEXT",
       "islandAsIcon": false,
-      "passedEvents": false,
+      "passedEvents": true,
       "position": {
         "x": 6,
         "y": 12,
@@ -2569,9 +2607,9 @@
       },
       "levelStackSize": false,
       "tokenStackSize": true,
-      "powderSpent": false,
+      "powderSpent": true,
       "powderSpentDesign": "NUMBER_AND_PERCENTAGE",
-      "powderFor10Levels": true,
+      "powderFor10Levels": false,
       "currentPowder": true
     },
     "powderTracker": {
@@ -2585,13 +2623,13 @@
         "GOLD_ESSENCE",
         "HARD_STONE",
         "RUBY",
-        "SPACER_1",
-        "SAPPHIRE",
         "SPACER_2",
+        "SAPPHIRE",
+        "SPACER_1",
         "AMBER",
+        "JADE",
         "AMETHYST",
         "SPACER_3",
-        "JADE",
         "TOPAZ",
         "TOTAL_ROBOT_PARTS"
       ],
@@ -2626,7 +2664,7 @@
       "drawLineToChestAmount": 5,
       "position": {
         "x": -236,
-        "y": 46,
+        "y": 52,
         "scale": 1.0,
         "centerX": false,
         "centerY": true,
@@ -2660,7 +2698,7 @@
         "color": "0:255:155:29:194"
       },
       "highlight": {
-        "enabled": false,
+        "enabled": true,
         "color": "0:75:155:29:194"
       },
       "title": {
@@ -2763,7 +2801,7 @@
       "muteMetalDetectorSound": false
     },
     "orderedWaypoints": {
-      "enabled": true,
+      "enabled": false,
       "currentWaypointColor": "0:153:85:255:85",
       "previousWaypointColor": "0:153:85:85:255",
       "nextWaypointColor": "0:153:255:255:85",
@@ -2856,7 +2894,7 @@
         "hideEverything": false
       },
       "scrapGFS": {
-        "enabled": false,
+        "enabled": true,
         "position": {
           "x": 100,
           "y": 100,
@@ -2865,7 +2903,7 @@
           "centerY": true,
           "ignoreCustomScale": false
         },
-        "fetchAmount": 16,
+        "fetchAmount": 1,
         "onlyIfNoScrap": true,
         "bzIfSacksEmpty": true
       },
@@ -2879,8 +2917,8 @@
         "ladderLocation": true
       },
       "corpseLocator": {
-        "enabled": true,
-        "autoSendLocation": true
+        "enabled": false,
+        "autoSendLocation": false
       },
       "corpseTracker": {
         "enabled": true,
@@ -2952,7 +2990,7 @@
       }
     },
     "notifications": {
-      "enabled": false,
+      "enabled": true,
       "notifications": [
         "MINESHAFT_SPAWN",
         "SCRAP",
@@ -3085,7 +3123,7 @@
       "tokenStackSize": true,
       "whispersSpent": true,
       "whispersSpentDesign": "NUMBER_AND_PERCENTAGE",
-      "whispersFor10Levels": true,
+      "whispersFor10Levels": false,
       "currentWhispers": true
     },
     "trees": {
@@ -3128,7 +3166,7 @@
       "enabled": true,
       "useMiddleClick": true,
       "preventOverClicking": true,
-      "beaconAlert": true,
+      "beaconAlert": false,
       "displayPosition": {
         "x": -224,
         "y": 90,
@@ -3258,7 +3296,7 @@
         "color": "0:255:0:255:0"
       },
       "hideonleaf": {
-        "enabled": true,
+        "enabled": false,
         "color": "0:255:255:0:255"
       },
       "invisibug": {
@@ -3281,7 +3319,7 @@
     },
     "huntrapMisclick": false,
     "hideonleafFinder": false,
-    "nextHideonleafKeybind": -1,
+    "nextHideonleafKeybind": 90,
     "fusionDisplay": true,
     "fusionDisplayPosition": {
       "x": 30,
@@ -3495,10 +3533,9 @@
           "COINS_MADE",
           "SPACER_1",
           "ENDERMITE_NEST",
-          "ENCHANTED_OBSIDIAN",
           "ENCHANTED_END_STONE",
-          "ENCHANTED_ENDER_PEARL",
           "GRAND_XP_BOTTLE",
+          "ENCHANTED_OBSIDIAN",
           "TITANIC_XP_BOTTLE",
           "MITE_GEL",
           "SHRIMP_THE_FISH",
@@ -3583,7 +3620,7 @@
       "arachneBossHighlighter": true,
       "lineToArachne": false,
       "lineToArachneWidth": 5,
-      "areaBossRespawnTimer": false,
+      "areaBossRespawnTimer": true,
       "showArachneSpawnTimer": true,
       "arachneKillTimer": true,
       "endermanTeleportationHider": true,
@@ -3678,7 +3715,7 @@
       }
     },
     "instanceChestProfit": {
-      "enabled": false,
+      "enabled": true,
       "priceSource": "BAZAAR_INSTANT_SELL",
       "position": {
         "x": 107,
@@ -3688,7 +3725,7 @@
         "centerY": true,
         "ignoreCustomScale": false
       },
-      "croesusAllChestsOverlay": false,
+      "croesusAllChestsOverlay": true,
       "croesusHighlight": false,
       "keybind": -1,
       "croesusPosition": {
@@ -3730,11 +3767,11 @@
       "highlightNukekebi": true,
       "drawLineToNukekebi": true,
       "phaseDisplay": false,
-      "hideParticles": false
+      "hideParticles": true
     },
     "blazes": {
       "hellion": {
-        "coloredMobs": false,
+        "coloredMobs": true,
         "daggers": false,
         "markRightHellionShield": false,
         "firstDagger": "SPIRIT_OR_CRYSTAL",
@@ -3756,9 +3793,9 @@
           "ignoreCustomScale": false
         }
       },
-      "firePitsWarning": false,
+      "firePitsWarning": true,
       "phaseDisplay": false,
-      "clearView": false,
+      "clearView": true,
       "firePillarDisplay": false,
       "firePillarDisplayPosition": {
         "x": 400,
@@ -3784,7 +3821,7 @@
       },
       "coopBoss": {
         "highlight": true,
-        "highlightColor": "0:249:255:254:0",
+        "highlightColor": "0:249:255:255:0",
         "coopMembers": "",
         "steakAlert": true,
         "twinClawsTitle": true
@@ -3901,7 +3938,7 @@
       "applyToPlayers": false
     },
     "blockNotSpawnable": true,
-    "slayerMinibossHighlight": true,
+    "slayerMinibossHighlight": false,
     "slayerMinibossLine": false,
     "slayerMinibossLineWidth": 3,
     "hideMobNames": false,
@@ -3909,7 +3946,7 @@
     "questWarningTitle": true,
     "hideIrrelevantMobs": false,
     "hideIrrelevantMobsTransparency": 40,
-    "cocoonTitle": false,
+    "cocoonTitle": true,
     "cocoonDing": false,
     "spawnParticleHider": [],
     "damageSplashHider": false
@@ -3934,7 +3971,7 @@
       "soundName": "random.orb",
       "soundPitch": 1.0
     },
-    "showMilestonesDisplay": false,
+    "showMilestonesDisplay": true,
     "showMileStonesDisplayPos": {
       "x": 10,
       "y": 10,
@@ -3943,7 +3980,7 @@
       "centerY": true,
       "ignoreCustomScale": false
     },
-    "deathCounterDisplay": false,
+    "deathCounterDisplay": true,
     "deathCounterPos": {
       "x": 10,
       "y": 10,
@@ -4022,7 +4059,7 @@
       "sendPartyChat": false
     },
     "terracottaPhase": {
-      "hideParticles": false,
+      "hideParticles": true,
       "hideDamageSplash": false
     },
     "highlightSkeletonSkull": true,
@@ -4044,13 +4081,13 @@
     },
     "croesusUnopenedChestTracker": true,
     "shadowAssassinJumpNotifier": false,
-    "terminalWaypoints": true,
+    "terminalWaypoints": false,
     "creationCooldown": {
       "enabled": false,
       "showOutside": false,
       "entranceOnly": true,
-      "sendChatMessage": false,
-      "blockInstanceCreation": false,
+      "sendChatMessage": true,
+      "blockInstanceCreation": true,
       "position": {
         "x": 383,
         "y": 93,
@@ -4126,8 +4163,8 @@
       "expiredColor": "0:255:255:85:85",
       "highlightAuctionsUnderbid": false,
       "underbidColor": "0:255:255:170:0",
-      "autoCopyUnderbidPrice": false,
-      "copyUnderbidKeybind": -1,
+      "autoCopyUnderbidPrice": true,
+      "copyUnderbidKeybind": 67,
       "openPriceWebsite": false,
       "auctionOutbid": false
     },
@@ -4152,8 +4189,8 @@
         "centerY": true,
         "ignoreCustomScale": false
       },
-      "cancelledBuyOrderClipboard": false,
-      "openPriceWebsite": false,
+      "cancelledBuyOrderClipboard": true,
+      "openPriceWebsite": true,
       "maxPurseItems": false,
       "maxPurseItemsPosition": {
         "x": 346,
@@ -4282,7 +4319,7 @@
       },
       "hideVanillaEnchants": true,
       "hideEnchantDescriptions": false,
-      "stackingEnchantProgress": true
+      "stackingEnchantProgress": false
     },
     "helper": {
       "harp": {
@@ -4372,7 +4409,7 @@
         "customCircle": false,
         "displayColor": "0:245:0:0:0"
       },
-      "depletedBonzosMasks": false
+      "depletedBonzosMasks": true
     },
     "customWardrobe": {
       "enabled": false,
@@ -4517,9 +4554,9 @@
         ],
         "rarityDyeRecolor": true,
         "descriptiveMilestones": true,
-        "showLocationRequirementsRabbits": false,
-        "showResidentSummary": false,
-        "showHotspotSummary": false
+        "showLocationRequirementsRabbits": true,
+        "showResidentSummary": true,
+        "showHotspotSummary": true
       },
       "showStackSizes": true,
       "contributorRabbitName": false,
@@ -4655,13 +4692,13 @@
       "hideMenuItems": true
     },
     "rngMeter": {
-      "floorName": false,
-      "noDrop": false,
-      "selectedDrop": false
+      "floorName": true,
+      "noDrop": true,
+      "selectedDrop": true
     },
     "superCrafting": {
       "presets": {
-        "enabled": false,
+        "enabled": true,
         "presets": [
           4,
           8,
@@ -4737,10 +4774,10 @@
       }
     },
     "estimatedItemValues": {
-      "enabled": false,
+      "enabled": true,
       "showTooltip": false,
-      "hotkey": -1,
-      "alwaysEnabled": true,
+      "hotkey": 70,
+      "alwaysEnabled": false,
       "enchantmentsCap": 7,
       "starMaterialCap": 3,
       "exactPrice": false,
@@ -4786,7 +4823,7 @@
       "bazaarGFS": false,
       "superCraftGFS": true,
       "defaultAmountGFS": 1,
-      "keybind": -1
+      "keybind": 71
     },
     "pocketSackInASack": {
       "showOverlay": false,
@@ -4901,11 +4938,11 @@
       }
     },
     "evolvingItems": {
-      "timeHeldInLore": false,
-      "timeLeftInLore": false
+      "timeHeldInLore": true,
+      "timeLeftInLore": true
     },
     "trade": {
-      "enabled": false,
+      "enabled": true,
       "otherPosition": {
         "x": -300,
         "y": 140,
@@ -4924,16 +4961,14 @@
       }
     },
     "itemNumberAsStackSize": [
-      "NEW_YEAR_CAKE",
-      "RANCHERS_BOOTS_SPEED",
       "LARVA_HOOK",
       "VACUUM_GARDEN"
     ],
     "highlightWidgets": true,
-    "vacuumBagCap": true,
+    "vacuumBagCap": false,
     "quickCraftingConfirmation": false,
     "displaySackName": false,
-    "anvilCombineHelper": false,
+    "anvilCombineHelper": true,
     "itemStars": false,
     "ultimateEnchantStar": false,
     "oldSkyBlockMenu": false,
@@ -5106,7 +5141,8 @@
           },
           "useUniversalConfig": false
         }
-      }
+      },
+      "muteBuggedSpade": true
     },
     "winter": {
       "frozenTreasureTracker": {
@@ -5327,7 +5363,7 @@
         "eggLocatorTimeInChat": true
       },
       "waypoints": {
-        "enabled": true,
+        "enabled": false,
         "shared": true,
         "color": "0:53:46:224:73",
         "showLine": false,
@@ -5411,8 +5447,8 @@
         "ignoreCustomScale": false
       },
       "primalFearSolver": {
-        "math": false,
-        "publicSpeaking": false
+        "math": true,
+        "publicSpeaking": true
       }
     },
     "carnival": {
@@ -5444,6 +5480,19 @@
       },
       "doubleClickToStart": true,
       "tokenShopHelper": true
+    },
+    "feast": {
+      "displayCurrentCrops": true,
+      "fetchAutomatically": true,
+      "sharePolicy": "ASK",
+      "position": {
+        "x": 312,
+        "y": 85,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      }
     },
     "century": {
       "enableActiveTimer": true,
@@ -5486,7 +5535,7 @@
     "yearOfThePig": {
       "shinyOrbTracker": {
         "enabled": true,
-        "holdingItems": false,
+        "holdingItems": true,
         "perTrackerConfig": {
           "trackerConfig": {
             "itemTracker": {
@@ -5597,10 +5646,10 @@
       "enableInChat": false
     },
     "customGoalConfig": {
-      "enableInDisplay": true,
+      "enableInDisplay": false,
       "enableInAllDisplay": false,
       "enableInETADisplay": false,
-      "enableInProgressBar": true,
+      "enableInProgressBar": false,
       "enableInSkillMenuTooltip": false,
       "enableInChat": false
     },
@@ -5881,16 +5930,16 @@
         "call": true
       },
       "betterWiki": {
-        "enabled": false,
-        "sbGuide": false,
-        "useUnofficial": false,
+        "enabled": true,
+        "sbGuide": true,
+        "useIndependent": true,
         "autoOpenWiki": false,
         "menuOpenWiki": false,
         "wikiKeybind": -1
       },
       "reversePT": {
         "command": true,
-        "clickable": false,
+        "clickable": true,
         "message": "Nuh Uh"
       },
       "shortCommands": true,
@@ -5900,7 +5949,7 @@
       "replaceWarpIs": false,
       "viewRecipeLowerCase": true,
       "transferCooldown": false,
-      "transferCooldownMessage": false,
+      "transferCooldownMessage": true,
       "preventEarlyExecution": false
     },
     "partyCommands": {
@@ -6048,7 +6097,7 @@
     "particleHiders": {
       "blockBreakParticle": {
         "hide": false,
-        "onlyInGarden": false
+        "onlyInGarden": true
       },
       "hideBlazeParticles": false,
       "hideEndermanParticles": false,
@@ -6253,7 +6302,7 @@
       "mushroomColor": "0:127:85:255:255"
     },
     "colorfulItemTooltips": {
-      "statIcons": false,
+      "statIcons": true,
       "replacePercentages": false,
       "replaceRiftSeconds": true
     },
@@ -6315,15 +6364,6 @@
     },
     "showLimboTimeInPlaytimeDetailed": true,
     "lesserOrbHider": false,
-    "lockMouseLookChatMessage": true,
-    "lockedMouseDisplay": {
-      "x": 400,
-      "y": 200,
-      "scale": 0.8,
-      "centerX": false,
-      "centerY": true,
-      "ignoreCustomScale": false
-    },
     "fixGhostEntities": true,
     "replaceRomanNumerals": false,
     "chargeBottleNotification": true,
@@ -6355,6 +6395,18 @@
     "gfsPiggyBank": true,
     "userLuck": true,
     "warnAboutPcTimeOffset": true,
+    "npcDayLimitTracker": {
+      "enabled": false,
+      "numberFormat": "SHORT",
+      "position": {
+        "x": 8,
+        "y": 520,
+        "scale": 1.0,
+        "centerX": false,
+        "centerY": true,
+        "ignoreCustomScale": false
+      }
+    },
     "coralFishHelper": true,
     "coralFishHelperPosition": {
       "x": 65,
@@ -6528,6 +6580,7 @@
       "graph": {
         "enabled": false,
         "placeKey": 70,
+        "autoSelectNode": false,
         "selectKey": 2,
         "selectRaycastKey": -1,
         "connectKey": 67,
@@ -6618,12 +6671,10 @@
     "hasPlayedBefore": false,
     "visualWordsImported": false,
     "contestSendingAsked": false,
-    "trackerDisplayModes": {},
-    "foundDianaBurrowLocations": [],
     "blacklistedUsers": [],
     "reminders": {},
     "testRenderablePositions": {}
   },
-  "lastVersion": 133,
-  "lastMinecraftVersion": "1.21.11"
+  "lastVersion": 135,
+  "lastMinecraftVersion": "26.1.2"
 }

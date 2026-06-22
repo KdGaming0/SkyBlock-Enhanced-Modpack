@@ -8,15 +8,15 @@ ARCHIVE="$SOURCE/archive"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 
 DEST=(
-    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (1)/packcore/configs/"
-    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (2)/packcore/configs/"
-    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (3)/packcore/configs/"
-    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (4)/packcore/configs/"
-    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (5)/packcore/configs/"
-    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (6)/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced - 1080p/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced - 1440p/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced (8)/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced - 1080p 3x/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced - 1080p 3x (1)/packcore/configs/"
+    "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced - 1080p 3x (2)/packcore/configs/"
 )
 
-OVERWRITE_DEST="/home/karldh/SkyBlock_Enhanced_Modpack/SkyBlock_Enhanced_Modern_Edition_1.21.11/.pakku/overrides/packcore/configs/"
+OVERWRITE_DEST="/home/karldh/SkyBlock_Enhanced_Modpack/SkyBlock_Enhanced_Modern_Edition_26.1/.pakku/overrides/packcore/configs/"
 
 # ---------------- FUNCTIONS ----------------
 

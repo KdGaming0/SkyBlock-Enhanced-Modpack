@@ -2,9 +2,6 @@
   "positions": {
     "dynamic": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -13,54 +10,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -69,14 +66,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "garden": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -85,68 +82,68 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_farming": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 0,
         "relative_y": 0,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -155,14 +152,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "hub": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -171,12 +168,12 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
-        "relative_x": 8,
-        "relative_y": 230,
-        "layer": "DEFAULT",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -185,40 +182,40 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 350,
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -227,14 +224,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "farming_1": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -243,54 +240,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -299,14 +296,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "foraging_1": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -315,54 +312,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 190,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -371,14 +368,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "combat_1": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -387,54 +384,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 220,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -443,14 +440,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "combat_2": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -459,54 +456,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -515,14 +512,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "combat_3": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -531,12 +528,12 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
-        "relative_x": 8,
-        "relative_y": 190,
-        "layer": "DEFAULT",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -545,26 +542,26 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 210,
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
-        "relative_x": 4,
-        "relative_y": 164,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -573,12 +570,12 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 4,
+        "relative_y": 164,
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 0,
-        "relative_y": 5,
-        "layer": "HUD",
         "parent": "hud_slayer",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -587,14 +584,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 5,
+        "layer": "HUD"
       }
     },
     "crimson_isle": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -603,54 +600,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 240,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -659,14 +656,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "mining_1": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -675,54 +672,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -731,14 +728,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "mining_2": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -747,54 +744,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -803,14 +800,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "mining_3": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -819,54 +816,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 191,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -875,14 +872,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "fishing_1": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -891,54 +888,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -947,14 +944,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "dungeon_hub": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -963,54 +960,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1019,14 +1016,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "winter": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -1035,54 +1032,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1091,14 +1088,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "rift": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -1107,54 +1104,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 220,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1163,14 +1160,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "dark_auction": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -1179,54 +1176,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1235,14 +1232,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "crystal_hollows": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -1251,68 +1248,68 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_crystals": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 44,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1321,28 +1318,28 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "dungeon": {
       "Dungeon Splits": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "CENTER",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "CENTER",
+          "h": "LEFT"
+        },
         "relative_x": 5,
         "relative_y": 0,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "CENTER",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "CENTER",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_fishing": {
-        "relative_x": -8,
-        "relative_y": 8,
-        "layer": "DEFAULT",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1351,14 +1348,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "RIGHT"
-        }
+        },
+        "relative_x": -8,
+        "relative_y": 8,
+        "layer": "DEFAULT"
       }
     },
     "kuudra": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -1367,54 +1364,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1423,14 +1420,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "mineshaft": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -1439,54 +1436,54 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1495,14 +1492,14 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     },
     "foraging_2": {
       "powders": {
-        "relative_x": 0,
-        "relative_y": 8,
-        "layer": "HUD",
         "parent": "commissions",
         "parent_anchor": {
           "v": "BOTTOM",
@@ -1511,68 +1508,68 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 0,
+        "relative_y": 8,
+        "layer": "HUD"
       },
       "hud_slayer": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 125,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "sweepDetails": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 8,
         "relative_y": 290,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "DEFAULT"
       },
       "hud_fishing": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "RIGHT"
+        },
         "relative_x": -8,
         "relative_y": 8,
-        "layer": "DEFAULT",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "RIGHT"
-        }
+        "layer": "DEFAULT"
       },
       "commissions": {
+        "parent": "screen",
+        "parent_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
+        "this_anchor": {
+          "v": "TOP",
+          "h": "LEFT"
+        },
         "relative_x": 4,
         "relative_y": 164,
-        "layer": "HUD",
-        "parent": "screen",
-        "parent_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        },
-        "this_anchor": {
-          "v": "TOP",
-          "h": "LEFT"
-        }
+        "layer": "HUD"
       },
       "hud_end": {
-        "relative_x": 8,
-        "relative_y": 185,
-        "layer": "HUD",
         "parent": "screen",
         "parent_anchor": {
           "v": "TOP",
@@ -1581,7 +1578,10 @@
         "this_anchor": {
           "v": "TOP",
           "h": "LEFT"
-        }
+        },
+        "relative_x": 8,
+        "relative_y": 185,
+        "layer": "HUD"
       }
     }
   }

@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 10,
   "general": {
     "enableTips": false,
     "acceptReparty": true,
@@ -18,11 +18,13 @@
       "enableQuiverWarningAfterDungeon": false
     },
     "itemList": {
+      "enableRecipeBook": false,
       "enableItemList": false,
       "enableCollapsibleEntries": true
     },
     "itemTooltip": {
       "enableNPCPrice": false,
+      "enableGeorgePrice": true,
       "enableMotesPrice": true,
       "enableAvgBIN": false,
       "avg": "THREE_DAY",
@@ -57,17 +59,15 @@
     "specialEffects": {
       "rareDungeonDropEffects": true,
       "rareDropEffects": true,
-      "rareDyeDropEffects": true
-    },
-    "hitbox": {
-      "oldCactusHitbox": false,
-      "oldLeverHitbox": false,
-      "oldMushroomHitbox": false
+      "rareDyeDropEffects": true,
+      "trophyDropEffects": true
     },
     "lockedSlots": [],
     "protectedItems": [
       "db1bb19d-0bd8-4bbd-9a3d-9dcd03c92f2b",
       "e3541691-a469-4e7d-aeee-1c4feaa3723b",
+      "7d0be867-b9ed-4d83-8a89-1fbf49a92d8e",
+      "ba51c833-bc7a-438a-8252-eaa9bf08a2ae",
       "730a936f-986c-4e10-85fc-6cdf0208cd2e",
       "8511b5a5-87c7-41a4-aa67-ea77300fdaa2",
       "55004fee-e951-41c1-b775-d41706256ed9",
@@ -111,6 +111,7 @@
       "slotTextMode": "ENABLED",
       "textEnabled": {
         "hotf_perk_level": true,
+        "rancher_boots": true,
         "hotm_perk_level": true
       },
       "slotTextToggled": true
@@ -118,10 +119,13 @@
     "radialMenu": {
       "enabled": false,
       "tooltipsWithoutShift": false,
-      "enabledMenus": {}
+      "enabledMenus": {
+        "wardrobe": false,
+        "sacks": false
+      }
     },
     "inventorySearch": {
-      "enabled": "SKYBLOCK",
+      "enabled": "OFF",
       "ctrlK": false,
       "clickableText": false
     },
@@ -134,7 +138,7 @@
     },
     "tabHud": {
       "tabHudEnabled": true,
-      "tabHudScale": 91,
+      "tabHudScale": 100,
       "showVanillaTabByDefault": false,
       "style": "MINIMAL",
       "displayIcons": true,
@@ -169,11 +173,12 @@
       "lineWidth": 5.0,
       "allowSkippingWaypoints": true,
       "allowGoingBackwards": true,
+      "waypointActivationRadius": 2.0,
       "enableChatWaypoints": true
     },
     "teleportOverlay": {
       "enableTeleportOverlays": true,
-      "showWhenInAir": false,
+      "showWhenInAir": true,
       "teleportOverlayColor": 2138445204,
       "enableWeirdTransmission": false,
       "enableInstantTransmission": false,
@@ -187,19 +192,21 @@
       "enableInstantTransmission": false,
       "enableEtherTransmission": false,
       "enableSinrecallTransmission": false,
-      "enableWitherImpact": true,
+      "enableWitherImpact": false,
       "maximumAddedLag": 100
     },
     "searchOverlay": {
       "enableBazaar": true,
       "enableAuctionHouse": true,
       "enableMuseum": true,
-      "keepPreviousSearches": false,
+      "keepPreviousSearches": true,
       "maxSuggestions": 3,
       "historyLength": 3,
-      "enableCommands": false,
+      "enableCommands": true,
       "bazaarHistory": [],
-      "auctionHistory": [],
+      "auctionHistory": [
+        "New Year Cake (Year 301)"
+      ],
       "museumHistory": []
     },
     "bazaarQuickQuantities": {
@@ -215,7 +222,7 @@
       "closeSignsWithEnter": true
     },
     "flameOverlay": {
-      "flameHeight": 40,
+      "flameHeight": 35,
       "flameOpacity": 50
     },
     "compactDamage": {
@@ -254,8 +261,12 @@
     "enableWardrobeHelper": true,
     "enableDateCalculator": true,
     "enableCopyUnderbidPrice": false,
-    "enableBuildersWandPreview": true,
     "enableAnvilHelper": true,
+    "enableAccessoriesHelperWidget": true,
+    "buildersWand": {
+      "enableBuildersWandPreview": true,
+      "previewOpacity": 0.5
+    },
     "mythologicalRitual": {
       "enableMythologicalRitualHelper": false
     },
@@ -269,7 +280,7 @@
       "blockIncorrectClicks": false
     },
     "fishing": {
-      "enableFishingHelper": true,
+      "enableFishingHelper": false,
       "enableFishingTimer": false,
       "hideOtherPlayersRods": false,
       "enableFishingHud": false,
@@ -302,9 +313,8 @@
       "fishingHookDisplay": "OFF",
       "onlyShowHudInBarn": true,
       "timerLength": 340,
-      "seaCreatureTimerNotification": true,
-      "seaCreatureCap": 30,
-      "seaCreatureCapNotification": true,
+      "seaCreatureTimerNotification": false,
+      "seaCreatureCapNotification": false,
       "minimumNotificationRarity": "EPIC"
     },
     "fairySouls": {
@@ -322,8 +332,8 @@
       "showThroughWalls": false
     },
     "carnival": {
-      "catchAFishHelper": true,
-      "zombieShootoutHelper": true
+      "catchAFishHelper": false,
+      "zombieShootoutHelper": false
     },
     "bazaar": {
       "enableBazaarHelper": true,
@@ -331,11 +341,10 @@
       "enableOrderTracker": true
     },
     "itemPrice": {
-      "enableItemPriceLookup": true,
-      "enableItemPriceRefresh": true
+      "enableItemPriceLookup": true
     },
     "greatSpookEvent": {
-      "enableMathTeacherHelper": true
+      "enableMathTeacherHelper": false
     }
   },
   "dungeons": {
@@ -428,8 +437,9 @@
       "showGate": true
     },
     "secretWaypoints": {
-      "enableSecretWaypoints": false,
+      "enableSecretWaypoints": true,
       "waypointType": "WAYPOINT",
+      "adaptiveBoxSize": true,
       "showSecretText": true,
       "enableEntranceWaypoints": true,
       "enableSuperboomWaypoints": true,
@@ -451,6 +461,12 @@
       "receiveRoomSecretCount": true,
       "hideReceivedWaypoints": true
     },
+    "rareRoomAlert": {
+      "enabled": false,
+      "showForTrinity": true,
+      "showForTomioka": false,
+      "showForDuncan": false
+    },
     "mimicMessage": {
       "sendMimicMessage": true
     },
@@ -459,10 +475,10 @@
     },
     "doorHighlight": {
       "enableDoorHighlight": true,
-      "doorHighlightType": "OUTLINED_HIGHLIGHT"
+      "doorHighlightType": "OUTLINE"
     },
     "dungeonScore": {
-      "enableDungeonScore270Message": false,
+      "enableDungeonScore270Message": true,
       "enableDungeonScore270Title": false,
       "enableDungeonScore270Sound": false,
       "dungeonScore270Message": "270 Score Reached!",
@@ -578,35 +594,50 @@
       "hideEmissaryOnPigeon": true
     },
     "glacite": {
-      "coldOverlay": true,
+      "coldOverlay": false,
       "fossilSolver": false,
-      "enableCorpseFinder": false,
-      "enableParsingChatCorpseFinder": false,
-      "autoShareCorpses": false,
+      "enableCorpseFinder": true,
+      "enableParsingChatCorpseFinder": true,
+      "autoShareCorpses": true,
       "enableCorpseProfitTracker": false,
       "forceEnglishCorpseProfitTracker": true
+    },
+    "blockBreakPrediction": {
+      "enabled": false,
+      "playSound": false
     }
   },
   "farming": {
-    "garden": {
-      "farmingHud": {
-        "enableHud": false,
-        "x": 0,
-        "y": 0,
-        "type": "BOTH"
-      },
-      "dicerTitlePrevent": true,
-      "pestHighlighter": true,
-      "lockMouseTool": false,
-      "lockMouseGroundOnly": false,
-      "gardenPlotsWidget": true,
-      "closeScreenOnPlotClick": false,
+    "farmingHud": {
+      "enabled": false,
+      "counter": true,
+      "coins": true,
+      "type": "BOTH",
+      "includeSeedsPrice": true,
+      "experience": true
+    },
+    "pestHighlighter": {
+      "enabled": true,
+      "vinylHighlighter": true,
+      "contestHighlighter": true,
       "enableStereoHarmonyHelperForContest": true
     },
+    "mouseLock": {
+      "lockMouseTool": false,
+      "lockMouseGroundOnly": false
+    },
+    "plotsWidget": {
+      "enabled": true,
+      "closeScreenOnPlotClick": false
+    },
     "visitorHelper": {
-      "visitorHelper": false,
-      "visitorHelperGardenOnly": true,
-      "showStacksInVisitorHelper": false
+      "enabled": false,
+      "showInGardenOnly": true,
+      "showInStacks": false
+    },
+    "greenhouse": {
+      "enabled": true,
+      "showMutationSlot": true
     }
   },
   "hunting": {
@@ -615,7 +646,7 @@
     },
     "huntingMobs": {
       "silencePhantoms": false,
-      "highlightHideonleaf": false,
+      "highlightHideonleaf": true,
       "hideonleafGlowColor": -256,
       "highlightShellwise": true,
       "shellwiseGlowColor": -38881,
@@ -623,7 +654,7 @@
       "coralotGlowColor": -16776961
     },
     "lassoHud": {
-      "enabled": true
+      "enabled": false
     }
   },
   "otherLocations": {
@@ -631,13 +662,15 @@
       "enableGlowingMushroomHelper": true,
       "solveHungryHiker": true,
       "solveTreasureHunter": true,
-      "enableCallTrevorMessage": true
+      "enableCallTrevorMessage": true,
+      "enablePeltAnimalHighlighter": true
     },
     "rift": {
       "mirrorverseWaypoints": true,
       "blobbercystGlow": true,
       "enigmaSoulWaypoints": false,
       "highlightFoundEnigmaSouls": true,
+      "autoDetectMcGrubber": true,
       "mcGrubberStacks": 0
     },
     "end": {
@@ -661,11 +694,16 @@
   "slayers": {
     "highlightMinis": "GLOW",
     "highlightBosses": "GLOW",
+    "highlightColor": -47104,
     "displayBossbar": true,
     "bossSpawnAlert": true,
     "miniBossSpawnAlert": true,
-    "slainTime": true,
+    "alertOtherMinibosses": false,
+    "showMiniBossNameInAlert": false,
+    "slainTime": false,
     "enableHud": true,
+    "hideSlayerMinibossSpawn": "ACTION_BAR",
+    "highlightUnclaimedRewards": true,
     "callMaddox": {
       "sendMessageOnFail": true,
       "sendMessageOnKill": false
@@ -685,23 +723,34 @@
       "holyIceUpdateFrequency": 5,
       "enableHealingMelonIndicator": true,
       "healingMelonHealthThreshold": 4.0,
-      "enableSteakStakeIndicator": true,
+      "enableSteakStakeIndicator": false,
       "steakStakeUpdateFrequency": 5,
       "enableManiaIndicator": true,
       "maniaUpdateFrequency": 5
     },
     "blazeSlayer": {
       "firePillarCountdown": "SOUND_AND_VISUAL",
-      "attunementHighlights": true
+      "attunementHighlights": true,
+      "muteBlazeSounds": false,
+      "hideHellionShield": "PASS"
+    },
+    "wolfSlayer": {
+      "muteWolfSounds": false,
+      "hideSvenPupNametag": true
+    },
+    "spiderSlayer": {
+      "muteSpiderSounds": false
     }
   },
   "chat": {
     "skyblockXpMessages": false,
-    "confirmationPromptHelper": false,
+    "confirmationPromptHelper": true,
+    "toastDisplayDuration": 4.0,
     "hideAbility": "PASS",
     "hideHeal": "PASS",
     "hideAOTE": "PASS",
     "hideImplosion": "PASS",
+    "hideSpiritSceptre": "PASS",
     "hideMoltenWave": "PASS",
     "hideAds": "PASS",
     "hideTeleportPad": "PASS",
@@ -892,59 +941,114 @@
   "eventNotifications": {
     "criterion": "SKYBLOCK",
     "reminderSound": "PLING",
-    "eventsReminderTimes": {
-      "New Year Celebration": [
-        60,
-        300
-      ],
-      "Bonus Fishing Festival": [
-        60,
-        300
-      ],
-      "Dark Auction": [
-        60,
-        300
-      ],
-      "Season of Jerry": [
-        60,
-        300
-      ],
-      "Jerry\u0027s Workshop Opens": [
-        60,
-        300
-      ],
-      "Traveling Zoo": [
-        60,
-        300
-      ],
-      "Spooky Festival": [
-        60,
-        300
-      ],
-      "Jacob\u0027s Farming Contest": [
-        60,
-        300
-      ],
-      "Election Booth Opens": [
-        60,
-        300
-      ],
-      "Hoppity\u0027s Hunt Begins": [
-        60,
-        300
-      ],
-      "Election Over!": [
-        60,
-        300
-      ],
-      "Year of the Pig Begins": [
-        60,
-        300
-      ],
-      "Cult of the Fallen Star": [
-        60,
-        300
-      ]
+    "events": {
+      "New Year Celebration": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Dark Auction": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Jacob\u0027s Farming Contest": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Election Over!": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Cult of the Fallen Star": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Year of the Pig Begins": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Election Booth Opens": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Hoppity\u0027s Hunt Begins": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Season of Jerry": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Jerry\u0027s Workshop Opens": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Traveling Zoo": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Bonus Fishing Festival": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "Spooky Festival": {
+        "enabled": true,
+        "reminderTimes": [
+          60,
+          300
+        ]
+      },
+      "SkyBlock Anniversary": {
+        "enabled": true,
+        "reminderTimes": []
+      },
+      "Bonus Mining Fiesta": {
+        "enabled": true,
+        "reminderTimes": []
+      },
+      "Harvest Feast Begins": {
+        "enabled": true,
+        "reminderTimes": []
+      },
+      "Mayor Jerry": {
+        "enabled": true,
+        "reminderTimes": []
+      }
     }
   },
   "misc": {
@@ -962,6 +1066,7 @@
     "dumpFormat": "SNBT",
     "showInvisibleArmorStands": false,
     "webSocketDebug": false,
-    "corpseFinderDebug": false
+    "corpseFinderDebug": false,
+    "enableRepoDev": false
   }
 }

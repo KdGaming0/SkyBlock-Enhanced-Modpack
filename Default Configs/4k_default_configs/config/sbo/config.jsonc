@@ -12,33 +12,43 @@
          */
         "hideOwnWaypoints": [],
         // Creates waypoints from chat messages (format: x: 20, y: 60, z: 80)
-        "patcherWaypoints": true
+        "patcherWaypoints": false,
+        // Assumes you are muted and instead of running /pc to send mod messages always prefers to send them client-side to yourself only.
+        "assumeMuted": false
     },
     "Diana": {
-        // Guess the burrow location. Needs Driping Lava Partciles and set /particlequality to Extreme for more accuracy
-        "dianaBurrowGuess": false,
+        // Guess the burrow location when using spade ability. Needs Dripping Lava Particles and set /particlequality to Extreme for more accuracy
+        "spadeGuess": true,
         /*
          * Guesses the burrow location from the arrow direction after digging a burrow 
          * §bNOTE!: This replaces the old Multi guess system!
-         * §cHave Dust Particles enabled!!!
-         * §aDo every burrow you see for doing diana the fastest way!
+         * §cHave Dust Particles enabled!
+         * §aDo every burrow you see for doing Diana the fastest way!
          */
         "arrowGuess": false,
+        // Detects burrow locations when being close to them from the particles when holding shovel to register/update it as a Treasure, Mob or Start burrow. To reset waypoints type /sboclearburrows
+        "closeBurrowDetection": true,
+        // Shows a beacon beam for waypoints going to the sky if enabled.
+        "showBeaconBeam": true,
         // Shows a title to guess normally when the arrow guess is inaccurate
         "showTitleWhenInaccurate": false,
-        // If enabled, the arrow guess waypoints will not be cleared when changing worlds/lobby
-        "dontClearArrowGuess": true,
-        // Detects Diana burrows | to reset waypoints /sboclearburrows
-        "dianaBurrowDetect": false,
+        // Shows a title to guess normally when the burrow chain is complete and there's no more guesses or burrows at least 90 blocks nearby
+        "showTitleWhenChainEnd": false,
         /*
          * Select the warps you want to be able to warp to with the guess and inquisitor warp keys.
-         * Valid Values: CASTLE, WIZARD, CRYPT, STONKS, DA, TAYLOR
+         * Valid Values: CASTLE, WIZARD, CRYPT, STONKS, DA, TAYLOR, MUSEUM
          */
         "allowedWarps": [
+            "CRYPT",
+            "CASTLE",
             "WIZARD",
+            "TAYLOR",
+            "STONKS",
             "DA",
-            "CASTLE"
+            "MUSEUM"
         ],
+        // If enabled, will show a title when warp is available. Wait a few seconds to see if any close burrows appear, and if not, proceed to warp with the key, as the title updates live with new burrows discovered, it might sometimes only show for a split second when a new closer burrow is found making the warp unnecessary after title was shown.
+        "showTitleWhenWarpAvailable": false,
         // If enabled, the warp key will not warp you if you are within 60 blocks of a burrow
         "dontWarpIfBurrowClose": true,
         /*
@@ -46,6 +56,13 @@
          * Range: 0 - 60
          */
         "warpDiff": 10,
+        // If enabled, ignores Y-Level when comparing distance between warp and the burrow when determining the closest warp for the Wizard and Castle warps, which have high Y-Level.
+        "ignoreYLevel": false,
+        /*
+         * Blocks at which good warps are prioritized over bad ones (Currently only Castle and Crypt). For example, if you set it to 100, when the Crypt warp is the closest warp to a burrow, and the Castle is second closest, with Crypt warp being only 100 blocks or less closer than Castle, Castle will be preferred over Crypt warp for accessibility, as it can be faster to AOTV out of castle to reach the burrow whereas Crypt is longer to get out. (0 to disable)
+         * Range: 0 - 150
+         */
+        "badWarpDistance": 0,
         /*
          * The delay bevor you can warp after guessing with spade. (0 to disable)
          * Range: 0 - 1000
@@ -59,6 +76,8 @@
          * Valid Values: OFF, TOTAL, EVENT, SESSION
          */
         "mobTracker": "OFF",
+        // Assumes you get loot share on all Kings, Inquisitors and Manticores. This works around the LOOT SHARE! message not being always sent by the server, but might inflate your numbers if you don't actually do enough damage to these mobs for lootshare. To reduce false positives a bit (not fully!), you need to be 30 blocks nearby the rare mob when it died.
+        "assumeAllLS": false,
         /*
          * Shows your Diana loot, /sboguis to move the overlay
          * §bNOTE!: You can interact with the tracker in the inventory!!!§r
@@ -67,12 +86,23 @@
          * Valid Values: OFF, TOTAL, EVENT, SESSION
          */
         "lootTracker": "OFF",
+        // Always prefers NPC prices for select items; such as the Pet Item drops like Cretan Urn, Dwarf Turtle Shelmet, Antique Remedies, Washed Up Souvenir and Crochet Tiger Plushie, along with Hilt of Revelations, useful if NPC selling them.
+        "npcPriceOverrides": false,
+        // Excludes coins from the loot tracker's profit calculation when enabled, useful if using a non-1B crown since coins are consumed.
+        "excludeCoinsFromProfit": false,
         // Hides any loot or mob lines that have not been tracked yet (value is 0) to reduce clutter in the overlays.
         "hideUnobtainedItems": true,
         // Combines the base item and the Loot Share (LS) variant into a single line. The individual LS count is shown on hover.
         "combineLootLines": false,
+        /*
+         * Pause the trackers if it is not modified for this amount of seconds. Minimum 15, maximum 900 seconds is allowed.
+         * Range: 15 - 900
+         */
+        "afkTimeout": 60,
         // Shows stats like Mobs since Inquisitor, Inquisitors since Chimera, /sboguis to move the overlay
         "statsTracker": false,
+        // Resets the Diana session tracker when you restart Minecraft
+        "resetSessionOnGameRestart": false,
         // Shows your highest magic find for sticks and chimeras (only after you dropped it once), /sboguis to move the overlay
         "magicFindTracker": false,
         // Set if you have a Four-Eyed Fish on your griffin pet
@@ -90,7 +120,7 @@
         "lootAnnouncerScreen": false,
         // Shows chimera/stick/relic price as a subtitle on screen
         "lootAnnouncerPrice": true,
-        // Announces chimera/stick/relic and Shelmet/Plushie/Remedies (only when dropped from Inquisitor) in party chat
+        // Announces chimera/wool/stinger/food in party chat
         "lootAnnouncerParty": false,
         // Enables custom chim message
         "chimMessageBool": false,
@@ -122,6 +152,21 @@
         "customWoolMessage": [
             "&6[SBO] &6&lRARE DROP! &6Shimmering Wool! &b+{mf} ✯ Magic Find &b#{amount}"
         ],
+        /*
+         * Fade-in (ticks) for rare mob titles
+         * Range: 0 - 100
+         */
+        "rareTitleFadeIn": 0,
+        /*
+         * Display time (ticks) for rare mob titles
+         * Range: 0 - 100
+         */
+        "rareTitleTime": 90,
+        /*
+         * Fade-out (ticks) for rare mob titles
+         * Range: 0 - 100
+         */
+        "rareTitleFadeOut": 20,
         // Draws line for guess, Disable View Bobbing in controls if its buggy
         "guessLine": true,
         // Draws line to rare mob waypoints, Disable View Bobbing in controls if its buggy
@@ -133,18 +178,6 @@
          * Range: 1 - 20
          */
         "dianaLineWidth": 5,
-        /*
-         * Removes the guess waypoint when you are within this distance of it (0 to disable)
-         * Range: 0 - 20
-         */
-        "removeGuessDistance": 0,
-        // Removes the rare mob waypoint when you are within 3 blocks of it
-        "removeRareMobwaypoint": true,
-        /*
-         * Removes the rare mob waypoint beam when you are within this distance of it (0 to disable)
-         * Range: 0 - 20
-         */
-        "removeBeam": 8,
         // Sends the coordinates of rare mobs(King, Manti, Sphinx, Inq)to your party
         "shareRareMob": true,
         /*
@@ -161,7 +194,7 @@
         "receiveRareMob": true,
         /*
          * Select which mobs to receive
-         * §bOTHER = Rare mobs from players that dont ping with sbo (mainly skyhanni)
+         * §bOTHER = Rare mobs from players that don't ping with sbo (mainly skyhanni)
          * Valid Values: INQ, MANTICORE, KING, SPHINX, OTHER
          */
         "ReceiveMobs": [
@@ -171,14 +204,14 @@
             "SPHINX",
             "OTHER"
         ],
-        // Highlights rare mobs(King, Manti, Sphinx, Inq) with a glowing effect
+        // Highlights rare mobs (King, Manti, Sphinx, Inq) with a glowing effect
         "HighlightRareMobs": true,
         /*
          * Color for the rare mob highlight effect
          * [Color Format: RGBA]
          */
         "HighlightColor": -16713985,
-        // All coordinates from chat are considered rare mobs(King, Manti, Sphinx, Inq) only works in hub during diana
+        // All coordinates from chat are considered rare mobs (King, Manti, Sphinx, Inq)
         "allWaypointsAreInqs": false,
         // Sends a text on Inq spawn 5 seconds after spawn, use {since} for mobs since mob, {chance} for mob chance
         "announceInqText": [
@@ -219,7 +252,7 @@
         ],
         // Displays HP of mythological mobs near you. /sboguis to move it
         "mythosMobHp": true,
-        // Helps you solve the sphinx riddle by showing you the answer choices in chat and it automatically clicks the correct one for you when you click anywehre while the chat is open.
+        // Helps you solve the sphinx riddle by showing you the answer choices in chat and it automatically clicks the correct one for you when you click anywhere while the chat is open.
         "sphinxSolver": true
     },
     "Party Commands": {
@@ -242,20 +275,20 @@
     },
     "Customization": {
         /*
-         * Pick a color for your guess
+         * Pick a color for closest guess
          * [Color Format: RGBA]
          */
-        "guessColor": -16713985,
+        "ClosestGuessColor": -6736948,
+        /*
+         * Pick a color for other guesses
+         * [Color Format: RGBA]
+         */
+        "OtherGuessColor": -16713985,
         /*
          * Pick a color for start burrows
          * [Color Format: RGBA]
          */
         "StartColor": -11141291,
-        /*
-         * Pick a color for your focused guess
-         * [Color Format: RGBA]
-         */
-        "focusedColor": -6736948,
         /*
          * Pick a color for mob burrows
          * [Color Format: RGBA]
@@ -266,6 +299,28 @@
          * [Color Format: RGBA]
          */
         "TreasureColor": -22016,
+        /*
+         * Pick a color for rare mob waypoints
+         * [Color Format: RGBA]
+         */
+        "RareMobColor": -10752,
+        /*
+         * Pick a color for other waypoints, e.g., waypoints created from non-SBO player-sent coordinates (Separate from rare mob color).
+         * [Color Format: RGBA]
+         */
+        "OtherWaypointColor": -16763905,
+        // Uses a dynamic waypoint opacity that changes based on how far or close you are to the waypoints. If you enable this, the Waypoint Opacity setting below will not take effect.
+        "dynamicWaypointOpacity": true,
+        /*
+         * The opacity of the rendered waypoints. 50 will make it 50% transparent, 100% fully opaque, 0% fully invisible, etc. (default 50)
+         * Range: 0 - 100
+         */
+        "waypointOpacity": 50,
+        /*
+         * The opacity of the text on the rendered waypoints. 50 will make it 50% transparent, 100% fully opaque, 0% fully invisible, etc. (default 100)
+         * Range: 0 - 100
+         */
+        "waypointTextOpacity": 100,
         // Enables shadow for waypoint text
         "waypointTextShadow": true,
         /*
@@ -273,6 +328,13 @@
          * Range: 0.30000001192092896 - 2
          */
         "waypointTextScale": 0.7,
+        /*
+         * The distance cutoff at which the distance text disappears, and the times dug text appears. For example if set to 50 will not display the distance text if 50m or closer, and will only display the times dug when 50m or closer. (0 to always show distance and times dug, if times dug is enabled)
+         * Range: 0 - 150
+         */
+        "showDistanceCutoff": 50,
+        // Shows times dug on the waypoint text for known burrows.
+        "showTimesDug": true,
         // Set the sound that plays when an rare mob spawns. (enter filename)
         "rareMobSound": [
             "exporb"
@@ -399,15 +461,15 @@
          * Range: 0 - 1
          */
         "stickVolume": 1.0,
-        // Set the sound that plays when you drop a Shelmet/Plushie/Remedies. (enter filename)
-        "sprSound": [
+        // Set the sound that plays when you drop a crown of greed, washed-up souvenir, dwarf turtle shelmet, crochet tiger plushie, antique remedies, cretan urn or hilt of revelations. (enter filename)
+        "miscDropSound": [
             ""
         ],
         /*
-         * Set the volume of the Shelmet/Plushie/Remedies drop sound
+         * Set the volume of the misc drop sound
          * Range: 0 - 1
          */
-        "sprVolume": 1.0
+        "miscDropVolume": 1.0
     },
     "PartyFinder": {
         // Auto invites players that send you a join request and meet the party requirements

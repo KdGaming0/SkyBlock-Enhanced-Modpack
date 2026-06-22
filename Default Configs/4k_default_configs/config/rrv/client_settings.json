@@ -7,5 +7,16 @@
   "centerSearch": true,
   "showButtons": true,
   "wrapScrolling": "on_buttons",
-  "sidePanel": "disabled"
+  "sidePanel": "disabled",
+  "sidePanelEnabled": "with_item_view",
+  "namespaceTooltip": "hide",
+  "showProgressBar": false,
+  "fluidUnitDroplets": false,
+  "centerRecipeScreen": true,
+  "showRecipeId": false,
+  "recipeBookButton": false,
+  "recipeBookTheme": true,
+  "localFallback": "disabled",
+  "workstationDisplay": "hide",
+  "recipeSharing": false
 }
