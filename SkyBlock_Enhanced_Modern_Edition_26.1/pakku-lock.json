@@ -1328,6 +1328,45 @@
             ]
         },
         {
+            "pakku_id": "Sy7X1XBvLBKIIPXf",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "feesh"
+            },
+            "name": {
+                "modrinth": "Feesh"
+            },
+            "id": {
+                "modrinth": "QCpogurE"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Feesh-1.8.1+26.1-fabric.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/lAsCRRJ7/Feesh-1.8.1+26.1-fabric.jar",
+                    "id": "lAsCRRJ7",
+                    "parent_id": "QCpogurE",
+                    "hashes": {
+                        "sha512": "f91146ca249fdceb0498cb132a1b40af9361c4c919e6544b5b9cf3e42b2dabe0a8fc3c8cbe8b57eddacf1f81b2cc76e9738587688ffbdcbe3a0167698670488f",
+                        "sha1": "421d8550bcda5559c7538e93ae2d62d97e8e639b"
+                    },
+                    "required_dependencies": [],
+                    "size": 2478644,
+                    "date_published": "2026-06-22T15:40:25.100979Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NfYGfWZt7OWDDRCx",
             "type": "MOD",
             "side": "BOTH",

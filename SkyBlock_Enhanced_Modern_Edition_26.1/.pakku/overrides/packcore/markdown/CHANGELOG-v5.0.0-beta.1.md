@@ -63,8 +63,6 @@ These will be added back as soon as they're updated.
 
 - **Bazaar Utils** — not yet updated to 26.1
 
-- **Feesh** - bug that crashes the game
-
 </details>
 
 <details>
