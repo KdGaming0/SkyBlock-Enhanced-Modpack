@@ -190,25 +190,25 @@ jobs:
             ${{ env.PACK_DIR }}/build/
             !${{ env.PACK_DIR }}/build/.*
 
-  # ── TEST-CLIENT ─────────────────────────────────────────────────────────────
+# ── TEST-CLIENT ─────────────────────────────────────────────────────────────
   test-client:
     name: Test Client Launch
     runs-on: ubuntu-latest
     needs: [validate, build]
     timeout-minutes: 20
 
-  steps:
-    - uses: actions/checkout@v6
-      with:
-        sparse-checkout: .github/scripts
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: .github/scripts
 
-    - name: Set up Java ${{ env.JAVA_VERSION }}
-      uses: actions/setup-java@v5
-      with:
-        java-version: ${{ env.JAVA_VERSION }}
-        distribution: temurin
+      - name: Set up Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v5
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: temurin
 
-    - name: Download build artifacts
+      - name: Download build artifacts
         if: ${{ env.ACT }}
         run: |
           TARGET="${{ env.PACK_DIR }}/build/modrinth/SkyBlock Enhanced-${{ needs.validate.outputs.modpack_version }}.mrpack"
@@ -221,28 +221,19 @@ jobs:
             find . -name '*.mrpack' || true
           fi
 
-      # ── Tier 1: fast mrpack validation (always runs) ─────────────────────
-
       - name: Tier 1 – Validate mrpack
         run: |
           chmod +x .github/scripts/setup_mc_client.sh
           .github/scripts/setup_mc_client.sh
 
-      # ── Decide whether to run the full client launch ──────────────────────
-      # Skip Tier 2 when:
-      #  • running under `act` (no Xvfb / full network support locally)
-      #  • commit message contains [skip-client-test]
-
       - name: Check for Tier 2 skip conditions
         id: skip_check
         run: |
-          # act sets ACT=true automatically
           if [[ -n "${ACT:-}" ]]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
             echo "  [INFO]  Running under act — skipping Tier 2 (client launch)"
             exit 0
           fi
-
           MSG=$(git log -1 --pretty=%B 2>/dev/null || echo "")
           if echo "$MSG" | grep -q "\[skip-client-test\]"; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
@@ -251,64 +242,14 @@ jobs:
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
 
-      # ── Extract modpack mods + overrides into run/ ────────────────────────
-      # The mc-runtime-test action uses run/ as the Minecraft game directory.
-      # We download every file listed in modrinth.index.json into its declared
-      # path under run/, and copy mrpack overrides into run/ as well.
-
       - name: Extract mods and overrides from mrpack
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
         run: |
           chmod +x .github/scripts/extract_mrpack.py
           python3 .github/scripts/extract_mrpack.py
 
-      # ── Stage mc-runtime-test mod ─────────────────────────────────────────
-      # mc-runtime-test 4.1.0 covers up to 1.21.10; 1.21.11 is a security
-      # patch with no mod-API changes, so the 1.21.10 jar is fully compatible.
-      # We download it manually and pass mc-runtime-test: none to the action
-      # so it doesn't attempt (and fail) to find a 1.21.11 release jar.
-
-      - name: Stage mc-runtime-test mod
-        if: ${{ steps.skip_check.outputs.skip != 'true' }}
-        env:
-          MRT_VER: ${{ env.MC_RUNTIME_TEST_VERSION }}
-          MRT_MC:  ${{ env.MC_RUNTIME_TEST_JAR_MC }}
-        run: |
-          mkdir -p run/mods
-          echo "  [INFO]  Staging mc-runtime-test ${MRT_VER} (jar built for MC ${MRT_MC})"
-          ASSET_URL=$(curl -sSL \
-            "https://api.github.com/repos/headlesshq/mc-runtime-test/releases/tags/${MRT_VER}" \
-            | python3 -c "
-          import sys, json, os
-          mc = os.environ['MRT_MC']
-          assets = json.load(sys.stdin)['assets']
-          match = next(
-              (a['browser_download_url'] for a in assets
-               if mc in a['name'] and 'fabric-release' in a['name']),
-              None
-          )
-          if not match:
-              print(f'ERROR: no {mc} fabric-release jar in mc-runtime-test {os.environ[\"MRT_VER\"]} assets', file=sys.stderr)
-              sys.exit(1)
-          print(match)
-          ")
-          echo "  [INFO]  Downloading: $ASSET_URL"
-          curl -sSL -o run/mods/mc-runtime-test.jar "$ASSET_URL"
-          echo "  [OK]    mc-runtime-test mod staged"
-
-      # ── Tier 2: headless client launch via mc-runtime-test action ─────────
-      # The action:
-      #   1. Creates HeadlessMC/config.properties (gamedir=run/, offline=true, etc.)
-      #   2. Downloads HMC 2.7.0 launcher jar
-      #   3. Installs Fabric for MC_VERSION (cached between runs)
-      #   4. Launches: xvfb-run java -jar headlessmc-launcher.jar --command launch .*fabric.* -regex
-      #
-      # mc-runtime-test: none  → we already staged the jar above; skip the
-      #                          action's built-in download step.
-      # dummy-assets: true     → replaces textures/sounds with tiny stubs to
-      #                          reduce download time and memory footprint.
-      # xvfb: true             → uses a virtual framebuffer; more stable than
-      #                          -lwjgl patching for 1.21.x on ubuntu-latest.
+      # ── Stage mc-runtime-test mod step REMOVED ───────────────────────────
+      # mc-runtime-test: fabric in the action below handles the JAR download.
 
       - name: Tier 2 – Headless client launch
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
@@ -322,8 +263,6 @@ jobs:
           dummy-assets:     true
           xvfb:             true
           cache-mc:         github
-
-      # ── Capture logs if anything went wrong ──────────────────────────────
 
       - name: Upload game logs on failure
         if: ${{ !env.ACT && failure() }}
