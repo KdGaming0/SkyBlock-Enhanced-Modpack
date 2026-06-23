@@ -1,0 +1,122 @@
+{
+	"orderLimit": {
+		"position": null,
+		"enabled": true,
+		"used_today": 1282474.3715000001,
+		"last_reset_epoch_day": 20627,
+		"daily_limit": 1.5E10,
+		"use_compact": true
+	},
+	"bookmark": {
+		"bookmarked_items": [],
+		"position": null,
+		"enabled": true,
+		"show_everywhere": true,
+		"max_visible_children": 8,
+		"show_order_indicators": true
+	},
+	"priceDiff": {
+		"enabled": true,
+		"position": null
+	},
+	"orderValueOverlay": {
+		"position": null,
+		"enabled": false
+	},
+	"orderList": {
+		"position": null,
+		"enabled": true,
+		"show_in_bazaar": true,
+		"max_visible_children": 8
+	},
+	"orderPresets": {
+		"container_position": {
+			"x": 552,
+			"y": 174
+		},
+		"sign_position": null,
+		"enabled": true,
+		"enable_on_container": true,
+		"enable_on_sign": true,
+		"presets": []
+	},
+	"orderBookPrice": {
+		"sign_position": null,
+		"enabled": true
+	},
+	"productInfo": {
+		"enabled": true,
+		"item_click_enabled": true,
+		"ctrl_shift_enabled": true,
+		"show_outside_bazaar": false,
+		"price_tooltip_enabled": false,
+		"site": "SkyblockBz"
+	},
+	"orderActions": {
+		"enabled": true,
+		"copy_remaining": true,
+		"copy_remaining_modifier": "Ctrl",
+		"reopen_bazaar": false,
+		"reopen_last_buy_order_enabled": true,
+		"clear_on_close": true
+	},
+	"trackedOrders": {
+		"enabled": true,
+		"notify_best": true,
+		"only_on_priority_regain": true,
+		"sound_best": false,
+		"notify_matched": true,
+		"sound_matched": true,
+		"notify_undercut": true,
+		"sound_undercut": true,
+		"notify_self_undercut": true,
+		"goto_on_matched": "Order",
+		"goto_on_undercut": "Order",
+		"show_queue_info": true,
+		"queue_display_mode": "Both",
+		"group_orders": false,
+		"include_price_per_unit": false
+	},
+	"orderHighlight": {
+		"enabled": true
+	},
+	"flipHelper": {
+		"enabled": true
+	},
+	"orderProtection": {
+		"enabled": true,
+		"show_chat_message": true,
+		"sound_on_blocked": true,
+		"block_undercut_percentage": true,
+		"max_buy_order_undercut": 15.0,
+		"max_sell_offer_undercut": 15.0,
+		"block_undercut_of_opposing": true
+	},
+	"tax": 1.125,
+	"alert": {
+		"enabled": true,
+		"sound_on_alert": true,
+		"alerts": []
+	},
+	"orderListTooltip": {
+		"enabled": true,
+		"show_status": true,
+		"show_queue": true,
+		"show_prices": true,
+		"show_only_when_undercut": false
+	},
+	"orderItemTooltip": {
+		"enabled": true,
+		"show_status": true,
+		"show_queue": true,
+		"show_prices": false,
+		"show_only_when_undercut": true,
+		"show_estimated_time": false
+	},
+	"chatFilter": {
+		"enabled": true
+	},
+	"orderBook": {
+		"enabled": true
+	}
+}

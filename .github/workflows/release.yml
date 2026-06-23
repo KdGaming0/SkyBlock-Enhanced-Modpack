@@ -18,8 +18,7 @@ env:
   # which runtime-test JAR we stage. Bump MC_RUNTIME_TEST_JAR_MC when a
   # release for 1.21.11 ships upstream.
   # Upstream: https://github.com/headlesshq/mc-runtime-test/releases
-  MC_RUNTIME_TEST_VERSION: '4.1.0'
-  MC_RUNTIME_TEST_JAR_MC:  '1.21.10'  # TODO: bump to 1.21.11 when released
+  MC_RUNTIME_TEST_VERSION: '4.4.0'
 
   # Local runs: `act` sets ACT=true automatically. We use that single flag
   # to gate artifact upload/download and Tier 2 client launch. No separate
@@ -196,25 +195,20 @@ jobs:
     name: Test Client Launch
     runs-on: ubuntu-latest
     needs: [validate, build]
-    timeout-minutes: 30
+    timeout-minutes: 20
 
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          sparse-checkout: .github/scripts
+  steps:
+    - uses: actions/checkout@v6
+      with:
+        sparse-checkout: .github/scripts
 
-      # ── Obtain the built mrpack ───────────────────────────────────────────
+    - name: Set up Java ${{ env.JAVA_VERSION }}
+      uses: actions/setup-java@v5
+      with:
+        java-version: ${{ env.JAVA_VERSION }}
+        distribution: temurin
 
-      - name: Download build artifacts
-        if: ${{ !env.ACT }}
-        uses: actions/download-artifact@v6
-        with:
-          name: build
-          path: build
-
-      # When running locally with `act`, copy a pre-built mrpack into place.
-      # Build the mrpack first with: cd <PACK_DIR> && java -jar ../pakku.jar export
-      - name: Use local build artifacts (act)
+    - name: Download build artifacts
         if: ${{ env.ACT }}
         run: |
           TARGET="${{ env.PACK_DIR }}/build/modrinth/SkyBlock Enhanced-${{ needs.validate.outputs.modpack_version }}.mrpack"
@@ -318,12 +312,12 @@ jobs:
 
       - name: Tier 2 – Headless client launch
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
-        uses: headlesshq/mc-runtime-test@4.1.0  # keep in sync with MC_RUNTIME_TEST_VERSION
+        uses: headlesshq/mc-runtime-test@4.4.0
         with:
           mc:               ${{ needs.validate.outputs.minecraft_version }}
           modloader:        fabric
           regex:            '.*fabric.*'
-          mc-runtime-test:  none
+          mc-runtime-test:  fabric
           java:             ${{ env.JAVA_VERSION }}
           dummy-assets:     true
           xvfb:             true

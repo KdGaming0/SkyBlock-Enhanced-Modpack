@@ -14,7 +14,7 @@ on:
       - '**'
 
 env:
-  PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_1.21.11
+  PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_26.1
   JAVA_VERSION: '21'
 
 jobs:
