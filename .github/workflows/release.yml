@@ -209,6 +209,13 @@ jobs:
           distribution: temurin
 
       - name: Download build artifacts
+        if: ${{ !env.ACT }}
+        uses: actions/download-artifact@v6
+        with:
+          name: build
+          path: build
+
+      - name: Use local build artifacts (act)
         if: ${{ env.ACT }}
         run: |
           TARGET="${{ env.PACK_DIR }}/build/modrinth/SkyBlock Enhanced-${{ needs.validate.outputs.modpack_version }}.mrpack"
