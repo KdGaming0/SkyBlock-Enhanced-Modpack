@@ -398,7 +398,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Catharsis-1.0.0-beta.17-26.1.jar",
+                    "file_name": "Catharsis-1.0.0-beta.18-26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -408,19 +408,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/fc4wBpRx/versions/XVF0FOaI/Catharsis-1.0.0-beta.17-26.1.jar",
-                    "id": "XVF0FOaI",
+                    "url": "https://cdn.modrinth.com/data/fc4wBpRx/versions/T5qQxwIH/Catharsis-1.0.0-beta.18-26.1.jar",
+                    "id": "T5qQxwIH",
                     "parent_id": "fc4wBpRx",
                     "hashes": {
-                        "sha512": "9e8ecdb8e955d5a74037db5d6919b75b5abe01e7f250b1e82d0cccad966f71a7d831298a2cf5b80d5667d63639ea155c54c5f48b83c17cb7f06741eac0c1baa4",
-                        "sha1": "b4fa91df820451a03a1a8b77c60fc1c28c21413e"
+                        "sha512": "79a7f80bded92f4fa5619e844d76499fa837ba5634888f054b40de87af2d67fd3b244c2db6667b48cbef501814aea5eff59b6cf39f43eeb9a5bd6722118cd483",
+                        "sha1": "0cda49f56eb0bf3c7d5f1534f7324f38e23bbb5c"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
                         "P7dR8mSH"
                     ],
-                    "size": 6427281,
-                    "date_published": "2026-06-17T10:13:49.212376Z"
+                    "size": 5986815,
+                    "date_published": "2026-06-27T13:05:56.457572Z"
                 }
             ]
         },
@@ -1541,31 +1541,29 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "FurfSky Reborn.cats.zip",
+                    "file_name": "FurSky Reborn.cats.zip",
                     "mc_versions": [
-                        "1.21.9",
-                        "1.21.10",
-                        "1.21.11",
                         "26.1",
                         "26.1.1",
-                        "26.1.2"
+                        "26.1.2",
+                        "26.2"
                     ],
                     "loaders": [
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/khMbd0K1/versions/PBwsFNuf/FurfSky Reborn.cats.zip",
-                    "id": "PBwsFNuf",
+                    "url": "https://cdn.modrinth.com/data/khMbd0K1/versions/bE0Ccf6W/FurSky Reborn.cats.zip",
+                    "id": "bE0Ccf6W",
                     "parent_id": "khMbd0K1",
                     "hashes": {
-                        "sha512": "6e4afb71f924c13abce9d80e80f7b89d89b7faeb51af33ca2f15341a9f8c72534f35e993674869a0c146b67b40d36add5212366a2eda925082c3221fdb7dd4fc",
-                        "sha1": "719b185d5d07549acf704fe479d65eda66afa1de"
+                        "sha512": "bcbdb0adfa7eeb5d280173b120d0f9a9c5043bf6051555c7ac26d98369c8aac0bc7aa347a0162a280bbd6b0acc7f826d63d5f27937f701cebb390f06b7b97e0d",
+                        "sha1": "72c7c4891fa99de6188cfc90fd5b162d3ae03498"
                     },
                     "required_dependencies": [
                         "fc4wBpRx"
                     ],
-                    "size": 2164251,
-                    "date_published": "2026-03-27T18:59:13.548005Z"
+                    "size": 2378121,
+                    "date_published": "2026-06-27T12:42:58.154936Z"
                 }
             ]
         },
@@ -1964,48 +1962,6 @@
             ]
         },
         {
-            "pakku_id": "EP6qLxSUM5Wz8L3H",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "libjf",
-                "modrinth": "libjf"
-            },
-            "name": {
-                "curseforge": "LibJF",
-                "modrinth": "LibJF"
-            },
-            "id": {
-                "curseforge": "482600",
-                "modrinth": "WKwQAwke"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "libjf-26.1.2.jar",
-                    "mc_versions": [
-                        "26.1",
-                        "26.1.1",
-                        "26.1.2"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/WKwQAwke/versions/Icy7xbUM/libjf-26.1.2.jar",
-                    "id": "Icy7xbUM",
-                    "parent_id": "WKwQAwke",
-                    "hashes": {
-                        "sha512": "43f1ea31d105ef42b463d5339da64d65fcdeb28c32956bf6ce52edf0b3db7f406418c3631d63797e14b0de07bf9171558e655d7b0ae735d1d9c17aa41c77a940",
-                        "sha1": "f18b592505a1e82a12ed64f2a8b8a690f556b397"
-                    },
-                    "required_dependencies": [],
-                    "size": 1490307,
-                    "date_published": "2026-03-30T14:19:15.953109Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "7sZdU2E6nh8w09uZ",
             "type": "MOD",
             "side": "BOTH",
@@ -2090,32 +2046,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "longview-1.2.1.jar",
-                    "mc_versions": [
-                        "26.1",
-                        "26.1.1",
-                        "26.1.2"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8029/607/longview-1.2.1.jar",
-                    "id": "8029607",
-                    "parent_id": "1465234",
-                    "hashes": {
-                        "sha1": "1bac3bbe0a5493c7bb8ec8329470aaabb95bfc58",
-                        "md5": "969ea45b7b62c0e5819d8d3740762ea6"
-                    },
-                    "required_dependencies": [],
-                    "size": 35581,
-                    "date_published": "2026-05-02T23:35:00.147Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "longview-1.2.1.jar",
+                    "file_name": "longview-1.2.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2126,16 +2058,40 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/4lDrPSXX/versions/UtMVLmYp/longview-1.2.1.jar",
-                    "id": "UtMVLmYp",
+                    "url": "https://cdn.modrinth.com/data/4lDrPSXX/versions/39hMrVrb/longview-1.2.2.jar",
+                    "id": "39hMrVrb",
                     "parent_id": "4lDrPSXX",
                     "hashes": {
-                        "sha512": "ab3adf4dc303a2641c03691c9874f126474146b5c8a55d1ac2439179fb03bc3d18698a2b6bd750ca08b720c310f864194cebb19f5cd08c0c5c435847220d726e",
-                        "sha1": "1bac3bbe0a5493c7bb8ec8329470aaabb95bfc58"
+                        "sha512": "a667baa5bb6ad9d495de9db5b262797f3575f93ee8dc91ba17313bbf460a792ec525c5cfd4ed06b727357565263e1228b920d84e7b02c7274d3906e7d4befdaa",
+                        "sha1": "f1870b6d6982af173ae7166b811f6dec6019b56a"
                     },
                     "required_dependencies": [],
-                    "size": 35581,
-                    "date_published": "2026-05-02T23:34:59.704448Z"
+                    "size": 36806,
+                    "date_published": "2026-06-27T02:49:05.523187Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "longview-1.2.2.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8327/155/longview-1.2.2.jar",
+                    "id": "8327155",
+                    "parent_id": "1465234",
+                    "hashes": {
+                        "sha1": "f1870b6d6982af173ae7166b811f6dec6019b56a",
+                        "md5": "0291e9620411a9610427e06714b9fb55"
+                    },
+                    "required_dependencies": [],
+                    "size": 36806,
+                    "date_published": "2026-06-27T02:49:05.433Z"
                 }
             ]
         },
@@ -3579,7 +3535,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.1.5+26.1.2.jar",
+                    "file_name": "skyblock_enhancements-1.1.6+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3589,23 +3545,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/9cJiqyGC/skyblock_enhancements-1.1.5+26.1.2.jar",
-                    "id": "9cJiqyGC",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/bDMcEQTh/skyblock_enhancements-1.1.6+26.1.2.jar",
+                    "id": "bDMcEQTh",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "00b84d134e01ce2c44215f0034fca0f2388a6b81e7240c303fc049da6a109e59c896b39cc3d7d55697bde871bc67e6051c85122cfc246e96e94fbc68b37f398c",
-                        "sha1": "9ad3a625e7d4a13c240ccad893d8a770c4e30c32"
+                        "sha512": "3422d3b8dc673605c405223b9d29e6673cdc78c84b1653ed580b49b9135d8016dd0a59e3b608db7b0a99a4898c0747ad0485e30937285dac09389e6b8d59c579",
+                        "sha1": "5040d2478d5a67a6d5d082ed99b7c6a69f0dfba3"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "AOEDs9Al"
                     ],
-                    "size": 1108161,
-                    "date_published": "2026-06-22T19:44:28.323051Z"
+                    "size": 1111721,
+                    "date_published": "2026-06-27T11:35:48.369831Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.1.5+26.1.2.jar",
+                    "file_name": "skyblock_enhancements-1.1.6+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3615,18 +3571,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8302/417/skyblock_enhancements-1.1.5+26.1.2.jar",
-                    "id": "8302417",
+                    "url": "https://edge.forgecdn.net/files/8328/843/skyblock_enhancements-1.1.6+26.1.2.jar",
+                    "id": "8328843",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "9ad3a625e7d4a13c240ccad893d8a770c4e30c32",
-                        "md5": "5f9007669c33c8cb6f0c8ca08f7b7a5f"
+                        "sha1": "5040d2478d5a67a6d5d082ed99b7c6a69f0dfba3",
+                        "md5": "0993d9f4b807a471c173870186d55f9c"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1108161,
-                    "date_published": "2026-06-22T19:44:26.130Z"
+                    "size": 1111721,
+                    "date_published": "2026-06-27T11:35:48.127Z"
                 }
             ]
         },
@@ -3835,7 +3791,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "enhanced_storage-0.7.0+26.1.2.jar",
+                    "file_name": "enhanced_storage-0.7.1+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3844,19 +3800,19 @@
                     "loaders": [
                         "fabric"
                     ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ICyROmSc/versions/59Wo0ACN/enhanced_storage-0.7.0+26.1.2.jar",
-                    "id": "59Wo0ACN",
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ICyROmSc/versions/hDdsyUCQ/enhanced_storage-0.7.1+26.1.2.jar",
+                    "id": "hDdsyUCQ",
                     "parent_id": "ICyROmSc",
                     "hashes": {
-                        "sha512": "239a276b497b9269424bb75af1bdad0ddb3cc2222711142bae3b6847d747eede97fc6ffcef6d2693a8c6757b6283f6a08735455096af088a770c3b42f3ee442b",
-                        "sha1": "03d78b796caccdbaab0909440ac7803fe7a7a32e"
+                        "sha512": "b7009b68af39d788313f487b21e87ebd3b8adba6c8f03198978c469194d2da919f75574704ec8946db7aa3cf6358c164543a25108600b84f5c381b281fde47dc",
+                        "sha1": "895dc972bee2173407d77270aca5fcb851366a2c"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 230771,
-                    "date_published": "2026-06-26T18:59:58.325485Z"
+                    "size": 231618,
+                    "date_published": "2026-06-27T14:53:22.283823Z"
                 }
             ]
         },

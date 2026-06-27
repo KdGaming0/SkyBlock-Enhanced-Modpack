@@ -2,14 +2,17 @@
 	"orderLimit": {
 		"position": null,
 		"enabled": true,
-		"used_today": 1282474.3715000001,
-		"last_reset_epoch_day": 20627,
+		"used_today": 464.6,
+		"last_reset_epoch_day": 20631,
 		"daily_limit": 1.5E10,
 		"use_compact": true
 	},
 	"bookmark": {
 		"bookmarked_items": [],
-		"position": null,
+		"position": {
+			"x": 48,
+			"y": 180
+		},
 		"enabled": true,
 		"show_everywhere": true,
 		"max_visible_children": 8,
@@ -17,27 +20,34 @@
 	},
 	"priceDiff": {
 		"enabled": true,
-		"position": null
+		"position": {
+			"x": 258,
+			"y": 19
+		}
 	},
 	"orderValueOverlay": {
 		"position": null,
 		"enabled": false
 	},
 	"orderList": {
-		"position": null,
+		"position": {
+			"x": 47,
+			"y": 32
+		},
 		"enabled": true,
 		"show_in_bazaar": true,
 		"max_visible_children": 8
 	},
 	"orderPresets": {
 		"container_position": {
-			"x": 552,
-			"y": 174
+			"x": 425,
+			"y": 92
 		},
 		"sign_position": null,
 		"enabled": true,
 		"enable_on_container": true,
 		"enable_on_sign": true,
+		"hide_unaffordable_presets": false,
 		"presets": []
 	},
 	"orderBookPrice": {

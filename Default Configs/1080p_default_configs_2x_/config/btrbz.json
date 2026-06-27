@@ -2,8 +2,8 @@
 	"orderLimit": {
 		"position": null,
 		"enabled": true,
-		"used_today": 1282474.3715000001,
-		"last_reset_epoch_day": 20627,
+		"used_today": 71260.497875,
+		"last_reset_epoch_day": 20631,
 		"daily_limit": 1.5E10,
 		"use_compact": true
 	},
@@ -30,14 +30,12 @@
 		"max_visible_children": 8
 	},
 	"orderPresets": {
-		"container_position": {
-			"x": 552,
-			"y": 174
-		},
+		"container_position": null,
 		"sign_position": null,
 		"enabled": true,
 		"enable_on_container": true,
 		"enable_on_sign": true,
+		"hide_unaffordable_presets": false,
 		"presets": []
 	},
 	"orderBookPrice": {
