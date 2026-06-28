@@ -425,74 +425,6 @@
             ]
         },
         {
-            "pakku_id": "cH0hw2tvtHBOPpLu",
-            "pakku_links": [
-                "LwqrzSsyxBuQ5jrL"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "caxton",
-                "modrinth": "caxton"
-            },
-            "name": {
-                "curseforge": "Caxton",
-                "modrinth": "Caxton"
-            },
-            "id": {
-                "curseforge": "1320863",
-                "modrinth": "k8iIgzXE"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "caxton-fabric-26.1.2-1.0.0-beta.1.jar",
-                    "mc_versions": [
-                        "26.1.2"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/k8iIgzXE/versions/4hAboG2x/caxton-fabric-26.1.2-1.0.0-beta.1.jar",
-                    "id": "4hAboG2x",
-                    "parent_id": "k8iIgzXE",
-                    "hashes": {
-                        "sha512": "34332a8e57b126f1f977c16cd6e7e759a16de54ce7d7a76e2aecff8df6d429eb00c692aa9c7079e7de87b79f35739a8c6598231c1190d78838a775d0e5d3f185",
-                        "sha1": "ea3f3cc36e4093bab1827511bf2e5ca386db67e5"
-                    },
-                    "required_dependencies": [
-                        "P7dR8mSH"
-                    ],
-                    "size": 5302506,
-                    "date_published": "2026-06-15T10:45:12.883514Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "caxton-fabric-26.1.2-1.0.0-beta.1.jar",
-                    "mc_versions": [
-                        "26.1.2"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8251/979/caxton-fabric-26.1.2-1.0.0-beta.1.jar",
-                    "id": "8251979",
-                    "parent_id": "1320863",
-                    "hashes": {
-                        "sha1": "ea3f3cc36e4093bab1827511bf2e5ca386db67e5",
-                        "md5": "b62440ee46df8c1af902fd949b6d7af2"
-                    },
-                    "required_dependencies": [
-                        "306612"
-                    ],
-                    "size": 5302506,
-                    "date_published": "2026-06-15T10:45:13.430Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "YFauQoae1g3bfswj",
             "type": "MOD",
             "side": "BOTH",
@@ -1075,7 +1007,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "enhanced_chat-0.3.0+26.1.2.jar",
+                    "file_name": "enhanced_chat-0.3.1+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -1085,18 +1017,18 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ijy5hQgT/versions/eE4n4KxP/enhanced_chat-0.3.0+26.1.2.jar",
-                    "id": "eE4n4KxP",
+                    "url": "https://cdn.modrinth.com/data/ijy5hQgT/versions/S39FznES/enhanced_chat-0.3.1+26.1.2.jar",
+                    "id": "S39FznES",
                     "parent_id": "ijy5hQgT",
                     "hashes": {
-                        "sha512": "9a622529134f964cabe1e366ba0cf633275d6964c8de5b40b6ce1d2bdfe2a7f00ad6862770445d3a9ef0226cd3742208a13c1284d75ee67a063fb5ca395c193c",
-                        "sha1": "d246a92f8aba263f7701d6d73cd2fe9ef3ac53d7"
+                        "sha512": "531cc2611b797fdefb49162e2efcd1b17f24be74314ba9d2255bbb5edfd339cb31769d1a5ad5abc789497ece528fb54c66dd6f991fdc5a663df0a167dd46d33b",
+                        "sha1": "eed0d8d9ab1a53db6f020163e1b1c9651b3dc5ca"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 196719,
-                    "date_published": "2026-06-26T14:59:11.232045Z"
+                    "size": 198310,
+                    "date_published": "2026-06-28T07:11:53.657267Z"
                 }
             ]
         },
@@ -2114,7 +2046,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "MakeUp-UltraFast-9.5b.zip",
+                    "file_name": "MakeUp-UltraFast-9.5c.zip",
                     "mc_versions": [
                         "1.12.2",
                         "1.13",
@@ -2165,43 +2097,44 @@
                         "1.21.11",
                         "26.1",
                         "26.1.1",
-                        "26.1.2"
+                        "26.1.2",
+                        "26.2"
                     ],
                     "loaders": [
                         "iris",
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/izsIPI7a/versions/V5pgSLtI/MakeUp-UltraFast-9.5b.zip",
-                    "id": "V5pgSLtI",
+                    "url": "https://cdn.modrinth.com/data/izsIPI7a/versions/zt4eHisU/MakeUp-UltraFast-9.5c.zip",
+                    "id": "zt4eHisU",
                     "parent_id": "izsIPI7a",
                     "hashes": {
-                        "sha512": "c4052ae04dda5c11bfbc77146c45cc09556f32cb89e5bfd19f31dc5fa78b644fc32ef978ee476b728cc4e3ba10bb7cbb9e7e799329a506c2ad8e720c10f43018",
-                        "sha1": "53115cd70e8d869ac55485b2c150b322ce2e5cd9"
+                        "sha512": "67d3938a1ad27ee0951b63703cd638b9db36bcf92c66dfe7ffff4c01ac365e952bbf630af1bb5bbddde8a723e7fb287e88bf80fe0301c70f12b4ebe8546c7947",
+                        "sha1": "57dfa2eb8b3f9c2e4963f6b77a3cedb0e846dc5d"
                     },
                     "required_dependencies": [],
-                    "size": 398836,
-                    "date_published": "2026-05-23T18:34:47.130256Z"
+                    "size": 398840,
+                    "date_published": "2026-06-27T18:25:45.973684Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "MakeUp-UltraFast-9.5a.zip",
+                    "file_name": "MakeUp-UltraFast-9.5c.zip",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
                         "26.1.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8081/726/MakeUp-UltraFast-9.5a.zip",
-                    "id": "8081726",
+                    "url": "https://edge.forgecdn.net/files/8330/757/MakeUp-UltraFast-9.5c.zip",
+                    "id": "8330757",
                     "parent_id": "431203",
                     "hashes": {
-                        "sha1": "d1d7eadbeb9654725d1829e53c719d003e90f9c2",
-                        "md5": "5fa96c6d7dc35b40d93826c030e540bf"
+                        "sha1": "57dfa2eb8b3f9c2e4963f6b77a3cedb0e846dc5d",
+                        "md5": "9d15e01beb2f8681489ac13f236e26fb"
                     },
                     "required_dependencies": [],
-                    "size": 398018,
-                    "date_published": "2026-05-13T08:36:56.380Z"
+                    "size": 398840,
+                    "date_published": "2026-06-27T18:29:11.787Z"
                 }
             ]
         },
@@ -2816,7 +2749,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-5.0.3+26.1.2.jar",
+                    "file_name": "packcore-5.0.4+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2826,23 +2759,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/DhhJUfpH/packcore-5.0.3+26.1.2.jar",
-                    "id": "DhhJUfpH",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/Y6kNgsuU/packcore-5.0.4+26.1.2.jar",
+                    "id": "Y6kNgsuU",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "b72f6e0b5fcf3931278db8ae520019e67b76f2ef1d6909841b76b279809f2f77211c2e212c2dde543c65d88a3abca020e8cf651190ae21772b2813c41b843d6e",
-                        "sha1": "5ab80606b7789ddf4c71979c4e03fb52a3d23bb6"
+                        "sha512": "8d0a7b7efe95ffd247e50cae3adac4ac57b4bdc41e299d2f8d605effea7658c583445d0c905e569138df2448e2f0fdb6639e69b740e5ba8ae702fbf8677aa184",
+                        "sha1": "e3c4abe280adc51777d14bfae1547c6de51b3985"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 47361302,
-                    "date_published": "2026-06-24T14:53:55.315099Z"
+                    "size": 47361434,
+                    "date_published": "2026-06-28T17:02:25.770466Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-5.0.3+26.1.2.jar",
+                    "file_name": "packcore-5.0.4+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2852,18 +2785,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8312/796/packcore-5.0.3+26.1.2.jar",
-                    "id": "8312796",
+                    "url": "https://edge.forgecdn.net/files/8335/779/packcore-5.0.4+26.1.2.jar",
+                    "id": "8335779",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "5ab80606b7789ddf4c71979c4e03fb52a3d23bb6",
-                        "md5": "f498632d84bcf6a06b7c18682b9d4767"
+                        "sha1": "e3c4abe280adc51777d14bfae1547c6de51b3985",
+                        "md5": "ae7695b5f7e166a87ffc786abba8d671"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 47361302,
-                    "date_published": "2026-06-24T14:53:50.077Z"
+                    "size": 47361434,
+                    "date_published": "2026-06-28T17:02:19.507Z"
                 }
             ]
         },
@@ -3608,7 +3541,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyBlockPv-1.8.4-26.1.jar",
+                    "file_name": "SkyBlockPv-1.8.6-26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3618,19 +3551,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/JKahuSG5/SkyBlockPv-1.8.4-26.1.jar",
-                    "id": "JKahuSG5",
+                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/W3jM7PJd/SkyBlockPv-1.8.6-26.1.jar",
+                    "id": "W3jM7PJd",
                     "parent_id": "8yqXwFLl",
                     "hashes": {
-                        "sha512": "cc409d8b309fbda13284c4c0663ba088f2af79bad4081b5b283c730176a440aef44bdc8ec84572f32def646103e47538c9e03cf0d69001c8ecd638c25e1139ef",
-                        "sha1": "6ef38944a361d88f1b2b5d6556fdd260e1b68c4c"
+                        "sha512": "88877e6cdc0fcc663ba5e564c4ac2d09fdaf097033130d04c9c3243533816a847fc7aed9050bdaca878be9c28990867191988bbab70abb1210989f10885b63ff",
+                        "sha1": "62ec253e5270fc81f79d9b842f858f4ea17e511f"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
                         "P7dR8mSH"
                     ],
-                    "size": 11429833,
-                    "date_published": "2026-06-12T19:34:35.148Z"
+                    "size": 10929990,
+                    "date_published": "2026-06-27T20:36:11.845354Z"
                 }
             ]
         },
@@ -3791,7 +3724,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "enhanced_storage-0.7.1+26.1.2.jar",
+                    "file_name": "enhanced_storage-0.8.0+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3801,18 +3734,18 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ICyROmSc/versions/hDdsyUCQ/enhanced_storage-0.7.1+26.1.2.jar",
-                    "id": "hDdsyUCQ",
+                    "url": "https://cdn.modrinth.com/data/ICyROmSc/versions/oj0nzKBu/enhanced_storage-0.8.0+26.1.2.jar",
+                    "id": "oj0nzKBu",
                     "parent_id": "ICyROmSc",
                     "hashes": {
-                        "sha512": "b7009b68af39d788313f487b21e87ebd3b8adba6c8f03198978c469194d2da919f75574704ec8946db7aa3cf6358c164543a25108600b84f5c381b281fde47dc",
-                        "sha1": "895dc972bee2173407d77270aca5fcb851366a2c"
+                        "sha512": "6e4aa646a1451bf872e8860926b812edc589bc69b3b9c8c37d35081ff61d892c27f26d62a29d3c1b65c00133932bd53bb7b4cb7fc3556ba048181a9c0aefb08c",
+                        "sha1": "7d176adfc86d17bbd7b9cd5a693ea36995c83e34"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 231618,
-                    "date_published": "2026-06-27T14:53:22.283823Z"
+                    "size": 231387,
+                    "date_published": "2026-06-28T12:01:06.222577Z"
                 }
             ]
         },
@@ -4134,6 +4067,52 @@
                     ],
                     "size": 67690,
                     "date_published": "2026-04-01T02:14:34.627Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "nYJumrXZB9SP7Egp",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "sophies-enchants"
+            },
+            "name": {
+                "modrinth": "Sophie's Hypixel Skyblock Enchants"
+            },
+            "id": {
+                "modrinth": "XBG9JHVh"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Sophie's Enchant Books V2.zip",
+                    "mc_versions": [
+                        "1.21.5",
+                        "1.21.6",
+                        "1.21.7",
+                        "1.21.8",
+                        "1.21.9",
+                        "1.21.10",
+                        "1.21.11",
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/XBG9JHVh/versions/l381BMi9/Sophie's Enchant Books V2.zip",
+                    "id": "l381BMi9",
+                    "parent_id": "XBG9JHVh",
+                    "hashes": {
+                        "sha512": "c5331ec979f1923332ca7ec6e9510b8b82cb8295bc4e13adea15f3a354be328e7d2b5c8e473fefa6048ba801b15e96ab641b0109be328d3db36b3894308bc6e3",
+                        "sha1": "48b0de34b7a6ea7bf928677e8365c05102d56af6"
+                    },
+                    "required_dependencies": [],
+                    "size": 591842,
+                    "date_published": "2026-06-28T05:52:21.846342Z"
                 }
             ]
         },
