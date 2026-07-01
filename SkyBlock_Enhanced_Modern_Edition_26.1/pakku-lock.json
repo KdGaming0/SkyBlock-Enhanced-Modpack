@@ -2645,7 +2645,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-5.0.4+26.1.2.jar",
+                    "file_name": "packcore-5.0.5+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2655,23 +2655,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/Y6kNgsuU/packcore-5.0.4+26.1.2.jar",
-                    "id": "Y6kNgsuU",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/Kf4SKOFp/packcore-5.0.5+26.1.2.jar",
+                    "id": "Kf4SKOFp",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "8d0a7b7efe95ffd247e50cae3adac4ac57b4bdc41e299d2f8d605effea7658c583445d0c905e569138df2448e2f0fdb6639e69b740e5ba8ae702fbf8677aa184",
-                        "sha1": "e3c4abe280adc51777d14bfae1547c6de51b3985"
+                        "sha512": "4fee43cf477b1384917f0370d30073cf9f11145d634c06578d03a6b48d9d754ecbf1622ba44f07f58c13688d342cb87acc8f0e43bd9003f94f2e50fe15e7ad3c",
+                        "sha1": "7de518641ec11934d66f8a17e4793a181d6d4668"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
+                        "AOEDs9Al",
+                        "P7dR8mSH"
                     ],
-                    "size": 47361434,
-                    "date_published": "2026-06-28T17:02:25.770466Z"
+                    "size": 47361521,
+                    "date_published": "2026-07-01T20:18:33.180484Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-5.0.4+26.1.2.jar",
+                    "file_name": "packcore-5.0.5+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2681,18 +2681,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8335/779/packcore-5.0.4+26.1.2.jar",
-                    "id": "8335779",
+                    "url": "https://edge.forgecdn.net/files/8354/381/packcore-5.0.5+26.1.2.jar",
+                    "id": "8354381",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "e3c4abe280adc51777d14bfae1547c6de51b3985",
-                        "md5": "ae7695b5f7e166a87ffc786abba8d671"
+                        "sha1": "7de518641ec11934d66f8a17e4793a181d6d4668",
+                        "md5": "f0c5024eaf0a9dc50eb4a6333fccd167"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 47361434,
-                    "date_published": "2026-06-28T17:02:19.507Z"
+                    "size": 47361521,
+                    "date_published": "2026-07-01T20:18:24.730Z"
                 }
             ]
         },
