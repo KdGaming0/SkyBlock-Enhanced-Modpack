@@ -1,3 +1,11 @@
+## Default Config v5.0.4
+
+- Enabled Skyblocker AH and BZ price in tooltip
+
+## Default Config v5.0.3
+
+- Disabled SBO Spade Guess 
+
 ## Default Config v5
 
 ### Minecraft

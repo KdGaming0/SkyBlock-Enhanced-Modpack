@@ -23,13 +23,13 @@
       "enableCollapsibleEntries": true
     },
     "itemTooltip": {
-      "enableNPCPrice": false,
+      "enableNPCPrice": true,
       "enableGeorgePrice": true,
       "enableMotesPrice": true,
-      "enableAvgBIN": false,
+      "enableAvgBIN": true,
       "avg": "THREE_DAY",
-      "enableLowestBIN": false,
-      "enableBazaarPrice": false,
+      "enableLowestBIN": true,
+      "enableBazaarPrice": true,
       "enableCraftingCost": "BUY_ORDER",
       "enableObtainedDate": true,
       "enableMuseumInfo": true,

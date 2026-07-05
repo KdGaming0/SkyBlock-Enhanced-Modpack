@@ -18,7 +18,7 @@
     },
     "Diana": {
         // Guess the burrow location when using spade ability. Needs Dripping Lava Particles and set /particlequality to Extreme for more accuracy
-        "spadeGuess": true,
+        "spadeGuess": false,
         /*
          * Guesses the burrow location from the arrow direction after digging a burrow 
          * §bNOTE!: This replaces the old Multi guess system!
@@ -168,7 +168,7 @@
          */
         "rareTitleFadeOut": 20,
         // Draws line for guess, Disable View Bobbing in controls if its buggy
-        "guessLine": true,
+        "guessLine": false,
         // Draws line to rare mob waypoints, Disable View Bobbing in controls if its buggy
         "inqLine": true,
         // Draws line for burrow, Disable View Bobbing in controls if its buggy
