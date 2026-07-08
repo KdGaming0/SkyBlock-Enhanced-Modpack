@@ -74,7 +74,7 @@
 	#$CONFIG.text.support_name$ in lang files will be replaced with this value.
 	#For example this placeHolder used in: "Request help in the $CONFIG.text.support_name$"
 	#Recommended values: "Modpack-X Discord", "Modpack-X GitHub repository", etc.
-	support_name = "Skyblock Enhanced"
+	support_name = "Skyblock Enhanced Discord"
 	#$CONFIG.text.support_place$ in lang files will be replaced with this value.
 	#Recommended values: "#support channel".
 	#In case of formulation type `GITHUB` won't be used.
@@ -260,7 +260,7 @@
 [greeting]
 	#You don't need to touch this option.
 	#On first world join of modpack creator if set to false shows greeting, then self enables.
-	shown_greeting = false
+	shown_greeting = true
 
 #Settings of scripting feature.
 #Allows you to add custom scripts for log analysis.

@@ -1176,6 +1176,68 @@
             ]
         },
         {
+            "pakku_id": "hYw48Plh5F83Jx53",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "faithful-32x",
+                "modrinth": "faithful-32x"
+            },
+            "name": {
+                "curseforge": "Faithful 32x",
+                "modrinth": "Faithful 32x"
+            },
+            "id": {
+                "curseforge": "436482",
+                "modrinth": "w0TnApzs"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Faithful 32x - 26.1.zip",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8281/893/Faithful 32x - 26.1.zip",
+                    "id": "8281893",
+                    "parent_id": "436482",
+                    "hashes": {
+                        "sha1": "9447e84ee7121c86304e467a0f8d5b095872e1e6",
+                        "md5": "b44a15a2be890f37e63b98b38f7f5af0"
+                    },
+                    "required_dependencies": [],
+                    "size": 12013169,
+                    "date_published": "2026-06-19T19:14:03.410Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "Faithful 32x - 26.1.zip",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/w0TnApzs/versions/Fj5GKJnf/Faithful 32x - 26.1.zip",
+                    "id": "Fj5GKJnf",
+                    "parent_id": "w0TnApzs",
+                    "hashes": {
+                        "sha512": "edc5ad465d302ecd0da3a64b2358b5b8fcbef673ca21ca560695b6716bf60805e041c643b7051f688322cdcbd03a538bed3a44f07f02298d18b88af3fa8f07cb",
+                        "sha1": "9447e84ee7121c86304e467a0f8d5b095872e1e6"
+                    },
+                    "required_dependencies": [],
+                    "size": 12013169,
+                    "date_published": "2026-06-19T19:12:00.626961Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "RR27AbeGqTiZZKkt",
             "type": "MOD",
             "side": "CLIENT",
@@ -1578,6 +1640,47 @@
                     ],
                     "size": 3212750,
                     "date_published": "2026-05-28T16:55:21.029653Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Yq6hC5hQLdstBZh0",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "hypixel-skyblock-legacy"
+            },
+            "name": {
+                "modrinth": "Hypixel SkyBlock Legacy"
+            },
+            "id": {
+                "modrinth": "eiWiefXD"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "SkyBlock Legacy.zip",
+                    "mc_versions": [
+                        "1.21.11",
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
+                        "26.2"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/eiWiefXD/versions/KaclESlY/SkyBlock Legacy.zip",
+                    "id": "KaclESlY",
+                    "parent_id": "eiWiefXD",
+                    "hashes": {
+                        "sha512": "425e022b64870fb5dd83376a14ca7bbff51e175623e8a5d7b40e799165e929d5b5c437843b55f9e095cd6a5dff90bff83720f54d7923f9008efa41928b7dff59",
+                        "sha1": "9d1a7614b2ede2fc82b97057781bc3e17cde7335"
+                    },
+                    "required_dependencies": [],
+                    "size": 923456,
+                    "date_published": "2026-07-04T14:04:29.831478Z"
                 }
             ]
         },
@@ -2644,7 +2747,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-5.0.6+26.1.2.jar",
+                    "file_name": "packcore-5.0.8+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2654,23 +2757,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/yqFZchvP/packcore-5.0.6+26.1.2.jar",
-                    "id": "yqFZchvP",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/sNnrl7WX/packcore-5.0.8+26.1.2.jar",
+                    "id": "sNnrl7WX",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "3d8b42bf7b655eb5c0085be8c3c6a90a143e462399d1a07a6bfa0183ca3be149404147c3e5accb1f998ef2e9764ceacc32715103b65fe5fe7c75ecfad2b884e7",
-                        "sha1": "da915e3229a04efa3a8f994fd4e592cfc2472437"
+                        "sha512": "84a778d23a4964e6c413aabdf36b4f2d6a5f5e28cac1f6000789f42c5ec293ff831e990562e1a9498433a745ccdf07312bcefbb917f7c1dfa17847bcce0c0847",
+                        "sha1": "43fccb1a99aea6bb4ce5271721285f9379d2ca8e"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "AOEDs9Al"
                     ],
-                    "size": 47367397,
-                    "date_published": "2026-07-04T18:17:28.009384Z"
+                    "size": 47384178,
+                    "date_published": "2026-07-08T19:44:52.224062Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-5.0.6+26.1.2.jar",
+                    "file_name": "packcore-5.0.7+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2680,18 +2783,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8370/659/packcore-5.0.6+26.1.2.jar",
-                    "id": "8370659",
+                    "url": "https://edge.forgecdn.net/files/8394/610/packcore-5.0.7+26.1.2.jar",
+                    "id": "8394610",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "da915e3229a04efa3a8f994fd4e592cfc2472437",
-                        "md5": "75110fd5f78972dc0bfee895fe523da4"
+                        "sha1": "1d3193ad02714da1d84b3202031ff72e52d55e47",
+                        "md5": "842e50df855027ddf319010de0eb2c0e"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 47367397,
-                    "date_published": "2026-07-04T18:17:21.140Z"
+                    "size": 47379685,
+                    "date_published": "2026-07-08T16:10:55.623Z"
                 }
             ]
         },
@@ -4467,6 +4570,7 @@
             "id": {
                 "modrinth": "NPzwNDRa"
             },
+            "update_strategy": "NONE",
             "files": []
         },
         {

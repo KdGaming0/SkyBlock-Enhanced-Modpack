@@ -27,7 +27,7 @@
          */
         "arrowGuess": false,
         // Detects burrow locations when being close to them from the particles when holding shovel to register/update it as a Treasure, Mob or Start burrow. To reset waypoints type /sboclearburrows
-        "closeBurrowDetection": true,
+        "closeBurrowDetection": false,
         // Shows a beacon beam for waypoints going to the sky if enabled.
         "showBeaconBeam": true,
         // Shows a title to guess normally when the arrow guess is inaccurate
