@@ -181,6 +181,14 @@
     "curseForgeHash": 1621630962,
     "modrinthHash": "70744e34515aa0054b2959a0a32a2227ba028d4e"
   },
+  "HypixelModAPI-1.0.2+build.1+mc26.1.jar": {
+    "jarName": "HypixelModAPI-1.0.2+build.1+mc26.1.jar",
+    "modId": "hypixel-mod-api",
+    "name": "Hypixel Mod API",
+    "version": "1.0.2+build.1+mc26.1",
+    "curseForgeHash": 1218980934,
+    "modrinthHash": "88726ef6465e41d6f5bce83b7575bdf0a279b800"
+  },
   "ImmediatelyFast-Fabric-1.15.3+26.1.jar": {
     "jarName": "ImmediatelyFast-Fabric-1.15.3+26.1.jar",
     "modId": "immediatelyfast",
@@ -245,13 +253,13 @@
     "curseForgeHash": 155293819,
     "modrinthHash": "aa2f9023430e6e2d6c1a3d453f6e0a3abe844558"
   },
-  "modmenu-18.0.0-beta.1.jar": {
-    "jarName": "modmenu-18.0.0-beta.1.jar",
+  "modmenu-18.0.0.jar": {
+    "jarName": "modmenu-18.0.0.jar",
     "modId": "modmenu",
     "name": "Mod Menu",
-    "version": "18.0.0-beta.1",
-    "curseForgeHash": 3384162547,
-    "modrinthHash": "52fff4a942dd42d4bdb6d149d0396cbf2ce69016"
+    "version": "18.0.0",
+    "curseForgeHash": 674007397,
+    "modrinthHash": "0b5cd2531cd3506e431cd2d739da3abceed08ea6"
   },
   "moreculling-fabric-26.1.2-1.7.2.jar": {
     "jarName": "moreculling-fabric-26.1.2-1.7.2.jar",
@@ -293,13 +301,13 @@
     "curseForgeHash": 2659545146,
     "modrinthHash": "64b438984f1625beaf834ff9d014686119023a0c"
   },
-  "packcore-5.0.6+26.1.2.jar": {
-    "jarName": "packcore-5.0.6+26.1.2.jar",
+  "packcore-5.0.8+26.1.2.jar": {
+    "jarName": "packcore-5.0.8+26.1.2.jar",
     "modId": "packcore",
     "name": "Pack Core",
-    "version": "5.0.6",
-    "curseForgeHash": 3513561977,
-    "modrinthHash": "da915e3229a04efa3a8f994fd4e592cfc2472437"
+    "version": "5.0.8",
+    "curseForgeHash": 3100268788,
+    "modrinthHash": "43fccb1a99aea6bb4ce5271721285f9379d2ca8e"
   },
   "packetfixer-fabric-3.3.5-26.1.2.jar": {
     "jarName": "packetfixer-fabric-3.3.5-26.1.2.jar",
@@ -381,13 +389,13 @@
     "curseForgeHash": 1121888178,
     "modrinthHash": "2a6455113ee1df1e3a2a7b1d668b4e3e9f1714a6"
   },
-  "skyblocker-6.6.0+26.1.2.jar": {
-    "jarName": "skyblocker-6.6.0+26.1.2.jar",
+  "skyblocker-6.7.0-beta.1+26.1.2.jar": {
+    "jarName": "skyblocker-6.7.0-beta.1+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.6.0+26.1.2",
-    "curseForgeHash": 2973019743,
-    "modrinthHash": "705f41ab31fb7c6ba91521c380181613881a9ec6"
+    "version": "6.7.0-beta.1+26.1.2",
+    "curseForgeHash": 1825794660,
+    "modrinthHash": "cda2c6f93604a98ce4863540e76b26d8621255d1"
   },
   "SkyBlockPv-1.8.6-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.6-26.1.jar",
@@ -397,13 +405,13 @@
     "curseForgeHash": 390825807,
     "modrinthHash": "62ec253e5270fc81f79d9b842f858f4ea17e511f"
   },
-  "SkyHanni-7.31.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.31.0-mc26.1.jar",
+  "SkyHanni-7.32.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.32.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.31.0",
-    "curseForgeHash": 1734441259,
-    "modrinthHash": "dffa740fe2cb517d7654af57282793d666c73343"
+    "version": "7.32.0",
+    "curseForgeHash": 851542515,
+    "modrinthHash": "e84a6eeb4993b466eba0e00b12af864cea5d5528"
   },
   "SkyOcean-1.17.0-26.1.jar": {
     "jarName": "SkyOcean-1.17.0-26.1.jar",
@@ -421,21 +429,21 @@
     "curseForgeHash": 226781774,
     "modrinthHash": "e7c402709170bdd27e984e50fa5108d64a575c5e"
   },
-  "sodium-extra-fabric-0.8.7+mc26.1.1.jar": {
-    "jarName": "sodium-extra-fabric-0.8.7+mc26.1.1.jar",
+  "sodium-extra-fabric-0.9.1+mc26.1.2.jar": {
+    "jarName": "sodium-extra-fabric-0.9.1+mc26.1.2.jar",
     "modId": "sodium-extra",
     "name": "Sodium Extra",
-    "version": "0.8.7+mc26.1.1",
-    "curseForgeHash": 2135589338,
-    "modrinthHash": "457ea5643de4e537eb44fc117d88886d52cdebf9"
+    "version": "0.9.1+mc26.1.2",
+    "curseForgeHash": 2898972815,
+    "modrinthHash": "dc6c4e1d5147ff41a65e7bb042091a77c88ea3cd"
   },
-  "sodium-fabric-0.9.1-beta.4+mc26.1.2.jar": {
-    "jarName": "sodium-fabric-0.9.1-beta.4+mc26.1.2.jar",
+  "sodium-fabric-0.9.1+mc26.1.2.jar": {
+    "jarName": "sodium-fabric-0.9.1+mc26.1.2.jar",
     "modId": "sodium",
     "name": "Sodium",
-    "version": "0.9.1-beta.4+mc26.1.2",
-    "curseForgeHash": 2909896989,
-    "modrinthHash": "73aaaf17384f9004e5dbcfe02416ad52c080174e"
+    "version": "0.9.1+mc26.1.2",
+    "curseForgeHash": 4270737160,
+    "modrinthHash": "cdb5ab59dc05840c5fc762c3821570c6fa02a8dc"
   },
   "sodium-shadowy-path-blocks-fabric-7.0.0.jar": {
     "jarName": "sodium-shadowy-path-blocks-fabric-7.0.0.jar",
