@@ -1671,16 +1671,18 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiWiefXD/versions/n5CUffw7/SkyBlock Legacy.zip",
-                    "id": "n5CUffw7",
+                    "url": "https://cdn.modrinth.com/data/eiWiefXD/versions/gJ808eIX/SkyBlock Legacy.zip",
+                    "id": "gJ808eIX",
                     "parent_id": "eiWiefXD",
                     "hashes": {
-                        "sha512": "40a0a50cc9804d9f4cd9361cc0897d9a26548f6018ebc9d2cfe142dcda0066d567fb67c0f3f3b2d05d16aedfc8b64cbd47963c3427d7a48be23bc66d4274a0dd",
-                        "sha1": "5f6f47ec3d3ebf9eae8672abbe155392ce1dbdcb"
+                        "sha512": "a6d3a0b4bae1db5af4b95d6a265e2b560faa4b5e2ea81fe0d079482f7b2073bd14d9ac9a90ae22c8d06d9243da52108ddbcc8f5f3fdf8f88f4ac73c71d54396e",
+                        "sha1": "b7db1f7c65c8b67398f49b956cb2e77bc5cfda1c"
                     },
-                    "required_dependencies": [],
-                    "size": 959942,
-                    "date_published": "2026-07-09T01:10:00.834690Z"
+                    "required_dependencies": [
+                        "fc4wBpRx"
+                    ],
+                    "size": 2148402,
+                    "date_published": "2026-07-10T01:18:49.765551Z"
                 }
             ]
         },
@@ -1748,6 +1750,78 @@
                     "required_dependencies": [],
                     "size": 310057,
                     "date_published": "2026-06-30T22:02:26.767Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "yJithHhRM06eFIWp",
+            "pakku_links": [
+                "dWWOIb43Z12rWMXF"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "iris",
+                "curseforge": "irisshaders"
+            },
+            "name": {
+                "modrinth": "Iris Shaders",
+                "curseforge": "Iris Shaders"
+            },
+            "id": {
+                "modrinth": "YL57xq9U",
+                "curseforge": "455508"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "iris-fabric-1.11.2+mc26.1.2.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/e4ioH5mG/iris-fabric-1.11.2+mc26.1.2.jar",
+                    "id": "e4ioH5mG",
+                    "parent_id": "YL57xq9U",
+                    "hashes": {
+                        "sha512": "46db54abb42324fbbfb9874c53dd323b6397f33372e901255a0ea3a63083db57f5ee4445fba7287462054d22771c249069a1c44cae3d625416d6e1a3ea9b5314",
+                        "sha1": "5f23dc2bae9fa28a18ef1ec6a60c0d6f8fcc5b13"
+                    },
+                    "required_dependencies": [
+                        "AANobbMI"
+                    ],
+                    "size": 2815786,
+                    "date_published": "2026-07-09T21:33:36.117262Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "iris-fabric-1.11.2+mc26.1.2.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8402/621/iris-fabric-1.11.2+mc26.1.2.jar",
+                    "id": "8402621",
+                    "parent_id": "455508",
+                    "hashes": {
+                        "sha1": "5f23dc2bae9fa28a18ef1ec6a60c0d6f8fcc5b13",
+                        "md5": "b77a29f6d2b8dfb067a20b85e6bc7a37"
+                    },
+                    "required_dependencies": [
+                        "394468"
+                    ],
+                    "size": 2815786,
+                    "date_published": "2026-07-09T21:39:05.227Z"
                 }
             ]
         },
@@ -2159,7 +2233,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "marketguard-1.3.2+26.1.2.jar",
+                    "file_name": "marketguard-1.4.0+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2169,22 +2243,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/G8ivdeEm/marketguard-1.3.2+26.1.2.jar",
-                    "id": "G8ivdeEm",
+                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/lUdCNraX/marketguard-1.4.0+26.1.2.jar",
+                    "id": "lUdCNraX",
                     "parent_id": "ji4JdpCu",
                     "hashes": {
-                        "sha512": "568e1c65978e7e3f3ebc6112504bbd0fb3708f81a6f27c4a11fd826d0c25e6b3c7c24dc161158a6ae964df50df024cf78be109214de21c156265195bd4161702",
-                        "sha1": "1956836f3c17d8b2c181be2bc036f951198bb3fa"
+                        "sha512": "a702365b132f1c698480bdd2e20c68d17d8dff195b3665700df516a1d2777995e56a772b5fe3d7ad6de8f8dc7839c708a9f9cd7c0d3221e3d2feb874b0169cfa",
+                        "sha1": "3160fcd857fc0e4d721c670e5792e5e2a5b202a6"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 121293,
-                    "date_published": "2026-06-30T00:38:03.867193Z"
+                    "size": 119433,
+                    "date_published": "2026-07-09T23:05:22.727900Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "marketguard-1.3.2+26.1.2.jar",
+                    "file_name": "marketguard-1.4.0+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2194,18 +2268,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8343/682/marketguard-1.3.2+26.1.2.jar",
-                    "id": "8343682",
+                    "url": "https://edge.forgecdn.net/files/8402/950/marketguard-1.4.0+26.1.2.jar",
+                    "id": "8402950",
                     "parent_id": "1505265",
                     "hashes": {
-                        "sha1": "1956836f3c17d8b2c181be2bc036f951198bb3fa",
-                        "md5": "ab90ef2630c182317c3f7651f623c897"
+                        "sha1": "3160fcd857fc0e4d721c670e5792e5e2a5b202a6",
+                        "md5": "2ce7691ab50d8672a544211357f40d28"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 121293,
-                    "date_published": "2026-06-30T00:38:04.297Z"
+                    "size": 119433,
+                    "date_published": "2026-07-09T23:05:23.203Z"
                 }
             ]
         },
@@ -2866,24 +2940,6 @@
             ]
         },
         {
-            "pakku_id": "BTDLFx1OtKw01IOb",
-            "pakku_links": [
-                "buBitBSyYlKDzuBb"
-            ],
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "modrinth": "packshq"
-            },
-            "name": {
-                "modrinth": "PacksHQ"
-            },
-            "id": {
-                "modrinth": "BZeL572c"
-            },
-            "files": []
-        },
-        {
             "pakku_id": "croKM3tlvHKUVTlF",
             "pakku_links": [
                 "LwqrzSsyxBuQ5jrL",
@@ -2985,7 +3041,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "reliable-recipe-viewer-8.4.2+26.1.2-fabric.jar",
+                    "file_name": "reliable-recipe-viewer-8.5.0+26.1.2-fabric.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2995,22 +3051,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5VolwT6c/versions/D9yYdoPt/reliable-recipe-viewer-8.4.2+26.1.2-fabric.jar",
-                    "id": "D9yYdoPt",
+                    "url": "https://cdn.modrinth.com/data/5VolwT6c/versions/8Xwd53bY/reliable-recipe-viewer-8.5.0+26.1.2-fabric.jar",
+                    "id": "8Xwd53bY",
                     "parent_id": "5VolwT6c",
                     "hashes": {
-                        "sha512": "15732409249cfa14025733b5d54856360e023ac14807680a7f62105dff836a3241bae2e1fe0e345a503c438399f25b23d8b18208308ae561a74208dab2e6bfe9",
-                        "sha1": "89621697d14c754b7660402387664a2da98da576"
+                        "sha512": "c0b103ddf45a9d14b439b95ce716e19a2c91a248c018129c4d58f2956efb1c202fe8e2d6b065714fa4c4e45d82fd6000c26957fee2c9c780c9dab4f994e7a563",
+                        "sha1": "dc116a570e1acd00c2833ee88c22e008160a9113"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 626637,
-                    "date_published": "2026-06-29T18:02:56.042942Z"
+                    "size": 697167,
+                    "date_published": "2026-07-09T16:14:04.116Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "reliable-recipe-viewer-8.4.2+26.1.2-fabric.jar",
+                    "file_name": "reliable-recipe-viewer-8.5.0+26.1.2-fabric.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3020,18 +3076,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8341/980/reliable-recipe-viewer-8.4.2+26.1.2-fabric.jar",
-                    "id": "8341980",
+                    "url": "https://edge.forgecdn.net/files/8401/45/reliable-recipe-viewer-8.5.0+26.1.2-fabric.jar",
+                    "id": "8401045",
                     "parent_id": "1422317",
                     "hashes": {
-                        "sha1": "89621697d14c754b7660402387664a2da98da576",
-                        "md5": "5612b271279406452100357f2e6b1a84"
+                        "sha1": "dc116a570e1acd00c2833ee88c22e008160a9113",
+                        "md5": "5221d9b8879340cf1bc68cf02488f30e"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 626637,
-                    "date_published": "2026-06-29T18:02:56.187Z"
+                    "size": 697167,
+                    "date_published": "2026-07-09T16:14:36.860Z"
                 }
             ]
         },
@@ -3539,7 +3595,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyBlockPv-1.8.6-26.1.jar",
+                    "file_name": "SkyBlockPv-1.8.7-26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3549,19 +3605,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/W3jM7PJd/SkyBlockPv-1.8.6-26.1.jar",
-                    "id": "W3jM7PJd",
+                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/3l3K8t0y/SkyBlockPv-1.8.7-26.1.jar",
+                    "id": "3l3K8t0y",
                     "parent_id": "8yqXwFLl",
                     "hashes": {
-                        "sha512": "88877e6cdc0fcc663ba5e564c4ac2d09fdaf097033130d04c9c3243533816a847fc7aed9050bdaca878be9c28990867191988bbab70abb1210989f10885b63ff",
-                        "sha1": "62ec253e5270fc81f79d9b842f858f4ea17e511f"
+                        "sha512": "c3c06eb243384590f5f3998d61cce8396938f4e7aff5be0cb9899552b5c1bf00b9e303b84fbebb8fafcbd2b6bc079d65a34eae33d6178e696c8dcd872b6fd8e1",
+                        "sha1": "0b555552a579880f7bd4ceb29f4fae0f214efdf7"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 10929990,
-                    "date_published": "2026-06-27T20:36:11.845354Z"
+                    "size": 11001215,
+                    "date_published": "2026-07-10T15:28:54.258556Z"
                 }
             ]
         },
@@ -3636,7 +3692,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyOcean-1.17.0-26.1.jar",
+                    "file_name": "SkyOcean-1.17.1-26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3646,19 +3702,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/Pmo99Box/SkyOcean-1.17.0-26.1.jar",
-                    "id": "Pmo99Box",
+                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/7tQZq1IL/SkyOcean-1.17.1-26.1.jar",
+                    "id": "7tQZq1IL",
                     "parent_id": "dIczrQAR",
                     "hashes": {
-                        "sha512": "c1b6b86cbeecf2174b11bfb44e8c596d39a067ba26ecd084c83973bb63af00da5df3f5d31844b844303ac487aa1f570628a42eb0043bb45091167e83e3687382",
-                        "sha1": "007d576b79df448fe684c7fc87f5ec25a9306a86"
+                        "sha512": "889087d96db96cb0890c5715ae7f2967ae6466719eadbf6ee350ed5957ddb4914f7a0f24cac7234aeaddbecec69128b9856e0a0832b9d90545a71fe9d568ef14",
+                        "sha1": "bfa14dab2de0a4be11a032a92a8af83ed5fb4afe"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 10277748,
-                    "date_published": "2026-07-05T14:45:40.388205Z"
+                    "size": 10354429,
+                    "date_published": "2026-07-10T14:09:47.613449Z"
                 }
             ]
         },
@@ -4556,22 +4612,6 @@
                     "date_published": "2026-04-01T15:51:49.283Z"
                 }
             ]
-        },
-        {
-            "pakku_id": "PApiuAvgz7h6QGVB",
-            "type": "RESOURCE_PACK",
-            "side": "CLIENT",
-            "slug": {
-                "modrinth": "defrosted_pack"
-            },
-            "name": {
-                "modrinth": "defrosted"
-            },
-            "id": {
-                "modrinth": "NPzwNDRa"
-            },
-            "update_strategy": "NONE",
-            "files": []
         },
         {
             "pakku_id": "NEFuA6ciTQlK9dBj",
