@@ -1,4 +1,21 @@
 # Release workflow
+#
+# Pipeline:
+#   validate ─▶ build (export #1) ─▶ test-client ─▶ publishers ─▶ finalize
+#                                      │
+#                                      ├─ Tier 1: mrpack validation
+#                                      ├─ Tier 2: headless client launch, during
+#                                      │  which Crash Assistant auto-saves
+#                                      │  config/crash_assistant/modlist.json
+#                                      ├─ harvest modlist.json into
+#                                      │  .pakku/client-overrides/…
+#                                      └─ export #2 → "release-build" artifact
+#
+# The artifact that gets PUBLISHED is "release-build" (export #2), which
+# contains the freshly generated Crash Assistant modlist. Export #1 ("build")
+# is only used for testing. If Tier 2 is skipped ([skip-client-test] or act),
+# the tested artifact is passed through unchanged and the committed
+# modlist.json ships instead.
 name: Release
 
 on:
@@ -9,20 +26,13 @@ on:
                        # hotfix:   v3.1.2-hotfix1  (pakku.json stays at 3.1.2)
 
 env:
-  PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_26.1
-  JAVA_VERSION: '25'
-  MC_VERSION:   '26.1.2'
-
-  # ── mc-runtime-test configuration ──────────────────────────────────────────
-  # The action itself is pinned below via `uses:`; these variables control
-  # which runtime-test JAR we stage. Bump MC_RUNTIME_TEST_JAR_MC when a
-  # release for 1.21.11 ships upstream.
-  # Upstream: https://github.com/headlesshq/mc-runtime-test/releases
-  MC_RUNTIME_TEST_VERSION: '4.4.0'
+  PACK_DIR:      SkyBlock_Enhanced_Modern_Edition_26.1
+  JAVA_VERSION:  '25'
+  # Pin to a tag (e.g. 'v1.3.0') for reproducible release builds.
+  PAKKU_VERSION: latest
 
   # Local runs: `act` sets ACT=true automatically. We use that single flag
-  # to gate artifact upload/download and Tier 2 client launch. No separate
-  # SKIP_LOCAL_ARTIFACTS variable to keep in sync.
+  # to gate artifact upload/download and Tier 2 client launch.
 
 jobs:
 
@@ -33,12 +43,11 @@ jobs:
     permissions:
       contents: write          # needed to delete mismatched tags when checks run
     outputs:
-      modpack_version:         ${{ steps.info.outputs.modpack_version }}
-      modpack_name:            ${{ steps.info.outputs.modpack_name }}
-      minecraft_version:       ${{ steps.info.outputs.minecraft_version }}
-      modpack_loader:          ${{ steps.info.outputs.modpack_loader }}
-      release_type:            ${{ steps.info.outputs.release_type }}
-      is_beta:                 ${{ steps.info.outputs.release_type == 'beta' }}
+      modpack_version:   ${{ steps.info.outputs.modpack_version }}
+      modpack_name:      ${{ steps.info.outputs.modpack_name }}
+      minecraft_version: ${{ steps.info.outputs.minecraft_version }}
+      modpack_loader:    ${{ steps.info.outputs.modpack_loader }}
+      release_type:      ${{ steps.info.outputs.release_type }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -150,7 +159,7 @@ jobs:
           path: ${{ env.PACK_DIR }}/.pakku/overrides/packcore/markdown/release-body-v${{ steps.info.outputs.modpack_version }}.md
           if-no-files-found: warn
 
-  # ── BUILD ───────────────────────────────────────────────────────────────────
+  # ── BUILD (export #1 — the artifact that gets tested) ──────────────────────
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -158,28 +167,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Set up Java ${{ env.JAVA_VERSION }}
-        uses: actions/setup-java@v5
-        with:
-          java-version: ${{ env.JAVA_VERSION }}
-          distribution: temurin
-
-      - name: Cache pakku downloads
-        if: ${{ !env.ACT }}
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.PACK_DIR }}/build/.cache
-          key: pakku-${{ runner.os }}-${{ hashFiles(format('{0}/pakku-lock.json', env.PACK_DIR)) }}
-          restore-keys: pakku-${{ runner.os }}-
-
-      - name: Download pakku
-        run: |
-          curl -sSL -o pakku.jar \
-            https://github.com/juraj-hrivnak/Pakku/releases/latest/download/pakku.jar
-
       - name: Export modpack
-        working-directory: ${{ env.PACK_DIR }}
-        run: java -jar ../pakku.jar export
+        uses: ./.github/actions/export-modpack
+        with:
+          pack-dir:      ${{ env.PACK_DIR }}
+          java-version:  ${{ env.JAVA_VERSION }}
+          pakku-version: ${{ env.PAKKU_VERSION }}
+          use-cache:     ${{ env.ACT && 'false' || 'true' }}
 
       - name: Upload build artifacts
         if: ${{ !env.ACT }}
@@ -190,23 +184,18 @@ jobs:
             ${{ env.PACK_DIR }}/build/
             !${{ env.PACK_DIR }}/build/.*
 
-# ── TEST-CLIENT ─────────────────────────────────────────────────────────────
+  # ── TEST-CLIENT + MODLIST + FINAL EXPORT ───────────────────────────────────
   test-client:
-    name: Test Client Launch
+    name: Test Client Launch & Finalize Build
     runs-on: ubuntu-latest
     needs: [validate, build]
-    timeout-minutes: 20
-
+    timeout-minutes: 30
+    permissions:
+      contents: write        # commit refreshed modlist.json back to the branch
     steps:
+      # Full checkout: the second `pakku export` needs the whole pack dir,
+      # not just .github/scripts.
       - uses: actions/checkout@v6
-        with:
-          sparse-checkout: .github/scripts
-
-      - name: Set up Java ${{ env.JAVA_VERSION }}
-        uses: actions/setup-java@v5
-        with:
-          java-version: ${{ env.JAVA_VERSION }}
-          distribution: temurin
 
       - name: Download build artifacts
         if: ${{ !env.ACT }}
@@ -245,6 +234,7 @@ jobs:
           if echo "$MSG" | grep -q "\[skip-client-test\]"; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
             echo "  [INFO]  [skip-client-test] in commit message — skipping Tier 2"
+            echo "::warning::Tier 2 skipped — Crash Assistant modlist.json will NOT be regenerated; the committed copy ships instead."
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
@@ -255,8 +245,14 @@ jobs:
           chmod +x .github/scripts/extract_mrpack.py
           python3 .github/scripts/extract_mrpack.py
 
-      # ── Stage mc-runtime-test mod step REMOVED ───────────────────────────
-      # mc-runtime-test: fabric in the action below handles the JAR download.
+      # Enable Crash Assistant's "modpack creator" auto-save in the test run
+      # dir only — equivalent to running "/crash_assistant modlist save"
+      # in-game, but hands-free. Players still receive auto_update=false.
+      - name: Enable Crash Assistant modlist auto-save (CI run dir only)
+        if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        run: |
+          chmod +x .github/scripts/crash_assistant_modlist.sh
+          .github/scripts/crash_assistant_modlist.sh prepare
 
       - name: Tier 2 – Headless client launch
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
@@ -270,6 +266,65 @@ jobs:
           dummy-assets:     true
           xvfb:             true
           cache-mc:         github
+
+      # Pull the modlist Crash Assistant just wrote, drop the test-harness
+      # mod entry, and stage it into .pakku/client-overrides/… so the final
+      # export ships it.
+      - name: Harvest generated modlist.json
+        id: modlist
+        if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        run: .github/scripts/crash_assistant_modlist.sh harvest
+
+      - name: Upload modlist.json artifact
+        if: ${{ !env.ACT && steps.skip_check.outputs.skip != 'true' }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: crash-assistant-modlist
+          path: ${{ env.PACK_DIR }}/.pakku/client-overrides/config/crash_assistant/modlist.json
+
+      # Keep the repo in sync so local `pakku export` (and the next release's
+      # baseline) uses the fresh modlist. The tag itself keeps pointing at the
+      # original commit — this only advances the branch. Best-effort: if the
+      # branch moved on since the tag was pushed, this is skipped gracefully.
+      - name: Commit refreshed modlist.json back to ${{ github.event.repository.default_branch }}
+        if: ${{ !env.ACT && steps.skip_check.outputs.skip != 'true' && steps.modlist.outputs.changed == 'true' }}
+        continue-on-error: true
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ env.PACK_DIR }}/.pakku/client-overrides/config/crash_assistant/modlist.json"
+          git commit -m "chore: refresh crash assistant modlist for ${GITHUB_REF#refs/tags/} [skip ci]"
+          git push origin "HEAD:${{ github.event.repository.default_branch }}" \
+            || echo "::warning::Branch moved since tag push — commit modlist.json manually (it is attached as the 'crash-assistant-modlist' artifact)."
+
+      # Export #2: rebuild the mrpack/CF zip WITH the fresh modlist.json.
+      # This is the artifact that gets published.
+      - name: Final export (with refreshed modlist)
+        if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        uses: ./.github/actions/export-modpack
+        with:
+          pack-dir:      ${{ env.PACK_DIR }}
+          java-version:  ${{ env.JAVA_VERSION }}
+          pakku-version: ${{ env.PAKKU_VERSION }}
+          use-cache:     ${{ env.ACT && 'false' || 'true' }}
+
+      - name: Upload release-build artifact (final export)
+        if: ${{ !env.ACT && steps.skip_check.outputs.skip != 'true' }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: release-build
+          path: |
+            ${{ env.PACK_DIR }}/build/
+            !${{ env.PACK_DIR }}/build/.*
+
+      # Tier 2 skipped → pass the tested artifact through unchanged so the
+      # publishers always find a "release-build" artifact.
+      - name: Upload release-build artifact (pass-through, Tier 2 skipped)
+        if: ${{ !env.ACT && steps.skip_check.outputs.skip == 'true' }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: release-build
+          path: build/
 
       - name: Upload game logs on failure
         if: ${{ !env.ACT && failure() }}
@@ -285,15 +340,15 @@ jobs:
   # ── PUBLISH (split into parallel, independent jobs) ─────────────────────────
   # Rationale: previously one flaky publisher (e.g. Modrinth) would block the
   # next (CurseForge) and leave the release in a split-brain state. Each
-  # destination is now its own job; they run in parallel and one failing
-  # doesn't prevent the others from succeeding. The GitHub Release is created
-  # as a DRAFT when any downstream publisher fails, so a human can review
-  # before it goes live — no automatic tag deletion.
+  # destination is its own job; they run in parallel and one failing doesn't
+  # prevent the others from succeeding. The GitHub Release is flipped to DRAFT
+  # when any downstream publisher fails, so a human can review before it goes
+  # live — no automatic tag deletion.
 
   github-release:
     name: Publish · GitHub Release
     runs-on: ubuntu-latest
-    needs: [validate, build, test-client]
+    needs: [validate, test-client]
     permissions:
       contents: write
     outputs:
@@ -306,11 +361,11 @@ jobs:
           name: release-body
           path: .
 
-      - name: Download build artifacts
+      - name: Download release build
         if: ${{ !env.ACT }}
         uses: actions/download-artifact@v6
         with:
-          name: build
+          name: release-build
           path: build
 
       - name: Resolve release body
@@ -342,7 +397,7 @@ jobs:
   publish-modrinth:
     name: Publish · Modrinth
     runs-on: ubuntu-latest
-    needs: [validate, build, test-client]
+    needs: [validate, test-client]
     if: ${{ vars.MR_PROJECT_ID != '' }}
     steps:
       - name: Download release-body artifact
@@ -351,10 +406,10 @@ jobs:
           name: release-body
           path: .
 
-      - name: Download build artifacts
+      - name: Download release build
         uses: actions/download-artifact@v6
         with:
-          name: build
+          name: release-build
           path: build
 
       - name: Stage changelog file
@@ -379,7 +434,7 @@ jobs:
   publish-curseforge:
     name: Publish · CurseForge
     runs-on: ubuntu-latest
-    needs: [validate, build, test-client]
+    needs: [validate, test-client]
     if: ${{ vars.CF_PROJECT_ID != '' }}
     steps:
       - name: Download release-body artifact
@@ -388,10 +443,10 @@ jobs:
           name: release-body
           path: .
 
-      - name: Download build artifacts
+      - name: Download release build
         uses: actions/download-artifact@v6
         with:
-          name: build
+          name: release-build
           path: build
 
       - name: Stage changelog file
@@ -416,7 +471,7 @@ jobs:
   # ── FINALIZE ────────────────────────────────────────────────────────────────
   # Runs after every publisher job regardless of outcome. If any publisher
   # failed we mark the GitHub Release as a draft so a human can review before
-  # it goes live — no automatic tag deletion. The Discord notification only
+  # it goes live — no automatic tag deletion. The Fluxer notification only
   # fires when everything succeeded.
   finalize:
     name: Finalize
@@ -466,9 +521,9 @@ jobs:
         continue-on-error: true
         run: |
           if [[ "${{ needs.validate.outputs.release_type }}" == "beta" ]]; then
-            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** ${{ needs.validate.outputs.modpack_version }} beta is available for testing! 🧪\n[Modrinth](<<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<<https://github.com/${{ github.repository }}/issues>)\n> ⚠️ This is a **beta** release and may not be fully stable."
+            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** ${{ needs.validate.outputs.modpack_version }} beta is available for testing! 🧪\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)\n> ⚠️ This is a **beta** release and may not be fully stable."
           else
-            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! 🎉\n[Modrinth](<<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<<https://github.com/${{ github.repository }}/issues>)"
+            CONTENT="## **${{ needs.validate.outputs.modpack_name }}** has been updated to ${{ needs.validate.outputs.modpack_version }}! 🎉\n[Modrinth](<https://modrinth.com/modpack/${{ vars.MR_PROJECT_ID }}/version/${{ needs.validate.outputs.modpack_version }}>) • [GitHub](<https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}>) • [Issues](<https://github.com/${{ github.repository }}/issues>)"
           fi
           curl -sSf -X POST "${{ vars.FLUXER_WEBHOOK_URL }}" \
             -H "Content-Type: application/json" \

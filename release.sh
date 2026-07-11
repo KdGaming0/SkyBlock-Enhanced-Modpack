@@ -36,6 +36,7 @@ RELEASE_TYPE="release"      # "release" or "beta"
 HOTFIX_N=""                 # e.g. "1" for v3.1.2-hotfix1; empty otherwise
 TAG_OVERRIDE=""             # if set, use this as the git tag (for hotfix)
 TMP_OLD_LOCK=""
+PREV_TAG="none"              # previous release tag (resolved in step_pakku)
 CHANGELOG_BODY=""
 ROLLBACK_NEEDED=false
 OLD_PAKKU_JSON_CONTENT=""
@@ -170,6 +171,7 @@ step_version() {
     echo ""
     if [[ "$IS_CURRENT_BETA" == true ]]; then
         echo -e "    ${BOLD}[0]${NC}  next beta →  ${YELLOW}${V_NEXT_BETA}${NC}  (iterate current beta)"
+        echo -e "    ${BOLD}[6]${NC}  promote →  ${GREEN}${cur_base}${NC}  (release current beta as stable)"
     fi
     echo -e "    ${BOLD}[1]${NC}  patch   →  ${GREEN}$V_PATCH${NC}"
     echo -e "    ${BOLD}[2]${NC}  minor   →  ${YELLOW}$V_MINOR${NC}"
@@ -192,6 +194,22 @@ step_version() {
         BUMP_TYPE="beta-iterate"
         RELEASE_TYPE="beta"
         print_step "Bumping: ${BOLD}${cur}${NC} → ${BOLD}${YELLOW}${NEW_VERSION}${NC} (beta pre-release)"
+        save_json_state
+        _apply_version_files
+        return
+    fi
+
+    # ── Promote path: release the current beta's base version as stable.
+    # e.g. 5.0.0-beta.1 → 5.0.0 (previously the menu could only offer 5.0.1).
+    if [[ "$choice" == "6" ]]; then
+        if [[ "$IS_CURRENT_BETA" != true ]]; then
+            print_err "Option [6] is only available when the current version is a beta."
+            exit 1
+        fi
+        NEW_VERSION="$cur_base"
+        BUMP_TYPE="promote"
+        RELEASE_TYPE="release"
+        print_step "Promoting: ${BOLD}${cur}${NC} → ${BOLD}${GREEN}${NEW_VERSION}${NC} (stable release)"
         save_json_state
         _apply_version_files
         return
@@ -354,10 +372,44 @@ _apply_version_files() {
 step_pakku() {
     print_header "Step 2 · Pakku Update"
 
-    # Snapshot lock file BEFORE updating so we can diff later
+    # ── Changelog baseline ───────────────────────────────────────────────────
+    # Diff against the pakku-lock.json from the PREVIOUS RELEASE TAG, not a
+    # snapshot taken right now. Mods added/updated manually between releases
+    # are therefore included in the changelog — a pre-update snapshot would
+    # only ever capture what `pakku update --all` changes during this run.
     TMP_OLD_LOCK=$(mktemp /tmp/pakku-old-lock.XXXXXX.json)
-    cp "$LOCK_FILE" "$TMP_OLD_LOCK"
-    print_ok "Saved lock snapshot → $TMP_OLD_LOCK"
+    local lock_rel="${LOCK_FILE#"$REPO_ROOT"/}"
+
+    PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
+
+    local baseline_tag="$PREV_TAG"
+    if [[ "$PREV_TAG" == *-beta.* ]]; then
+        # The previous release was a beta. When promoting to stable, players on
+        # the stable channel usually want the changelog since the LAST STABLE,
+        # not just the changes since the final beta — so offer both.
+        local prev_stable
+        prev_stable=$(git tag --list 'v*' --sort=-v:refname \
+            | grep -vE 'beta|hotfix' | head -n1 || true)
+        if [[ -n "$prev_stable" ]]; then
+            echo ""
+            echo -e "  Previous tag ${BOLD}${PREV_TAG}${NC} is a beta. Diff the changelog against:"
+            echo -e "    ${BOLD}[1]${NC}  ${YELLOW}${PREV_TAG}${NC}  (changes since that beta)"
+            echo -e "    ${BOLD}[2]${NC}  ${GREEN}${prev_stable}${NC}  (all changes since the last stable)"
+            local bl_choice
+            read -rp "  Changelog baseline [1]: " bl_choice
+            [[ "${bl_choice:-1}" == "2" ]] && baseline_tag="$prev_stable"
+        fi
+    fi
+
+    if [[ "$baseline_tag" != "none" ]] \
+        && git show "${baseline_tag}:${lock_rel}" > "$TMP_OLD_LOCK" 2>/dev/null \
+        && [[ -s "$TMP_OLD_LOCK" ]]; then
+        print_ok "Changelog baseline: pakku-lock.json @ ${baseline_tag}"
+    else
+        cp "$LOCK_FILE" "$TMP_OLD_LOCK"
+        print_warn "No usable previous tag — baseline is the current lock file"
+        print_warn "(changelog will only show what this run's pakku update changes)."
+    fi
 
     cd "$PACK_DIR"
 
@@ -415,25 +467,67 @@ _dynamic_summary() {
     fi
 }
 
-# Heuristic: classify a name/filename as rp / shader / mod.
-# Two-tier approach:
-#   1. Explicit slug allowlist — catches known packs whose names contain no
-#      generic keywords (e.g. "furfsky-reborn", "defrosted_pack", "looshy").
-#   2. Keyword fallback — catches anything that looks like a shader/RP by name.
+# ─── Project-type lookup (authoritative, from pakku-lock.json) ───────────────
+# pakku-lock.json already knows the type of every project (MOD /
+# RESOURCE_PACK / SHADER — the same column `pakku ls` prints), so we read it
+# instead of maintaining slug lists by hand. Both the baseline and the current
+# lock file are loaded, so removed projects still classify correctly.
+declare -A TYPE_LOOKUP=()
+
+_norm_key() {
+    echo "$1" | tr '[:upper:]' '[:lower:]' \
+        | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//'
+}
+
+_load_type_lookup() {
+    TYPE_LOOKUP=()
+    local lock key type
+    for lock in "$@"; do
+        [[ -f "$lock" ]] || continue
+        while IFS=$'\t' read -r key type; do
+            [[ -z "$key" || -z "$type" ]] && continue
+            TYPE_LOOKUP[$(_norm_key "$key")]="$type"
+        done < <(jq -r '
+            .projects[]?
+            | ((.type // "mod") | ascii_downcase
+               | if test("resource") then "rp"
+                 elif test("shader") then "shader"
+                 else "mod" end) as $t
+            | ((.name // empty), (.files[]?.fileName // empty))
+            | select(. != null and . != "")
+            | "\(.)\t\($t)"
+        ' "$lock" 2>/dev/null)
+    done
+    if [[ "${VERBOSE:-}" == "1" ]]; then
+        echo -e "  ${CYAN}[DEBUG]${NC} Type lookup loaded: ${#TYPE_LOOKUP[@]} keys"
+    fi
+}
+
+# Classify a diff entry (project name for +/- lines, file name for ! lines)
+# as rp / shader / mod.
+#   1. Exact match against pakku-lock.json project names and file names.
+#   2. Slug/keyword fallback for anything the lock files don't cover.
 _classify_entry() {
     local name="$1"
     local lower
-    lower=$(echo "$name" | tr '[:upper:]' '[:lower:]')
+    lower=$(_norm_key "$name")
 
-    # ── Explicit resource-pack slugs (from pakku ls) ──────────────────────────
-    # Add new RP slugs here if the modpack gains more packs whose names wouldn't
-    # be caught by the keyword regex below.
+    # ── 1. Authoritative: pakku-lock.json ────────────────────────────────────
+    if [[ -n "${TYPE_LOOKUP[$lower]:-}" ]]; then
+        echo "${TYPE_LOOKUP[$lower]}"
+        return
+    fi
+
+    # ── 2. Fallback slugs (only used when the lock lookup misses) ────────────
     local rp_slugs=(
-        furfsky-reborn furfsky_reborn
+        furfsky-reborn furfsky_reborn fursky
+        faithful
+        hypixel-plus hypixel_plus "hypixel plus"
+        hypixel-skyblock-legacy "hypixel skyblock legacy" skyblock-legacy
+        dark-mode-skyblock dark_mode_skyblock "skyblock dark mode" "dark mode"
+        skyblock-dark-ui skyblock_dark_ui "skyblock dark ui" "dark ui"
+        sophies-enchants sophies sophie
         packshq packs-hq
-        dark-mode-skyblock dark_mode_skyblock
-        skyblock-dark-ui skyblock_dark_ui
-        sophies-enchants sophie sophies
         defrosted defrosted_pack defrosted-pack
         looshy
     )
@@ -444,10 +538,9 @@ _classify_entry() {
         fi
     done
 
-    # ── Explicit shader slugs ─────────────────────────────────────────────────
     local shader_slugs=(
-        complementary-unbound complementary_unbound
-        makeup-ultra-fast makeup_ultra_fast
+        complementary-unbound complementary_unbound complementary
+        makeup-ultra-fast makeup_ultra_fast makeupultrafast makeup
         bsl seus rethink sildur
     )
     for slug in "${shader_slugs[@]}"; do
@@ -457,10 +550,10 @@ _classify_entry() {
         fi
     done
 
-    # ── Keyword fallback ──────────────────────────────────────────────────────
-    if echo "$lower" | grep -qE 'shader|complementary|rethink|sildur|makeup|ultra.?fast'; then
+    # ── 3. Keyword fallback ──────────────────────────────────────────────────
+    if echo "$lower" | grep -qE 'shader|ultra.?fast'; then
         echo "shader"
-    elif echo "$lower" | grep -qE 'resource.?pack|texture|continuity|fabriulous|connected|stay.?true|clarity|faithful|sphax|compliance|enchant.?book|enchantment.?book'; then
+    elif echo "$lower" | grep -qE 'resource.?pack|texture|continuity|fabriulous|connected|stay.?true|clarity|sphax|compliance|enchant.?book|enchantment.?book'; then
         echo "rp"
     else
         echo "mod"
@@ -618,20 +711,40 @@ _build_changelog() {
 
     [[ -z "$sections" ]] && sections="Internal version bump with no mod changes.\n"
 
+    # ── Summary line ─────────────────────────────────────────────────────────
+    # Count "- " entries per category and feed _dynamic_summary. (The custom
+    # notes flow in step_changelog inserts after line 4, i.e. right after this
+    # summary — it was written with this line in mind.)
+    count_entries() { [[ -z "$1" ]] && echo 0 || printf '%s' "$1" | grep -c '^- '; }
+    local -i c_mod_upd c_mod_add c_mod_rem c_rp_upd c_rp_add c_rp_rem c_sh_upd c_sh_add c_sh_rem
+    c_mod_upd=$(count_entries "$mod_updated"); c_mod_add=$(count_entries "$mod_added"); c_mod_rem=$(count_entries "$mod_removed")
+    c_rp_upd=$(count_entries "$rp_updated");   c_rp_add=$(count_entries "$rp_added");   c_rp_rem=$(count_entries "$rp_removed")
+    c_sh_upd=$(count_entries "$sh_updated");   c_sh_add=$(count_entries "$sh_added");   c_sh_rem=$(count_entries "$sh_removed")
+
+    local -i total=$(( c_mod_upd + c_mod_add + c_mod_rem + c_rp_upd + c_rp_add + c_rp_rem + c_sh_upd + c_sh_add + c_sh_rem ))
+    local summary=""
+    if (( total > 0 )); then
+        # sections already carries the "internal version bump" text when empty
+        summary=$(_dynamic_summary "$c_mod_upd" "$c_mod_add" "$c_mod_rem" \
+                                   "$c_rp_upd" "$c_rp_add" "$c_rp_rem" \
+                                   "$c_sh_upd" "$c_sh_add" "$c_sh_rem")
+    fi
+
     cat <<EOF
 # 🛠 Update $version
 
-$(echo -e "$sections")
+${summary:+$summary
+
+}$(echo -e "$sections")
 
 ---
 
 ### 🛠 Troubleshooting & Tips
 - The first launch after updating may take slightly longer than usual.
-- If Minecraft appears frozen while loading, wait a moment before closing it.
-- If Modrinth does not show the update, refresh the instance page.
+- If Modrinth does not show the update, refresh the instance page or just wait abit.
 
 ### 💡 Need Help?
-Join us on **[Fluxer](https://fluxer.gg/3jJy9cp6)** (recommended) or **[Discord](https://discord.gg/pdwxyjTta7)** for support.
+Join us on **[Discord](https://discord.gg/pdwxyjTta7)** or **[Fluxer](https://fluxer.gg/3jJy9cp6)** for support.
 
 Thanks for using SkyBlock Enhanced!
 EOF
@@ -678,6 +791,10 @@ step_changelog() {
     rm -rf "$DIFF_DIR"
 
     cd "$REPO_ROOT"
+
+    # Load project types from both lock files so added, updated AND removed
+    # entries classify correctly (removed projects only exist in the old lock).
+    _load_type_lookup "$TMP_OLD_LOCK" "$LOCK_FILE"
 
     # ── Build auto-changelog ─────────────────────────────────────────────────
     if [[ "$diff_ok" == false ]]; then
@@ -789,10 +906,10 @@ step_changelog() {
     local cur_cfg="none" prev_cfg="none"
     [[ -f "$cfg_json" ]] && cur_cfg=$(jq -r '.version // "none"' "$cfg_json" 2>/dev/null || echo "none")
 
-    local prev_tag
-    prev_tag=$(git describe --tags --abbrev=0 HEAD 2>/dev/null || echo "none")
-    if [[ "$prev_tag" != "none" ]]; then
-        prev_cfg=$(git show "${prev_tag}:${cfg_json#$REPO_ROOT/}" 2>/dev/null \
+    # PREV_TAG was resolved once in step_pakku — reuse it instead of a second
+    # `git describe` that could disagree.
+    if [[ "$PREV_TAG" != "none" ]]; then
+        prev_cfg=$(git show "${PREV_TAG}:${cfg_json#"$REPO_ROOT"/}" 2>/dev/null \
             | jq -r '.version // "none"' 2>/dev/null || echo "none")
     fi
 

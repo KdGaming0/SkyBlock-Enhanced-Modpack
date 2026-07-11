@@ -1,0 +1,65 @@
+# .github/actions/export-modpack/action.yml
+# ─────────────────────────────────────────────────────────────────────────────
+# Composite action: set up Java, restore the Pakku download cache, download
+# pakku.jar, and run `pakku export` inside the pack directory.
+#
+# Used by:
+#   • build_commit.yml  (build on every push)
+#   • release.yml       build job (export #1 — the artifact that gets TESTED)
+#   • release.yml       test-client job (export #2 — after modlist.json is
+#                       refreshed; this artifact is what gets PUBLISHED)
+#
+# Keeping these steps in one place means a Java bump, a Pakku pin, or a cache
+# tweak only ever has to be made here.
+# ─────────────────────────────────────────────────────────────────────────────
+name: Export modpack
+description: Set up Java, restore Pakku cache, download pakku.jar and run `pakku export`.
+
+inputs:
+  pack-dir:
+    description: Modpack directory containing pakku.json
+    required: true
+  java-version:
+    description: Temurin Java version to install
+    required: false
+    default: '25'
+  pakku-version:
+    description: "'latest', or a Pakku release tag (e.g. 'v1.2.3') for reproducible builds"
+    required: false
+    default: 'latest'
+  use-cache:
+    description: Restore/save the Pakku download cache (set 'false' under act)
+    required: false
+    default: 'true'
+
+runs:
+  using: composite
+  steps:
+    - name: Set up Java ${{ inputs.java-version }}
+      uses: actions/setup-java@v5
+      with:
+        java-version: ${{ inputs.java-version }}
+        distribution: temurin
+
+    - name: Cache pakku downloads
+      if: ${{ inputs.use-cache == 'true' }}
+      uses: actions/cache@v6
+      with:
+        path: ${{ inputs.pack-dir }}/build/.cache
+        key: pakku-${{ runner.os }}-${{ hashFiles(format('{0}/pakku-lock.json', inputs.pack-dir)) }}
+        restore-keys: pakku-${{ runner.os }}-
+
+    - name: Download pakku (${{ inputs.pakku-version }})
+      shell: bash
+      run: |
+        if [[ "${{ inputs.pakku-version }}" == "latest" ]]; then
+          URL="https://github.com/juraj-hrivnak/Pakku/releases/latest/download/pakku.jar"
+        else
+          URL="https://github.com/juraj-hrivnak/Pakku/releases/download/${{ inputs.pakku-version }}/pakku.jar"
+        fi
+        curl -sSL --retry 3 --retry-delay 2 -o pakku.jar "$URL"
+
+    - name: pakku export
+      shell: bash
+      working-directory: ${{ inputs.pack-dir }}
+      run: java -jar "$GITHUB_WORKSPACE/pakku.jar" export

@@ -14,8 +14,9 @@ on:
       - '**'
 
 env:
-  PACK_DIR:     SkyBlock_Enhanced_Modern_Edition_26.1
-  JAVA_VERSION: '21'
+  PACK_DIR:      SkyBlock_Enhanced_Modern_Edition_26.1
+  JAVA_VERSION:  '25'
+  PAKKU_VERSION: latest
 
 jobs:
   build:
@@ -28,17 +29,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Set up Java ${{ env.JAVA_VERSION }}
-        uses: actions/setup-java@v5
-        with:
-          java-version: ${{ env.JAVA_VERSION }}
-          distribution: temurin
-
-      - name: Download pakku
-        run: |
-          curl -sSL -o pakku.jar \
-            https://github.com/juraj-hrivnak/Pakku/releases/latest/download/pakku.jar
-
       - name: Get modpack info
         id: info
         run: |
@@ -46,8 +36,11 @@ jobs:
           .github/scripts/get_modpack_info.sh
 
       - name: Export modpack
-        working-directory: ${{ env.PACK_DIR }}
-        run: java -jar ../pakku.jar export
+        uses: ./.github/actions/export-modpack
+        with:
+          pack-dir:      ${{ env.PACK_DIR }}
+          java-version:  ${{ env.JAVA_VERSION }}
+          pakku-version: ${{ env.PAKKU_VERSION }}
 
       - name: Upload Modrinth artifacts
         uses: actions/upload-artifact@v6
