@@ -2891,7 +2891,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-5.0.10+26.1.2.jar",
+                    "file_name": "packcore-5.0.9+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2901,18 +2901,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8414/982/packcore-5.0.10+26.1.2.jar",
-                    "id": "8414982",
+                    "url": "https://edge.forgecdn.net/files/8414/591/packcore-5.0.9+26.1.2.jar",
+                    "id": "8414591",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "4b556dd6b246580306e1bf963386c79832eed145",
-                        "md5": "af71a3082a61319e0bdc191ece9bc90b"
+                        "sha1": "c7d83a88694a727ae265b0c0197ece22d457630c",
+                        "md5": "09dc032a01a90d31fc4879aa377dd355"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 47388023,
-                    "date_published": "2026-07-11T21:33:28.027Z"
+                    "size": 47384189,
+                    "date_published": "2026-07-11T20:14:11.093Z"
                 }
             ]
         },
