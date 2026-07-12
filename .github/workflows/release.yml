@@ -257,23 +257,12 @@ jobs:
           chmod +x .github/scripts/extract_mrpack.py
           python3 .github/scripts/extract_mrpack.py
 
-      # Enable Crash Assistant's "modpack creator" auto-save in the test run
-      # dir only. This is now a fallback, not the primary mechanism: it only
-      # fires on the TitleScreen tick, which mc-runtime-test's headless
-      # client never reaches (see the trigger-mod steps below). Kept enabled
-      # in case Tier 2 is ever run through a real menu flow instead. Players
-      # still receive auto_update=false.
-      - name: Enable Crash Assistant modlist auto-save (CI run dir only)
-        if: ${{ steps.skip_check.outputs.skip != 'true' }}
-        run: |
-          chmod +x .github/scripts/crash_assistant_modlist.sh
-          .github/scripts/crash_assistant_modlist.sh prepare
-
       # mc-runtime-test joins straight into a singleplayer world and never
-      # renders a TitleScreen, so Crash Assistant's auto_update hook above
-      # never fires. This tiny CI-only mod fires the manual
-      # "/crash_assistant modlist save" command itself, shortly after world
-      # join. See .github/testmods/ca-modlist-ci-trigger/README.md.
+      # renders a TitleScreen, so Crash Assistant's own modlist auto_update
+      # hook (which only fires on the TitleScreen tick) never runs here.
+      # This tiny CI-only mod fires the manual "/crash_assistant modlist
+      # save" command itself, shortly after world join. See
+      # .github/testmods/ca-modlist-ci-trigger/README.md.
       - name: Stage prebuilt modlist CI trigger mod into run/mods
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
         run: |
