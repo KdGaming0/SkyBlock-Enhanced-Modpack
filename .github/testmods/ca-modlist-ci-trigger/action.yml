@@ -12,6 +12,15 @@
 # Uses gradle/actions/setup-gradle instead of a committed Gradle wrapper —
 # no wrapper jar to keep in sync, and it comes with build-result caching
 # out of the box.
+#
+# NOT invoked by release.yml anymore. Tier 2 now stages a prebuilt jar
+# committed at .github/testmods/ca-modlist-ci-trigger/prebuilt/ModlistCiTrigger.jar
+# instead of rebuilding on every release (saves the Java/Gradle setup on
+# every run). This action is kept around for regenerating that prebuilt jar
+# by hand after changing the trigger mod's source — e.g. via a manual
+# workflow_dispatch job, or `gradle build` locally in
+# .github/testmods/ca-modlist-ci-trigger/, then commit the resulting jar
+# (renamed to ModlistCiTrigger.jar) back to the prebuilt/ path above.
 # ─────────────────────────────────────────────────────────────────────────────
 name: Build modlist CI trigger mod
 description: Build the CI-only Fabric mod that fires "/crash_assistant modlist save" on world join.
