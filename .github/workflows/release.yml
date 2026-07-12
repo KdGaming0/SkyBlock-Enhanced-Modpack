@@ -297,9 +297,18 @@ jobs:
       # Pull the modlist Crash Assistant just wrote, drop the test-harness
       # mod entry, and stage it into .pakku/client-overrides/… so the final
       # export ships it.
+      #
+      # continue-on-error: the trigger mod occasionally doesn't fire in time
+      # (see the script's own troubleshooting output on failure). Rather than
+      # block every release on that flakiness, a failed harvest here just
+      # means the export below falls back to whatever modlist.json is
+      # already committed — same as a normal Tier-2-skipped release. Check
+      # this step's logs after green runs too; a silent failure here means
+      # the shipped modlist is going stale.
       - name: Harvest generated modlist.json
         id: modlist
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        continue-on-error: true
         run: |
           chmod +x .github/scripts/crash_assistant_modlist.sh
           .github/scripts/crash_assistant_modlist.sh harvest

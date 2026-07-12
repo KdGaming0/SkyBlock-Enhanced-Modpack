@@ -37,13 +37,13 @@
     "curseForgeHash": 1822167192,
     "modrinthHash": "24bb68c889e56d6a532725668ca663e4197935c5"
   },
-  "btrbz-0.8.0-alpha+26.1.x.jar": {
-    "jarName": "btrbz-0.8.0-alpha+26.1.x.jar",
+  "btrbz-0.9.0-alpha+26.1.x.jar": {
+    "jarName": "btrbz-0.9.0-alpha+26.1.x.jar",
     "modId": "btrbz",
     "name": "BtrBz",
-    "version": "0.8.0",
-    "curseForgeHash": 336486919,
-    "modrinthHash": "cc81c523c0271c1be96132a61b9ee369c4fd2efa"
+    "version": "0.9.0",
+    "curseForgeHash": 1829177841,
+    "modrinthHash": "95db06e02970c4e366c684748541e95a39301e9d"
   },
   "Catharsis-1.0.0-beta.20-26.1.jar": {
     "jarName": "Catharsis-1.0.0-beta.20-26.1.jar",
@@ -341,13 +341,13 @@
     "curseForgeHash": 2486016348,
     "modrinthHash": "c1ce548549ec4517b9393985cefc65389e6f36d8"
   },
-  "reliable-recipe-viewer-8.6.0+26.1.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.6.0+26.1.2-fabric.jar",
+  "reliable-recipe-viewer-8.6.1+26.1.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.6.1+26.1.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.6.0+26.1.2",
-    "curseForgeHash": 2127375449,
-    "modrinthHash": "094ed78df73bea059a4e79a05a8ace723832b52b"
+    "version": "8.6.1+26.1.2",
+    "curseForgeHash": 246490521,
+    "modrinthHash": "86a2f6db5bd276d8400386f2ecd621c0dac73fc6"
   },
   "rpc-1.2.6+26.1-26.1.2.jar": {
     "jarName": "rpc-1.2.6+26.1-26.1.2.jar",
