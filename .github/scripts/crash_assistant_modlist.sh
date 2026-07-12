@@ -31,6 +31,7 @@ set -euo pipefail
 PACK_DIR="${PACK_DIR:-SkyBlock_Enhanced_Modern_Edition_26.1}"
 RUN_DIR="${RUN_DIR:-run}"
 
+CI_CFG_TEMPLATE=".github/scripts/crash_assistant_ci_config.toml"
 CFG="$RUN_DIR/config/crash_assistant/config.toml"
 SRC="$RUN_DIR/config/crash_assistant/modlist.json"
 DEST="$PACK_DIR/.pakku/client-overrides/config/crash_assistant/modlist.json"
@@ -46,25 +47,8 @@ fail() { echo "  [FAIL]  $*" >&2; exit 1; }
 prepare() {
     echo "  ── Crash Assistant · enable modlist auto-save (CI only) ──"
     mkdir -p "$(dirname "$CFG")"
-
-    if [[ -f "$CFG" ]]; then
-        # auto_update: makes CA overwrite modlist.json on every launch.
-        # modpack_creators: emptied so the CI account (whatever name it
-        # launches under) self-qualifies instead of being silently ignored.
-        sed -i \
-            -e 's/^\(\s*auto_update\s*=\s*\)false/\1true/' \
-            -e 's/^\(\s*modpack_creators\s*=\s*\).*/\1[]/' \
-            "$CFG"
-        ok "Patched existing $CFG (auto_update=true, modpack_creators=[])"
-    else
-        cat > "$CFG" << 'TOML'
-[modpack_modlist]
-enabled = true
-auto_update = true
-modpack_creators = []
-TOML
-        ok "Created minimal $CFG (pack did not ship one to run/)"
-    fi
+    cp "$CI_CFG_TEMPLATE" "$CFG"
+    ok "Installed CI-only $CFG from $CI_CFG_TEMPLATE"
 }
 
 harvest() {
