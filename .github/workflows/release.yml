@@ -300,7 +300,9 @@ jobs:
       - name: Harvest generated modlist.json
         id: modlist
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
-        run: .github/scripts/crash_assistant_modlist.sh harvest
+        run: |
+          chmod +x .github/scripts/crash_assistant_modlist.sh
+          .github/scripts/crash_assistant_modlist.sh harvest
 
       - name: Upload modlist.json artifact
         if: ${{ !env.ACT && steps.skip_check.outputs.skip != 'true' }}
