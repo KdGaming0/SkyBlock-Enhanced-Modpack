@@ -31,7 +31,7 @@ set -euo pipefail
 PACK_DIR="${PACK_DIR:-SkyBlock_Enhanced_Modern_Edition_26.1}"
 RUN_DIR="${RUN_DIR:-run}"
 
-CFG="$RUN_DIR/config/crash_assistant/config.json"
+CFG="$RUN_DIR/config/crash_assistant/config.toml"
 SRC="$RUN_DIR/config/crash_assistant/modlist.json"
 DEST="$PACK_DIR/.pakku/client-overrides/config/crash_assistant/modlist.json"
 
@@ -48,15 +48,21 @@ prepare() {
     mkdir -p "$(dirname "$CFG")"
 
     if [[ -f "$CFG" ]]; then
-        # Merge into the shipped config so every other setting survives.
-        tmp=$(mktemp)
-        jq '.modpack_modlist.enabled = true
-            | .modpack_modlist.auto_update = true' "$CFG" > "$tmp" \
-            || fail "Could not patch $CFG (invalid JSON?)"
-        mv "$tmp" "$CFG"
-        ok "Patched existing $CFG (modpack_modlist.auto_update = true)"
+        # auto_update: makes CA overwrite modlist.json on every launch.
+        # modpack_creators: emptied so the CI account (whatever name it
+        # launches under) self-qualifies instead of being silently ignored.
+        sed -i \
+            -e 's/^\(\s*auto_update\s*=\s*\)false/\1true/' \
+            -e 's/^\(\s*modpack_creators\s*=\s*\).*/\1[]/' \
+            "$CFG"
+        ok "Patched existing $CFG (auto_update=true, modpack_creators=[])"
     else
-        printf '{ "modpack_modlist": { "enabled": true, "auto_update": true } }\n' > "$CFG"
+        cat > "$CFG" << 'TOML'
+[modpack_modlist]
+enabled = true
+auto_update = true
+modpack_creators = []
+TOML
         ok "Created minimal $CFG (pack did not ship one to run/)"
     fi
 }

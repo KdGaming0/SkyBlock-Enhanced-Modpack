@@ -13,13 +13,13 @@
     "curseForgeHash": 3552638587,
     "modrinthHash": "ff32bb97bddd4c74a079163e804c88cb47aca391"
   },
-  "bbe-fabric-1.3.5+mc26.1.2.jar": {
-    "jarName": "bbe-fabric-1.3.5+mc26.1.2.jar",
+  "bbe-fabric-1.3.6+mc26.1.2.jar": {
+    "jarName": "bbe-fabric-1.3.6+mc26.1.2.jar",
     "modId": "betterblockentities",
     "name": "BBE",
-    "version": "1.3.5+mc26.1.2",
-    "curseForgeHash": 3438626398,
-    "modrinthHash": "0124dc003d0d2ae668155ab8d3b20e78cde69267"
+    "version": "1.3.6+mc26.1.2",
+    "curseForgeHash": 3949218252,
+    "modrinthHash": "977c65282a7264e80ac05c7df4ddd0df9ea67021"
   },
   "better_hypixel_chat-0.3.1+26.1.2.jar": {
     "jarName": "better_hypixel_chat-0.3.1+26.1.2.jar",
@@ -181,14 +181,6 @@
     "curseForgeHash": 1621630962,
     "modrinthHash": "70744e34515aa0054b2959a0a32a2227ba028d4e"
   },
-  "HypixelModAPI-1.0.2+build.1+mc26.1.jar": {
-    "jarName": "HypixelModAPI-1.0.2+build.1+mc26.1.jar",
-    "modId": "hypixel-mod-api",
-    "name": "Hypixel Mod API",
-    "version": "1.0.2+build.1+mc26.1",
-    "curseForgeHash": 1218980934,
-    "modrinthHash": "88726ef6465e41d6f5bce83b7575bdf0a279b800"
-  },
   "ImmediatelyFast-Fabric-1.15.3+26.1.jar": {
     "jarName": "ImmediatelyFast-Fabric-1.15.3+26.1.jar",
     "modId": "immediatelyfast",
@@ -196,6 +188,22 @@
     "version": "1.15.3+26.1",
     "curseForgeHash": 3746170222,
     "modrinthHash": "0bc5865bcb7f2f09d85559a58fccddcfd335f44d"
+  },
+  "inventorybuttons-26.1-1.2.2.jar": {
+    "jarName": "inventorybuttons-26.1-1.2.2.jar",
+    "modId": "inventorybuttons",
+    "name": "inventorybuttons",
+    "version": "1.2.2",
+    "curseForgeHash": 1325681415,
+    "modrinthHash": "939fb1c7167d137914e6c130caeacd60a6c02a37"
+  },
+  "iris-fabric-1.11.2+mc26.1.2.jar": {
+    "jarName": "iris-fabric-1.11.2+mc26.1.2.jar",
+    "modId": "iris",
+    "name": "Iris",
+    "version": "1.11.2+mc26.1.2",
+    "curseForgeHash": 1372087619,
+    "modrinthHash": "5f23dc2bae9fa28a18ef1ec6a60c0d6f8fcc5b13"
   },
   "Ixeris-4.5.2+26.1.2-fabric.jar": {
     "jarName": "Ixeris-4.5.2+26.1.2-fabric.jar",
@@ -229,13 +237,13 @@
     "curseForgeHash": 1645091688,
     "modrinthHash": "f1870b6d6982af173ae7166b811f6dec6019b56a"
   },
-  "marketguard-1.3.2+26.1.2.jar": {
-    "jarName": "marketguard-1.3.2+26.1.2.jar",
+  "marketguard-1.4.0+26.1.2.jar": {
+    "jarName": "marketguard-1.4.0+26.1.2.jar",
     "modId": "marketguard",
     "name": "ScamScreener MarketGuard",
-    "version": "1.3.2",
-    "curseForgeHash": 907193281,
-    "modrinthHash": "1956836f3c17d8b2c181be2bc036f951198bb3fa"
+    "version": "1.4.0",
+    "curseForgeHash": 804254212,
+    "modrinthHash": "3160fcd857fc0e4d721c670e5792e5e2a5b202a6"
   },
   "modernfix-5.27.19-build.1.jar": {
     "jarName": "modernfix-5.27.19-build.1.jar",
@@ -301,13 +309,13 @@
     "curseForgeHash": 2659545146,
     "modrinthHash": "64b438984f1625beaf834ff9d014686119023a0c"
   },
-  "packcore-5.0.8+26.1.2.jar": {
-    "jarName": "packcore-5.0.8+26.1.2.jar",
+  "packcore-5.0.10+26.1.2.jar": {
+    "jarName": "packcore-5.0.10+26.1.2.jar",
     "modId": "packcore",
     "name": "Pack Core",
-    "version": "5.0.8",
-    "curseForgeHash": 3100268788,
-    "modrinthHash": "43fccb1a99aea6bb4ce5271721285f9379d2ca8e"
+    "version": "5.0.10",
+    "curseForgeHash": 744903410,
+    "modrinthHash": "4b556dd6b246580306e1bf963386c79832eed145"
   },
   "packetfixer-fabric-3.3.5-26.1.2.jar": {
     "jarName": "packetfixer-fabric-3.3.5-26.1.2.jar",
@@ -333,13 +341,21 @@
     "curseForgeHash": 2486016348,
     "modrinthHash": "c1ce548549ec4517b9393985cefc65389e6f36d8"
   },
-  "reliable-recipe-viewer-8.4.2+26.1.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.4.2+26.1.2-fabric.jar",
+  "reliable-recipe-viewer-8.6.0+26.1.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.6.0+26.1.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.4.2+26.1.2",
-    "curseForgeHash": 3336690455,
-    "modrinthHash": "89621697d14c754b7660402387664a2da98da576"
+    "version": "8.6.0+26.1.2",
+    "curseForgeHash": 2127375449,
+    "modrinthHash": "094ed78df73bea059a4e79a05a8ace723832b52b"
+  },
+  "rpc-1.2.6+26.1-26.1.2.jar": {
+    "jarName": "rpc-1.2.6+26.1-26.1.2.jar",
+    "modId": "rpc",
+    "name": "ResourcePackCached",
+    "version": "1.2.6",
+    "curseForgeHash": 2392322613,
+    "modrinthHash": "fda44b2e9674c9158365d9eaf36552d454a6d3d4"
   },
   "SBO-0.4.3+26.1.2-fabric.jar": {
     "jarName": "SBO-0.4.3+26.1.2-fabric.jar",
@@ -397,45 +413,45 @@
     "curseForgeHash": 1825794660,
     "modrinthHash": "cda2c6f93604a98ce4863540e76b26d8621255d1"
   },
-  "SkyBlockPv-1.8.6-26.1.jar": {
-    "jarName": "SkyBlockPv-1.8.6-26.1.jar",
+  "SkyBlockPv-1.8.7-26.1.jar": {
+    "jarName": "SkyBlockPv-1.8.7-26.1.jar",
     "modId": "skyblockpv",
     "name": "SkyBlock Profile Viewer",
-    "version": "1.8.6",
-    "curseForgeHash": 390825807,
-    "modrinthHash": "62ec253e5270fc81f79d9b842f858f4ea17e511f"
+    "version": "1.8.7",
+    "curseForgeHash": 1095439611,
+    "modrinthHash": "0b555552a579880f7bd4ceb29f4fae0f214efdf7"
   },
-  "SkyHanni-7.32.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.32.0-mc26.1.jar",
+  "SkyHanni-7.33.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.33.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.32.0",
-    "curseForgeHash": 851542515,
-    "modrinthHash": "e84a6eeb4993b466eba0e00b12af864cea5d5528"
+    "version": "7.33.0",
+    "curseForgeHash": 279991805,
+    "modrinthHash": "76fe7398d0a3538d63e9766885b5ecaaff354f75"
   },
-  "SkyOcean-1.17.0-26.1.jar": {
-    "jarName": "SkyOcean-1.17.0-26.1.jar",
+  "SkyOcean-1.17.1-26.1.jar": {
+    "jarName": "SkyOcean-1.17.1-26.1.jar",
     "modId": "skyocean",
     "name": "SkyOcean",
-    "version": "1.17.0",
-    "curseForgeHash": 1621516142,
-    "modrinthHash": "007d576b79df448fe684c7fc87f5ec25a9306a86"
+    "version": "1.17.1",
+    "curseForgeHash": 3258031900,
+    "modrinthHash": "bfa14dab2de0a4be11a032a92a8af83ed5fb4afe"
   },
-  "skyrecipes-0.3.0+26.1.2.jar": {
-    "jarName": "skyrecipes-0.3.0+26.1.2.jar",
+  "skyrecipes-0.3.1+26.1.2.jar": {
+    "jarName": "skyrecipes-0.3.1+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.3.0",
-    "curseForgeHash": 226781774,
-    "modrinthHash": "e7c402709170bdd27e984e50fa5108d64a575c5e"
+    "version": "0.3.1",
+    "curseForgeHash": 1319990918,
+    "modrinthHash": "c8fbea6cba07925629230493f6f2724ba0e14ddb"
   },
-  "sodium-extra-fabric-0.9.1+mc26.1.2.jar": {
-    "jarName": "sodium-extra-fabric-0.9.1+mc26.1.2.jar",
+  "sodium-extra-fabric-0.8.7+mc26.1.1.jar": {
+    "jarName": "sodium-extra-fabric-0.8.7+mc26.1.1.jar",
     "modId": "sodium-extra",
     "name": "Sodium Extra",
-    "version": "0.9.1+mc26.1.2",
-    "curseForgeHash": 2898972815,
-    "modrinthHash": "dc6c4e1d5147ff41a65e7bb042091a77c88ea3cd"
+    "version": "0.8.7+mc26.1.1",
+    "curseForgeHash": 2135589338,
+    "modrinthHash": "457ea5643de4e537eb44fc117d88886d52cdebf9"
   },
   "sodium-fabric-0.9.1+mc26.1.2.jar": {
     "jarName": "sodium-fabric-0.9.1+mc26.1.2.jar",
@@ -508,5 +524,32 @@
     "version": "2.16.1+26.1",
     "curseForgeHash": 3485961364,
     "modrinthHash": "c180ae8cf90da1abd67c26b5c5e7bf5d795c3b1d"
+  },
+  "Dark Skyblock v2.0c.cats.zip (resourcepack)": {
+    "jarName": "Dark Skyblock v2.0c.cats.zip (resourcepack)"
+  },
+  "Faithful 32x - 26.1.zip (resourcepack)": {
+    "jarName": "Faithful 32x - 26.1.zip (resourcepack)"
+  },
+  "FurSky Reborn.cats.zip (resourcepack)": {
+    "jarName": "FurSky Reborn.cats.zip (resourcepack)"
+  },
+  "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)": {
+    "jarName": "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)"
+  },
+  "SBO Custom Sounds Data Pack (resourcepack)": {
+    "jarName": "SBO Custom Sounds Data Pack (resourcepack)"
+  },
+  "Skyblock Dark UI 1.16 for 1.21.11+.zip (resourcepack)": {
+    "jarName": "Skyblock Dark UI 1.16 for 1.21.11+.zip (resourcepack)"
+  },
+  "SkyBlock Legacy.zip (resourcepack)": {
+    "jarName": "SkyBlock Legacy.zip (resourcepack)"
+  },
+  "Sophie\u0027s Enchants V2.0.1.zip (resourcepack)": {
+    "jarName": "Sophie\u0027s Enchants V2.0.1.zip (resourcepack)"
+  },
+  "§dlooshy §7[§f26.1§7] [v0.12].zip (resourcepack)": {
+    "jarName": "§dlooshy §7[§f26.1§7] [v0.12].zip (resourcepack)"
   }
 }

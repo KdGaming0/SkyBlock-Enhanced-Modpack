@@ -16,8 +16,9 @@ An update bringing in some new mods along with the usual maintenance updates.
 - **Bbe Fabric**: 1.3.5 -> **1.3.6**
 - **Skyrecipes**: 0.3.0+26.1.2 -> **0.3.1+26.1.2**
 - **Packcore**: 5.0.8+26.1.2 -> **5.0.10+26.1.2**
-- **Reliable Recipe Viewer**: 8.5.0+26.1.2-fabric -> **8.6.0+26.1.2-fabric**
 - **SkyHanni**: 7.32.0-mc26.1 -> **7.33.0-mc26.1**
+- **Btrbz**: 0.8.0-alpha+26.1.x -> **0.9.0-alpha+26.1.x** (Note this update added breaking changes to the Bookmarks & Alerts, so any saved Bookmarks or Alerts will be reset and you need to readd them)
+- **Reliable Recipe Viewer**: 8.5.0+26.1.2-fabric -> **8.6.1+26.1.2-fabric**
 
 ---
 
@@ -31,6 +32,7 @@ Join us on **[Discord](https://discord.gg/pdwxyjTta7)** or **[Fluxer](https://fl
 Thanks for using SkyBlock Enhanced!
 
 ---
+
 
 # 🛠 Update 5.0.7
 

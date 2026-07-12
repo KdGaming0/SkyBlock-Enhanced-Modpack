@@ -750,6 +750,21 @@ Thanks for using SkyBlock Enhanced!
 EOF
 }
 
+# Pulls just the "## " sections (Added/Removed/Updated) out of a full
+# _build_changelog() result, dropping the "# Update X" title, the summary
+# line, and the Troubleshooting/Discord footer. Used to fold a hotfix's new
+# changes into a previously-generated changelog instead of replacing it.
+# Returns empty if the generated body had no real sections (i.e. the
+# "Internal version bump with no mod changes." placeholder).
+_extract_new_changes_section() {
+    local full="$1"
+    awk '
+        /^---$/ { exit }
+        found   { print }
+        !found && /^## / { found=1; print }
+    ' <<< "$full"
+}
+
 step_changelog() {
     print_header "Step 3 · Changelog"
 
@@ -797,11 +812,44 @@ step_changelog() {
     _load_type_lookup "$TMP_OLD_LOCK" "$LOCK_FILE"
 
     # ── Build auto-changelog ─────────────────────────────────────────────────
-    if [[ "$diff_ok" == false ]]; then
-        print_warn "pakku diff produced no output — using empty template."
-        CHANGELOG_BODY=$(_build_changelog "" "$NEW_VERSION")
+    # For a hotfix retry, PREV_TAG (used as the diff baseline in step_pakku)
+    # is the tag from the previous attempt — so raw_diff already only shows
+    # what's genuinely new since then. Reuse the changelog that attempt wrote
+    # instead of generating a brand-new one from scratch, and fold any new
+    # diff into it rather than discarding it.
+    local prev_changelog_file="$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md"
+    local prev_changelog=""
+    [[ -n "$HOTFIX_N" && -f "$prev_changelog_file" ]] && prev_changelog=$(cat "$prev_changelog_file")
+
+    if [[ -n "$prev_changelog" ]]; then
+        local fresh
+        if [[ "$diff_ok" == false ]]; then
+            fresh=$(_build_changelog "" "$NEW_VERSION")
+        else
+            fresh=$(_build_changelog "$raw_diff" "$NEW_VERSION")
+        fi
+
+        local new_bits
+        new_bits=$(_extract_new_changes_section "$fresh")
+
+        if [[ -n "$new_bits" ]]; then
+            print_ok "Reusing existing changelog for v${NEW_VERSION}; folding in new changes (hotfix ${HOTFIX_N})."
+            local title rest
+            title=$(head -n1 <<< "$prev_changelog")
+            rest=$(tail -n +2 <<< "$prev_changelog")
+            CHANGELOG_BODY="${title}"$'\n\n'"## 🚑 Hotfix ${HOTFIX_N} — Additional Changes"$'\n\n'"${new_bits}"$'\n\n'"${rest}"
+        else
+            print_ok "Reusing existing changelog for v${NEW_VERSION} — no new changes since the last attempt."
+            CHANGELOG_BODY="$prev_changelog"
+        fi
     else
-        CHANGELOG_BODY=$(_build_changelog "$raw_diff" "$NEW_VERSION")
+        [[ -n "$HOTFIX_N" ]] && print_warn "No existing changelog found for v${NEW_VERSION} — generating fresh."
+        if [[ "$diff_ok" == false ]]; then
+            print_warn "pakku diff produced no output — using empty template."
+            CHANGELOG_BODY=$(_build_changelog "" "$NEW_VERSION")
+        else
+            CHANGELOG_BODY=$(_build_changelog "$raw_diff" "$NEW_VERSION")
+        fi
     fi
 
     # ── Preview ─────────────────────────────────────────────────────────────
@@ -878,15 +926,36 @@ step_changelog() {
 
     # ── Write files ──────────────────────────────────────────────────────────
 
-    # Prepend to main CHANGELOG.md
+    # Prepend to main CHANGELOG.md — unless this is a hotfix retry and the
+    # existing top entry is already for this same version (i.e. from the
+    # attempt whose CI failed), in which case replace that entry in place
+    # instead of stacking a duplicate "# Update vX" block above it.
     if [[ -f "$ROOT_CHANGELOG" ]]; then
         local existing
         existing=$(cat "$ROOT_CHANGELOG")
-        printf '%s\n\n---\n\n%s\n' "$CHANGELOG_BODY" "$existing" > "$ROOT_CHANGELOG"
+        local top_title
+        top_title=$(head -n1 <<< "$existing")
+
+        if [[ -n "$HOTFIX_N" && "$top_title" == "# 🛠 Update ${NEW_VERSION}" ]]; then
+            # Each generated entry contains exactly one internal "---" (before
+            # the Troubleshooting footer), so the boundary between this top
+            # entry and the next one is the *second* "---" line encountered.
+            local rest_after_top
+            rest_after_top=$(awk '/^---$/{c++; if(c==2){found=1; next}} found{print}' <<< "$existing")
+            if [[ -n "$rest_after_top" ]]; then
+                printf '%s\n\n---\n\n%s\n' "$CHANGELOG_BODY" "$rest_after_top" > "$ROOT_CHANGELOG"
+            else
+                echo "$CHANGELOG_BODY" > "$ROOT_CHANGELOG"
+            fi
+            print_ok "Updated CHANGELOG.md (replaced existing v${NEW_VERSION} entry)"
+        else
+            printf '%s\n\n---\n\n%s\n' "$CHANGELOG_BODY" "$existing" > "$ROOT_CHANGELOG"
+            print_ok "Updated CHANGELOG.md"
+        fi
     else
         echo "$CHANGELOG_BODY" > "$ROOT_CHANGELOG"
+        print_ok "Updated CHANGELOG.md"
     fi
-    print_ok "Updated CHANGELOG.md"
 
     # Write versioned changelog to packcore markdown dir
     if [[ -d "$PACKCORE_MD_DIR" ]]; then
