@@ -1,36 +1,47 @@
-# .github/actions/export-modpack/action.yml
+# .github/actions/build-modlist-ci-trigger/action.yml
 # ─────────────────────────────────────────────────────────────────────────────
-# Composite action: set up Java, restore the Pakku download cache, download
-# pakku.jar, and run `pakku export` inside the pack directory.
+# Composite action: build the CI-only "modlist save trigger" Fabric mod
+# (source: .github/testmods/ca-modlist-ci-trigger/) and expose the built
+# jar's path as an output, ready to be copied into run/mods/.
 #
-# Used by:
-#   • build_commit.yml  (build on every push)
-#   • release.yml       build job (export #1 — the artifact that gets TESTED)
-#   • release.yml       test-client job (export #2 — after modlist.json is
-#                       refreshed; this artifact is what gets PUBLISHED)
+# This mod is NEVER part of the shipped modpack — see
+# .github/testmods/ca-modlist-ci-trigger/README.md for why it exists
+# (mc-runtime-test skips the TitleScreen, so Crash Assistant's normal
+# modlist auto-save never fires during the Tier 2 headless client test).
 #
-# Keeping these steps in one place means a Java bump, a Pakku pin, or a cache
-# tweak only ever has to be made here.
+# Uses gradle/actions/setup-gradle instead of a committed Gradle wrapper —
+# no wrapper jar to keep in sync, and it comes with build-result caching
+# out of the box.
+#
+# NOT invoked by release.yml anymore. Tier 2 now stages a prebuilt jar
+# committed at .github/testmods/ca-modlist-ci-trigger/prebuilt/ModlistCiTrigger.jar
+# instead of rebuilding on every release (saves the Java/Gradle setup on
+# every run). This action is kept around for regenerating that prebuilt jar
+# by hand after changing the trigger mod's source — e.g. via a manual
+# workflow_dispatch job, or `gradle build` locally in
+# .github/testmods/ca-modlist-ci-trigger/, then commit the resulting jar
+# (renamed to ModlistCiTrigger.jar) back to the prebuilt/ path above.
 # ─────────────────────────────────────────────────────────────────────────────
-name: Export modpack
-description: Set up Java, restore Pakku cache, download pakku.jar and run `pakku export`.
+name: Build modlist CI trigger mod
+description: Build the CI-only Fabric mod that fires "/crash_assistant modlist save" on world join.
 
 inputs:
-  pack-dir:
-    description: Modpack directory containing pakku.json
+  minecraft-version:
+    description: Minecraft version to build the trigger mod against (should match the pack's target, e.g. from get_modpack_info.sh)
     required: true
   java-version:
-    description: Temurin Java version to install
+    description: Temurin Java version to build with
     required: false
     default: '25'
-  pakku-version:
-    description: "'latest', or a Pakku release tag (e.g. 'v1.2.3') for reproducible builds"
+  gradle-version:
+    description: Gradle version to build with
     required: false
-    default: 'latest'
-  use-cache:
-    description: Restore/save the Pakku download cache (set 'false' under act)
-    required: false
-    default: 'true'
+    default: '8.10'
+
+outputs:
+  jar-path:
+    description: Absolute path to the built trigger mod jar
+    value: ${{ steps.locate.outputs.jar-path }}
 
 runs:
   using: composite
@@ -41,25 +52,29 @@ runs:
         java-version: ${{ inputs.java-version }}
         distribution: temurin
 
-    - name: Cache pakku downloads
-      if: ${{ inputs.use-cache == 'true' }}
-      uses: actions/cache@v6
+    - name: Set up Gradle
+      uses: gradle/actions/setup-gradle@v4
       with:
-        path: ${{ inputs.pack-dir }}/build/.cache
-        key: pakku-${{ runner.os }}-${{ hashFiles(format('{0}/pakku-lock.json', inputs.pack-dir)) }}
-        restore-keys: pakku-${{ runner.os }}-
+        gradle-version: ${{ inputs.gradle-version }}
+        cache-read-only: false
 
-    - name: Download pakku (${{ inputs.pakku-version }})
+    - name: Build trigger mod
       shell: bash
+      working-directory: .github/testmods/ca-modlist-ci-trigger
       run: |
-        if [[ "${{ inputs.pakku-version }}" == "latest" ]]; then
-          URL="https://github.com/juraj-hrivnak/Pakku/releases/latest/download/pakku.jar"
-        else
-          URL="https://github.com/juraj-hrivnak/Pakku/releases/download/${{ inputs.pakku-version }}/pakku.jar"
-        fi
-        curl -sSL --retry 3 --retry-delay 2 -o pakku.jar "$URL"
+        gradle build \
+          -Pminecraft_version="${{ inputs.minecraft-version }}" \
+          --console=plain --no-daemon
 
-    - name: pakku export
+    - name: Locate built jar
+      id: locate
       shell: bash
-      working-directory: ${{ inputs.pack-dir }}
-      run: java -jar "$GITHUB_WORKSPACE/pakku.jar" export
+      working-directory: .github/testmods/ca-modlist-ci-trigger
+      run: |
+        JAR=$(find build/libs -maxdepth 1 -name '*.jar' ! -name '*-sources.jar' | head -n1)
+        if [[ -z "$JAR" ]]; then
+          echo "::error::Trigger mod build produced no jar under build/libs/ — check the 'Build trigger mod' step output above."
+          exit 1
+        fi
+        echo "  [OK]  Built $JAR"
+        echo "jar-path=$(pwd)/$JAR" >> "$GITHUB_OUTPUT"

@@ -3,11 +3,16 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Automates what "/crash_assistant modlist save" does manually in-game.
 #
-# Crash Assistant regenerates config/crash_assistant/modlist.json on every
-# game launch when modpack_modlist.auto_update is enabled (this is the
-# "modpack creator" mode described on the mod page). We enable that flag ONLY
-# inside the CI test run directory (run/), so the config that ships to players
-# keeps auto_update disabled and their modlist.json stays the official one.
+# Crash Assistant's modpack_modlist.auto_update *would* regenerate
+# config/crash_assistant/modlist.json on every game launch — but only "on
+# the first tick of TitleScreen". mc-runtime-test's headless client joins a
+# singleplayer world directly and never renders a TitleScreen, so that hook
+# never fires here. `prepare` still enables auto_update as a harmless
+# fallback (config that ships to players keeps auto_update disabled either
+# way), but the actual save is triggered by the CI-only
+# ca-modlist-ci-trigger Fabric mod (.github/testmods/ca-modlist-ci-trigger/),
+# which fires the manual "/crash_assistant modlist save" command itself a
+# few ticks after world join. See that mod's README for the full story.
 #
 # Two subcommands:
 #
@@ -36,9 +41,13 @@ CFG="$RUN_DIR/config/crash_assistant/config.toml"
 SRC="$RUN_DIR/config/crash_assistant/modlist.json"
 DEST="$PACK_DIR/.pakku/client-overrides/config/crash_assistant/modlist.json"
 
-# Entries added by the test harness itself, never part of the real pack.
-# Matches "mc-runtime-test", "mc_runtime_test", "MC Runtime Test", "mcrt", etc.
-HARNESS_REGEX='mc[-_ ]?runtime[-_ ]?test|^mcrt$'
+# Entries added by CI tooling itself, never part of the real pack:
+#   - the mc-runtime-test harness mod: "mc-runtime-test", "mc_runtime_test",
+#     "MC Runtime Test", "mcrt", etc.
+#   - our own ca-modlist-ci-trigger mod (modid ca_modlist_ci_trigger, name
+#     "Crash Assistant Modlist CI Trigger") — see
+#     .github/testmods/ca-modlist-ci-trigger/README.md
+HARNESS_REGEX='mc[-_ ]?runtime[-_ ]?test|^mcrt$|ca[-_ ]?modlist[-_ ]?ci[-_ ]?trigger'
 
 info() { echo "  [INFO]  $*"; }
 ok()   { echo "  [OK]    $*"; }
@@ -57,9 +66,25 @@ harvest() {
     if [[ ! -f "$SRC" ]]; then
         echo "  [FAIL]  $SRC was not generated during the client launch." >&2
         echo "          Likely causes:" >&2
-        echo "          • Crash Assistant renamed/moved the auto-save option — check" >&2
-        echo "            the modpack_modlist section of the config for your installed" >&2
-        echo "            version and update the 'prepare' step of this script." >&2
+        echo "          • ca-modlist-ci-trigger mod didn't fire (this is the most" >&2
+        echo "            common cause — Crash Assistant's own auto_update never" >&2
+        echo "            fires under mc-runtime-test in the first place, since it" >&2
+        echo "            only triggers on the TitleScreen tick and mc-runtime-test" >&2
+        echo "            skips straight into a world). Check:" >&2
+        echo "              - Did 'Build modlist CI trigger mod' / 'Stage modlist CI" >&2
+        echo "                trigger mod into run/mods' succeed earlier in this job?" >&2
+        echo "              - Does run/logs/latest.log contain" >&2
+        echo "                '[ca-modlist-ci-trigger]' lines? If absent, the jar" >&2
+        echo "                likely never made it into run/mods/ before launch." >&2
+        echo "              - If present but no 'Sending ...' line followed, the" >&2
+        echo "                DELAY_TICKS window in ModlistCiTrigger.java may be" >&2
+        echo "                longer than mc-runtime-test's own quit timer — the" >&2
+        echo "                world only reached 'Preparing spawn area: 16%' in one" >&2
+        echo "                observed run before the harness quit at ~20s." >&2
+        echo "          • Crash Assistant renamed/moved the manual-save command or" >&2
+        echo "            the auto-save option — check the modpack_modlist section" >&2
+        echo "            of the config for your installed version and update the" >&2
+        echo "            'prepare' step of this script / the trigger mod's COMMAND." >&2
         echo "          • The game exited before Crash Assistant initialised." >&2
         exit 1
     fi

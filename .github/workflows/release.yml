@@ -4,11 +4,23 @@
 #   validate ─▶ build (export #1) ─▶ test-client ─▶ publishers ─▶ finalize
 #                                      │
 #                                      ├─ Tier 1: mrpack validation
-#                                      ├─ Tier 2: headless client launch, during
-#                                      │  which Crash Assistant auto-saves
-#                                      │  config/crash_assistant/modlist.json
+#                                      ├─ stage the prebuilt, CI-only
+#                                      │  ca-modlist-ci-trigger mod jar into
+#                                      │  run/mods/ (see
+#                                      │  .github/testmods/ca-modlist-ci-trigger/README.md)
+#                                      ├─ Tier 2: headless client launch. The
+#                                      │  trigger mod fires
+#                                      │  '/crash_assistant modlist save' on
+#                                      │  world join, writing
+#                                      │  config/crash_assistant/modlist.json.
+#                                      │  (Crash Assistant's own auto_update
+#                                      │  hook does NOT fire here — it only
+#                                      │  triggers on the TitleScreen tick,
+#                                      │  which mc-runtime-test skips entirely.)
 #                                      ├─ harvest modlist.json into
-#                                      │  .pakku/client-overrides/…
+#                                      │  .pakku/client-overrides/…, stripping
+#                                      │  both the mc-runtime-test harness mod
+#                                      │  entry AND the trigger mod's own entry
 #                                      └─ export #2 → "release-build" artifact
 #
 # The artifact that gets PUBLISHED is "release-build" (export #2), which
@@ -246,13 +258,39 @@ jobs:
           python3 .github/scripts/extract_mrpack.py
 
       # Enable Crash Assistant's "modpack creator" auto-save in the test run
-      # dir only — equivalent to running "/crash_assistant modlist save"
-      # in-game, but hands-free. Players still receive auto_update=false.
+      # dir only. This is now a fallback, not the primary mechanism: it only
+      # fires on the TitleScreen tick, which mc-runtime-test's headless
+      # client never reaches (see the trigger-mod steps below). Kept enabled
+      # in case Tier 2 is ever run through a real menu flow instead. Players
+      # still receive auto_update=false.
       - name: Enable Crash Assistant modlist auto-save (CI run dir only)
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
         run: |
           chmod +x .github/scripts/crash_assistant_modlist.sh
           .github/scripts/crash_assistant_modlist.sh prepare
+
+      # mc-runtime-test joins straight into a singleplayer world and never
+      # renders a TitleScreen, so Crash Assistant's auto_update hook above
+      # never fires. This tiny CI-only mod fires the manual
+      # "/crash_assistant modlist save" command itself, shortly after world
+      # join. See .github/testmods/ca-modlist-ci-trigger/README.md.
+      - name: Stage prebuilt modlist CI trigger mod into run/mods
+        if: ${{ steps.skip_check.outputs.skip != 'true' }}
+        run: |
+          mkdir -p run/mods
+          SRC=".github/testmods/ca-modlist-ci-trigger/prebuilt/ModlistCiTrigger.jar"
+          # Renamed on the way in (not just copied as ModlistCiTrigger.jar) so
+          # crash_assistant_modlist.sh's HARNESS_REGEX also matches on the
+          # jarName key, not only on the modId buried inside the entry value.
+          DEST_NAME="ca-modlist-ci-trigger-1.0.0.jar"
+
+          if [[ ! -f "$SRC" ]]; then
+            echo "::error::Prebuilt trigger mod jar not found at $SRC — commit it or restore the 'Build modlist CI trigger mod' step."
+            exit 1
+          fi
+
+          cp "$SRC" "run/mods/$DEST_NAME"
+          echo "  [OK]  Staged $DEST_NAME into run/mods/ (from $SRC)"
 
       - name: Tier 2 – Headless client launch
         if: ${{ steps.skip_check.outputs.skip != 'true' }}
