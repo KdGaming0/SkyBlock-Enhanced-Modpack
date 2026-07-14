@@ -638,7 +638,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "CrashAssistant-fabric-26.1-1.11.10.jar",
+                    "file_name": "CrashAssistant-fabric-26.1-1.11.11.jar",
                     "mc_versions": [
                         "26.1-snapshot-11",
                         "26.1-pre-1",
@@ -656,20 +656,20 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/KlZYKKlx/CrashAssistant-fabric-26.1-1.11.10.jar",
-                    "id": "KlZYKKlx",
+                    "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/JAthSG9l/CrashAssistant-fabric-26.1-1.11.11.jar",
+                    "id": "JAthSG9l",
                     "parent_id": "ix1qq8Ux",
                     "hashes": {
-                        "sha512": "7dec579ad76308b1599639bb32440238fc5b95d691c0de7d3b5c377cfa361f42a81eb8d21dec51cc6507df914c931bc46b58398d01a4b1fed80840df7ea99ead",
-                        "sha1": "206629ade3037e4d178eb0367f5a656f8ad7263a"
+                        "sha512": "51e783e602e132cfd102d77f90e2f98d4fe332c3bd04e943deeb31548562e8a14fdeb81cf89b75906c984da6a978df7e5914cf93f9087c95c51675a2bd3a21fb",
+                        "sha1": "a82cdbbf148ca7c1fa5e8ed09c4e7df441d9957f"
                     },
                     "required_dependencies": [],
-                    "size": 3164392,
-                    "date_published": "2026-06-16T23:50:14.657134Z"
+                    "size": 3170351,
+                    "date_published": "2026-07-13T03:43:01.097074Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "CrashAssistant-fabric-26.1-1.11.10.jar",
+                    "file_name": "CrashAssistant-fabric-26.1-1.11.11.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -680,16 +680,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8262/264/CrashAssistant-fabric-26.1-1.11.10.jar",
-                    "id": "8262264",
+                    "url": "https://edge.forgecdn.net/files/8422/752/CrashAssistant-fabric-26.1-1.11.11.jar",
+                    "id": "8422752",
                     "parent_id": "1154099",
                     "hashes": {
-                        "sha1": "206629ade3037e4d178eb0367f5a656f8ad7263a",
-                        "md5": "d4c31d5daebeda2fa3c8cdd9cd388d57"
+                        "sha1": "a82cdbbf148ca7c1fa5e8ed09c4e7df441d9957f",
+                        "md5": "95d02782a4e055b6351e67dab1c473c6"
                     },
                     "required_dependencies": [],
-                    "size": 3164392,
-                    "date_published": "2026-06-16T23:50:15.767Z"
+                    "size": 3170351,
+                    "date_published": "2026-07-13T03:43:02.910Z"
                 }
             ]
         },
@@ -883,7 +883,7 @@
             ]
         },
         {
-            "pakku_id": "sFSCD0tzmXvbvuIF",
+            "pakku_id": "w44zxcZ7EdhAYekO",
             "pakku_links": [
                 "LwqrzSsyxBuQ5jrL",
                 "9kkku5EPAMpj9uvG"
@@ -891,15 +891,44 @@
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
+                "curseforge": "enhanced-skyrecipes",
                 "modrinth": "enhanced-skyrecipes"
             },
             "name": {
+                "curseforge": "Enhanced SkyRecipes",
                 "modrinth": "Enhanced SkyRecipes"
             },
             "id": {
+                "curseforge": "1609874",
                 "modrinth": "Q7VEfkvq"
             },
             "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "skyrecipes-0.3.1+26.1.2.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8429/962/skyrecipes-0.3.1+26.1.2.jar",
+                    "id": "8429962",
+                    "parent_id": "1609874",
+                    "hashes": {
+                        "sha1": "c8fbea6cba07925629230493f6f2724ba0e14ddb",
+                        "md5": "5841888350a0bf81feac1d9e05a569e3"
+                    },
+                    "required_dependencies": [
+                        "306612",
+                        "1422317"
+                    ],
+                    "size": 799988,
+                    "date_published": "2026-07-14T10:03:58.990Z"
+                },
                 {
                     "type": "modrinth",
                     "file_name": "skyrecipes-0.3.1+26.1.2.jar",
@@ -1442,18 +1471,16 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/khMbd0K1/versions/bE0Ccf6W/FurSky Reborn.cats.zip",
-                    "id": "bE0Ccf6W",
+                    "url": "https://cdn.modrinth.com/data/khMbd0K1/versions/ZvrKZR97/FurSky Reborn.cats.zip",
+                    "id": "ZvrKZR97",
                     "parent_id": "khMbd0K1",
                     "hashes": {
-                        "sha512": "bcbdb0adfa7eeb5d280173b120d0f9a9c5043bf6051555c7ac26d98369c8aac0bc7aa347a0162a280bbd6b0acc7f826d63d5f27937f701cebb390f06b7b97e0d",
-                        "sha1": "72c7c4891fa99de6188cfc90fd5b162d3ae03498"
+                        "sha512": "77ef397021a4a56f51b14ae4961e612d8ea002db82222bce168f03ba8382ead12bba8e64da70750ac5537dea6574c354190eeba42a07b19b4b211cc22f62e6de",
+                        "sha1": "08a6873bfd402d57ffbbff1e4b2d6a6340c8da6d"
                     },
-                    "required_dependencies": [
-                        "fc4wBpRx"
-                    ],
-                    "size": 2378121,
-                    "date_published": "2026-06-27T12:42:58.154936Z"
+                    "required_dependencies": [],
+                    "size": 2358634,
+                    "date_published": "2026-07-12T15:03:34.191416Z"
                 }
             ]
         },
@@ -3869,25 +3896,29 @@
             ]
         },
         {
-            "pakku_id": "E204C13G78nLt5jw",
+            "pakku_id": "uYTCCa6S1rVtbzAE",
             "pakku_links": [
+                "BVnQyPG46qiLEyiY",
                 "LwqrzSsyxBuQ5jrL"
             ],
             "type": "MOD",
             "side": "BOTH",
             "slug": {
+                "curseforge": "skyblock-enhanced-storage",
                 "modrinth": "skyblock-enhanced-storage"
             },
             "name": {
+                "curseforge": "Skyblock Enhanced Storage",
                 "modrinth": "Skyblock Enhanced Storage"
             },
             "id": {
+                "curseforge": "1608972",
                 "modrinth": "ICyROmSc"
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "enhanced_storage-0.8.2+26.1.2.jar",
+                    "type": "curseforge",
+                    "file_name": "enhanced_storage-1.0.0-beta.1+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3897,18 +3928,42 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ICyROmSc/versions/HxEmMgo5/enhanced_storage-0.8.2+26.1.2.jar",
-                    "id": "HxEmMgo5",
+                    "url": "https://edge.forgecdn.net/files/8429/584/enhanced_storage-1.0.0-beta.1+26.1.2.jar",
+                    "id": "8429584",
+                    "parent_id": "1608972",
+                    "hashes": {
+                        "sha1": "8aa0d4ad662d6e774d07cf8323aaccc85c456563",
+                        "md5": "3affd7a00e1b239bb23e99b36e281611"
+                    },
+                    "required_dependencies": [],
+                    "size": 192682,
+                    "date_published": "2026-07-14T07:58:29.393Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "enhanced_storage-1.0.0-beta.1+26.1.2.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ICyROmSc/versions/SvsELWF8/enhanced_storage-1.0.0-beta.1+26.1.2.jar",
+                    "id": "SvsELWF8",
                     "parent_id": "ICyROmSc",
                     "hashes": {
-                        "sha512": "10a677dbbe80709bed6ceb9bb4054d72d9de842ada25d8d772e9f125273a64b877d788be8b9f22ab5c483566306d31cfa42fd545fbacdd091cb56524caf41541",
-                        "sha1": "14b9fafbe849b374695895498f2f87b7968539bd"
+                        "sha512": "ca3fbf86c33df7ec76e2b8c36ad9c79109f123507b0aff4adb6d3c1f9dcc8a60075812e5de82ac0e1ca6269ec0b6740ec1c0b3b9dd7b4e99f28ae27608025059",
+                        "sha1": "8aa0d4ad662d6e774d07cf8323aaccc85c456563"
                     },
                     "required_dependencies": [
+                        "AOEDs9Al",
                         "P7dR8mSH"
                     ],
-                    "size": 233221,
-                    "date_published": "2026-07-01T15:45:53.942153Z"
+                    "size": 192682,
+                    "date_published": "2026-07-14T07:56:38.180048Z"
                 }
             ]
         },
