@@ -65,7 +65,6 @@ ROLLBACK_NEEDED=false
 OLD_PAKKU_JSON_CONTENT=""
 OLD_MODPACK_JSON_CONTENT=""
 DRY_RUN=false               # --dry-run skips git commit/tag/push
-SKIP_VALIDATION=false       # if true, CI strict checks are bypassed
 
 if command -v pakku-mc &>/dev/null; then
     PAKKU_CMD="pakku-mc"
@@ -151,6 +150,16 @@ step_version() {
 
     print_step "Current version: ${BOLD}${cur}${NC}"
 
+    # ── Retry eligibility ────────────────────────────────────────────────────
+    # If v<cur> was never actually tagged on the remote (previous attempt died
+    # somewhere between "push branch" and "Jenkins tags it"), offer to retry
+    # the SAME version instead of forcing a bump. This is silent/best-effort:
+    # network hiccups just mean the retry option doesn't show, not a hard fail.
+    local remote_tag_exists=false
+    if git ls-remote --exit-code --tags origin "refs/tags/v${cur}" &>/dev/null; then
+        remote_tag_exists=true
+    fi
+
     # Strip any beta suffix to get the stable base version for bump arithmetic
     # e.g.  3.1.2-beta.1  →  base=3.1.2  (so next patch suggests 3.1.3)
     local cur_base
@@ -190,11 +199,31 @@ step_version() {
     echo -e "    ${BOLD}[2]${NC}  minor   →  ${YELLOW}$V_MINOR${NC}"
     echo -e "    ${BOLD}[3]${NC}  major   →  ${RED}$V_MAJOR${NC}"
     echo -e "    ${BOLD}[4]${NC}  custom"
+    if [[ "$remote_tag_exists" == false ]]; then
+        echo -e "    ${BOLD}[R]${NC}  retry   →  ${CYAN}${cur}${NC}  (release same version again — v${cur} was never tagged)"
+    fi
     echo ""
 
     local choice
     read -rp "  Bump type [1]: " choice
     choice="${choice:-1}"
+
+    # ── Retry path: same version, no bump. pakku update/fetch/export still
+    # runs in step_pakku (so any mod changes since the last attempt are
+    # picked up), and step_changelog will reuse the existing changelog for
+    # this version instead of regenerating it from a diff.
+    if [[ "${choice,,}" == "r" ]]; then
+        if [[ "$remote_tag_exists" == true ]]; then
+            print_err "Tag v${cur} already exists remotely — nothing to retry. Bump the version instead."
+            exit 1
+        fi
+        NEW_VERSION="$cur"
+        BUMP_TYPE="retry"
+        RELEASE_TYPE=$([[ "$cur" == *-beta.* ]] && echo "beta" || echo "release")
+        print_step "Retrying release: ${BOLD}${CYAN}${NEW_VERSION}${NC} (no version bump — previous attempt never published)"
+        save_json_state
+        return
+    fi
 
     # ── Next-beta shortcut: iterate the current beta without a version bump.
     if [[ "$choice" == "0" ]]; then
@@ -739,6 +768,30 @@ EOF
 step_changelog() {
     print_header "Step 3 · Changelog"
 
+    # ── Retry: reuse the existing changelog for this version instead of ─────
+    # regenerating it. pakku still ran in step_pakku (mods may have changed
+    # since the last failed attempt), but the changelog TEXT is left as
+    # whatever was previously written/approved for this version — we just
+    # let the user re-review/edit it via the normal menu below.
+    if [[ "$BUMP_TYPE" == "retry" ]]; then
+        local existing_cl=""
+        if [[ -d "$PACKCORE_MD_DIR" && -f "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md" ]]; then
+            existing_cl=$(cat "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md")
+        elif [[ -f "$ROOT_CHANGELOG" ]] && [[ "$(head -n1 "$ROOT_CHANGELOG")" == "# 🛠 Update ${NEW_VERSION}" ]]; then
+            # Pull just the top entry (up to the second "---") out of CHANGELOG.md
+            existing_cl=$(awk '/^---$/{c++; if(c==2){exit}} {print}' "$ROOT_CHANGELOG")
+        fi
+
+        if [[ -n "$existing_cl" ]]; then
+            print_ok "Reusing existing changelog for v${NEW_VERSION} (retry — not regenerated from diff)."
+            CHANGELOG_BODY="$existing_cl"
+        else
+            print_warn "No previous changelog found for v${NEW_VERSION} — generating a new one from the pakku diff instead."
+        fi
+    fi
+
+    if [[ -z "$CHANGELOG_BODY" ]]; then
+
     cd "$PACK_DIR"
 
     # ── Create a temp workspace to satisfy naming requirements ──────────────
@@ -789,6 +842,8 @@ step_changelog() {
     else
         CHANGELOG_BODY=$(_build_changelog "$raw_diff" "$NEW_VERSION")
     fi
+
+    fi # end: [[ -z "$CHANGELOG_BODY" ]] (retry-with-existing-changelog skips the block above)
 
     # ── Preview ─────────────────────────────────────────────────────────────
     echo ""
@@ -1025,12 +1080,11 @@ step_git() {
     git add -A
 
     print_step "Committing..."
-    local commit_msg suffix=""
-    [[ "$SKIP_VALIDATION" == true ]] && suffix=" [skip-validation]"
+    local commit_msg
     if [[ "$RELEASE_TYPE" == "beta" ]]; then
-        commit_msg="release: ${intended_tag} (beta pre-release)${suffix}"
+        commit_msg="release: ${intended_tag} (beta pre-release)"
     else
-        commit_msg="release: ${intended_tag}${suffix}"
+        commit_msg="release: ${intended_tag}"
     fi
 
     # A re-run at the same version (after a failed CI attempt) may have no
@@ -1101,6 +1155,13 @@ then commits and PUSHES THE BRANCH. It does NOT tag. Jenkins picks up the
 push, runs the headless launch-test, refreshes modlist.json, and creates
 the release tag — which triggers GitHub Actions to publish.
 
+Retry: if a previous attempt's tag never made it to the remote (e.g. the
+Jenkins build never started/failed), the version-bump menu offers [R] to
+retry the SAME version instead of forcing a new bump. pakku update/fetch/
+export still runs (to pick up any changes since the last attempt), but the
+changelog step reuses the existing changelog for that version instead of
+regenerating it. Unavailable once the tag actually exists on the remote.
+
 Options:
   --dry-run   Run steps 1–3 (version bump, pakku update, changelog) but
               skip the git commit/push in step 4. Useful for testing
@@ -1151,23 +1212,6 @@ main() {
     step_version
     step_pakku
     step_changelog
-
-    # ── Prompt for CI validation enforcement ─────────────────────────────────
-    if [[ "$DRY_RUN" != true ]]; then
-        echo ""
-        echo -e "  ${BOLD}CI Validation${NC}"
-        echo -e "  The CI workflow normally enforces two checks:"
-        echo -e "    1. Git tag must match pakku.json version"
-        echo -e "    2. Version must be bumped since the previous tag"
-        echo ""
-        read -rp "  Enforce these checks? [Y/n]: " val_choice
-        val_choice="${val_choice:-Y}"
-        if [[ ! "$val_choice" =~ ^[Yy]$ ]]; then
-            SKIP_VALIDATION=true
-            print_warn "Validation checks will be skipped in CI."
-            echo ""
-        fi
-    fi
 
     if [[ "$DRY_RUN" == true ]]; then
         print_header "🧪 Dry-Run Complete"
