@@ -66,8 +66,8 @@ jobs:
 
       - name: Publish to CurseForge, Modrinth & GitHub
         env:
-          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
-          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          CURSEFORGE_API_KEY: ${{ secrets.CF_TOKEN }}
+          MODRINTH_TOKEN: ${{ secrets.MR_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           CF_FILE="$(ls SkyBlock_Enhanced/build/curseforge/*.zip | head -1)"

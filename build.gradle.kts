@@ -26,6 +26,8 @@ publishMods {
         projectId = "1365629"
         accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
         minecraftVersions.add(mcVersion)
+        client = true
+        modLoaders.add("fabric")
         file.set(File(cfFile))
     }
 
@@ -33,6 +35,7 @@ publishMods {
         projectId = "e0oMrxjp"
         accessToken = providers.environmentVariable("MODRINTH_TOKEN")
         minecraftVersions.add(mcVersion)
+        modLoaders.add("fabric")
         file.set(File(mrFile))
     }
 
