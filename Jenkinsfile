@@ -283,7 +283,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'github-push',
                                                  usernameVariable: 'GIT_USER',
                                                  passwordVariable: 'GIT_TOKEN')]) {
-                    sh '''
+                    sh '''#!/bin/bash
                         MODLIST="$PACK_DIR/.pakku/client-overrides/config/crash_assistant/modlist.json"
                         REMOTE="https://${GIT_USER}:${GIT_TOKEN}@github.com/KdGaming0/SkyBlock-Enhanced-Modpack.git"
                         BRANCH="${BRANCH_NAME:-main}"
@@ -292,7 +292,7 @@ pipeline {
                         git config user.name  "jenkins-ci"
                         git config user.email "jenkins@example.com"
 
-                        # Step 1: Commit the refreshed modlist (only if it actually changed)
+                        # Step 1: Commit the refreshed modlist
                         if git diff --quiet -- "$MODLIST"; then
                             echo "modlist.json unchanged - no commit needed."
                         else
