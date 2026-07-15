@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source .env.release
 # ╔══════════════════════════════════════════════════════════╗
 # ║         SkyBlock Enhanced · Release Wizard              ║
 # ║  Run from repo root: ./release.sh                       ║
