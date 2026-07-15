@@ -1,7 +1,0 @@
-{
-    "name": "SkyBlock Enhanced Modern Edition",
-    "version": "2.3.9",
-    "overrides": [
-        "packcore"
-    ]
-}
