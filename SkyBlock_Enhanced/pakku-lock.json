@@ -2849,27 +2849,29 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Odin-0.2.2.jar",
+                    "file_name": "Odin-0.2.3.jar",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
                         "26.1.2"
                     ],
                     "loaders": [
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/jJJLywXp/versions/9ebmAW17/Odin-0.2.2.jar",
-                    "id": "9ebmAW17",
+                    "url": "https://cdn.modrinth.com/data/jJJLywXp/versions/eSlQpFg7/Odin-0.2.3.jar",
+                    "id": "eSlQpFg7",
                     "parent_id": "jJJLywXp",
                     "hashes": {
-                        "sha512": "f1f6b9975e04cf254a4c72c42775cb073d6315b65cc2ca62c7879f122464f6521c5c8010259f4760812859aaefd8a684f5aedf953cd09f3f36fffd1f07e977fd",
-                        "sha1": "64b438984f1625beaf834ff9d014686119023a0c"
+                        "sha512": "b0d43e579f5852491ba1105eb42095f3f267a0bed9a3fa14c144125f749b2d681f9844c498689e8b4932898ce463fa24c13cea3123856ae6644a630d3d4c918d",
+                        "sha1": "e69e7eeafc5f864c05629f76048baff8ffd2b329"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 4843591,
-                    "date_published": "2026-06-19T18:09:49.645838Z"
+                    "size": 4859389,
+                    "date_published": "2026-07-14T12:01:47.878836Z"
                 }
             ]
         },
@@ -2892,7 +2894,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-5.0.10+26.1.2.jar",
+                    "file_name": "packcore-5.0.11+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2902,23 +2904,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/Pw2ZY7SH/packcore-5.0.10+26.1.2.jar",
-                    "id": "Pw2ZY7SH",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/sxHnKhIw/packcore-5.0.11+26.1.2.jar",
+                    "id": "sxHnKhIw",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "ae4a0a6cb6d54608e7149a564d9a51e1095d2e672a9614c1d6ee7be45ada545e7dcfadd8c44afc297c23625ac333f6c61804ac9eba58a3be3d920293cdb7ad34",
-                        "sha1": "4b556dd6b246580306e1bf963386c79832eed145"
+                        "sha512": "0768987cd724b5d0c18e55e6c4a36e6e87cabb9a1d6ba802595a5945144cffc4313a3a18d64f518a95d2e9494ba40c084fa0c8a82be4b8e629e943e96f95179c",
+                        "sha1": "99423073a3021603e71410c28aded9cd04345881"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 47388023,
-                    "date_published": "2026-07-11T21:33:34.356583Z"
+                    "size": 47388026,
+                    "date_published": "2026-07-14T15:16:24.354981Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-5.0.10+26.1.2.jar",
+                    "file_name": "packcore-5.0.11+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2928,18 +2930,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8414/982/packcore-5.0.10+26.1.2.jar",
-                    "id": "8414982",
+                    "url": "https://edge.forgecdn.net/files/8431/401/packcore-5.0.11+26.1.2.jar",
+                    "id": "8431401",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "4b556dd6b246580306e1bf963386c79832eed145",
-                        "md5": "af71a3082a61319e0bdc191ece9bc90b"
+                        "sha1": "99423073a3021603e71410c28aded9cd04345881",
+                        "md5": "d0d5f553578ad13e6a8a5434e0ca9f01"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 47388023,
-                    "date_published": "2026-07-11T21:33:28.027Z"
+                    "size": 47388026,
+                    "date_published": "2026-07-14T15:16:15.403Z"
                 }
             ]
         },
@@ -3323,7 +3325,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "scamscreener-2.5.2+26.1.2.jar",
+                    "file_name": "scamscreener-2.6.0+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3333,22 +3335,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/VUw8nl4y/scamscreener-2.5.2+26.1.2.jar",
-                    "id": "VUw8nl4y",
+                    "url": "https://cdn.modrinth.com/data/XTB0bgAW/versions/NgzbGijH/scamscreener-2.6.0+26.1.2.jar",
+                    "id": "NgzbGijH",
                     "parent_id": "XTB0bgAW",
                     "hashes": {
-                        "sha512": "46badcab486097e46c6fb731fd40dca127ad8603fb34d74fb7a5780cdff63cb98b25686a4fc645ec12f781c55721c20f4239f3d9e080db96f4ffc36de9d2dc2a",
-                        "sha1": "b940f8e73152b7d713feacb1086311b392f67ebd"
+                        "sha512": "f925eadfc13c49fd249e65a9c497d456661f1adc89b137cae4ef9d241bccbd9f4425f52dd982282dc03eb77a29f88784bd9154920bafb17549397edc2ffb9cf3",
+                        "sha1": "c6a62cbab6135b3a00642de124b3875656f2114a"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 1051981,
-                    "date_published": "2026-07-05T13:08:30.058861Z"
+                    "size": 1052632,
+                    "date_published": "2026-07-14T15:07:59.881691Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "scamscreener-2.5.2+26.1.2.jar",
+                    "file_name": "scamscreener-2.6.0+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3358,18 +3360,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8374/888/scamscreener-2.5.2+26.1.2.jar",
-                    "id": "8374888",
+                    "url": "https://edge.forgecdn.net/files/8431/317/scamscreener-2.6.0+26.1.2.jar",
+                    "id": "8431317",
                     "parent_id": "1465941",
                     "hashes": {
-                        "sha1": "b940f8e73152b7d713feacb1086311b392f67ebd",
-                        "md5": "896510e775c2ccd0dca839e40166be76"
+                        "sha1": "c6a62cbab6135b3a00642de124b3875656f2114a",
+                        "md5": "dfc40fed390762ee8a2c3218c7f02818"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1051981,
-                    "date_published": "2026-07-05T13:08:29.783Z"
+                    "size": 1052632,
+                    "date_published": "2026-07-14T15:07:57.913Z"
                 }
             ]
         },
@@ -3658,7 +3660,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.1.10+26.1.2.jar",
+                    "file_name": "skyblock_enhancements-1.1.11+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3668,23 +3670,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/Ppe7UBMG/skyblock_enhancements-1.1.10+26.1.2.jar",
-                    "id": "Ppe7UBMG",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/Kze2ZaZO/skyblock_enhancements-1.1.11+26.1.2.jar",
+                    "id": "Kze2ZaZO",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "8ec7f22deb84d9dba503bbe4b5b2156022323b5729ce53aa9244bbcd781b324e4618f2256ed140181f5a2c2192de0e26d2289aa5022aa90e2894afc7a982e5f0",
-                        "sha1": "2a6455113ee1df1e3a2a7b1d668b4e3e9f1714a6"
+                        "sha512": "ce38d9e56e85e6a396c7c3c7b28ad27b665aa9342804eae1605f0a8728db205de9c11354efec8ed47971da2896c94216b9a9e7cf104355563ae80c81b1595acf",
+                        "sha1": "6649c40c9284b704252826b0ffbae1c71f3b334b"
                     },
                     "required_dependencies": [
                         "AOEDs9Al",
                         "P7dR8mSH"
                     ],
-                    "size": 1125956,
-                    "date_published": "2026-07-04T17:54:00.699530Z"
+                    "size": 1130167,
+                    "date_published": "2026-07-14T15:56:28.278666Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.1.10+26.1.2.jar",
+                    "file_name": "skyblock_enhancements-1.1.11+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3694,18 +3696,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8370/551/skyblock_enhancements-1.1.10+26.1.2.jar",
-                    "id": "8370551",
+                    "url": "https://edge.forgecdn.net/files/8431/665/skyblock_enhancements-1.1.11+26.1.2.jar",
+                    "id": "8431665",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "2a6455113ee1df1e3a2a7b1d668b4e3e9f1714a6",
-                        "md5": "099c025171ab485a1ee4598ccc7c5e4c"
+                        "sha1": "6649c40c9284b704252826b0ffbae1c71f3b334b",
+                        "md5": "1ecbb5885b7edaf4a4b5f6e3f52002ed"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1125956,
-                    "date_published": "2026-07-04T17:54:00.150Z"
+                    "size": 1130167,
+                    "date_published": "2026-07-14T15:56:26.700Z"
                 }
             ]
         },
@@ -3779,7 +3781,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.33.0-mc26.1.jar",
+                    "file_name": "SkyHanni-7.34.0-mc26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3789,20 +3791,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/d8SLvpH3/SkyHanni-7.33.0-mc26.1.jar",
-                    "id": "d8SLvpH3",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/9ahLvFuW/SkyHanni-7.34.0-mc26.1.jar",
+                    "id": "9ahLvFuW",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "89a0784289fd69c2883748460a3abd0b15bfee7fc2ab0a09154b7e6d3384b36941a8839ea819c0ad5c5d868fc03c88c5f2f7653d1022d1908deba91717ebcb56",
-                        "sha1": "76fe7398d0a3538d63e9766885b5ecaaff354f75"
+                        "sha512": "1a768783eefa69b20ffa25d7ada033f2d1aeed90d0bfaa94ad04bf2aa8ab7c9f30ac6be19f0cbe61a4cd74cd9810a2d3d604aea00de4dbf797ac1258aca6dd95",
+                        "sha1": "2f4bb34d605592e59574130b6df29ec4bd46adc1"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
-                        "P7dR8mSH",
-                        "1A2mKfBx"
+                        "1A2mKfBx",
+                        "P7dR8mSH"
                     ],
-                    "size": 28675067,
-                    "date_published": "2026-07-11T01:18:23.750672Z"
+                    "size": 28687053,
+                    "date_published": "2026-07-15T05:21:14.215661Z"
                 }
             ]
         },
@@ -3917,31 +3919,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "enhanced_storage-1.0.0-beta.1+26.1.2.jar",
-                    "mc_versions": [
-                        "26.1",
-                        "26.1.1",
-                        "26.1.2"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8429/584/enhanced_storage-1.0.0-beta.1+26.1.2.jar",
-                    "id": "8429584",
-                    "parent_id": "1608972",
-                    "hashes": {
-                        "sha1": "8aa0d4ad662d6e774d07cf8323aaccc85c456563",
-                        "md5": "3affd7a00e1b239bb23e99b36e281611"
-                    },
-                    "required_dependencies": [],
-                    "size": 192682,
-                    "date_published": "2026-07-14T07:58:29.393Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "enhanced_storage-1.0.0-beta.1+26.1.2.jar",
+                    "file_name": "enhanced_storage-1.0.0-beta.2+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3951,19 +3930,42 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ICyROmSc/versions/SvsELWF8/enhanced_storage-1.0.0-beta.1+26.1.2.jar",
-                    "id": "SvsELWF8",
+                    "url": "https://cdn.modrinth.com/data/ICyROmSc/versions/EITS2QeQ/enhanced_storage-1.0.0-beta.2+26.1.2.jar",
+                    "id": "EITS2QeQ",
                     "parent_id": "ICyROmSc",
                     "hashes": {
-                        "sha512": "ca3fbf86c33df7ec76e2b8c36ad9c79109f123507b0aff4adb6d3c1f9dcc8a60075812e5de82ac0e1ca6269ec0b6740ec1c0b3b9dd7b4e99f28ae27608025059",
-                        "sha1": "8aa0d4ad662d6e774d07cf8323aaccc85c456563"
+                        "sha512": "caf905c7f164d8ca8094b2a1d5bec38242d83e7a7f9690520fdc560284b7b51c70cd2a4aacd034a55001e4d17b89f2ba9c2867f67b67a37710b5731ca6d535ad",
+                        "sha1": "59fba71c740dec772c7da248a84268ce5da6d756"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 192682,
-                    "date_published": "2026-07-14T07:56:38.180048Z"
+                    "size": 192686,
+                    "date_published": "2026-07-14T14:16:11.479547Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "enhanced_storage-1.0.0-beta.2+26.1.2.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8431/84/enhanced_storage-1.0.0-beta.2+26.1.2.jar",
+                    "id": "8431084",
+                    "parent_id": "1608972",
+                    "hashes": {
+                        "sha1": "59fba71c740dec772c7da248a84268ce5da6d756",
+                        "md5": "a5b800b783ac041c7652dc50ee446f67"
+                    },
+                    "required_dependencies": [],
+                    "size": 192686,
+                    "date_published": "2026-07-14T14:18:44.720Z"
                 }
             ]
         },
