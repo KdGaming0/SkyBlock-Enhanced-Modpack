@@ -292,7 +292,7 @@ pipeline {
                         git config user.name  "jenkins-ci"
                         git config user.email "jenkins@example.com"
 
-                        # 1) Commit the refreshed modlist (only if it actually changed)
+                        # Step 1: Commit the refreshed modlist (only if it actually changed)
                         if git diff --quiet -- "$MODLIST"; then
                             echo "modlist.json unchanged - no commit needed."
                         else
@@ -301,15 +301,14 @@ pipeline {
                             git push "$REMOTE" HEAD:"$BRANCH"
                         fi
 
-                        # 2) Don't re-release an existing version
-                        if git ls-remote --exit-code --tags "$REMOTE" "refs/tags/${TAG}" >/dev/null 2>&1;
-                        then
+                        # Step 2: Prevent re-releasing an existing version
+                        if git ls-remote --exit-code --tags "$REMOTE" "refs/tags/${TAG}" >/dev/null 2>&1; then
                             echo "ERROR: Tag ${TAG} already exists on GitHub!"
                             echo "Please bump the version in pakku.json to cut a new release."
                             exit 1
                         fi
 
-                        # 3) Tag the commit that contains the fresh modlist -> triggers GH Actions release
+                        # Step 3: Tag the commit that contains the fresh modlist
                         git tag -d "$TAG" 2>/dev/null || true
                         git tag -a "$TAG" -m "SkyBlock Enhanced ${TAG}"
                         git push "$REMOTE" "$TAG"
