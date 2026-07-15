@@ -21,8 +21,33 @@ print_err()   { echo -e "${RED}  ✖ $1${NC}" >&2; }
 print_sep()   { echo -e "${BOLD}  ──────────────────────────────────────${NC}"; }
 
 # ─── Paths ──────────────────────────────────────────────────────────────────
+# ┌─ PLACEHOLDER #1 ────────────────────────────────────────────────────────┐
+# │ PACK_DIR_NAME must be the EXACT folder name in your repo root, and must  │
+# │ match PACK_DIR in the Jenkinsfile and release.yml (both use             │
+# │ "SkyBlock_Enhanced"). Do NOT leave these out of sync.                    │
+# └─────────────────────────────────────────────────────────────────────────┘
+PACK_DIR_NAME="SkyBlock_Enhanced"
+
+# ┌─ PLACEHOLDER #2 · Jenkins remote trigger (Option 3) ─────────────────────┐
+# │ After pushing the branch, the script POSTs to Jenkins to start a build   │
+# │ immediately (no Poll SCM delay). Fill these in, or leave JENKINS_URL     │
+# │ empty to disable the auto-trigger entirely (falls back to whatever       │
+# │ trigger you configured in the Jenkins UI).                               │
+# │                                                                          │
+# │ Secrets: DO NOT hardcode tokens here if this file is committed. Prefer   │
+# │ exporting them in your shell / a local untracked env file:               │
+# │     export JENKINS_API_TOKEN=...      (User → Configure → API Token)      │
+# │     export JENKINS_BUILD_TOKEN=...    (job's "Trigger builds remotely")   │
+# │ The script reads those env vars if the vars below are left blank.         │
+# └──────────────────────────────────────────────────────────────────────────┘
+JENKINS_URL="https://jenkins.home.lab"        # base URL, no trailing slash
+JENKINS_JOB="modpack-publish"                  # the job name
+JENKINS_USER="KD1"           # your Jenkins login
+JENKINS_API_TOKEN="${JENKINS_API_TOKEN:-}"     # from env by default
+JENKINS_BUILD_TOKEN="${JENKINS_BUILD_TOKEN:-}" # from env by default
+
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PACK_DIR="$REPO_ROOT/SkyBlock_Enhanced_Modern_Edition_26.1"
+PACK_DIR="$REPO_ROOT/$PACK_DIR_NAME"
 PAKKU_JSON="$PACK_DIR/pakku.json"
 MODPACK_JSON="$PACK_DIR/.pakku/overrides/packcore/modpack.json"
 LOCK_FILE="$PACK_DIR/pakku-lock.json"
@@ -33,8 +58,6 @@ PACKCORE_MD_DIR="$PACK_DIR/.pakku/overrides/packcore/markdown"
 NEW_VERSION=""
 BUMP_TYPE=""
 RELEASE_TYPE="release"      # "release" or "beta"
-HOTFIX_N=""                 # e.g. "1" for v3.1.2-hotfix1; empty otherwise
-TAG_OVERRIDE=""             # if set, use this as the git tag (for hotfix)
 TMP_OLD_LOCK=""
 PREV_TAG="none"              # previous release tag (resolved in step_pakku)
 CHANGELOG_BODY=""
@@ -147,16 +170,6 @@ step_version() {
     local V_MINOR="$MAJOR.$((MINOR + 1)).0"
     local V_MAJOR="$((MAJOR + 1)).0.0"
 
-    # Suggest next hotfix number for the *current* version.
-    # We scan local tags for v<<cur>-hotfix<N> and pick max+1.
-    local next_hotfix=1
-    local existing_hotfixes
-    existing_hotfixes=$(git tag -l "v${cur}-hotfix*" 2>/dev/null | sed -E "s/^v${cur}-hotfix//" | sort -n | tail -n1 || true)
-    if [[ -n "$existing_hotfixes" && "$existing_hotfixes" =~ ^[0-9]+$ ]]; then
-        next_hotfix=$(( existing_hotfixes + 1 ))
-    fi
-    local V_HOTFIX="${cur}-hotfix${next_hotfix}"
-
     # If we're already on a beta, offer a [0] next-beta shortcut.
     # e.g. currently 3.1.2-beta.1 → offer 3.1.2-beta.2 as option [0].
     local IS_CURRENT_BETA=false
@@ -177,7 +190,6 @@ step_version() {
     echo -e "    ${BOLD}[2]${NC}  minor   →  ${YELLOW}$V_MINOR${NC}"
     echo -e "    ${BOLD}[3]${NC}  major   →  ${RED}$V_MAJOR${NC}"
     echo -e "    ${BOLD}[4]${NC}  custom"
-    echo -e "    ${BOLD}[5]${NC}  hotfix  →  tag ${CYAN}v${V_HOTFIX}${NC} (pakku.json stays at ${cur})"
     echo ""
 
     local choice
@@ -212,32 +224,6 @@ step_version() {
         print_step "Promoting: ${BOLD}${cur}${NC} → ${BOLD}${GREEN}${NEW_VERSION}${NC} (stable release)"
         save_json_state
         _apply_version_files
-        return
-    fi
-
-    # ── Hotfix path: reuse the current pakku.json version, but tag is suffixed.
-    if [[ "$choice" == "5" ]]; then
-        NEW_VERSION="$cur"
-        BUMP_TYPE="hotfix"
-        RELEASE_TYPE="release"
-        HOTFIX_N="$next_hotfix"
-        TAG_OVERRIDE="v${V_HOTFIX}"
-
-        echo ""
-        echo -e "  ${YELLOW}Hotfix${NC}: pakku.json version stays at ${BOLD}${cur}${NC}"
-        echo -e "  ${YELLOW}Hotfix${NC}: tag will be ${BOLD}${TAG_OVERRIDE}${NC}"
-        echo ""
-        read -rp "  Confirm? [Y/n]: " confirm
-        confirm="${confirm:-Y}"
-        if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
-            print_err "Aborted by user."
-            exit 1
-        fi
-
-        # No JSON changes — just mark state so rollback is a no-op and
-        # downstream steps work. Still save state for consistency.
-        save_json_state
-        print_ok "Hotfix mode armed — no version file changes"
         return
     fi
 
@@ -750,21 +736,6 @@ Thanks for using SkyBlock Enhanced!
 EOF
 }
 
-# Pulls just the "## " sections (Added/Removed/Updated) out of a full
-# _build_changelog() result, dropping the "# Update X" title, the summary
-# line, and the Troubleshooting/Discord footer. Used to fold a hotfix's new
-# changes into a previously-generated changelog instead of replacing it.
-# Returns empty if the generated body had no real sections (i.e. the
-# "Internal version bump with no mod changes." placeholder).
-_extract_new_changes_section() {
-    local full="$1"
-    awk '
-        /^---$/ { exit }
-        found   { print }
-        !found && /^## / { found=1; print }
-    ' <<< "$full"
-}
-
 step_changelog() {
     print_header "Step 3 · Changelog"
 
@@ -812,44 +783,11 @@ step_changelog() {
     _load_type_lookup "$TMP_OLD_LOCK" "$LOCK_FILE"
 
     # ── Build auto-changelog ─────────────────────────────────────────────────
-    # For a hotfix retry, PREV_TAG (used as the diff baseline in step_pakku)
-    # is the tag from the previous attempt — so raw_diff already only shows
-    # what's genuinely new since then. Reuse the changelog that attempt wrote
-    # instead of generating a brand-new one from scratch, and fold any new
-    # diff into it rather than discarding it.
-    local prev_changelog_file="$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md"
-    local prev_changelog=""
-    [[ -n "$HOTFIX_N" && -f "$prev_changelog_file" ]] && prev_changelog=$(cat "$prev_changelog_file")
-
-    if [[ -n "$prev_changelog" ]]; then
-        local fresh
-        if [[ "$diff_ok" == false ]]; then
-            fresh=$(_build_changelog "" "$NEW_VERSION")
-        else
-            fresh=$(_build_changelog "$raw_diff" "$NEW_VERSION")
-        fi
-
-        local new_bits
-        new_bits=$(_extract_new_changes_section "$fresh")
-
-        if [[ -n "$new_bits" ]]; then
-            print_ok "Reusing existing changelog for v${NEW_VERSION}; folding in new changes (hotfix ${HOTFIX_N})."
-            local title rest
-            title=$(head -n1 <<< "$prev_changelog")
-            rest=$(tail -n +2 <<< "$prev_changelog")
-            CHANGELOG_BODY="${title}"$'\n\n'"## 🚑 Hotfix ${HOTFIX_N} — Additional Changes"$'\n\n'"${new_bits}"$'\n\n'"${rest}"
-        else
-            print_ok "Reusing existing changelog for v${NEW_VERSION} — no new changes since the last attempt."
-            CHANGELOG_BODY="$prev_changelog"
-        fi
+    if [[ "$diff_ok" == false ]]; then
+        print_warn "pakku diff produced no output — using empty template."
+        CHANGELOG_BODY=$(_build_changelog "" "$NEW_VERSION")
     else
-        [[ -n "$HOTFIX_N" ]] && print_warn "No existing changelog found for v${NEW_VERSION} — generating fresh."
-        if [[ "$diff_ok" == false ]]; then
-            print_warn "pakku diff produced no output — using empty template."
-            CHANGELOG_BODY=$(_build_changelog "" "$NEW_VERSION")
-        else
-            CHANGELOG_BODY=$(_build_changelog "$raw_diff" "$NEW_VERSION")
-        fi
+        CHANGELOG_BODY=$(_build_changelog "$raw_diff" "$NEW_VERSION")
     fi
 
     # ── Preview ─────────────────────────────────────────────────────────────
@@ -926,17 +864,17 @@ step_changelog() {
 
     # ── Write files ──────────────────────────────────────────────────────────
 
-    # Prepend to main CHANGELOG.md — unless this is a hotfix retry and the
-    # existing top entry is already for this same version (i.e. from the
-    # attempt whose CI failed), in which case replace that entry in place
-    # instead of stacking a duplicate "# Update vX" block above it.
+    # Prepend to main CHANGELOG.md — unless the existing top entry is already
+    # for this same version (e.g. a re-run after a failed CI attempt at the
+    # same version), in which case replace that entry in place instead of
+    # stacking a duplicate "# Update vX" block above it.
     if [[ -f "$ROOT_CHANGELOG" ]]; then
         local existing
         existing=$(cat "$ROOT_CHANGELOG")
         local top_title
         top_title=$(head -n1 <<< "$existing")
 
-        if [[ -n "$HOTFIX_N" && "$top_title" == "# 🛠 Update ${NEW_VERSION}" ]]; then
+        if [[ "$top_title" == "# 🛠 Update ${NEW_VERSION}" ]]; then
             # Each generated entry contains exactly one internal "---" (before
             # the Troubleshooting footer), so the boundary between this top
             # entry and the next one is the *second* "---" line encountered.
@@ -997,89 +935,149 @@ step_changelog() {
     fi
 }
 
+# ── Kick off a Jenkins build immediately after the push (Option 3) ───────────
+# Uses HTTP basic auth (JENKINS_USER + API token) plus the per-job build token,
+# and fetches a CSRF crumb first so the POST isn't rejected with 403.
+# Non-fatal: if anything here fails, the push already succeeded, so we just
+# warn and let the user trigger the build manually / via Poll SCM.
+_trigger_jenkins() {
+    if [[ -z "$JENKINS_URL" ]]; then
+        print_warn "JENKINS_URL not set — skipping auto-trigger."
+        return 0
+    fi
+    if [[ -z "$JENKINS_API_TOKEN" || -z "$JENKINS_BUILD_TOKEN" ]]; then
+        print_warn "Jenkins tokens not set (JENKINS_API_TOKEN / JENKINS_BUILD_TOKEN)."
+        print_warn "Skipping auto-trigger — export them or set them at the top of this script."
+        return 0
+    fi
+
+    local auth="${JENKINS_USER}:${JENKINS_API_TOKEN}"
+
+    print_step "Triggering Jenkins job '${JENKINS_JOB}'..."
+
+    # 1) Fetch a CSRF crumb (Jenkins default-on protection).
+    local crumb
+    crumb=$(curl -fsSL --user "$auth" \
+        "${JENKINS_URL}/crumbIssuer/api/json" 2>/dev/null \
+        | jq -r '"\(.crumbRequestField):\(.crumb)"' 2>/dev/null || echo "")
+
+    # 2) POST to the build endpoint with the build token.
+    local http_code
+    if [[ -n "$crumb" && "$crumb" != *"null"* ]]; then
+        http_code=$(curl -fsS -o /dev/null -w '%{http_code}' -X POST \
+            --user "$auth" \
+            -H "$crumb" \
+            "${JENKINS_URL}/job/${JENKINS_JOB}/build?token=${JENKINS_BUILD_TOKEN}" \
+            2>/dev/null || echo "000")
+    else
+        # No crumb issuer (CSRF disabled) — try without it.
+        http_code=$(curl -fsS -o /dev/null -w '%{http_code}' -X POST \
+            --user "$auth" \
+            "${JENKINS_URL}/job/${JENKINS_JOB}/build?token=${JENKINS_BUILD_TOKEN}" \
+            2>/dev/null || echo "000")
+    fi
+
+    # Jenkins returns 201 (queued) on success; 200 is also fine on some setups.
+    if [[ "$http_code" == "201" || "$http_code" == "200" ]]; then
+        print_ok "Jenkins build queued (HTTP ${http_code})."
+    else
+        print_warn "Jenkins trigger returned HTTP ${http_code}."
+        print_warn "The push succeeded — start the build manually if needed:"
+        print_warn "  ${JENKINS_URL}/job/${JENKINS_JOB}/"
+    fi
+}
+
 # ═══════════════════════════════════════════════════════════════════════════
-#  STEP 4 · GIT COMMIT, TAG & PUSH
+#  STEP 4 · GIT COMMIT & PUSH BRANCH  (Jenkins tags after its test passes)
 # ═══════════════════════════════════════════════════════════════════════════
+#
+#   Flow:  release.sh  →  push branch  →  Jenkins (launch-test + refresh
+#          modlist.json + create tag)  →  GitHub Actions (publish).
+#
+#   This script NO LONGER creates or pushes tags. Jenkins owns tagging so
+#   that a release only ever gets tagged AFTER the headless launch-test
+#   passes. The tag Jenkins derives comes from pakku.json's version, so the
+#   only thing this script must guarantee is that pakku.json carries the
+#   intended version and lands on the branch.
+#
 step_git() {
-    print_header "Step 4 · Commit, Tag & Push"
+    print_header "Step 4 · Commit & Push Branch"
 
-    # For hotfixes, the tag is v<<ver>-hotfixN while pakku.json stays at <ver>.
-    local tag="${TAG_OVERRIDE:-v${NEW_VERSION}}"
+    # The tag Jenkins will eventually create (shown for reference only —
+    # this script does not create it).
+    local intended_tag="v${NEW_VERSION}"
 
-    # Sanity: check for existing tag
-    if git rev-parse "$tag" &>/dev/null; then
-        print_err "Tag $tag already exists locally — delete it first: git tag -d $tag"
-        exit 1
+    # Safety: if that tag already exists on the remote, Jenkins will refuse to
+    # re-release it (its Commit/Tag stage skips existing tags). Warn early so
+    # the user isn't surprised when nothing publishes.
+    if git ls-remote --exit-code --tags origin "refs/tags/${intended_tag}" &>/dev/null; then
+        print_warn "Tag ${intended_tag} already exists on the remote."
+        print_warn "Jenkins will skip tagging/publishing unless you bump the version."
+        read -rp "  Push anyway? [y/N]: " push_anyway
+        push_anyway="${push_anyway:-N}"
+        if [[ ! "$push_anyway" =~ ^[Yy]$ ]]; then
+            print_err "Aborted — bump the version in pakku.json to cut a new release."
+            exit 1
+        fi
     fi
 
     print_step "Staging all changes..."
     git add -A
 
     print_step "Committing..."
-    local commit_msg
-    if [[ "$SKIP_VALIDATION" == true ]]; then
-        if [[ -n "$HOTFIX_N" ]]; then
-            commit_msg="release: ${tag} (hotfix) [skip-validation]"
-        elif [[ "$RELEASE_TYPE" == "beta" ]]; then
-            commit_msg="release: ${tag} (beta pre-release) [skip-validation]"
-        else
-            commit_msg="release: ${tag} [skip-validation]"
-        fi
+    local commit_msg suffix=""
+    [[ "$SKIP_VALIDATION" == true ]] && suffix=" [skip-validation]"
+    if [[ "$RELEASE_TYPE" == "beta" ]]; then
+        commit_msg="release: ${intended_tag} (beta pre-release)${suffix}"
     else
-        if [[ -n "$HOTFIX_N" ]]; then
-            commit_msg="release: ${tag} (hotfix)"
-        elif [[ "$RELEASE_TYPE" == "beta" ]]; then
-            commit_msg="release: ${tag} (beta pre-release)"
-        else
-            commit_msg="release: ${tag}"
-        fi
+        commit_msg="release: ${intended_tag}${suffix}"
     fi
 
-    # Hotfixes may have no staged changes (just the artifact/workflow change
-    # that pakku re-export produces). Allow an empty commit so the tag has
-    # a commit to anchor on, distinct from the previous release.
+    # A re-run at the same version (after a failed CI attempt) may have no
+    # staged changes, since pakku.json already carries this version. Allow an
+    # empty commit so there's still a distinct commit for Jenkins to build/tag.
     if ! git diff --cached --quiet; then
         git commit -m "$commit_msg"
-    elif [[ -n "$HOTFIX_N" ]]; then
-        git commit --allow-empty -m "$commit_msg"
     else
-        git commit -m "$commit_msg"  # will error if truly nothing to commit
+        print_warn "No file changes to commit — creating an empty commit for Jenkins to tag."
+        git commit --allow-empty -m "$commit_msg"
     fi
-
-    print_step "Creating tag ${tag}..."
-    git tag "$tag"
 
     local current_branch
     current_branch=$(git rev-parse --abbrev-ref HEAD)
-    print_step "Pushing branch ${current_branch} + tag ${tag} atomically..."
-    # --atomic ensures both refs succeed or neither does. This prevents the
-    # race where another push lands between `git push branch` and `git push tag`,
-    # leaving the tag pointing at a commit that isn't on the branch.
-    if ! git push --atomic origin "$current_branch" "$tag"; then
-        print_err "Atomic push failed — removing local tag"
-        git tag -d "$tag"
+
+    print_step "Pushing branch ${current_branch} (Jenkins will pick this up)..."
+    if ! git push origin "$current_branch"; then
+        print_err "Push failed. Your commit is local; fix the remote and re-push:"
+        print_err "  git push origin ${current_branch}"
         exit 1
     fi
 
-    # If we reach here the git push is done — disable JSON rollback
+    # Push succeeded — the version files are now safely on the remote, so
+    # there's nothing to roll back.
     ROLLBACK_NEEDED=false
     rm -f "$TMP_OLD_LOCK"
 
-    print_ok "Pushed ${tag}"
+    print_ok "Pushed ${current_branch}"
 
-    # Derive GitHub URL
-    local remote_url
+    # Fire the Jenkins build now (Option 3) so there's no Poll-SCM delay.
+    _trigger_jenkins
+
+    # Derive GitHub URL for convenience.
+    local remote_url slug=""
     remote_url=$(git remote get-url origin 2>/dev/null || echo "")
-    local actions_url=""
-    if [[ "$remote_url" =~ github\.com[:/](.+?)(.git)?$ ]]; then
-        local slug="${BASH_REMATCH[1]}"
+    if [[ "$remote_url" =~ github\.com[:/](.+?)(\.git)?$ ]]; then
+        slug="${BASH_REMATCH[1]}"
         slug="${slug%.git}"
-        actions_url="https://github.com/${slug}/actions"
     fi
 
     echo ""
-    echo -e "${BOLD}${GREEN}  ✔ Release triggered!${NC}"
-    [[ -n "$actions_url" ]] && echo -e "  Monitor CI: ${CYAN}${actions_url}${NC}"
+    echo -e "${BOLD}${GREEN}  ✔ Branch pushed — handoff to Jenkins.${NC}"
+    echo -e "  Jenkins will now: launch-test → refresh modlist.json → tag ${BOLD}${intended_tag}${NC}"
+    echo -e "  The tag then triggers GitHub Actions to publish."
+    echo ""
+    [[ -n "$JENKINS_URL" ]] && echo -e "  Monitor Jenkins: ${CYAN}${JENKINS_URL}/job/${JENKINS_JOB}/${NC}"
+    [[ -n "$slug" ]] && echo -e "  Monitor Actions: ${CYAN}https://github.com/${slug}/actions${NC}"
 }
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -1098,9 +1096,14 @@ Usage: ./release.sh [--dry-run]
 
 Interactive release wizard for SkyBlock Enhanced.
 
+Flow: this script bumps the version, runs pakku, generates the changelog,
+then commits and PUSHES THE BRANCH. It does NOT tag. Jenkins picks up the
+push, runs the headless launch-test, refreshes modlist.json, and creates
+the release tag — which triggers GitHub Actions to publish.
+
 Options:
   --dry-run   Run steps 1–3 (version bump, pakku update, changelog) but
-              skip the git commit/tag/push in step 4. Useful for testing
+              skip the git commit/push in step 4. Useful for testing
               changelog generation. JSON changes are rolled back at exit.
   -h, --help  Show this help.
 
@@ -1129,11 +1132,22 @@ main() {
     echo -e "${NC}"
 
     if [[ "$DRY_RUN" == true ]]; then
-        print_warn "DRY-RUN mode — no git commit/tag/push will happen."
+        print_warn "DRY-RUN mode — no git commit/push will happen."
         echo ""
     fi
 
     check_deps
+
+    # Jenkins (not this script) creates release tags after its launch-test
+    # passes. Those tags won't exist locally until we fetch them, and
+    # step_pakku uses the latest tag as the changelog baseline — so pull
+    # them down first or the changelog will diff against a stale baseline.
+    if [[ "$DRY_RUN" != true ]]; then
+        print_step "Fetching remote tags (Jenkins creates release tags)..."
+        git fetch --tags --quiet origin 2>/dev/null \
+            || print_warn "Could not fetch tags — changelog baseline may be stale."
+    fi
+
     step_version
     step_pakku
     step_changelog
@@ -1159,7 +1173,7 @@ main() {
         print_header "🧪 Dry-Run Complete"
         echo -e "  Version   : ${BOLD}${NEW_VERSION}${NC}"
         echo -e "  Type      : ${BOLD}${RELEASE_TYPE}${NC}"
-        echo -e "  Tag would be : ${BOLD}${TAG_OVERRIDE:-v${NEW_VERSION}}${NC}"
+        echo -e "  Tag would be : ${BOLD}v${NEW_VERSION}${NC}"
         echo ""
         print_warn "Rolling back JSON changes (dry-run)..."
         rollback_json
@@ -1171,19 +1185,19 @@ main() {
 
     step_git
 
-    local final_tag="${TAG_OVERRIDE:-v${NEW_VERSION}}"
+    local final_tag="v${NEW_VERSION}"
 
-    if [[ -n "$HOTFIX_N" ]]; then
-        print_header "🚑 Hotfix Release Complete"
-    elif [[ "$RELEASE_TYPE" == "beta" ]]; then
-        print_header "🧪 Beta Release Complete"
+    if [[ "$RELEASE_TYPE" == "beta" ]]; then
+        print_header "🧪 Beta Pushed — Awaiting Jenkins"
     else
-        print_header "🎉 Release Complete"
+        print_header "🎉 Release Pushed — Awaiting Jenkins"
     fi
-    echo -e "  Version   : ${BOLD}${NEW_VERSION}${NC}"
-    echo -e "  Type      : ${BOLD}${RELEASE_TYPE}${NC}"
-    echo -e "  Tag       : ${BOLD}${final_tag}${NC}"
-    echo -e "  Changelog : ${BOLD}CHANGELOG.md${NC} + packcore/markdown/"
+    echo -e "  Version     : ${BOLD}${NEW_VERSION}${NC}"
+    echo -e "  Type        : ${BOLD}${RELEASE_TYPE}${NC}"
+    echo -e "  Tag (pending): ${BOLD}${final_tag}${NC}  ${YELLOW}← created by Jenkins after the launch-test${NC}"
+    echo -e "  Changelog   : ${BOLD}CHANGELOG.md${NC} + packcore/markdown/"
+    echo ""
+    print_warn "Nothing is published yet. Jenkins must pass its launch-test first."
     echo ""
 }
 

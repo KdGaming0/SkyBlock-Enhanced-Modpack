@@ -5,6 +5,8 @@ event.json
 # ── Secrets & environment vars ────────────────────────────────────────────────
 .secrets
 .vars
+.env
+.env.release
 
 # ── Modpack build output ──────────────────────────────────────────────────────
 **/build/
