@@ -2,11 +2,11 @@ plugins {
     id("me.modmuss50.mod-publish-plugin") version "2.1.1"
 }
 
-val packVersion   = providers.gradleProperty("packVersion").get()
-val mcVersion     = providers.gradleProperty("mcVersion").get()
-val cfFile        = providers.gradleProperty("cfFile").get()
-val mrFile        = providers.gradleProperty("mrFile").get()
-val changelogFile = providers.gradleProperty("changelogFile").get()
+val packVersion   = providers.gradleProperty("packVersion").getOrElse("0.0.0")
+val mcVersion     = providers.gradleProperty("mcVersion").getOrElse("1.21")
+val cfFile        = providers.gradleProperty("cfFile").getOrElse("dummy.zip")
+val mrFile        = providers.gradleProperty("mrFile").getOrElse("dummy.mrpack")
+val changelogFile = providers.gradleProperty("changelogFile").getOrElse("CHANGELOG.md")
 
 publishMods {
     changelog = file(changelogFile).readText()
@@ -26,22 +26,22 @@ publishMods {
         projectId = "1365629"
         accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
         minecraftVersions.add(mcVersion)
-        file(cfFile)
+        file.set(File(cfFile))
     }
 
     modrinth {
         projectId = "e0oMrxjp"
         accessToken = providers.environmentVariable("MODRINTH_TOKEN")
         minecraftVersions.add(mcVersion)
-        file(mrFile)
+        file.set(File(mrFile))
     }
 
     github {
         repository = "KdGaming0/SkyBlock-Enhanced-Modpack"
         accessToken = providers.environmentVariable("GITHUB_TOKEN")
         commitish = "main"
-        tag = "v$packVersion"
-        file(cfFile)
+        tagName = "v$packVersion"
+        file.set(File(cfFile))
         additionalFiles.from(mrFile)
     }
 }

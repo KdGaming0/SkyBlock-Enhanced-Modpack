@@ -21,6 +21,14 @@
     "curseForgeHash": 3949218252,
     "modrinthHash": "977c65282a7264e80ac05c7df4ddd0df9ea67021"
   },
+  "better_hypixel_chat-0.3.1+26.1.2.jar": {
+    "jarName": "better_hypixel_chat-0.3.1+26.1.2.jar",
+    "modId": "better_hypixel_chat",
+    "name": "Better Hypixel Chat",
+    "version": "0.3.1",
+    "curseForgeHash": 2484441265,
+    "modrinthHash": "c77c5ff21dfc403b9ee51c975cf596f5bcbb6491"
+  },
   "bobby-5.2.13+mc26.1.jar": {
     "jarName": "bobby-5.2.13+mc26.1.jar",
     "modId": "bobby",
@@ -61,13 +69,13 @@
     "curseForgeHash": 1338966733,
     "modrinthHash": "d094f28a80504e8e7a73f48789936faa70fa284f"
   },
-  "CrashAssistant-fabric-26.1-1.11.10.jar": {
-    "jarName": "CrashAssistant-fabric-26.1-1.11.10.jar",
+  "CrashAssistant-fabric-26.1-1.11.11.jar": {
+    "jarName": "CrashAssistant-fabric-26.1-1.11.11.jar",
     "modId": "crash_assistant",
     "name": "Crash Assistant",
-    "version": "1.11.10",
-    "curseForgeHash": 273123485,
-    "modrinthHash": "206629ade3037e4d178eb0367f5a656f8ad7263a"
+    "version": "1.11.11",
+    "curseForgeHash": 536039386,
+    "modrinthHash": "a82cdbbf148ca7c1fa5e8ed09c4e7df441d9957f"
   },
   "cwb-4.1.0+26.1.jar": {
     "jarName": "cwb-4.1.0+26.1.jar",
@@ -93,13 +101,13 @@
     "curseForgeHash": 3282993928,
     "modrinthHash": "eed0d8d9ab1a53db6f020163e1b1c9651b3dc5ca"
   },
-  "enhanced_storage-0.8.2+26.1.2.jar": {
-    "jarName": "enhanced_storage-0.8.2+26.1.2.jar",
+  "enhanced_storage-1.0.0-beta.2+26.1.2.jar": {
+    "jarName": "enhanced_storage-1.0.0-beta.2+26.1.2.jar",
     "modId": "enhanced_storage",
     "name": "Enhanced Storage",
-    "version": "0.8.2",
-    "curseForgeHash": 3659160597,
-    "modrinthHash": "14b9fafbe849b374695895498f2f87b7968539bd"
+    "version": "1.0.0-beta.2",
+    "curseForgeHash": 210495006,
+    "modrinthHash": "59fba71c740dec772c7da248a84268ce5da6d756"
   },
   "entityculling-fabric-1.10.5-mc26.1.jar": {
     "jarName": "entityculling-fabric-1.10.5-mc26.1.jar",
@@ -237,8 +245,8 @@
     "curseForgeHash": 804254212,
     "modrinthHash": "3160fcd857fc0e4d721c670e5792e5e2a5b202a6"
   },
-  "modernfix-5.27.19-build.1.jar": {
-    "jarName": "modernfix-5.27.19-build.1.jar",
+  "modernfix-5.27.19-build.1-26.1.jar": {
+    "jarName": "modernfix-5.27.19-build.1-26.1.jar",
     "modId": "modernfix",
     "name": "ModernFix",
     "version": "5.27.19-build.1",
@@ -293,21 +301,21 @@
     "curseForgeHash": 1658626111,
     "modrinthHash": "f9b567768cc082eaedf78b48b39eea0505be43f6"
   },
-  "Odin-0.2.2.jar": {
-    "jarName": "Odin-0.2.2.jar",
+  "Odin-0.2.3.jar": {
+    "jarName": "Odin-0.2.3.jar",
     "modId": "odin",
     "name": "Odin",
-    "version": "0.2.2",
-    "curseForgeHash": 2659545146,
-    "modrinthHash": "64b438984f1625beaf834ff9d014686119023a0c"
+    "version": "0.2.3",
+    "curseForgeHash": 10175239,
+    "modrinthHash": "e69e7eeafc5f864c05629f76048baff8ffd2b329"
   },
-  "packcore-5.0.10+26.1.2.jar": {
-    "jarName": "packcore-5.0.10+26.1.2.jar",
+  "packcore-5.0.11+26.1.2.jar": {
+    "jarName": "packcore-5.0.11+26.1.2.jar",
     "modId": "packcore",
     "name": "Pack Core",
-    "version": "5.0.10",
-    "curseForgeHash": 744903410,
-    "modrinthHash": "4b556dd6b246580306e1bf963386c79832eed145"
+    "version": "5.0.11",
+    "curseForgeHash": 61997799,
+    "modrinthHash": "99423073a3021603e71410c28aded9cd04345881"
   },
   "packetfixer-fabric-3.3.5-26.1.2.jar": {
     "jarName": "packetfixer-fabric-3.3.5-26.1.2.jar",
@@ -365,13 +373,13 @@
     "curseForgeHash": 1876409574,
     "modrinthHash": "6dec8a2ff13999db66fc73ece6f4e703ce684480"
   },
-  "scamscreener-2.5.2+26.1.2.jar": {
-    "jarName": "scamscreener-2.5.2+26.1.2.jar",
+  "scamscreener-2.6.0+26.1.2.jar": {
+    "jarName": "scamscreener-2.6.0+26.1.2.jar",
     "modId": "scamscreener",
     "name": "ScamScreener",
-    "version": "2.5.2+26.1.2",
-    "curseForgeHash": 340957268,
-    "modrinthHash": "b940f8e73152b7d713feacb1086311b392f67ebd"
+    "version": "2.6.0+26.1.2",
+    "curseForgeHash": 1560838397,
+    "modrinthHash": "c6a62cbab6135b3a00642de124b3875656f2114a"
   },
   "Searchables-fabric-26.1.2-1.0.2.jar": {
     "jarName": "Searchables-fabric-26.1.2-1.0.2.jar",
@@ -389,13 +397,13 @@
     "curseForgeHash": 2876718140,
     "modrinthHash": "d716a9ada79d3342085db73159bda5395ad6e01a"
   },
-  "skyblock_enhancements-1.1.10+26.1.2.jar": {
-    "jarName": "skyblock_enhancements-1.1.10+26.1.2.jar",
+  "skyblock_enhancements-1.1.11+26.1.2.jar": {
+    "jarName": "skyblock_enhancements-1.1.11+26.1.2.jar",
     "modId": "skyblock_enhancements",
     "name": "SkyBlock Enhancements",
-    "version": "1.1.10",
-    "curseForgeHash": 1121888178,
-    "modrinthHash": "2a6455113ee1df1e3a2a7b1d668b4e3e9f1714a6"
+    "version": "1.1.11",
+    "curseForgeHash": 2441216374,
+    "modrinthHash": "6649c40c9284b704252826b0ffbae1c71f3b334b"
   },
   "skyblocker-6.7.0-beta.1+26.1.2.jar": {
     "jarName": "skyblocker-6.7.0-beta.1+26.1.2.jar",
@@ -413,13 +421,13 @@
     "curseForgeHash": 1095439611,
     "modrinthHash": "0b555552a579880f7bd4ceb29f4fae0f214efdf7"
   },
-  "SkyHanni-7.33.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.33.0-mc26.1.jar",
+  "SkyHanni-7.34.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.34.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.33.0",
-    "curseForgeHash": 279991805,
-    "modrinthHash": "76fe7398d0a3538d63e9766885b5ecaaff354f75"
+    "version": "7.34.0",
+    "curseForgeHash": 1252858234,
+    "modrinthHash": "2f4bb34d605592e59574130b6df29ec4bd46adc1"
   },
   "SkyOcean-1.17.1-26.1.jar": {
     "jarName": "SkyOcean-1.17.1-26.1.jar",
@@ -517,31 +525,7 @@
     "curseForgeHash": 3485961364,
     "modrinthHash": "c180ae8cf90da1abd67c26b5c5e7bf5d795c3b1d"
   },
-  "Dark Skyblock v2.0c.cats.zip (resourcepack)": {
-    "jarName": "Dark Skyblock v2.0c.cats.zip (resourcepack)"
-  },
-  "Faithful 32x - 26.1.zip (resourcepack)": {
-    "jarName": "Faithful 32x - 26.1.zip (resourcepack)"
-  },
-  "FurSky Reborn.cats.zip (resourcepack)": {
-    "jarName": "FurSky Reborn.cats.zip (resourcepack)"
-  },
-  "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)": {
-    "jarName": "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)"
-  },
   "SBO Custom Sounds Data Pack (resourcepack)": {
     "jarName": "SBO Custom Sounds Data Pack (resourcepack)"
-  },
-  "Skyblock Dark UI 1.16 for 1.21.11+.zip (resourcepack)": {
-    "jarName": "Skyblock Dark UI 1.16 for 1.21.11+.zip (resourcepack)"
-  },
-  "SkyBlock Legacy.zip (resourcepack)": {
-    "jarName": "SkyBlock Legacy.zip (resourcepack)"
-  },
-  "Sophie\u0027s Enchants V2.0.1.zip (resourcepack)": {
-    "jarName": "Sophie\u0027s Enchants V2.0.1.zip (resourcepack)"
-  },
-  "§dlooshy §7[§f26.1§7] [v0.12].zip (resourcepack)": {
-    "jarName": "§dlooshy §7[§f26.1§7] [v0.12].zip (resourcepack)"
   }
 }

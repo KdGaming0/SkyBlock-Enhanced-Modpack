@@ -53,6 +53,17 @@ jobs:
           java -jar ../pakku.jar export
           ls -lR build/
 
+      - name: Upload Pakku build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: pakku-build-output
+          path: SkyBlock_Enhanced/build/
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
       - name: Publish to CurseForge, Modrinth & GitHub
         env:
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
@@ -61,6 +72,16 @@ jobs:
         run: |
           CF_FILE="$(ls SkyBlock_Enhanced/build/curseforge/*.zip | head -1)"
           MR_FILE="$(ls SkyBlock_Enhanced/build/modrinth/*.mrpack | head -1)"
+
+          echo "Resolved CF_FILE: $CF_FILE"
+          echo "Resolved MR_FILE: $MR_FILE"
+
+          if [ -z "$CF_FILE" ] || [ -z "$MR_FILE" ]; then
+            echo "::error::Missing build artifact(s). CF_FILE='$CF_FILE' MR_FILE='$MR_FILE'"
+            echo "Contents of build directory:"
+            find SkyBlock_Enhanced/build -type f
+            exit 1
+          fi
 
           ./gradlew publishMods --no-daemon \
             -PpackVersion="${{ steps.meta.outputs.pack_version }}" \
