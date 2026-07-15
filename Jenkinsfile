@@ -281,8 +281,8 @@ pipeline {
         stage('Commit Modlist & Tag Release') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'github-push',
-                                                  usernameVariable: 'GIT_USER',
-                                                  passwordVariable: 'GIT_TOKEN')]) {
+                                                 usernameVariable: 'GIT_USER',
+                                                 passwordVariable: 'GIT_TOKEN')]) {
                     sh '''
                         MODLIST="$PACK_DIR/.pakku/client-overrides/config/crash_assistant/modlist.json"
                         REMOTE="https://${GIT_USER}:${GIT_TOKEN}@github.com/KdGaming0/SkyBlock-Enhanced-Modpack.git"
@@ -301,7 +301,7 @@ pipeline {
                             git push "$REMOTE" HEAD:"$BRANCH"
                         fi
 
-                        // 2) Don't re-release an existing version
+                        # 2) Don't re-release an existing version
                         if git ls-remote --exit-code --tags "$REMOTE" "refs/tags/${TAG}" >/dev/null 2>&1;
                         then
                             echo "ERROR: Tag ${TAG} already exists on GitHub!"
@@ -309,7 +309,7 @@ pipeline {
                             exit 1
                         fi
 
-                        // 3) Tag the commit that contains the fresh modlist -> triggers GH Actions release
+                        # 3) Tag the commit that contains the fresh modlist -> triggers GH Actions release
                         git tag -d "$TAG" 2>/dev/null || true
                         git tag -a "$TAG" -m "SkyBlock Enhanced ${TAG}"
                         git push "$REMOTE" "$TAG"
