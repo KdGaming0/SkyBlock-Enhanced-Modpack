@@ -301,16 +301,19 @@ pipeline {
                             git push "$REMOTE" HEAD:"$BRANCH"
                         fi
 
-                        # 2) Don't re-release an existing version
-                        if git ls-remote --exit-code --tags "$REMOTE" "refs/tags/${TAG}" >/dev/null 2>&1; then
-                            echo "Tag ${TAG} already exists on the remote - skipping tag push."
-                            echo "Bump the version in pakku.json to cut a new release."
-                            exit 0
+                        // 2) Don't re-release an existing version
+                        if git ls-remote --exit-code --tags "$REMOTE" "refs/tags/${TAG}" >/dev/null 2>&1;
+                        then
+                            echo "ERROR: Tag ${TAG} already exists on GitHub!"
+                            echo "Please bump the version in pakku.json to cut a new release."
+                            exit 1
                         fi
 
-                        # 3) Tag the commit that contains the fresh modlist -> triggers GH Actions release
+                        // 3) Tag the commit that contains the fresh modlist -> triggers GH Actions release
+                        git tag -d "$TAG" 2>/dev/null || true
                         git tag -a "$TAG" -m "SkyBlock Enhanced ${TAG}"
                         git push "$REMOTE" "$TAG"
+
                         echo "Pushed ${TAG} - GitHub Actions will publish the release."
                     '''
                 }
