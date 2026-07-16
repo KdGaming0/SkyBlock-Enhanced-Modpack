@@ -13,13 +13,13 @@
     "curseForgeHash": 3552638587,
     "modrinthHash": "ff32bb97bddd4c74a079163e804c88cb47aca391"
   },
-  "bbe-fabric-1.3.6+mc26.1.2.jar": {
-    "jarName": "bbe-fabric-1.3.6+mc26.1.2.jar",
+  "bbe-fabric-1.3.7-beta.1+mc26.1.2.jar": {
+    "jarName": "bbe-fabric-1.3.7-beta.1+mc26.1.2.jar",
     "modId": "betterblockentities",
     "name": "BBE",
-    "version": "1.3.6+mc26.1.2",
-    "curseForgeHash": 3949218252,
-    "modrinthHash": "977c65282a7264e80ac05c7df4ddd0df9ea67021"
+    "version": "1.3.7-beta.1+mc26.1.2",
+    "curseForgeHash": 2487405485,
+    "modrinthHash": "07a2a46126c32a8d9f04dc34a166e6cb23edd807"
   },
   "better_hypixel_chat-0.3.1+26.1.2.jar": {
     "jarName": "better_hypixel_chat-0.3.1+26.1.2.jar",
@@ -101,13 +101,13 @@
     "curseForgeHash": 3282993928,
     "modrinthHash": "eed0d8d9ab1a53db6f020163e1b1c9651b3dc5ca"
   },
-  "enhanced_storage-1.0.0-beta.2+26.1.2.jar": {
-    "jarName": "enhanced_storage-1.0.0-beta.2+26.1.2.jar",
+  "enhanced_storage-1.0.0-beta.3+26.1.2.jar": {
+    "jarName": "enhanced_storage-1.0.0-beta.3+26.1.2.jar",
     "modId": "enhanced_storage",
     "name": "Enhanced Storage",
-    "version": "1.0.0-beta.2",
-    "curseForgeHash": 210495006,
-    "modrinthHash": "59fba71c740dec772c7da248a84268ce5da6d756"
+    "version": "1.0.0-beta.3",
+    "curseForgeHash": 3274902678,
+    "modrinthHash": "1aacd0e2b821e3a7ef426d19ddd87821301fdbcf"
   },
   "entityculling-fabric-1.10.5-mc26.1.jar": {
     "jarName": "entityculling-fabric-1.10.5-mc26.1.jar",
@@ -117,21 +117,21 @@
     "curseForgeHash": 3574011225,
     "modrinthHash": "62ac7ed3bbc0b920428bcfc18d1962836b84c391"
   },
-  "fabric-api-0.154.2+26.1.2.jar": {
-    "jarName": "fabric-api-0.154.2+26.1.2.jar",
+  "fabric-api-0.155.0+26.1.2.jar": {
+    "jarName": "fabric-api-0.155.0+26.1.2.jar",
     "modId": "fabric-api",
     "name": "Fabric API",
-    "version": "0.154.2+26.1.2",
-    "curseForgeHash": 2807747077,
-    "modrinthHash": "03e3870e2f4955faafb0b0076ae85175d7fa198f"
+    "version": "0.155.0+26.1.2",
+    "curseForgeHash": 535375930,
+    "modrinthHash": "faa840ed76d277ba2dce144bdb86fe384bf3b6ec"
   },
-  "fabric-language-kotlin-1.13.12+kotlin.2.4.0.jar": {
-    "jarName": "fabric-language-kotlin-1.13.12+kotlin.2.4.0.jar",
+  "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar": {
+    "jarName": "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar",
     "modId": "fabric-language-kotlin",
     "name": "Fabric Language Kotlin",
-    "version": "1.13.12+kotlin.2.4.0",
-    "curseForgeHash": 211845934,
-    "modrinthHash": "2bc17bb4275cc70a12e4ac35d139a71a30845720"
+    "version": "1.13.13+kotlin.2.4.10",
+    "curseForgeHash": 199595575,
+    "modrinthHash": "620cb137a9dc69ce86f3114f19d9eedab16366f5"
   },
   "fast-ip-ping-v1.0.11-mc26.1.2.jar": {
     "jarName": "fast-ip-ping-v1.0.11-mc26.1.2.jar",
@@ -341,13 +341,13 @@
     "curseForgeHash": 2486016348,
     "modrinthHash": "c1ce548549ec4517b9393985cefc65389e6f36d8"
   },
-  "reliable-recipe-viewer-8.6.1+26.1.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.6.1+26.1.2-fabric.jar",
+  "reliable-recipe-viewer-8.6.3+26.1.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.6.3+26.1.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.6.1+26.1.2",
-    "curseForgeHash": 246490521,
-    "modrinthHash": "86a2f6db5bd276d8400386f2ecd621c0dac73fc6"
+    "version": "8.6.3+26.1.2",
+    "curseForgeHash": 725880044,
+    "modrinthHash": "9456b264efc2a2ed988d2b40017a2d0371786a34"
   },
   "rpc-1.2.6+26.1-26.1.2.jar": {
     "jarName": "rpc-1.2.6+26.1-26.1.2.jar",
@@ -477,13 +477,13 @@
     "curseForgeHash": 1846458364,
     "modrinthHash": "f7887d2f433769aecb7d3f2adb0df1f6c5973279"
   },
-  "stella-1.0.6+26.1-b2.jar": {
-    "jarName": "stella-1.0.6+26.1-b2.jar",
+  "stella-1.0.6+26.1-b3.jar": {
+    "jarName": "stella-1.0.6+26.1-b3.jar",
     "modId": "stella",
     "name": "Stella",
     "version": "1.0.6",
-    "curseForgeHash": 3109049593,
-    "modrinthHash": "6342a048b86cd92aff4b5b63a99d795978b8974e"
+    "curseForgeHash": 2230380329,
+    "modrinthHash": "4bea9c9d83b51c26bf83c3078bd79dc1981ca646"
   },
   "Stfu-2.9.1-26.1.jar": {
     "jarName": "Stfu-2.9.1-26.1.jar",
