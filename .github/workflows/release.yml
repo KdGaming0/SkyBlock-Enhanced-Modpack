@@ -37,7 +37,7 @@ jobs:
 
       - name: Extract latest changelog entry
         run: |
-          awk '/^---[[:space:]]*$/{exit} {print}' CHANGELOG.md > RELEASE_CHANGELOG.md
+          awk '/^---[[:space:]]*$/{c++; if (c==2) exit} {print}' CHANGELOG.md > RELEASE_CHANGELOG.md
           if [ ! -s RELEASE_CHANGELOG.md ]; then
             echo "ERROR: extracted changelog is empty."
             exit 1
@@ -61,31 +61,38 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
 
-      - name: Make gradlew executable
-        run: chmod +x gradlew
+      - name: Determine release type
+        id: reltype
+        run: |
+          V="${{ steps.meta.outputs.pack_version }}"
+          case "$V" in
+            *-alpha*|*-Alpha*) echo "type=alpha" >> "$GITHUB_OUTPUT" ;;
+            *-beta*|*-Beta*)   echo "type=beta"  >> "$GITHUB_OUTPUT" ;;
+            *)                 echo "type=release" >> "$GITHUB_OUTPUT" ;;
+          esac
 
       - name: Publish to CurseForge, Modrinth & GitHub
-        env:
-          CURSEFORGE_API_KEY: ${{ secrets.CF_TOKEN }}
-          MODRINTH_TOKEN: ${{ secrets.MR_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          CF_FILE="$(ls SkyBlock_Enhanced/build/curseforge/*.zip | head -1)"
-          MR_FILE="$(ls SkyBlock_Enhanced/build/modrinth/*.mrpack | head -1)"
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          curseforge-id: 1365629
+          curseforge-token: ${{ secrets.CF_TOKEN }}
+          curseforge-files: SkyBlock_Enhanced/build/curseforge/*.zip
 
-          echo "Resolved CF_FILE: $CF_FILE"
-          echo "Resolved MR_FILE: $MR_FILE"
+          modrinth-id: e0oMrxjp
+          modrinth-token: ${{ secrets.MR_TOKEN }}
+          modrinth-files: SkyBlock_Enhanced/build/modrinth/*.mrpack
 
-          if [ -z "$CF_FILE" ] || [ -z "$MR_FILE" ]; then
-            echo "::error::Missing build artifact(s). CF_FILE='$CF_FILE' MR_FILE='$MR_FILE'"
-            echo "Contents of build directory:"
-            find SkyBlock_Enhanced/build -type f
-            exit 1
-          fi
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-tag: v${{ steps.meta.outputs.pack_version }}
+          github-files: |
+            SkyBlock_Enhanced/build/curseforge/*.zip
+            SkyBlock_Enhanced/build/modrinth/*.mrpack
 
-          ./gradlew publishMods --no-daemon \
-            -PpackVersion="${{ steps.meta.outputs.pack_version }}" \
-            -PmcVersion="${{ steps.meta.outputs.mc_version }}" \
-            -PcfFile="$CF_FILE" \
-            -PmrFile="$MR_FILE" \
-            -PchangelogFile="RELEASE_CHANGELOG.md"
+          name: SkyBlock Enhanced ${{ steps.meta.outputs.pack_version }}
+          version: ${{ steps.meta.outputs.pack_version }}
+          version-type: ${{ steps.reltype.outputs.type }}
+          changelog-file: RELEASE_CHANGELOG.md
+          loaders: fabric
+          environment: client
+          game-versions: ${{ steps.meta.outputs.mc_version }}
+          game-version-filter: none

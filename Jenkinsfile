@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    options {
+        timeout(time: 20, unit: 'MINUTES')
+        disableConcurrentBuilds()
+    }
+
     environment {
         HMC_HOME      = '/var/jenkins_home/headlessmc-cache'
         HMC_VERSION   = '2.10.0'
@@ -151,7 +156,7 @@ pipeline {
                     PRE_MD5="$(cat "$WORKSPACE/.modlist_pre_launch.md5" 2>/dev/null || echo none)"
 
                     # Launch in the background, capturing all output to the log
-                    xvfb-run -a timeout ${TEST_TIMEOUT} \\
+                    setsid xvfb-run -a timeout --kill-after=10s ${TEST_TIMEOUT} \\
                     java -Dhmc.gamedir="$RUN_DIR" \\
                         -Dhmc.offline=true \\
                         -Dhmc.offline.username=Kd_Gaming1 \\
@@ -175,7 +180,7 @@ pipeline {
                         fi
                         if grep -q "A mod crashed on startup" "$LOG"; then
                             echo "Detected a mod crash on startup."
-                            kill "$PID" 2>/dev/null
+                            kill -- -"$PID" 2>/dev/null
                             wait "$PID" 2>/dev/null
                             tail -50 "$LOG"
                             exit 1
@@ -205,7 +210,7 @@ pipeline {
                             echo "NOTE: modlist.json unchanged after launch (identical content, wrong player name, or write did not happen)."
                         fi
 
-                        kill "$PID" 2>/dev/null
+                        kill -- -"$PID" 2>/dev/null
                         wait "$PID" 2>/dev/null
                         echo "Game reached a fully started state - test passed."
                         exit 0
@@ -322,6 +327,9 @@ pipeline {
 
     post {
         always {
+            sh '''
+                pkill -9 -f "hmc.gamedir=$WORKSPACE/run" || true
+            '''
             archiveArtifacts artifacts: 'launch.log, run/logs/**, run/crash-reports/**',
                             allowEmptyArchive: true,
                             fingerprint: false
