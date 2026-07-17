@@ -302,7 +302,7 @@ pipeline {
                             echo "modlist.json unchanged - no commit needed."
                         else
                             git add "$MODLIST"
-                            git commit -m "chore(ci): refresh crash_assistant modlist.json for ${TAG} [ci skip]"
+                            git commit -m "chore(ci): refresh crash_assistant modlist.json for ${TAG}"
                             git push "$REMOTE" HEAD:"$BRANCH"
                         fi
 
