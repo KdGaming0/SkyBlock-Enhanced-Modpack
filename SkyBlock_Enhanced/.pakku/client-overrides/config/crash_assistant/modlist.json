@@ -101,13 +101,13 @@
     "curseForgeHash": 3282993928,
     "modrinthHash": "eed0d8d9ab1a53db6f020163e1b1c9651b3dc5ca"
   },
-  "enhanced_storage-1.0.0-beta.3+26.1.2.jar": {
-    "jarName": "enhanced_storage-1.0.0-beta.3+26.1.2.jar",
+  "enhanced_storage-1.0.0-beta.4+26.1.2.jar": {
+    "jarName": "enhanced_storage-1.0.0-beta.4+26.1.2.jar",
     "modId": "enhanced_storage",
     "name": "Enhanced Storage",
-    "version": "1.0.0-beta.3",
-    "curseForgeHash": 3274902678,
-    "modrinthHash": "1aacd0e2b821e3a7ef426d19ddd87821301fdbcf"
+    "version": "1.0.0-beta.4",
+    "curseForgeHash": 3395481150,
+    "modrinthHash": "f2a459567801068460d169e744cacb865fe2cdd4"
   },
   "entityculling-fabric-1.10.5-mc26.1.jar": {
     "jarName": "entityculling-fabric-1.10.5-mc26.1.jar",
@@ -117,13 +117,13 @@
     "curseForgeHash": 3574011225,
     "modrinthHash": "62ac7ed3bbc0b920428bcfc18d1962836b84c391"
   },
-  "fabric-api-0.155.0+26.1.2.jar": {
-    "jarName": "fabric-api-0.155.0+26.1.2.jar",
+  "fabric-api-0.155.2+26.1.2.jar": {
+    "jarName": "fabric-api-0.155.2+26.1.2.jar",
     "modId": "fabric-api",
     "name": "Fabric API",
-    "version": "0.155.0+26.1.2",
-    "curseForgeHash": 535375930,
-    "modrinthHash": "faa840ed76d277ba2dce144bdb86fe384bf3b6ec"
+    "version": "0.155.2+26.1.2",
+    "curseForgeHash": 4292707234,
+    "modrinthHash": "5fe5204ccc96a17340570db66a5b4127b8176246"
   },
   "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar": {
     "jarName": "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar",
@@ -349,13 +349,13 @@
     "curseForgeHash": 725880044,
     "modrinthHash": "9456b264efc2a2ed988d2b40017a2d0371786a34"
   },
-  "rpc-1.2.6+26.1-26.1.2.jar": {
-    "jarName": "rpc-1.2.6+26.1-26.1.2.jar",
+  "rpc-1.2.7+26.1-26.2.jar": {
+    "jarName": "rpc-1.2.7+26.1-26.2.jar",
     "modId": "rpc",
     "name": "ResourcePackCached",
-    "version": "1.2.6",
-    "curseForgeHash": 2392322613,
-    "modrinthHash": "fda44b2e9674c9158365d9eaf36552d454a6d3d4"
+    "version": "1.2.7",
+    "curseForgeHash": 1583095190,
+    "modrinthHash": "83d1c3896d7bb50654b77229f0a95edc07fc9194"
   },
   "SBO-0.4.3+26.1.2-fabric.jar": {
     "jarName": "SBO-0.4.3+26.1.2-fabric.jar",
@@ -405,13 +405,13 @@
     "curseForgeHash": 2441216374,
     "modrinthHash": "6649c40c9284b704252826b0ffbae1c71f3b334b"
   },
-  "skyblocker-6.7.0-beta.1+26.1.2.jar": {
-    "jarName": "skyblocker-6.7.0-beta.1+26.1.2.jar",
+  "skyblocker-6.7.0+26.1.2.jar": {
+    "jarName": "skyblocker-6.7.0+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.7.0-beta.1+26.1.2",
-    "curseForgeHash": 1825794660,
-    "modrinthHash": "cda2c6f93604a98ce4863540e76b26d8621255d1"
+    "version": "6.7.0+26.1.2",
+    "curseForgeHash": 846503654,
+    "modrinthHash": "054966bdc9017cd333870b85ff69345ef3b5d265"
   },
   "SkyBlockPv-1.8.7-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.7-26.1.jar",
