@@ -37,13 +37,13 @@
     "curseForgeHash": 1822167192,
     "modrinthHash": "24bb68c889e56d6a532725668ca663e4197935c5"
   },
-  "btrbz-0.9.0-alpha+26.1.x.jar": {
-    "jarName": "btrbz-0.9.0-alpha+26.1.x.jar",
+  "btrbz-0.10.0-alpha+26.1.x.jar": {
+    "jarName": "btrbz-0.10.0-alpha+26.1.x.jar",
     "modId": "btrbz",
     "name": "BtrBz",
-    "version": "0.9.0",
-    "curseForgeHash": 1829177841,
-    "modrinthHash": "95db06e02970c4e366c684748541e95a39301e9d"
+    "version": "0.10.0",
+    "curseForgeHash": 3136263383,
+    "modrinthHash": "bcd7d6f966b55bcb95c22ec63de17de1c26e75a8"
   },
   "Catharsis-1.0.0-beta.20-26.1.jar": {
     "jarName": "Catharsis-1.0.0-beta.20-26.1.jar",
@@ -101,13 +101,13 @@
     "curseForgeHash": 3282993928,
     "modrinthHash": "eed0d8d9ab1a53db6f020163e1b1c9651b3dc5ca"
   },
-  "enhanced_storage-1.0.0-beta.4+26.1.2.jar": {
-    "jarName": "enhanced_storage-1.0.0-beta.4+26.1.2.jar",
+  "enhanced_storage-1.0.1+26.1.2.jar": {
+    "jarName": "enhanced_storage-1.0.1+26.1.2.jar",
     "modId": "enhanced_storage",
     "name": "Enhanced Storage",
-    "version": "1.0.0-beta.4",
-    "curseForgeHash": 3395481150,
-    "modrinthHash": "f2a459567801068460d169e744cacb865fe2cdd4"
+    "version": "1.0.1",
+    "curseForgeHash": 1009256542,
+    "modrinthHash": "912f74c36e11503ace4545f5fbe9679854bbd0bc"
   },
   "entityculling-fabric-1.10.5-mc26.1.jar": {
     "jarName": "entityculling-fabric-1.10.5-mc26.1.jar",
@@ -173,13 +173,13 @@
     "curseForgeHash": 1408081779,
     "modrinthHash": "dabdfb956438fc9526ec0794fcf4ff0261a75870"
   },
-  "Gnetum-4.4.1+26.1.2-fabric.jar": {
-    "jarName": "Gnetum-4.4.1+26.1.2-fabric.jar",
+  "Gnetum-4.5.1+26.1.2-fabric.jar": {
+    "jarName": "Gnetum-4.5.1+26.1.2-fabric.jar",
     "modId": "gnetum",
     "name": "Gnetum",
-    "version": "4.4.1+26.1.2-fabric",
-    "curseForgeHash": 1621630962,
-    "modrinthHash": "70744e34515aa0054b2959a0a32a2227ba028d4e"
+    "version": "4.5.1+26.1.2-fabric",
+    "curseForgeHash": 1152281488,
+    "modrinthHash": "881f481168ab115204140d312af1f9529f5856ee"
   },
   "ImmediatelyFast-Fabric-1.15.3+26.1.jar": {
     "jarName": "ImmediatelyFast-Fabric-1.15.3+26.1.jar",
@@ -309,13 +309,13 @@
     "curseForgeHash": 10175239,
     "modrinthHash": "e69e7eeafc5f864c05629f76048baff8ffd2b329"
   },
-  "packcore-5.0.11+26.1.2.jar": {
-    "jarName": "packcore-5.0.11+26.1.2.jar",
+  "packcore-5.0.12+26.1.2.jar": {
+    "jarName": "packcore-5.0.12+26.1.2.jar",
     "modId": "packcore",
     "name": "Pack Core",
-    "version": "5.0.11",
-    "curseForgeHash": 61997799,
-    "modrinthHash": "99423073a3021603e71410c28aded9cd04345881"
+    "version": "5.0.12",
+    "curseForgeHash": 128361413,
+    "modrinthHash": "bbb5b9b84f7d0aa50f73450b53c8ee66c9ac9e41"
   },
   "packetfixer-fabric-3.3.5-26.1.2.jar": {
     "jarName": "packetfixer-fabric-3.3.5-26.1.2.jar",
@@ -421,13 +421,13 @@
     "curseForgeHash": 1095439611,
     "modrinthHash": "0b555552a579880f7bd4ceb29f4fae0f214efdf7"
   },
-  "SkyHanni-7.34.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.34.0-mc26.1.jar",
+  "SkyHanni-7.35.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.35.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.34.0",
-    "curseForgeHash": 1252858234,
-    "modrinthHash": "2f4bb34d605592e59574130b6df29ec4bd46adc1"
+    "version": "7.35.0",
+    "curseForgeHash": 1133463667,
+    "modrinthHash": "b6718edb7d62e11bfeffc1bad1aa80fdb8874ddf"
   },
   "SkyOcean-1.17.1-26.1.jar": {
     "jarName": "SkyOcean-1.17.1-26.1.jar",
@@ -437,13 +437,13 @@
     "curseForgeHash": 3258031900,
     "modrinthHash": "bfa14dab2de0a4be11a032a92a8af83ed5fb4afe"
   },
-  "skyrecipes-0.3.1+26.1.2.jar": {
-    "jarName": "skyrecipes-0.3.1+26.1.2.jar",
+  "skyrecipes-0.4.1+26.1.2.jar": {
+    "jarName": "skyrecipes-0.4.1+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.3.1",
-    "curseForgeHash": 1319990918,
-    "modrinthHash": "c8fbea6cba07925629230493f6f2724ba0e14ddb"
+    "version": "0.4.1",
+    "curseForgeHash": 642171668,
+    "modrinthHash": "3f422e3b33125ff14ae2575084825569bf2f93d9"
   },
   "sodium-extra-fabric-0.8.7+mc26.1.1.jar": {
     "jarName": "sodium-extra-fabric-0.8.7+mc26.1.1.jar",
@@ -525,7 +525,31 @@
     "curseForgeHash": 3485961364,
     "modrinthHash": "c180ae8cf90da1abd67c26b5c5e7bf5d795c3b1d"
   },
+  "Dark Skyblock v2.0c.cats.zip (resourcepack)": {
+    "jarName": "Dark Skyblock v2.0c.cats.zip (resourcepack)"
+  },
+  "Faithful 32x - 26.1.zip (resourcepack)": {
+    "jarName": "Faithful 32x - 26.1.zip (resourcepack)"
+  },
+  "FurSky Reborn.cats.zip (resourcepack)": {
+    "jarName": "FurSky Reborn.cats.zip (resourcepack)"
+  },
+  "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)": {
+    "jarName": "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)"
+  },
   "SBO Custom Sounds Data Pack (resourcepack)": {
     "jarName": "SBO Custom Sounds Data Pack (resourcepack)"
+  },
+  "Skyblock Dark UI 1.16 for 1.21.11+.zip (resourcepack)": {
+    "jarName": "Skyblock Dark UI 1.16 for 1.21.11+.zip (resourcepack)"
+  },
+  "SkyBlock Legacy.zip (resourcepack)": {
+    "jarName": "SkyBlock Legacy.zip (resourcepack)"
+  },
+  "Sophie\u0027s Enchants V2.0.2.zip (resourcepack)": {
+    "jarName": "Sophie\u0027s Enchants V2.0.2.zip (resourcepack)"
+  },
+  "§dlooshy §7[§f26.1§7] [v0.12].zip (resourcepack)": {
+    "jarName": "§dlooshy §7[§f26.1§7] [v0.12].zip (resourcepack)"
   }
 }
