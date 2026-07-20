@@ -32,7 +32,14 @@ pipeline {
                     env.FABRIC_VERSION = sh(script: "jq -r '.loaders.fabric'  ${lock}", returnStdout: true).trim()
                     // Modpack version lives in pakku.json - reused for the release tag
                     env.PACK_VERSION   = sh(script: "jq -r '.version' ${env.PACK_DIR}/pakku.json", returnStdout: true).trim()
+                    // release.sh writes .release-tag so a hotfix can re-release
+                    // the same pack version under a new, non-conflicting tag.
+                    // Fall back to v<version> for builds that predate the file.
+                    env.RELEASE_TAG = fileExists('.release-tag')
+                        ? readFile('.release-tag').trim()
+                        : "v${env.PACK_VERSION}"
                     echo "Testing Minecraft ${env.MC_VERSION} / Fabric Loader ${env.FABRIC_VERSION} / Pack v${env.PACK_VERSION}"
+                    echo "Release tag: ${env.RELEASE_TAG}"
                 }
             }
         }
@@ -292,7 +299,7 @@ pipeline {
                         MODLIST="$PACK_DIR/.pakku/client-overrides/config/crash_assistant/modlist.json"
                         REMOTE="https://${GIT_USER}:${GIT_TOKEN}@github.com/KdGaming0/SkyBlock-Enhanced-Modpack.git"
                         BRANCH="${BRANCH_NAME:-main}"
-                        TAG="v${PACK_VERSION}"
+                        TAG="${RELEASE_TAG}"
 
                         git config user.name  "jenkins-ci"
                         git config user.email "jenkins@example.com"
@@ -309,7 +316,8 @@ pipeline {
                         # Step 2: Prevent re-releasing an existing version
                         if git ls-remote --exit-code --tags "$REMOTE" "refs/tags/${TAG}" >/dev/null 2>&1; then
                             echo "ERROR: Tag ${TAG} already exists on GitHub!"
-                            echo "Please bump the version in pakku.json to cut a new release."
+                            echo "Bump the version in pakku.json, or re-run release.sh"
+                            echo "and pick [H] hotfix to cut a new tag for this version."
                             exit 1
                         fi
 

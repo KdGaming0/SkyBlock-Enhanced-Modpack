@@ -66,6 +66,8 @@ ROLLBACK_NEEDED=false
 OLD_PAKKU_JSON_CONTENT=""
 OLD_MODPACK_JSON_CONTENT=""
 DRY_RUN=false               # --dry-run skips git commit/tag/push
+RELEASE_TAG=""              # actual git tag; usually v$NEW_VERSION
+HOTFIX_N=0                  # >0 when doing a same-version hotfix re-release
 
 if command -v pakku-mc &>/dev/null; then
     PAKKU_CMD="pakku-mc"
@@ -161,6 +163,19 @@ step_version() {
         remote_tag_exists=true
     fi
 
+    # ── Hotfix eligibility ───────────────────────────────────────────────────
+    # Re-release the SAME pack version under a NEW tag. Used when a release run
+    # was cancelled/aborted mid-flight (e.g. a mod updated seconds after you
+    # kicked it off), or when v<cur> exists but nothing actually shipped.
+    # Find the highest existing v<cur>-hotfix-N so we can offer N+1.
+    local next_hotfix=1
+    local existing_hotfix
+    existing_hotfix=$(git ls-remote --tags origin "refs/tags/v${cur}-hotfix-*" 2>/dev/null \
+        | sed -E 's#.*refs/tags/v'"${cur//./\\.}"'-hotfix-([0-9]+).*#\1#' \
+        | grep -E '^[0-9]+$' | sort -n | tail -n1 || true)
+    [[ -n "$existing_hotfix" ]] && next_hotfix=$(( existing_hotfix + 1 ))
+    local V_HOTFIX_TAG="v${cur}-hotfix-${next_hotfix}"
+
     # Strip any beta suffix to get the stable base version for bump arithmetic
     # e.g.  3.1.2-beta.1  →  base=3.1.2  (so next patch suggests 3.1.3)
     local cur_base
@@ -203,6 +218,7 @@ step_version() {
     if [[ "$remote_tag_exists" == false ]]; then
         echo -e "    ${BOLD}[R]${NC}  retry   →  ${CYAN}${cur}${NC}  (release same version again — v${cur} was never tagged)"
     fi
+    echo -e "    ${BOLD}[H]${NC}  hotfix  →  ${CYAN}${cur}${NC}  (same version, new tag ${BOLD}${V_HOTFIX_TAG}${NC})"
     echo ""
 
     local choice
@@ -222,6 +238,21 @@ step_version() {
         BUMP_TYPE="retry"
         RELEASE_TYPE=$([[ "$cur" == *-beta.* ]] && echo "beta" || echo "release")
         print_step "Retrying release: ${BOLD}${CYAN}${NEW_VERSION}${NC} (no version bump — previous attempt never published)"
+        save_json_state
+        return
+    fi
+
+    # ── Hotfix path: same pack version, NEW tag. ─────────────────────────────
+    # pakku update/fetch/export still runs, so any mod updates released since
+    # the aborted run get picked up. The changelog reuses the previously
+    # approved entry for this version and merges in this run's new entries.
+    if [[ "${choice,,}" == "h" ]]; then
+        NEW_VERSION="$cur"
+        BUMP_TYPE="hotfix"
+        HOTFIX_N="$next_hotfix"
+        RELEASE_TAG="$V_HOTFIX_TAG"
+        RELEASE_TYPE=$([[ "$cur" == *-beta.* ]] && echo "beta" || echo "release")
+        print_step "Hotfix re-release: ${BOLD}${CYAN}${NEW_VERSION}${NC} → tag ${BOLD}${RELEASE_TAG}${NC}"
         save_json_state
         return
     fi
@@ -388,6 +419,10 @@ _apply_version_files() {
 step_pakku() {
     print_header "Step 2 · Pakku Update"
 
+    # Every path through step_version that isn't a hotfix leaves RELEASE_TAG
+    # empty, meaning "tag = v<version>" as before.
+    [[ -z "$RELEASE_TAG" ]] && RELEASE_TAG="v${NEW_VERSION}"
+
     # ── Changelog baseline ───────────────────────────────────────────────────
     # Diff against the pakku-lock.json from the PREVIOUS RELEASE TAG, not a
     # snapshot taken right now. Mods added/updated manually between releases
@@ -397,6 +432,22 @@ step_pakku() {
     local lock_rel="${LOCK_FILE#"$REPO_ROOT"/}"
 
     PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "none")
+
+    # ── Hotfix baseline ──────────────────────────────────────────────────────
+    # Diff against whatever this same version last shipped as, so the changelog
+    # only shows what actually changed since the aborted/previous attempt.
+    if [[ "$BUMP_TYPE" == "hotfix" ]]; then
+        local hf_base=""
+        if [[ "$HOTFIX_N" -gt 1 ]]; then
+            hf_base="v${NEW_VERSION}-hotfix-$(( HOTFIX_N - 1 ))"
+        elif git ls-remote --exit-code --tags origin "refs/tags/v${NEW_VERSION}" &>/dev/null; then
+            hf_base="v${NEW_VERSION}"
+        fi
+        if [[ -n "$hf_base" ]]; then
+            PREV_TAG="$hf_base"
+            print_ok "Hotfix baseline: ${hf_base}"
+        fi
+    fi
 
     local baseline_tag="$PREV_TAG"
     if [[ "$PREV_TAG" == *-beta.* ]]; then
@@ -766,6 +817,116 @@ Thanks for using SkyBlock Enhanced!
 EOF
 }
 
+# Merge a freshly generated changelog into a previously approved one (hotfix).
+#   $1 = prior changelog body (approved during the aborted run)
+#   $2 = newly generated changelog body (this run's pakku diff)
+#
+# Rules, applied per entry line ("- **Name**: old -> **new**"):
+#   • Same project already listed  → replace that line (newer version wins).
+#     For an "updated" entry the old->new range is widened so it reads as the
+#     full jump from what last shipped to what ships now.
+#   • Project not listed yet       → append under the matching "### " subsection
+#     of the matching "## " section, creating either if absent.
+# Everything outside the entry sections (title, summary, footer) is taken from
+# the prior changelog, so hand-written notes survive.
+_merge_changelog() {
+    local prior="$1"
+    local fresh="$2"
+
+    # Entry lines from the fresh body, tagged with the section/subsection they
+    # live under: "<## section>\t<### subsection>\t<line>"
+    local tagged
+    tagged=$(awk -F'\n' '
+        /^## /  { section=$0; subsection=""; next }
+        /^### / { subsection=$0; next }
+        /^---$/ { section=""; subsection=""; next }
+        /^- /   { if (section != "") printf "%s\t%s\t%s\n", section, subsection, $0 }
+    ' <<< "$fresh")
+
+    [[ -z "$tagged" ]] && { printf '%s' "$prior"; return; }
+
+    local merged="$prior"
+    local sec subsec line pname old_line
+
+    while IFS=$'\t' read -r sec subsec line; do
+        [[ -z "$line" ]] && continue
+        pname=$(sed -E 's/^- \*\*([^*]+)\*\*.*/\1/' <<< "$line")
+        [[ -z "$pname" ]] && continue
+
+        old_line=$(grep -m1 -F -- "- **${pname}**" <<< "$merged" || true)
+
+        if [[ -n "$old_line" ]]; then
+            # Already listed → replace in place. For an update entry, keep the
+            # ORIGINAL "from" version and take the NEW "to" version, so
+            # 1.0 -> 1.1 merged with 1.1 -> 1.2 reads as 1.0 -> 1.2.
+            local repl="$line"
+            if [[ "$old_line" == *" -> "* && "$line" == *" -> "* ]]; then
+                local from_v to_v
+                from_v=$(sed -E 's/^- \*\*[^*]+\*\*: (.+) -> \*\*.*/\1/' <<< "$old_line")
+                to_v=$(sed -E 's/^.* -> \*\*(.+)\*\*[[:space:]]*$/\1/' <<< "$line")
+                if [[ -n "$from_v" && -n "$to_v" && "$from_v" != "$to_v" ]]; then
+                    repl="- **${pname}**: ${from_v} -> **${to_v}**"
+                fi
+            fi
+            merged=$(REPL="$repl" NEEDLE="- **${pname}**" awk '
+                index($0, ENVIRON["NEEDLE"]) == 1 { print ENVIRON["REPL"]; next }
+                { print }
+            ' <<< "$merged")
+            continue
+        fi
+
+        # Not listed yet → insert under the matching headings, creating them if
+        # they are missing. New sections go just before the "---" footer.
+        merged=$(SEC="$sec" SUBSEC="$subsec" LINE="$line" awk '
+            { buf[NR] = $0 }
+            END {
+                sec = ENVIRON["SEC"]; subsec = ENVIRON["SUBSEC"]; line = ENVIRON["LINE"]
+                sec_start = 0; sec_end = 0; sub_start = 0; sub_end = 0; footer = 0
+
+                for (i = 1; i <= NR; i++) {
+                    if (footer == 0 && buf[i] == "---") footer = i
+                    if (sec_start == 0 && buf[i] == sec) { sec_start = i; continue }
+                    if (sec_start && sec_end == 0 && i > sec_start &&
+                        (substr(buf[i],1,3) == "## " || buf[i] == "---")) sec_end = i
+                }
+                if (sec_start && sec_end == 0) sec_end = (footer ? footer : NR + 1)
+
+                if (sec_start && subsec != "") {
+                    for (i = sec_start + 1; i < sec_end; i++) {
+                        if (sub_start == 0 && buf[i] == subsec) { sub_start = i; continue }
+                        if (sub_start && sub_end == 0 && substr(buf[i],1,4) == "### ") sub_end = i
+                    }
+                    if (sub_start && sub_end == 0) sub_end = sec_end
+                }
+
+                # Back the insertion point up over trailing blank lines so the
+                # entry lands at the end of the list, not after a gap.
+                if (sub_start)      { ins = sub_end; pre = "" }
+                else if (sec_start) { ins = sec_end; pre = subsec }
+                else                { ins = (footer ? footer : NR + 1); pre = (subsec == "" ? sec : sec "\n" subsec) }
+                while (ins > 1 && buf[ins-1] == "") ins--
+
+                for (i = 1; i <= NR; i++) {
+                    if (i == ins) {
+                        if (pre != "") print ""
+                        if (pre != "") print pre
+                        print line
+                        print ""
+                    }
+                    print buf[i]
+                }
+                if (ins > NR) {
+                    if (pre != "") { print ""; print pre }
+                    print line
+                }
+            }
+        ' <<< "$merged")
+    done <<< "$tagged"
+
+    # Collapse any runs of blank lines introduced by the insertions.
+    awk 'NF == 0 { if (blank++) next } NF { blank = 0 } { print }' <<< "$merged"
+}
+
 step_changelog() {
     print_header "Step 3 · Changelog"
 
@@ -774,20 +935,49 @@ step_changelog() {
     # since the last failed attempt), but the changelog TEXT is left as
     # whatever was previously written/approved for this version — we just
     # let the user re-review/edit it via the normal menu below.
-    if [[ "$BUMP_TYPE" == "retry" ]]; then
-        local existing_cl=""
-        if [[ -d "$PACKCORE_MD_DIR" && -f "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md" ]]; then
-            existing_cl=$(cat "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md")
-        elif [[ -f "$ROOT_CHANGELOG" ]] && [[ "$(head -n1 "$ROOT_CHANGELOG")" == "# 🛠 Update ${NEW_VERSION}" ]]; then
-            # Pull just the top entry (up to the second "---") out of CHANGELOG.md
-            existing_cl=$(awk '/^---$/{c++; if(c==2){exit}} {print}' "$ROOT_CHANGELOG")
+    # Hotfix behaves the same way, except it does NOT stop there: the pakku
+    # diff still runs and its new entries get merged into the prior changelog
+    # below, so mods that updated since the aborted run are recorded.
+    local PRIOR_CL=""
+    if [[ "$BUMP_TYPE" == "retry" || "$BUMP_TYPE" == "hotfix" ]]; then
+        # Prefer the newest hotfix changelog for this version, then the plain
+        # one, then the top entry of CHANGELOG.md.
+        local cand=""
+        if [[ -d "$PACKCORE_MD_DIR" ]]; then
+            # Highest-numbered hotfix changelog for this version, if any.
+            # Numeric sort so -hotfix-10 beats -hotfix-2.
+            local f n best_n=-1
+            for f in "$PACKCORE_MD_DIR"/CHANGELOG-v"${NEW_VERSION}"-hotfix-*.md; do
+                [[ -f "$f" ]] || continue
+                n=$(sed -E 's/.*-hotfix-([0-9]+)\.md$/\1/' <<< "$f")
+                [[ "$n" =~ ^[0-9]+$ ]] || continue
+                if (( n > best_n )); then best_n=$n; cand="$f"; fi
+            done
+            if [[ -n "$cand" ]]; then
+                PRIOR_CL=$(cat "$cand")
+            elif [[ -f "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md" ]]; then
+                PRIOR_CL=$(cat "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md")
+            fi
         fi
+        if [[ -z "$PRIOR_CL" ]] && [[ -f "$ROOT_CHANGELOG" ]] \
+            && [[ "$(head -n1 "$ROOT_CHANGELOG")" == "# 🛠 Update ${NEW_VERSION}" ]]; then
+            # Pull just the top entry (up to the second "---") out of CHANGELOG.md
+            PRIOR_CL=$(awk '/^---$/{c++; if(c==2){exit}} {print}' "$ROOT_CHANGELOG")
+        fi
+    fi
 
-        if [[ -n "$existing_cl" ]]; then
+    if [[ "$BUMP_TYPE" == "retry" ]]; then
+        if [[ -n "$PRIOR_CL" ]]; then
             print_ok "Reusing existing changelog for v${NEW_VERSION} (retry — not regenerated from diff)."
-            CHANGELOG_BODY="$existing_cl"
+            CHANGELOG_BODY="$PRIOR_CL"
         else
             print_warn "No previous changelog found for v${NEW_VERSION} — generating a new one from the pakku diff instead."
+        fi
+    elif [[ "$BUMP_TYPE" == "hotfix" ]]; then
+        if [[ -n "$PRIOR_CL" ]]; then
+            print_ok "Found existing changelog for v${NEW_VERSION} — this run's changes will be merged into it."
+        else
+            print_warn "No previous changelog found for v${NEW_VERSION} — generating a fresh one from the pakku diff."
         fi
     fi
 
@@ -842,6 +1032,19 @@ step_changelog() {
         CHANGELOG_BODY=$(_build_changelog "" "$NEW_VERSION")
     else
         CHANGELOG_BODY=$(_build_changelog "$raw_diff" "$NEW_VERSION")
+    fi
+
+    # ── Hotfix merge ─────────────────────────────────────────────────────────
+    # Fold this run's entries into the previously approved changelog so nothing
+    # from the aborted attempt is lost.
+    if [[ "$BUMP_TYPE" == "hotfix" && -n "$PRIOR_CL" ]]; then
+        if [[ "$diff_ok" == true ]]; then
+            CHANGELOG_BODY=$(_merge_changelog "$PRIOR_CL" "$CHANGELOG_BODY")
+            print_ok "Merged this run's changes into the existing v${NEW_VERSION} changelog."
+        else
+            CHANGELOG_BODY="$PRIOR_CL"
+            print_ok "No new mod changes this run — reusing the existing v${NEW_VERSION} changelog."
+        fi
     fi
 
     fi # end: [[ -z "$CHANGELOG_BODY" ]] (retry-with-existing-changelog skips the block above)
@@ -951,9 +1154,13 @@ step_changelog() {
         print_ok "Updated CHANGELOG.md"
     fi
 
-    # Write versioned changelog to packcore markdown dir
+    # Write versioned changelog to packcore markdown dir. Hotfixes get a
+    # suffixed filename so the original attempt's file is preserved.
+    local cl_suffix=""
+    [[ "$HOTFIX_N" -gt 0 ]] && cl_suffix="-hotfix-${HOTFIX_N}"
+
     if [[ -d "$PACKCORE_MD_DIR" ]]; then
-        echo "$CHANGELOG_BODY" > "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}.md"
+        echo "$CHANGELOG_BODY" > "$PACKCORE_MD_DIR/CHANGELOG-v${NEW_VERSION}${cl_suffix}.md"
         print_ok "Wrote changelog to packcore/markdown/"
     fi
 
@@ -986,7 +1193,7 @@ step_changelog() {
     # Write release-body.md to packcore/markdown so CI can pick it up as a
     # single artifact without having to reassemble anything.
     if [[ -d "$PACKCORE_MD_DIR" ]]; then
-        echo "$release_body" > "$PACKCORE_MD_DIR/release-body-v${NEW_VERSION}.md"
+        echo "$release_body" > "$PACKCORE_MD_DIR/release-body-v${NEW_VERSION}${cl_suffix}.md"
         print_ok "Wrote release-body.md to packcore/markdown/"
     fi
 }
@@ -1061,11 +1268,14 @@ step_git() {
 
     # The tag Jenkins will eventually create (shown for reference only —
     # this script does not create it).
-    local intended_tag="v${NEW_VERSION}"
+    local intended_tag="$RELEASE_TAG"
 
     # Safety: if that tag already exists on the remote, Jenkins will refuse to
     # re-release it (its Commit/Tag stage skips existing tags). Warn early so
     # the user isn't surprised when nothing publishes.
+    #
+    # Hotfixes deliberately reuse an existing PACK VERSION, but their TAG is
+    # freshly numbered, so this check still applies to them meaningfully.
     if git ls-remote --exit-code --tags origin "refs/tags/${intended_tag}" &>/dev/null; then
         print_warn "Tag ${intended_tag} already exists on the remote."
         print_warn "Jenkins will skip tagging/publishing unless you bump the version."
@@ -1077,12 +1287,19 @@ step_git() {
         fi
     fi
 
+    # Jenkins reads this instead of deriving the tag from pakku.json, so a
+    # hotfix can ship the same pack version under a distinct tag.
+    printf '%s\n' "$intended_tag" > "$REPO_ROOT/.release-tag"
+    print_ok "Wrote .release-tag → ${intended_tag}"
+
     print_step "Staging all changes..."
     git add -A
 
     print_step "Committing..."
     local commit_msg
-    if [[ "$RELEASE_TYPE" == "beta" ]]; then
+    if [[ "$BUMP_TYPE" == "hotfix" ]]; then
+        commit_msg="release: ${NEW_VERSION} (hotfix ${HOTFIX_N}, tag ${intended_tag})"
+    elif [[ "$RELEASE_TYPE" == "beta" ]]; then
         commit_msg="release: ${intended_tag} (beta pre-release)"
     else
         commit_msg="release: ${intended_tag}"
@@ -1163,6 +1380,15 @@ export still runs (to pick up any changes since the last attempt), but the
 changelog step reuses the existing changelog for that version instead of
 regenerating it. Unavailable once the tag actually exists on the remote.
 
+Hotfix: option [H] re-releases the SAME pack version under a new tag
+(v<version>-hotfix-N). Use this when you cancelled a release job partway
+through — typically because a mod update landed just after you started it.
+pakku update/fetch/export runs again to pick up those changes, and the
+changelog for this version is reused with the new entries merged into it
+(version ranges are widened, e.g. 1.0 -> 1.1 plus 1.1 -> 1.2 becomes
+1.0 -> 1.2). Always available; N auto-increments past existing hotfix tags.
+Jenkins reads the tag from the .release-tag file this script writes.
+
 Options:
   --dry-run   Run steps 1–3 (version bump, pakku update, changelog) but
               skip the git commit/push in step 4. Useful for testing
@@ -1218,7 +1444,7 @@ main() {
         print_header "🧪 Dry-Run Complete"
         echo -e "  Version   : ${BOLD}${NEW_VERSION}${NC}"
         echo -e "  Type      : ${BOLD}${RELEASE_TYPE}${NC}"
-        echo -e "  Tag would be : ${BOLD}v${NEW_VERSION}${NC}"
+        echo -e "  Tag would be : ${BOLD}${RELEASE_TAG:-v$NEW_VERSION}${NC}"
         echo ""
         print_warn "Rolling back JSON changes (dry-run)..."
         rollback_json
@@ -1230,7 +1456,7 @@ main() {
 
     step_git
 
-    local final_tag="v${NEW_VERSION}"
+    local final_tag="$RELEASE_TAG"
 
     if [[ "$RELEASE_TYPE" == "beta" ]]; then
         print_header "🧪 Beta Pushed — Awaiting Jenkins"
@@ -1239,6 +1465,8 @@ main() {
     fi
     echo -e "  Version     : ${BOLD}${NEW_VERSION}${NC}"
     echo -e "  Type        : ${BOLD}${RELEASE_TYPE}${NC}"
+    [[ "$HOTFIX_N" -gt 0 ]] && \
+        echo -e "  Hotfix      : ${BOLD}#${HOTFIX_N}${NC}  ${YELLOW}(same pack version, new tag)${NC}"
     echo -e "  Tag (pending): ${BOLD}${final_tag}${NC}  ${YELLOW}← created by Jenkins after the launch-test${NC}"
     echo -e "  Changelog   : ${BOLD}CHANGELOG.md${NC} + packcore/markdown/"
     echo ""

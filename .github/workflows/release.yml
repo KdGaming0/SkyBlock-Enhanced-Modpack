@@ -30,10 +30,22 @@ jobs:
 
       - name: Guard - tag must match pakku.json version
         run: |
-          if [ "${GITHUB_REF_NAME}" != "v${{ steps.meta.outputs.pack_version }}" ] && [ "${GITHUB_EVENT_NAME}" != "workflow_dispatch" ]; then
-            echo "Tag ${GITHUB_REF_NAME} does not match pakku.json version ${{ steps.meta.outputs.pack_version }}"
-            exit 1
+          if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
+            echo "Manual dispatch - skipping tag check."
+            exit 0
           fi
+          EXPECTED="v${{ steps.meta.outputs.pack_version }}"
+          # Hotfix re-releases ship the same pack version under the tag
+          # v<version>-hotfix-N, so accept those too.
+          case "${GITHUB_REF_NAME}" in
+            "$EXPECTED"|"$EXPECTED"-hotfix-*)
+              echo "Tag ${GITHUB_REF_NAME} matches pakku.json version ${EXPECTED}."
+              ;;
+            *)
+              echo "Tag ${GITHUB_REF_NAME} does not match ${EXPECTED} (or a hotfix of it)"
+              exit 1
+              ;;
+          esac
 
       - name: Extract latest changelog entry
         run: |
@@ -83,7 +95,9 @@ jobs:
           modrinth-files: SkyBlock_Enhanced/build/modrinth/*.mrpack
 
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-tag: v${{ steps.meta.outputs.pack_version }}
+          # Use the tag that actually triggered this run so hotfix releases
+          # (v<version>-hotfix-N) attach to the right tag.
+          github-tag: ${{ github.ref_name }}
           github-files: |
             SkyBlock_Enhanced/build/curseforge/*.zip
             SkyBlock_Enhanced/build/modrinth/*.mrpack

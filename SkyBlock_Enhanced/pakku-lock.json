@@ -3734,7 +3734,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyBlockPv-1.8.7-26.1.jar",
+                    "file_name": "SkyBlockPv-1.8.8-26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3744,19 +3744,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/3l3K8t0y/SkyBlockPv-1.8.7-26.1.jar",
-                    "id": "3l3K8t0y",
+                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/DR5Vyetm/SkyBlockPv-1.8.8-26.1.jar",
+                    "id": "DR5Vyetm",
                     "parent_id": "8yqXwFLl",
                     "hashes": {
-                        "sha512": "c3c06eb243384590f5f3998d61cce8396938f4e7aff5be0cb9899552b5c1bf00b9e303b84fbebb8fafcbd2b6bc079d65a34eae33d6178e696c8dcd872b6fd8e1",
-                        "sha1": "0b555552a579880f7bd4ceb29f4fae0f214efdf7"
+                        "sha512": "930edacfd5d8c182fe0d1615745517b0ae309cb98a9eb5b0e507e458958543da1b6b62ddd77b42f920d64d04e63668f25f9725464f06726157d18f4838290755",
+                        "sha1": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 11001215,
-                    "date_published": "2026-07-10T15:28:54.258556Z"
+                    "size": 11077680,
+                    "date_published": "2026-07-20T18:35:46.851548Z"
                 }
             ]
         },
@@ -3831,7 +3831,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyOcean-1.17.1-26.1.jar",
+                    "file_name": "SkyOcean-1.17.2-26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3841,19 +3841,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/7tQZq1IL/SkyOcean-1.17.1-26.1.jar",
-                    "id": "7tQZq1IL",
+                    "url": "https://cdn.modrinth.com/data/dIczrQAR/versions/wwN6ghcO/SkyOcean-1.17.2-26.1.jar",
+                    "id": "wwN6ghcO",
                     "parent_id": "dIczrQAR",
                     "hashes": {
-                        "sha512": "889087d96db96cb0890c5715ae7f2967ae6466719eadbf6ee350ed5957ddb4914f7a0f24cac7234aeaddbecec69128b9856e0a0832b9d90545a71fe9d568ef14",
-                        "sha1": "bfa14dab2de0a4be11a032a92a8af83ed5fb4afe"
+                        "sha512": "02dcff865279155f576c914addf544c4a1e7d0d2c05799050ef674a7d58d7bb751a6649bca93353ac6a06352f81b79d2bee52aa8940d66609160c651cdd9e3e0",
+                        "sha1": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 10354429,
-                    "date_published": "2026-07-10T14:09:47.613449Z"
+                    "size": 10376313,
+                    "date_published": "2026-07-20T18:44:51.811279Z"
                 }
             ]
         },
