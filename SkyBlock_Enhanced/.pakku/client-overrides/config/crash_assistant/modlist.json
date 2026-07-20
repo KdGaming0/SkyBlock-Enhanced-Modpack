@@ -413,13 +413,13 @@
     "curseForgeHash": 846503654,
     "modrinthHash": "054966bdc9017cd333870b85ff69345ef3b5d265"
   },
-  "SkyBlockPv-1.8.7-26.1.jar": {
-    "jarName": "SkyBlockPv-1.8.7-26.1.jar",
+  "SkyBlockPv-1.8.8-26.1.jar": {
+    "jarName": "SkyBlockPv-1.8.8-26.1.jar",
     "modId": "skyblockpv",
     "name": "SkyBlock Profile Viewer",
-    "version": "1.8.7",
-    "curseForgeHash": 1095439611,
-    "modrinthHash": "0b555552a579880f7bd4ceb29f4fae0f214efdf7"
+    "version": "1.8.8",
+    "curseForgeHash": 2466743604,
+    "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
   },
   "SkyHanni-7.35.0-mc26.1.jar": {
     "jarName": "SkyHanni-7.35.0-mc26.1.jar",
@@ -429,13 +429,13 @@
     "curseForgeHash": 1133463667,
     "modrinthHash": "b6718edb7d62e11bfeffc1bad1aa80fdb8874ddf"
   },
-  "SkyOcean-1.17.1-26.1.jar": {
-    "jarName": "SkyOcean-1.17.1-26.1.jar",
+  "SkyOcean-1.17.2-26.1.jar": {
+    "jarName": "SkyOcean-1.17.2-26.1.jar",
     "modId": "skyocean",
     "name": "SkyOcean",
-    "version": "1.17.1",
-    "curseForgeHash": 3258031900,
-    "modrinthHash": "bfa14dab2de0a4be11a032a92a8af83ed5fb4afe"
+    "version": "1.17.2",
+    "curseForgeHash": 1837658274,
+    "modrinthHash": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
   },
   "skyrecipes-0.4.1+26.1.2.jar": {
     "jarName": "skyrecipes-0.4.1+26.1.2.jar",
