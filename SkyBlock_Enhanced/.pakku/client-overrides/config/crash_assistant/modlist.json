@@ -341,13 +341,13 @@
     "curseForgeHash": 2486016348,
     "modrinthHash": "c1ce548549ec4517b9393985cefc65389e6f36d8"
   },
-  "reliable-recipe-viewer-8.6.3+26.1.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.6.3+26.1.2-fabric.jar",
+  "reliable-recipe-viewer-8.6.4+26.1.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.6.4+26.1.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.6.3+26.1.2",
-    "curseForgeHash": 725880044,
-    "modrinthHash": "9456b264efc2a2ed988d2b40017a2d0371786a34"
+    "version": "8.6.4+26.1.2",
+    "curseForgeHash": 547023054,
+    "modrinthHash": "c9d79bc931ca668736b6ac86a1c35fba52437a0f"
   },
   "rpc-1.2.7+26.1-26.2.jar": {
     "jarName": "rpc-1.2.7+26.1-26.2.jar",
@@ -421,13 +421,13 @@
     "curseForgeHash": 2466743604,
     "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
   },
-  "SkyHanni-7.35.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.35.0-mc26.1.jar",
+  "SkyHanni-7.36.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.36.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.35.0",
-    "curseForgeHash": 1133463667,
-    "modrinthHash": "b6718edb7d62e11bfeffc1bad1aa80fdb8874ddf"
+    "version": "7.36.0",
+    "curseForgeHash": 1686273750,
+    "modrinthHash": "106cf27357ccc38c06fae6d544070acf21b408f6"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
@@ -437,13 +437,13 @@
     "curseForgeHash": 1837658274,
     "modrinthHash": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
   },
-  "skyrecipes-0.4.1+26.1.2.jar": {
-    "jarName": "skyrecipes-0.4.1+26.1.2.jar",
+  "skyrecipes-0.4.2+26.1.2.jar": {
+    "jarName": "skyrecipes-0.4.2+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.4.1",
-    "curseForgeHash": 642171668,
-    "modrinthHash": "3f422e3b33125ff14ae2575084825569bf2f93d9"
+    "version": "0.4.2",
+    "curseForgeHash": 610587074,
+    "modrinthHash": "124a8d97afe77b14fee1978cda8796cf4e41fbef"
   },
   "sodium-extra-fabric-0.8.7+mc26.1.1.jar": {
     "jarName": "sodium-extra-fabric-0.8.7+mc26.1.1.jar",
@@ -509,13 +509,13 @@
     "curseForgeHash": 979654861,
     "modrinthHash": "5615660fb4d11daa66d138b48a8cea85ab24aab7"
   },
-  "yet_another_config_lib_v3-3.9.5+26.1-fabric.jar": {
-    "jarName": "yet_another_config_lib_v3-3.9.5+26.1-fabric.jar",
+  "yet_another_config_lib_v3-3.9.6+26.1-fabric.jar": {
+    "jarName": "yet_another_config_lib_v3-3.9.6+26.1-fabric.jar",
     "modId": "yet_another_config_lib_v3",
     "name": "YetAnotherConfigLib",
-    "version": "3.9.5+26.1-fabric",
-    "curseForgeHash": 4039986714,
-    "modrinthHash": "dd0b7f266eced755bb48d5213df309f07d71de5b"
+    "version": "3.9.6+26.1-fabric",
+    "curseForgeHash": 2660953992,
+    "modrinthHash": "5841b45d43a693f745bff4ab9ac4d01ab9789594"
   },
   "zoomify-2.16.1+26.1.jar": {
     "jarName": "zoomify-2.16.1+26.1.jar",
