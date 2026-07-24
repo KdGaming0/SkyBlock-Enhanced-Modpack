@@ -1,5 +1,13 @@
 [
   {
+    "name": "Room Clear",
+    "enabled": false,
+    "settings": {
+      "Mode": "Both",
+      "Keybind": "key.keyboard.unknown"
+    }
+  },
+  {
     "name": "Kuudra Info",
     "enabled": false,
     "settings": {
@@ -41,10 +49,10 @@
     "enabled": false,
     "settings": {
       "Splits Display HUD": {
-        "x": 10,
-        "y": 10,
+        "x": 21,
+        "y": 508,
         "scale": 2.0,
-        "enabled": false
+        "enabled": true
       },
       "Current Split HUD": {
         "x": 10,
@@ -67,8 +75,22 @@
       "DungeonF2": {},
       "DungeonF3": {},
       "DungeonF4": {},
-      "DungeonF5": {},
-      "DungeonF6": {},
+      "DungeonF5": {
+        "§2Blood Open": 204.196,
+        "§bBlood Clear": 86.85,
+        "§dPortal Entry": 7.733,
+        "§4Cleared": 38.905,
+        "§1Total": 337.684
+      },
+      "DungeonF6": {
+        "§2Blood Open": 95.375,
+        "§bBlood Clear": 107.632,
+        "§dPortal Entry": 4.56,
+        "§cTerracottas": 79.659,
+        "§aGiants": 19.622,
+        "§4Cleared": 28.414,
+        "§1Total": 335.262
+      },
       "DungeonF7": {},
       "DungeonM1": {},
       "DungeonM2": {},
@@ -82,22 +104,42 @@
   },
   {
     "name": "Spirit Bear",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "Spirit Bear": {
-        "x": 10,
-        "y": 10,
-        "scale": 2.0,
+        "x": 453,
+        "y": 336,
+        "scale": 2.6000001,
         "enabled": true
       },
       "Keybind": "key.keyboard.unknown"
     }
   },
   {
-    "name": "Arrow Align",
+    "name": "Loadout Keybinds",
     "enabled": false,
     "settings": {
-      "Block Wrong Clicks": false,
+      "Next Page": "key.keyboard.right",
+      "Previous Page": "key.keyboard.left",
+      "Loadout 1": "key.keyboard.1",
+      "Loadout 2": "key.keyboard.2",
+      "Loadout 3": "key.keyboard.3",
+      "Loadout 4": "key.keyboard.4",
+      "Loadout 5": "key.keyboard.5",
+      "Loadout 6": "key.keyboard.6",
+      "Loadout 7": "key.keyboard.7",
+      "Loadout 8": "key.keyboard.8",
+      "Loadout 9": "key.keyboard.9",
+      "Loadout 10": "key.keyboard.0",
+      "Loadout 11": "key.keyboard.minus",
+      "Loadout 12": "key.keyboard.equal"
+    }
+  },
+  {
+    "name": "Arrow Align",
+    "enabled": true,
+    "settings": {
+      "Block Wrong Clicks": true,
       "Prevent Blocking": "key.keyboard.left.shift",
       "Invert Key": false,
       "Keybind": "key.keyboard.unknown"
@@ -123,7 +165,7 @@
       "Healer": "key.keyboard.unknown",
       "Mage": "key.keyboard.unknown",
       "Tank": "key.keyboard.unknown",
-      "Leap Announce": false,
+      "Leap Announce": true,
       "Keybind": "key.keyboard.unknown"
     }
   },
@@ -146,7 +188,7 @@
   },
   {
     "name": "Breaker Display",
-    "enabled": true,
+    "enabled": false,
     "settings": {
       "Breaker Display": {
         "x": 1260,
@@ -164,18 +206,21 @@
     "settings": {
       "Pets": "key.keyboard.unknown",
       "Storage": "key.keyboard.unknown",
-      "Wardrobe": "key.keyboard.unknown",
-      "Equipment": "key.keyboard.unknown",
+      "Armor Wardrobe": "key.keyboard.unknown",
+      "Equip Wardrobe": "key.keyboard.unknown",
+      "Loadouts": "key.keyboard.unknown",
+      "Stats": "key.keyboard.unknown",
       "Dungeon Hub": "key.keyboard.unknown",
       "Potion Bag": "key.keyboard.unknown"
     }
   },
   {
     "name": "Mimic",
-    "enabled": false,
+    "enabled": true,
     "settings": {
-      "Send Mimic Message": true,
+      "Send Mimic Message": false,
       "Send Prince Message": true,
+      "Send Bat Message": true,
       "Keybind": "key.keyboard.unknown"
     }
   },
@@ -208,15 +253,15 @@
   },
   {
     "name": "Simon Says",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "First Color": "#55FF557F",
       "Second Color": "#FFAA007F",
       "Third Color": "#FF55557F",
       "Style": "Filled Outline",
       "Announce Progress": true,
-      "Block Wrong Clicks": false,
-      "Block Wrong on Start": false,
+      "Block Wrong Clicks": true,
+      "Block Wrong on Start": true,
       "Max Start Clicks": 4.0,
       "Custom Click Sounds": false,
       "Correct Sound": "entity.experience_orb.pickup",
@@ -225,6 +270,18 @@
       "Wrong Sound": "entity.blaze.hurt",
       "Wrong Sound Pitch": 0.9999999776482582,
       "Wrong Sound Volume": 0.9999999776482582,
+      "Keybind": "key.keyboard.unknown"
+    }
+  },
+  {
+    "name": "Door Highlight",
+    "enabled": false,
+    "settings": {
+      "Announce Key Spawn": true,
+      "Door Highlight Color": "#FF5555CC",
+      "Openable Door Color": "#55FF55CC",
+      "Wither Color": "#000000CC",
+      "Blood Color": "#FF5555CC",
       "Keybind": "key.keyboard.unknown"
     }
   },
@@ -263,35 +320,25 @@
     "enabled": false,
     "settings": {
       "Disable in Boss": true,
-      "Disable Predictions": false,
-      "Background Color": "#000000B2",
       "Background Outline": "#1A1A1AFF",
-      "Background Size": 5.0,
+      "Background Color": "#000000B2",
       "Text Scaling": 0.45000000670552254,
-      "Player Head BG Size": 1.0,
       "Player Names Scaling": 0.7500000111758709,
       "Player Name Color": "#464646FF",
-      "Door Thickness": 9.0,
-      "Unopened Door": "#1E1E1EFF",
-      "Blood Door": "#FF5555FF",
-      "Wither Door": "#000000FF",
-      "Normal Door": "#6B3A11FF",
-      "Puzzle Door": "#750085FF",
-      "Champion Door": "#FEDF00FF",
-      "Trap Door": "#D87F33FF",
-      "Entrance Door": "#148500FF",
-      "Fairy Door": "#F4138BFF",
-      "Rare Door": "#FFCB59FF",
-      "Darken Multiplier": 0.4000000059604645,
-      "Unopened Room": "#1E1E1EFF",
-      "Blood Room": "#FF0000FF",
       "Normal Room": "#6B3A11FF",
       "Puzzle Room": "#750085FF",
-      "Champion Room": "#FEDF00FF",
       "Trap Room": "#D87F33FF",
+      "Blood Room": "#FF0000FF",
       "Entrance Room": "#148500FF",
       "Fairy Room": "#F4138BFF",
-      "Rare Room": "#FFCB59FF",
+      "Champion Room": "#FEDF00FF",
+      "Unknown Room": "#282828FF",
+      "Normal Door": "#6B3A11FF",
+      "Wither Door": "#000000FF",
+      "Blood Door": "#FF5555FF",
+      "Fairy Door": "#F4138BFF",
+      "Unknown Door": "#1C1C1CFF",
+      "Disable Prediction": false,
       "Dungeon Map": {
         "x": 10,
         "y": 10,
@@ -364,24 +411,14 @@
     }
   },
   {
-    "name": "Key Highlight",
-    "enabled": false,
-    "settings": {
-      "Announce Key Spawn": true,
-      "Wither Color": "#000000CC",
-      "Blood Color": "#FF5555CC",
-      "Keybind": "key.keyboard.unknown"
-    }
-  },
-  {
     "name": "Arrows Device",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "Marked Position": "#55FFFF7F",
       "Target Position": "#FF55FF7F",
       "Depth check": true,
       "Device complete alert": true,
-      "Show Aim Positions": false,
+      "Show Aim Positions": true,
       "First Aim Position": "#55FF557F",
       "Second Aim Position": "#FFAA007F",
       "Third Aim Position": "#FF55557F",
@@ -403,7 +440,9 @@
     "enabled": false,
     "settings": {
       "Bind set key": "key.keyboard.unknown",
-      "Line Color": "#FFAA00FF",
+      "Bind Color": "#55FF55FF",
+      "Line Width": 0.5,
+      "Line Display": "Hover",
       "Profile": "Profile 1",
       "ProfileData": {}
     }
@@ -442,7 +481,7 @@
   },
   {
     "name": "Tick Timers",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "Display in Ticks": false,
       "Display Symbol": true,
@@ -454,29 +493,29 @@
         "enabled": false
       },
       "Goldor Hud": {
-        "x": 10,
-        "y": 10,
-        "scale": 2.0,
-        "enabled": false
+        "x": 453,
+        "y": 309,
+        "scale": 2.6000001,
+        "enabled": true
       },
-      "Start timer": false,
+      "Start timer": true,
       "Storm Pad Hud": {
-        "x": 10,
-        "y": 10,
-        "scale": 2.0,
-        "enabled": false
+        "x": 453,
+        "y": 281,
+        "scale": 2.6000001,
+        "enabled": true
       },
       "Storm Lightning Hud": {
-        "x": 10,
-        "y": 10,
-        "scale": 2.0,
-        "enabled": false
+        "x": 453,
+        "y": 227,
+        "scale": 2.6000001,
+        "enabled": true
       },
       "Storm PY Hud": {
-        "x": 10,
-        "y": 10,
-        "scale": 2.0,
-        "enabled": false
+        "x": 453,
+        "y": 254,
+        "scale": 2.6000001,
+        "enabled": true
       },
       "Outbounds Hud": {
         "x": 10,
@@ -495,23 +534,23 @@
   },
   {
     "name": "Chat Commands",
-    "enabled": false,
+    "enabled": true,
     "settings": {
-      "Chat Emotes": false,
+      "Chat Emotes": true,
       "Party Commands": true,
       "Guild Commands": false,
       "Private Commands": true,
       "Warp": true,
-      "Coords (coords)": true,
+      "Coords (coords)": false,
       "Allinvite": true,
-      "Odin": true,
+      "Odin": false,
       "Boop": true,
       "Kick": true,
       "Coinflip (cf)": true,
       "Eightball": true,
       "Dice": true,
-      "Party transfer (pt)": false,
-      "Reinvite": false,
+      "Party transfer (pt)": true,
+      "Reinvite": true,
       "Ping": true,
       "Tps": true,
       "FPS": true,
@@ -555,7 +594,7 @@
   },
   {
     "name": "Wither Dragons",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "Dragon Timer": true,
       "Timer Style": "Milliseconds",
@@ -579,7 +618,7 @@
       "Normal Power": 0.0,
       "Easy Power": 0.0,
       "Purple Solo Debuff": "Tank",
-      "Solo Debuff on All Splits": false,
+      "Solo Debuff on All Splits": true,
       "Paul Buff": false,
       "DragonPBs": {},
       "Keybind": "key.keyboard.unknown"
@@ -625,12 +664,13 @@
         "scale": 2.0,
         "enabled": false
       },
+      "Highlight Color": "#FF5555FF",
       "Keybind": "key.keyboard.unknown"
     }
   },
   {
     "name": "Invincibility Timer",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "Invincibility Alert": true,
       "Announce Invincibility": true,
@@ -645,12 +685,12 @@
       "Display As Durability": false,
       "Cooldown Color": "#262626FF",
       "Invincibility Timer": {
-        "x": 10,
-        "y": 10,
-        "scale": 2.0,
-        "enabled": false
+        "x": 453,
+        "y": 81,
+        "scale": 3.4000003,
+        "enabled": true
       },
-      "Show In Boss": false,
+      "Show In Boss": true,
       "Keybind": "key.keyboard.unknown"
     }
   },
@@ -674,6 +714,7 @@
     "enabled": false,
     "settings": {
       "Show Player Names": true,
+      "Show Only Pre-Run": false,
       "Puzzle HUD Position": {
         "x": 10,
         "y": 10,
@@ -687,9 +728,9 @@
     "name": "Highlight",
     "enabled": false,
     "settings": {
-      "Highlight Starred Mobs": true,
+      "Highlight Starred Mobs": false,
       "Highlight color": "#FFFFFFFF",
-      "Render Style": "Outline",
+      "Render Style": "Filled Outline",
       "Hide non-starred names": true,
       "Teammate Class Glow": true,
       "Keybind": "key.keyboard.unknown"
@@ -831,7 +872,7 @@
   },
   {
     "name": "Extra Stats",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "Show Bits": true,
       "Show Class EXP": true,
@@ -906,7 +947,7 @@
       "Color": "#3296DCFF",
       "Rounded Panel Bottoms": true,
       "API URL": "https://api.odtheking.com/hypixel/",
-      "WebSocket URL": "wss://api.odtheking.com/ws/",
+      "Socket URL": "wss://ws.odtheking.com/",
       "Developer Message": false,
       "Panel Settings": {
         "Dungeon": {
@@ -935,7 +976,7 @@
           "extended": true
         }
       },
-      "Keybind": "key.keyboard.right.shift"
+      "Keybind": "key.keyboard.unknown"
     }
   },
   {
@@ -1026,7 +1067,7 @@
     "enabled": false,
     "settings": {
       "Water Board Solver": true,
-      "Optimized Solutions": false,
+      "Optimized Solutions": true,
       "Water Tracer": true,
       "Tracer Color First": "#55FF55FF",
       "Tracer Color Second": "#FFAA00FF",
@@ -1154,7 +1195,6 @@
       "Pet 7": "key.keyboard.7",
       "Pet 8": "key.keyboard.8",
       "Pet 9": "key.keyboard.9",
-      "PetKeys List": [],
       "Keybind": "key.keyboard.unknown"
     }
   },
@@ -1251,10 +1291,10 @@
   },
   {
     "name": "Mage Beam",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "Duration": 40.0,
-      "Color": "#AA0000FF",
+      "Color": "#00DFF9FF",
       "Depth Check": true,
       "Hide Particles": true,
       "Min Points": 3.0,
@@ -1263,21 +1303,21 @@
   },
   {
     "name": "Secret Clicked",
-    "enabled": false,
+    "enabled": true,
     "settings": {
       "Secret Boxes": true,
-      "Style": "Outline",
+      "Style": "Filled Outline",
       "Color": "#FFAA0066",
-      "Depth check": false,
+      "Depth check": true,
       "Locked Color": "#FF555566",
       "Time To Stay": 7.0,
       "Box In Boss": false,
       "Item Boxes": true,
       "Secret Chime": true,
-      "Chime Sound": "entity.blaze.hurt",
+      "Chime Sound": "block.wool.break",
       "Chime Sound Pitch": 0.9999999776482582,
-      "Chime Sound Volume": 0.9999999776482582,
-      "Chime In Boss": false,
+      "Chime Sound Volume": 0.6899999845772982,
+      "Chime In Boss": true,
       "Keybind": "key.keyboard.unknown"
     }
   }

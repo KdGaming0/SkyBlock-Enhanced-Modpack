@@ -3971,7 +3971,7 @@
       "soundName": "random.orb",
       "soundPitch": 1.0
     },
-    "showMilestonesDisplay": true,
+    "showMilestonesDisplay": false,
     "showMileStonesDisplayPos": {
       "x": 10,
       "y": 10,
@@ -3980,7 +3980,7 @@
       "centerY": true,
       "ignoreCustomScale": false
     },
-    "deathCounterDisplay": true,
+    "deathCounterDisplay": false,
     "deathCounterPos": {
       "x": 10,
       "y": 10,
@@ -4679,7 +4679,7 @@
       "itemsGreenLine": true
     },
     "personalCompactor": {
-      "enabled": true,
+      "enabled": false,
       "visibilityMode": "EXCEPT_KEYBIND",
       "keybind": 340,
       "showToggle": true

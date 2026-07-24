@@ -1,0 +1,230 @@
+{
+  "General": {
+    "Updates": {
+      "update": false,
+      "update.stream": 1
+    },
+    "Shortcuts": {
+      "loadMessage": true,
+      "cosmetics": true
+    }
+  },
+  "Dungeons": {
+    "Room Name": {
+      "showRoomName": false,
+      "roomNameChroma": false
+    },
+    "Terminals": {
+      "termNumbers": false,
+      "selectedRole": 4,
+      "preset": 1,
+      "showTermClass": false,
+      "hideNumber": false,
+      "highlightTerms": false,
+      "termColor": "#00ffffff",
+      "classColor": false,
+      "termTracker": false
+    },
+    "Leap Announce": {
+      "leapAnnounce": false,
+      "leapAnnounce.message": "Leaping to"
+    },
+    "Teammate Missing Alert": {
+      "teammateMissing": false
+    },
+    "Class Colors": {
+      "healerColor": "#f046f0ff",
+      "mageColor": "#46d2d2ff",
+      "berzColor": "#ff0000ff",
+      "archerColor": "#fedf00ff",
+      "tankColor": "#1eaa32ff"
+    },
+    "Score Alerts": {
+      "scoreAlerts": false,
+      "forcePaul": false,
+      "scoreAlerts.alert270": false,
+      "scoreAlerts.message270": "\u0026d270 score!",
+      "scoreAlerts.chat270": false,
+      "scoreAlerts.chatMessage270": "270 score!",
+      "scoreAlerts.alert300": false,
+      "scoreAlerts.message300": "\u0026d300 score!",
+      "scoreAlerts.chat300": false,
+      "scoreAlerts.chatMessage300": "300 score!",
+      "scoreAlerts.alert5Crypts": false,
+      "scoreAlerts.message5Crypts": "\u0026d5 crypts!",
+      "scoreAlerts.chat5Crypts": false,
+      "scoreAlerts.chatMessage5Crypts": "5 crypts!",
+      "scoreAlerts.alertBatDead": false,
+      "scoreAlerts.messageBatDead": "\u0026cBat Dead"
+    },
+    "Crypt Reminder": {
+      "cryptReminder": false,
+      "cryptReminder.delay": 2,
+      "cryptReminder.sendParty": false
+    },
+    "Join Info": {
+      "joinInfo": false
+    }
+  },
+  "StellaNav": {
+    "Map": {
+      "mapEnabled": true,
+      "bossMapEnabled": true,
+      "hideInBoss": true,
+      "scoreMapEnabled": true,
+      "mapInfoUnder": true
+    },
+    "Display": {
+      "mapBgColor": "#00000064",
+      "mapBorder": true,
+      "mapBdColor": "#000000ff",
+      "mapBdWidth": 2,
+      "checkmarkScale": 1.001498,
+      "nameScale": 1.0,
+      "secretScale": 1.0,
+      "predictionBdWidth": 5,
+      "mtextshadow": false
+    },
+    "Behavior": {
+      "roomCheck": true,
+      "roomName": false,
+      "roomSecrets": true,
+      "puzzleCheck": true,
+      "puzzleName": false,
+      "puzzleSecrets": false,
+      "checkAnchor": 0,
+      "nameAnchor": 3,
+      "secretsAnchor": 3,
+      "prioMiddle": false,
+      "replaceText": false,
+      "roomPrediction": false
+    },
+    "Player Icons": {
+      "iconScale": 1.0,
+      "smoothMovement": true,
+      "showPlayerHeads": true,
+      "ownDefault": true,
+      "iconBorderWidth": 0.2,
+      "iconBorderColor": "#000000ff",
+      "iconClassColors": false,
+      "showNames": false,
+      "dontShowOwn": false
+    },
+    "Room Colors": {
+      "normalRoomColor": "#6b3a11ff",
+      "rareRoomColor": "#6b3a11ff",
+      "puzzleRoomColor": "#750085ff",
+      "trapRoomColor": "#d87f33ff",
+      "minibossRoomColor": "#fedf00ff",
+      "bloodRoomColor": "#ff0000ff",
+      "fairyRoomColor": "#e000ffff",
+      "entranceRoomColor": "#148500ff"
+    },
+    "Door Colors": {
+      "normalDoorColor": "#50280aff",
+      "witherDoorColor": "#000000ff",
+      "bloodDoorColor": "#ff0000ff",
+      "entranceDoorColor": "#00cc00ff"
+    },
+    "Extra": {
+      "boxWitherDoors": false,
+      "keyColor": "#00ff00ff",
+      "noKeyColor": "#ff0000ff",
+      "doorLineWidth": 3,
+      "separateMapInfo": false,
+      "dungeonBreakdown": false
+    }
+  },
+  "Secrets": {
+    "Waypoints": {
+      "secretWaypoints": false,
+      "secretWaypoints.missingRoute": false,
+      "secretWaypoints.text": true,
+      "secretWaypoints.textScale": 1.0,
+      "secretWaypointColor.redstonekey": "#ff0000ff",
+      "secretWaypointColor.wither": "#0000ffff",
+      "secretWaypointColor.bat": "#808080ff",
+      "secretWaypointColor.item": "#00ff00ff",
+      "secretWaypointColor.chest": "#ffff00ff",
+      "secretWaypointColor.lever": "#00ffffff"
+    },
+    "Routes": {
+      "secretRoutes": false,
+      "secretRoutes.onlyRenderAfterClear": false,
+      "secretRoutes.stopRenderAfterGreen": false,
+      "secretRoutes.fileName": "default.json",
+      "secretRoutes.nextStep": 93,
+      "secretRoutes.lastStep": 91,
+      "secretRoutes.addCustom": -1
+    },
+    "Route Rendering": {
+      "secretRoutes.text": true,
+      "secretRoutes.startEsp": false,
+      "secretRoutes.textScale": 1.0,
+      "secretRoutes.startColor": "#00ff00ff",
+      "secretRoutes.mineColor": "#ffa500ff",
+      "secretRoutes.superboomColor": "#ff0000ff",
+      "secretRoutes.etherwarpColor": "#0000ffff",
+      "secretRoutes.pearlColor": "#00ffffff",
+      "secretRoutes.chestColor": "#ffff00ff",
+      "secretRoutes.itemColor": "#ffff00ff",
+      "secretRoutes.essenceColor": "#ffff00ff",
+      "secretRoutes.batColor": "#808080ff",
+      "secretRoutes.leverColor": "#00ffffff"
+    },
+    "Route Recording": {
+      "secretRoutes.recordingHud": false,
+      "secretRoutes.recordingHud.minimized": false
+    }
+  },
+  "Msc.": {
+    "Block Overlay": {
+      "overlayEnabled": false,
+      "blockHighlightColor": "#00ffffff",
+      "fillBlockOverlay": false,
+      "blockFillColor": "#00ffff1e",
+      "overlayLineWidth": 3
+    },
+    "Inventory Buttons": {
+      "buttons": false,
+      "buttons.invOnly": false,
+      "buttons.hideInTerms": true
+    },
+    "Pet Display": {
+      "petDisplay": false,
+      "autopetMessages": false
+    },
+    "Health \u0026 Mana": {
+      "bars": false,
+      "bars.hideVanillaHealth": false,
+      "bars.hideVanillaHunger": false,
+      "bars.hideVanillaArmor": false,
+      "bars.healthBar": false,
+      "bars.absorptionBar": false,
+      "bars.hpChange": false,
+      "bars.hpNum": false,
+      "bars.healthColor": "#ff0000ff",
+      "bars.absorptionColor": "#ffc800ff",
+      "bars.manaBar": false,
+      "bars.overflowManaBar": false,
+      "bars.ofMana": false,
+      "bars.mpNum": false,
+      "bars.manaColor": "#0080ffff",
+      "bars.ofmColor": "#8000ffff",
+      "bars.defNum": false,
+      "bars.defenseColor": "#00ff80ff"
+    },
+    "Soulflow Display": {
+      "soulflowDisplay": false
+    },
+    "Profile Viewer": {
+      "profileViewer": false,
+      "profileViewer.pv": false,
+      "profileViewer.showRarity": true,
+      "profileViewer.overflow": false
+    },
+    "Clean Prefixes": {
+      "cleanPrefix": false
+    }
+  }
+}

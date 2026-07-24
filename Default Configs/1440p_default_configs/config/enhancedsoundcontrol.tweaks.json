@@ -1,0 +1,76 @@
+{
+  "sounds": {
+    "minecraft:block.end_portal.spawn": {
+      "volume": 70,
+      "frequency": 100
+    },
+    "minecraft:block.end_portal_frame.fill": {
+      "volume": 80,
+      "frequency": 100
+    },
+    "minecraft:block.portal.ambient": {
+      "volume": 30,
+      "frequency": 100
+    },
+    "minecraft:block.portal.travel": {
+      "volume": 80,
+      "frequency": 100
+    },
+    "minecraft:block.portal.trigger": {
+      "volume": 80,
+      "frequency": 100
+    },
+    "minecraft:entity.enderman.ambient": {
+      "volume": 60,
+      "frequency": 100
+    },
+    "minecraft:entity.enderman.death": {
+      "volume": 35,
+      "frequency": 100
+    },
+    "minecraft:entity.enderman.hurt": {
+      "volume": 35,
+      "frequency": 100
+    },
+    "minecraft:entity.enderman.scream": {
+      "volume": 35,
+      "frequency": 100
+    },
+    "minecraft:entity.enderman.stare": {
+      "volume": 0,
+      "frequency": 100
+    },
+    "minecraft:entity.lightning_bolt.impact": {
+      "volume": 50,
+      "frequency": 100
+    },
+    "minecraft:entity.lightning_bolt.thunder": {
+      "volume": 50,
+      "frequency": 100
+    },
+    "minecraft:entity.phantom.ambient": {
+      "volume": 10,
+      "frequency": 100
+    },
+    "minecraft:entity.phantom.bite": {
+      "volume": 20,
+      "frequency": 100
+    },
+    "minecraft:entity.phantom.death": {
+      "volume": 25,
+      "frequency": 100
+    },
+    "minecraft:entity.phantom.flap": {
+      "volume": 20,
+      "frequency": 100
+    },
+    "minecraft:entity.phantom.hurt": {
+      "volume": 30,
+      "frequency": 100
+    },
+    "minecraft:entity.phantom.swoop": {
+      "volume": 10,
+      "frequency": 100
+    }
+  }
+}

@@ -16,7 +16,7 @@ DEST=(
     "/home/karldh/.local/share/ModrinthApp/profiles/SkyBlock Enhanced - 1080p 3x (2)/packcore/configs/"
 )
 
-OVERWRITE_DEST="/home/karldh/SkyBlock_Enhanced_Modpack/SkyBlock_Enhanced_Modern_Edition_26.1/.pakku/overrides/packcore/configs/"
+OVERWRITE_DEST="/home/karldh/SkyBlock_Enhanced_Modpack/SkyBlock_Enhanced/.pakku/overrides/packcore/configs/"
 
 # ---------------- FUNCTIONS ----------------
 

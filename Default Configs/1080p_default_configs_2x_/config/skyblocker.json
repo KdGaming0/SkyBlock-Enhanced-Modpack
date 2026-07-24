@@ -244,7 +244,7 @@
       "emptyBarColor": -65536
     },
     "gyroOverlay": {
-      "gyroOverlayMode": "OFF",
+      "gyroOverlayMode": "CIRCLE_OUTLINE",
       "gyroOverlayColor": 2138445204
     },
     "itemPickup": {
@@ -363,7 +363,7 @@
     "dungeonSplits": false,
     "hideSoulweaverSkulls": false,
     "dungeonMap": {
-      "enableMap": true,
+      "enableMap": false,
       "fancyMap": true,
       "showSelfHead": true,
       "showRoomLabels": true,
@@ -418,7 +418,7 @@
       "blockIncorrectClicks": true
     },
     "devices": {
-      "solveSimonSays": true,
+      "solveSimonSays": false,
       "solveLightsOn": true,
       "solveArrowAlign": true,
       "solveTargetPractice": true
@@ -489,7 +489,7 @@
       "enableDungeonCryptsMessage": true,
       "dungeonCryptsMessageThreshold": 250,
       "dungeonCryptsMessage": "We only have [crypts] crypts out of 5, we need more!",
-      "enableScoreHUD": true,
+      "enableScoreHUD": false,
       "scoreX": 32,
       "scoreY": 148,
       "scoreScaling": 1.0

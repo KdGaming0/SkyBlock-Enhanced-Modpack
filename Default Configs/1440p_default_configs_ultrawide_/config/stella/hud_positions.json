@@ -1,0 +1,67 @@
+{
+  "rhud": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "petDisplay": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "hpHud": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "hpNumHud": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "hpChangeHud": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "mpHud": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "mpNumHud": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "ofManaHud": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "defNumHud": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "soulflowDisplay": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "StellaNav": {
+    "x": 0.75,
+    "y": 18.0,
+    "scale": 1.2
+  },
+  "Map Info": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  },
+  "roomname": {
+    "x": 20.0,
+    "y": 20.0,
+    "scale": 1.0
+  }
+}
