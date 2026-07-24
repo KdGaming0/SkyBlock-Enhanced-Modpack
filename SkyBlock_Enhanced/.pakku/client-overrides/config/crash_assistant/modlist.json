@@ -141,13 +141,13 @@
     "curseForgeHash": 3538610517,
     "modrinthHash": "6b69eaa6323da9f7933206d55cdb09ea3299cde3"
   },
-  "Feesh-1.10.0+26.1-fabric.jar": {
-    "jarName": "Feesh-1.10.0+26.1-fabric.jar",
+  "Feesh-1.11.0+26.1-fabric.jar": {
+    "jarName": "Feesh-1.11.0+26.1-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.10.0",
-    "curseForgeHash": 3621484727,
-    "modrinthHash": "86a09a5b33809236bbd09a3c65392f7101850748"
+    "version": "1.11.0",
+    "curseForgeHash": 3650445586,
+    "modrinthHash": "2927529f34f16592c1ab367e66a0b2e5f4baba94"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -237,13 +237,13 @@
     "curseForgeHash": 1645091688,
     "modrinthHash": "f1870b6d6982af173ae7166b811f6dec6019b56a"
   },
-  "marketguard-1.4.0+26.1.2.jar": {
-    "jarName": "marketguard-1.4.0+26.1.2.jar",
+  "marketguard-1.5.0-beta.1+26.1.2.jar": {
+    "jarName": "marketguard-1.5.0-beta.1+26.1.2.jar",
     "modId": "marketguard",
-    "name": "ScamScreener MarketGuard",
-    "version": "1.4.0",
-    "curseForgeHash": 804254212,
-    "modrinthHash": "3160fcd857fc0e4d721c670e5792e5e2a5b202a6"
+    "name": "MarketGuard for Hypixel Skyblock",
+    "version": "1.5.0-beta.1",
+    "curseForgeHash": 1682377509,
+    "modrinthHash": "ed70d5701b1977a3f3b84d6e4ec77aaf97f924fd"
   },
   "modernfix-5.27.19-build.1-26.1.jar": {
     "jarName": "modernfix-5.27.19-build.1-26.1.jar",
@@ -421,13 +421,13 @@
     "curseForgeHash": 2466743604,
     "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
   },
-  "SkyHanni-7.36.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.36.0-mc26.1.jar",
+  "SkyHanni-7.37.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.37.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.36.0",
-    "curseForgeHash": 1686273750,
-    "modrinthHash": "106cf27357ccc38c06fae6d544070acf21b408f6"
+    "version": "7.37.0",
+    "curseForgeHash": 621202126,
+    "modrinthHash": "ee470862c639beb760d8f68ce3df0c8f57feb6b2"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
@@ -437,21 +437,21 @@
     "curseForgeHash": 1837658274,
     "modrinthHash": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
   },
-  "skyrecipes-0.4.2+26.1.2.jar": {
-    "jarName": "skyrecipes-0.4.2+26.1.2.jar",
+  "skyrecipes-0.4.3+26.1.2.jar": {
+    "jarName": "skyrecipes-0.4.3+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.4.2",
-    "curseForgeHash": 610587074,
-    "modrinthHash": "124a8d97afe77b14fee1978cda8796cf4e41fbef"
+    "version": "0.4.3",
+    "curseForgeHash": 1312255421,
+    "modrinthHash": "a6741adc6111dd460ed29c061c7c53d9e18a005a"
   },
-  "sodium-extra-fabric-0.8.7+mc26.1.1.jar": {
-    "jarName": "sodium-extra-fabric-0.8.7+mc26.1.1.jar",
+  "sodium-extra-fabric-0.9.3+mc26.1.2.jar": {
+    "jarName": "sodium-extra-fabric-0.9.3+mc26.1.2.jar",
     "modId": "sodium-extra",
     "name": "Sodium Extra",
-    "version": "0.8.7+mc26.1.1",
-    "curseForgeHash": 2135589338,
-    "modrinthHash": "457ea5643de4e537eb44fc117d88886d52cdebf9"
+    "version": "0.9.3+mc26.1.2",
+    "curseForgeHash": 3973128535,
+    "modrinthHash": "630f6fc8646aa50b77cfa92e0c94f7276f40039a"
   },
   "sodium-fabric-0.9.1+mc26.1.2.jar": {
     "jarName": "sodium-fabric-0.9.1+mc26.1.2.jar",
