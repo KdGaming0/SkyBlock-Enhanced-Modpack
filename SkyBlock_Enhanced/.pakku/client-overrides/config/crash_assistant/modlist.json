@@ -421,13 +421,13 @@
     "curseForgeHash": 2466743604,
     "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
   },
-  "SkyHanni-7.37.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.37.0-mc26.1.jar",
+  "SkyHanni-7.38.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.38.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.37.0",
-    "curseForgeHash": 621202126,
-    "modrinthHash": "ee470862c639beb760d8f68ce3df0c8f57feb6b2"
+    "version": "7.38.0",
+    "curseForgeHash": 1502631577,
+    "modrinthHash": "5c2fe847a8fa864e4ec710a3ea9970e5d406dec6"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
@@ -437,13 +437,13 @@
     "curseForgeHash": 1837658274,
     "modrinthHash": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
   },
-  "skyrecipes-0.4.3+26.1.2.jar": {
-    "jarName": "skyrecipes-0.4.3+26.1.2.jar",
+  "skyrecipes-0.4.4+26.1.2.jar": {
+    "jarName": "skyrecipes-0.4.4+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.4.3",
-    "curseForgeHash": 1312255421,
-    "modrinthHash": "a6741adc6111dd460ed29c061c7c53d9e18a005a"
+    "version": "0.4.4",
+    "curseForgeHash": 681130636,
+    "modrinthHash": "639838c88abae01f4bd5eba10d4c78c1c52edf5f"
   },
   "sodium-extra-fabric-0.9.3+mc26.1.2.jar": {
     "jarName": "sodium-extra-fabric-0.9.3+mc26.1.2.jar",
