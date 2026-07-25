@@ -905,7 +905,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyrecipes-0.4.3+26.1.2.jar",
+                    "file_name": "skyrecipes-0.4.4+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -915,23 +915,23 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/Q7VEfkvq/versions/9iIOsMVb/skyrecipes-0.4.3+26.1.2.jar",
-                    "id": "9iIOsMVb",
+                    "url": "https://cdn.modrinth.com/data/Q7VEfkvq/versions/Aa1gcWUV/skyrecipes-0.4.4+26.1.2.jar",
+                    "id": "Aa1gcWUV",
                     "parent_id": "Q7VEfkvq",
                     "hashes": {
-                        "sha512": "12e367bc6e0fedfde52c0e995995a9ca335c0db1c842c369cffba39b3ad00b1a0747d1ed3cb191c987f17eeb0edc0b1e491ac226c9c29adb7bb89dffd5de4da4",
-                        "sha1": "a6741adc6111dd460ed29c061c7c53d9e18a005a"
+                        "sha512": "aef7c98713d485a8a035793dc04b7da15e7f222dce16c8d7d6ded869be33b2969462dfbaf2d2d364f01fbc17000ee13da516d3b69d0ad28aaccfcd7c3b962c20",
+                        "sha1": "639838c88abae01f4bd5eba10d4c78c1c52edf5f"
                     },
                     "required_dependencies": [
                         "5VolwT6c",
                         "P7dR8mSH"
                     ],
-                    "size": 906151,
-                    "date_published": "2026-07-24T10:39:19.429244Z"
+                    "size": 918414,
+                    "date_published": "2026-07-25T11:56:35.296760Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyrecipes-0.4.3+26.1.2.jar",
+                    "file_name": "skyrecipes-0.4.4+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -941,19 +941,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8499/113/skyrecipes-0.4.3+26.1.2.jar",
-                    "id": "8499113",
+                    "url": "https://edge.forgecdn.net/files/8505/830/skyrecipes-0.4.4+26.1.2.jar",
+                    "id": "8505830",
                     "parent_id": "1609874",
                     "hashes": {
-                        "sha1": "a6741adc6111dd460ed29c061c7c53d9e18a005a",
-                        "md5": "d1bc8c2ecae56ef19742bf32244ce3a0"
+                        "sha1": "639838c88abae01f4bd5eba10d4c78c1c52edf5f",
+                        "md5": "6c4bf57bff186e89d1a9b955db8f7b3f"
                     },
                     "required_dependencies": [
                         "1422317",
                         "306612"
                     ],
-                    "size": 906151,
-                    "date_published": "2026-07-24T10:39:19.110Z"
+                    "size": 918414,
+                    "date_published": "2026-07-25T11:56:35.830Z"
                 }
             ]
         },
@@ -3782,7 +3782,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.37.0-mc26.1.jar",
+                    "file_name": "SkyHanni-7.38.0-mc26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3792,20 +3792,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/KDMcHWLn/SkyHanni-7.37.0-mc26.1.jar",
-                    "id": "KDMcHWLn",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/j5y0h754/SkyHanni-7.38.0-mc26.1.jar",
+                    "id": "j5y0h754",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "1cbe756bc1cea870d3d630ba867d3689b55ec63111ad3480371dbe452f363753e877cf73c3f3037bb999aedc044829e7558fb567be40af1dab03d9ca44f256da",
-                        "sha1": "ee470862c639beb760d8f68ce3df0c8f57feb6b2"
+                        "sha512": "1aca7ad6d6be4858281c26a1884e2767daa26f7cc5e39b49fbe85433491815be8f912d6dcc328bdeee3ab7412fc9541b1b854e5cb8413d390e0523a4924dc2b7",
+                        "sha1": "5c2fe847a8fa864e4ec710a3ea9970e5d406dec6"
                     },
                     "required_dependencies": [
                         "1A2mKfBx",
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 28759628,
-                    "date_published": "2026-07-23T04:45:27.595066Z"
+                    "size": 29353698,
+                    "date_published": "2026-07-25T05:27:23.453596Z"
                 }
             ]
         },
