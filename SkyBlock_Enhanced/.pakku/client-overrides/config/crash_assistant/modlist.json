@@ -5,6 +5,22 @@
     "name": "fabric",
     "version": "fabric-loader-0.19.3.jar"
   },
+  "asynclogger-2.2.1+26.1.2-fabric.jar": {
+    "jarName": "asynclogger-2.2.1+26.1.2-fabric.jar",
+    "modId": "asynclogger",
+    "name": "Async Logger",
+    "version": "2.2.1+26.1.2-fabric",
+    "curseForgeHash": 3771432700,
+    "modrinthHash": "e5efc67b67907cbd157e6895a81bc7555c24f5cf"
+  },
+  "AsyncParticles-26.1.2.0-alpha.3+26.1.2.jar": {
+    "jarName": "AsyncParticles-26.1.2.0-alpha.3+26.1.2.jar",
+    "modId": "asyncparticles",
+    "name": "AsyncParticles",
+    "version": "26.1.2.0-alpha.3",
+    "curseForgeHash": 2402323890,
+    "modrinthHash": "d30f6b7535ee922e133aa91dab21a4436ffd9683"
+  },
   "authme-fabric-9.2.1+26.1.jar": {
     "jarName": "authme-fabric-9.2.1+26.1.jar",
     "modId": "authme",
@@ -12,14 +28,6 @@
     "version": "9.2.1+26.1",
     "curseForgeHash": 3552638587,
     "modrinthHash": "ff32bb97bddd4c74a079163e804c88cb47aca391"
-  },
-  "bbe-fabric-1.3.7-beta.1+mc26.1.2.jar": {
-    "jarName": "bbe-fabric-1.3.7-beta.1+mc26.1.2.jar",
-    "modId": "betterblockentities",
-    "name": "BBE",
-    "version": "1.3.7-beta.1+mc26.1.2",
-    "curseForgeHash": 2487405485,
-    "modrinthHash": "07a2a46126c32a8d9f04dc34a166e6cb23edd807"
   },
   "better_hypixel_chat-0.3.1+26.1.2.jar": {
     "jarName": "better_hypixel_chat-0.3.1+26.1.2.jar",
@@ -53,6 +61,14 @@
     "curseForgeHash": 2095139,
     "modrinthHash": "9099d0ed4f6980ee831c36c942f69cb8ced30451"
   },
+  "chatting-3.1.0+26.1.jar": {
+    "jarName": "chatting-3.1.0+26.1.jar",
+    "modId": "chatting",
+    "name": "Chatting",
+    "version": "3.1.0",
+    "curseForgeHash": 849633839,
+    "modrinthHash": "aa98b26e19c43b5d4c0042226333ec796253654d"
+  },
   "cloth-config-26.1.154.jar": {
     "jarName": "cloth-config-26.1.154.jar",
     "modId": "cloth-config",
@@ -60,6 +76,22 @@
     "version": "26.1.154",
     "curseForgeHash": 3361279143,
     "modrinthHash": "832f9047bc4af13587709c74f7c37e1c8579d1eb"
+  },
+  "compacting-1.1.1+26.1.jar": {
+    "jarName": "compacting-1.1.1+26.1.jar",
+    "modId": "compacting",
+    "name": "Compacting",
+    "version": "1.1.1",
+    "curseForgeHash": 739605830,
+    "modrinthHash": "4de150453b02549c00b47014f0e62a3b36368697"
+  },
+  "compose-bundle-1.0.2+compose.1.12.0-alpha01.jar": {
+    "jarName": "compose-bundle-1.0.2+compose.1.12.0-alpha01.jar",
+    "modId": "compose-multiplatform",
+    "name": "Compose Multiplatform",
+    "version": "1.0.2+compose.1.12.0-alpha01",
+    "curseForgeHash": 603255072,
+    "modrinthHash": "d10372771aefb5dd1e9d89c5d43108ecbc4d35c5"
   },
   "Controlling-fabric-26.1.2-26.1.2.4.jar": {
     "jarName": "Controlling-fabric-26.1.2-26.1.2.4.jar",
@@ -93,14 +125,6 @@
     "curseForgeHash": 1126781810,
     "modrinthHash": "b1d39e4bb31fc4287159280c0fc0c2d092a183ad"
   },
-  "enhanced_chat-0.3.1+26.1.2.jar": {
-    "jarName": "enhanced_chat-0.3.1+26.1.2.jar",
-    "modId": "enhanced_chat",
-    "name": "Enhanced Chat",
-    "version": "0.3.1",
-    "curseForgeHash": 3282993928,
-    "modrinthHash": "eed0d8d9ab1a53db6f020163e1b1c9651b3dc5ca"
-  },
   "enhanced_storage-1.0.1+26.1.2.jar": {
     "jarName": "enhanced_storage-1.0.1+26.1.2.jar",
     "modId": "enhanced_storage",
@@ -108,6 +132,14 @@
     "version": "1.0.1",
     "curseForgeHash": 1009256542,
     "modrinthHash": "912f74c36e11503ace4545f5fbe9679854bbd0bc"
+  },
+  "enhancedsoundcontrol-0.1.1+26.1.2.jar": {
+    "jarName": "enhancedsoundcontrol-0.1.1+26.1.2.jar",
+    "modId": "enhancedsoundcontrol",
+    "name": "Enhanced Sound Control",
+    "version": "0.1.1",
+    "curseForgeHash": 2588709734,
+    "modrinthHash": "f002ce10eee3b7a896b5ad002df78c67af255926"
   },
   "entityculling-fabric-1.10.5-mc26.1.jar": {
     "jarName": "entityculling-fabric-1.10.5-mc26.1.jar",
@@ -165,14 +197,6 @@
     "curseForgeHash": 1807230350,
     "modrinthHash": "0ce660f9877fdb9e711af176c6ff6e022d3a4147"
   },
-  "fzzy_config-0.7.6+26.1.jar": {
-    "jarName": "fzzy_config-0.7.6+26.1.jar",
-    "modId": "fzzy_config",
-    "name": "Fzzy Config",
-    "version": "0.7.6+26.1",
-    "curseForgeHash": 1408081779,
-    "modrinthHash": "dabdfb956438fc9526ec0794fcf4ff0261a75870"
-  },
   "Gnetum-4.5.1+26.1.2-fabric.jar": {
     "jarName": "Gnetum-4.5.1+26.1.2-fabric.jar",
     "modId": "gnetum",
@@ -205,13 +229,13 @@
     "curseForgeHash": 1372087619,
     "modrinthHash": "5f23dc2bae9fa28a18ef1ec6a60c0d6f8fcc5b13"
   },
-  "Ixeris-4.5.2+26.1.2-fabric.jar": {
-    "jarName": "Ixeris-4.5.2+26.1.2-fabric.jar",
+  "Ixeris-4.6.1+26.1.2-fabric.jar": {
+    "jarName": "Ixeris-4.6.1+26.1.2-fabric.jar",
     "modId": "ixeris",
     "name": "Ixeris",
-    "version": "4.5.2+26.1.2-fabric",
-    "curseForgeHash": 2808481092,
-    "modrinthHash": "bc770e5016bea4b215f35ad40dabc7a5e60810e0"
+    "version": "4.6.1+26.1.2-fabric",
+    "curseForgeHash": 1084927311,
+    "modrinthHash": "65ad05f43eda9c4b777dda943538d2a27489ff4b"
   },
   "language-reload-1.7.7+26.1.2.jar": {
     "jarName": "language-reload-1.7.7+26.1.2.jar",
@@ -228,14 +252,6 @@
     "version": "0.24.6+mc26.1.2",
     "curseForgeHash": 260350777,
     "modrinthHash": "7631a4e81fcca6290bc32374a4338148bd2ba1ae"
-  },
-  "longview-1.2.2.jar": {
-    "jarName": "longview-1.2.2.jar",
-    "modId": "longview",
-    "name": "Longview",
-    "version": "1.2.2",
-    "curseForgeHash": 1645091688,
-    "modrinthHash": "f1870b6d6982af173ae7166b811f6dec6019b56a"
   },
   "marketguard-1.5.0-beta.1+26.1.2.jar": {
     "jarName": "marketguard-1.5.0-beta.1+26.1.2.jar",
@@ -301,6 +317,14 @@
     "curseForgeHash": 1658626111,
     "modrinthHash": "f9b567768cc082eaedf78b48b39eea0505be43f6"
   },
+  "obe+26.1.2-1.1.38.jar": {
+    "jarName": "obe+26.1.2-1.1.38.jar",
+    "modId": "obe",
+    "name": "Optimized block entities",
+    "version": "1.1.38",
+    "curseForgeHash": 2969965644,
+    "modrinthHash": "ab3dbf262e55e8562a5552f7aa5f6af2e1ea3fce"
+  },
   "Odin-0.2.3.jar": {
     "jarName": "Odin-0.2.3.jar",
     "modId": "odin",
@@ -309,13 +333,21 @@
     "curseForgeHash": 10175239,
     "modrinthHash": "e69e7eeafc5f864c05629f76048baff8ffd2b329"
   },
-  "packcore-5.0.12+26.1.2.jar": {
-    "jarName": "packcore-5.0.12+26.1.2.jar",
+  "OneConfig-26.1-fabric-1.0.9.jar": {
+    "jarName": "OneConfig-26.1-fabric-1.0.9.jar",
+    "modId": "oneconfigbootstrap",
+    "name": "OneConfig",
+    "version": "1.0.9",
+    "curseForgeHash": 3223504732,
+    "modrinthHash": "6329759e43ffc0c6f515879648c87618576f849e"
+  },
+  "packcore-5.1.0+26.1.2.jar": {
+    "jarName": "packcore-5.1.0+26.1.2.jar",
     "modId": "packcore",
     "name": "Pack Core",
-    "version": "5.0.12",
-    "curseForgeHash": 128361413,
-    "modrinthHash": "bbb5b9b84f7d0aa50f73450b53c8ee66c9ac9e41"
+    "version": "5.1.0",
+    "curseForgeHash": 73223450,
+    "modrinthHash": "4642920cf9d3a7384a89f8f1a0232d723a541455"
   },
   "packetfixer-fabric-3.3.5-26.1.2.jar": {
     "jarName": "packetfixer-fabric-3.3.5-26.1.2.jar",
@@ -324,14 +356,6 @@
     "version": "3.3.5",
     "curseForgeHash": 4023612181,
     "modrinthHash": "d6effea605b3d0435dc9abf592891b9806ca245f"
-  },
-  "particle_core-0.3.2+26.1.jar": {
-    "jarName": "particle_core-0.3.2+26.1.jar",
-    "modId": "particle_core",
-    "name": "Particle Core",
-    "version": "0.3.2+26.1",
-    "curseForgeHash": 2046523547,
-    "modrinthHash": "2cc7af5d75e8b3af7deb8b5acec2fcb52654b252"
   },
   "placeholder-api-3.0.0+26.1.jar": {
     "jarName": "placeholder-api-3.0.0+26.1.jar",
@@ -365,13 +389,13 @@
     "curseForgeHash": 1116461955,
     "modrinthHash": "6eee9c44b0c47968bfacc7b075c1b5700f6b955b"
   },
-  "scaleme-3.2.1+26.1.2.jar": {
-    "jarName": "scaleme-3.2.1+26.1.2.jar",
+  "scaleme-3.3.0+26.1.2.jar": {
+    "jarName": "scaleme-3.3.0+26.1.2.jar",
     "modId": "scaleme",
     "name": "ScaleMe",
-    "version": "3.2.1",
-    "curseForgeHash": 1876409574,
-    "modrinthHash": "6dec8a2ff13999db66fc73ece6f4e703ce684480"
+    "version": "3.3.0",
+    "curseForgeHash": 3710928147,
+    "modrinthHash": "006388ca0b8ab4ee93a94c6b2e69796256471af8"
   },
   "scamscreener-2.6.0+26.1.2.jar": {
     "jarName": "scamscreener-2.6.0+26.1.2.jar",
@@ -405,13 +429,13 @@
     "curseForgeHash": 2441216374,
     "modrinthHash": "6649c40c9284b704252826b0ffbae1c71f3b334b"
   },
-  "skyblocker-6.7.0+26.1.2.jar": {
-    "jarName": "skyblocker-6.7.0+26.1.2.jar",
+  "skyblocker-6.8.0+26.1.2.jar": {
+    "jarName": "skyblocker-6.8.0+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.7.0+26.1.2",
-    "curseForgeHash": 846503654,
-    "modrinthHash": "054966bdc9017cd333870b85ff69345ef3b5d265"
+    "version": "6.8.0+26.1.2",
+    "curseForgeHash": 61833187,
+    "modrinthHash": "cfa1dd3a8c6b7f8c20111e50415fa00182909093"
   },
   "SkyBlockPv-1.8.8-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.8-26.1.jar",
@@ -469,14 +493,6 @@
     "curseForgeHash": 3897544311,
     "modrinthHash": "1399156a64c7bfbc38fa21af935495cfb74923c3"
   },
-  "soundcontroller-1.2.5-mc-26.1.jar": {
-    "jarName": "soundcontroller-1.2.5-mc-26.1.jar",
-    "modId": "soundcontroller",
-    "name": "Sound Controller",
-    "version": "1.2.5",
-    "curseForgeHash": 1846458364,
-    "modrinthHash": "f7887d2f433769aecb7d3f2adb0df1f6c5973279"
-  },
   "stella-1.0.6+26.1-b3.jar": {
     "jarName": "stella-1.0.6+26.1-b3.jar",
     "modId": "stella",
@@ -501,14 +517,6 @@
     "curseForgeHash": 3110722963,
     "modrinthHash": "2471bc9d79e29a8a542d6e78856f1bf143816d95"
   },
-  "waveycapes-fabric-1.10.2-mc26.1.jar": {
-    "jarName": "waveycapes-fabric-1.10.2-mc26.1.jar",
-    "modId": "waveycapes",
-    "name": "WaveyCapes",
-    "version": "1.10.2",
-    "curseForgeHash": 979654861,
-    "modrinthHash": "5615660fb4d11daa66d138b48a8cea85ab24aab7"
-  },
   "yet_another_config_lib_v3-3.9.6+26.1-fabric.jar": {
     "jarName": "yet_another_config_lib_v3-3.9.6+26.1-fabric.jar",
     "modId": "yet_another_config_lib_v3",
@@ -524,6 +532,9 @@
     "version": "2.16.1+26.1",
     "curseForgeHash": 3485961364,
     "modrinthHash": "c180ae8cf90da1abd67c26b5c5e7bf5d795c3b1d"
+  },
+  "!     §3defrosted §8[§f16x§8] [v1.4.1].zip (resourcepack)": {
+    "jarName": "!     §3defrosted §8[§f16x§8] [v1.4.1].zip (resourcepack)"
   },
   "Dark Skyblock v2.0c.cats.zip (resourcepack)": {
     "jarName": "Dark Skyblock v2.0c.cats.zip (resourcepack)"
