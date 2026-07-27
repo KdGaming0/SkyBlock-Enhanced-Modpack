@@ -809,13 +809,13 @@
       "render": true,
       "doubleClick": false,
       "itemData": {
-        "item": "minecraft:leather_chestplate",
+        "item": "minecraft:barrel",
         "count": 1,
-        "components": "[minecraft:dyed_color\u003d8991416]"
+        "components": "[]"
       },
-      "uiTitle": "Wardrobe \\([12]/2\\)",
-      "tooltip": "Wardrobe",
-      "clickEvent": "/wardrobe"
+      "uiTitle": "\\(\\d+/3\\)\\sLoadouts",
+      "tooltip": "Loadout",
+      "clickEvent": "/loadout"
     },
     "button5": {
       "render": true,
