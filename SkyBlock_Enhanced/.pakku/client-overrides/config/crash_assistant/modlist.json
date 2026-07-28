@@ -125,13 +125,13 @@
     "curseForgeHash": 1126781810,
     "modrinthHash": "b1d39e4bb31fc4287159280c0fc0c2d092a183ad"
   },
-  "enhanced_storage-1.0.1+26.1.2.jar": {
-    "jarName": "enhanced_storage-1.0.1+26.1.2.jar",
+  "enhanced_storage-1.1.0+26.1.2.jar": {
+    "jarName": "enhanced_storage-1.1.0+26.1.2.jar",
     "modId": "enhanced_storage",
     "name": "Enhanced Storage",
-    "version": "1.0.1",
-    "curseForgeHash": 1009256542,
-    "modrinthHash": "912f74c36e11503ace4545f5fbe9679854bbd0bc"
+    "version": "1.1.0",
+    "curseForgeHash": 2923330278,
+    "modrinthHash": "c8c5f8611c8f9130c3793b4edb7c752a0226b6fc"
   },
   "enhancedsoundcontrol-0.1.1+26.1.2.jar": {
     "jarName": "enhancedsoundcontrol-0.1.1+26.1.2.jar",
@@ -333,13 +333,13 @@
     "curseForgeHash": 10175239,
     "modrinthHash": "e69e7eeafc5f864c05629f76048baff8ffd2b329"
   },
-  "OneConfig-26.1-fabric-1.0.9.jar": {
-    "jarName": "OneConfig-26.1-fabric-1.0.9.jar",
+  "OneConfig-26.1-fabric-1.0.10.jar": {
+    "jarName": "OneConfig-26.1-fabric-1.0.10.jar",
     "modId": "oneconfigbootstrap",
     "name": "OneConfig",
-    "version": "1.0.9",
-    "curseForgeHash": 3223504732,
-    "modrinthHash": "6329759e43ffc0c6f515879648c87618576f849e"
+    "version": "1.0.10",
+    "curseForgeHash": 1268675163,
+    "modrinthHash": "3a5ba79a9e00cc6b55f418313bf15de12cc973d1"
   },
   "packcore-5.1.0+26.1.2.jar": {
     "jarName": "packcore-5.1.0+26.1.2.jar",
@@ -429,13 +429,13 @@
     "curseForgeHash": 2441216374,
     "modrinthHash": "6649c40c9284b704252826b0ffbae1c71f3b334b"
   },
-  "skyblocker-6.8.0+26.1.2.jar": {
-    "jarName": "skyblocker-6.8.0+26.1.2.jar",
+  "skyblocker-6.8.1+26.1.2.jar": {
+    "jarName": "skyblocker-6.8.1+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.8.0+26.1.2",
-    "curseForgeHash": 61833187,
-    "modrinthHash": "cfa1dd3a8c6b7f8c20111e50415fa00182909093"
+    "version": "6.8.1+26.1.2",
+    "curseForgeHash": 2511796760,
+    "modrinthHash": "ab0047913c1c1d0dfe6b680fb57b115cbe363f6e"
   },
   "SkyBlockPv-1.8.8-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.8-26.1.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 2466743604,
     "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
   },
-  "SkyHanni-7.38.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.38.0-mc26.1.jar",
+  "SkyHanni-7.39.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.39.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.38.0",
-    "curseForgeHash": 1502631577,
-    "modrinthHash": "5c2fe847a8fa864e4ec710a3ea9970e5d406dec6"
+    "version": "7.39.0",
+    "curseForgeHash": 2944696389,
+    "modrinthHash": "70b34463cf3ba557748f7eeaa2e580bacd54db3e"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
