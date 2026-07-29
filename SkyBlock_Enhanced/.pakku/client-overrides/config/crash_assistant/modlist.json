@@ -333,13 +333,13 @@
     "curseForgeHash": 10175239,
     "modrinthHash": "e69e7eeafc5f864c05629f76048baff8ffd2b329"
   },
-  "OneConfig-26.1-fabric-1.0.10.jar": {
-    "jarName": "OneConfig-26.1-fabric-1.0.10.jar",
+  "OneConfig-26.1-fabric-1.0.12.jar": {
+    "jarName": "OneConfig-26.1-fabric-1.0.12.jar",
     "modId": "oneconfigbootstrap",
     "name": "OneConfig",
-    "version": "1.0.10",
-    "curseForgeHash": 1268675163,
-    "modrinthHash": "3a5ba79a9e00cc6b55f418313bf15de12cc973d1"
+    "version": "1.0.12",
+    "curseForgeHash": 3555399980,
+    "modrinthHash": "d8ab052301bc734f5e15d14324cd987e1046356f"
   },
   "packcore-5.1.0+26.1.2.jar": {
     "jarName": "packcore-5.1.0+26.1.2.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 2466743604,
     "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
   },
-  "SkyHanni-7.39.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.39.0-mc26.1.jar",
+  "SkyHanni-7.40.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.40.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.39.0",
-    "curseForgeHash": 2944696389,
-    "modrinthHash": "70b34463cf3ba557748f7eeaa2e580bacd54db3e"
+    "version": "7.40.0",
+    "curseForgeHash": 1632508976,
+    "modrinthHash": "fa024d7cba7ebf5563953aa37e85e69c08f8a7a3"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
