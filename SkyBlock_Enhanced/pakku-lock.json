@@ -3019,7 +3019,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "OneConfig-26.1-fabric-1.0.10.jar",
+                    "file_name": "OneConfig-26.1-fabric-1.0.12.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3029,19 +3029,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/AibBIVmj/versions/Fxf7JkXS/OneConfig-26.1-fabric-1.0.10.jar",
-                    "id": "Fxf7JkXS",
+                    "url": "https://cdn.modrinth.com/data/AibBIVmj/versions/x1eaouzd/OneConfig-26.1-fabric-1.0.12.jar",
+                    "id": "x1eaouzd",
                     "parent_id": "AibBIVmj",
                     "hashes": {
-                        "sha512": "7bfd80079610e4f427e9bd9696d5eb5a201c8024ca3a036cca49e6fee6e72894947f9ac250855d4dc6557efac6ed98eb688641c372c739d450b2169d1590375b",
-                        "sha1": "3a5ba79a9e00cc6b55f418313bf15de12cc973d1"
+                        "sha512": "63f53b6c765055c27d7a5176bdef57c59fa277f95202efa506799645ee4e914141262b63f86065eaf7e43b80ed8cf8d868cae85b9db740562b35ec6965905da7",
+                        "sha1": "d8ab052301bc734f5e15d14324cd987e1046356f"
                     },
                     "required_dependencies": [
                         "eHe8QhtD",
                         "Ha28R6CL"
                     ],
-                    "size": 12921742,
-                    "date_published": "2026-07-28T06:23:28.712632Z"
+                    "size": 12927926,
+                    "date_published": "2026-07-28T23:30:30.974773Z"
                 }
             ]
         },
@@ -3947,7 +3947,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.39.0-mc26.1.jar",
+                    "file_name": "SkyHanni-7.40.0-mc26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3957,20 +3957,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/SuTKY41g/SkyHanni-7.39.0-mc26.1.jar",
-                    "id": "SuTKY41g",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/ppYsCy0y/SkyHanni-7.40.0-mc26.1.jar",
+                    "id": "ppYsCy0y",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "d0a8a53d34b751038180eabce303082104fe52490c55897dd52fcb39ebd015bc1c43e9b3904a3acd5e2c02c14ad6306347f185eb30ecc96316ddb6869da2a75f",
-                        "sha1": "70b34463cf3ba557748f7eeaa2e580bacd54db3e"
+                        "sha512": "dcccba359dbcadd17cb99ba3615e3802610aebcab4e94b2caa53a064016ca86bb26db6b88b3fe0df12d8dc6cfacf05b0559920836f3d033ac3039a1f0067af07",
+                        "sha1": "fa024d7cba7ebf5563953aa37e85e69c08f8a7a3"
                     },
                     "required_dependencies": [
-                        "1A2mKfBx",
                         "P7dR8mSH",
+                        "1A2mKfBx",
                         "Ha28R6CL"
                     ],
-                    "size": 29373133,
-                    "date_published": "2026-07-28T10:04:47.973510Z"
+                    "size": 29374527,
+                    "date_published": "2026-07-28T14:05:42.873446Z"
                 }
             ]
         },
@@ -4104,15 +4104,15 @@
                         "sha1": "c8c5f8611c8f9130c3793b4edb7c752a0226b6fc"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
                     "size": 205688,
                     "date_published": "2026-07-28T12:40:56.968894Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "enhanced_storage-1.0.1+26.1.2.jar",
+                    "file_name": "enhanced_storage-1.1.0+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -4122,18 +4122,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8463/947/enhanced_storage-1.0.1+26.1.2.jar",
-                    "id": "8463947",
+                    "url": "https://edge.forgecdn.net/files/8526/529/enhanced_storage-1.1.0+26.1.2.jar",
+                    "id": "8526529",
                     "parent_id": "1608972",
                     "hashes": {
-                        "sha1": "912f74c36e11503ace4545f5fbe9679854bbd0bc",
-                        "md5": "ec69ccb323815e32c01fb58337ee0cfc"
+                        "sha1": "c8c5f8611c8f9130c3793b4edb7c752a0226b6fc",
+                        "md5": "5411fcef88bfd69adf578c3d9f00f3b6"
                     },
                     "required_dependencies": [
+                        "933200",
                         "306612"
                     ],
-                    "size": 202846,
-                    "date_published": "2026-07-19T10:35:05.417Z"
+                    "size": 205688,
+                    "date_published": "2026-07-28T12:40:55.020Z"
                 }
             ]
         },
