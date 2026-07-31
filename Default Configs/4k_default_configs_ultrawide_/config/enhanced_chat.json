@@ -1,0 +1,15 @@
+{
+  "extendedChatHistory": true,
+  "chatHistorySize": 768,
+  "compactDuplicateMessages": false,
+  "compactIgnoreInteractable": true,
+  "onlyCompactConsecutive": false,
+  "compactTimeWindowMinutes": 10,
+  "enableChatTabs": true,
+  "enableChatContextMenu": true,
+  "rightClickChatCopies": false,
+  "enableChatSearch": true,
+  "alwaysShowChatSearch": false,
+  "enableChatAnimation": false,
+  "chatAnimationDurationMs": 150
+}
