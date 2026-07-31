@@ -13,13 +13,13 @@
     "curseForgeHash": 3771432700,
     "modrinthHash": "e5efc67b67907cbd157e6895a81bc7555c24f5cf"
   },
-  "AsyncParticles-26.1.2.0-alpha.3+26.1.2.jar": {
-    "jarName": "AsyncParticles-26.1.2.0-alpha.3+26.1.2.jar",
+  "AsyncParticles-26.1.2.0-beta.1+26.1.2.jar": {
+    "jarName": "AsyncParticles-26.1.2.0-beta.1+26.1.2.jar",
     "modId": "asyncparticles",
     "name": "AsyncParticles",
-    "version": "26.1.2.0-alpha.3",
-    "curseForgeHash": 2402323890,
-    "modrinthHash": "d30f6b7535ee922e133aa91dab21a4436ffd9683"
+    "version": "26.1.2.0-beta.1",
+    "curseForgeHash": 2104758338,
+    "modrinthHash": "ce412c9e27a5fed0e5c814976c623e38fc6cc58f"
   },
   "authme-fabric-9.2.1+26.1.jar": {
     "jarName": "authme-fabric-9.2.1+26.1.jar",
@@ -61,14 +61,6 @@
     "curseForgeHash": 2095139,
     "modrinthHash": "9099d0ed4f6980ee831c36c942f69cb8ced30451"
   },
-  "chatting-3.1.0+26.1.jar": {
-    "jarName": "chatting-3.1.0+26.1.jar",
-    "modId": "chatting",
-    "name": "Chatting",
-    "version": "3.1.0",
-    "curseForgeHash": 849633839,
-    "modrinthHash": "aa98b26e19c43b5d4c0042226333ec796253654d"
-  },
   "cloth-config-26.1.154.jar": {
     "jarName": "cloth-config-26.1.154.jar",
     "modId": "cloth-config",
@@ -84,14 +76,6 @@
     "version": "1.1.1",
     "curseForgeHash": 739605830,
     "modrinthHash": "4de150453b02549c00b47014f0e62a3b36368697"
-  },
-  "compose-bundle-1.0.2+compose.1.12.0-alpha01.jar": {
-    "jarName": "compose-bundle-1.0.2+compose.1.12.0-alpha01.jar",
-    "modId": "compose-multiplatform",
-    "name": "Compose Multiplatform",
-    "version": "1.0.2+compose.1.12.0-alpha01",
-    "curseForgeHash": 603255072,
-    "modrinthHash": "d10372771aefb5dd1e9d89c5d43108ecbc4d35c5"
   },
   "Controlling-fabric-26.1.2-26.1.2.4.jar": {
     "jarName": "Controlling-fabric-26.1.2-26.1.2.4.jar",
@@ -124,6 +108,14 @@
     "version": "26.1.2.2",
     "curseForgeHash": 1126781810,
     "modrinthHash": "b1d39e4bb31fc4287159280c0fc0c2d092a183ad"
+  },
+  "enhanced_chat-0.3.1+26.1.2.jar": {
+    "jarName": "enhanced_chat-0.3.1+26.1.2.jar",
+    "modId": "enhanced_chat",
+    "name": "Enhanced Chat",
+    "version": "0.3.1",
+    "curseForgeHash": 3282993928,
+    "modrinthHash": "eed0d8d9ab1a53db6f020163e1b1c9651b3dc5ca"
   },
   "enhanced_storage-1.1.0+26.1.2.jar": {
     "jarName": "enhanced_storage-1.1.0+26.1.2.jar",
@@ -245,13 +237,13 @@
     "curseForgeHash": 3423065730,
     "modrinthHash": "73c5b5bc7e3cd94dfcdd385e2f305cff969dbb97"
   },
-  "lithium-fabric-0.24.6+mc26.1.2.jar": {
-    "jarName": "lithium-fabric-0.24.6+mc26.1.2.jar",
+  "lithium-fabric-0.24.7+mc26.1.2.jar": {
+    "jarName": "lithium-fabric-0.24.7+mc26.1.2.jar",
     "modId": "lithium",
     "name": "Lithium",
-    "version": "0.24.6+mc26.1.2",
-    "curseForgeHash": 260350777,
-    "modrinthHash": "7631a4e81fcca6290bc32374a4338148bd2ba1ae"
+    "version": "0.24.7+mc26.1.2",
+    "curseForgeHash": 1056318850,
+    "modrinthHash": "7959f418969ee8bfe50c0f21f352ed08b382f133"
   },
   "marketguard-1.5.0-beta.1+26.1.2.jar": {
     "jarName": "marketguard-1.5.0-beta.1+26.1.2.jar",
@@ -333,21 +325,13 @@
     "curseForgeHash": 10175239,
     "modrinthHash": "e69e7eeafc5f864c05629f76048baff8ffd2b329"
   },
-  "OneConfig-26.1-fabric-1.0.12.jar": {
-    "jarName": "OneConfig-26.1-fabric-1.0.12.jar",
-    "modId": "oneconfigbootstrap",
-    "name": "OneConfig",
-    "version": "1.0.12",
-    "curseForgeHash": 3555399980,
-    "modrinthHash": "d8ab052301bc734f5e15d14324cd987e1046356f"
-  },
-  "packcore-5.1.0+26.1.2.jar": {
-    "jarName": "packcore-5.1.0+26.1.2.jar",
+  "packcore-5.1.1+26.1.2.jar": {
+    "jarName": "packcore-5.1.1+26.1.2.jar",
     "modId": "packcore",
     "name": "Pack Core",
-    "version": "5.1.0",
-    "curseForgeHash": 73223450,
-    "modrinthHash": "4642920cf9d3a7384a89f8f1a0232d723a541455"
+    "version": "5.1.1",
+    "curseForgeHash": 1960807162,
+    "modrinthHash": "c5831742df20f4b98cb10557381b6573852a4b41"
   },
   "packetfixer-fabric-3.3.5-26.1.2.jar": {
     "jarName": "packetfixer-fabric-3.3.5-26.1.2.jar",
@@ -429,13 +413,13 @@
     "curseForgeHash": 2441216374,
     "modrinthHash": "6649c40c9284b704252826b0ffbae1c71f3b334b"
   },
-  "skyblocker-6.8.1+26.1.2.jar": {
-    "jarName": "skyblocker-6.8.1+26.1.2.jar",
+  "skyblocker-6.8.2+26.1.2.jar": {
+    "jarName": "skyblocker-6.8.2+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.8.1+26.1.2",
-    "curseForgeHash": 2511796760,
-    "modrinthHash": "ab0047913c1c1d0dfe6b680fb57b115cbe363f6e"
+    "version": "6.8.2+26.1.2",
+    "curseForgeHash": 705961772,
+    "modrinthHash": "261470cb7f5984e9c4da65ce6452376d5e635c04"
   },
   "SkyBlockPv-1.8.8-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.8-26.1.jar",
@@ -445,13 +429,13 @@
     "curseForgeHash": 2466743604,
     "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
   },
-  "SkyHanni-7.40.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.40.0-mc26.1.jar",
+  "SkyHanni-7.41.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.41.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.40.0",
-    "curseForgeHash": 1632508976,
-    "modrinthHash": "fa024d7cba7ebf5563953aa37e85e69c08f8a7a3"
+    "version": "7.41.0",
+    "curseForgeHash": 2177865403,
+    "modrinthHash": "885a78027a354cff3730c5bfaa295d9f390c84da"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
