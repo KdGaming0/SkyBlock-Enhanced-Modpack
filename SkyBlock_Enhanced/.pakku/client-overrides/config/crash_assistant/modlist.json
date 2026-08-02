@@ -53,13 +53,13 @@
     "curseForgeHash": 3136263383,
     "modrinthHash": "bcd7d6f966b55bcb95c22ec63de17de1c26e75a8"
   },
-  "Catharsis-1.0.0-beta.20-26.1.jar": {
-    "jarName": "Catharsis-1.0.0-beta.20-26.1.jar",
+  "Catharsis-1.0.0-beta.21-26.1.jar": {
+    "jarName": "Catharsis-1.0.0-beta.21-26.1.jar",
     "modId": "catharsis",
     "name": "Catharsis",
-    "version": "1.0.0-beta.20",
-    "curseForgeHash": 2095139,
-    "modrinthHash": "9099d0ed4f6980ee831c36c942f69cb8ced30451"
+    "version": "1.0.0-beta.21",
+    "curseForgeHash": 3768771558,
+    "modrinthHash": "993503f7f78fe9577f4aa4db9c35fd022f127a2f"
   },
   "cloth-config-26.1.154.jar": {
     "jarName": "cloth-config-26.1.154.jar",
@@ -221,13 +221,13 @@
     "curseForgeHash": 1372087619,
     "modrinthHash": "5f23dc2bae9fa28a18ef1ec6a60c0d6f8fcc5b13"
   },
-  "Ixeris-4.6.1+26.1.2-fabric.jar": {
-    "jarName": "Ixeris-4.6.1+26.1.2-fabric.jar",
+  "Ixeris-4.6.2+26.1.2-fabric.jar": {
+    "jarName": "Ixeris-4.6.2+26.1.2-fabric.jar",
     "modId": "ixeris",
     "name": "Ixeris",
-    "version": "4.6.1+26.1.2-fabric",
-    "curseForgeHash": 1084927311,
-    "modrinthHash": "65ad05f43eda9c4b777dda943538d2a27489ff4b"
+    "version": "4.6.2+26.1.2-fabric",
+    "curseForgeHash": 2302288053,
+    "modrinthHash": "44c64c4f60bed55029a1cf92cfeea66d0915574e"
   },
   "language-reload-1.7.7+26.1.2.jar": {
     "jarName": "language-reload-1.7.7+26.1.2.jar",
@@ -245,13 +245,13 @@
     "curseForgeHash": 1056318850,
     "modrinthHash": "7959f418969ee8bfe50c0f21f352ed08b382f133"
   },
-  "marketguard-1.5.0-beta.1+26.1.2.jar": {
-    "jarName": "marketguard-1.5.0-beta.1+26.1.2.jar",
+  "marketguard-1.5.0-beta.2+26.1.2.jar": {
+    "jarName": "marketguard-1.5.0-beta.2+26.1.2.jar",
     "modId": "marketguard",
     "name": "MarketGuard for Hypixel Skyblock",
-    "version": "1.5.0-beta.1",
-    "curseForgeHash": 1682377509,
-    "modrinthHash": "ed70d5701b1977a3f3b84d6e4ec77aaf97f924fd"
+    "version": "1.5.0-beta.2",
+    "curseForgeHash": 2303863215,
+    "modrinthHash": "c7ed32d41bfba2b7ca00470b7c715565691dcd02"
   },
   "modernfix-5.27.19-build.1-26.1.jar": {
     "jarName": "modernfix-5.27.19-build.1-26.1.jar",
