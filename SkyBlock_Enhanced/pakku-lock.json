@@ -389,7 +389,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Catharsis-1.0.0-beta.20-26.1.jar",
+                    "file_name": "Catharsis-1.0.0-beta.21-26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -399,19 +399,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/fc4wBpRx/versions/kmbSTFww/Catharsis-1.0.0-beta.20-26.1.jar",
-                    "id": "kmbSTFww",
+                    "url": "https://cdn.modrinth.com/data/fc4wBpRx/versions/NfEUeWdz/Catharsis-1.0.0-beta.21-26.1.jar",
+                    "id": "NfEUeWdz",
                     "parent_id": "fc4wBpRx",
                     "hashes": {
-                        "sha512": "40608731d20ecc4506c43104d748dd24a76a1398ae0f808828017993fed178cff4f5b52462e6b18a965682d0c120d09a5d2cc396f8724432a9d0b7814d4c42ac",
-                        "sha1": "9099d0ed4f6980ee831c36c942f69cb8ced30451"
+                        "sha512": "97930b3b00eaf4a6df874b248d6d2090ffedf8fc359682af6cfd5afe6cad2da75b73ad0675883712ae638e2963a14056d78580be21d1b714c5999c75728b40fc",
+                        "sha1": "993503f7f78fe9577f4aa4db9c35fd022f127a2f"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
                         "P7dR8mSH"
                     ],
-                    "size": 6005571,
-                    "date_published": "2026-07-04T13:51:56.921981Z"
+                    "size": 6118084,
+                    "date_published": "2026-08-01T09:23:14.093556Z"
                 }
             ]
         },
@@ -2019,7 +2019,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Ixeris-4.6.1+26.1.2-fabric.jar",
+                    "file_name": "Ixeris-4.6.2+26.1.2-fabric.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2030,20 +2030,20 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/p8RJPJIC/versions/h66C5nds/Ixeris-4.6.1+26.1.2-fabric.jar",
-                    "id": "h66C5nds",
+                    "url": "https://cdn.modrinth.com/data/p8RJPJIC/versions/EBdB4H3I/Ixeris-4.6.2+26.1.2-fabric.jar",
+                    "id": "EBdB4H3I",
                     "parent_id": "p8RJPJIC",
                     "hashes": {
-                        "sha512": "153e177dab1bf58a4551f9a9e624b6061fbef0b974d53d460ca35eb03e86997f77332b3ce19b637ca9f53928a0ee67483aa20e22f636598e80b5b68405f12bf0",
-                        "sha1": "65ad05f43eda9c4b777dda943538d2a27489ff4b"
+                        "sha512": "e11c8503dd476352dbe907a8982559247fa5b16b2af38c4d6565152df775d4b8ea5780f9095c9547746f9c4190a8fc14beb6521e4c16cdaf07ee216faf139e5c",
+                        "sha1": "44c64c4f60bed55029a1cf92cfeea66d0915574e"
                     },
                     "required_dependencies": [],
-                    "size": 751466,
-                    "date_published": "2026-07-26T23:21:31.753498Z"
+                    "size": 756864,
+                    "date_published": "2026-08-01T07:01:10.617844Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Ixeris-4.6.1+26.1.2-fabric.jar",
+                    "file_name": "Ixeris-4.6.2+26.1.2-fabric.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2054,16 +2054,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8516/933/Ixeris-4.6.1+26.1.2-fabric.jar",
-                    "id": "8516933",
+                    "url": "https://edge.forgecdn.net/files/8552/351/Ixeris-4.6.2+26.1.2-fabric.jar",
+                    "id": "8552351",
                     "parent_id": "1285307",
                     "hashes": {
-                        "sha1": "65ad05f43eda9c4b777dda943538d2a27489ff4b",
-                        "md5": "5ff9a0b5a8459d04db24297bba444f9d"
+                        "sha1": "44c64c4f60bed55029a1cf92cfeea66d0915574e",
+                        "md5": "adeaf5178d20dccd5f9f56cf344a001e"
                     },
                     "required_dependencies": [],
-                    "size": 751466,
-                    "date_published": "2026-07-26T23:21:30.713Z"
+                    "size": 756864,
+                    "date_published": "2026-08-01T07:00:19.087Z"
                 }
             ]
         },
@@ -2341,7 +2341,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "marketguard-1.5.0-beta.1+26.1.2.jar",
+                    "file_name": "marketguard-1.5.0-beta.2+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2351,22 +2351,22 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/XzJoSPEX/marketguard-1.5.0-beta.1+26.1.2.jar",
-                    "id": "XzJoSPEX",
+                    "url": "https://cdn.modrinth.com/data/ji4JdpCu/versions/8U7WyF59/marketguard-1.5.0-beta.2+26.1.2.jar",
+                    "id": "8U7WyF59",
                     "parent_id": "ji4JdpCu",
                     "hashes": {
-                        "sha512": "bd16e13855fec07c90e65618e6a3648a82f6ad1d9aca486853b1158ea841361e0080f92c984de5266fcc1ed4517180b617ef1bbdc1de286f2e48a27b5600f3b6",
-                        "sha1": "ed70d5701b1977a3f3b84d6e4ec77aaf97f924fd"
+                        "sha512": "b03bbce5bac976bc09d1287eac120e65b46e6c9ae2d9e10a8a5a04bfa5985bf9ef1e8af4f457ff72d270dff92775966501bc740ca20b1973d27f5dff5a4f75eb",
+                        "sha1": "c7ed32d41bfba2b7ca00470b7c715565691dcd02"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 14435509,
-                    "date_published": "2026-07-23T23:52:08.162196Z"
+                    "size": 14437431,
+                    "date_published": "2026-08-01T14:03:56.173945Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "marketguard-1.5.0-beta.1+26.1.2.jar",
+                    "file_name": "marketguard-1.5.0-beta.2+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2376,18 +2376,18 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8496/721/marketguard-1.5.0-beta.1+26.1.2.jar",
-                    "id": "8496721",
+                    "url": "https://edge.forgecdn.net/files/8554/539/marketguard-1.5.0-beta.2+26.1.2.jar",
+                    "id": "8554539",
                     "parent_id": "1505265",
                     "hashes": {
-                        "sha1": "ed70d5701b1977a3f3b84d6e4ec77aaf97f924fd",
-                        "md5": "484fddd490c381f39bea2d029251ece3"
+                        "sha1": "c7ed32d41bfba2b7ca00470b7c715565691dcd02",
+                        "md5": "b2ce937ca0458641cfa08b979a454857"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 14435509,
-                    "date_published": "2026-07-23T23:52:07.250Z"
+                    "size": 14437431,
+                    "date_published": "2026-08-01T14:03:56.023Z"
                 }
             ]
         },
@@ -4134,6 +4134,7 @@
                 "curseforge": "394468",
                 "modrinth": "AANobbMI"
             },
+            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "modrinth",
