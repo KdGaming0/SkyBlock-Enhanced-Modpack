@@ -13,13 +13,13 @@
     "curseForgeHash": 3771432700,
     "modrinthHash": "e5efc67b67907cbd157e6895a81bc7555c24f5cf"
   },
-  "AsyncParticles-26.1.2.0-beta.2+26.1.2.jar": {
-    "jarName": "AsyncParticles-26.1.2.0-beta.2+26.1.2.jar",
+  "AsyncParticles-26.1.2.0-beta.5+26.1.2.jar": {
+    "jarName": "AsyncParticles-26.1.2.0-beta.5+26.1.2.jar",
     "modId": "asyncparticles",
     "name": "AsyncParticles",
-    "version": "26.1.2.0-beta.2",
-    "curseForgeHash": 2464163383,
-    "modrinthHash": "1f9a27b81f79efb75a72d0ce6f8c1c3a099d5c0a"
+    "version": "26.1.2.0-beta.5",
+    "curseForgeHash": 315009103,
+    "modrinthHash": "80141f63efca748cd0e9eed81173154e87607415"
   },
   "authme-fabric-9.2.1+26.1.jar": {
     "jarName": "authme-fabric-9.2.1+26.1.jar",
@@ -165,13 +165,13 @@
     "curseForgeHash": 3538610517,
     "modrinthHash": "6b69eaa6323da9f7933206d55cdb09ea3299cde3"
   },
-  "Feesh-1.12.0+26.1-fabric.jar": {
-    "jarName": "Feesh-1.12.0+26.1-fabric.jar",
+  "Feesh-1.12.1+26.1-fabric.jar": {
+    "jarName": "Feesh-1.12.1+26.1-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.12.0",
-    "curseForgeHash": 730747724,
-    "modrinthHash": "858561e20febe0a700ad26f06b108551e75be5c9"
+    "version": "1.12.1",
+    "curseForgeHash": 1328687143,
+    "modrinthHash": "48af3b59c41c67d3446748fdd5c408c2a09e09ad"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -413,13 +413,13 @@
     "curseForgeHash": 2441216374,
     "modrinthHash": "6649c40c9284b704252826b0ffbae1c71f3b334b"
   },
-  "skyblocker-6.8.2+26.1.2.jar": {
-    "jarName": "skyblocker-6.8.2+26.1.2.jar",
+  "skyblocker-6.9.0+26.1.2.jar": {
+    "jarName": "skyblocker-6.9.0+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.8.2+26.1.2",
-    "curseForgeHash": 705961772,
-    "modrinthHash": "261470cb7f5984e9c4da65ce6452376d5e635c04"
+    "version": "6.9.0+26.1.2",
+    "curseForgeHash": 877095537,
+    "modrinthHash": "8e1541a4c7c02af7a76c436fbb884d58afa21d25"
   },
   "SkyBlockPv-1.8.8-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.8-26.1.jar",
@@ -429,13 +429,13 @@
     "curseForgeHash": 2466743604,
     "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
   },
-  "SkyHanni-7.41.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.41.0-mc26.1.jar",
+  "SkyHanni-7.42.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.42.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.41.0",
-    "curseForgeHash": 2177865403,
-    "modrinthHash": "885a78027a354cff3730c5bfaa295d9f390c84da"
+    "version": "7.42.0",
+    "curseForgeHash": 3994528402,
+    "modrinthHash": "fbbeb01a80e46a556e17f4aa6544ee385663a5f0"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
