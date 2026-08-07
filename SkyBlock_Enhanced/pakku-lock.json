@@ -99,7 +99,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "AsyncParticles-26.1.2.0-beta.5+26.1.2.jar",
+                    "file_name": "AsyncParticles-26.1.2.0+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -110,20 +110,20 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/c3onkd5k/versions/cVLK8GQq/AsyncParticles-26.1.2.0-beta.5+26.1.2.jar",
-                    "id": "cVLK8GQq",
+                    "url": "https://cdn.modrinth.com/data/c3onkd5k/versions/5PcaAeu8/AsyncParticles-26.1.2.0+26.1.2.jar",
+                    "id": "5PcaAeu8",
                     "parent_id": "c3onkd5k",
                     "hashes": {
-                        "sha512": "f48d3de26515dcb81e33e5bf7bb0a9081dd76d12b0dbb515321c3bcaa95256931ccc5575331738ee28daee5fd9cafbe8582302f54357d4644cd985eb3a8d4d5e",
-                        "sha1": "80141f63efca748cd0e9eed81173154e87607415"
+                        "sha512": "5cb626be4cf69f9ccaf90acab82086afd0cd010669ab4cde2bc4207b93e05d266ba4111af69a04ec4fca1965f720091f9bee13f02180a72c356acc93895fb70f",
+                        "sha1": "0d4b336761af976e6aa3bd98bcce85af697a1898"
                     },
                     "required_dependencies": [],
-                    "size": 646329,
-                    "date_published": "2026-08-04T11:14:11.771802Z"
+                    "size": 646161,
+                    "date_published": "2026-08-06T21:57:40.877515Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "AsyncParticles-26.1.2.0-beta.5+26.1.2.jar",
+                    "file_name": "AsyncParticles-26.1.2.0+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -134,16 +134,16 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8575/183/AsyncParticles-26.1.2.0-beta.5+26.1.2.jar",
-                    "id": "8575183",
+                    "url": "https://edge.forgecdn.net/files/8591/51/AsyncParticles-26.1.2.0+26.1.2.jar",
+                    "id": "8591051",
                     "parent_id": "1215753",
                     "hashes": {
-                        "sha1": "80141f63efca748cd0e9eed81173154e87607415",
-                        "md5": "e5a2d70d2e7121b34524d71ea201d7bb"
+                        "sha1": "0d4b336761af976e6aa3bd98bcce85af697a1898",
+                        "md5": "3a6cde2bfeb53c2fd65da323aeed0cc4"
                     },
                     "required_dependencies": [],
-                    "size": 646329,
-                    "date_published": "2026-08-04T11:33:24.930Z"
+                    "size": 646161,
+                    "date_published": "2026-08-06T22:00:16.520Z"
                 }
             ]
         },
@@ -343,7 +343,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "btrbz-0.10.0-alpha+26.1.x.jar",
+                    "file_name": "btrbz-0.10.1-alpha+26.1.x.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -353,19 +353,19 @@
                         "fabric"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/IzWPcaNg/versions/PUSG1293/btrbz-0.10.0-alpha+26.1.x.jar",
-                    "id": "PUSG1293",
+                    "url": "https://cdn.modrinth.com/data/IzWPcaNg/versions/6xKaF69Q/btrbz-0.10.1-alpha+26.1.x.jar",
+                    "id": "6xKaF69Q",
                     "parent_id": "IzWPcaNg",
                     "hashes": {
-                        "sha512": "9f96f0c03b5361b68bc25f8201b74a3e80ac7d887fd5492c77b3b35b592871244fbabd315654787c76c7a11019b9fc1e5275ab7b35ba8b7e7ec03f92d3503cf8",
-                        "sha1": "bcd7d6f966b55bcb95c22ec63de17de1c26e75a8"
+                        "sha512": "651cf4aa251f7ed37b7fc39d888092d39e22b2a1740b08435238011d7fd4787db9994e66cf059a0ed3e87b835a31feb8b8001c68929e2f704d994bf9b3e2d506",
+                        "sha1": "564cc866dfb36e9dc46b0febb891f1c0184466ed"
                     },
                     "required_dependencies": [
                         "1eAoo2KR",
                         "P7dR8mSH"
                     ],
-                    "size": 5411916,
-                    "date_published": "2026-07-18T18:53:22.819554Z"
+                    "size": 5432704,
+                    "date_published": "2026-08-04T19:38:26.701594Z"
                 }
             ]
         },
@@ -1535,7 +1535,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Feesh-1.12.1+26.1-fabric.jar",
+                    "file_name": "Feesh-1.12.2+26.1-fabric.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -1545,16 +1545,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/UFGqgXSh/Feesh-1.12.1+26.1-fabric.jar",
-                    "id": "UFGqgXSh",
+                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/SyWSrh5y/Feesh-1.12.2+26.1-fabric.jar",
+                    "id": "SyWSrh5y",
                     "parent_id": "QCpogurE",
                     "hashes": {
-                        "sha512": "a939147a460d30be2b91c75d93e3841c168dd6370c9fc3b054475ced3f0f26b8d17b1b1f119600e2f8e9f134ac4ff1ea9403ad12dfeb65ceeb58b5796953c6a1",
-                        "sha1": "48af3b59c41c67d3446748fdd5c408c2a09e09ad"
+                        "sha512": "7e9626ae57865be55f5343bdeba30b6b41d6d549eed0f2b4db83519136234ef8bc59e8dcb82dca22e7510a4e3ba54457b7e23e383b613a4c5155eb0551de6c53",
+                        "sha1": "ab4555fd2a0cd05a3ceb51aa2bd5ebcf316ebfb4"
                     },
-                    "required_dependencies": [],
-                    "size": 2635512,
-                    "date_published": "2026-08-04T09:11:15.987249Z"
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "Ha28R6CL"
+                    ],
+                    "size": 2635481,
+                    "date_published": "2026-08-06T10:56:59.765419Z"
                 }
             ]
         },
@@ -2933,34 +2936,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "obe+26.1.2-1.1.38.jar",
-                    "mc_versions": [
-                        "26.1",
-                        "26.1.1",
-                        "26.1.2"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "quilt"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8495/656/obe+26.1.2-1.1.38.jar",
-                    "id": "8495656",
-                    "parent_id": "1575743",
-                    "hashes": {
-                        "sha1": "ab3dbf262e55e8562a5552f7aa5f6af2e1ea3fce",
-                        "md5": "2e47f5ec939bb8578227ab1bfccd6dda"
-                    },
-                    "required_dependencies": [
-                        "306612"
-                    ],
-                    "size": 188853,
-                    "date_published": "2026-07-23T19:55:01.187Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "obe+26.1.2-1.1.38.jar",
+                    "file_name": "obe+26.1.2-1.1.39.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -2971,18 +2948,44 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/AtOSAunf/versions/4IRXBTnP/obe+26.1.2-1.1.38.jar",
-                    "id": "4IRXBTnP",
+                    "url": "https://cdn.modrinth.com/data/AtOSAunf/versions/JQGDAIIX/obe+26.1.2-1.1.39.jar",
+                    "id": "JQGDAIIX",
                     "parent_id": "AtOSAunf",
                     "hashes": {
-                        "sha512": "27e850c309d2000c21103b6b9f2d07e06d405d5dad270e018f3552d277f6999ad870c4cc940f4aaf8b3874c6538ba309f4c7843a9500596f7962485808955c8a",
-                        "sha1": "ab3dbf262e55e8562a5552f7aa5f6af2e1ea3fce"
+                        "sha512": "0e89f44027c3b91e963aae7f0ee342fa0f8402bf1310f961957cea4c15daa19d8e83006540bc487d19b6cc27894a5b867dbe1fc6576f8d7788b010ba5e0216db",
+                        "sha1": "7389743a4bc8398e91326130531e46dcc1c0fdea"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 188853,
-                    "date_published": "2026-07-23T19:55:00.219106Z"
+                    "size": 188721,
+                    "date_published": "2026-08-05T10:12:59.406338Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "obe+26.1.2-1.1.39.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8581/499/obe+26.1.2-1.1.39.jar",
+                    "id": "8581499",
+                    "parent_id": "1575743",
+                    "hashes": {
+                        "sha1": "7389743a4bc8398e91326130531e46dcc1c0fdea",
+                        "md5": "2e254ed78a6b79246edaa28f8183d3c4"
+                    },
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 188721,
+                    "date_published": "2026-08-05T10:09:29.387Z"
                 }
             ]
         },
@@ -3766,7 +3769,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyBlockPv-1.8.8-26.1.jar",
+                    "file_name": "SkyBlockPv-1.8.9-26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3776,19 +3779,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/DR5Vyetm/SkyBlockPv-1.8.8-26.1.jar",
-                    "id": "DR5Vyetm",
+                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/iVpdy3W0/SkyBlockPv-1.8.9-26.1.jar",
+                    "id": "iVpdy3W0",
                     "parent_id": "8yqXwFLl",
                     "hashes": {
-                        "sha512": "930edacfd5d8c182fe0d1615745517b0ae309cb98a9eb5b0e507e458958543da1b6b62ddd77b42f920d64d04e63668f25f9725464f06726157d18f4838290755",
-                        "sha1": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
+                        "sha512": "2f5cd56a86537d63dafec0bee1f59910a23881f2778f13f51773ac2ca5d7ec4b9d7b61effb5f67a0ceaa07c9429e24c3ab101f7ed4ac53dd46a2178c1a3f58c2",
+                        "sha1": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 11077680,
-                    "date_published": "2026-07-20T18:35:46.851548Z"
+                    "size": 11112115,
+                    "date_published": "2026-08-07T20:29:44.530608Z"
                 }
             ]
         },
@@ -3814,7 +3817,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.42.0-mc26.1.jar",
+                    "file_name": "SkyHanni-7.43.0-mc26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3824,20 +3827,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/7gR3CqIs/SkyHanni-7.42.0-mc26.1.jar",
-                    "id": "7gR3CqIs",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/Jk33EqTC/SkyHanni-7.43.0-mc26.1.jar",
+                    "id": "Jk33EqTC",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "96224c302eeddef799831e760d945a50f5f923bfacecedcbfc7f1abd579728dd8200a31668ee5a34d641d1aaf400ccdab6d7abfe7542bf088250502ca3fb74ae",
-                        "sha1": "fbbeb01a80e46a556e17f4aa6544ee385663a5f0"
+                        "sha512": "0722dd4e1279cf3d901f122785d0ebaaf1abac3b198447d5eaf8679aa2fd303c81025e8e9f836c2258943066f30f7fcdf7aad3149fb076779b47296f1f43012f",
+                        "sha1": "3403b534927495580bc41253f676179f8a6a6824"
                     },
                     "required_dependencies": [
-                        "1A2mKfBx",
                         "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "1A2mKfBx"
                     ],
-                    "size": 29507751,
-                    "date_published": "2026-08-04T15:26:16.560310Z"
+                    "size": 29819457,
+                    "date_published": "2026-08-05T22:19:16.506416Z"
                 }
             ]
         },
@@ -4387,7 +4390,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "stella-1.0.6+26.1-b3.jar",
+                    "file_name": "stella-1.0.6+26.1-b4.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -4397,16 +4400,16 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/ZSWJelST/versions/cvYS4RL9/stella-1.0.6+26.1-b3.jar",
-                    "id": "cvYS4RL9",
+                    "url": "https://cdn.modrinth.com/data/ZSWJelST/versions/Ax39gj7z/stella-1.0.6+26.1-b4.jar",
+                    "id": "Ax39gj7z",
                     "parent_id": "ZSWJelST",
                     "hashes": {
-                        "sha512": "f8961d82456a8cf70e28619c8233665d60d4ba42c7425a1c99149950917a798d46c3bc8dd4bfce96b0ef2e274a96b32cad18b6cb9557e4ae731495c3ce51b3b1",
-                        "sha1": "4bea9c9d83b51c26bf83c3078bd79dc1981ca646"
+                        "sha512": "5065e3115bcaf6e7c80d05838b8dde8e2d26eac5b1cf0b3180322ebe1695de65f291dd7438c1801ea9aab2e3ae78c611229a7d7083d66177709059df41ec9967",
+                        "sha1": "ca278c7f0333ee79e7e0014d2eb9b9c115e567e2"
                     },
                     "required_dependencies": [],
-                    "size": 5628447,
-                    "date_published": "2026-07-15T17:24:33.547759Z"
+                    "size": 5679185,
+                    "date_published": "2026-08-04T23:25:22.043068Z"
                 }
             ]
         },
