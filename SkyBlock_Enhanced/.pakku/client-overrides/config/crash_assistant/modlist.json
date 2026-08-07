@@ -13,13 +13,13 @@
     "curseForgeHash": 3771432700,
     "modrinthHash": "e5efc67b67907cbd157e6895a81bc7555c24f5cf"
   },
-  "AsyncParticles-26.1.2.0-beta.5+26.1.2.jar": {
-    "jarName": "AsyncParticles-26.1.2.0-beta.5+26.1.2.jar",
+  "AsyncParticles-26.1.2.0+26.1.2.jar": {
+    "jarName": "AsyncParticles-26.1.2.0+26.1.2.jar",
     "modId": "asyncparticles",
     "name": "AsyncParticles",
-    "version": "26.1.2.0-beta.5",
-    "curseForgeHash": 315009103,
-    "modrinthHash": "80141f63efca748cd0e9eed81173154e87607415"
+    "version": "26.1.2.0",
+    "curseForgeHash": 1043497245,
+    "modrinthHash": "0d4b336761af976e6aa3bd98bcce85af697a1898"
   },
   "authme-fabric-9.2.1+26.1.jar": {
     "jarName": "authme-fabric-9.2.1+26.1.jar",
@@ -45,13 +45,13 @@
     "curseForgeHash": 1822167192,
     "modrinthHash": "24bb68c889e56d6a532725668ca663e4197935c5"
   },
-  "btrbz-0.10.0-alpha+26.1.x.jar": {
-    "jarName": "btrbz-0.10.0-alpha+26.1.x.jar",
+  "btrbz-0.10.1-alpha+26.1.x.jar": {
+    "jarName": "btrbz-0.10.1-alpha+26.1.x.jar",
     "modId": "btrbz",
     "name": "BtrBz",
-    "version": "0.10.0",
-    "curseForgeHash": 3136263383,
-    "modrinthHash": "bcd7d6f966b55bcb95c22ec63de17de1c26e75a8"
+    "version": "0.10.1",
+    "curseForgeHash": 1937165054,
+    "modrinthHash": "564cc866dfb36e9dc46b0febb891f1c0184466ed"
   },
   "Catharsis-1.0.0-beta.21-26.1.jar": {
     "jarName": "Catharsis-1.0.0-beta.21-26.1.jar",
@@ -165,13 +165,13 @@
     "curseForgeHash": 3538610517,
     "modrinthHash": "6b69eaa6323da9f7933206d55cdb09ea3299cde3"
   },
-  "Feesh-1.12.1+26.1-fabric.jar": {
-    "jarName": "Feesh-1.12.1+26.1-fabric.jar",
+  "Feesh-1.12.2+26.1-fabric.jar": {
+    "jarName": "Feesh-1.12.2+26.1-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.12.1",
-    "curseForgeHash": 1328687143,
-    "modrinthHash": "48af3b59c41c67d3446748fdd5c408c2a09e09ad"
+    "version": "1.12.2",
+    "curseForgeHash": 477838457,
+    "modrinthHash": "ab4555fd2a0cd05a3ceb51aa2bd5ebcf316ebfb4"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -309,13 +309,13 @@
     "curseForgeHash": 1658626111,
     "modrinthHash": "f9b567768cc082eaedf78b48b39eea0505be43f6"
   },
-  "obe+26.1.2-1.1.38.jar": {
-    "jarName": "obe+26.1.2-1.1.38.jar",
+  "obe+26.1.2-1.1.39.jar": {
+    "jarName": "obe+26.1.2-1.1.39.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.1.38",
-    "curseForgeHash": 2969965644,
-    "modrinthHash": "ab3dbf262e55e8562a5552f7aa5f6af2e1ea3fce"
+    "version": "1.1.39",
+    "curseForgeHash": 86329118,
+    "modrinthHash": "7389743a4bc8398e91326130531e46dcc1c0fdea"
   },
   "Odin-0.3.0.jar": {
     "jarName": "Odin-0.3.0.jar",
@@ -421,21 +421,21 @@
     "curseForgeHash": 877095537,
     "modrinthHash": "8e1541a4c7c02af7a76c436fbb884d58afa21d25"
   },
-  "SkyBlockPv-1.8.8-26.1.jar": {
-    "jarName": "SkyBlockPv-1.8.8-26.1.jar",
+  "SkyBlockPv-1.8.9-26.1.jar": {
+    "jarName": "SkyBlockPv-1.8.9-26.1.jar",
     "modId": "skyblockpv",
     "name": "SkyBlock Profile Viewer",
-    "version": "1.8.8",
-    "curseForgeHash": 2466743604,
-    "modrinthHash": "9459c5192fb1c16615a0b053c5bb0a86e9ec5e9d"
+    "version": "1.8.9",
+    "curseForgeHash": 3161941709,
+    "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.42.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.42.0-mc26.1.jar",
+  "SkyHanni-7.43.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.43.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.42.0",
-    "curseForgeHash": 3994528402,
-    "modrinthHash": "fbbeb01a80e46a556e17f4aa6544ee385663a5f0"
+    "version": "7.43.0",
+    "curseForgeHash": 1755028494,
+    "modrinthHash": "3403b534927495580bc41253f676179f8a6a6824"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
@@ -477,13 +477,13 @@
     "curseForgeHash": 3897544311,
     "modrinthHash": "1399156a64c7bfbc38fa21af935495cfb74923c3"
   },
-  "stella-1.0.6+26.1-b3.jar": {
-    "jarName": "stella-1.0.6+26.1-b3.jar",
+  "stella-1.0.6+26.1-b4.jar": {
+    "jarName": "stella-1.0.6+26.1-b4.jar",
     "modId": "stella",
     "name": "Stella",
     "version": "1.0.6",
-    "curseForgeHash": 2230380329,
-    "modrinthHash": "4bea9c9d83b51c26bf83c3078bd79dc1981ca646"
+    "curseForgeHash": 2733818647,
+    "modrinthHash": "ca278c7f0333ee79e7e0014d2eb9b9c115e567e2"
   },
   "Stfu-2.9.1-26.1.jar": {
     "jarName": "Stfu-2.9.1-26.1.jar",
