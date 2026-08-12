@@ -5,13 +5,13 @@
     "name": "fabric",
     "version": "fabric-loader-0.19.3.jar"
   },
-  "asynclogger-2.2.1+26.1.2-fabric.jar": {
-    "jarName": "asynclogger-2.2.1+26.1.2-fabric.jar",
+  "asynclogger-2.2.2+26.1.2-fabric.jar": {
+    "jarName": "asynclogger-2.2.2+26.1.2-fabric.jar",
     "modId": "asynclogger",
     "name": "Async Logger",
-    "version": "2.2.1+26.1.2-fabric",
-    "curseForgeHash": 3771432700,
-    "modrinthHash": "e5efc67b67907cbd157e6895a81bc7555c24f5cf"
+    "version": "2.2.2+26.1.2-fabric",
+    "curseForgeHash": 1310401947,
+    "modrinthHash": "d1affbf48c50f60ae59e6b66fb78b1e6427bfddf"
   },
   "AsyncParticles-26.1.2.2+26.1.2.jar": {
     "jarName": "AsyncParticles-26.1.2.2+26.1.2.jar",
@@ -45,13 +45,13 @@
     "curseForgeHash": 1822167192,
     "modrinthHash": "24bb68c889e56d6a532725668ca663e4197935c5"
   },
-  "btrbz-0.10.2-alpha+26.1.x.jar": {
-    "jarName": "btrbz-0.10.2-alpha+26.1.x.jar",
+  "btrbz-0.10.3-alpha+26.1.x.jar": {
+    "jarName": "btrbz-0.10.3-alpha+26.1.x.jar",
     "modId": "btrbz",
     "name": "BtrBz",
-    "version": "0.10.2",
-    "curseForgeHash": 2446173064,
-    "modrinthHash": "97def3f5538d4b24ea16c6f92518bd2b8ac5a086"
+    "version": "0.10.3",
+    "curseForgeHash": 3427211480,
+    "modrinthHash": "dba38271d8d2a8d022ba5a5711d5f10b6535ec82"
   },
   "Catharsis-1.0.0-beta.21-26.1.jar": {
     "jarName": "Catharsis-1.0.0-beta.21-26.1.jar",
@@ -165,13 +165,13 @@
     "curseForgeHash": 3538610517,
     "modrinthHash": "6b69eaa6323da9f7933206d55cdb09ea3299cde3"
   },
-  "Feesh-1.12.2+26.1-fabric.jar": {
-    "jarName": "Feesh-1.12.2+26.1-fabric.jar",
+  "Feesh-1.12.3+26.1-fabric.jar": {
+    "jarName": "Feesh-1.12.3+26.1-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.12.2",
-    "curseForgeHash": 477838457,
-    "modrinthHash": "ab4555fd2a0cd05a3ceb51aa2bd5ebcf316ebfb4"
+    "version": "1.12.3",
+    "curseForgeHash": 2136132353,
+    "modrinthHash": "83d80920a2698c8b9de30c2f1bb9d6120be75371"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -221,13 +221,13 @@
     "curseForgeHash": 2503959706,
     "modrinthHash": "d0f27f1df3aa248e25219dd621fbf72fd12e05c6"
   },
-  "Ixeris-4.6.2+26.1.2-fabric.jar": {
-    "jarName": "Ixeris-4.6.2+26.1.2-fabric.jar",
+  "Ixeris-4.6.3+26.1.2-fabric.jar": {
+    "jarName": "Ixeris-4.6.3+26.1.2-fabric.jar",
     "modId": "ixeris",
     "name": "Ixeris",
-    "version": "4.6.2+26.1.2-fabric",
-    "curseForgeHash": 2302288053,
-    "modrinthHash": "44c64c4f60bed55029a1cf92cfeea66d0915574e"
+    "version": "4.6.3+26.1.2-fabric",
+    "curseForgeHash": 2472888361,
+    "modrinthHash": "3798ab2542082204a5195742d290340f11a231c9"
   },
   "language-reload-1.7.7+26.1.2.jar": {
     "jarName": "language-reload-1.7.7+26.1.2.jar",
@@ -261,13 +261,13 @@
     "curseForgeHash": 1765431852,
     "modrinthHash": "9f68fd82da95582bd27fb97b90015ce268296132"
   },
-  "modernwarpmenu-0.2.3+26.1.2.jar": {
-    "jarName": "modernwarpmenu-0.2.3+26.1.2.jar",
+  "modernwarpmenu-0.2.4+26.1.2.jar": {
+    "jarName": "modernwarpmenu-0.2.4+26.1.2.jar",
     "modId": "modernwarpmenu",
     "name": "Modern Warp Menu",
-    "version": "0.2.3+26.1.2",
-    "curseForgeHash": 155293819,
-    "modrinthHash": "aa2f9023430e6e2d6c1a3d453f6e0a3abe844558"
+    "version": "0.2.4+26.1.2",
+    "curseForgeHash": 1793305808,
+    "modrinthHash": "88ec5f32da45d6b9793ca7652e6f771d8c18e9cf"
   },
   "modmenu-18.0.0.jar": {
     "jarName": "modmenu-18.0.0.jar",
@@ -381,13 +381,13 @@
     "curseForgeHash": 3710928147,
     "modrinthHash": "006388ca0b8ab4ee93a94c6b2e69796256471af8"
   },
-  "scamscreener-2.6.0+26.1.2.jar": {
-    "jarName": "scamscreener-2.6.0+26.1.2.jar",
+  "scamscreener-2.6.1+26.1.2.jar": {
+    "jarName": "scamscreener-2.6.1+26.1.2.jar",
     "modId": "scamscreener",
     "name": "ScamScreener",
-    "version": "2.6.0+26.1.2",
-    "curseForgeHash": 1560838397,
-    "modrinthHash": "c6a62cbab6135b3a00642de124b3875656f2114a"
+    "version": "2.6.1+26.1.2",
+    "curseForgeHash": 1518972727,
+    "modrinthHash": "f26499d5202c08d37a5caffe62dfdc8b1b49bff8"
   },
   "Searchables-fabric-26.1.2-1.0.2.jar": {
     "jarName": "Searchables-fabric-26.1.2-1.0.2.jar",
@@ -413,13 +413,13 @@
     "curseForgeHash": 2441216374,
     "modrinthHash": "6649c40c9284b704252826b0ffbae1c71f3b334b"
   },
-  "skyblocker-6.9.0+26.1.2.jar": {
-    "jarName": "skyblocker-6.9.0+26.1.2.jar",
+  "skyblocker-6.9.1+26.1.2.jar": {
+    "jarName": "skyblocker-6.9.1+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.9.0+26.1.2",
-    "curseForgeHash": 877095537,
-    "modrinthHash": "8e1541a4c7c02af7a76c436fbb884d58afa21d25"
+    "version": "6.9.1+26.1.2",
+    "curseForgeHash": 2184901884,
+    "modrinthHash": "1f2c02e95f115c746cbfbb963c902ade8bc475a5"
   },
   "SkyBlockPv-1.8.9-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.9-26.1.jar",
@@ -429,13 +429,13 @@
     "curseForgeHash": 3161941709,
     "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.44.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.44.0-mc26.1.jar",
+  "SkyHanni-7.45.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.45.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.44.0",
-    "curseForgeHash": 3791077555,
-    "modrinthHash": "6173551bdba8177dde9708f1d21c88154695d1a6"
+    "version": "7.45.0",
+    "curseForgeHash": 1519388790,
+    "modrinthHash": "6594fac0c4c507e047e218496bb526a9d228e0fd"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
