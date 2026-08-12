@@ -807,6 +807,7 @@ ${summary:+$summary
 ---
 
 ### 🛠 Troubleshooting & Tips
+- Getting random crashes and you are using shaders? Disable Iris. The mod has been unstable lately, as it is on life support while a new replacement is being developed.
 - The first launch after updating may take slightly longer than usual.
 - If Modrinth does not show the update, refresh the instance page or just wait abit.
 
