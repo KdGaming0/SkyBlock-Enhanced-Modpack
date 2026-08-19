@@ -10,6 +10,7 @@ I also recommend running `/packcore performance-profile maxfps|balanced|quality|
 - **Fast Server Pings** - Repalces Fast IP Ping, is even faster
 - **Voxy Hypixel Addon** - Let's Voxy-cache each skyblock island separately so they don't overlap, with the option to cache chunks that share a coordinate space together so you can see all of them.
 - **Voxy** - Renders chunks outside your render distance in lower quality LODs to let you see far without killing your FPS (if you are on mobile you want to add Poxy to or disable Voxy.)
+- **owo-lib** - Need for the new BtrBz version
 ## ➖ Removed
 ### Mods
 - **Bobby**
@@ -31,6 +32,19 @@ I also recommend running `/packcore performance-profile maxfps|balanced|quality|
 
 ### Shaders
 - **MakeUp UltraFast**: 9.5c -> **9.5d**
+
+## Default Config v5.2
+
+### Stella
+| Setting           | Value |
+| ----------------- | ----- |
+| Check for Updates | `Off` |
+| Load Message      | `Off` |
+| Cosmetics         | `Off` |
+### SkyHanni
+| Setting           | Value |
+| ----------------- | ----- |
+| Custom Scoreboard | `Off` |
 
 ---
 

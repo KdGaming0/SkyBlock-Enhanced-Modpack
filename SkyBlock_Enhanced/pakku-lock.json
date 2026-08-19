@@ -255,7 +255,8 @@
             "pakku_id": "yz3xIIqtWClB81LH",
             "pakku_links": [
                 "R1cZt9dgVAOXAtE8",
-                "LwqrzSsyxBuQ5jrL"
+                "LwqrzSsyxBuQ5jrL",
+                "psOfip2N5r4d5Qqm"
             ],
             "type": "MOD",
             "side": "CLIENT",
@@ -4849,6 +4850,80 @@
                     "required_dependencies": [],
                     "size": 5320158,
                     "date_published": "2026-04-18T05:53:04.212776Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "psOfip2N5r4d5Qqm",
+            "pakku_links": [
+                "LwqrzSsyxBuQ5jrL"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "owo-lib",
+                "modrinth": "owo-lib"
+            },
+            "name": {
+                "curseforge": "oωo (owo-lib)",
+                "modrinth": "oωo (owo-lib)"
+            },
+            "id": {
+                "curseforge": "532610",
+                "modrinth": "ccKDOlHs"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "owo-lib-0.13.1+26.1.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8589/921/owo-lib-0.13.1+26.1.jar",
+                    "id": "8589921",
+                    "parent_id": "532610",
+                    "hashes": {
+                        "sha1": "90d1d816a3a2806fa062948e72114d52bc5625f7",
+                        "md5": "0e2ab3b4a1ae30ef0678c08493fba04d"
+                    },
+                    "required_dependencies": [
+                        "306612"
+                    ],
+                    "size": 2263241,
+                    "date_published": "2026-08-06T17:46:22.943Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "owo-lib-0.13.1+26.1.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ccKDOlHs/versions/HmigD8GL/owo-lib-0.13.1+26.1.jar",
+                    "id": "HmigD8GL",
+                    "parent_id": "ccKDOlHs",
+                    "hashes": {
+                        "sha512": "2e95f7b87b04477c114f6a0dd8cad49b1415bd1715abd535294613be88e8b3796f5fd0b614b58e2188e2095d6f0e3179d0cc4a0679380026622fb7fc05417b74",
+                        "sha1": "90d1d816a3a2806fa062948e72114d52bc5625f7"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH"
+                    ],
+                    "size": 2263241,
+                    "date_published": "2026-08-06T17:38:48.034821Z"
                 }
             ]
         },
