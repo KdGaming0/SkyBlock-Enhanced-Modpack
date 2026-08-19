@@ -16,7 +16,7 @@ Built for older laptops and low-end hardware. Trims the visuals to squeeze out e
 
 **Settings applied:**
 - Graphics: Fast
-- View Distance: 10 chunks
+- View Distance: 10 chunks (When Voxy is enabled, this is just the real chunk distance, Voxy will render cached chunks beyond this distance)
 - Simulation Distance: 10 chunks
 - Entity Shadows: Off
 - Particles: Minimal
@@ -33,10 +33,10 @@ The sweet spot, and what most players should pick. Great visuals, smooth frames.
 
 **Settings applied:**
 - Graphics: Fancy
-- View Distance: 16 chunks
+- View Distance: 12 chunks (When Voxy is enabled, this is just the real chunk distance, Voxy will render cached chunks beyond this distance)
 - Simulation Distance: 12 chunks
-- Entity Shadows: On
-- Particles: All
+- Entity Shadows: Off
+- Particles: Decreased
 - Clouds: Fancy
 
 ---
@@ -49,7 +49,7 @@ For mid-range and higher-end systems that want the best look — no shaders requ
 
 **Settings applied:**
 - Graphics: Fabulous
-- View Distance: 20 chunks
+- View Distance: 14 chunks (When Voxy is enabled, this is just the real chunk distance, Voxy will render cached chunks beyond this distance)
 - Simulation Distance: 12 chunks
 - Entity Distance Scaling: 125%
 - Enhanced lighting and shadows

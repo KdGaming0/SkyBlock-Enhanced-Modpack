@@ -5,8 +5,8 @@
       "update.stream": 1
     },
     "Shortcuts": {
-      "loadMessage": true,
-      "cosmetics": true
+      "loadMessage": false,
+      "cosmetics": false
     }
   },
   "Dungeons": {

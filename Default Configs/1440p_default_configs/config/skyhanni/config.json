@@ -25,7 +25,7 @@
       }
     },
     "customScoreboard": {
-      "enabled": true,
+      "enabled": false,
       "scoreboardEntries": [
         "TITLE",
         "LOBBY_CODE",

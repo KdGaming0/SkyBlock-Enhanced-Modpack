@@ -1,3 +1,16 @@
+# Default Config v5.2
+
+### Stella
+| Setting           | Value |
+| ----------------- | ----- |
+| Check for Updates | `Off` |
+| Load Message      | `Off` |
+| Cosmetics         | `Off` |
+### SkyHanni
+| Setting           | Value |
+| ----------------- | ----- |
+| Custom Scoreboard | `Off` |
+
 ## Default Config v5.0.4
 
 - Enabled Skyblocker AH and BZ price in tooltip
