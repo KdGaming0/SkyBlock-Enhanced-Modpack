@@ -173,13 +173,13 @@
     "curseForgeHash": 2658979824,
     "modrinthHash": "a9aab1298afcb84d9dcc080cdfc766158e63048b"
   },
-  "Feesh-1.12.3+26.1-fabric.jar": {
-    "jarName": "Feesh-1.12.3+26.1-fabric.jar",
+  "Feesh-1.13.0+26.1-fabric.jar": {
+    "jarName": "Feesh-1.13.0+26.1-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.12.3",
-    "curseForgeHash": 2136132353,
-    "modrinthHash": "83d80920a2698c8b9de30c2f1bb9d6120be75371"
+    "version": "1.13.0",
+    "curseForgeHash": 3318046245,
+    "modrinthHash": "bf741365a4d2b382f811580a09d77443945f6978"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -381,13 +381,13 @@
     "curseForgeHash": 1583095190,
     "modrinthHash": "83d1c3896d7bb50654b77229f0a95edc07fc9194"
   },
-  "SBO-0.5.1+26.1.2-fabric.jar": {
-    "jarName": "SBO-0.5.1+26.1.2-fabric.jar",
+  "SBO-0.5.2+26.1.2-fabric.jar": {
+    "jarName": "SBO-0.5.2+26.1.2-fabric.jar",
     "modId": "sbo",
     "name": "SBO",
-    "version": "0.5.1",
-    "curseForgeHash": 488182797,
-    "modrinthHash": "594dd3124457255f7e731233e1eb0279b7856f72"
+    "version": "0.5.2",
+    "curseForgeHash": 3703662520,
+    "modrinthHash": "22ac6e65095ccfe79da4e33015e71ec9e3e00845"
   },
   "scaleme-3.3.1+26.1.2.jar": {
     "jarName": "scaleme-3.3.1+26.1.2.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 3161941709,
     "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.48.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.48.0-mc26.1.jar",
+  "SkyHanni-7.49.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.49.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.48.0",
-    "curseForgeHash": 702706391,
-    "modrinthHash": "c6b56ba9f9ef90c527c56f1233862636c724c55b"
+    "version": "7.49.0",
+    "curseForgeHash": 1829351127,
+    "modrinthHash": "53251c58bbb0d87761351b07bafbbc7aa60f38c0"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
@@ -554,8 +554,8 @@
   "SkyBlock Legacy.zip (resourcepack)": {
     "jarName": "SkyBlock Legacy.zip (resourcepack)"
   },
-  "Sophie\u0027s Enchants V2.0.2.zip (resourcepack)": {
-    "jarName": "Sophie\u0027s Enchants V2.0.2.zip (resourcepack)"
+  "Sophie\u0027s Enchants V2.1.0.zip (resourcepack)": {
+    "jarName": "Sophie\u0027s Enchants V2.1.0.zip (resourcepack)"
   },
   "§dlooshy §7[§f26.1§7] [v0.13].zip (resourcepack)": {
     "jarName": "§dlooshy §7[§f26.1§7] [v0.13].zip (resourcepack)"
