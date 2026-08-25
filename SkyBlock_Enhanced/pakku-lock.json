@@ -1552,7 +1552,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Feesh-1.12.3+26.1-fabric.jar",
+                    "file_name": "Feesh-1.13.0+26.1-fabric.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -1562,19 +1562,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/sj26tx1G/Feesh-1.12.3+26.1-fabric.jar",
-                    "id": "sj26tx1G",
+                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/bC9yW6cL/Feesh-1.13.0+26.1-fabric.jar",
+                    "id": "bC9yW6cL",
                     "parent_id": "QCpogurE",
                     "hashes": {
-                        "sha512": "3b435c74c5a4cf5fd8779526593cee4d32be342da881f16d077a5d2bda70ece4ee0b6fb10c55bd417841103c95cda08862480d43db4d0764c0aaf17f09468361",
-                        "sha1": "83d80920a2698c8b9de30c2f1bb9d6120be75371"
+                        "sha512": "2b3941d46498dc3cc23b9159ff98638626354eafacd112bb780c7a91cb49af1f1a00a030bf1f7492272763a943e34f37939cf1eadb62641e6c7e8bcc754ee09d",
+                        "sha1": "bf741365a4d2b382f811580a09d77443945f6978"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 2634963,
-                    "date_published": "2026-08-11T21:34:02.711490Z"
+                    "size": 2679740,
+                    "date_published": "2026-08-24T14:58:26.390274Z"
                 }
             ]
         },
@@ -3838,7 +3838,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.48.0-mc26.1.jar",
+                    "file_name": "SkyHanni-7.49.0-mc26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3848,20 +3848,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/KREd9Yk8/SkyHanni-7.48.0-mc26.1.jar",
-                    "id": "KREd9Yk8",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/oYS1qKJX/SkyHanni-7.49.0-mc26.1.jar",
+                    "id": "oYS1qKJX",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "28775352eeb5c539b941351e300fc3879bb542f15600b1dbfe3b5086b82ffb70bd30cec4cff53fa054c8749913665aaec1e1d21af41c39a385f316634f7bf5b0",
-                        "sha1": "c6b56ba9f9ef90c527c56f1233862636c724c55b"
+                        "sha512": "9c5da2839adc5b798033cd4a5753be2497a74454b093475fac8273cc35285803153164ad5b90ba3da0ac4dbd4f178ba0e563282d25d415f489ac72f25498f594",
+                        "sha1": "53251c58bbb0d87761351b07bafbbc7aa60f38c0"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
                         "1A2mKfBx",
+                        "Ha28R6CL",
                         "P7dR8mSH"
                     ],
-                    "size": 29894615,
-                    "date_published": "2026-08-20T07:55:18.980081Z"
+                    "size": 29916336,
+                    "date_published": "2026-08-24T23:48:54.053308Z"
                 }
             ]
         },
@@ -4045,7 +4045,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SBO-0.5.1+26.1.2-fabric.jar",
+                    "file_name": "SBO-0.5.2+26.1.2-fabric.jar",
                     "mc_versions": [
                         "26.1.2"
                     ],
@@ -4053,19 +4053,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/yDeUVu6J/SBO-0.5.1+26.1.2-fabric.jar",
-                    "id": "yDeUVu6J",
+                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/DnPJ7hEV/SBO-0.5.2+26.1.2-fabric.jar",
+                    "id": "DnPJ7hEV",
                     "parent_id": "9lBqVbQF",
                     "hashes": {
-                        "sha512": "5f968b787658d021b6b29f338b49bb619cae9699e2103979dde17133e5b0b18104b64fc8a2adf2e8989ed05ca57134ab96a60c55ab1ba0c4e0284c678aa0f727",
-                        "sha1": "594dd3124457255f7e731233e1eb0279b7856f72"
+                        "sha512": "14e13c1abd502e6f9185ef84c1c25fa59c48e3b9eeffb242be6b5ad74d940b6377560c266eec7568b0ab37b81b030721a44b60028087e003790361d477db54ff",
+                        "sha1": "22ac6e65095ccfe79da4e33015e71ec9e3e00845"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 4869821,
-                    "date_published": "2026-08-23T15:38:40.153012Z"
+                    "size": 4901443,
+                    "date_published": "2026-08-24T22:29:36.381964Z"
                 }
             ]
         },
@@ -4363,7 +4363,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Sophie's Enchants V2.0.2.zip",
+                    "file_name": "Sophie's Enchants V2.1.0.zip",
                     "mc_versions": [
                         "1.21.7",
                         "1.21.8",
@@ -4379,16 +4379,16 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/XBG9JHVh/versions/dxLoMROG/Sophie's Enchants V2.0.2.zip",
-                    "id": "dxLoMROG",
+                    "url": "https://cdn.modrinth.com/data/XBG9JHVh/versions/o7zygRqE/Sophie's Enchants V2.1.0.zip",
+                    "id": "o7zygRqE",
                     "parent_id": "XBG9JHVh",
                     "hashes": {
-                        "sha512": "8250920a9abc3593c3530be1cfa28d062f17ade106c8e0bd2439e0088ff871b764e62571a94acd2c9723483303ad6ce3a8f4a1d4f303937d6b4c98c969376e6a",
-                        "sha1": "aed650fc1aec1e07b21030c3721db7509f2cbe9e"
+                        "sha512": "1a5c4246f23c5f23dd52b7833e98f6631b48c53017c847c64fccc9bd33285613fac9fb32d34fc52b684ab3d6aaa5a82e9ad5ac4516ac00c2171dabc883012a18",
+                        "sha1": "2704c767ab5a97306f9dd943e09abe4a74ab0837"
                     },
                     "required_dependencies": [],
-                    "size": 565901,
-                    "date_published": "2026-07-19T20:07:59.831849Z"
+                    "size": 584611,
+                    "date_published": "2026-08-24T17:58:36.857974Z"
                 }
             ]
         },
