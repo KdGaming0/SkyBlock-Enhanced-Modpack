@@ -445,13 +445,13 @@
     "curseForgeHash": 3161941709,
     "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.50.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.50.0-mc26.1.jar",
+  "SkyHanni-7.51.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.51.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.50.0",
-    "curseForgeHash": 2726474813,
-    "modrinthHash": "ba7dd3c6df41382fc7c7024ba435903399107520"
+    "version": "7.51.0",
+    "curseForgeHash": 3599319920,
+    "modrinthHash": "69fd588c3f9196cc166c233c6df3fa02eacca8ea"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
