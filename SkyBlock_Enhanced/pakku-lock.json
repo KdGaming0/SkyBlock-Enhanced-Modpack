@@ -1826,18 +1826,18 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/eiWiefXD/versions/RUHBnkOA/SkyBlock Legacy.zip",
-                    "id": "RUHBnkOA",
+                    "url": "https://cdn.modrinth.com/data/eiWiefXD/versions/UfU7LVhm/SkyBlock Legacy.zip",
+                    "id": "UfU7LVhm",
                     "parent_id": "eiWiefXD",
                     "hashes": {
-                        "sha512": "9722fa5cf35bb55c13e9a54af4c43cf17ccd735df024fa423226538bbbd86e7c552a007ad256f00a48269066822bb364149d3872d201039b0e9adc650845a331",
-                        "sha1": "6cb862850ff1b6c65e1818d4b35042257822e5a9"
+                        "sha512": "e209e06c0257a4f7c6fbad6f08b996ed7b0d0bbba591e9c74ccc22bd37a8352f43524318b317acdf6745384f82f69e70c0ce7548bddf872e0d8039b8fa38d496",
+                        "sha1": "11d7529a13c9c539d5d82b61f87d4c6d8b6163fb"
                     },
                     "required_dependencies": [
                         "fc4wBpRx"
                     ],
-                    "size": 4789734,
-                    "date_published": "2026-08-04T08:10:58.113528Z"
+                    "size": 4954467,
+                    "date_published": "2026-08-27T18:56:13.344621Z"
                 }
             ]
         },
@@ -3838,7 +3838,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-7.50.0-mc26.1.jar",
+                    "file_name": "SkyHanni-7.51.0-mc26.1.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -3848,20 +3848,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/jH8OYObh/SkyHanni-7.50.0-mc26.1.jar",
-                    "id": "jH8OYObh",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/tQUWPVzg/SkyHanni-7.51.0-mc26.1.jar",
+                    "id": "tQUWPVzg",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "52f37a90ac0d01dc0bd1266e0cbf19deda3b2a54d08bb3be9a1a0ea720ca248cb160beec7257b6110d447bf5d382b7520ffe00c6b077c846002ff167f0576207",
-                        "sha1": "ba7dd3c6df41382fc7c7024ba435903399107520"
+                        "sha512": "a8f767a7ba762921d35a91e0a324c9f8ac39340e0b4ca7cf023a24fdadcc1726e71fdc04a5619645a9c24ae7ee694194efabf6d88e35961a49c97e6c9d4d1b7d",
+                        "sha1": "69fd588c3f9196cc166c233c6df3fa02eacca8ea"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
                         "1A2mKfBx",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 29946058,
-                    "date_published": "2026-08-25T19:43:32.431270Z"
+                    "size": 29965967,
+                    "date_published": "2026-08-27T22:05:50.404551Z"
                 }
             ]
         },
