@@ -92,7 +92,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "AsyncParticles-26.1.2.5+26.1.2.jar",
+                    "file_name": "AsyncParticles-26.1.2.6+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -103,16 +103,16 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/c3onkd5k/versions/QWk2QBEL/AsyncParticles-26.1.2.5+26.1.2.jar",
-                    "id": "QWk2QBEL",
+                    "url": "https://cdn.modrinth.com/data/c3onkd5k/versions/3aBvIJ6g/AsyncParticles-26.1.2.6+26.1.2.jar",
+                    "id": "3aBvIJ6g",
                     "parent_id": "c3onkd5k",
                     "hashes": {
-                        "sha512": "b98a48aa0eb0a324ea2fd98e19372c420b53c75c1df4ac65e1edeb06c837b39a1922cc54e648aabd442de466fd2673783b0d13c97d14e12c23b82b5e9f63dd0f",
-                        "sha1": "778630cf6695b5620d4fc78016d8a0adacaed837"
+                        "sha512": "f78a55624ef5afe8bfdb8036a3bba1da6e4faafd2df2a6a5e39a49dce8e30586a97a57bdb97aab56ff83ee0a01f4d6726e90b16600af2fb5c4d8c4a17116dd13",
+                        "sha1": "c62ee579567d80e53a483b1ae87765da05094b03"
                     },
                     "required_dependencies": [],
-                    "size": 674906,
-                    "date_published": "2026-08-25T18:52:11.579227Z"
+                    "size": 672869,
+                    "date_published": "2026-08-29T11:06:17.521778Z"
                 },
                 {
                     "type": "curseforge",
@@ -337,7 +337,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "btrbz-0.11.2-alpha+26.1.x.jar",
+                    "file_name": "btrbz-0.11.3-alpha+26.1.x.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -347,20 +347,20 @@
                         "fabric"
                     ],
                     "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/IzWPcaNg/versions/NRg4eIYy/btrbz-0.11.2-alpha+26.1.x.jar",
-                    "id": "NRg4eIYy",
+                    "url": "https://cdn.modrinth.com/data/IzWPcaNg/versions/swUXjHa1/btrbz-0.11.3-alpha+26.1.x.jar",
+                    "id": "swUXjHa1",
                     "parent_id": "IzWPcaNg",
                     "hashes": {
-                        "sha512": "8de47a5cb15977ca875f9f51c93488ada98a169b5e718f4c05b38c82c381c8d3f74d47b31003de5b076b8021612550da590d9174886adf3325388097f19de5bf",
-                        "sha1": "7086f0e97786e20171661009a4f5cc702d2d17ae"
+                        "sha512": "1698d91700b58b4a08f1e1fd2a520496db426fb1b32e54216a5c7fd1cf46045256c6dd5d02bc4783eaea9938df324ffd3ecfa8876eaf55204c9ba208efded223",
+                        "sha1": "8f20a1193367e70518294f70b82ceafb4f68358f"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "ccKDOlHs",
                         "1eAoo2KR"
                     ],
-                    "size": 6428544,
-                    "date_published": "2026-08-25T20:33:37.639631Z"
+                    "size": 6442844,
+                    "date_published": "2026-08-29T02:16:36.200167Z"
                 }
             ]
         },
@@ -1054,7 +1054,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyrecipes-0.5.5+26.1.2.jar",
+                    "file_name": "skyrecipes-0.5.6+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -1064,23 +1064,23 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/Q7VEfkvq/versions/4DFDkz2j/skyrecipes-0.5.5+26.1.2.jar",
-                    "id": "4DFDkz2j",
+                    "url": "https://cdn.modrinth.com/data/Q7VEfkvq/versions/itB0BE4u/skyrecipes-0.5.6+26.1.2.jar",
+                    "id": "itB0BE4u",
                     "parent_id": "Q7VEfkvq",
                     "hashes": {
-                        "sha512": "e721396574b4f63f47772e2ddbc5f135ba51702273d79d2608a67975e9f8867e74a469278a2d4243a87f4b7402b963ed59334b56dc28f0001cc8ecbb7e86b8e9",
-                        "sha1": "3d78fb491176a228cc6b04c1d308685ba92e82b9"
+                        "sha512": "06ad7062ea48763c20a434c6b97f542dcf9774dc9acb722ce447a75d98de05b19962c2af4d98c0bca6205112dcf6988cb064afa203f1fbe925f5ffe50496ee2a",
+                        "sha1": "63817471c725a7cd386a3d0aa6089ac1f6bdaff8"
                     },
                     "required_dependencies": [
-                        "5VolwT6c",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "5VolwT6c"
                     ],
-                    "size": 994791,
-                    "date_published": "2026-08-24T06:43:08.276041Z"
+                    "size": 1014528,
+                    "date_published": "2026-08-29T11:00:48.954943Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyrecipes-0.5.5+26.1.2.jar",
+                    "file_name": "skyrecipes-0.5.6+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -1090,19 +1090,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8722/141/skyrecipes-0.5.5+26.1.2.jar",
-                    "id": "8722141",
+                    "url": "https://edge.forgecdn.net/files/8760/492/skyrecipes-0.5.6+26.1.2.jar",
+                    "id": "8760492",
                     "parent_id": "1609874",
                     "hashes": {
-                        "sha1": "3d78fb491176a228cc6b04c1d308685ba92e82b9",
-                        "md5": "4942b2b1d8f1f97dc4648ab26d9414a3"
+                        "sha1": "63817471c725a7cd386a3d0aa6089ac1f6bdaff8",
+                        "md5": "758599215c73fa3e78876990b0eee26e"
                     },
                     "required_dependencies": [
                         "1422317",
                         "306612"
                     ],
-                    "size": 994791,
-                    "date_published": "2026-08-24T06:43:07.843Z"
+                    "size": 1014528,
+                    "date_published": "2026-08-29T11:00:48.643Z"
                 }
             ]
         },
@@ -3929,9 +3929,8 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Skyblock Dark UI 1.17 for 1.21.11+.zip",
+                    "file_name": "Skyblock Dark UI 1.18 for 26.1.2+.zip",
                     "mc_versions": [
-                        "1.21.11",
                         "26.1",
                         "26.1.1",
                         "26.1.2",
@@ -3941,16 +3940,16 @@
                         "minecraft"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/Ed25eRJG/versions/3itLYYuc/Skyblock Dark UI 1.17 for 1.21.11+.zip",
-                    "id": "3itLYYuc",
+                    "url": "https://cdn.modrinth.com/data/Ed25eRJG/versions/vDsMM5iE/Skyblock Dark UI 1.18 for 26.1.2+.zip",
+                    "id": "vDsMM5iE",
                     "parent_id": "Ed25eRJG",
                     "hashes": {
-                        "sha512": "08564926a09e3914242751e6a2edbf723f2b3025bec11423702de0dac55d1e0a011fb52e7fb0b61bddec2807007c020c4fed20f229c3efda127028341c9c5b18",
-                        "sha1": "5a5061364bfdc4a995c8acade94c997e5080b305"
+                        "sha512": "6f6b4582b50e35dbffdd890c05efb2a971418eaad25f93dee1c1349178b7d294244bf53116a67a0b71e8dbde7f77017e01b0e5b5bbb9dec28e6173d3f97cd117",
+                        "sha1": "3bf95962820b52589337e98f7f7b0b824932ef2f"
                     },
                     "required_dependencies": [],
-                    "size": 369767,
-                    "date_published": "2026-08-02T18:49:45.819929Z"
+                    "size": 374364,
+                    "date_published": "2026-08-29T01:55:25.916778Z"
                 }
             ]
         },
