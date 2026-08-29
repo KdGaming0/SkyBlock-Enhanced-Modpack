@@ -13,13 +13,13 @@
     "curseForgeHash": 1310401947,
     "modrinthHash": "d1affbf48c50f60ae59e6b66fb78b1e6427bfddf"
   },
-  "AsyncParticles-26.1.2.5+26.1.2.jar": {
-    "jarName": "AsyncParticles-26.1.2.5+26.1.2.jar",
+  "AsyncParticles-26.1.2.6+26.1.2.jar": {
+    "jarName": "AsyncParticles-26.1.2.6+26.1.2.jar",
     "modId": "asyncparticles",
     "name": "AsyncParticles",
-    "version": "26.1.2.5",
-    "curseForgeHash": 3029741383,
-    "modrinthHash": "778630cf6695b5620d4fc78016d8a0adacaed837"
+    "version": "26.1.2.6",
+    "curseForgeHash": 1990902608,
+    "modrinthHash": "c62ee579567d80e53a483b1ae87765da05094b03"
   },
   "authme-fabric-9.2.1+26.1.jar": {
     "jarName": "authme-fabric-9.2.1+26.1.jar",
@@ -45,13 +45,13 @@
     "curseForgeHash": 1822167192,
     "modrinthHash": "24bb68c889e56d6a532725668ca663e4197935c5"
   },
-  "btrbz-0.11.2-alpha+26.1.x.jar": {
-    "jarName": "btrbz-0.11.2-alpha+26.1.x.jar",
+  "btrbz-0.11.3-alpha+26.1.x.jar": {
+    "jarName": "btrbz-0.11.3-alpha+26.1.x.jar",
     "modId": "btrbz",
     "name": "BtrBz",
-    "version": "0.11.2",
-    "curseForgeHash": 1407701505,
-    "modrinthHash": "7086f0e97786e20171661009a4f5cc702d2d17ae"
+    "version": "0.11.3",
+    "curseForgeHash": 3788379198,
+    "modrinthHash": "8f20a1193367e70518294f70b82ceafb4f68358f"
   },
   "Catharsis-1.0.0-beta.21-26.1.jar": {
     "jarName": "Catharsis-1.0.0-beta.21-26.1.jar",
@@ -461,13 +461,13 @@
     "curseForgeHash": 1837658274,
     "modrinthHash": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
   },
-  "skyrecipes-0.5.5+26.1.2.jar": {
-    "jarName": "skyrecipes-0.5.5+26.1.2.jar",
+  "skyrecipes-0.5.6+26.1.2.jar": {
+    "jarName": "skyrecipes-0.5.6+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.5.5",
-    "curseForgeHash": 4157203039,
-    "modrinthHash": "3d78fb491176a228cc6b04c1d308685ba92e82b9"
+    "version": "0.5.6",
+    "curseForgeHash": 390957315,
+    "modrinthHash": "63817471c725a7cd386a3d0aa6089ac1f6bdaff8"
   },
   "sodium-extra-fabric-0.9.3+mc26.1.2.jar": {
     "jarName": "sodium-extra-fabric-0.9.3+mc26.1.2.jar",
@@ -548,8 +548,8 @@
   "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)": {
     "jarName": "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)"
   },
-  "Skyblock Dark UI 1.17 for 1.21.11+.zip (resourcepack)": {
-    "jarName": "Skyblock Dark UI 1.17 for 1.21.11+.zip (resourcepack)"
+  "Skyblock Dark UI 1.18 for 26.1.2+.zip (resourcepack)": {
+    "jarName": "Skyblock Dark UI 1.18 for 26.1.2+.zip (resourcepack)"
   },
   "SkyBlock Legacy.zip (resourcepack)": {
     "jarName": "SkyBlock Legacy.zip (resourcepack)"
