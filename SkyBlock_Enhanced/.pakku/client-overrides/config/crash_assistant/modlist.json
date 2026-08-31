@@ -125,13 +125,13 @@
     "curseForgeHash": 3282993928,
     "modrinthHash": "eed0d8d9ab1a53db6f020163e1b1c9651b3dc5ca"
   },
-  "enhanced_storage-1.2.1+26.1.2.jar": {
-    "jarName": "enhanced_storage-1.2.1+26.1.2.jar",
+  "enhanced_storage-1.2.2+26.1.2.jar": {
+    "jarName": "enhanced_storage-1.2.2+26.1.2.jar",
     "modId": "enhanced_storage",
     "name": "Enhanced Storage",
-    "version": "1.2.1",
-    "curseForgeHash": 1031537353,
-    "modrinthHash": "cbfd062ec1bc6c5786b0ff7a0a188a7d7c800794"
+    "version": "1.2.2",
+    "curseForgeHash": 4104945675,
+    "modrinthHash": "6373e955a0889553dadf0a2c6fddc35b22d0bb36"
   },
   "enhancedsoundcontrol-0.2.0+26.1.2.jar": {
     "jarName": "enhancedsoundcontrol-0.2.0+26.1.2.jar",
@@ -421,21 +421,21 @@
     "curseForgeHash": 2876718140,
     "modrinthHash": "d716a9ada79d3342085db73159bda5395ad6e01a"
   },
-  "skyblock_enhancements-1.1.11+26.1.2.jar": {
-    "jarName": "skyblock_enhancements-1.1.11+26.1.2.jar",
+  "skyblock_enhancements-1.1.12+26.1.2.jar": {
+    "jarName": "skyblock_enhancements-1.1.12+26.1.2.jar",
     "modId": "skyblock_enhancements",
     "name": "SkyBlock Enhancements",
-    "version": "1.1.11",
-    "curseForgeHash": 2441216374,
-    "modrinthHash": "6649c40c9284b704252826b0ffbae1c71f3b334b"
+    "version": "1.1.12",
+    "curseForgeHash": 3389303171,
+    "modrinthHash": "e257abcd68993c833276e29ae0606b8cc96cdbac"
   },
-  "skyblocker-6.9.1+26.1.2.jar": {
-    "jarName": "skyblocker-6.9.1+26.1.2.jar",
+  "skyblocker-6.9.2+26.1.2.jar": {
+    "jarName": "skyblocker-6.9.2+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.9.1+26.1.2",
-    "curseForgeHash": 2184901884,
-    "modrinthHash": "1f2c02e95f115c746cbfbb963c902ade8bc475a5"
+    "version": "6.9.2+26.1.2",
+    "curseForgeHash": 486455814,
+    "modrinthHash": "c53c31781858345f9b72319bde88bdb460cb3903"
   },
   "SkyBlockPv-1.8.9-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.9-26.1.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 3161941709,
     "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.51.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.51.0-mc26.1.jar",
+  "SkyHanni-7.52.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.52.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.51.0",
-    "curseForgeHash": 3599319920,
-    "modrinthHash": "69fd588c3f9196cc166c233c6df3fa02eacca8ea"
+    "version": "7.52.0",
+    "curseForgeHash": 494721693,
+    "modrinthHash": "f0f0ed12307b7cc7e631ce57ac1576c8d4846ac9"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
