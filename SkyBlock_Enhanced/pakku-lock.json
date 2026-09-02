@@ -1054,7 +1054,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyrecipes-0.5.6+26.1.2.jar",
+                    "file_name": "skyrecipes-0.5.7+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -1064,23 +1064,23 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/Q7VEfkvq/versions/itB0BE4u/skyrecipes-0.5.6+26.1.2.jar",
-                    "id": "itB0BE4u",
+                    "url": "https://cdn.modrinth.com/data/Q7VEfkvq/versions/6ZpHiSGU/skyrecipes-0.5.7+26.1.2.jar",
+                    "id": "6ZpHiSGU",
                     "parent_id": "Q7VEfkvq",
                     "hashes": {
-                        "sha512": "06ad7062ea48763c20a434c6b97f542dcf9774dc9acb722ce447a75d98de05b19962c2af4d98c0bca6205112dcf6988cb064afa203f1fbe925f5ffe50496ee2a",
-                        "sha1": "63817471c725a7cd386a3d0aa6089ac1f6bdaff8"
+                        "sha512": "d0510ca67a2bdec10196f3f082f381c826baf99e53a348d0115e92f3b8af47e1bf05c1d5fad565f5379907552b0125f1af9742198bf60ff2c4adad115da3db54",
+                        "sha1": "f2943e4a174eb07d8bc0b53f41b7df0ef512626a"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "5VolwT6c"
+                        "5VolwT6c",
+                        "P7dR8mSH"
                     ],
-                    "size": 1014528,
-                    "date_published": "2026-08-29T11:00:48.954943Z"
+                    "size": 1017125,
+                    "date_published": "2026-09-02T15:53:58.007635Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyrecipes-0.5.6+26.1.2.jar",
+                    "file_name": "skyrecipes-0.5.7+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -1090,19 +1090,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8760/492/skyrecipes-0.5.6+26.1.2.jar",
-                    "id": "8760492",
+                    "url": "https://edge.forgecdn.net/files/8793/582/skyrecipes-0.5.7+26.1.2.jar",
+                    "id": "8793582",
                     "parent_id": "1609874",
                     "hashes": {
-                        "sha1": "63817471c725a7cd386a3d0aa6089ac1f6bdaff8",
-                        "md5": "758599215c73fa3e78876990b0eee26e"
+                        "sha1": "f2943e4a174eb07d8bc0b53f41b7df0ef512626a",
+                        "md5": "221c689269eb9c7b8584ea4297c7be31"
                     },
                     "required_dependencies": [
-                        "1422317",
-                        "306612"
+                        "306612",
+                        "1422317"
                     ],
-                    "size": 1014528,
-                    "date_published": "2026-08-29T11:00:48.643Z"
+                    "size": 1017125,
+                    "date_published": "2026-09-02T15:53:58.393Z"
                 }
             ]
         },
@@ -4091,7 +4091,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblocker-6.10.1+26.1.2.jar",
+                    "file_name": "skyblocker-6.10.2+26.1.2.jar",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -4101,19 +4101,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/uK3BeGGt/skyblocker-6.10.1+26.1.2.jar",
-                    "id": "uK3BeGGt",
+                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/KbYW1eox/skyblocker-6.10.2+26.1.2.jar",
+                    "id": "KbYW1eox",
                     "parent_id": "y6DuFGwJ",
                     "hashes": {
-                        "sha512": "41bc82032064e79273b488fecb064441ab72222d139bae5a04f100a59d7ef1c25138dea756cd437a56966e852de3c57a29e4cf0b8d133c476a484fb755f42b5f",
-                        "sha1": "5fa7b83d66cedad870f53f531e04d0f4101cd2df"
+                        "sha512": "94772fedf8da689b99a6efffcdc65d222389e843f0bbaf4c01671c5cb8aa7875597d4a53dc9504e12a1be73c29f4cdf6c712fcedc5f0d2576ded4742a758c479",
+                        "sha1": "8e19bb1c19750dc38e8478db8872e730ef9b66a2"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 19610027,
-                    "date_published": "2026-09-02T08:21:24.010136Z"
+                    "size": 19610414,
+                    "date_published": "2026-09-02T18:48:28.364522Z"
                 },
                 {
                     "type": "curseforge",
