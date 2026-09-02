@@ -429,13 +429,13 @@
     "curseForgeHash": 3389303171,
     "modrinthHash": "e257abcd68993c833276e29ae0606b8cc96cdbac"
   },
-  "skyblocker-6.10.1+26.1.2.jar": {
-    "jarName": "skyblocker-6.10.1+26.1.2.jar",
+  "skyblocker-6.10.2+26.1.2.jar": {
+    "jarName": "skyblocker-6.10.2+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.10.1+26.1.2",
-    "curseForgeHash": 712126543,
-    "modrinthHash": "5fa7b83d66cedad870f53f531e04d0f4101cd2df"
+    "version": "6.10.2+26.1.2",
+    "curseForgeHash": 3813791355,
+    "modrinthHash": "8e19bb1c19750dc38e8478db8872e730ef9b66a2"
   },
   "SkyBlockPv-1.8.9-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.9-26.1.jar",
@@ -461,13 +461,13 @@
     "curseForgeHash": 1837658274,
     "modrinthHash": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
   },
-  "skyrecipes-0.5.6+26.1.2.jar": {
-    "jarName": "skyrecipes-0.5.6+26.1.2.jar",
+  "skyrecipes-0.5.7+26.1.2.jar": {
+    "jarName": "skyrecipes-0.5.7+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.5.6",
-    "curseForgeHash": 390957315,
-    "modrinthHash": "63817471c725a7cd386a3d0aa6089ac1f6bdaff8"
+    "version": "0.5.7",
+    "curseForgeHash": 839702103,
+    "modrinthHash": "f2943e4a174eb07d8bc0b53f41b7df0ef512626a"
   },
   "sodium-extra-fabric-0.9.3+mc26.1.2.jar": {
     "jarName": "sodium-extra-fabric-0.9.3+mc26.1.2.jar",
