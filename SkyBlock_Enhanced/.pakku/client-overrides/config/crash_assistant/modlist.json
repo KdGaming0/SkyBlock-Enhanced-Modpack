@@ -317,21 +317,21 @@
     "curseForgeHash": 739626892,
     "modrinthHash": "a8e692ab689872635b078aba81035dccb7eb3f92"
   },
-  "obe+26.1.2-1.1.41.jar": {
-    "jarName": "obe+26.1.2-1.1.41.jar",
+  "obe+26.1.2-1.1.45.jar": {
+    "jarName": "obe+26.1.2-1.1.45.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.1.41",
-    "curseForgeHash": 3129616045,
-    "modrinthHash": "b8ba91836b02de4eb152a7eda877020b86bdfd59"
+    "version": "1.1.45",
+    "curseForgeHash": 1459813008,
+    "modrinthHash": "b8ce1b4553b29988e9e5920862c858e1ac4bdd61"
   },
-  "Odin-0.3.1.jar": {
-    "jarName": "Odin-0.3.1.jar",
+  "Odin-0.3.2.jar": {
+    "jarName": "Odin-0.3.2.jar",
     "modId": "odin",
     "name": "Odin",
-    "version": "0.3.1",
-    "curseForgeHash": 2105541319,
-    "modrinthHash": "8185a3352df8ea10727a2d14444f75e490db93b4"
+    "version": "0.3.2",
+    "curseForgeHash": 1622553250,
+    "modrinthHash": "e3902d9b7ceb541d7a2239f2038fc687f7291b48"
   },
   "owo-lib-0.13.1+26.1.jar": {
     "jarName": "owo-lib-0.13.1+26.1.jar",
@@ -365,13 +365,13 @@
     "curseForgeHash": 2486016348,
     "modrinthHash": "c1ce548549ec4517b9393985cefc65389e6f36d8"
   },
-  "reliable-recipe-viewer-8.9.1+26.1.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.9.1+26.1.2-fabric.jar",
+  "reliable-recipe-viewer-8.9.2+26.1.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.9.2+26.1.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.9.1+26.1.2",
-    "curseForgeHash": 3909633484,
-    "modrinthHash": "fb625f98f242e9b7aabd34ff378b43c42087f51d"
+    "version": "8.9.2+26.1.2",
+    "curseForgeHash": 3596928913,
+    "modrinthHash": "34322e02fce11473235ade6c5295abb6733cd042"
   },
   "rpc-1.2.7+26.1-26.2.jar": {
     "jarName": "rpc-1.2.7+26.1-26.2.jar",
@@ -429,13 +429,13 @@
     "curseForgeHash": 3389303171,
     "modrinthHash": "e257abcd68993c833276e29ae0606b8cc96cdbac"
   },
-  "skyblocker-6.9.2+26.1.2.jar": {
-    "jarName": "skyblocker-6.9.2+26.1.2.jar",
+  "skyblocker-6.10.1+26.1.2.jar": {
+    "jarName": "skyblocker-6.10.1+26.1.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.9.2+26.1.2",
-    "curseForgeHash": 486455814,
-    "modrinthHash": "c53c31781858345f9b72319bde88bdb460cb3903"
+    "version": "6.10.1+26.1.2",
+    "curseForgeHash": 712126543,
+    "modrinthHash": "5fa7b83d66cedad870f53f531e04d0f4101cd2df"
   },
   "SkyBlockPv-1.8.9-26.1.jar": {
     "jarName": "SkyBlockPv-1.8.9-26.1.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 3161941709,
     "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.52.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.52.0-mc26.1.jar",
+  "SkyHanni-7.53.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.53.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.52.0",
-    "curseForgeHash": 494721693,
-    "modrinthHash": "f0f0ed12307b7cc7e631ce57ac1576c8d4846ac9"
+    "version": "7.53.0",
+    "curseForgeHash": 2729108648,
+    "modrinthHash": "5a3e944697d769da20eab22719c0370358efedc1"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
