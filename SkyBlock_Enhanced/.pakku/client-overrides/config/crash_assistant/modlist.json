@@ -365,13 +365,13 @@
     "curseForgeHash": 2486016348,
     "modrinthHash": "c1ce548549ec4517b9393985cefc65389e6f36d8"
   },
-  "reliable-recipe-viewer-8.9.2+26.1.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.9.2+26.1.2-fabric.jar",
+  "reliable-recipe-viewer-8.10.2+26.1.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.10.2+26.1.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.9.2+26.1.2",
-    "curseForgeHash": 3596928913,
-    "modrinthHash": "34322e02fce11473235ade6c5295abb6733cd042"
+    "version": "8.10.2+26.1.2",
+    "curseForgeHash": 1866878262,
+    "modrinthHash": "d76715d030065d2f56dde887dabc974da12c6ff6"
   },
   "rpc-1.2.7+26.1-26.2.jar": {
     "jarName": "rpc-1.2.7+26.1-26.2.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 3161941709,
     "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.53.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.53.0-mc26.1.jar",
+  "SkyHanni-7.54.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.54.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.53.0",
-    "curseForgeHash": 2729108648,
-    "modrinthHash": "5a3e944697d769da20eab22719c0370358efedc1"
+    "version": "7.54.0",
+    "curseForgeHash": 1347867245,
+    "modrinthHash": "e08e52979c2b8fc56170f2c3d8bf1980b48f3274"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
@@ -461,13 +461,13 @@
     "curseForgeHash": 1837658274,
     "modrinthHash": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
   },
-  "skyrecipes-0.5.7+26.1.2.jar": {
-    "jarName": "skyrecipes-0.5.7+26.1.2.jar",
+  "skyrecipes-0.5.9+26.1.2.jar": {
+    "jarName": "skyrecipes-0.5.9+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.5.7",
-    "curseForgeHash": 839702103,
-    "modrinthHash": "f2943e4a174eb07d8bc0b53f41b7df0ef512626a"
+    "version": "0.5.9",
+    "curseForgeHash": 2342032758,
+    "modrinthHash": "a98a609442afc630b2bb86d9dfd8af8c497afec6"
   },
   "sodium-extra-fabric-0.9.3+mc26.1.2.jar": {
     "jarName": "sodium-extra-fabric-0.9.3+mc26.1.2.jar",
