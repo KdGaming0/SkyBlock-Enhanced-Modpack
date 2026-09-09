@@ -172,7 +172,7 @@ pipeline {
                         -Dhmc.exit.on.failed.command=true \\
                         -Dhmc.rethrow.launch.exceptions=true \\
                         -jar "$JAR" \\
-                        --command "launch fabric:${MC_VERSION}" \\
+                        --command "launch fabric:${MC_VERSION} --uid ${FABRIC_VERSION}" \\
                     > "$LOG" 2>&1 &
                     PID=$!
 
