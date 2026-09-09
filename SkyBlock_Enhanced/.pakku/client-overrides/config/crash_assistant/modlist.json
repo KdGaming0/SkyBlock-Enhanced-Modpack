@@ -1,9 +1,9 @@
 ﻿{
-  "fabric-loader-0.19.3.jar (modloader)": {
-    "jarName": "fabric-loader-0.19.3.jar (modloader)",
+  "fabric-loader-0.19.5.jar (modloader)": {
+    "jarName": "fabric-loader-0.19.5.jar (modloader)",
     "modId": "fabric",
     "name": "fabric",
-    "version": "fabric-loader-0.19.3.jar"
+    "version": "fabric-loader-0.19.5.jar"
   },
   "asynclogger-2.2.2+26.1.2-fabric.jar": {
     "jarName": "asynclogger-2.2.2+26.1.2-fabric.jar",
@@ -149,21 +149,21 @@
     "curseForgeHash": 3574011225,
     "modrinthHash": "62ac7ed3bbc0b920428bcfc18d1962836b84c391"
   },
-  "fabric-api-0.155.2+26.1.2.jar": {
-    "jarName": "fabric-api-0.155.2+26.1.2.jar",
+  "fabric-api-0.155.3+26.1.2.jar": {
+    "jarName": "fabric-api-0.155.3+26.1.2.jar",
     "modId": "fabric-api",
     "name": "Fabric API",
-    "version": "0.155.2+26.1.2",
-    "curseForgeHash": 4292707234,
-    "modrinthHash": "5fe5204ccc96a17340570db66a5b4127b8176246"
+    "version": "0.155.3+26.1.2",
+    "curseForgeHash": 2582065992,
+    "modrinthHash": "16c30dfcceaed1ac3b6ac84cbd348a906dc5093e"
   },
-  "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar": {
-    "jarName": "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar",
+  "fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar": {
+    "jarName": "fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar",
     "modId": "fabric-language-kotlin",
     "name": "Fabric Language Kotlin",
-    "version": "1.13.13+kotlin.2.4.10",
-    "curseForgeHash": 199595575,
-    "modrinthHash": "620cb137a9dc69ce86f3114f19d9eedab16366f5"
+    "version": "1.14.1+kotlin.2.4.20",
+    "curseForgeHash": 3788737500,
+    "modrinthHash": "62ae40a31b689b52fde399f2143d547a631e942c"
   },
   "FastServerPings-1.1.4+26.3.jar": {
     "jarName": "FastServerPings-1.1.4+26.3.jar",
@@ -213,13 +213,13 @@
     "curseForgeHash": 3746170222,
     "modrinthHash": "0bc5865bcb7f2f09d85559a58fccddcfd335f44d"
   },
-  "inventorybuttons-26.1-1.2.2.jar": {
-    "jarName": "inventorybuttons-26.1-1.2.2.jar",
+  "inventorybuttons-26.1-1.2.3.jar": {
+    "jarName": "inventorybuttons-26.1-1.2.3.jar",
     "modId": "inventorybuttons",
     "name": "inventorybuttons",
-    "version": "1.2.2",
-    "curseForgeHash": 1325681415,
-    "modrinthHash": "939fb1c7167d137914e6c130caeacd60a6c02a37"
+    "version": "1.2.3",
+    "curseForgeHash": 3011458379,
+    "modrinthHash": "ac3686c3fd803be3274bb38655648d5bb8effb38"
   },
   "iris-fabric-1.11.3+mc26.1.2.jar": {
     "jarName": "iris-fabric-1.11.3+mc26.1.2.jar",
@@ -365,13 +365,13 @@
     "curseForgeHash": 2486016348,
     "modrinthHash": "c1ce548549ec4517b9393985cefc65389e6f36d8"
   },
-  "reliable-recipe-viewer-8.10.2+26.1.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.10.2+26.1.2-fabric.jar",
+  "reliable-recipe-viewer-8.10.4+26.1.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.10.4+26.1.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.10.2+26.1.2",
-    "curseForgeHash": 1866878262,
-    "modrinthHash": "d76715d030065d2f56dde887dabc974da12c6ff6"
+    "version": "8.10.4+26.1.2",
+    "curseForgeHash": 2413525811,
+    "modrinthHash": "8b6e2ad0e2c917c5b355dbace64511c5f62bd672"
   },
   "rpc-1.2.7+26.1-26.2.jar": {
     "jarName": "rpc-1.2.7+26.1-26.2.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 3161941709,
     "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.54.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.54.0-mc26.1.jar",
+  "SkyHanni-7.55.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.55.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.54.0",
-    "curseForgeHash": 1347867245,
-    "modrinthHash": "e08e52979c2b8fc56170f2c3d8bf1980b48f3274"
+    "version": "7.55.0",
+    "curseForgeHash": 1292780665,
+    "modrinthHash": "2ed3503f2f4ee8671931376a126e01f3a9c8db68"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
@@ -461,13 +461,13 @@
     "curseForgeHash": 1837658274,
     "modrinthHash": "c4179f580b4cafa86bc0c0cf95d073e191b11861"
   },
-  "skyrecipes-0.5.9+26.1.2.jar": {
-    "jarName": "skyrecipes-0.5.9+26.1.2.jar",
+  "skyrecipes-0.5.11+26.1.2.jar": {
+    "jarName": "skyrecipes-0.5.11+26.1.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.5.9",
-    "curseForgeHash": 2342032758,
-    "modrinthHash": "a98a609442afc630b2bb86d9dfd8af8c497afec6"
+    "version": "0.5.11",
+    "curseForgeHash": 143362463,
+    "modrinthHash": "4038e622f5f8ee14dd6a53b00bec28e37bef8cf2"
   },
   "sodium-extra-fabric-0.9.3+mc26.1.2.jar": {
     "jarName": "sodium-extra-fabric-0.9.3+mc26.1.2.jar",
