@@ -61,6 +61,17 @@ pipeline {
             }
         }
 
+        stage('Install Fabric Loader') {
+            steps {
+                sh '''
+                    JAR="$HMC_HOME/headlessmc-launcher-${HMC_VERSION}.jar"
+                    java -Dhmc.exit.on.failed.command=true \
+                        -jar "$JAR" \
+                        --command "fabric ${MC_VERSION} --uid ${FABRIC_VERSION}"
+                '''
+            }
+        }
+
         stage('Setup Pakku') {
             steps {
                 sh '''
@@ -172,7 +183,7 @@ pipeline {
                         -Dhmc.exit.on.failed.command=true \\
                         -Dhmc.rethrow.launch.exceptions=true \\
                         -jar "$JAR" \\
-                        --command "launch fabric:${MC_VERSION} --uid ${FABRIC_VERSION}" \\
+                        --command "launch fabric-loader-${FABRIC_VERSION}-${MC_VERSION}" \\
                     > "$LOG" 2>&1 &
                     PID=$!
 
