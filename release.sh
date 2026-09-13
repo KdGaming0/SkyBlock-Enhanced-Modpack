@@ -494,7 +494,7 @@ step_pakku() {
         exit 1
     fi
 
-    print_step "pakku export"
+    print_step "pakku export --no-server"
     if ! $PAKKU_CMD export; then
         cd "$REPO_ROOT"
         print_err "pakku export failed"
