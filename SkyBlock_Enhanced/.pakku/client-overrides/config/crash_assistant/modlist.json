@@ -221,13 +221,13 @@
     "curseForgeHash": 3011458379,
     "modrinthHash": "ac3686c3fd803be3274bb38655648d5bb8effb38"
   },
-  "iris-fabric-1.11.3+mc26.1.2.jar": {
-    "jarName": "iris-fabric-1.11.3+mc26.1.2.jar",
+  "iris-fabric-1.11.4+mc26.1.2.jar": {
+    "jarName": "iris-fabric-1.11.4+mc26.1.2.jar",
     "modId": "iris",
     "name": "Iris",
-    "version": "1.11.3+mc26.1.2",
-    "curseForgeHash": 2503959706,
-    "modrinthHash": "d0f27f1df3aa248e25219dd621fbf72fd12e05c6"
+    "version": "1.11.4+mc26.1.2",
+    "curseForgeHash": 2397438301,
+    "modrinthHash": "6a345caf8850e38dccd076f984cf02d6ec39ed83"
   },
   "Ixeris-4.6.5+26.1.2-fabric.jar": {
     "jarName": "Ixeris-4.6.5+26.1.2-fabric.jar",
@@ -277,13 +277,13 @@
     "curseForgeHash": 1793305808,
     "modrinthHash": "88ec5f32da45d6b9793ca7652e6f771d8c18e9cf"
   },
-  "modmenu-18.0.0.jar": {
-    "jarName": "modmenu-18.0.0.jar",
+  "modmenu-18.0.1.jar": {
+    "jarName": "modmenu-18.0.1.jar",
     "modId": "modmenu",
     "name": "Mod Menu",
-    "version": "18.0.0",
-    "curseForgeHash": 674007397,
-    "modrinthHash": "0b5cd2531cd3506e431cd2d739da3abceed08ea6"
+    "version": "18.0.1",
+    "curseForgeHash": 2928900384,
+    "modrinthHash": "fa3fda3ed7941200190e146ecd39485166b01773"
   },
   "moreculling-fabric-26.1.2-1.7.3.jar": {
     "jarName": "moreculling-fabric-26.1.2-1.7.3.jar",
@@ -317,13 +317,13 @@
     "curseForgeHash": 739626892,
     "modrinthHash": "a8e692ab689872635b078aba81035dccb7eb3f92"
   },
-  "obe+26.1.2-1.1.45.jar": {
-    "jarName": "obe+26.1.2-1.1.45.jar",
+  "obe+26.1.2-1.1.47-beta.1.jar": {
+    "jarName": "obe+26.1.2-1.1.47-beta.1.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.1.45",
-    "curseForgeHash": 1459813008,
-    "modrinthHash": "b8ce1b4553b29988e9e5920862c858e1ac4bdd61"
+    "version": "1.1.47-beta.1",
+    "curseForgeHash": 3576935326,
+    "modrinthHash": "68a103222a7e682d2062954c51b06127cddcb59e"
   },
   "Odin-0.3.2.jar": {
     "jarName": "Odin-0.3.2.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 3161941709,
     "modrinthHash": "25d6d4a048bdea75d3fbb7f07ae710d717daa2d7"
   },
-  "SkyHanni-7.55.0-mc26.1.jar": {
-    "jarName": "SkyHanni-7.55.0-mc26.1.jar",
+  "SkyHanni-7.56.0-mc26.1.jar": {
+    "jarName": "SkyHanni-7.56.0-mc26.1.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "7.55.0",
-    "curseForgeHash": 1292780665,
-    "modrinthHash": "2ed3503f2f4ee8671931376a126e01f3a9c8db68"
+    "version": "7.56.0",
+    "curseForgeHash": 2988954973,
+    "modrinthHash": "2f39351d37b6d0d205e3425a42032391f54f9629"
   },
   "SkyOcean-1.17.2-26.1.jar": {
     "jarName": "SkyOcean-1.17.2-26.1.jar",
@@ -477,13 +477,13 @@
     "curseForgeHash": 3973128535,
     "modrinthHash": "630f6fc8646aa50b77cfa92e0c94f7276f40039a"
   },
-  "sodium-fabric-0.9.1+mc26.1.2.jar": {
-    "jarName": "sodium-fabric-0.9.1+mc26.1.2.jar",
+  "sodium-fabric-0.9.2+mc26.1.2.jar": {
+    "jarName": "sodium-fabric-0.9.2+mc26.1.2.jar",
     "modId": "sodium",
     "name": "Sodium",
-    "version": "0.9.1+mc26.1.2",
-    "curseForgeHash": 4270737160,
-    "modrinthHash": "cdb5ab59dc05840c5fc762c3821570c6fa02a8dc"
+    "version": "0.9.2+mc26.1.2",
+    "curseForgeHash": 401852713,
+    "modrinthHash": "d107b02081262e243e80559192a2de86007155d6"
   },
   "sodium-shadowy-path-blocks-fabric-7.0.0.jar": {
     "jarName": "sodium-shadowy-path-blocks-fabric-7.0.0.jar",
