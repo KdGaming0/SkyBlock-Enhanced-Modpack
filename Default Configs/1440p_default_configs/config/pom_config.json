@@ -1,0 +1,29 @@
+{
+  "customStats": {
+    "customSpeed": 6000.0,
+    "customPing": 100.0,
+    "tickMargin": 0.0
+  },
+  "efficiencyDisplay": {
+    "xPos": 22,
+    "yPos": 43,
+    "enabled": false
+  },
+  "logging": {
+    "xPos": 23,
+    "yPos": 58
+  },
+  "profiler": {
+    "xPos": 29,
+    "yPos": 3
+  },
+  "outlineRender": {
+    "enabled": true
+  },
+  "pomEnabled": {
+    "enabled": false
+  },
+  "tickDisplay": {
+    "enabled": true
+  }
+}

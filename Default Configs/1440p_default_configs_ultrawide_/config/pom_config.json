@@ -1,0 +1,19 @@
+{
+  "pomEnabled": {
+    "enabled": false
+  },
+  "customStats": {
+    "customSpeed": 6000.0,
+    "customPing": 100.0,
+    "tickMargin": 0.0
+  },
+  "efficiencyDisplay": {
+    "enabled": false,
+    "xPos": 15,
+    "yPos": 39
+  },
+  "logging": {
+    "xPos": 15,
+    "yPos": 54
+  }
+}

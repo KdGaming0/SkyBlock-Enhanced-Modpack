@@ -1,3 +1,7 @@
+# Default Config v5.3
+
+- Added pom configs
+
 # Default Config v5.2
 
 ### Stella
