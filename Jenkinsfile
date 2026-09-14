@@ -156,9 +156,6 @@ pipeline {
                     fi
                     printf 'pauseOnLostFocus:false\\nonboardAccessibility:false\\n' >> "$RUN_DIR/options.txt"
 
-                    # Remember what the modlist looked like BEFORE launch, so we can detect
-                    # when Crash Assistant has rewritten it (happens on first TitleScreen tick).
-                    md5sum "$RUN_DIR/config/crash_assistant/modlist.json" | awk '{print $1}' > "$WORKSPACE/.modlist_pre_launch.md5" || true
                 '''
             }
         }
@@ -166,15 +163,54 @@ pipeline {
         stage('Launch Test') {
             steps {
                 sh '''#!/bin/bash
+                    set -euo pipefail
                     RUN_DIR="$WORKSPACE/run"
                     JAR="$HMC_HOME/headlessmc-launcher-${HMC_VERSION}.jar"
                     LOG="$WORKSPACE/launch.log"
-                    SUCCESS_MARKER="Game took .* seconds to start"
+                    GAME_LOG="$RUN_DIR/logs/latest.log"
                     MODLIST="$RUN_DIR/config/crash_assistant/modlist.json"
-                    PRE_MD5="$(cat "$WORKSPACE/.modlist_pre_launch.md5" 2>/dev/null || echo none)"
+                    READY_MARKER='[CrashAssistant-ModListUpdate/INFO]: Modlist saved to config/crash_assistant/modlist.json'
+                    STABILITY_SECONDS=10
+                    PID=''
 
-                    # Launch in the background, capturing all output to the log
-                    setsid xvfb-run -a timeout --kill-after=10s ${TEST_TIMEOUT} \\
+                    cleanup() {
+                        if [ -n "$PID" ]; then
+                            # --foreground below keeps timeout and the game in this session's group.
+                            kill -TERM -- "-$PID" 2>/dev/null || true
+                            sleep 2
+                            kill -KILL -- "-$PID" 2>/dev/null || true
+                            wait "$PID" 2>/dev/null || true
+                        fi
+                    }
+                    trap cleanup EXIT
+                    trap 'exit 130' INT
+                    trap 'exit 143' TERM
+
+                    diagnostics() {
+                        echo '--- HeadlessMC output (last 80 lines) ---'
+                        tail -80 "$LOG" 2>/dev/null || true
+                        echo '--- Minecraft output (last 80 lines) ---'
+                        tail -80 "$GAME_LOG" 2>/dev/null || true
+                    }
+                    crashed() {
+                        grep -qE 'A mod crashed on startup|Reported exception thrown!|Crash report saved to|Minecraft has crashed!|Exception in thread "(main|Render thread)"' "$LOG" "$GAME_LOG" 2>/dev/null ||
+                            compgen -G "$RUN_DIR/crash-reports/crash-*.txt" >/dev/null
+                    }
+
+                    if ! [[ "$TEST_TIMEOUT" =~ ^[0-9]+$ ]] || [ "$TEST_TIMEOUT" -le "$STABILITY_SECONDS" ]; then
+                        echo 'ERROR: TEST_TIMEOUT must exceed the 10-second stability check.'
+                        exit 1
+                    fi
+                    # Never accept readiness or crash evidence copied from a previous run.
+                    rm -f "$GAME_LOG"
+                    rm -rf "$RUN_DIR/crash-reports"
+                    : > "$LOG"
+                    mkdir -p "$RUN_DIR/.bobby"
+                    # The CI agent has no physical audio device. Use OpenAL Soft's null backend.
+                    export ALSOFT_DRIVERS=null
+
+                    # Bound the entire launch, including Xvfb setup, and clean up on every exit.
+                    setsid timeout --foreground --kill-after=10s "$TEST_TIMEOUT" xvfb-run -a \\
                     java -Dhmc.gamedir="$RUN_DIR" \\
                         -Dhmc.offline=true \\
                         -Dhmc.offline.username=Kd_Gaming1 \\
@@ -184,70 +220,51 @@ pipeline {
                         -Dhmc.rethrow.launch.exceptions=true \\
                         -jar "$JAR" \\
                         --command "launch fabric-loader-${FABRIC_VERSION}-${MC_VERSION}" \\
-                    > "$LOG" 2>&1 &
+                        > "$LOG" 2>&1 &
                     PID=$!
+                    DEADLINE=$((SECONDS + TEST_TIMEOUT))
+                    READY_AT=-1
 
-                    # Poll the log until the game reports a successful start,
-                    # the process dies, or we hit the timeout ourselves.
-                    STARTED=0
                     while kill -0 "$PID" 2>/dev/null; do
-                        if grep -qE "$SUCCESS_MARKER" "$LOG"; then
-                            STARTED=1
-                            echo "Success marker found: $(grep -oE "$SUCCESS_MARKER" "$LOG" | head -1)"
-                            break
-                        fi
-                        if grep -q "A mod crashed on startup" "$LOG"; then
-                            echo "Detected a mod crash on startup."
-                            kill -- -"$PID" 2>/dev/null
-                            wait "$PID" 2>/dev/null
-                            tail -50 "$LOG"
+                        if crashed; then
+                            echo 'ERROR: Minecraft crash detected during launch.'
+                            diagnostics
                             exit 1
                         fi
-                        sleep 2
+                        if [ "$SECONDS" -ge "$DEADLINE" ]; then
+                            break
+                        fi
+                        # Crash Assistant's title-screen modlist refresh replaces the optional
+                        # ModernFix timing message. It must be logged in this fresh game log,
+                        # and the resulting file must contain exactly one JSON object or array.
+                        # An unchanged checksum is normal when the mod set is unchanged.
+                        if grep -qF "$READY_MARKER" "$GAME_LOG" 2>/dev/null &&
+                           jq -e -s 'length == 1 and (.[0] | type == "object" or type == "array")' "$MODLIST" >/dev/null 2>&1; then
+                            if [ "$READY_AT" -lt 0 ]; then
+                                READY_AT=$SECONDS
+                                echo 'Crash Assistant refreshed valid modlist JSON; checking stability for 10 seconds...'
+                            fi
+                            if [ "$((SECONDS - READY_AT))" -ge "$STABILITY_SECONDS" ]; then
+                                # Check again before allowing build/tag stages to proceed.
+                                if kill -0 "$PID" 2>/dev/null && ! crashed; then
+                                    echo 'Launch smoke test passed: modlist refresh observed and process remained alive for 10 seconds.'
+                                    exit 0
+                                fi
+                            fi
+                        else
+                            READY_AT=-1
+                        fi
+                        sleep 1
                     done
 
-                    if [ "$STARTED" -eq 1 ]; then
-                        # Crash Assistant rewrites modlist.json on the first tick of the
-                        # TitleScreen (auto_update=true, launched by a modpack_creator).
-                        # That happens at roughly the same moment as the success marker,
-                        # so give it up to 30s to actually land on disk before killing.
-                        echo "Waiting for Crash Assistant to refresh modlist.json..."
-                        MODLIST_UPDATED=0
-                        for i in $(seq 1 15); do
-                            CUR_MD5="$(md5sum "$MODLIST" 2>/dev/null | awk '{print $1}' || echo missing)"
-                            if [ "$CUR_MD5" != "$PRE_MD5" ] && [ "$CUR_MD5" != "missing" ]; then
-                                MODLIST_UPDATED=1
-                                echo "modlist.json was refreshed by Crash Assistant."
-                                break
-                            fi
-                            # If the process died on us while waiting, stop looping.
-                            kill -0 "$PID" 2>/dev/null || break
-                            sleep 2
-                        done
-                        if [ "$MODLIST_UPDATED" -eq 0 ]; then
-                            echo "NOTE: modlist.json unchanged after launch (identical content, wrong player name, or write did not happen)."
-                        fi
-
-                        kill -- -"$PID" 2>/dev/null
-                        wait "$PID" 2>/dev/null
-                        echo "Game reached a fully started state - test passed."
-                        exit 0
+                    if kill -0 "$PID" 2>/dev/null; then
+                        echo "ERROR: Launch test exceeded ${TEST_TIMEOUT}s before readiness and stability checks completed."
+                    else
+                        EXIT=0
+                        wait "$PID" || EXIT=$?
+                        echo "ERROR: Minecraft/HeadlessMC exited before checks completed (code $EXIT)."
                     fi
-
-                    wait "$PID" 2>/dev/null
-                    EXIT=$?
-                    echo "Minecraft/HeadlessMC exit code: $EXIT"
-
-                    # Process ended on its own without the marker: figure out why.
-                    if grep -q "A mod crashed on startup" "$LOG"; then
-                        echo "Detected a mod crash on startup."
-                        exit 1
-                    fi
-                    if [ "$EXIT" -eq 124 ]; then
-                        echo "Timed out without the game ever reporting a successful start."
-                        exit 1
-                    fi
-                    echo "Game exited (code $EXIT) before reporting a successful start."
+                    diagnostics
                     exit 1
                 '''
             }

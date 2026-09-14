@@ -2845,6 +2845,30 @@
                     ],
                     "size": 23746932,
                     "date_published": "2026-09-14T07:23:58.371531Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "packcore-5.2.0+26.2.jar",
+                    "mc_versions": [
+                        "26.2"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8877/858/packcore-5.2.0+26.2.jar",
+                    "id": "8877858",
+                    "parent_id": "1375477",
+                    "hashes": {
+                        "sha1": "43aeaa4986d40e63726e2eb6a3d3bb87d5dcaf43",
+                        "md5": "80a09fb9a53f5c66c60b74344f397588"
+                    },
+                    "required_dependencies": [
+                        "933200",
+                        "306612"
+                    ],
+                    "size": 23746932,
+                    "date_published": "2026-09-14T07:23:54.347Z"
                 }
             ]
         },
