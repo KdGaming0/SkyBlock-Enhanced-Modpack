@@ -1,7 +1,8 @@
 {
     "target": "multiplatform",
     "mc_versions": [
-        "26.2"
+        "26.2",
+        "26.1.2"
     ],
     "loaders": {
         "fabric": "0.19.5"
@@ -52,6 +53,9 @@
                     "type": "curseforge",
                     "file_name": "asynclogger-2.2.2+26.1.2-fabric.jar",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
                         "26.2"
                     ],
                     "loaders": [
@@ -90,7 +94,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "AsyncParticles-26.2.2.8+26.2.jar",
+                    "file_name": "AsyncParticles-26.2.2.9+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -99,20 +103,20 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/c3onkd5k/versions/O3SGLe1O/AsyncParticles-26.2.2.8+26.2.jar",
-                    "id": "O3SGLe1O",
+                    "url": "https://cdn.modrinth.com/data/c3onkd5k/versions/HHsV3CjV/AsyncParticles-26.2.2.9+26.2.jar",
+                    "id": "HHsV3CjV",
                     "parent_id": "c3onkd5k",
                     "hashes": {
-                        "sha512": "1accaa2c8492e1165b57179a0905723cd3188f03d1c01410919c741fcbebfc842f34e75aac43bf9874a85cf1c3931af0df6f50213754dae5bdddd7e67e9cc379",
-                        "sha1": "975fdf63ac4c9143e84888c468174e036af66d3d"
+                        "sha512": "7cef62d789e653a8f3ed99b4a70c60e38a44904b47e3afd55cc51d802538dcec3ebd1d16c662ef9698cfe2673c7055dcb0c8625ebe67571dcfe650e8e6530075",
+                        "sha1": "90658eddd7aaa3fbdbfdcdb18aabcb5452aaaa05"
                     },
                     "required_dependencies": [],
-                    "size": 665655,
-                    "date_published": "2026-08-29T11:07:15.957522Z"
+                    "size": 664699,
+                    "date_published": "2026-09-14T13:30:51.563972Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "AsyncParticles-26.2.2.8+26.2.jar",
+                    "file_name": "AsyncParticles-26.2.2.9+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -121,16 +125,16 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8761/34/AsyncParticles-26.2.2.8+26.2.jar",
-                    "id": "8761034",
+                    "url": "https://edge.forgecdn.net/files/8879/597/AsyncParticles-26.2.2.9+26.2.jar",
+                    "id": "8879597",
                     "parent_id": "1215753",
                     "hashes": {
-                        "sha1": "975fdf63ac4c9143e84888c468174e036af66d3d",
-                        "md5": "d552e5e5c4692e7737537a354040cadc"
+                        "sha1": "90658eddd7aaa3fbdbfdcdb18aabcb5452aaaa05",
+                        "md5": "9d2ed9eafc0c95a859ae942510d0992b"
                     },
                     "required_dependencies": [],
-                    "size": 665655,
-                    "date_published": "2026-08-29T12:22:57.700Z"
+                    "size": 664699,
+                    "date_published": "2026-09-14T13:41:13.807Z"
                 }
             ]
         },
@@ -512,7 +516,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ComplementaryUnbound_r5.9.1.zip",
+                    "file_name": "ComplementaryUnbound_r5.9.3.zip",
                     "mc_versions": [
                         "1.7.10",
                         "1.8",
@@ -595,34 +599,37 @@
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/UhZjVKiD/ComplementaryUnbound_r5.9.1.zip",
-                    "id": "UhZjVKiD",
+                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/B1kyfoUZ/ComplementaryUnbound_r5.9.3.zip",
+                    "id": "B1kyfoUZ",
                     "parent_id": "R6NEzAwj",
                     "hashes": {
-                        "sha512": "fe7ee33e0fcf69ea2922bdc80c514faac8ef0875112cf0efeb4d8fbd03c177f2d9a48179de6ca6e055bf5dc8c64d1ca1c7d0987ed763d04842df3bda3a29417f",
-                        "sha1": "3a600568ea318b4886f59ab27a098abdfd49850b"
+                        "sha512": "a085d1d8cda67cd17a2b414eeba48bbd809da069f269bab46246235ec8fe714a275013c70d0504527b0987d810deddddba4564332414ab3b3bd7435932ff808c",
+                        "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67"
                     },
                     "required_dependencies": [],
-                    "size": 552949,
-                    "date_published": "2026-09-11T09:57:16.897686Z"
+                    "size": 553400,
+                    "date_published": "2026-09-15T06:36:17.528689Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ComplementaryUnbound_r5.9.1.zip",
+                    "file_name": "ComplementaryUnbound_r5.9.3.zip",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
                         "26.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8856/646/ComplementaryUnbound_r5.9.1.zip",
-                    "id": "8856646",
+                    "url": "https://edge.forgecdn.net/files/8884/656/ComplementaryUnbound_r5.9.3.zip",
+                    "id": "8884656",
                     "parent_id": "385587",
                     "hashes": {
-                        "sha1": "3a600568ea318b4886f59ab27a098abdfd49850b",
-                        "md5": "af14f654ae0f496d0aaa2deac0faff65"
+                        "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67",
+                        "md5": "e9c0e174f43125d45b192ef684f5d4d4"
                     },
                     "required_dependencies": [],
-                    "size": 552949,
-                    "date_published": "2026-09-11T09:59:12.457Z"
+                    "size": 553400,
+                    "date_published": "2026-09-15T06:41:37.753Z"
                 }
             ]
         },
@@ -665,8 +672,8 @@
                         "sha1": "23da84738f49e75b6318a75eb98fe18c284798ff"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "fuuu3xnx"
+                        "fuuu3xnx",
+                        "P7dR8mSH"
                     ],
                     "size": 85784,
                     "date_published": "2026-06-17T20:50:03.989624Z"
@@ -1088,8 +1095,8 @@
                         "sha1": "ad91f6d9cdee425b521b343f27e586f52a3bd46d"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "AOEDs9Al"
+                        "AOEDs9Al",
+                        "P7dR8mSH"
                     ],
                     "size": 218123,
                     "date_published": "2026-08-02T19:05:12.341915Z"
@@ -1338,6 +1345,9 @@
                     "type": "curseforge",
                     "file_name": "fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
                         "26.2"
                     ],
                     "loaders": [
@@ -1484,7 +1494,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Feesh-1.13.0+26.2-fabric.jar",
+                    "file_name": "Feesh-1.14.0+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1492,19 +1502,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/1ANI0hTo/Feesh-1.13.0+26.2-fabric.jar",
-                    "id": "1ANI0hTo",
+                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/fXOT51fP/Feesh-1.14.0+26.2-fabric.jar",
+                    "id": "fXOT51fP",
                     "parent_id": "QCpogurE",
                     "hashes": {
-                        "sha512": "3d540db0f7a3f99c6bcdcd85d12e7c2d790c9d32a5e7e88866eff72181f0e601219e316cd7fcce407cf7ad18bc23935d26295905256b3485db6e1f42e404a9fd",
-                        "sha1": "1e84140eaf29b8d2e090e46182b35db2a142d298"
+                        "sha512": "41285700ddb6307dc0149a531a55c3a1ac51a502b9a9a4e960253e4555caee0ac70483e173ac1d4d29881df99fc234de59314bceeb98276dfe54bd1a6c99ad0e",
+                        "sha1": "b1372cc881c37075b10a94063506e202abb6dcdb"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 2684225,
-                    "date_published": "2026-08-24T14:58:53.399444Z"
+                    "size": 2766844,
+                    "date_published": "2026-09-14T17:39:09.517392Z"
                 }
             ]
         },
@@ -1553,6 +1563,9 @@
                     "type": "curseforge",
                     "file_name": "ferritecore-9.0.0-fabric.jar",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
                         "26.2"
                     ],
                     "loaders": [
@@ -1693,7 +1706,34 @@
             "id": {
                 "modrinth": "p6lVqTvA"
             },
-            "files": []
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Hypixel+ 0.25.0c for 26.1.cats.zip",
+                    "mc_versions": [
+                        "1.21.11",
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "minecraft"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/p6lVqTvA/versions/BRYVw2px/Hypixel+ 0.25.0c for 26.1.cats.zip",
+                    "id": "BRYVw2px",
+                    "parent_id": "p6lVqTvA",
+                    "hashes": {
+                        "sha512": "62e8e71825c0ff5d36cc21f3c27247799cf46b35c6ab59a51f59972d1fec8d9ca7dc839c3f9e0b305bd472ba3326f163aee571504f0d4f01eaecb827d72c1f73",
+                        "sha1": "b68f928a99c253651338d5c5a99fe51a1ad77be0"
+                    },
+                    "required_dependencies": [
+                        "fc4wBpRx"
+                    ],
+                    "size": 3212750,
+                    "date_published": "2026-05-28T16:55:21.029653Z"
+                }
+            ]
         },
         {
             "pakku_id": "Yq6hC5hQLdstBZh0",
@@ -2198,6 +2238,9 @@
                     "type": "curseforge",
                     "file_name": "MakeUp-UltraFast-9.5e.zip",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
                         "26.2"
                     ],
                     "release_type": "release",
@@ -2394,8 +2437,8 @@
                         "sha1": "b098652a3a6ecafd00d384ee2139220365c1e55b"
                     },
                     "required_dependencies": [
-                        "1eAoo2KR",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "1eAoo2KR"
                     ],
                     "size": 19836574,
                     "date_published": "2026-08-12T08:00:29.711079Z"
@@ -2580,6 +2623,9 @@
                     "type": "curseforge",
                     "file_name": "netprodis-2.0.0+26.1.jar",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
                         "26.2"
                     ],
                     "loaders": [
@@ -2732,6 +2778,50 @@
                     ],
                     "size": 16002,
                     "date_published": "2026-08-22T14:36:10.733Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "d1KHOnq1s7VQdR3f",
+            "pakku_links": [
+                "LwqrzSsyxBuQ5jrL",
+                "u21GioexhaOLM8HV"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "odin"
+            },
+            "name": {
+                "modrinth": "Odin - Hypixel Skyblock"
+            },
+            "id": {
+                "modrinth": "jJJLywXp"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Odin-0.3.4.jar",
+                    "mc_versions": [
+                        "26.2"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/jJJLywXp/versions/s14NefT2/Odin-0.3.4.jar",
+                    "id": "s14NefT2",
+                    "parent_id": "jJJLywXp",
+                    "hashes": {
+                        "sha512": "ad213c5811166b24b0425b0a754fc96e5e4cd1ff24d1c8f99a889ca135d806ea331daa367aea2d237e192aeb1490610d7ba7beb97db008f91a22bf8ed6b7412f",
+                        "sha1": "a45c41995a57e7bd80aca21b862b325c927ec084"
+                    },
+                    "required_dependencies": [
+                        "P7dR8mSH",
+                        "Ha28R6CL"
+                    ],
+                    "size": 3813190,
+                    "date_published": "2026-09-14T17:09:58.337431Z"
                 }
             ]
         },
@@ -3048,6 +3138,9 @@
                     "type": "curseforge",
                     "file_name": "rpc-1.2.7+26.1-26.2.jar",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
                         "26.2"
                     ],
                     "loaders": [
@@ -3315,6 +3408,33 @@
                     "required_dependencies": [],
                     "size": 100537,
                     "date_published": "2026-06-16T16:58:54.341890Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Stfu-2.9.1-26.1.jar",
+                    "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8079/62/Stfu-2.9.1-26.1.jar",
+                    "id": "8079062",
+                    "parent_id": "1111802",
+                    "hashes": {
+                        "sha1": "895fa9df9ac03692c42aed430e4059745395ae30",
+                        "md5": "f8097d1a0df714b645b794dbcb50e794"
+                    },
+                    "required_dependencies": [
+                        "667299",
+                        "306612"
+                    ],
+                    "size": 100283,
+                    "date_published": "2026-05-12T18:01:39.530Z"
                 }
             ]
         },
@@ -3454,7 +3574,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblock_enhancements-1.2.0+26.2.jar",
+                    "file_name": "skyblock_enhancements-1.2.1+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3462,23 +3582,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/iGdDhzsX/skyblock_enhancements-1.2.0+26.2.jar",
-                    "id": "iGdDhzsX",
+                    "url": "https://cdn.modrinth.com/data/LpXuY1YR/versions/ppxYzCbw/skyblock_enhancements-1.2.1+26.2.jar",
+                    "id": "ppxYzCbw",
                     "parent_id": "LpXuY1YR",
                     "hashes": {
-                        "sha512": "f6a59e36acf6ae519b63396a98f266e917b7dbe5741591d114a03bc6f086d29a74ec067116d366edcaa063d5f3538e0d8d3ac3692f44c8d30b3775f69a86fec9",
-                        "sha1": "b398560448cb78ec593e0b806846969dcb4d02eb"
+                        "sha512": "10d17a0f7596063efbc74e1f9e43120f6fee4a101974f5763d60435f44a08f848703cac86aab3557e668a0b0cf7bf1111e547306778cb430b6676483234ee37a",
+                        "sha1": "421157c87ebb9b8307705e3c077781ce2f045ae2"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 1095712,
-                    "date_published": "2026-09-12T14:01:39.964404Z"
+                    "size": 1098166,
+                    "date_published": "2026-09-14T16:29:27.411035Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblock_enhancements-1.2.0+26.2.jar",
+                    "file_name": "skyblock_enhancements-1.2.1+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3486,19 +3606,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8864/960/skyblock_enhancements-1.2.0+26.2.jar",
-                    "id": "8864960",
+                    "url": "https://edge.forgecdn.net/files/8880/842/skyblock_enhancements-1.2.1+26.2.jar",
+                    "id": "8880842",
                     "parent_id": "1454701",
                     "hashes": {
-                        "sha1": "b398560448cb78ec593e0b806846969dcb4d02eb",
-                        "md5": "ad5158f95cf542b48631231ca6d9c580"
+                        "sha1": "421157c87ebb9b8307705e3c077781ce2f045ae2",
+                        "md5": "9a7a899b185f3fd959fac984e9cdafbe"
                     },
                     "required_dependencies": [
-                        "306612",
-                        "933200"
+                        "933200",
+                        "306612"
                     ],
-                    "size": 1095712,
-                    "date_published": "2026-09-12T14:01:39.883Z"
+                    "size": 1098166,
+                    "date_published": "2026-09-14T16:29:26.483Z"
                 }
             ]
         },
@@ -3720,8 +3840,8 @@
                         "sha1": "5f2fb2f420864ed4db74974607235ef184f86b0a"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
                     "size": 212426,
                     "date_published": "2026-08-31T07:33:13.324910Z"
@@ -3815,7 +3935,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "skyblocker-6.10.2+26.2.jar",
+                    "file_name": "skyblocker-6.10.3+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3823,23 +3943,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/WYJ6NdRL/skyblocker-6.10.2+26.2.jar",
-                    "id": "WYJ6NdRL",
+                    "url": "https://cdn.modrinth.com/data/y6DuFGwJ/versions/Fso2KMdt/skyblocker-6.10.3+26.2.jar",
+                    "id": "Fso2KMdt",
                     "parent_id": "y6DuFGwJ",
                     "hashes": {
-                        "sha512": "65cff0870fe07d4650a99b4795143e20c6e5d6c7497cb330ca39c318faddb534c2d03915b085204a87d2e9142473aa68986f69b355ece9bde7a76952c6d07389",
-                        "sha1": "360040c1b4c4f86ab8dee5c75338a1e76b8a2993"
+                        "sha512": "61dd2f9b6d00bf60d72bc2e60fd6bfc8a6c4cb996fdf0bd0bb6bfa460e02be0e8f30f7b7864f8d2a2a30ef1ce5e51f6fbd32191de3b7f07758bafc622e0a05c8",
+                        "sha1": "20eb6b584f3f10a907e2dc1758b74d0dbbb7deed"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 19730564,
-                    "date_published": "2026-09-02T18:57:48.273003Z"
+                    "size": 19980029,
+                    "date_published": "2026-09-15T01:21:53.628429Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyblocker-6.10.2+26.2.jar",
+                    "file_name": "skyblocker-6.10.3+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3847,19 +3967,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8794/724/skyblocker-6.10.2+26.2.jar",
-                    "id": "8794724",
+                    "url": "https://edge.forgecdn.net/files/8883/520/skyblocker-6.10.3+26.2.jar",
+                    "id": "8883520",
                     "parent_id": "936169",
                     "hashes": {
-                        "sha1": "360040c1b4c4f86ab8dee5c75338a1e76b8a2993",
-                        "md5": "fd7cf47eb971ace1e5cbe51c8633decf"
+                        "sha1": "20eb6b584f3f10a907e2dc1758b74d0dbbb7deed",
+                        "md5": "503dbf145b4e141a5e570df4d0b6bc20"
                     },
                     "required_dependencies": [
-                        "306612",
-                        "308769"
+                        "308769",
+                        "306612"
                     ],
-                    "size": 19730564,
-                    "date_published": "2026-09-02T18:57:47.063Z"
+                    "size": 19980029,
+                    "date_published": "2026-09-15T01:21:52.403Z"
                 }
             ]
         },
@@ -4043,6 +4163,9 @@
                     "type": "curseforge",
                     "file_name": "sodium-shadowy-path-blocks-fabric-7.0.0.jar",
                     "mc_versions": [
+                        "26.1",
+                        "26.1.1",
+                        "26.1.2",
                         "26.2"
                     ],
                     "loaders": [
@@ -4383,9 +4506,9 @@
                         "sha1": "3303552e44587bb10c1d1c91b038dc7ace0fa376"
                     },
                     "required_dependencies": [
-                        "1eAoo2KR",
+                        "Ha28R6CL",
                         "P7dR8mSH",
-                        "Ha28R6CL"
+                        "1eAoo2KR"
                     ],
                     "size": 562176,
                     "date_published": "2026-06-16T17:40:17.690275Z"
