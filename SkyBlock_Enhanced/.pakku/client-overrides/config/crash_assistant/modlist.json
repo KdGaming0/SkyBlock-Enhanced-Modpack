@@ -13,13 +13,13 @@
     "curseForgeHash": 1310401947,
     "modrinthHash": "d1affbf48c50f60ae59e6b66fb78b1e6427bfddf"
   },
-  "AsyncParticles-26.2.2.8+26.2.jar": {
-    "jarName": "AsyncParticles-26.2.2.8+26.2.jar",
+  "AsyncParticles-26.2.2.9+26.2.jar": {
+    "jarName": "AsyncParticles-26.2.2.9+26.2.jar",
     "modId": "asyncparticles",
     "name": "AsyncParticles",
-    "version": "26.2.2.8",
-    "curseForgeHash": 2751728520,
-    "modrinthHash": "975fdf63ac4c9143e84888c468174e036af66d3d"
+    "version": "26.2.2.9",
+    "curseForgeHash": 2178976733,
+    "modrinthHash": "90658eddd7aaa3fbdbfdcdb18aabcb5452aaaa05"
   },
   "authme-fabric-9.3.0+26.2.jar": {
     "jarName": "authme-fabric-9.3.0+26.2.jar",
@@ -173,13 +173,13 @@
     "curseForgeHash": 2658979824,
     "modrinthHash": "a9aab1298afcb84d9dcc080cdfc766158e63048b"
   },
-  "Feesh-1.13.0+26.2-fabric.jar": {
-    "jarName": "Feesh-1.13.0+26.2-fabric.jar",
+  "Feesh-1.14.0+26.2-fabric.jar": {
+    "jarName": "Feesh-1.14.0+26.2-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.13.0",
-    "curseForgeHash": 2353098715,
-    "modrinthHash": "1e84140eaf29b8d2e090e46182b35db2a142d298"
+    "version": "1.14.0",
+    "curseForgeHash": 1641655592,
+    "modrinthHash": "b1372cc881c37075b10a94063506e202abb6dcdb"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -325,6 +325,14 @@
     "curseForgeHash": 2905721028,
     "modrinthHash": "b942ba42bd4cb8da8a4387773fb93841ca2eaaf4"
   },
+  "Odin-0.3.4.jar": {
+    "jarName": "Odin-0.3.4.jar",
+    "modId": "odin",
+    "name": "Odin",
+    "version": "0.3.4",
+    "curseForgeHash": 48519896,
+    "modrinthHash": "a45c41995a57e7bd80aca21b862b325c927ec084"
+  },
   "owo-lib-0.13.1+26.2.jar": {
     "jarName": "owo-lib-0.13.1+26.2.jar",
     "modId": "owo",
@@ -421,21 +429,21 @@
     "curseForgeHash": 2882313942,
     "modrinthHash": "7c8a66d009051bab26f7489e1edef8b3c64f7b0e"
   },
-  "skyblock_enhancements-1.2.0+26.2.jar": {
-    "jarName": "skyblock_enhancements-1.2.0+26.2.jar",
+  "skyblock_enhancements-1.2.1+26.2.jar": {
+    "jarName": "skyblock_enhancements-1.2.1+26.2.jar",
     "modId": "skyblock_enhancements",
     "name": "SkyBlock Enhancements",
-    "version": "1.2.0",
-    "curseForgeHash": 2508353138,
-    "modrinthHash": "b398560448cb78ec593e0b806846969dcb4d02eb"
+    "version": "1.2.1",
+    "curseForgeHash": 738581532,
+    "modrinthHash": "421157c87ebb9b8307705e3c077781ce2f045ae2"
   },
-  "skyblocker-6.10.2+26.2.jar": {
-    "jarName": "skyblocker-6.10.2+26.2.jar",
+  "skyblocker-6.10.3+26.2.jar": {
+    "jarName": "skyblocker-6.10.3+26.2.jar",
     "modId": "skyblocker",
     "name": "Skyblocker",
-    "version": "6.10.2+26.2",
-    "curseForgeHash": 2477270365,
-    "modrinthHash": "360040c1b4c4f86ab8dee5c75338a1e76b8a2993"
+    "version": "6.10.3+26.2",
+    "curseForgeHash": 3823845113,
+    "modrinthHash": "20eb6b584f3f10a907e2dc1758b74d0dbbb7deed"
   },
   "SkyBlockPv-1.8.9-26.2.jar": {
     "jarName": "SkyBlockPv-1.8.9-26.2.jar",
@@ -544,6 +552,9 @@
   },
   "FurSky Reborn.cats.zip (resourcepack)": {
     "jarName": "FurSky Reborn.cats.zip (resourcepack)"
+  },
+  "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)": {
+    "jarName": "Hypixel+ 0.25.0c for 26.1.cats.zip (resourcepack)"
   },
   "Skyblock Dark UI 1.18 for 26.1.2+.zip (resourcepack)": {
     "jarName": "Skyblock Dark UI 1.18 for 26.1.2+.zip (resourcepack)"
