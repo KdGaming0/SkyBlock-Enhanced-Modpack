@@ -141,13 +141,13 @@
     "curseForgeHash": 2137936017,
     "modrinthHash": "ad91f6d9cdee425b521b343f27e586f52a3bd46d"
   },
-  "entityculling-fabric-1.11.1-mc26.2.jar": {
-    "jarName": "entityculling-fabric-1.11.1-mc26.2.jar",
+  "entityculling-fabric-1.11.2-mc26.2.jar": {
+    "jarName": "entityculling-fabric-1.11.2-mc26.2.jar",
     "modId": "entityculling",
     "name": "EntityCulling",
-    "version": "1.11.1",
-    "curseForgeHash": 694879389,
-    "modrinthHash": "930581458b4d4a99b75ca296419b3e674eaa70f7"
+    "version": "1.11.2",
+    "curseForgeHash": 3468975246,
+    "modrinthHash": "8a379bf40ab7125756afe7bbdf9501324bc37216"
   },
   "fabric-api-0.161.0+26.2.jar": {
     "jarName": "fabric-api-0.161.0+26.2.jar",
@@ -197,13 +197,13 @@
     "curseForgeHash": 3465540323,
     "modrinthHash": "19629eb45c00005a8f71c831df4e5d59b4dda54d"
   },
-  "Gnetum-4.6.0+26.2-fabric.jar": {
-    "jarName": "Gnetum-4.6.0+26.2-fabric.jar",
+  "Gnetum-4.6.1+26.2-fabric.jar": {
+    "jarName": "Gnetum-4.6.1+26.2-fabric.jar",
     "modId": "gnetum",
     "name": "Gnetum",
-    "version": "4.6.0+26.2-fabric",
-    "curseForgeHash": 3196044934,
-    "modrinthHash": "7593d01ebd616c6b0c12583c5f3b44d39946dd97"
+    "version": "4.6.1+26.2-fabric",
+    "curseForgeHash": 3997044634,
+    "modrinthHash": "5332b6d5d345bf08303650610eeabc988586fb98"
   },
   "ImmediatelyFast-Fabric-1.16.5+26.2.jar": {
     "jarName": "ImmediatelyFast-Fabric-1.16.5+26.2.jar",
