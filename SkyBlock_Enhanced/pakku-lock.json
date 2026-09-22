@@ -1155,7 +1155,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "entityculling-fabric-1.11.1-mc26.2.jar",
+                    "file_name": "entityculling-fabric-1.11.2-mc26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1163,22 +1163,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/5V6jfXWM/entityculling-fabric-1.11.1-mc26.2.jar",
-                    "id": "5V6jfXWM",
+                    "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/RWjup6Jf/entityculling-fabric-1.11.2-mc26.2.jar",
+                    "id": "RWjup6Jf",
                     "parent_id": "NNAgCjsB",
                     "hashes": {
-                        "sha512": "9c8c249f332d65ac4cafd71dfb07aed2779b3a47352e170be43daa9641506df01ab76d14a0f24af6c3f6e1823910900d1ca5c98f93bc5e6c73ce931c609da832",
-                        "sha1": "930581458b4d4a99b75ca296419b3e674eaa70f7"
+                        "sha512": "4562dd16ce9213959c41fe58a3dd73a95c9ab9095a0fc7fbaa752b6ce3433fbef5063e7f5f2634b1ff34499261f48d31e878306dac8701425af1d50e726e53fd",
+                        "sha1": "8a379bf40ab7125756afe7bbdf9501324bc37216"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 1508262,
-                    "date_published": "2026-09-20T09:37:31.662255Z"
+                    "size": 1508311,
+                    "date_published": "2026-09-21T19:47:05.814795Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "entityculling-fabric-1.11.1-mc26.2.jar",
+                    "file_name": "entityculling-fabric-1.11.2-mc26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1186,18 +1186,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8929/289/entityculling-fabric-1.11.1-mc26.2.jar",
-                    "id": "8929289",
+                    "url": "https://edge.forgecdn.net/files/8942/322/entityculling-fabric-1.11.2-mc26.2.jar",
+                    "id": "8942322",
                     "parent_id": "448233",
                     "hashes": {
-                        "sha1": "930581458b4d4a99b75ca296419b3e674eaa70f7",
-                        "md5": "b8a2185b3316ccfda5e52d7c6b0bd460"
+                        "sha1": "8a379bf40ab7125756afe7bbdf9501324bc37216",
+                        "md5": "794576f11f641eba5da3c4afc6155698"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 1508262,
-                    "date_published": "2026-09-20T09:37:29.970Z"
+                    "size": 1508311,
+                    "date_published": "2026-09-21T19:47:03.870Z"
                 }
             ]
         },
@@ -1654,7 +1654,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Gnetum-4.6.0+26.2-fabric.jar",
+                    "file_name": "Gnetum-4.6.1+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1662,22 +1662,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/7MoE34WK/versions/khn6MPu5/Gnetum-4.6.0+26.2-fabric.jar",
-                    "id": "khn6MPu5",
+                    "url": "https://cdn.modrinth.com/data/7MoE34WK/versions/4a6yndrX/Gnetum-4.6.1+26.2-fabric.jar",
+                    "id": "4a6yndrX",
                     "parent_id": "7MoE34WK",
                     "hashes": {
-                        "sha512": "91f997912bc1c68cd5eb523c173f893ddf5f8fce0beb80f751cab6018bc0c1d6300985858713bb4be064e5ad970a0077fad6dd0365bc62213d152bde288bdc42",
-                        "sha1": "7593d01ebd616c6b0c12583c5f3b44d39946dd97"
+                        "sha512": "b8c1f2f470274b3c3023b7a7fe94e17ad0faecec9a08fe8e101668a01d77f6a955d16e88fd0dfa5f19c09db0c2d7f8c37d064a054ffde3480170d69818003637",
+                        "sha1": "5332b6d5d345bf08303650610eeabc988586fb98"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 96939,
-                    "date_published": "2026-09-21T12:28:00.490722Z"
+                    "size": 96955,
+                    "date_published": "2026-09-22T08:52:23.428831Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "Gnetum-4.6.0+26.2-fabric.jar",
+                    "file_name": "Gnetum-4.6.1+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1685,18 +1685,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8939/325/Gnetum-4.6.0+26.2-fabric.jar",
-                    "id": "8939325",
+                    "url": "https://edge.forgecdn.net/files/8945/836/Gnetum-4.6.1+26.2-fabric.jar",
+                    "id": "8945836",
                     "parent_id": "1220460",
                     "hashes": {
-                        "sha1": "7593d01ebd616c6b0c12583c5f3b44d39946dd97",
-                        "md5": "1622d21fa08b4f7bb0d1a1bb225e2a74"
+                        "sha1": "5332b6d5d345bf08303650610eeabc988586fb98",
+                        "md5": "6c9dffa1314f7a83280fb20c67b060ca"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 96939,
-                    "date_published": "2026-09-21T12:28:00.207Z"
+                    "size": 96955,
+                    "date_published": "2026-09-22T08:52:24.200Z"
                 }
             ]
         },
