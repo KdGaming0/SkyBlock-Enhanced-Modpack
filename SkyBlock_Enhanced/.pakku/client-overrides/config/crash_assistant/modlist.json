@@ -109,13 +109,13 @@
     "curseForgeHash": 2833965504,
     "modrinthHash": "9420614dd8f95a9ca1e1b2371f342e92855bb354"
   },
-  "debugify-26.2.0.0.jar": {
-    "jarName": "debugify-26.2.0.0.jar",
+  "debugify-26.2.0.1.jar": {
+    "jarName": "debugify-26.2.0.1.jar",
     "modId": "debugify",
     "name": "Debugify",
-    "version": "26.2.0.0",
-    "curseForgeHash": 1997604234,
-    "modrinthHash": "a1b34d3b6f069569df9ad99b1e40eb765f0baa06"
+    "version": "26.2.0.1",
+    "curseForgeHash": 1850945169,
+    "modrinthHash": "6c21e7639c4f6c1a9587dd82f31ff2811289ef87"
   },
   "enhanced_chat-0.4.0+26.2.jar": {
     "jarName": "enhanced_chat-0.4.0+26.2.jar",
@@ -261,13 +261,13 @@
     "curseForgeHash": 3336515688,
     "modrinthHash": "a535ca7fd6aadbf32a93f6c3b95081fd7d2b8411"
   },
-  "modernfix-5.27.19-build.1.jar": {
-    "jarName": "modernfix-5.27.19-build.1.jar",
+  "modernfix-5.27.19-build.2.jar": {
+    "jarName": "modernfix-5.27.19-build.2.jar",
     "modId": "modernfix",
     "name": "ModernFix",
-    "version": "5.27.19-build.1",
-    "curseForgeHash": 905248254,
-    "modrinthHash": "77b073d56b7be0d11cf915bd0e764463ee22dcea"
+    "version": "5.27.19-build.2",
+    "curseForgeHash": 1823221177,
+    "modrinthHash": "a14d2ba0fd0d56d12d48bb9f1c44fd3d345bf5e2"
   },
   "modernwarpmenu-0.2.4+26.2.jar": {
     "jarName": "modernwarpmenu-0.2.4+26.2.jar",
@@ -277,13 +277,13 @@
     "curseForgeHash": 1282449355,
     "modrinthHash": "b098652a3a6ecafd00d384ee2139220365c1e55b"
   },
-  "modmenu-20.0.2.jar": {
-    "jarName": "modmenu-20.0.2.jar",
+  "modmenu-20.0.3.jar": {
+    "jarName": "modmenu-20.0.3.jar",
     "modId": "modmenu",
     "name": "Mod Menu",
-    "version": "20.0.2",
-    "curseForgeHash": 2677430032,
-    "modrinthHash": "4e02b8bfb7f4eb693f22b611b02bc2b7385614a7"
+    "version": "20.0.3",
+    "curseForgeHash": 1494587593,
+    "modrinthHash": "9fc381627b471c18d67156e846228f51ff2ea5b4"
   },
   "moreculling-fabric-26.2-1.8.1.jar": {
     "jarName": "moreculling-fabric-26.2-1.8.1.jar",
@@ -317,13 +317,13 @@
     "curseForgeHash": 337501038,
     "modrinthHash": "1a0feff2a71be42406136fa5852c5fa8896601d0"
   },
-  "obe+26.2-1.1.46.jar": {
-    "jarName": "obe+26.2-1.1.46.jar",
+  "obe+26.2-1.1.49.jar": {
+    "jarName": "obe+26.2-1.1.49.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.1.46",
-    "curseForgeHash": 2905721028,
-    "modrinthHash": "b942ba42bd4cb8da8a4387773fb93841ca2eaaf4"
+    "version": "1.1.49",
+    "curseForgeHash": 2226548642,
+    "modrinthHash": "052b49709aeed4c053cc7a6022f3e603bbf03bef"
   },
   "Odin-0.3.4.jar": {
     "jarName": "Odin-0.3.4.jar",
@@ -341,13 +341,13 @@
     "curseForgeHash": 3067371349,
     "modrinthHash": "3111139453af67f14cb32e572bde7ae93126477b"
   },
-  "packcore-5.2.0+26.2.jar": {
-    "jarName": "packcore-5.2.0+26.2.jar",
+  "packcore-5.2.2+26.2.jar": {
+    "jarName": "packcore-5.2.2+26.2.jar",
     "modId": "packcore",
     "name": "Pack Core",
-    "version": "5.2.0",
-    "curseForgeHash": 2783814351,
-    "modrinthHash": "43aeaa4986d40e63726e2eb6a3d3bb87d5dcaf43"
+    "version": "5.2.2",
+    "curseForgeHash": 1638991316,
+    "modrinthHash": "faddf3b3c16d70aa4f62fb59c26ad04e1cf27f25"
   },
   "PacketFixer-fabric-3.3.6.jar": {
     "jarName": "PacketFixer-fabric-3.3.6.jar",
@@ -373,13 +373,13 @@
     "curseForgeHash": 600247438,
     "modrinthHash": "99b57ccc1d4323c4ef71887828dac25ce4ce2103"
   },
-  "reliable-recipe-viewer-8.10.5+26.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.10.5+26.2-fabric.jar",
+  "reliable-recipe-viewer-8.10.9+26.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.10.9+26.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.10.5+26.2",
-    "curseForgeHash": 3929854347,
-    "modrinthHash": "3682603d9a4cfc18990a0a4bf3a33916952ede72"
+    "version": "8.10.9+26.2",
+    "curseForgeHash": 2522494544,
+    "modrinthHash": "401bf09014203b141bf54930ea99ce3dccd29543"
   },
   "rpc-1.2.7+26.1-26.2.jar": {
     "jarName": "rpc-1.2.7+26.1-26.2.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 2390765999,
     "modrinthHash": "ea9b7a4db88cb814c2ca8ef418e71d2359a4ae40"
   },
-  "SkyBlockPv-1.8.9-26.2.jar": {
-    "jarName": "SkyBlockPv-1.8.9-26.2.jar",
+  "SkyBlockPv-1.9.1-26.2.jar": {
+    "jarName": "SkyBlockPv-1.9.1-26.2.jar",
     "modId": "skyblockpv",
     "name": "SkyBlock Profile Viewer",
-    "version": "1.8.9",
-    "curseForgeHash": 2500039261,
-    "modrinthHash": "bd3e363f693bada294f2751de07e5e615072ffee"
+    "version": "1.9.1",
+    "curseForgeHash": 2195476448,
+    "modrinthHash": "85ac084d2b4832cf0cf407a535ee9e2496237e8b"
   },
   "SkyHanni-9.1.0-mc26.2.jar": {
     "jarName": "SkyHanni-9.1.0-mc26.2.jar",
@@ -469,13 +469,13 @@
     "curseForgeHash": 2015792893,
     "modrinthHash": "5d44b75fa677b2c56a58e5d2c3351e19d464dded"
   },
-  "skyrecipes-0.5.11+26.2.jar": {
-    "jarName": "skyrecipes-0.5.11+26.2.jar",
+  "skyrecipes-0.5.12+26.2.jar": {
+    "jarName": "skyrecipes-0.5.12+26.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.5.11",
-    "curseForgeHash": 4102060821,
-    "modrinthHash": "e2a5157f3f060baefaaa26c4b825cfeeda399b33"
+    "version": "0.5.12",
+    "curseForgeHash": 676754288,
+    "modrinthHash": "f584aec1c191d5d42acb12a93e88b905b4c04d03"
   },
   "sodium-extra-fabric-0.9.4+mc26.2.jar": {
     "jarName": "sodium-extra-fabric-0.9.4+mc26.2.jar",
@@ -501,13 +501,13 @@
     "curseForgeHash": 3897544311,
     "modrinthHash": "1399156a64c7bfbc38fa21af935495cfb74923c3"
   },
-  "stella-1.0.6+26.2-b4.jar": {
-    "jarName": "stella-1.0.6+26.2-b4.jar",
+  "stella-1.0.6+26.2.jar": {
+    "jarName": "stella-1.0.6+26.2.jar",
     "modId": "stella",
     "name": "Stella",
     "version": "1.0.6",
-    "curseForgeHash": 3664154973,
-    "modrinthHash": "0892b5014f2a69ba7fac6185bda1cfd988202124"
+    "curseForgeHash": 1475243450,
+    "modrinthHash": "f6b396b95e6a488f61dc5e766574f38159cfe6c4"
   },
   "Stfu-2.9.1-26.2.jar": {
     "jarName": "Stfu-2.9.1-26.2.jar",
@@ -533,13 +533,13 @@
     "curseForgeHash": 1859289653,
     "modrinthHash": "79c8ee7f8a0e775190dfff59be1e505e2f432998"
   },
-  "zoomify-2.16.1+26.2.jar": {
-    "jarName": "zoomify-2.16.1+26.2.jar",
+  "zoomify-2.16.3+26.2.jar": {
+    "jarName": "zoomify-2.16.3+26.2.jar",
     "modId": "zoomify",
     "name": "Zoomify",
-    "version": "2.16.1+26.2",
-    "curseForgeHash": 3160203415,
-    "modrinthHash": "3303552e44587bb10c1d1c91b038dc7ace0fa376"
+    "version": "2.16.3+26.2",
+    "curseForgeHash": 3512608476,
+    "modrinthHash": "2cce6cffc5f34d0ee311123a89cb7448f96584d0"
   },
   "!     §3defrosted §8[§f16x§8] [v1.4.1].zip (resourcepack)": {
     "jarName": "!     §3defrosted §8[§f16x§8] [v1.4.1].zip (resourcepack)"
@@ -562,8 +562,8 @@
   "SkyBlock Legacy.zip (resourcepack)": {
     "jarName": "SkyBlock Legacy.zip (resourcepack)"
   },
-  "Sophie\u0027s Enchants V2.1.0.zip (resourcepack)": {
-    "jarName": "Sophie\u0027s Enchants V2.1.0.zip (resourcepack)"
+  "Sophie\u0027s Enchants 2.2.0 Beta 2.zip (resourcepack)": {
+    "jarName": "Sophie\u0027s Enchants 2.2.0 Beta 2.zip (resourcepack)"
   },
   "§dlooshy §7[§f26.1§7] [v0.13].zip (resourcepack)": {
     "jarName": "§dlooshy §7[§f26.1§7] [v0.13].zip (resourcepack)"
