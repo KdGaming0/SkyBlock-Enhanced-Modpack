@@ -6306,6 +6306,7 @@
       "replacePercentages": false,
       "replaceRiftSeconds": true
     },
+    "glowingDroppedItems": true,
     "boopParty": {
       "boopParty": false,
       "boopPartyBingo": false
