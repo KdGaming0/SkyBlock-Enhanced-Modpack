@@ -389,13 +389,13 @@
     "curseForgeHash": 1583095190,
     "modrinthHash": "83d1c3896d7bb50654b77229f0a95edc07fc9194"
   },
-  "SBO-0.5.2+26.2-fabric.jar": {
-    "jarName": "SBO-0.5.2+26.2-fabric.jar",
+  "SBO-0.6.0+26.2-fabric.jar": {
+    "jarName": "SBO-0.6.0+26.2-fabric.jar",
     "modId": "sbo",
     "name": "SBO",
-    "version": "0.5.2",
-    "curseForgeHash": 1100578685,
-    "modrinthHash": "8743e2b9c2ef4d4839201bdf331205b6e51d2c17"
+    "version": "0.6.0",
+    "curseForgeHash": 416353165,
+    "modrinthHash": "1736e31f4df03e04e15db54e9b35f66558fde3bf"
   },
   "scaleme-3.3.1+26.2.jar": {
     "jarName": "scaleme-3.3.1+26.2.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 2390765999,
     "modrinthHash": "ea9b7a4db88cb814c2ca8ef418e71d2359a4ae40"
   },
-  "SkyBlockPv-1.9.1-26.2.jar": {
-    "jarName": "SkyBlockPv-1.9.1-26.2.jar",
+  "SkyBlockPv-1.9.2-26.2.jar": {
+    "jarName": "SkyBlockPv-1.9.2-26.2.jar",
     "modId": "skyblockpv",
     "name": "SkyBlock Profile Viewer",
-    "version": "1.9.1",
-    "curseForgeHash": 2195476448,
-    "modrinthHash": "85ac084d2b4832cf0cf407a535ee9e2496237e8b"
+    "version": "1.9.2",
+    "curseForgeHash": 4256827476,
+    "modrinthHash": "6a2077c3d6b8e596a8ff153495e5b2d9e72a048a"
   },
   "SkyHanni-9.1.0-mc26.2.jar": {
     "jarName": "SkyHanni-9.1.0-mc26.2.jar",
