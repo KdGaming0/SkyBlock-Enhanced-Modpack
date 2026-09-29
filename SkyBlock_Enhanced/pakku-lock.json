@@ -1029,15 +1029,15 @@
                         "sha1": "f584aec1c191d5d42acb12a93e88b905b4c04d03"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "5VolwT6c"
+                        "5VolwT6c",
+                        "P7dR8mSH"
                     ],
                     "size": 1045309,
                     "date_published": "2026-09-27T16:15:37.551540Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "skyrecipes-0.5.11+26.2.jar",
+                    "file_name": "skyrecipes-0.5.12+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1045,19 +1045,19 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8829/932/skyrecipes-0.5.11+26.2.jar",
-                    "id": "8829932",
+                    "url": "https://edge.forgecdn.net/files/8991/867/skyrecipes-0.5.12+26.2.jar",
+                    "id": "8991867",
                     "parent_id": "1609874",
                     "hashes": {
-                        "sha1": "e2a5157f3f060baefaaa26c4b825cfeeda399b33",
-                        "md5": "8e03a808cb88061616648d6cf51e6008"
+                        "sha1": "f584aec1c191d5d42acb12a93e88b905b4c04d03",
+                        "md5": "5ba6bb52a9f8aebddcd2176985dc96bc"
                     },
                     "required_dependencies": [
                         "1422317",
                         "306612"
                     ],
-                    "size": 1043794,
-                    "date_published": "2026-09-07T13:11:22.120Z"
+                    "size": 1045309,
+                    "date_published": "2026-09-27T16:15:36.817Z"
                 }
             ]
         },
@@ -3586,7 +3586,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyBlockPv-1.9.1-26.2.jar",
+                    "file_name": "SkyBlockPv-1.9.2-26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3594,19 +3594,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/vUvvVwJK/SkyBlockPv-1.9.1-26.2.jar",
-                    "id": "vUvvVwJK",
+                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/i0l6DQfj/SkyBlockPv-1.9.2-26.2.jar",
+                    "id": "i0l6DQfj",
                     "parent_id": "8yqXwFLl",
                     "hashes": {
-                        "sha512": "981fd7103c175b577890d33f5ddadc5f4dab815396b2c14a93b2e8520eb6730e2784a6e0493b9b91619c1f4301fde8f366604d397744aa00a941032bb3ea1f62",
-                        "sha1": "85ac084d2b4832cf0cf407a535ee9e2496237e8b"
+                        "sha512": "aa45a8890ced005dafdd9878b20ce4f5c83a028ead49bf071763e39915854ab3cc22e0d3120eb9e0e6d98968604c4e0ea04455af3657e85b8728e5cb024f1bc9",
+                        "sha1": "6a2077c3d6b8e596a8ff153495e5b2d9e72a048a"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 10418342,
-                    "date_published": "2026-09-27T06:19:48.225731Z"
+                    "size": 10472684,
+                    "date_published": "2026-09-28T20:23:08.730153Z"
                 }
             ]
         },
@@ -3830,7 +3830,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SBO-0.5.2+26.2-fabric.jar",
+                    "file_name": "SBO-0.6.0+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3838,19 +3838,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/l8lG6LGt/SBO-0.5.2+26.2-fabric.jar",
-                    "id": "l8lG6LGt",
+                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/lREht5mK/SBO-0.6.0+26.2-fabric.jar",
+                    "id": "lREht5mK",
                     "parent_id": "9lBqVbQF",
                     "hashes": {
-                        "sha512": "630fd2deb5b2536521294b915c1cbb5c03f4565e2218bfebaa61f5e2277488275e2170eeb16a49d828a1e471b9ab0ef0bee52937fb6355ffc72d848bf9dee4d2",
-                        "sha1": "8743e2b9c2ef4d4839201bdf331205b6e51d2c17"
+                        "sha512": "d97c347a762289eb80bc4162a3ecd0587d215f040f9037daa10cb67414dceeb3bbb4418148c8466a10c73c2bd10bfebd1d9a0da79f9463a07d313645ba7b8ddd",
+                        "sha1": "1736e31f4df03e04e15db54e9b35f66558fde3bf"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 4877734,
-                    "date_published": "2026-08-24T22:29:37.557664Z"
+                    "size": 5250918,
+                    "date_published": "2026-09-28T21:44:12.362909Z"
                 }
             ]
         },
