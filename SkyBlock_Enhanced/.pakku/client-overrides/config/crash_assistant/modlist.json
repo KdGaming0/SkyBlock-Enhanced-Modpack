@@ -45,13 +45,13 @@
     "curseForgeHash": 96320426,
     "modrinthHash": "7acb26634632894b95ef09c06503c7cc8f04b90b"
   },
-  "btrbz-0.12.0-alpha+26.2.jar": {
-    "jarName": "btrbz-0.12.0-alpha+26.2.jar",
+  "btrbz-0.13.0-alpha+26.2.jar": {
+    "jarName": "btrbz-0.13.0-alpha+26.2.jar",
     "modId": "btrbz",
     "name": "BtrBz",
-    "version": "0.12.0",
-    "curseForgeHash": 1506565907,
-    "modrinthHash": "d949373795e0451680897b34a6c5d01f2ec4e72b"
+    "version": "0.13.0",
+    "curseForgeHash": 365064224,
+    "modrinthHash": "69262baf9a48ee7b570edb7ff36e6ebed467c4c4"
   },
   "Catharsis-1.0.0-beta.22-26.2.jar": {
     "jarName": "Catharsis-1.0.0-beta.22-26.2.jar",
@@ -173,13 +173,13 @@
     "curseForgeHash": 2658979824,
     "modrinthHash": "a9aab1298afcb84d9dcc080cdfc766158e63048b"
   },
-  "Feesh-1.14.0+26.2-fabric.jar": {
-    "jarName": "Feesh-1.14.0+26.2-fabric.jar",
+  "Feesh-1.15.0+26.2-fabric.jar": {
+    "jarName": "Feesh-1.15.0+26.2-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.14.0",
-    "curseForgeHash": 1641655592,
-    "modrinthHash": "b1372cc881c37075b10a94063506e202abb6dcdb"
+    "version": "1.15.0",
+    "curseForgeHash": 1896275326,
+    "modrinthHash": "4e56f0db0facaed163d2e2153d2173c3657e7d78"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -197,13 +197,13 @@
     "curseForgeHash": 3465540323,
     "modrinthHash": "19629eb45c00005a8f71c831df4e5d59b4dda54d"
   },
-  "Gnetum-4.6.1+26.2-fabric.jar": {
-    "jarName": "Gnetum-4.6.1+26.2-fabric.jar",
+  "Gnetum-4.6.3+26.2-fabric.jar": {
+    "jarName": "Gnetum-4.6.3+26.2-fabric.jar",
     "modId": "gnetum",
     "name": "Gnetum",
-    "version": "4.6.1+26.2-fabric",
-    "curseForgeHash": 3997044634,
-    "modrinthHash": "5332b6d5d345bf08303650610eeabc988586fb98"
+    "version": "4.6.3+26.2-fabric",
+    "curseForgeHash": 4013279182,
+    "modrinthHash": "49d260b526630fd16e44c66418c74c5271268846"
   },
   "ImmediatelyFast-Fabric-1.16.5+26.2.jar": {
     "jarName": "ImmediatelyFast-Fabric-1.16.5+26.2.jar",
@@ -237,13 +237,13 @@
     "curseForgeHash": 2782269726,
     "modrinthHash": "efa737f5ff00d5b7be7c60dd6e9493c49a7e09e5"
   },
-  "language-reload-1.7.7+26.2.jar": {
-    "jarName": "language-reload-1.7.7+26.2.jar",
+  "language-reload-1.7.8+26.2.jar": {
+    "jarName": "language-reload-1.7.8+26.2.jar",
     "modId": "languagereload",
     "name": "Language Reload",
-    "version": "1.7.7+26.2",
-    "curseForgeHash": 263327247,
-    "modrinthHash": "261027cef3c476d4fafdf59362179eb8da9019d2"
+    "version": "1.7.8+26.2",
+    "curseForgeHash": 1697716272,
+    "modrinthHash": "3d5a85a0804aef395d3dffb0ee69acf634f4464c"
   },
   "lithium-fabric-0.25.3+mc26.2.jar": {
     "jarName": "lithium-fabric-0.25.3+mc26.2.jar",
@@ -309,29 +309,29 @@
     "curseForgeHash": 2598264329,
     "modrinthHash": "680b60f6ec5c09a646e7a76bb17cf551608051cd"
   },
-  "NoChatRestrictions-Fabric-MC26.2-v1.2.2.jar": {
-    "jarName": "NoChatRestrictions-Fabric-MC26.2-v1.2.2.jar",
+  "NoChatRestrictions-Fabric-MC26.2-v1.2.3.jar": {
+    "jarName": "NoChatRestrictions-Fabric-MC26.2-v1.2.3.jar",
     "modId": "nochatrestrictions",
     "name": "No Chat Restrictions",
-    "version": "Fabric-MC26.2-v1.2.2",
-    "curseForgeHash": 337501038,
-    "modrinthHash": "1a0feff2a71be42406136fa5852c5fa8896601d0"
+    "version": "Fabric-MC26.2-v1.2.3",
+    "curseForgeHash": 1876597881,
+    "modrinthHash": "6f887a7fd946353426d210b99ea522365077cd76"
   },
-  "obe+26.2-1.1.49.jar": {
-    "jarName": "obe+26.2-1.1.49.jar",
+  "obe+26.2-1.1.50.jar": {
+    "jarName": "obe+26.2-1.1.50.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.1.49",
-    "curseForgeHash": 2226548642,
-    "modrinthHash": "052b49709aeed4c053cc7a6022f3e603bbf03bef"
+    "version": "1.1.50",
+    "curseForgeHash": 3097151197,
+    "modrinthHash": "e959e78a66a5787b2e55e46bb36946534c4a93bc"
   },
-  "Odin-0.3.4.jar": {
-    "jarName": "Odin-0.3.4.jar",
+  "Odin-0.3.6.jar": {
+    "jarName": "Odin-0.3.6.jar",
     "modId": "odin",
     "name": "Odin",
-    "version": "0.3.4",
-    "curseForgeHash": 48519896,
-    "modrinthHash": "a45c41995a57e7bd80aca21b862b325c927ec084"
+    "version": "0.3.6",
+    "curseForgeHash": 3538613056,
+    "modrinthHash": "7ded80df38adda28e326b9e25e4b447b35f87c7a"
   },
   "owo-lib-0.13.1+26.2.jar": {
     "jarName": "owo-lib-0.13.1+26.2.jar",
@@ -397,13 +397,13 @@
     "curseForgeHash": 416353165,
     "modrinthHash": "1736e31f4df03e04e15db54e9b35f66558fde3bf"
   },
-  "scaleme-3.3.1+26.2.jar": {
-    "jarName": "scaleme-3.3.1+26.2.jar",
+  "scaleme-3.3.2+26.2.jar": {
+    "jarName": "scaleme-3.3.2+26.2.jar",
     "modId": "scaleme",
     "name": "ScaleMe",
-    "version": "3.3.1",
-    "curseForgeHash": 4214259324,
-    "modrinthHash": "2beddf7130409e5f7fd2e0239827b6097ebab7e8"
+    "version": "3.3.2",
+    "curseForgeHash": 2727787760,
+    "modrinthHash": "04647c86ba72f89b43c2a0a06e97e07fb59efae1"
   },
   "scamscreener-2.6.1+26.2.jar": {
     "jarName": "scamscreener-2.6.1+26.2.jar",
@@ -469,13 +469,13 @@
     "curseForgeHash": 2015792893,
     "modrinthHash": "5d44b75fa677b2c56a58e5d2c3351e19d464dded"
   },
-  "skyrecipes-0.5.12+26.2.jar": {
-    "jarName": "skyrecipes-0.5.12+26.2.jar",
+  "skyrecipes-0.5.13+26.2.jar": {
+    "jarName": "skyrecipes-0.5.13+26.2.jar",
     "modId": "skyrecipes",
     "name": "SkyRecipes",
-    "version": "0.5.12",
-    "curseForgeHash": 676754288,
-    "modrinthHash": "f584aec1c191d5d42acb12a93e88b905b4c04d03"
+    "version": "0.5.13",
+    "curseForgeHash": 3067201568,
+    "modrinthHash": "84793d5166f2a20bac928f9198c8bb5917a96575"
   },
   "sodium-extra-fabric-0.9.4+mc26.2.jar": {
     "jarName": "sodium-extra-fabric-0.9.4+mc26.2.jar",
@@ -565,7 +565,7 @@
   "Sophie\u0027s Enchants 2.2.0 Beta 2.zip (resourcepack)": {
     "jarName": "Sophie\u0027s Enchants 2.2.0 Beta 2.zip (resourcepack)"
   },
-  "§dlooshy §7[§f26.1§7] [v0.13].zip (resourcepack)": {
-    "jarName": "§dlooshy §7[§f26.1§7] [v0.13].zip (resourcepack)"
+  "§dlooshy §7[§f26.1§7] [v0.14].zip (resourcepack)": {
+    "jarName": "§dlooshy §7[§f26.1§7] [v0.14].zip (resourcepack)"
   }
 }
