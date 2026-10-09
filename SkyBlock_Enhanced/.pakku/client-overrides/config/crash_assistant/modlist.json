@@ -13,13 +13,13 @@
     "curseForgeHash": 1310401947,
     "modrinthHash": "d1affbf48c50f60ae59e6b66fb78b1e6427bfddf"
   },
-  "AsyncParticles-26.2.2.9+26.2.jar": {
-    "jarName": "AsyncParticles-26.2.2.9+26.2.jar",
+  "AsyncParticles-26.2.2.10+26.2.jar": {
+    "jarName": "AsyncParticles-26.2.2.10+26.2.jar",
     "modId": "asyncparticles",
     "name": "AsyncParticles",
-    "version": "26.2.2.9",
-    "curseForgeHash": 2178976733,
-    "modrinthHash": "90658eddd7aaa3fbdbfdcdb18aabcb5452aaaa05"
+    "version": "26.2.2.10",
+    "curseForgeHash": 4277732617,
+    "modrinthHash": "df710ef07dbf5a6d79029f0752f0bc005e9c1375"
   },
   "authme-fabric-9.3.0+26.2.jar": {
     "jarName": "authme-fabric-9.3.0+26.2.jar",
@@ -141,13 +141,13 @@
     "curseForgeHash": 2137936017,
     "modrinthHash": "ad91f6d9cdee425b521b343f27e586f52a3bd46d"
   },
-  "entityculling-fabric-1.11.2-mc26.2.jar": {
-    "jarName": "entityculling-fabric-1.11.2-mc26.2.jar",
+  "entityculling-fabric-1.11.3-mc26.2.jar": {
+    "jarName": "entityculling-fabric-1.11.3-mc26.2.jar",
     "modId": "entityculling",
     "name": "EntityCulling",
-    "version": "1.11.2",
-    "curseForgeHash": 3468975246,
-    "modrinthHash": "8a379bf40ab7125756afe7bbdf9501324bc37216"
+    "version": "1.11.3",
+    "curseForgeHash": 691783613,
+    "modrinthHash": "a2210d12bdeac78daf7bb2fdc6b5d85448642cdf"
   },
   "fabric-api-0.161.0+26.2.jar": {
     "jarName": "fabric-api-0.161.0+26.2.jar",
@@ -157,13 +157,13 @@
     "curseForgeHash": 1753608881,
     "modrinthHash": "332da34ebb72171e603a0c538de17f4c54ea9e29"
   },
-  "fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar": {
-    "jarName": "fabric-language-kotlin-1.14.1+kotlin.2.4.20.jar",
+  "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar": {
+    "jarName": "fabric-language-kotlin-1.14.2+kotlin.2.4.21.jar",
     "modId": "fabric-language-kotlin",
     "name": "Fabric Language Kotlin",
-    "version": "1.14.1+kotlin.2.4.20",
-    "curseForgeHash": 3788737500,
-    "modrinthHash": "62ae40a31b689b52fde399f2143d547a631e942c"
+    "version": "1.14.2+kotlin.2.4.21",
+    "curseForgeHash": 2797485128,
+    "modrinthHash": "f1d4ab6ecd54d9782521333a87eb50724ecb03e0"
   },
   "FastServerPings-1.1.4+26.3.jar": {
     "jarName": "FastServerPings-1.1.4+26.3.jar",
@@ -173,13 +173,13 @@
     "curseForgeHash": 2658979824,
     "modrinthHash": "a9aab1298afcb84d9dcc080cdfc766158e63048b"
   },
-  "Feesh-1.15.0+26.2-fabric.jar": {
-    "jarName": "Feesh-1.15.0+26.2-fabric.jar",
+  "Feesh-1.15.1+26.2-fabric.jar": {
+    "jarName": "Feesh-1.15.1+26.2-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.15.0",
-    "curseForgeHash": 1896275326,
-    "modrinthHash": "4e56f0db0facaed163d2e2153d2173c3657e7d78"
+    "version": "1.15.1",
+    "curseForgeHash": 983997261,
+    "modrinthHash": "8b4bb50856597557cfb56e70c89f5aaedd12eca3"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -461,13 +461,13 @@
     "curseForgeHash": 4055721796,
     "modrinthHash": "3a89f8be41e3035e5fa9cf266e4095ee5c64c49d"
   },
-  "SkyOcean-1.17.2-26.2.jar": {
-    "jarName": "SkyOcean-1.17.2-26.2.jar",
+  "SkyOcean-1.18.1-26.2.jar": {
+    "jarName": "SkyOcean-1.18.1-26.2.jar",
     "modId": "skyocean",
     "name": "SkyOcean",
-    "version": "1.17.2",
-    "curseForgeHash": 2015792893,
-    "modrinthHash": "5d44b75fa677b2c56a58e5d2c3351e19d464dded"
+    "version": "1.18.1",
+    "curseForgeHash": 3531277130,
+    "modrinthHash": "ef39819034724b8f7ade09a2fec9fbcc7d86346d"
   },
   "skyrecipes-0.5.13+26.2.jar": {
     "jarName": "skyrecipes-0.5.13+26.2.jar",
@@ -533,13 +533,13 @@
     "curseForgeHash": 1859289653,
     "modrinthHash": "79c8ee7f8a0e775190dfff59be1e505e2f432998"
   },
-  "zoomify-2.16.3+26.2.jar": {
-    "jarName": "zoomify-2.16.3+26.2.jar",
+  "zoomify-2.17.0+mc26.2-universal.jar": {
+    "jarName": "zoomify-2.17.0+mc26.2-universal.jar",
     "modId": "zoomify",
     "name": "Zoomify",
-    "version": "2.16.3+26.2",
-    "curseForgeHash": 3512608476,
-    "modrinthHash": "2cce6cffc5f34d0ee311123a89cb7448f96584d0"
+    "version": "2.17.0+mc26.2",
+    "curseForgeHash": 2426830199,
+    "modrinthHash": "e357d25ee231b6da05393f96baa2b8d76439565a"
   },
   "!     §3defrosted §8[§f16x§8] [v1.4.1].zip (resourcepack)": {
     "jarName": "!     §3defrosted §8[§f16x§8] [v1.4.1].zip (resourcepack)"
@@ -562,8 +562,8 @@
   "SkyBlock Legacy.zip (resourcepack)": {
     "jarName": "SkyBlock Legacy.zip (resourcepack)"
   },
-  "Sophie\u0027s Enchants 2.2.0 Beta 2.zip (resourcepack)": {
-    "jarName": "Sophie\u0027s Enchants 2.2.0 Beta 2.zip (resourcepack)"
+  "Sophie\u0027s Enchants V2.2.0.zip (resourcepack)": {
+    "jarName": "Sophie\u0027s Enchants V2.2.0.zip (resourcepack)"
   },
   "§dlooshy §7[§f26.1§7] [v0.14].zip (resourcepack)": {
     "jarName": "§dlooshy §7[§f26.1§7] [v0.14].zip (resourcepack)"
