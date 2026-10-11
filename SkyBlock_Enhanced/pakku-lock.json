@@ -859,7 +859,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "CustomScoreboard-1.12.14-26.2.jar",
+                    "file_name": "CustomScoreboard-1.13.2-26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -867,19 +867,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fpb5uaJt/versions/2Z6qHJlg/CustomScoreboard-1.12.14-26.2.jar",
-                    "id": "2Z6qHJlg",
+                    "url": "https://cdn.modrinth.com/data/fpb5uaJt/versions/wQ0w4ZPX/CustomScoreboard-1.13.2-26.2.jar",
+                    "id": "wQ0w4ZPX",
                     "parent_id": "fpb5uaJt",
                     "hashes": {
-                        "sha512": "7249def8983918f078da74bb1f0d025c51287327e4652c8d07f698a454851f3e9beefd91c069a9da6d41c218580f12a20ff6e89c6bb3ca9ba163ed1fee13e0d4",
-                        "sha1": "0fe4c9250242f5a42823a768cfb7fbf052c66914"
+                        "sha512": "ca11067902fa9e8b2bf6df2b4e1c446b481ed05fc2cf6a90c816d3dbda90a2ee71f9de9a85022b134de584fd522394566e786f9d05b44ce1db6e5ed5140ca01d",
+                        "sha1": "65df0e34ff94f2ae1fd133c8a2f25773806e8059"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
                         "P7dR8mSH"
                     ],
-                    "size": 8749111,
-                    "date_published": "2026-08-18T19:55:31.284189Z"
+                    "size": 8989420,
+                    "date_published": "2026-10-10T07:53:47.755941Z"
                 }
             ]
         },
@@ -1447,11 +1447,46 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "FastServerPings-1.1.4+26.3.jar",
+                    "file_name": "FastServerPings-1.1.5+26.3.jar",
                     "mc_versions": [
+                        "26.1-snapshot-1",
+                        "26.1-snapshot-2",
+                        "26.1-snapshot-3",
+                        "26.1-snapshot-4",
+                        "26.1-snapshot-5",
+                        "26.1-snapshot-6",
+                        "26.1-snapshot-7",
+                        "26.1-snapshot-8",
+                        "26.1-snapshot-9",
+                        "26.1-snapshot-10",
+                        "26.1-snapshot-11",
+                        "26.1-pre-1",
+                        "26.1-pre-2",
+                        "26.1-pre-3",
+                        "26.1-rc-1",
+                        "26.1-rc-2",
+                        "26.1-rc-3",
                         "26.1",
+                        "26.1.1-rc-1",
                         "26.1.1",
+                        "26.2-snapshot-1",
+                        "26.1.2-rc-1",
                         "26.1.2",
+                        "26.2-snapshot-2",
+                        "26.2-snapshot-3",
+                        "26.2-snapshot-4",
+                        "26.2-snapshot-5",
+                        "26.2-snapshot-6",
+                        "26.2-snapshot-7",
+                        "26.2-snapshot-8",
+                        "26.2-pre-1",
+                        "26.2-pre-2",
+                        "26.2-pre-3",
+                        "26.2-pre-4",
+                        "26.2-pre-5",
+                        "26.2-pre-6",
+                        "26.2-rc-1",
+                        "26.2-rc-2",
                         "26.2",
                         "26.3-snapshot-1",
                         "26.3-snapshot-2",
@@ -1475,16 +1510,16 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5eVpQJSP/versions/FjliU16r/FastServerPings-1.1.4+26.3.jar",
-                    "id": "FjliU16r",
+                    "url": "https://cdn.modrinth.com/data/5eVpQJSP/versions/mOd3UYYH/FastServerPings-1.1.5+26.3.jar",
+                    "id": "mOd3UYYH",
                     "parent_id": "5eVpQJSP",
                     "hashes": {
-                        "sha512": "50b64c4590f2462896d3a022ba9c858d241e6c49b28017506136cad89a0900f0a87fd414228c3f1fe5ad9393e16d6d95a0d5520004a75b570aad230dbe9c6d52",
-                        "sha1": "a9aab1298afcb84d9dcc080cdfc766158e63048b"
+                        "sha512": "33987a90a3951b6069cdd7df5544bdf8b7465004666c19e0de294414038bf178e87d26e059379f1a944f8b05354fe35767d0705da689d05d3bd373c78361db8a",
+                        "sha1": "28654544c71c32c6b169905a48cb85f649a18f9d"
                     },
                     "required_dependencies": [],
-                    "size": 62366,
-                    "date_published": "2026-08-01T03:20:23.391254Z"
+                    "size": 61723,
+                    "date_published": "2026-10-09T23:28:11.654668Z"
                 }
             ]
         },
@@ -2861,7 +2896,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "obe+26.2-1.1.50.jar",
+                    "file_name": "obe+26.2-1.1.51.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2870,22 +2905,22 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/AtOSAunf/versions/qKpOS1SP/obe+26.2-1.1.50.jar",
-                    "id": "qKpOS1SP",
+                    "url": "https://cdn.modrinth.com/data/AtOSAunf/versions/uvBqVa0V/obe+26.2-1.1.51.jar",
+                    "id": "uvBqVa0V",
                     "parent_id": "AtOSAunf",
                     "hashes": {
-                        "sha512": "d0ec86b8e68914c019f5615d5aa79ea9003c01869c47ca18844393f1546c6b39d9943b43b449e949a22149347a84e5ead32e5a39be50d08e2bd6e81a26e304a0",
-                        "sha1": "e959e78a66a5787b2e55e46bb36946534c4a93bc"
+                        "sha512": "f656ecc34bc0f2bbc722401e1d18f245319f122bda8905d27d067fa4cac5ebc7c5962cef2d78133fe7946081475615795a4f464db247b0a17282ffe21cb9ac97",
+                        "sha1": "87936fab7d7376e41ed177f2e6c813ccb92c35eb"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 191155,
-                    "date_published": "2026-09-30T14:56:11.963059Z"
+                    "size": 190787,
+                    "date_published": "2026-10-11T13:45:29.717131Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "obe+26.2-1.1.50.jar",
+                    "file_name": "obe+26.2-1.1.51.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2894,18 +2929,18 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9019/169/obe+26.2-1.1.50.jar",
-                    "id": "9019169",
+                    "url": "https://edge.forgecdn.net/files/9130/11/obe+26.2-1.1.51.jar",
+                    "id": "9130011",
                     "parent_id": "1575743",
                     "hashes": {
-                        "sha1": "e959e78a66a5787b2e55e46bb36946534c4a93bc",
-                        "md5": "d5883961eb9e316646044a96d915a288"
+                        "sha1": "87936fab7d7376e41ed177f2e6c813ccb92c35eb",
+                        "md5": "4f500c4cea5088fed0de62735fbe251a"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 191155,
-                    "date_published": "2026-09-30T14:56:12.107Z"
+                    "size": 190787,
+                    "date_published": "2026-10-11T13:45:29.520Z"
                 }
             ]
         },
@@ -3832,7 +3867,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SBO-0.6.0+26.2-fabric.jar",
+                    "file_name": "SBO-0.7.0+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3840,19 +3875,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/lREht5mK/SBO-0.6.0+26.2-fabric.jar",
-                    "id": "lREht5mK",
+                    "url": "https://cdn.modrinth.com/data/9lBqVbQF/versions/YWImc4on/SBO-0.7.0+26.2-fabric.jar",
+                    "id": "YWImc4on",
                     "parent_id": "9lBqVbQF",
                     "hashes": {
-                        "sha512": "d97c347a762289eb80bc4162a3ecd0587d215f040f9037daa10cb67414dceeb3bbb4418148c8466a10c73c2bd10bfebd1d9a0da79f9463a07d313645ba7b8ddd",
-                        "sha1": "1736e31f4df03e04e15db54e9b35f66558fde3bf"
+                        "sha512": "c2f6cb582b3a9ac4a3f5855de36934851dd5f7ed1b451e68cfbd7fee018938e94fdf8bb0d2abb7ab05740e20b8473b0dc4450b610d9bd34dd1f0f040517be901",
+                        "sha1": "72c50100a371d5201cdd81ba1136a989980409b5"
                     },
                     "required_dependencies": [
                         "Ha28R6CL",
                         "P7dR8mSH"
                     ],
-                    "size": 5250918,
-                    "date_published": "2026-09-28T21:44:12.362909Z"
+                    "size": 5950621,
+                    "date_published": "2026-10-10T16:38:47.117848Z"
                 }
             ]
         },
