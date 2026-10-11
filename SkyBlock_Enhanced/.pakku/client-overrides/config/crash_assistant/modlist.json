@@ -93,13 +93,13 @@
     "curseForgeHash": 1757418,
     "modrinthHash": "dea53a10e5fbfaacd18e212a0eb0fe328b3e9467"
   },
-  "CustomScoreboard-1.12.14-26.2.jar": {
-    "jarName": "CustomScoreboard-1.12.14-26.2.jar",
+  "CustomScoreboard-1.13.2-26.2.jar": {
+    "jarName": "CustomScoreboard-1.13.2-26.2.jar",
     "modId": "customscoreboard",
     "name": "Custom Scoreboard",
-    "version": "1.12.14",
-    "curseForgeHash": 4228020918,
-    "modrinthHash": "0fe4c9250242f5a42823a768cfb7fbf052c66914"
+    "version": "1.13.2",
+    "curseForgeHash": 996899387,
+    "modrinthHash": "65df0e34ff94f2ae1fd133c8a2f25773806e8059"
   },
   "cwb-4.1.0+26.2.jar": {
     "jarName": "cwb-4.1.0+26.2.jar",
@@ -165,13 +165,13 @@
     "curseForgeHash": 2797485128,
     "modrinthHash": "f1d4ab6ecd54d9782521333a87eb50724ecb03e0"
   },
-  "FastServerPings-1.1.4+26.3.jar": {
-    "jarName": "FastServerPings-1.1.4+26.3.jar",
+  "FastServerPings-1.1.5+26.3.jar": {
+    "jarName": "FastServerPings-1.1.5+26.3.jar",
     "modId": "fastserverpings",
     "name": "FastServerPings",
-    "version": "1.1.4+26.3",
-    "curseForgeHash": 2658979824,
-    "modrinthHash": "a9aab1298afcb84d9dcc080cdfc766158e63048b"
+    "version": "1.1.5+26.3",
+    "curseForgeHash": 2269175985,
+    "modrinthHash": "28654544c71c32c6b169905a48cb85f649a18f9d"
   },
   "Feesh-1.15.1+26.2-fabric.jar": {
     "jarName": "Feesh-1.15.1+26.2-fabric.jar",
@@ -317,13 +317,13 @@
     "curseForgeHash": 1876597881,
     "modrinthHash": "6f887a7fd946353426d210b99ea522365077cd76"
   },
-  "obe+26.2-1.1.50.jar": {
-    "jarName": "obe+26.2-1.1.50.jar",
+  "obe+26.2-1.1.51.jar": {
+    "jarName": "obe+26.2-1.1.51.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.1.50",
-    "curseForgeHash": 3097151197,
-    "modrinthHash": "e959e78a66a5787b2e55e46bb36946534c4a93bc"
+    "version": "1.1.51",
+    "curseForgeHash": 4157699098,
+    "modrinthHash": "87936fab7d7376e41ed177f2e6c813ccb92c35eb"
   },
   "Odin-0.3.6.jar": {
     "jarName": "Odin-0.3.6.jar",
@@ -389,13 +389,13 @@
     "curseForgeHash": 1583095190,
     "modrinthHash": "83d1c3896d7bb50654b77229f0a95edc07fc9194"
   },
-  "SBO-0.6.0+26.2-fabric.jar": {
-    "jarName": "SBO-0.6.0+26.2-fabric.jar",
+  "SBO-0.7.0+26.2-fabric.jar": {
+    "jarName": "SBO-0.7.0+26.2-fabric.jar",
     "modId": "sbo",
     "name": "SBO",
-    "version": "0.6.0",
-    "curseForgeHash": 416353165,
-    "modrinthHash": "1736e31f4df03e04e15db54e9b35f66558fde3bf"
+    "version": "0.7.0",
+    "curseForgeHash": 1478645244,
+    "modrinthHash": "72c50100a371d5201cdd81ba1136a989980409b5"
   },
   "scaleme-3.3.2+26.2.jar": {
     "jarName": "scaleme-3.3.2+26.2.jar",
