@@ -45,13 +45,13 @@
     "curseForgeHash": 96320426,
     "modrinthHash": "7acb26634632894b95ef09c06503c7cc8f04b90b"
   },
-  "btrbz-0.14.0-alpha+26.2.jar": {
-    "jarName": "btrbz-0.14.0-alpha+26.2.jar",
+  "btrbz-0.15.0-alpha+26.2.jar": {
+    "jarName": "btrbz-0.15.0-alpha+26.2.jar",
     "modId": "btrbz",
     "name": "BtrBz",
-    "version": "0.14.0",
-    "curseForgeHash": 1740360592,
-    "modrinthHash": "f923838725ff04fcb081bdb6de55343bc8422bae"
+    "version": "0.15.0",
+    "curseForgeHash": 3462223378,
+    "modrinthHash": "3014aa0d1540a50294848befb935580a0a580ad2"
   },
   "Catharsis-1.0.0-beta.22-26.2.jar": {
     "jarName": "Catharsis-1.0.0-beta.22-26.2.jar",
@@ -229,13 +229,13 @@
     "curseForgeHash": 4140077411,
     "modrinthHash": "bd0b24731a94b8fe164531e6345718d30ab08ed2"
   },
-  "Ixeris-4.6.9+26.2-fabric.jar": {
-    "jarName": "Ixeris-4.6.9+26.2-fabric.jar",
+  "Ixeris-4.6.10+26.2-fabric.jar": {
+    "jarName": "Ixeris-4.6.10+26.2-fabric.jar",
     "modId": "ixeris",
     "name": "Ixeris",
-    "version": "4.6.9+26.2-fabric",
-    "curseForgeHash": 4267652280,
-    "modrinthHash": "71ea9f2ff823b4e881ad13c23366d9f944cb9a53"
+    "version": "4.6.10+26.2-fabric",
+    "curseForgeHash": 3900618070,
+    "modrinthHash": "70d94fecbaa85f3ad358eccb4c87ecd3839712a9"
   },
   "language-reload-1.7.8+26.2.jar": {
     "jarName": "language-reload-1.7.8+26.2.jar",
@@ -317,13 +317,13 @@
     "curseForgeHash": 1876597881,
     "modrinthHash": "6f887a7fd946353426d210b99ea522365077cd76"
   },
-  "obe+26.2-1.1.53.jar": {
-    "jarName": "obe+26.2-1.1.53.jar",
+  "obe+26.2-1.2.0.jar": {
+    "jarName": "obe+26.2-1.2.0.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.1.53",
-    "curseForgeHash": 2146338802,
-    "modrinthHash": "03990cb6f2e4ce422732f03918ab372d7d88443c"
+    "version": "1.2.0",
+    "curseForgeHash": 3949651413,
+    "modrinthHash": "eaab2e5b86f1dbb196108a81a7b7baced7be3a0f"
   },
   "Odin-0.3.6.jar": {
     "jarName": "Odin-0.3.6.jar",
@@ -373,29 +373,29 @@
     "curseForgeHash": 600247438,
     "modrinthHash": "99b57ccc1d4323c4ef71887828dac25ce4ce2103"
   },
-  "reliable-recipe-viewer-8.10.11+26.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.10.11+26.2-fabric.jar",
+  "reliable-recipe-viewer-8.11.1+26.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.11.1+26.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.10.11+26.2",
-    "curseForgeHash": 2789276262,
-    "modrinthHash": "efe09f68a15daa1223597fe8397b97c17d418638"
+    "version": "8.11.1+26.2",
+    "curseForgeHash": 1066221582,
+    "modrinthHash": "53fe6e7399c983165b7bcd2e78a6f61a762e0bc7"
   },
-  "rpc-1.2.9+26.1-26.3.jar": {
-    "jarName": "rpc-1.2.9+26.1-26.3.jar",
+  "rpc-1.2.10+26.1-26.3.jar": {
+    "jarName": "rpc-1.2.10+26.1-26.3.jar",
     "modId": "rpc",
     "name": "ResourcePackCached",
-    "version": "1.2.9",
-    "curseForgeHash": 1005841252,
-    "modrinthHash": "7adedb48d7d01d65ee57b0dac66efce5a49ee49d"
+    "version": "1.2.10",
+    "curseForgeHash": 1895539557,
+    "modrinthHash": "73def837e3adc4074b7412c8d61307067f692769"
   },
-  "SBO-0.7.0+26.2-fabric.jar": {
-    "jarName": "SBO-0.7.0+26.2-fabric.jar",
+  "SBO-0.7.2-beta.1+26.2-fabric.jar": {
+    "jarName": "SBO-0.7.2-beta.1+26.2-fabric.jar",
     "modId": "sbo",
     "name": "SBO",
-    "version": "0.7.0",
-    "curseForgeHash": 1478645244,
-    "modrinthHash": "72c50100a371d5201cdd81ba1136a989980409b5"
+    "version": "0.7.2-beta.1",
+    "curseForgeHash": 2207940411,
+    "modrinthHash": "0d2de6a4f182efccc1d28cda3ba5fe8dac6a4f51"
   },
   "scaleme-3.3.2+26.2.jar": {
     "jarName": "scaleme-3.3.2+26.2.jar",
