@@ -1,9 +1,9 @@
 ﻿{
-  "fabric-loader-0.19.5.jar (modloader)": {
-    "jarName": "fabric-loader-0.19.5.jar (modloader)",
+  "fabric-loader-0.20.1.jar (modloader)": {
+    "jarName": "fabric-loader-0.20.1.jar (modloader)",
     "modId": "fabric",
     "name": "fabric",
-    "version": "fabric-loader-0.19.5.jar"
+    "version": "fabric-loader-0.20.1.jar"
   },
   "asynclogger-2.2.3+26.1.2-fabric.jar": {
     "jarName": "asynclogger-2.2.3+26.1.2-fabric.jar",
@@ -101,13 +101,13 @@
     "curseForgeHash": 996899387,
     "modrinthHash": "65df0e34ff94f2ae1fd133c8a2f25773806e8059"
   },
-  "cwb-4.1.0+26.2.jar": {
-    "jarName": "cwb-4.1.0+26.2.jar",
+  "cwb-5.0.0+26.2.jar": {
+    "jarName": "cwb-5.0.0+26.2.jar",
     "modId": "cwb",
     "name": "Cubes Without Borders",
-    "version": "4.1.0+26.2",
-    "curseForgeHash": 2833965504,
-    "modrinthHash": "9420614dd8f95a9ca1e1b2371f342e92855bb354"
+    "version": "5.0.0+26.2",
+    "curseForgeHash": 3785541706,
+    "modrinthHash": "6114afaa2b54bdc79bf8dba1630ac1221f02522b"
   },
   "debugify-26.2.0.1.jar": {
     "jarName": "debugify-26.2.0.1.jar",
@@ -253,13 +253,13 @@
     "curseForgeHash": 2598402335,
     "modrinthHash": "435ad0289209bb72195e7a423756a03f5dfa5a9a"
   },
-  "marketguard-1.5.0+26.2.jar": {
-    "jarName": "marketguard-1.5.0+26.2.jar",
+  "marketguard-1.5.1+26.2.jar": {
+    "jarName": "marketguard-1.5.1+26.2.jar",
     "modId": "marketguard",
     "name": "MarketGuard for Hypixel Skyblock",
-    "version": "1.5.0",
-    "curseForgeHash": 3336515688,
-    "modrinthHash": "a535ca7fd6aadbf32a93f6c3b95081fd7d2b8411"
+    "version": "1.5.1",
+    "curseForgeHash": 1540070150,
+    "modrinthHash": "31af556cb7e7cdcceae1ffaf174dc955920fe0a4"
   },
   "modernfix-5.27.19-build.2.jar": {
     "jarName": "modernfix-5.27.19-build.2.jar",
@@ -453,13 +453,13 @@
     "curseForgeHash": 4256827476,
     "modrinthHash": "6a2077c3d6b8e596a8ff153495e5b2d9e72a048a"
   },
-  "SkyHanni-9.2.0-mc26.2.jar": {
-    "jarName": "SkyHanni-9.2.0-mc26.2.jar",
+  "SkyHanni-9.3.0-mc26.2.jar": {
+    "jarName": "SkyHanni-9.3.0-mc26.2.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "9.2.0",
-    "curseForgeHash": 392647024,
-    "modrinthHash": "e1199ac88ca005ec3c35bb18e7bedf3f92280762"
+    "version": "9.3.0",
+    "curseForgeHash": 3163488506,
+    "modrinthHash": "bd4988ab9affe0e4045129166bc295216d25d2f4"
   },
   "SkyOcean-1.18.2-26.2.jar": {
     "jarName": "SkyOcean-1.18.2-26.2.jar",
@@ -477,13 +477,13 @@
     "curseForgeHash": 3067201568,
     "modrinthHash": "84793d5166f2a20bac928f9198c8bb5917a96575"
   },
-  "sodium-extra-fabric-0.9.4+mc26.2.jar": {
-    "jarName": "sodium-extra-fabric-0.9.4+mc26.2.jar",
+  "sodium-extra-fabric-0.9.5+mc26.2.jar": {
+    "jarName": "sodium-extra-fabric-0.9.5+mc26.2.jar",
     "modId": "sodium-extra",
     "name": "Sodium Extra",
-    "version": "0.9.4+mc26.2",
-    "curseForgeHash": 2095026284,
-    "modrinthHash": "e1a6d6af9081898d79eae0921098f8da2fc4f14a"
+    "version": "0.9.5+mc26.2",
+    "curseForgeHash": 1403178343,
+    "modrinthHash": "ac099861fd861f5de2b62501f9c3c07ee81c5046"
   },
   "sodium-fabric-0.9.2+mc26.2.jar": {
     "jarName": "sodium-fabric-0.9.2+mc26.2.jar",
