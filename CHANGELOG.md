@@ -6,6 +6,7 @@
 - **Obe**: 26.2-1.2.0 -> **26.2-1.2.1**
 - **Reliable Recipe Viewer**: 8.11.2+26.2-fabric -> **8.11.3+26.2-fabric**
 - **SkyBlockPv**: 1.9.2-26.2 -> **1.10.0-26.2**
+- **SBO**: 0.7.2-beta.2+26.2-fabric -> **0.7.2-beta.3+26.2-fabric**
 
 ---
 
@@ -20,6 +21,7 @@ Join us on **[Discord](https://discord.gg/pdwxyjTta7)** or **[Fluxer](https://fl
 Thanks for using SkyBlock Enhanced!
 
 ---
+
 
 # 🛠 Update 5.4.4
 
