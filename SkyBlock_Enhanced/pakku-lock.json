@@ -521,22 +521,6 @@
                     "type": "modrinth",
                     "file_name": "ComplementaryUnbound_r5.9.3.zip",
                     "mc_versions": [
-                        "1.7.10",
-                        "1.8",
-                        "1.8.1",
-                        "1.8.2",
-                        "1.8.3",
-                        "1.8.4",
-                        "1.8.5",
-                        "1.8.6",
-                        "1.8.7",
-                        "1.8.8",
-                        "1.8.9",
-                        "1.9",
-                        "1.9.1",
-                        "1.9.2",
-                        "1.9.3",
-                        "1.9.4",
                         "1.10",
                         "1.10.1",
                         "1.10.2",
@@ -582,6 +566,8 @@
                         "1.20.6",
                         "1.21",
                         "1.21.1",
+                        "1.21.10",
+                        "1.21.11",
                         "1.21.2",
                         "1.21.3",
                         "1.21.4",
@@ -590,8 +576,22 @@
                         "1.21.7",
                         "1.21.8",
                         "1.21.9",
-                        "1.21.10",
-                        "1.21.11",
+                        "1.7.10",
+                        "1.8",
+                        "1.8.1",
+                        "1.8.2",
+                        "1.8.3",
+                        "1.8.4",
+                        "1.8.5",
+                        "1.8.6",
+                        "1.8.7",
+                        "1.8.8",
+                        "1.8.9",
+                        "1.9",
+                        "1.9.1",
+                        "1.9.2",
+                        "1.9.3",
+                        "1.9.4",
                         "26.1",
                         "26.1.1",
                         "26.1.2",
@@ -1316,6 +1316,8 @@
                         "1.20.6",
                         "1.21",
                         "1.21.1",
+                        "1.21.10",
+                        "1.21.11",
                         "1.21.2",
                         "1.21.3",
                         "1.21.4",
@@ -1324,8 +1326,6 @@
                         "1.21.7",
                         "1.21.8",
                         "1.21.9",
-                        "1.21.10",
-                        "1.21.11",
                         "26.1",
                         "26.1.1",
                         "26.1.2",
@@ -1449,7 +1449,16 @@
                     "type": "modrinth",
                     "file_name": "FastServerPings-1.1.5+26.3.jar",
                     "mc_versions": [
+                        "26.1",
+                        "26.1-pre-1",
+                        "26.1-pre-2",
+                        "26.1-pre-3",
+                        "26.1-rc-1",
+                        "26.1-rc-2",
+                        "26.1-rc-3",
                         "26.1-snapshot-1",
+                        "26.1-snapshot-10",
+                        "26.1-snapshot-11",
                         "26.1-snapshot-2",
                         "26.1-snapshot-3",
                         "26.1-snapshot-4",
@@ -1458,27 +1467,11 @@
                         "26.1-snapshot-7",
                         "26.1-snapshot-8",
                         "26.1-snapshot-9",
-                        "26.1-snapshot-10",
-                        "26.1-snapshot-11",
-                        "26.1-pre-1",
-                        "26.1-pre-2",
-                        "26.1-pre-3",
-                        "26.1-rc-1",
-                        "26.1-rc-2",
-                        "26.1-rc-3",
-                        "26.1",
-                        "26.1.1-rc-1",
                         "26.1.1",
-                        "26.2-snapshot-1",
-                        "26.1.2-rc-1",
+                        "26.1.1-rc-1",
                         "26.1.2",
-                        "26.2-snapshot-2",
-                        "26.2-snapshot-3",
-                        "26.2-snapshot-4",
-                        "26.2-snapshot-5",
-                        "26.2-snapshot-6",
-                        "26.2-snapshot-7",
-                        "26.2-snapshot-8",
+                        "26.1.2-rc-1",
+                        "26.2",
                         "26.2-pre-1",
                         "26.2-pre-2",
                         "26.2-pre-3",
@@ -1487,8 +1480,23 @@
                         "26.2-pre-6",
                         "26.2-rc-1",
                         "26.2-rc-2",
-                        "26.2",
+                        "26.2-snapshot-1",
+                        "26.2-snapshot-2",
+                        "26.2-snapshot-3",
+                        "26.2-snapshot-4",
+                        "26.2-snapshot-5",
+                        "26.2-snapshot-6",
+                        "26.2-snapshot-7",
+                        "26.2-snapshot-8",
+                        "26.3",
+                        "26.3-pre-1",
+                        "26.3-pre-2",
+                        "26.3-pre-3",
+                        "26.3-rc-1",
+                        "26.3-rc-2",
+                        "26.3-rc-3",
                         "26.3-snapshot-1",
+                        "26.3-snapshot-10",
                         "26.3-snapshot-2",
                         "26.3-snapshot-3",
                         "26.3-snapshot-4",
@@ -1496,15 +1504,7 @@
                         "26.3-snapshot-6",
                         "26.3-snapshot-7",
                         "26.3-snapshot-8",
-                        "26.3-snapshot-9",
-                        "26.3-snapshot-10",
-                        "26.3-pre-1",
-                        "26.3-pre-2",
-                        "26.3-pre-3",
-                        "26.3-rc-1",
-                        "26.3-rc-2",
-                        "26.3-rc-3",
-                        "26.3"
+                        "26.3-snapshot-9"
                     ],
                     "loaders": [
                         "fabric"
@@ -2250,6 +2250,8 @@
                         "1.20.6",
                         "1.21",
                         "1.21.1",
+                        "1.21.10",
+                        "1.21.11",
                         "1.21.2",
                         "1.21.3",
                         "1.21.4",
@@ -2258,8 +2260,6 @@
                         "1.21.7",
                         "1.21.8",
                         "1.21.9",
-                        "1.21.10",
-                        "1.21.11",
                         "26.1",
                         "26.1.1",
                         "26.1.2",
@@ -2578,7 +2578,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "moreculling-fabric-26.2-1.8.1.jar",
+                    "file_name": "moreculling-fabric-26.2-1.8.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2587,22 +2587,22 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/51shyZVL/versions/D5oVCouK/moreculling-fabric-26.2-1.8.1.jar",
-                    "id": "D5oVCouK",
+                    "url": "https://cdn.modrinth.com/data/51shyZVL/versions/Qc7V2eKG/moreculling-fabric-26.2-1.8.2.jar",
+                    "id": "Qc7V2eKG",
                     "parent_id": "51shyZVL",
                     "hashes": {
-                        "sha512": "9c331ba5f2ce9c322c41aa577f1029f3420d5507d0d942aadbb43fb9bd82e7da6f72e3a0b26c4ad96394669a99a7feb512b5119b3095fde2e0a437bf68c08b40",
-                        "sha1": "189d90ef598883df8197ea18b510dba21e69bac4"
+                        "sha512": "7447bc7f269fdfee917ad99fa93d81db86f9b3379c7098e1172fda8a443e09aa4cfd68074a33f57cf40ea7d44135e74882b6b1a1ec9c8a9cd3e0e8d4ca64ca56",
+                        "sha1": "0c84eb55036d82e34b329658c481fd8b84c6f0e1"
                     },
                     "required_dependencies": [
                         "9s6osm5g"
                     ],
-                    "size": 363646,
-                    "date_published": "2026-08-02T18:57:49.995348Z"
+                    "size": 364112,
+                    "date_published": "2026-11-08T16:12:49.450766Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "moreculling-fabric-26.2-1.8.1.jar",
+                    "file_name": "moreculling-fabric-26.2-1.8.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2611,18 +2611,18 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8563/691/moreculling-fabric-26.2-1.8.1.jar",
-                    "id": "8563691",
+                    "url": "https://edge.forgecdn.net/files/9512/66/moreculling-fabric-26.2-1.8.2.jar",
+                    "id": "9512066",
                     "parent_id": "630104",
                     "hashes": {
-                        "sha1": "189d90ef598883df8197ea18b510dba21e69bac4",
-                        "md5": "cd76bd0380842252b1fec47c2ae8eadc"
+                        "sha1": "0c84eb55036d82e34b329658c481fd8b84c6f0e1",
+                        "md5": "3478f8a7ca90eac9828b6107eddab7e6"
                     },
                     "required_dependencies": [
                         "348521"
                     ],
-                    "size": 363646,
-                    "date_published": "2026-08-02T18:57:48.653Z"
+                    "size": 364112,
+                    "date_published": "2026-11-08T16:12:47.847Z"
                 }
             ]
         },
@@ -2896,7 +2896,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "obe+26.2-1.2.0.jar",
+                    "file_name": "obe+26.2-1.2.1.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2905,22 +2905,22 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/AtOSAunf/versions/y6FBa9AC/obe+26.2-1.2.0.jar",
-                    "id": "y6FBa9AC",
+                    "url": "https://cdn.modrinth.com/data/AtOSAunf/versions/SpSJBNSj/obe+26.2-1.2.1.jar",
+                    "id": "SpSJBNSj",
                     "parent_id": "AtOSAunf",
                     "hashes": {
-                        "sha512": "2e72021e739f95af60dcde0e92ba8905bb95564b2efc7fa6f10d14b4ac882bb9ce0dcc377043818a83453a7d19e5ba47b6cbce708bdef0fcf3e99e97ae67eb42",
-                        "sha1": "eaab2e5b86f1dbb196108a81a7b7baced7be3a0f"
+                        "sha512": "5292ab7e7a73be5e9e66ea4740b25a59bb31570803c5b40c35f901b6b827da599ec21d44d012fd37d0513818f2583a39c5e874c10df0b5af67a8e3a79f14690f",
+                        "sha1": "b6bb3b0784f6ceee52940a60ac6583c9231f0a87"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 232438,
-                    "date_published": "2026-10-23T13:15:55.185770Z"
+                    "size": 233911,
+                    "date_published": "2026-11-03T14:09:44.264507Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "obe+26.2-1.2.0.jar",
+                    "file_name": "obe-26.2-1.2.1.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2929,18 +2929,18 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9297/751/obe+26.2-1.2.0.jar",
-                    "id": "9297751",
+                    "url": "https://edge.forgecdn.net/files/9423/255/obe-26.2-1.2.1.jar",
+                    "id": "9423255",
                     "parent_id": "1575743",
                     "hashes": {
-                        "sha1": "eaab2e5b86f1dbb196108a81a7b7baced7be3a0f",
-                        "md5": "2e66be128c3e7742bc44271963b375f8"
+                        "sha1": "b6bb3b0784f6ceee52940a60ac6583c9231f0a87",
+                        "md5": "39262d88c6de8168e9ef12ae377bf58c"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 232438,
-                    "date_published": "2026-10-23T13:15:56.017Z"
+                    "size": 233911,
+                    "date_published": "2026-11-03T14:09:45.190Z"
                 }
             ]
         },
@@ -3096,7 +3096,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "reliable-recipe-viewer-8.11.2+26.2-fabric.jar",
+                    "file_name": "reliable-recipe-viewer-8.11.3+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3104,22 +3104,22 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5VolwT6c/versions/dQPJatWY/reliable-recipe-viewer-8.11.2+26.2-fabric.jar",
-                    "id": "dQPJatWY",
+                    "url": "https://cdn.modrinth.com/data/5VolwT6c/versions/ha5NkZhN/reliable-recipe-viewer-8.11.3+26.2-fabric.jar",
+                    "id": "ha5NkZhN",
                     "parent_id": "5VolwT6c",
                     "hashes": {
-                        "sha512": "86e9db0337c43fee593937e76d6d0c55c71011ffb35b2d70c02477e3113936feb6d6741eb7c7f7a467b32a21f85a04976709c7f1a791c9ec5c9364878e01ec20",
-                        "sha1": "d98b7023941dbc2f1f11e230eb4c965961294a73"
+                        "sha512": "00d893499c232431a1607ea16c14661f72339971b6ff20a20c12d092e0072c4ca973500834ed8fdeaaa8ef1a2e1909bfb716632e75640c72ae88aec9c2b668a9",
+                        "sha1": "da102d63f3f80676cb58514e41db9d6ddc40801b"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 837364,
-                    "date_published": "2026-10-27T17:34:33.901608Z"
+                    "size": 838199,
+                    "date_published": "2026-11-03T16:07:55.331045Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "reliable-recipe-viewer-8.11.2+26.2-fabric.jar",
+                    "file_name": "reliable-recipe-viewer-8.11.3-26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3127,18 +3127,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9345/41/reliable-recipe-viewer-8.11.2+26.2-fabric.jar",
-                    "id": "9345041",
+                    "url": "https://edge.forgecdn.net/files/9424/172/reliable-recipe-viewer-8.11.3-26.2-fabric.jar",
+                    "id": "9424172",
                     "parent_id": "1422317",
                     "hashes": {
-                        "sha1": "d98b7023941dbc2f1f11e230eb4c965961294a73",
-                        "md5": "2b747203bc721f66a46a2f79da365826"
+                        "sha1": "da102d63f3f80676cb58514e41db9d6ddc40801b",
+                        "md5": "36b39602bccbd5460dc621ed8779dd18"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 837364,
-                    "date_published": "2026-10-27T17:34:36.613Z"
+                    "size": 838199,
+                    "date_published": "2026-11-03T16:07:57.270Z"
                 }
             ]
         },
@@ -3623,7 +3623,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyBlockPv-1.9.2-26.2.jar",
+                    "file_name": "SkyBlockPv-1.10.0-26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3631,19 +3631,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/i0l6DQfj/SkyBlockPv-1.9.2-26.2.jar",
-                    "id": "i0l6DQfj",
+                    "url": "https://cdn.modrinth.com/data/8yqXwFLl/versions/CZbywuPN/SkyBlockPv-1.10.0-26.2.jar",
+                    "id": "CZbywuPN",
                     "parent_id": "8yqXwFLl",
                     "hashes": {
-                        "sha512": "aa45a8890ced005dafdd9878b20ce4f5c83a028ead49bf071763e39915854ab3cc22e0d3120eb9e0e6d98968604c4e0ea04455af3657e85b8728e5cb024f1bc9",
-                        "sha1": "6a2077c3d6b8e596a8ff153495e5b2d9e72a048a"
+                        "sha512": "63176e7a5713ea280ca86e4fac62a86f1c78e36cc921f82240dac8b1bf4a85f8f12a544b38208e206a1cca8871a45f2a72f18736ec4909a2dce65b2b4e906287",
+                        "sha1": "1af3624a3799c5d0a13a56d88ce5bf92ca6aef4a"
                     },
                     "required_dependencies": [
                         "P7dR8mSH",
                         "Ha28R6CL"
                     ],
-                    "size": 10472684,
-                    "date_published": "2026-09-28T20:23:08.730153Z"
+                    "size": 11367144,
+                    "date_published": "2026-11-07T12:55:35.306152Z"
                 }
             ]
         },
@@ -4305,8 +4305,8 @@
                     "type": "modrinth",
                     "file_name": "placeholder-api-3.1.0-beta.1+26.2.jar",
                     "mc_versions": [
-                        "26.2-pre-1",
-                        "26.2"
+                        "26.2",
+                        "26.2-pre-1"
                     ],
                     "loaders": [
                         "fabric"
