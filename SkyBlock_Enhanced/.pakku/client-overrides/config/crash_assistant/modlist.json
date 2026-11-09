@@ -389,13 +389,13 @@
     "curseForgeHash": 10927899,
     "modrinthHash": "2cf605e16b6c5483a73c20e4893f741d36219d99"
   },
-  "SBO-0.7.2-beta.2+26.2-fabric.jar": {
-    "jarName": "SBO-0.7.2-beta.2+26.2-fabric.jar",
+  "SBO-0.7.2-beta.3+26.2-fabric.jar": {
+    "jarName": "SBO-0.7.2-beta.3+26.2-fabric.jar",
     "modId": "sbo",
     "name": "SBO",
-    "version": "0.7.2-beta.2",
-    "curseForgeHash": 2858814026,
-    "modrinthHash": "a1274e07012890165e2f2f87b2a8b823d8d8faa9"
+    "version": "0.7.2-beta.3",
+    "curseForgeHash": 4037548888,
+    "modrinthHash": "3b7e855d9aeb2cbff4272ca1749a62ee65269140"
   },
   "scaleme-3.3.2+26.2.jar": {
     "jarName": "scaleme-3.3.2+26.2.jar",
