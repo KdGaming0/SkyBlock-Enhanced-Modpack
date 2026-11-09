@@ -285,13 +285,13 @@
     "curseForgeHash": 1494587593,
     "modrinthHash": "9fc381627b471c18d67156e846228f51ff2ea5b4"
   },
-  "moreculling-fabric-26.2-1.8.1.jar": {
-    "jarName": "moreculling-fabric-26.2-1.8.1.jar",
+  "moreculling-fabric-26.2-1.8.2.jar": {
+    "jarName": "moreculling-fabric-26.2-1.8.2.jar",
     "modId": "moreculling",
     "name": "More Culling",
-    "version": "1.8.1",
-    "curseForgeHash": 4279266806,
-    "modrinthHash": "189d90ef598883df8197ea18b510dba21e69bac4"
+    "version": "1.8.2",
+    "curseForgeHash": 3886923203,
+    "modrinthHash": "0c84eb55036d82e34b329658c481fd8b84c6f0e1"
   },
   "netprodis-2.0.0+26.1.jar": {
     "jarName": "netprodis-2.0.0+26.1.jar",
@@ -317,13 +317,13 @@
     "curseForgeHash": 1876597881,
     "modrinthHash": "6f887a7fd946353426d210b99ea522365077cd76"
   },
-  "obe+26.2-1.2.0.jar": {
-    "jarName": "obe+26.2-1.2.0.jar",
+  "obe-26.2-1.2.1.jar": {
+    "jarName": "obe-26.2-1.2.1.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.2.0",
-    "curseForgeHash": 3949651413,
-    "modrinthHash": "eaab2e5b86f1dbb196108a81a7b7baced7be3a0f"
+    "version": "1.2.1",
+    "curseForgeHash": 2120179258,
+    "modrinthHash": "b6bb3b0784f6ceee52940a60ac6583c9231f0a87"
   },
   "Odin-0.3.6.jar": {
     "jarName": "Odin-0.3.6.jar",
@@ -373,13 +373,13 @@
     "curseForgeHash": 600247438,
     "modrinthHash": "99b57ccc1d4323c4ef71887828dac25ce4ce2103"
   },
-  "reliable-recipe-viewer-8.11.2+26.2-fabric.jar": {
-    "jarName": "reliable-recipe-viewer-8.11.2+26.2-fabric.jar",
+  "reliable-recipe-viewer-8.11.3-26.2-fabric.jar": {
+    "jarName": "reliable-recipe-viewer-8.11.3-26.2-fabric.jar",
     "modId": "rrv",
     "name": "Reliable Recipe Viewer (RRV)",
-    "version": "8.11.2+26.2",
-    "curseForgeHash": 2816680975,
-    "modrinthHash": "d98b7023941dbc2f1f11e230eb4c965961294a73"
+    "version": "8.11.3+26.2",
+    "curseForgeHash": 1288190849,
+    "modrinthHash": "da102d63f3f80676cb58514e41db9d6ddc40801b"
   },
   "rpc-1.3.0+26.1-26.3-fabric.jar": {
     "jarName": "rpc-1.3.0+26.1-26.3-fabric.jar",
@@ -445,13 +445,13 @@
     "curseForgeHash": 3659669431,
     "modrinthHash": "92a9af9809707ec121a79891020b46a1acc89de6"
   },
-  "SkyBlockPv-1.9.2-26.2.jar": {
-    "jarName": "SkyBlockPv-1.9.2-26.2.jar",
+  "SkyBlockPv-1.10.0-26.2.jar": {
+    "jarName": "SkyBlockPv-1.10.0-26.2.jar",
     "modId": "skyblockpv",
     "name": "SkyBlock Profile Viewer",
-    "version": "1.9.2",
-    "curseForgeHash": 4256827476,
-    "modrinthHash": "6a2077c3d6b8e596a8ff153495e5b2d9e72a048a"
+    "version": "1.10.0",
+    "curseForgeHash": 3245020701,
+    "modrinthHash": "1af3624a3799c5d0a13a56d88ce5bf92ca6aef4a"
   },
   "SkyHanni-9.3.0-mc26.2.jar": {
     "jarName": "SkyHanni-9.3.0-mc26.2.jar",
