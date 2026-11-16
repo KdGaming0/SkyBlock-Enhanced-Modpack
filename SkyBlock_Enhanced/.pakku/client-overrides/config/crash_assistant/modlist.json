@@ -141,13 +141,13 @@
     "curseForgeHash": 2137936017,
     "modrinthHash": "ad91f6d9cdee425b521b343f27e586f52a3bd46d"
   },
-  "entityculling-fabric-1.11.3-mc26.2.jar": {
-    "jarName": "entityculling-fabric-1.11.3-mc26.2.jar",
+  "entityculling-fabric-1.12.1-mc26.2.jar": {
+    "jarName": "entityculling-fabric-1.12.1-mc26.2.jar",
     "modId": "entityculling",
     "name": "EntityCulling",
-    "version": "1.11.3",
-    "curseForgeHash": 691783613,
-    "modrinthHash": "a2210d12bdeac78daf7bb2fdc6b5d85448642cdf"
+    "version": "1.12.1",
+    "curseForgeHash": 3558700647,
+    "modrinthHash": "d79658b6e729a4d22981342a5524ec9e6c420f3a"
   },
   "fabric-api-0.161.0+26.2.jar": {
     "jarName": "fabric-api-0.161.0+26.2.jar",
@@ -165,13 +165,13 @@
     "curseForgeHash": 2797485128,
     "modrinthHash": "f1d4ab6ecd54d9782521333a87eb50724ecb03e0"
   },
-  "FastServerPings-1.1.5+26.3.jar": {
-    "jarName": "FastServerPings-1.1.5+26.3.jar",
+  "FastServerPings-1.1.5+26.4.jar": {
+    "jarName": "FastServerPings-1.1.5+26.4.jar",
     "modId": "fastserverpings",
     "name": "FastServerPings",
-    "version": "1.1.5+26.3",
-    "curseForgeHash": 2269175985,
-    "modrinthHash": "28654544c71c32c6b169905a48cb85f649a18f9d"
+    "version": "1.1.5+26.4",
+    "curseForgeHash": 568794298,
+    "modrinthHash": "988643a387adbdd5d636afcb38417c91c32eba24"
   },
   "Feesh-1.17.0+26.2-fabric.jar": {
     "jarName": "Feesh-1.17.0+26.2-fabric.jar",
@@ -197,13 +197,13 @@
     "curseForgeHash": 3465540323,
     "modrinthHash": "19629eb45c00005a8f71c831df4e5d59b4dda54d"
   },
-  "Gnetum-4.6.4+26.2-fabric.jar": {
-    "jarName": "Gnetum-4.6.4+26.2-fabric.jar",
+  "Gnetum-4.6.5-26.2-fabric.jar": {
+    "jarName": "Gnetum-4.6.5-26.2-fabric.jar",
     "modId": "gnetum",
     "name": "Gnetum",
-    "version": "4.6.4+26.2-fabric",
-    "curseForgeHash": 3536736132,
-    "modrinthHash": "460005968718816e54fc0d6ab892ff9738765a86"
+    "version": "4.6.5+26.2-fabric",
+    "curseForgeHash": 2563189435,
+    "modrinthHash": "01c6dd7683ff57706febea5940b8e33e5d962632"
   },
   "ImmediatelyFast-Fabric-1.16.5+26.2.jar": {
     "jarName": "ImmediatelyFast-Fabric-1.16.5+26.2.jar",
@@ -317,13 +317,13 @@
     "curseForgeHash": 1876597881,
     "modrinthHash": "6f887a7fd946353426d210b99ea522365077cd76"
   },
-  "obe-26.2-1.2.1.jar": {
-    "jarName": "obe-26.2-1.2.1.jar",
+  "obe-26.2-1.2.5.jar": {
+    "jarName": "obe-26.2-1.2.5.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.2.1",
-    "curseForgeHash": 2120179258,
-    "modrinthHash": "b6bb3b0784f6ceee52940a60ac6583c9231f0a87"
+    "version": "1.2.5",
+    "curseForgeHash": 535868,
+    "modrinthHash": "f52deb8ae19dc43b8ca7e3fcfa5a485841c04d33"
   },
   "Odin-0.3.6.jar": {
     "jarName": "Odin-0.3.6.jar",
@@ -453,13 +453,13 @@
     "curseForgeHash": 3245020701,
     "modrinthHash": "1af3624a3799c5d0a13a56d88ce5bf92ca6aef4a"
   },
-  "SkyHanni-9.3.0-mc26.2.jar": {
-    "jarName": "SkyHanni-9.3.0-mc26.2.jar",
+  "SkyHanni-9.4.0-mc26.2.jar": {
+    "jarName": "SkyHanni-9.4.0-mc26.2.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "9.3.0",
-    "curseForgeHash": 3163488506,
-    "modrinthHash": "bd4988ab9affe0e4045129166bc295216d25d2f4"
+    "version": "9.4.0",
+    "curseForgeHash": 1334831903,
+    "modrinthHash": "0318e04f0e9c8075aed8bed7550bcf8381898e21"
   },
   "SkyOcean-1.18.2-26.2.jar": {
     "jarName": "SkyOcean-1.18.2-26.2.jar",
@@ -562,8 +562,8 @@
   "SkyBlock Legacy.zip (resourcepack)": {
     "jarName": "SkyBlock Legacy.zip (resourcepack)"
   },
-  "Sophie\u0027s Enchants V2.3.0.zip (resourcepack)": {
-    "jarName": "Sophie\u0027s Enchants V2.3.0.zip (resourcepack)"
+  "Sophie\u0027s Enchants V2.3.1.zip (resourcepack)": {
+    "jarName": "Sophie\u0027s Enchants V2.3.1.zip (resourcepack)"
   },
   "§dlooshy §7[§f26.1§7] [v0.14].zip (resourcepack)": {
     "jarName": "§dlooshy §7[§f26.1§7] [v0.14].zip (resourcepack)"
