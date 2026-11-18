@@ -95,7 +95,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "AsyncParticles-26.2.2.11+26.2.jar",
+                    "file_name": "AsyncParticles-26.2.2.12+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -104,20 +104,20 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/c3onkd5k/versions/oM9ACnlx/AsyncParticles-26.2.2.11+26.2.jar",
-                    "id": "oM9ACnlx",
+                    "url": "https://cdn.modrinth.com/data/c3onkd5k/versions/EzEGWbuj/AsyncParticles-26.2.2.12+26.2.jar",
+                    "id": "EzEGWbuj",
                     "parent_id": "c3onkd5k",
                     "hashes": {
-                        "sha512": "39ae2bea9c417900f0bdfcac501e206e0f27af9daea28b81d2680588837dc01535e0b2b5f1d39972e46cbee16104393b65673a5c9e90380e97a14ebfbdc7f5ad",
-                        "sha1": "bffab2437cf2a29a3d02f9adcea7d1165f056b09"
+                        "sha512": "dbcb30f99f814ffc52633fbce355c8e9c4a1420e5ff603b559a0efb8435640671c8853685616a0db1fbac9a139b59ad8927c66a6879fbcda011e65f09e54b67e",
+                        "sha1": "cbeca6193a687ed8e4c13b272bbb288745d0514c"
                     },
                     "required_dependencies": [],
-                    "size": 670306,
-                    "date_published": "2026-10-18T15:43:01.587382Z"
+                    "size": 683154,
+                    "date_published": "2026-11-17T12:13:48.346876Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "AsyncParticles-26.2.2.11+26.2.jar",
+                    "file_name": "AsyncParticles-26.2.2.12-26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -126,16 +126,16 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/9242/840/AsyncParticles-26.2.2.11+26.2.jar",
-                    "id": "9242840",
+                    "url": "https://edge.forgecdn.net/files/9665/390/AsyncParticles-26.2.2.12-26.2.jar",
+                    "id": "9665390",
                     "parent_id": "1215753",
                     "hashes": {
-                        "sha1": "bffab2437cf2a29a3d02f9adcea7d1165f056b09",
-                        "md5": "4e718cb4080397c9381ae0bd570ca8d5"
+                        "sha1": "cbeca6193a687ed8e4c13b272bbb288745d0514c",
+                        "md5": "e8839e29e0cfc116da409303f952a96e"
                     },
                     "required_dependencies": [],
-                    "size": 670306,
-                    "date_published": "2026-10-18T15:43:12.593Z"
+                    "size": 683154,
+                    "date_published": "2026-11-17T12:17:52.763Z"
                 }
             ]
         },
@@ -1512,7 +1512,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Feesh-1.17.0+26.2-fabric.jar",
+                    "file_name": "Feesh-1.18.0+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1520,19 +1520,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/ZFhJmfx5/Feesh-1.17.0+26.2-fabric.jar",
-                    "id": "ZFhJmfx5",
+                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/vrRBk3qB/Feesh-1.18.0+26.2-fabric.jar",
+                    "id": "vrRBk3qB",
                     "parent_id": "QCpogurE",
                     "hashes": {
-                        "sha512": "49da3d660cc65fa3bcd437ebb55d1f417f4447037c0d8cef133f8051aa64ed40a84524077ca200ade45ebccdfb9b234e95044d7958027ce24ce06b6f5fe090bd",
-                        "sha1": "0788072571c7c8ff15ec26cb717547d521baa9f0"
+                        "sha512": "3d7ae718f753f0b565dfdd65abaa8514b552f806e4a39a0e169c46e389a6aa777569950b81874a89e7a43eca9f1a26445c34059f778f5e674f049621be02738f",
+                        "sha1": "6f97cecafaad7863ce51f53cca4d906de1dc671b"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 2883213,
-                    "date_published": "2026-11-01T15:52:07.520970Z"
+                    "size": 2964389,
+                    "date_published": "2026-11-17T20:57:40.055127Z"
                 }
             ]
         },
@@ -2936,7 +2936,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "packcore-5.2.2+26.2.jar",
+                    "file_name": "packcore-5.2.3+26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2944,23 +2944,23 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/vg3hu2jA/packcore-5.2.2+26.2.jar",
-                    "id": "vg3hu2jA",
+                    "url": "https://cdn.modrinth.com/data/V3FnL7QV/versions/hHSeJqF5/packcore-5.2.3+26.2.jar",
+                    "id": "hHSeJqF5",
                     "parent_id": "V3FnL7QV",
                     "hashes": {
-                        "sha512": "0dda7dd2a791eda96874e20057450d6bab9852fdb9eac41b8cec75670beaf5c46bfa170ebbfdf93d122000b2f68180b10fbdfab9fc4c3a786cdf15809342d5b9",
-                        "sha1": "faddf3b3c16d70aa4f62fb59c26ad04e1cf27f25"
+                        "sha512": "f1ea8f4158f655e03d882456d605c940af621758e8a0cb0acee200eb3a5a69949b54a112d1895619fe51cfeba8fcdf3db188f34cb87e868622630d7905611d5e",
+                        "sha1": "9fefd3959caec9a09bb1b42455d0aa1be899d371"
                     },
                     "required_dependencies": [
-                        "AOEDs9Al",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "AOEDs9Al"
                     ],
-                    "size": 23748902,
-                    "date_published": "2026-09-27T06:48:30.651585Z"
+                    "size": 23748988,
+                    "date_published": "2026-11-18T08:45:27.145560Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "packcore-5.2.2+26.2.jar",
+                    "file_name": "packcore-5.2.3-26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2968,19 +2968,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8987/850/packcore-5.2.2+26.2.jar",
-                    "id": "8987850",
+                    "url": "https://edge.forgecdn.net/files/9680/521/packcore-5.2.3-26.2.jar",
+                    "id": "9680521",
                     "parent_id": "1375477",
                     "hashes": {
-                        "sha1": "faddf3b3c16d70aa4f62fb59c26ad04e1cf27f25",
-                        "md5": "b2df62f2942d4cd3e7d97279dc9c96cb"
+                        "sha1": "9fefd3959caec9a09bb1b42455d0aa1be899d371",
+                        "md5": "9dbd31676b6cf5f0208b8d95c374c6c0"
                     },
                     "required_dependencies": [
-                        "306612",
-                        "933200"
+                        "933200",
+                        "306612"
                     ],
-                    "size": 23748902,
-                    "date_published": "2026-09-27T06:48:27.717Z"
+                    "size": 23748988,
+                    "date_published": "2026-11-18T08:45:20.803Z"
                 }
             ]
         },
