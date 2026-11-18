@@ -13,13 +13,13 @@
     "curseForgeHash": 3215655966,
     "modrinthHash": "d578e9e067c8f598bb5eee60b8a1d575edbbcfdf"
   },
-  "AsyncParticles-26.2.2.11+26.2.jar": {
-    "jarName": "AsyncParticles-26.2.2.11+26.2.jar",
+  "AsyncParticles-26.2.2.12-26.2.jar": {
+    "jarName": "AsyncParticles-26.2.2.12-26.2.jar",
     "modId": "asyncparticles",
     "name": "AsyncParticles",
-    "version": "26.2.2.11",
-    "curseForgeHash": 4223697614,
-    "modrinthHash": "bffab2437cf2a29a3d02f9adcea7d1165f056b09"
+    "version": "26.2.2.12",
+    "curseForgeHash": 4269373290,
+    "modrinthHash": "cbeca6193a687ed8e4c13b272bbb288745d0514c"
   },
   "authme-fabric-9.3.0+26.2.jar": {
     "jarName": "authme-fabric-9.3.0+26.2.jar",
@@ -173,13 +173,13 @@
     "curseForgeHash": 568794298,
     "modrinthHash": "988643a387adbdd5d636afcb38417c91c32eba24"
   },
-  "Feesh-1.17.0+26.2-fabric.jar": {
-    "jarName": "Feesh-1.17.0+26.2-fabric.jar",
+  "Feesh-1.18.0+26.2-fabric.jar": {
+    "jarName": "Feesh-1.18.0+26.2-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.17.0",
-    "curseForgeHash": 1814981511,
-    "modrinthHash": "0788072571c7c8ff15ec26cb717547d521baa9f0"
+    "version": "1.18.0",
+    "curseForgeHash": 2306775496,
+    "modrinthHash": "6f97cecafaad7863ce51f53cca4d906de1dc671b"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -341,13 +341,13 @@
     "curseForgeHash": 3067371349,
     "modrinthHash": "3111139453af67f14cb32e572bde7ae93126477b"
   },
-  "packcore-5.2.2+26.2.jar": {
-    "jarName": "packcore-5.2.2+26.2.jar",
+  "packcore-5.2.3+26.2.jar": {
+    "jarName": "packcore-5.2.3+26.2.jar",
     "modId": "packcore",
     "name": "Pack Core",
-    "version": "5.2.2",
-    "curseForgeHash": 1638991316,
-    "modrinthHash": "faddf3b3c16d70aa4f62fb59c26ad04e1cf27f25"
+    "version": "5.2.3",
+    "curseForgeHash": 2294555763,
+    "modrinthHash": "9fefd3959caec9a09bb1b42455d0aa1be899d371"
   },
   "PacketFixer-fabric-3.3.6.jar": {
     "jarName": "PacketFixer-fabric-3.3.6.jar",
