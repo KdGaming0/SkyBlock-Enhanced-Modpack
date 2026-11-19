@@ -173,13 +173,13 @@
     "curseForgeHash": 568794298,
     "modrinthHash": "988643a387adbdd5d636afcb38417c91c32eba24"
   },
-  "Feesh-1.18.0+26.2-fabric.jar": {
-    "jarName": "Feesh-1.18.0+26.2-fabric.jar",
+  "Feesh-1.18.1+26.2-fabric.jar": {
+    "jarName": "Feesh-1.18.1+26.2-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.18.0",
-    "curseForgeHash": 2306775496,
-    "modrinthHash": "6f97cecafaad7863ce51f53cca4d906de1dc671b"
+    "version": "1.18.1",
+    "curseForgeHash": 1513515931,
+    "modrinthHash": "a97a4ad42aaa4e4f4f3104f39cee7c1c2f5bba31"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -301,29 +301,29 @@
     "curseForgeHash": 3105240452,
     "modrinthHash": "4661a796b1d06a0bd0bbc77bc5f451bdebc7c503"
   },
-  "NoChatReports-FABRIC-26.2-v2.20.2.jar": {
-    "jarName": "NoChatReports-FABRIC-26.2-v2.20.2.jar",
+  "NoChatReports-FABRIC-MC26.2-v2.20.3.jar": {
+    "jarName": "NoChatReports-FABRIC-MC26.2-v2.20.3.jar",
     "modId": "nochatreports",
     "name": "No Chat Reports",
-    "version": "26.2-v2.20.2",
-    "curseForgeHash": 2598264329,
-    "modrinthHash": "680b60f6ec5c09a646e7a76bb17cf551608051cd"
+    "version": "MC26.2-v2.20.3",
+    "curseForgeHash": 886696486,
+    "modrinthHash": "e6a2dab445c03a0ad80b4ff6f0c88106f4fa2f7d"
   },
-  "NoChatRestrictions-Fabric-MC26.2-v1.2.3.jar": {
-    "jarName": "NoChatRestrictions-Fabric-MC26.2-v1.2.3.jar",
+  "NoChatRestrictions-Fabric-MC26.2-v1.3.0.jar": {
+    "jarName": "NoChatRestrictions-Fabric-MC26.2-v1.3.0.jar",
     "modId": "nochatrestrictions",
     "name": "No Chat Restrictions",
-    "version": "Fabric-MC26.2-v1.2.3",
-    "curseForgeHash": 1876597881,
-    "modrinthHash": "6f887a7fd946353426d210b99ea522365077cd76"
+    "version": "Fabric-MC26.2-v1.3.0",
+    "curseForgeHash": 3224961929,
+    "modrinthHash": "f23ae55e918bf2a8276e5f28f2eb2fce3dc2e2e4"
   },
-  "obe-26.2-1.2.5.jar": {
-    "jarName": "obe-26.2-1.2.5.jar",
+  "obe-26.2-1.2.13.jar": {
+    "jarName": "obe-26.2-1.2.13.jar",
     "modId": "obe",
     "name": "Optimized block entities",
-    "version": "1.2.5",
-    "curseForgeHash": 535868,
-    "modrinthHash": "f52deb8ae19dc43b8ca7e3fcfa5a485841c04d33"
+    "version": "1.2.13",
+    "curseForgeHash": 2742280129,
+    "modrinthHash": "21fff7888b53afa7b8ff109de3834c92c26e943a"
   },
   "Odin-0.3.6.jar": {
     "jarName": "Odin-0.3.6.jar",
@@ -453,13 +453,13 @@
     "curseForgeHash": 3245020701,
     "modrinthHash": "1af3624a3799c5d0a13a56d88ce5bf92ca6aef4a"
   },
-  "SkyHanni-9.4.0-mc26.2.jar": {
-    "jarName": "SkyHanni-9.4.0-mc26.2.jar",
+  "SkyHanni-9.5.0-mc26.2.jar": {
+    "jarName": "SkyHanni-9.5.0-mc26.2.jar",
     "modId": "skyhanni",
     "name": "SkyHanni",
-    "version": "9.4.0",
-    "curseForgeHash": 1334831903,
-    "modrinthHash": "0318e04f0e9c8075aed8bed7550bcf8381898e21"
+    "version": "9.5.0",
+    "curseForgeHash": 2665883419,
+    "modrinthHash": "dea773c7631e70ccb8fbb3ce61efc43f4257439f"
   },
   "SkyOcean-1.18.2-26.2.jar": {
     "jarName": "SkyOcean-1.18.2-26.2.jar",
