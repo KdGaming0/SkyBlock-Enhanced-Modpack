@@ -519,104 +519,104 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "ComplementaryUnbound_r5.9.3.zip",
+                    "file_name": "ComplementaryUnbound_r5.10.zip",
                     "mc_versions": [
-                        "1.10",
-                        "1.10.1",
-                        "1.10.2",
-                        "1.11",
-                        "1.11.1",
-                        "1.11.2",
-                        "1.12",
-                        "1.12.1",
-                        "1.12.2",
-                        "1.13",
-                        "1.13.1",
-                        "1.13.2",
-                        "1.14",
-                        "1.14.1",
-                        "1.14.2",
-                        "1.14.3",
-                        "1.14.4",
-                        "1.15",
-                        "1.15.1",
-                        "1.15.2",
-                        "1.16",
-                        "1.16.1",
-                        "1.16.2",
-                        "1.16.3",
-                        "1.16.4",
-                        "1.16.5",
-                        "1.17",
-                        "1.17.1",
-                        "1.18",
-                        "1.18.1",
-                        "1.18.2",
-                        "1.19",
-                        "1.19.1",
-                        "1.19.2",
-                        "1.19.3",
-                        "1.19.4",
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6",
-                        "1.21",
-                        "1.21.1",
-                        "1.21.10",
-                        "1.21.11",
-                        "1.21.2",
-                        "1.21.3",
-                        "1.21.4",
-                        "1.21.5",
-                        "1.21.6",
-                        "1.21.7",
-                        "1.21.8",
-                        "1.21.9",
-                        "1.7.10",
-                        "1.8",
-                        "1.8.1",
-                        "1.8.2",
-                        "1.8.3",
-                        "1.8.4",
-                        "1.8.5",
-                        "1.8.6",
-                        "1.8.7",
-                        "1.8.8",
-                        "1.8.9",
-                        "1.9",
-                        "1.9.1",
-                        "1.9.2",
-                        "1.9.3",
-                        "1.9.4",
-                        "26.1",
-                        "26.1.1",
-                        "26.1.2",
+                        "26.3",
                         "26.2",
-                        "26.3"
+                        "26.1.2",
+                        "26.1.1",
+                        "26.1",
+                        "1.21.11",
+                        "1.21.10",
+                        "1.21.9",
+                        "1.21.8",
+                        "1.21.7",
+                        "1.21.6",
+                        "1.21.5",
+                        "1.21.4",
+                        "1.21.3",
+                        "1.21.2",
+                        "1.21.1",
+                        "1.21",
+                        "1.20.6",
+                        "1.20.5",
+                        "1.20.4",
+                        "1.20.3",
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20",
+                        "1.19.4",
+                        "1.19.3",
+                        "1.19.2",
+                        "1.19.1",
+                        "1.19",
+                        "1.18.2",
+                        "1.18.1",
+                        "1.18",
+                        "1.17.1",
+                        "1.17",
+                        "1.16.5",
+                        "1.16.4",
+                        "1.16.3",
+                        "1.16.2",
+                        "1.16.1",
+                        "1.16",
+                        "1.15.2",
+                        "1.15.1",
+                        "1.15",
+                        "1.14.4",
+                        "1.14.3",
+                        "1.14.2",
+                        "1.14.1",
+                        "1.14",
+                        "1.13.2",
+                        "1.13.1",
+                        "1.13",
+                        "1.12.2",
+                        "1.12.1",
+                        "1.12",
+                        "1.11.2",
+                        "1.11.1",
+                        "1.11",
+                        "1.10.2",
+                        "1.10.1",
+                        "1.10",
+                        "1.9.4",
+                        "1.9.3",
+                        "1.9.2",
+                        "1.9.1",
+                        "1.9",
+                        "1.8.9",
+                        "1.8.8",
+                        "1.8.7",
+                        "1.8.6",
+                        "1.8.5",
+                        "1.8.4",
+                        "1.8.3",
+                        "1.8.2",
+                        "1.8.1",
+                        "1.8",
+                        "1.7.10"
                     ],
                     "loaders": [
                         "iris",
                         "optifine"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/B1kyfoUZ/ComplementaryUnbound_r5.9.3.zip",
-                    "id": "B1kyfoUZ",
+                    "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/QJiYQisE/ComplementaryUnbound_r5.10.zip",
+                    "id": "QJiYQisE",
                     "parent_id": "R6NEzAwj",
                     "hashes": {
-                        "sha512": "a085d1d8cda67cd17a2b414eeba48bbd809da069f269bab46246235ec8fe714a275013c70d0504527b0987d810deddddba4564332414ab3b3bd7435932ff808c",
-                        "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67"
+                        "sha512": "bccfca6b07ea4c75b3d7c8bfb875de54ecb3ce4416c960194974d887b65c2aebc9ebd2f6911356bdcb2b0f8740ce70adbf2fdf2e39698616c194104400f70e62",
+                        "sha1": "7a9a6b667b89d6b442837c5c367cd6cc8356b400"
                     },
                     "required_dependencies": [],
-                    "size": 553400,
-                    "date_published": "2026-09-15T06:36:17.528689Z"
+                    "size": 567391,
+                    "date_published": "2026-11-18T17:18:09.174179Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "ComplementaryUnbound_r5.9.3.zip",
+                    "file_name": "ComplementaryUnbound_r5.10.zip",
                     "mc_versions": [
                         "26.1",
                         "26.1.1",
@@ -624,16 +624,16 @@
                         "26.2"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8884/656/ComplementaryUnbound_r5.9.3.zip",
-                    "id": "8884656",
+                    "url": "https://edge.forgecdn.net/files/9687/815/ComplementaryUnbound_r5.10.zip",
+                    "id": "9687815",
                     "parent_id": "385587",
                     "hashes": {
-                        "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67",
-                        "md5": "e9c0e174f43125d45b192ef684f5d4d4"
+                        "sha1": "7a9a6b667b89d6b442837c5c367cd6cc8356b400",
+                        "md5": "ab987ef018ca5bb5cf096bd6d09a5e06"
                     },
                     "required_dependencies": [],
-                    "size": 553400,
-                    "date_published": "2026-09-15T06:41:37.753Z"
+                    "size": 567391,
+                    "date_published": "2026-11-18T17:20:24.833Z"
                 }
             ]
         },
@@ -1477,7 +1477,9 @@
                         "26.3-pre-2",
                         "26.3-snapshot-9",
                         "26.3-snapshot-3",
-                        "26.3-snapshot-6"
+                        "26.3-snapshot-6",
+                        "26.4-snapshot-9",
+                        "26.4-snapshot-10"
                     ],
                     "loaders": [
                         "fabric"
@@ -1512,7 +1514,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Feesh-1.18.0+26.2-fabric.jar",
+                    "file_name": "Feesh-1.18.1+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1520,19 +1522,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/vrRBk3qB/Feesh-1.18.0+26.2-fabric.jar",
-                    "id": "vrRBk3qB",
+                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/EDmY07zu/Feesh-1.18.1+26.2-fabric.jar",
+                    "id": "EDmY07zu",
                     "parent_id": "QCpogurE",
                     "hashes": {
-                        "sha512": "3d7ae718f753f0b565dfdd65abaa8514b552f806e4a39a0e169c46e389a6aa777569950b81874a89e7a43eca9f1a26445c34059f778f5e674f049621be02738f",
-                        "sha1": "6f97cecafaad7863ce51f53cca4d906de1dc671b"
+                        "sha512": "1e3099c133d8afd7d356ed50d18d812ae0c8539bef02448c9fc3675437fd4c23eb4934b04f19aa632e522e138fc2c623788691c5e409a68900e26747d5a915e1",
+                        "sha1": "a97a4ad42aaa4e4f4f3104f39cee7c1c2f5bba31"
                     },
                     "required_dependencies": [
-                        "Ha28R6CL",
-                        "P7dR8mSH"
+                        "P7dR8mSH",
+                        "Ha28R6CL"
                     ],
-                    "size": 2964389,
-                    "date_published": "2026-11-17T20:57:40.055127Z"
+                    "size": 2973074,
+                    "date_published": "2026-11-18T16:45:33.982590Z"
                 }
             ]
         },
@@ -2689,7 +2691,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "NoChatReports-FABRIC-26.2-v2.20.2.jar",
+                    "file_name": "NoChatReports-FABRIC-MC26.2-v2.20.3.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2697,18 +2699,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/qQyHxfxd/versions/aDbxaVTi/NoChatReports-FABRIC-26.2-v2.20.2.jar",
-                    "id": "aDbxaVTi",
+                    "url": "https://cdn.modrinth.com/data/qQyHxfxd/versions/n9P6MzO6/NoChatReports-FABRIC-MC26.2-v2.20.3.jar",
+                    "id": "n9P6MzO6",
                     "parent_id": "qQyHxfxd",
                     "hashes": {
-                        "sha512": "aa14fa2d1cc94803f4c965fd817a945823037237bd7a1fea9dc9a0c6427084d25b8d9273da76bc132fe68794d2be8b91540bfff1309125aea37820c12bff0268",
-                        "sha1": "680b60f6ec5c09a646e7a76bb17cf551608051cd"
+                        "sha512": "65965b29c0af52c2ae6664f982a5e3ba144fbb624e2e3323d2b57c53dc5a0f6206be19cc7aba337db7df647642a3e59b87a2f73c1b1183e008ef5de8593e1319",
+                        "sha1": "e6a2dab445c03a0ad80b4ff6f0c88106f4fa2f7d"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 239602,
-                    "date_published": "2026-08-18T07:52:41.849926Z"
+                    "size": 225303,
+                    "date_published": "2026-11-19T11:51:42.610775Z"
                 },
                 {
                     "type": "curseforge",
@@ -2757,7 +2759,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "NoChatRestrictions-Fabric-MC26.2-v1.2.3.jar",
+                    "file_name": "NoChatRestrictions-Fabric-MC26.2-v1.3.0.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2765,18 +2767,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/z440MEwJ/versions/Z2T582gj/NoChatRestrictions-Fabric-MC26.2-v1.2.3.jar",
-                    "id": "Z2T582gj",
+                    "url": "https://cdn.modrinth.com/data/z440MEwJ/versions/Fd3Azi8B/NoChatRestrictions-Fabric-MC26.2-v1.3.0.jar",
+                    "id": "Fd3Azi8B",
                     "parent_id": "z440MEwJ",
                     "hashes": {
-                        "sha512": "3d5113f50d2284edadcc5e52b97c67e3a79e0f3eae7024e9b8837bd14a52e4f7515784d88ae117efd79f3c36fd84c09760092774b6969c2fa4927ddaf75b122d",
-                        "sha1": "6f887a7fd946353426d210b99ea522365077cd76"
+                        "sha512": "9ac4eb97a9b049991c64d76d0e7963bc0b7fe1bd08de1d75aff002b64a9908aa31f75b1cd8cf37a4c8bbc6c0ae07216f84355f6eac522c13b66aee5e04e6650d",
+                        "sha1": "f23ae55e918bf2a8276e5f28f2eb2fce3dc2e2e4"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 14644,
-                    "date_published": "2026-09-30T10:18:51.672765Z"
+                    "size": 13848,
+                    "date_published": "2026-11-18T20:59:07.101775Z"
                 },
                 {
                     "type": "curseforge",
@@ -2869,7 +2871,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "obe+26.2-1.2.5.jar",
+                    "file_name": "obe+26.2-1.2.13.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2878,22 +2880,22 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/AtOSAunf/versions/rPa8K4lG/obe+26.2-1.2.5.jar",
-                    "id": "rPa8K4lG",
+                    "url": "https://cdn.modrinth.com/data/AtOSAunf/versions/5urtqvzR/obe+26.2-1.2.13.jar",
+                    "id": "5urtqvzR",
                     "parent_id": "AtOSAunf",
                     "hashes": {
-                        "sha512": "f614d1e8a574ac24559bbe93500737f3006905b64c167cf2ab760d48605ffa19587a42eda19ec34c07e9f2ed91e334b5afa1d8d3052903785bc2c62340baac1b",
-                        "sha1": "f52deb8ae19dc43b8ca7e3fcfa5a485841c04d33"
+                        "sha512": "034145b7035a609e5772a7026fdd5b5872ae99f87b2744752eabfaa6db937bed3f7e754d80538772b930eb807101ef04db77fa4deff0e3ef3597f91a838730f3",
+                        "sha1": "21fff7888b53afa7b8ff109de3834c92c26e943a"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 246873,
-                    "date_published": "2026-11-15T14:01:17.471705Z"
+                    "size": 252846,
+                    "date_published": "2026-11-19T18:03:10.788628Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "obe-26.2-1.2.5.jar",
+                    "file_name": "obe-26.2-1.2.13.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2902,18 +2904,18 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9629/747/obe-26.2-1.2.5.jar",
-                    "id": "9629747",
+                    "url": "https://edge.forgecdn.net/files/9703/516/obe-26.2-1.2.13.jar",
+                    "id": "9703516",
                     "parent_id": "1575743",
                     "hashes": {
-                        "sha1": "f52deb8ae19dc43b8ca7e3fcfa5a485841c04d33",
-                        "md5": "4a4f8029e18743f7d2d11f9a057b1e2c"
+                        "sha1": "21fff7888b53afa7b8ff109de3834c92c26e943a",
+                        "md5": "08445fbba810f8d6428c8b70dc603273"
                     },
                     "required_dependencies": [
                         "306612"
                     ],
-                    "size": 246873,
-                    "date_published": "2026-11-15T14:01:17.853Z"
+                    "size": 252846,
+                    "date_published": "2026-11-19T18:03:11.690Z"
                 }
             ]
         },
@@ -3642,7 +3644,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "SkyHanni-9.4.0-mc26.2.jar",
+                    "file_name": "SkyHanni-9.5.0-mc26.2.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -3650,20 +3652,20 @@
                         "fabric"
                     ],
                     "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/AS7NPABL/SkyHanni-9.4.0-mc26.2.jar",
-                    "id": "AS7NPABL",
+                    "url": "https://cdn.modrinth.com/data/byNkmv5G/versions/N4SneavR/SkyHanni-9.5.0-mc26.2.jar",
+                    "id": "N4SneavR",
                     "parent_id": "byNkmv5G",
                     "hashes": {
-                        "sha512": "49c3e3c7bc6e18682aa2d566d99570214786d9c6c37f1f1f25c37d558ab2c28c3b8e7e9123330278af2e9ba7d5d0c2287e7935fe5ab30c73f149c8da8b0d9a5b",
-                        "sha1": "0318e04f0e9c8075aed8bed7550bcf8381898e21"
+                        "sha512": "1a4a87adcc0050b992b74f0218681040f9771b243daf517871b72f6259e239007b000b8d86bf473217be1864653b9adf0168c04861443d621b01db78e5f1214d",
+                        "sha1": "dea773c7631e70ccb8fbb3ce61efc43f4257439f"
                     },
                     "required_dependencies": [
-                        "1A2mKfBx",
                         "Ha28R6CL",
+                        "1A2mKfBx",
                         "P7dR8mSH"
                     ],
-                    "size": 29450549,
-                    "date_published": "2026-11-16T12:00:54.031650Z"
+                    "size": 29469891,
+                    "date_published": "2026-11-19T14:23:23.582839Z"
                 }
             ]
         },
