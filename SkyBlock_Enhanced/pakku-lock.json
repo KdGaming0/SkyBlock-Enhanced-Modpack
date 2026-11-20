@@ -1514,7 +1514,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "Feesh-1.18.1+26.2-fabric.jar",
+                    "file_name": "Feesh-1.18.2+26.2-fabric.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -1522,19 +1522,19 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/EDmY07zu/Feesh-1.18.1+26.2-fabric.jar",
-                    "id": "EDmY07zu",
+                    "url": "https://cdn.modrinth.com/data/QCpogurE/versions/c9lfYrhF/Feesh-1.18.2+26.2-fabric.jar",
+                    "id": "c9lfYrhF",
                     "parent_id": "QCpogurE",
                     "hashes": {
-                        "sha512": "1e3099c133d8afd7d356ed50d18d812ae0c8539bef02448c9fc3675437fd4c23eb4934b04f19aa632e522e138fc2c623788691c5e409a68900e26747d5a915e1",
-                        "sha1": "a97a4ad42aaa4e4f4f3104f39cee7c1c2f5bba31"
+                        "sha512": "4c6b571e624c1503fa88493e22b9449e07ed7e41f4afe27f99ffe71a42b45ee7e964d6cae02ad0ecd642dd7cc0949935988834f0358239c5e0b53ea7e46c7cd2",
+                        "sha1": "a717d3b6d8e6fbb0f623a3bbb723c73630ab46e8"
                     },
                     "required_dependencies": [
-                        "P7dR8mSH",
-                        "Ha28R6CL"
+                        "Ha28R6CL",
+                        "P7dR8mSH"
                     ],
-                    "size": 2973074,
-                    "date_published": "2026-11-18T16:45:33.982590Z"
+                    "size": 2976522,
+                    "date_published": "2026-11-19T19:50:01.769842Z"
                 }
             ]
         },
@@ -2691,7 +2691,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "NoChatReports-FABRIC-MC26.2-v2.20.3.jar",
+                    "file_name": "NoChatReports-FABRIC-MC26.2-v2.20.4.jar",
                     "mc_versions": [
                         "26.2"
                     ],
@@ -2699,18 +2699,18 @@
                         "fabric"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/qQyHxfxd/versions/n9P6MzO6/NoChatReports-FABRIC-MC26.2-v2.20.3.jar",
-                    "id": "n9P6MzO6",
+                    "url": "https://cdn.modrinth.com/data/qQyHxfxd/versions/N4NYPVVF/NoChatReports-FABRIC-MC26.2-v2.20.4.jar",
+                    "id": "N4NYPVVF",
                     "parent_id": "qQyHxfxd",
                     "hashes": {
-                        "sha512": "65965b29c0af52c2ae6664f982a5e3ba144fbb624e2e3323d2b57c53dc5a0f6206be19cc7aba337db7df647642a3e59b87a2f73c1b1183e008ef5de8593e1319",
-                        "sha1": "e6a2dab445c03a0ad80b4ff6f0c88106f4fa2f7d"
+                        "sha512": "dbbba92019917c6999593ff10ba94894cf293ac534ed776f876b22be20a6f5ff4ece832f65a16da927ffb809b69c4c7ebcac47ce06ee031442648b2376b7a5af",
+                        "sha1": "d39a4d73d2b2c43f4a774185bcb5822234b23eb9"
                     },
                     "required_dependencies": [
                         "P7dR8mSH"
                     ],
-                    "size": 225303,
-                    "date_published": "2026-11-19T11:51:42.610775Z"
+                    "size": 226429,
+                    "date_published": "2026-11-19T20:02:25.672020Z"
                 },
                 {
                     "type": "curseforge",
