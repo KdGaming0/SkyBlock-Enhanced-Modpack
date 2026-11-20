@@ -173,13 +173,13 @@
     "curseForgeHash": 568794298,
     "modrinthHash": "988643a387adbdd5d636afcb38417c91c32eba24"
   },
-  "Feesh-1.18.1+26.2-fabric.jar": {
-    "jarName": "Feesh-1.18.1+26.2-fabric.jar",
+  "Feesh-1.18.2+26.2-fabric.jar": {
+    "jarName": "Feesh-1.18.2+26.2-fabric.jar",
     "modId": "feesh",
     "name": "Feesh",
-    "version": "1.18.1",
-    "curseForgeHash": 1513515931,
-    "modrinthHash": "a97a4ad42aaa4e4f4f3104f39cee7c1c2f5bba31"
+    "version": "1.18.2",
+    "curseForgeHash": 2589961232,
+    "modrinthHash": "a717d3b6d8e6fbb0f623a3bbb723c73630ab46e8"
   },
   "ferritecore-9.0.0-fabric.jar": {
     "jarName": "ferritecore-9.0.0-fabric.jar",
@@ -301,13 +301,13 @@
     "curseForgeHash": 3105240452,
     "modrinthHash": "4661a796b1d06a0bd0bbc77bc5f451bdebc7c503"
   },
-  "NoChatReports-FABRIC-MC26.2-v2.20.3.jar": {
-    "jarName": "NoChatReports-FABRIC-MC26.2-v2.20.3.jar",
+  "NoChatReports-FABRIC-MC26.2-v2.20.4.jar": {
+    "jarName": "NoChatReports-FABRIC-MC26.2-v2.20.4.jar",
     "modId": "nochatreports",
     "name": "No Chat Reports",
-    "version": "MC26.2-v2.20.3",
-    "curseForgeHash": 886696486,
-    "modrinthHash": "e6a2dab445c03a0ad80b4ff6f0c88106f4fa2f7d"
+    "version": "26.2-v2.20.4",
+    "curseForgeHash": 214027196,
+    "modrinthHash": "d39a4d73d2b2c43f4a774185bcb5822234b23eb9"
   },
   "NoChatRestrictions-Fabric-MC26.2-v1.3.0.jar": {
     "jarName": "NoChatRestrictions-Fabric-MC26.2-v1.3.0.jar",
